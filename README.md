@@ -30,6 +30,8 @@ Third-party datasets and arXiv source files are not redistributed; `download_dat
 4. **Data.** Third-party datasets are not redistributed here. Run `python download_data.py` from the repository root: it fetches everything the pipelines used (with TLS certificate checks on) into the folders the manifests expect, never overwrites a file in the repository, and prints PASS or FAIL for every line of `ropewalk/DATA_MANIFEST.sha256`, the cluster e-prints in `ropewalk/RESULTS_v5.sha256`, and the rebuild's `DATA_MANIFEST_REBUILD*.sha256`. Then run `python restore_mock_covariances.py`. The downloaded data is git-ignored. `ropewalk/scripts/get_data.py` is kept unchanged as part of the frozen record; don't run it inside the repository: it rewrites two frozen files (`data/MANIFEST.csv`, `data/registered_priors.json`) and turns off certificate checks.
 5. **Rerun.** Each pipeline folder has a README with its pinned environment and the exact commands used.
 
+An independent audit of this repository by the planning session, run on a fresh clone, is in planner/PLANNER_REPO_AUDIT.txt.
+
 ### Append-only logs
 
 These logs kept growing after they were frozen, so each manifest fingerprints only the first N bytes. From the folder that holds the manifest, check with `head -c N FILE | sha256sum` and compare with the manifest line.
@@ -45,9 +47,9 @@ These logs kept growing after they were frozen, so each manifest fingerprints on
 | `blind_rebuild/phase3/SEALED/GENERATION_LOG.md` | `blind_rebuild/phase3/PHASE3_INJECTION_v1.sha256` (paths relative to `blind_rebuild/phase3/`) | 28,402 |
 | `v2_design/MULTIVERSE_V2_PAPER_NOTES.txt` | `v2_design/MULTIVERSE_V2_DESIGN_LOG_e36.sha256` | 8,788 |
 | `v2_design/MULTIVERSE_V2_DESIGN_LOG.txt` | `v2_design/MULTIVERSE_V2_DE_FREEZE_F1.sha256` | 55,106 |
-| `v2_design/MULTIVERSE_V2_DESIGN_LOG.txt` | `v2_design/MULTIVERSE_V2_DESIGN_LOG_eN.sha256`, one per entry: e2 3,562 · e3 7,220 · e4 8,850 · e5 11,106 · e6 13,272 · e7 15,265 · e8 15,843 · e9 18,856 · e10 22,392 · e11 25,664 · e12 26,684 · e13 28,082 · e14 29,781 · e15 31,001 · e16 33,068 · e17 34,894 · e18 36,498 · e19 38,091 · e20 39,869 · e21 42,226 · e22 45,531 · e23 48,106 · e24 49,513 · e25 51,908 · e26 53,001 · e27 54,030 · e28 55,106 · e29 57,365 · e30 58,751 · e31 60,416 · e32 61,421 · e33 63,923 · e34 64,610 · e35 65,498 | per entry |
+| `v2_design/MULTIVERSE_V2_DESIGN_LOG.txt` | `v2_design/MULTIVERSE_V2_DESIGN_LOG_eN.sha256`, one per entry: e2 3,562 · e3 7,220 · e4 8,850 · e5 11,106 · e6 13,272 · e7 15,265 · e8 15,843 · e9 18,856 · e10 22,392 · e11 25,664 · e12 26,684 · e13 28,082 · e14 29,781 · e15 31,001 · e16 33,068 · e17 34,894 · e18 36,498 · e19 38,091 · e20 39,869 · e21 42,226 · e22 45,531 · e23 48,106 · e24 49,513 · e25 51,908 · e26 53,001 · e27 54,030 · e28 55,106 · e29 57,365 · e30 58,751 · e31 60,416 · e32 61,421 · e33 63,923 · e34 64,610 · e35 65,498 · e36 66,366 · e37 68,337 · e37b 68,686 (full length) | per entry |
 
-`RESULTS_v5.sha256` and `MULTIVERSE_V2_DESIGN_LOG_e36.sha256` fingerprint `ropewalk/ACTIVITY_LOG.md` and `MULTIVERSE_V2_DESIGN_LOG.txt` at their full current length.
+`RESULTS_v5.sha256` fingerprints `ropewalk/ACTIVITY_LOG.md` at its full current length, and `MULTIVERSE_V2_DESIGN_LOG_e37b.sha256` fingerprints `MULTIVERSE_V2_DESIGN_LOG.txt` at its full current length (68,686 bytes).
 
 ## Honest limits
 
@@ -57,8 +59,8 @@ The paper's Limitations section is the full list. In short: several datasets wer
 
 - **Gregory Mandarano (WickedAI):** the model, the rules, every decision, the documentary.
 - **Claude Opus 5.5 (Anthropic, `claude-opus-5-5`):** planning, rule drafting, review, Phase 3 scoring, paper drafting.
-- Claude Opus 5.5 (Anthropic, claude-opus-5-5) at high effort: the blind independent rebuild (its first half hour in Google Antigravity through Antigravity's third-party model access, then Claude Code on the same folder and instructions, per the author; the rebuild's logs record the Claude Code stage) and the Phase 3 mock generator.
-- Gemini 4 "Argon" (Google), in Google Antigravity, instructed to run at the High thinking level (the logs record no finer version string): the primary pipeline, the head-to-head and the Phase 3 analysis.
+- **Claude Opus 5.5 (Anthropic, claude-opus-5-5) at high effort:** the blind independent rebuild (its first half hour in Google Antigravity through Antigravity's third-party model access, then Claude Code on the same folder and instructions, per the author; the rebuild's logs record the Claude Code stage) and the Phase 3 mock generator.
+- **Gemini 4 "Argon" (Google)**, in Google Antigravity, instructed to run at the High thinking level (the logs record no finer version string): the primary pipeline, the head-to-head and the Phase 3 analysis.
 - **Gemini (Google), separate session:** the independent Phase 3 re-score. **Grok (xAI):** external review.
 
 ## Contact

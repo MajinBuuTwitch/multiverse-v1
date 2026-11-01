@@ -720,3 +720,27 @@ reviews (2026-11-01) quoted passages absent from the paper, the second while cla
 and challenged a sampler setting its own frozen file confirms; the paper's file check moved to a fresh Claude Code
 instance. The running ledger (all families, the planner included, failures and verified successes) is
 MULTIVERSE_V2_PAPER_NOTES.txt.
+
+------------------------------------------------------------------------------------------
+ENTRY 37 · 2026-11-01 · Gregory Mandarano (planner's notes marked) · THE ENDS OF THE CABLE MEET (IMAGE FOR THE RESTART)
+------------------------------------------------------------------------------------------
+IDEA: The crunch that ends a timeline is the cable's two ends, its beginning and its end, coming into contact. Because
+all the matter in the universe is then touching itself, the contact detonates, and that explosion is the Big Bang of
+the next timeline. Gregory's reference: the film trope that the same matter touching itself explodes. Pairs with the
+documentary's late beat in which two cables collide.
+STATUS: interpretation of the restart (UNTESTABLE bin, with the snap, the collapse and the rebirth). No equation changes;
+nothing here touches the shape check, DE-F1 or Phase D.
+PLANNER'S NOTES (not Gregory's):
+ - The "same matter touching itself explodes" rule is a film convention (Timecop, 1994, is the clearest example), not
+   physics: matter meeting an earlier copy of itself has no special property. Present it as the model's image only.
+ - Strongest Tier 2 rhyme: the ekpyrotic and cyclic models (Khoury, Ovrut, Steinhardt & Turok 2001; Steinhardt & Turok
+   2002), in which the Big Bang IS a collision, of two brane-worlds meeting along an extra dimension. Two things
+   colliding to start a universe is published speculation. (Citations to verify before scripting.)
+ - Fit with v2's own commitments: v2 runs the collapse with the arrow of time reversed (Gold-style, Entry 16 onward).
+   In a Gold universe the crunch, seen from inside, looks like a Big Bang, so the "end meeting the beginning" image
+   has a literal counterpart in that history: the two ends are mirror images. Penrose's CCC is the no-crunch version
+   of an end becoming a beginning.
+ - Known gap, unchanged: entropy carried across the cycle (Tolman). The image does not reset it.
+CORRECTION TO ENTRY 37 (planner, 2026-11-01): Gregory's reference is right. The rule that matter touching an earlier
+copy of itself detonates and releases "paradox" energy is from the 12 Monkeys TV series (Syfy, 2015–2018), not only
+Timecop. The planner wrongly assumed he meant the 1995 film. The physics note stands: it is a fiction convention.

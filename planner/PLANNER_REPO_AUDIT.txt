@@ -1,0 +1,23 @@
+MULTIVERSE v1 · INDEPENDENT REPO AUDIT (planner, Claude Opus 5.5) · 2026-11-01
+Audited: fresh clone of github.com/MajinBuuTwitch/multiverse-v1 at commit 848b497 (1,026 files). Independent of the
+Code instance that built it; all checks run on the clone with the planner's own scripts.
+
+1. MANIFESTS vs FINGERPRINTS HELD OUTSIDE THE REPO: 73 manifests. 70 match a fingerprint held outside the repo
+   (Argon's release-prep master table, Appendix A prefixes, the planner's own copies): 0 mismatches. The other 3
+   (DATA_MANIFEST_REBUILD, DATA_MANIFEST_REBUILD_PAPERS, P3_RESCORE) are themselves fingerprinted by
+   REBUILD_RESULTS_v1 (anchored) and by the re-score's reported report hash (cf57d384…). No manifest is unanchored.
+2. EVERY MANIFEST LINE: 2,173 lines checked. 1,743 plain PASS; 13 append-only prefixes; 40 superseded versions in
+   archive/; 10 pre-upgrade proofs (.ots.bak); 329 excluded third-party data and duplicated mock covariances;
+   38 resolved by content hash (34 design-log stamps that are exact line-boundary prefixes of the log, so the log was
+   only ever appended to; 4 neutrino-check files and the Phase 3 results file stored under other folders). 0 unexplained.
+3. PROOFS: all 16 key manifests' proofs belong to their manifests and their Bitcoin heights match Appendix A.
+4. COMMITS: all 11 commits by "Gregory Mandarano" with the GitHub no-reply address.
+5. SCRUB: no keys, tokens or private keys. Emails: the README contact line (as chosen) and mentions of it in the build
+   log/report; the no-reply address. No excluded material (.venv, _ORIGINALS, __pycache__, FOR_PLANNER, assets,
+   translation, archival-image files). Largest file 2.2 MB.
+6. PAPER: repo copy is byte-identical to the planner's release version (md 778ab424…, pdf identical), with the DOI.
+7. PLANNER AND V2 FILES: identical to the planner's kit, except v2_design/MULTIVERSE_V2_DESIGN_LOG.txt, which stops at
+   Entry 36; Entry 37 and its correction (stamps e37, e37b, anchored in Bitcoin block 974179) were logged after the
+   build and go in on release day.
+OPEN FOR RELEASE DAY: add the Entry 37 log and stamps; CITATION date-released; drop "FOR REVIEW" from the paper;
+bold the two new credit names in the README (cosmetic); rebuild the snapshot zip; publish Zenodo; make the repo public.
