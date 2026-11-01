@@ -6,8 +6,8 @@ Built 2026-11-01 by Claude Code (claude-opus-5-5) from the read-only workspaces 
 
 | Item | Result |
 |:--|:--|
-| Repository | https://github.com/MajinBuuTwitch/multiverse-v1 (private) |
-| Files and size | 1023 files, 208.0 MB (207,969,253 bytes) including this report and BUILD_LOG.md; largest file 2.25 MB; none over 95 MB |
+| Repository | https://github.com/MajinBuuTwitch/multiverse-v1 (PRIVATE; created and pushed 2026-11-01; remote main f5ef4d6 had 1,023 files with a path-to-blob map identical to staging; no GitHub release, nothing on Zenodo) |
+| Files and size | 1023 files, 208.0 MB (207,970,144 bytes) including this report and BUILD_LOG.md; largest file 2.25 MB; none over 95 MB |
 | Manifests verified | 73 manifests, 2211 lines: **0 FAIL**; every non-PASS line is an expected exception (table below) |
 | Timestamp proofs | 89 `.ots`/`.ots.bak` files read with `ots info` (no upgrades, no new stamps); every proof commits to its manifest's exact SHA-256 |
 | Scrub | no API keys, tokens, passwords, private keys or `.env` files; one Drive folder ID (frozen, shipped); no email except the README contact line and the GitHub no-reply address in BUILD_LOG.md |
