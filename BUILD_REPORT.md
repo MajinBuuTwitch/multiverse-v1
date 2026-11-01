@@ -403,3 +403,16 @@ Report only; no frozen file was edited.
 8. **Ropewalk's `.ots.bak` files** exist for every manifest, but only HEAD_TO_HEAD_RESULTS_v1 and PHASE3_RESULTS_v1 list a plan proof by its pre-upgrade hash; the rest are simply backups. Shipped as Argon left them.
 9. **FREEZE_T*.json timing audit** (checklist O5) is Argon's; `FREEZE_TIMING_AUDIT.md` and `CREATION_TIME_CHECK.md` ship as they stood at copy time.
 10. **The guard change.** Pushing was blocked by the house delete guard (rule "we never push"). On Gregory's instruction I added an exception: plain pushes to `origin` from a top-level `<drive>:\<NAME>_RELEASE` folder or a folder listed in `.claude\hooks\release_push_roots.txt`; force, delete, mirror, prune and `+`/`:` refspecs stay blocked everywhere. Backup and 16 new tests are noted in BUILD_LOG.md.
+
+## Follow-up 2026-11-01: CODE_PUSH_REPO_FIXES
+
+The sections above describe the first build; this section records what changed afterwards. The snapshot line above is the first build's; the snapshot is rebuilt on release day.
+
+- **DOI 10.5281/zenodo.23868218** (reserved; resolves after release day): README line 3 links it; CITATION.cff `doi` set; `date-released` stays a placeholder. `.zenodo.json` unchanged and matches the draft (title, creator "Mandarano, Gregory", affiliation WickedAI, licence cc-by-4.0; no DOI field).
+- **Paper:** `paper/MULTIVERSE_V1_PAPER.md` (sha256 778ab424fd6d97965ee835183f9fc38c1ecee97124ef08a315d47ee7175f70f2) and `.pdf` (178b227994a4c88e1f17fa24b2bf2b7f004fec01fc17e86292962ef95aa0fdfe) replaced with Gregory's "MULTIVERSE PAPER FOR RELEASE" copies; both carry the DOI.
+- **Credits:** README "Who did what" now has Gregory's exact lines for the rebuild (Claude Opus 5.5, Antigravity then Claude Code) and for Argon (Gemini 4, Google Antigravity, High thinking level).
+- **README:** new "Append-only logs" table; data step now points to `download_data.py`.
+- **New files:** `download_data.py` (safe downloader, TLS verified, never writes a tracked or existing file, verifies the four data manifests), `.gitignore` (third-party data and restored mock covariances), `blind_rebuild/README_ENVIRONMENT.md` (pinned environment and commands from the rebuild's own records).
+- **Download test (fresh clone outside the repo):** 113 files fetched, 113 PASS, 0 FAIL, 0 missing; 12 PDF-extracted text entries have nothing to download. `git status` stayed clean after the download, after `restore_mock_covariances.py` (120 restored) and after a rerun.
+- **Verification:** all manifests re-verified on staging: 0 FAIL.
+- **Not done: `ropewalk/_TRASH/`.** Copying `PREREG_v1.sha256` and `PREREG_v2.sha256` out of Ropewalk's `_TRASH` was blocked by the house delete guard ("touching _TRASH's contents"); per house rule C1-14 it was not retried another way. PREREG_v4 lines 28-29 still verify through `archive/` and `PATH_MAP.txt`. Note that line 27 (`ACTIVITY_LOG.md`, frozen at a 23,542-byte prefix of a now 40,544-byte log) can never pass a bare `sha256sum -c`; it needs the `head -c` check in the table.
