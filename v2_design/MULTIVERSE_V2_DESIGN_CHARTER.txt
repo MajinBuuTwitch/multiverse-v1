@@ -1,0 +1,119 @@
+MULTIVERSE: VERSION 2 DESIGN CHARTER (the Mandarano Model v2)
+Started 2026-10-31. Status: CHARTER ONLY. Nothing here is a v2 equation yet. This file sets the targets, the
+rules and the plan for building v2 from what v1 taught us, so that v2 is built honestly and can still be
+tested honestly.
+
+==========================================================================================
+0. THE IDEA (Gregory, 2026-10-31)
+==========================================================================================
+Before writing v2, take the data and conclusions from v1's tests and work out, with our own equations,
+what a model would need in order to fit them. Design to the evidence, then lock and test.
+
+THE ONE RULE THAT MAKES THIS LEGITIMATE
+Building a model to fit data you've already seen is normal science, but that data can't then count as
+evidence FOR the model. Everything v2 is fitted to is its DESIGN data. Only data v2 never touched during
+design can test it. So the data v2 is NOT allowed to see must be chosen and fenced off BEFORE design work
+starts (section 3).
+
+==========================================================================================
+1. WHAT V1 TAUGHT US (verified results; both pipelines agree)
+==========================================================================================
+- Galaxy rotation curves (T5-A): the decisive failure. One fixed blur of the visible matter fits 6 of 87
+  held-out galaxies (median misfit ~45 vs a pass line of 1.5). The shadow can't simply be a blurred
+  copy of the matter.
+- The one-in-nineteen share: 5.26% vs Planck's 4.93% ± 0.09% (~3.9σ). The implied H0 (~65.2) is ~3.7σ
+  below Planck.
+- The leak ratio: 3.2–3.7σ from Planck.
+- Dark energy: data favour w0 > −1 at ~99.6–99.9%, but the specific unwinding curve was neither confirmed
+  nor ruled out. Head-to-head: on evidence, the free unwinding curve trails ΛCDM weakly to moderately
+  (ln B −2.1 to −2.7; −0.7 to −1.5 with a narrower prior), about where the mainstream w0wa model sits.
+  With one-in-nineteen imposed it is strongly disfavoured (ln B −6.9 to −8.5).
+- Regional H0 (T6): no variation across 9 sky regions. The "local accent" idea should be dropped.
+- NGC 1052-DF2: allowed, but only through the same wide blur that failed the rotation curves.
+- Colliding-cluster lag: untestable with current data (too few clusters with complete measurements).
+(Detail: MULTIVERSE_FOLLOWUP_SOURCE_CATALOGUE.txt, Parts 1 and 4; paper v5.)
+
+==========================================================================================
+2. THE TARGETS: what any v2 must reproduce (established measurements, Tier 1)
+==========================================================================================
+Each target gets its source and value verified before design work uses it.
+ T-a  COSMIC SHARES: ordinary matter ~4.93%, dark matter ~26.5%, dark energy ~68.5% (Planck 2018).
+      Dark-to-ordinary ratio 5.36 ± 0.07.
+ T-b  THE RATIO HOLDS OVER COSMIC TIME: the same dark-to-ordinary ratio from the CMB era to today, with
+      dark matter cold and pressureless early (CMB acoustic peaks, structure formation).
+ T-c  GALAXIES: the radial acceleration relation. Observed acceleration tracks the visible matter's
+      acceleration, with a characteristic scale near 1.2 × 10⁻¹⁰ m/s². Also the baryonic Tully–Fisher
+      relation (visible mass scales with rotation speed to the 4th power). V1 failed here; THIS IS THE
+      FIRST TARGET TO DESIGN AROUND.
+ T-d  CLUSTERS: the Bullet Cluster's mass sits away from its hot gas, and clusters need more unseen mass
+      than acceleration-based rules alone supply.
+ T-e  GALAXIES WITH LITTLE DARK MATTER EXIST (DF2, DF4), without breaking T-c for ordinary galaxies.
+ T-f  DARK ENERGY: current data lean toward weakening (w0 > −1), but evidence doesn't yet favour any
+      extension over a constant.
+ T-g  NO REGIONAL VARIATION IN THE EXPANSION RATE across the sky; the Hubble tension (local ~73 vs early
+      ~67.4) remains real and unexplained.
+ T-h  IF V2 CHANGES HOW GRAVITY WORKS: gravitational waves travel at the speed of light to about one part
+      in 10¹⁵ (GW170817 with its light flash).
+
+==========================================================================================
+3. FENCED-OFF TEST DATA · FENCED LIST v1 (chosen by Gregory, 2026-10-31; hashed and stamped)
+==========================================================================================
+V1 already used Planck, DESI DR2, Pantheon+, DES-Dovekie, SPARC, the 16-merger cluster set and the T6
+supernova sample. All of that is now DESIGN data for v2. The following are FENCED: nobody analyzes them, or
+reads their results for v2 design purposes, until v2 is locked. The exact list is in
+MULTIVERSE_V2_FENCED_DATA_v1.txt, whose SHA-256 is in MULTIVERSE_V2_FENCE_v1.sha256, stamped with
+OpenTimestamps.
+ F1  Weak-lensing radial acceleration relation from KiDS-1000 (Brouwer et al. 2021, A&A 650, A113,
+     arXiv:2106.11677), plus any later KiDS/lensing extensions of the same measurement.
+ F2  Rotation curves from outside SPARC, with every SPARC galaxy removed: the LITTLE THINGS dwarf sample
+     and MeerKAT MHONGOOSE mass models (plus later releases of either).
+ F3  Euclid's first cosmology results (official results expected mid-2027 at the earliest).
+ F4  The next DESI release after DR2, and new CMB results such as from the Simons Observatory.
+HONEST LIMIT: F1 and F2 are already published, so their headline results may be in the training data of
+the AI models doing the design work. The design team commits not to analyze them, but can't promise it has
+never heard of them. F3 and F4 are the fully clean test.
+RULE: fencing is logged and stamped. A fenced dataset may be used only in Phase D/E, under v2's locked
+pre-registration.
+
+==========================================================================================
+4. DESIGN RULES
+==========================================================================================
+ R1  KNOB BUDGET: list every free number. Predictions must outnumber knobs. Example: the three shares give
+     only two independent numbers (they sum to 1), so a two-knob explanation of the shares predicts
+     nothing.
+ R2  DERIVE, DON'T FIT: a non-integer count (e.g. an effective ~20.3 strings from fray weight) is only
+     science if it's calculated from the mechanism, the way the effective number of neutrino species
+     3.044 is calculated, not chosen to match.
+ R3  EVERY NEW MECHANISM MUST LEAVE A NEW FINGERPRINT: something measurable beyond the data it was built
+     to explain (a scale dependence, an early-time difference, a galaxy-level signature).
+ R4  LABEL EVERYTHING: design-phase fits are EXPLORATORY. The tier system applies: established, published
+     speculation, the model.
+ R5  NO RESCUE BY NUMEROLOGY: a number chosen after seeing the data (e.g. 1/20 because Planck says ~1/20.3)
+     is a new hypothesis, never evidence.
+ R6  SAME STANDARD AS V1 FOR THE TEST: lock, hash and stamp; two model families; blind rebuild; held-out
+     data; injection tests.
+
+==========================================================================================
+5. PLAN
+==========================================================================================
+ Phase A · FENCE THE TEST DATA (section 3): DONE 2026-10-31 (fenced list v1, hashed and stamped).
+ Phase B · DESIGN WORK (exploratory, on design data only):
+   B1  The galaxy problem first (T-c, T-e): what must the shadow do so it tracks acceleration, not just a
+       blur of matter? Candidate directions from the v1 analysis: an acceleration-dependent channel with
+       a crossover scale; contact-geometry weighting of the strands.
+   B2  The shares (T-a, T-b), within the knob budget: frays as fractional weight, but derived (R2), not
+       fitted.
+   B3  Dark energy (T-f): the unwinding, possibly with the transfer coupling flagged as exploratory in v1.
+   B4  Consistency checks: clusters (T-d), gravitational-wave speed (T-h), no regional H0 (T-g).
+ Phase C · WRITE V2 DOWN: equations, every assumption, and the knob count, reviewed cold before locking.
+ Phase D · PRE-REGISTER AND LOCK: tests, thresholds and pass/fail rules on the fenced-off data; hash and
+   stamp.
+ Phase E · TEST: same pipeline standard as v1.
+
+WHO DOES WHAT (cost-aware)
+- Design math and exploratory fits: Argon on Gregory's Google quota (cheap), or the planning chat for
+  small calculations. The planning chat checks everything from files.
+- Blind rebuild of the v2 tests: a different model family, as in v1.
+
+TIMING: after v1 is wrapped (paper with the head-to-head and Phase 3, public release, documentary and
+follow-up). Phase A can be done early, since it only needs a decision and a stamp.

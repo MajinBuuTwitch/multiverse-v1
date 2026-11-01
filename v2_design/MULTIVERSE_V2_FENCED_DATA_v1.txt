@@ -1,0 +1,23 @@
+MULTIVERSE v2 · FENCED DATA LIST v1
+Chosen by Gregory Mandarano, 2026-10-31. Recorded by the planning chat (Claude). Companion to
+MULTIVERSE_V2_DESIGN_CHARTER.txt.
+
+PURPOSE
+These datasets are reserved to TEST version 2 of the Mandarano Model. They must not be analyzed, and their
+results must not be read for design purposes, until v2's equations and pre-registration are locked
+(charter Phases D/E). Everything v1 used (Planck 2018 / Chen+19 compressed CMB, DESI DR2 BAO, Pantheon+,
+DES-Dovekie, SPARC, the 16-merger cluster set, the T6 supernova sample) is DESIGN data for v2.
+
+FENCED
+F1  Weak-lensing radial acceleration relation from KiDS-1000: Brouwer et al. 2021, A&A 650, A113
+    (arXiv:2106.11677), and any later KiDS or other galaxy-galaxy-lensing extension of the same
+    measurement.
+F2  Rotation curves and mass models from outside SPARC, with every SPARC galaxy removed: the LITTLE THINGS
+    dwarf sample (Oh et al. 2015) and MeerKAT MHONGOOSE mass models, plus later releases of either.
+F3  Euclid's first cosmology results (DR1 cosmology products; expected mid-2027 at the earliest).
+F4  The next DESI data release after DR2, and new CMB results such as from the Simons Observatory.
+
+HONEST LIMIT
+F1 and F2 are published, so their headline results may be in the training data of the AI models doing the
+design work. The design team commits not to analyze them or consult them during design, but cannot promise
+it has never heard of them. F3 and F4 did not exist when this list was stamped.

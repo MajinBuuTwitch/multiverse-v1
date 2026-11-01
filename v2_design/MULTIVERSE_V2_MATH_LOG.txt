@@ -1,0 +1,141 @@
+MULTIVERSE v2 · MATH LOG (companion to the design log, for the follow-up video)
+Planning chat (Claude Opus 5.5), 2026-10-31. Collects every equation and number discussed while designing the v2
+dark-energy pillar, in teaching order. NOT a frozen record: MULTIVERSE_V2_DESIGN_LOG.txt (Entries 1–28, freeze
+DE-F1, manifest 6c1a41ee…) is authoritative. Where this file and the log differ, the log wins.
+Credit key: [G] Gregory Mandarano · [Gem] Gemini · [C] Claude Opus 5.5 (planner) · [Std] standard physics.
+Tier key (for the video): T1 established · T2 published speculation · MODEL v2 untested proposal.
+No model output has been computed yet. Every number below is either standard cosmology, v1's own frozen fits, or
+a property of a published curve. The shape check (Entries 21–22) has not run.
+
+==========================================================================================
+1. THE STANDARD MACHINERY (T1) [Std]
+==========================================================================================
+Expansion rate (Friedmann):        H² = (8πG/3)(ρ_m + ρ_r + ρ_de)          E(a) ≡ H(a)/H_0
+Acceleration:                      ä/a = −(4πG/3) Σ (ρ + 3p)
+Each ingredient's bookkeeping:     ρ̇ + 3H(1 + w)ρ = 0,  w ≡ p/ρ,  so ρ ∝ a^−3(1+w)
+  matter w = 0 (ρ ∝ a^−3) · radiation w = 1/3 (ρ ∝ a^−4) · cosmological constant w = −1 (constant)
+  w < −1 ("phantom"): density GROWS as space expands · w > −1: density falls.
+A density that rises then falls must cross w = −1 exactly at its peak.
+
+Key epochs (ΛCDM-like, Ω_m = 0.31) [C, Gem]:
+  acceleration begins (q = 0, ä = 0):       z ≈ 0.65  (~6 billion years ago)
+  dark energy overtakes matter:             z ≈ 0.3   (~3.5 billion years ago)
+  expansion rate at cosmic noon (z ≈ 2):    about 3 × today's
+  dark energy's share of everything at z = 2.33: about 6% (so data barely see dark energy at cosmic noon)
+
+Two horizons [C correction of Gem]:
+  comoving Hubble radius 1/(aH): grows while expansion slows, SHRINKS once it accelerates (flips at z ≈ 0.65)
+  comoving event horizon r_eh(a) = ∫_a^∞ c da' / (a'² H(a')): shrinks at ALL times; the true "can ever be reached"
+  boundary, but it depends on the whole future.
+
+Inertia (the lag) [G idea; Std math]: the expansion rate behaves like a velocity. When the net force reverses, the
+expansion slows first, stops (H = 0), then reverses: Chapter 1's thrown ball.
+
+Negative energy and the crunch [Std]: in a flat universe, positive dark energy accelerates; zero leaves it coasting
+forever; negative dark energy (with p = −ρ it pulls inward) can stop and reverse the expansion. Turnaround when
+ρ_m + ρ_r + ρ_de = 0, i.e. negative dark energy cancels matter.
+
+Time dilation (T1) [C]: distant supernovae and quasars run in slow motion by exactly (1 + z) (DES 2024 out to z ~ 1,
+arXiv:2406.05050). A clock-rate effect tied to dark energy (design log Entry 7) would show as a drift from (1 + z).
+
+==========================================================================================
+2. WHERE v1 STOOD (v1 frozen results)
+==========================================================================================
+v1 Law 1:     w(a) = −1 + γ_u / E(a)       (never below −1; one knob)
+  w_0 = −1 + γ_u;  w_a = −(3/2) γ_u [Ω_m + γ_u (1 − Ω_m)]   [Gem, verified C]
+  fitted γ_u ≈ 0.043 → w_0 ≈ −0.957, w_a ≈ −0.02 (about 25 × shallower than the free CPL fit)
+CPL (standard 2-number curve): w(a) = w_0 + w_a (1 − a)
+  v1 fits: Pantheon+ (−0.854, −0.51); DES-Dovekie (−0.825, −0.62)
+  crosses w = −1 where 1 − a = (1 + w_0)/(−w_a): z ≈ 0.40 / 0.39
+  density history: ρ_de(z)/ρ_de(0) = a^−3(1+w_0+w_a) · exp[−3 w_a (1 − a)]   [C]
+     z:          0.2     0.42    0.7     1.0     2.0
+     Pantheon+  1.057   1.072   1.052   1.008   0.836
+     DES        1.069   1.085   1.059   1.005   0.797
+  → a gentle bump, peak ~7–9% above today near z ≈ 0.4. The z = 2 values are mostly CPL's forced shape
+    extrapolating (data barely see dark energy there).
+Head-to-head (ln B vs ΛCDM, wide prior): Law 1 −2.1 to −2.7; with Ω_b = 1/19 imposed −6.9 to −8.5; CPL −1.0 to
+−2.7. Occam lesson: an extra knob must buy several units of χ² to pay for itself.
+
+==========================================================================================
+3. THE ROAD TO v2 (what was tried, and why it changed)
+==========================================================================================
+3a. Instantaneous form (Entry 5) [G idea; C/Gem form]:  ρ_de ∝ I(t) − I_0
+    I = rate of interactions that matter, I_0 = the stability baseline (negative ⇔ fewer interactions than a
+    stable timeline needs).
+    FAILED on amplitude [C]: star formation fell ~9× since noon; no positive I_0 turns that into an ~8% bump.
+3b. Raw interaction counts fail [C]: before recombination (~380,000 years) photons scattered constantly; the
+    biggest drop in interactions in history happened then, which would make early dark energy enormous.
+3c. Holographic dark energy (Li 2004, T2) [Gem cousin; C check]: ρ_de ∝ R_h^−2, w = −1/3 − (2/3)√Ω_de / c.
+    w falls over time (w_a > 0), the OPPOSITE of the DESI hint. Cousin in mechanism, not in result.
+3d. Energy budget [C]: all starlight ever emitted ≈ 4 × 10^−6 of the critical density (~6 × 10^−6 of dark
+    energy). Starlight cannot pay for dark energy; the energy must come from the dark sector (frays = dark matter).
+3e. Rejected collapse rule U2 [Gem proposal; G rejected]: deepening floor ρ_coh(a) = −Λ_coh (a_turn/a)^k after
+    turnaround (behaves like w = k/3 − 1). Rejected because k could never be tested.
+
+==========================================================================================
+4. THE v2 DARK-ENERGY MODEL AS FROZEN (DE-F1) · MODEL v2
+==========================================================================================
+4a. The tension stock (the bathtub) [G stock idea; Gem equations; C checks]
+    dρ_T/dt = −3H (γ_u/E) ρ_T + Q(t)        and since H/E = H_0:   dρ_T/dt = −3 H_0 γ_u ρ_T + Q(t)
+    Inflow Q = pumping by interactions that produce frays. Outflow = v1's unwinding, a constant rate in cosmic time.
+    The stock rises while inflow beats outflow, peaks when they balance, falls after.
+4b. Dark energy = tension minus the cohesion floor [G; C form]
+    ρ_de = ρ_T − Λ_coh           (Λ_coh > 0: the rope's inward counter-twist; makes negative dark energy possible)
+4c. Effective equation of state [Gem form; C restated with the floor]
+    ρ̇_de = ρ̇_T = −3H(1 + w_eff) ρ_de   ⇒   1 + w_eff = (3 H_0 γ_u ρ_T − Q) / (3 H ρ_de)
+    w_eff < −1 while the stock grows; w_eff = −1 at the peak (Q = 3 H_0 γ_u ρ_T); w_eff > −1 after.
+    w_eff formally blows up where ρ_de passes through zero (a fingerprint of the sign change).
+4d. The pump [G: fray production + Transaction Starvation; Gem: term coined, τ integral; C checks]
+    Q(t) = κ · S(a) · P(t)
+    S(a) = ψ(z)/ψ(0), Madau & Dickinson (2014):  ψ(z) = 0.015 (1+z)^2.7 / {1 + [(1+z)/2.9]^5.6} M_sun/yr/Mpc³
+      peak z = 1.86, peak/today = 8.9. Future (1 + z = 1/a): S = 0.335 (a = 1.5), 0.154 (a = 2), 0.024 (a = 4)
+      [extrapolation of an empirical fit; flagged].
+    P(t) = odds that light emitted now is ever answered = 1 − e^−τ_f ≈ τ_f (the universe is transparent: τ_f ≪ 1,
+      so the normalization folds into κ)
+      τ_f(t) ∝ ∫ n_abs σ c dt' along the blade's remaining FORWARD path, from t to t_turn; n_abs ∝ a^−3.
+      During expansion: τ_f(a) ∝ ∫_a^{a_turn} a'^−4 / E(a') da'.   P(t) = 0 for t ≥ t_turn.
+      Shape for ΛCDM-like expansion (to a = ∞), τ_f(z)/τ_f(0): 21.9 (z 3), 12.9 (z 2), 9.0 (z 1.5), 5.6 (z 1),
+      3.7 (z 0.67), 2.65 (z 0.45), 1.6 (z 0.2). Log-slope −1.9 (z 2) → −2.75 (today): a smooth squeeze, no cliff.
+    Which interactions count: ALL that matter [G]; starvation is a minor channel [G]; the main shape comes from the
+    activity history S(a).
+4e. Paying for it: dark-matter exchange [C suggestion; Gem equations; G: mixture driven by fray production]
+    ρ̇_dm + 3H ρ_dm = −Q          ρ̇_T + 3H_0 γ_u ρ_T = +Q
+    Prediction beyond w(z): dark matter does not dilute exactly as a^−3 (structure growth; fenced KiDS lensing).
+4f. The horizon and the wall [G: event horizon; G: reversal; C: integral to turnaround]
+    r_eh(a) = ∫_a^{a_turn} c da' / (a'² H(a'))      (finite; the integrand near a_turn is integrable)
+    Answers count only while the blade moves forward; the future ends at turnaround (H = 0).
+    Because P depends on the future and the future on ρ_de: solve as one loop (guess H(a) → find a_turn → P → ρ_de
+    → new H(a), repeat until the change < 10^−8).
+4g. The two lags and the dates [G: lag; Gem: two dates; C: sequence]
+    Lag 1 (bathtub, not inertia): acceleration begins (z ≈ 0.65) before the tension peaks (z ≈ 0.4 in v1's fits).
+    Lag 2 (true inertia): dark energy reaches zero at t_zero, the universe coasts outward against the brakes,
+    expansion stops at t_turn (ρ_de = −ρ_m − ρ_r). Δt_lag = t_turn − t_zero. Both dates are model outputs.
+4h. The collapse: U1, unopposed floor [G choice; Gem/C]
+    After t_turn: pump zero, tension drains at the constant rate 3 H_0 γ_u (timescale 1/(3 H_0 γ_u): ~110 billion
+    years for γ_u ≈ 0.043, so the tension need not be gone), dark energy heads toward −Λ_coh, matter and the floor
+    pull inward together, densities concentrate ("Hubble anti-friction", T2 term). The blade unmakes the wake (not
+    a mirror replay). Collapse duration is an output, not a choice.
+4i. The start of the cycle: three options, chosen by rule [G rule; Gem cascade; C spec]
+    OPTION 3  T_init = Λ_coh  → dark energy starts at 0 ("born on the knife edge")        knobs κ, γ_u, Λ_coh
+    OPTION 1  T_init = 0      → dark energy starts at −Λ_coh ("the stars made dark energy") knobs κ, γ_u, Λ_coh
+    OPTION 2  T_init free     → "starts high", the Big Bang winds the rope                 + T_init
+    Early on the drain is effectively frozen (3H_0γ_u ≪ H), so the starting tension persists for billions of years.
+    Selection (fewest knobs): Option 3 if viable, else 1, else 2, else the design fails. κ is solved from today's
+    dark-energy density, leaving two free knobs (three for Option 2).
+4j. The shape check (stated before any run) [G protocol; C spec; G thresholds]
+    Grid: γ_u ∈ [0, 2], Ω_coh ∈ [0, 3], Option 2 Ω_Tinit ∈ [0, Ω_coh + 3]; Ω_m,0 = 0.315, h = 0.674; start a = 10^−3.
+    V1 positive today, exactly one w = −1 crossing at 0.2 ≤ z ≤ 0.8 · V2 peak/today ≤ 1.15 · V3 a turnaround exists
+    · V4 dark matter transferred since recombination < 5%. None pass → the design fails on design data.
+    Reported regardless: w(z) over z ≈ 0.5–1.5 (the part the knobs don't control), t_zero, t_turn, collapse time.
+
+==========================================================================================
+5. REAL-PHYSICS PAIRINGS AND SOURCES (verify wording before scripting)
+==========================================================================================
+Decoherence (T1); Zurek, quantum Darwinism (T2) · Wheeler, participatory universe (T2) · Einstein–Pais "is the moon
+there when nobody looks" (history; primary-source quote after the draft) · Bousso, Harnik, Kribs & Perez 2007,
+causal entropic principle, arXiv:hep-th/0702115 (T2) · Li 2004 holographic dark energy (T2) · Wheeler–Feynman
+absorber theory; Cramer's transactional interpretation (T2); Partridge 1973 null result (T1 measurement) · Gold's
+reversing arrow; Hawking 1985; Page; Laflamme (T2, historical) · Steinhardt & Turok cyclic universe; Penrose CCC
+(T2); Tolman's entropy problem · Madau & Dickinson 2014 (T1 data compilation) · DES 2024 supernova time dilation
+(T1) · DESI DR2 weakening hint (T1 measurement, hint unconfirmed) · interacting dark energy and negative
+cosmological constant fits since DESI (T2; sources to fix).

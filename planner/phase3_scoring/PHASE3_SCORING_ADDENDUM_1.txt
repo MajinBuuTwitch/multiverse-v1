@@ -1,0 +1,26 @@
+PHASE 3 SCORING · ADDENDUM 1 · 2026-11-01 · Claude Opus 5.5
+Independent re-score by a fresh Gemini session (D:\Multiverse Review; six frozen files only; report sha256 cf57d384…).
+The original report (PHASE3_SCORING_REPORT.txt, stamped in PHASE3_SCORING_v1.sha256) is left unchanged.
+
+CONFIRMED: all six input hashes, including PHASE3_ANALYSIS_PLAN.md = 8476aeb0… (closes the one hash I had not checked
+locally). Every S1/S2 count in the original report reproduced; G3 medians identical; S3 NOT MET under the locked reading.
+
+REFINED (accepted into paper §8):
+ F1  Narrowed. Pooled over all 15 COSMO universes, the CPL and T2-A chains are calibrated (Ω_bc standardized-residual SD
+     1.0–1.16; null-centred Z_T2-A SD 0.90–0.93). The excess scatter is confined to C2's Law 1 Ω_bc.
+ F6  Corrected. U-JNXP's INCONCLUSIVE came from the calibrator draw PLUS a downward GLS bias in the all-sky mean
+     (σ_H0,i ∝ H0,i, so low-H0 regions get more weight: −0.70 km/s/Mpc in H3, −0.25 in H2, ~0 under the null).
+ New σ_ref: only the bootstrap matches realization scatter; posterior_sum overstates ~4×, posterior_total understates 1.4–1.7×.
+ New Reading B vs A in the mocks: deterministic shift (Z_T2-A −0.29σ, 100ω_b +0.011), the G9-b difference seen in mocks.
+
+NOT ADOPTED:
+ - "Matched-model S1" under which S3 is met: chosen after seeing results, and for C2 the matched model is Law 1, not CPL.
+ - Gaussian mean ± 1.96σ for the γ_u criterion: the plan registers [p2.5, p97.5].
+ - Its attribution of the C2 Ω_bc coverage misses to U-LMB5 and U-BKI0: U-BKI0 contains the truth in all four runs.
+   The misses are U-LMB5 in every run plus U-J91F (Pantheon+) or U-YNED (DES-Dovekie).
+
+OPEN, needs the rebuild's cosmo.py (not in either reviewer's files): the re-score infers that the generator leaves the
+0.06 eV neutrino density (ω_ν = 0.000644) out of H(a) inside the r_s(z*) integral while including it in z* and D_M(z*),
+shifting l_A by −0.505 (−1.9σ). Possible that this is a correct convention rather than a bug: at z* ≈ 1090 a 0.06 eV
+neutrino is still relativistic, so it does not belong in the early-time matter density. To be checked read-only by Code.
+If it is an inconsistency, it sits in the shared (a5) forward model and also touches the rebuild's real-data runs.

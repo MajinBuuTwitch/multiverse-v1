@@ -1,0 +1,129 @@
+MULTIVERSE v1 · PHASE 3 INJECTION TESTS · SCORING REPORT
+Scored by Claude Opus 5.5 (claude-opus-5-5), 2026-11-01, after the answer key was unsealed.
+Inputs (all hash-verified before scoring):
+  p3_results.json          sha256 a1e667f5…  (matches PHASE3_RESULTS_v1.sha256 8d4a38df…, Bitcoin 974047/974048)
+  ANSWER_KEY.json, spec    match PHASE3_INJECTION_v1.sha256 ca63ae04… (Bitcoin 973967/974019)
+  Analysis plan            PHASE3_ANALYSIS_PLAN.sha256 4eab04e3… (Bitcoin 973969/973973); plan text read from Drive
+Order of events: injection sealed (973967) → plan stamped (973969) → results frozen (974047). One pre-run deviation (P3-C1, 0 runs affected).
+Scoring code: /home/claude/p3score/score.py, detail.py, calib.py (read-only over the frozen files). Nothing was rerun or refit.
+
+Interval used for S1: the plan's registered 95% interval, [p2.5, p97.5]. For σ_ref the plan names no primary method, so all three are reported.
+For regional H0, the total σ (including the calibrator) is used; the Hubble-flow-only σ is shown for reference.
+
+==========================================================================================
+BOTTOM LINE
+==========================================================================================
+1. T5-A, the pillar that falsified v1, is fully validated. The pipeline recovers a planted kernel width to 0.1%, passes the
+   model 10 of 10 times when the model is true, and fails a universe built on the real galaxies' law (the RAR) 5 of 5 times,
+   at median χ²_red 47–56 against the real data's ~45. The real failure looks exactly like what the pipeline does when
+   galaxies follow the standard empirical law.
+2. Every registered verdict (S2) comes out right in at least 4 of 5 universes for every truth except three cases, and
+   two of those three are flaws in the spec I wrote, not in the pipeline.
+3. S3, as locked, is NOT met. S1 has misses on two decisive pillars (T1-L1 and T2-A). The one miss that looks genuine:
+   in the model-true universes, Ω_bc scatters about 1.8–1.9× wider than its error bar says.
+4. S4: no real-data verdict changes. The falsification rests on T5-A, the validated pillar. T2-A's real-data miss
+   (−3.2 to −3.7σ) matches the Planck-ΛCDM mocks (mean −3.3σ), not the model-true ones (mean −0.9σ, worst −2.4σ).
+
+==========================================================================================
+SCORECARD
+==========================================================================================
+S2 · EXPECTED VERDICTS (≥4 of 5)                          Reading B (frozen)     Reading A (a5)
+ C1  T2-A FAIL / T2-N1 FAIL / T2-N2 FAIL                   5/5 · 5/5 · 5/5        5/5 · 5/5 · 5/5
+ C1  T1-L1 not PASS                                        5/5                    5/5
+ C1  γ_u 95% interval includes 0                           0/5  MISS (F2)         0/5  MISS (F2)
+ C2  T2-A PASS                                             4/5                    4/5
+ C2  T2-N1 PASS / T2-N2 PASS / T1-L1 not FAIL              5/5 · 5/5 · 5/5        5/5 · 5/5 · 5/5
+ C2  T1-Sign PASS                                          4/5                    3/5  MISS (F4)
+ C3  T1-L1 FAIL / T1-Sign PASS / T2-A FAIL                 5/5 · 5/5 · 5/5        5/5 · 5/5 · 5/5
+ G1  T5-A PASS                                             5/5
+ G2  T5-A PASS                                             5/5
+ G3  T5-A FAIL                                             5/5   median χ²_red 51.0, 51.7, 47.0, 52.2, 56.1 (real ~45)
+ H1  T6 FAIL                                               3/5  MISS (F3)   other 2 INCONCLUSIVE, no false PASS
+ H3  T6 PASS                                               4/5              1 INCONCLUSIVE (Z_all-sky 2.98)
+ H2  power at ±2 km/s/Mpc (no criterion)                   4/5 PASS; all 5 had p_het ≤ 0.013, so none would FAIL
+
+S1 · PARAMETER RECOVERY (truth in 95% in ≥4/5 AND |mean bias| < mean σ)
+ C2 Law 1 (model true):  h, 100ω_b, γ_u PASS in all 4 runs (2 readings × 2 SN sets)
+                         Ω_bc MISS in all 4: coverage 3/5, bias only 0.02–0.86σ (F1)
+ C1 Law 1 (γ_u truth 0 on the prior edge): Ω_bc PASS ×4; γ_u MISS ×4 (0/5, bias 1.45–1.58σ);
+                         h MISS ×3 (1.03–1.32σ); 100ω_b MISS ×4 (1.15–1.31σ)  (F2)
+ C1 CPL:                 w0, wa PASS except Reading B DES-Dovekie w0 (4/5, bias 1.05σ) (F5)
+ C3 CPL:                 w0, wa PASS ×4, bias ≤ 0.17σ
+ G1 σ_ref = 9.0:         recovered 8.976–9.013; PASS under all 3 interval methods
+ G2 σ_ref = 3.0:         recovered 2.991–3.003; PASS under all 3 interval methods
+ H regional H0:          26 of 27 region×truth cells PASS; H3 region 0 MISS (3/5, bias 0.9 vs σ 1.15) (F6)
+ Supplementary (not in S1's list, shown because T2-A uses it): T2-A's own CPL chain Ω_bc PASS for C1 ×4,
+                         C2 ×3 (Reading B DES: 3/5, 1.03σ), C3 ×3 (Reading B PP: 1.09σ).
+
+S3 · DECISIVE PILLARS
+ T5-A (G1, G2, G3)  S1 PASS · S2 PASS        → VALIDATED
+ T1-L1 (C2, C3)     S2 PASS 5/5 each · S1 MISS on C2 Ω_bc (F1)              → not validated as locked
+ T2-A (C1, C2)      S2 PASS (5/5, 4/5) · S1 MISS on C2 Ω_bc (F1), C1 Law 1 edge (F2) → not validated as locked
+ S3 as locked: NOT MET.
+
+==========================================================================================
+FINDINGS (every miss, reported, none patched)
+==========================================================================================
+F1 · Ω_bc error bar too small in the model-true universes (the one that looks real)
+  C2's Law 1 Ω_bc means are centred on the truth (bias −0.0009 to −0.0043) but scatter 1.8–1.9× wider than the quoted
+  posterior σ (χ² of 14.7 and 16.9 for 5 realizations; p ≈ 0.01 and 0.005). Same universes, so the four runs are not
+  independent: this is one flag at about p ≈ 0.01, among roughly 25 checks, so chance can't be ruled out. C1 and C3
+  show no such excess (ratios 0.5–1.0). In T2-A's own chain the excess shrinks to 1.25–1.36×. Cause not identified;
+  five draws can't separate candidates. A v2 injection run should use more realizations per truth.
+
+F1b · T2-A leans slightly toward FAIL when the model is true
+  C2's T2-A tensions average −0.89σ (Reading B) and −0.61σ (Reading A), sd 1.02, about 2 standard errors below zero.
+  This is the same direction as the real-data FAIL, so it is disclosed prominently. Its size does not change the
+  verdict: real runs sit at −3.2 to −3.7σ, 2.3–2.8 sd beyond the model-true distribution even using its own widened
+  scatter; the Planck-ΛCDM mocks (C1) give −3.29σ (B) and −2.97σ (A), sd 0.52, which is where the real data sit.
+
+F2 · Spec flaw (mine): a truth on the prior edge
+  The registered prior is γ_u ∈ [0, 2] and the 95% interval is [p2.5, p97.5], so the lower edge is always above zero
+  (observed 0.0007–0.0047). "γ_u's 95% interval includes 0" could never be met: 0/5 by construction. The same edge
+  pushes γ_u's mean positive (+0.02 to +0.05) and, through degeneracy, pulls h down and 100ω_b up by ~1.0–1.3σ.
+  Not a pipeline fault. Non-patch context: every C1 γ_u posterior is within ~1.9σ of zero and C1's T1-L1 never PASSes.
+
+F3 · Spec flaw (mine): H1 was a coin flip
+  T6 FAILs when p_het > 0.3173. With no real variation, p_het is uniform, so FAIL happens 68% of the time by
+  construction and "≥4 of 5 FAIL" happens only ~49% of the time for a perfect pipeline. Observed p_het 0.74, 0.24,
+  0.30, 0.71, 0.89 (consistent with uniform). The two non-FAILs were INCONCLUSIVE: zero false detections.
+
+F4 · T1-Sign power at w0 = −0.90
+  Reading A gave 3/5 (DES-Dovekie P(w0 > −1) of 0.90–0.95, just under the 0.95 line). Reading B 4/5. The test sits
+  at its power edge for a 10% departure. Real data reached 99.6–99.9%, far beyond. Related: ΛCDM mocks never
+  produced a false T1-Sign PASS (all 10 INCONCLUSIVE), though they reached P(w0 > −1) of 0.35–0.93.
+
+F5 · CPL projection lean on a ΛCDM sky
+  For a ΛCDM truth, CPL posterior means land near w0 ≈ −0.95, wa ≈ −0.18 (about 0.9σ), toward DESI's quadrant: a
+  prior-volume effect (wa ≥ −3, w0 + wa < 0). One cell crosses the line (1.05σ). Worth knowing for anyone reading CPL
+  numbers from this pipeline.
+
+F6 · Regional H0
+  One cell misses (H3 region 0). H2/H3 regional values run +0.6 to +0.9 km/s/Mpc high in common, traced to the
+  calibrator draw (mean fitted M_B −19.236 over 15 universes vs truth −19.253, about 1.7 SE): consistent with chance
+  and covered by the total σ. The Hubble-flow-only σ undercovers badly, as expected, because it omits the shared
+  calibrator; the total σ is the right one. The H3 INCONCLUSIVE came from a dim calibrator draw (M_B −19.31) that
+  dropped Z_all-sky to 2.98.
+
+Prediction check (mine, from before scoring): I expected C3 might land INCONCLUSIVE on T1-L1. It FAILed 5/5. Wrong,
+in the pipeline's favour.
+
+==========================================================================================
+WHAT THIS MEANS FOR THE REAL VERDICTS (S4; none change)
+==========================================================================================
+ T5-A FAIL   Fully trusted. Validated in both directions; the RAR universe reproduces the real failure.
+ T2-A FAIL   Trusted as a miss. The real data look like a Planck-ΛCDM universe, not a Law 1 one. Caveats F1, F1b.
+ T1-L1 INC.  Trusted. C2 never FAILs, C3 always FAILs.
+ T1-Sign     The real PASS (Chen reading) is robust: ΛCDM mocks never reached 0.95; real data 0.996–0.999.
+ T6 FAIL     Trusted. ±5 variation is caught every time (p_het ≈ 0); ±2 is caught or flagged in all 5. Real p = 0.348
+             looks like H1.
+
+==========================================================================================
+FOR THE VIDEOS
+==========================================================================================
+ Documentary RS_02 ("They even built forty-five fake universes, just to make sure the tests could tell a real one from
+ a forgery."): STAYS. It is accurate and claims nothing about a perfect score. No ALT take or Studio cut needed.
+ RS_03 (galaxies): unaffected. Galaxy recovery passed everything.
+ Follow-up Beat 10 (PLANT A FAKE): the honest story is "it caught the fake galaxies every time, and it caught three
+ mistakes in our own test design, including two of mine." The locked overall stamp (S3) did not pass, and that line
+ should be said out loud.

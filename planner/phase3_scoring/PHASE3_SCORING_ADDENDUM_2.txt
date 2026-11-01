@@ -1,0 +1,18 @@
+PHASE 3 SCORING · ADDENDUM 2 · 2026-11-01 · Claude Opus 5.5
+Closes the one open item in Addendum 1 (the re-score's neutrino / sound-horizon claim).
+
+CHECK: Claude Code, read-only, on its own rebuild code (D:\Blind_Rebuild\release_checks\neutrino_rs\, manifest
+NEUTRINO_RS_CHECK.sha256 = 8fddf928…, stamped here). No frozen file touched; both frozen manifests still verify.
+
+RESULT: CLAIM DOES NOT HOLD.
+ - The rebuild has one background E²(a), with the 0.06 eV neutrino in exact Fermi–Dirac form (relativistic early,
+   matter-like late), used for r_s(z*), r_d and D_M alike. Only the HS96/EH98 fitting formulas for z* and z_d count
+   ω_ν as matter, and the registered (a5) text defines ω_m that way. The code matches (a2)/(a5) literally.
+ - The as-coded values reproduce the ANSWER_KEY noiseless values (U-YIG4: r_s 144.2763 Mpc, z* 1091.908, l_A 302.0867)
+   to ~1e-10.
+ - Leaving the neutrino out of the r_s integrand would shift r_s by +5.3 Mpc and l_A by about −119σ, not the +0.24 Mpc
+   the re-score estimated. CAMB agrees with the rebuild to 0.007 Mpc (frozen G9-b bug-check).
+ - The re-score's +0.24 Mpc most likely came from its own approximate recomputation (Code suggests a double count of
+   ω_ν). Not verified: one extra variant was blocked by Code's delete-guard hook, logged, not rerun another way.
+ - Phase 3 Reading A is self-consistent: mocks and analysis share the same E²(a).
+No change to Section 8's findings. One sentence added to Section 8 recording the check.

@@ -1,0 +1,1650 @@
+{
+ "spec_sha256": "4b00df423c3738d4c7189ac0a883b72169e9f9a66afca5928a06c230f6c9a7a9",
+ "generated": "2026-10-31T06:25:46-04:00",
+ "master_seed": 4360827355220823428,
+ "M_abs": -19.253,
+ "truths": {
+  "C1": {
+   "family": "COSMO",
+   "label": "LCDM (Planck 2018)",
+   "model": "lcdm",
+   "h": 0.6736,
+   "ombh2": 0.02237,
+   "omch2": 0.12,
+   "Obc": 0.3137721026737606,
+   "Om_tot": 0.31519184934729094,
+   "H0": 67.36,
+   "wb100": 2.237,
+   "Omega_b": 0.049301692328524445,
+   "R_wc_over_wb": 5.364327223960661
+  },
+  "C2": {
+   "family": "COSMO",
+   "label": "MODEL-TRUE Law 1 (gamma_u = 0.10, Omega_b = 1/19, f_leak = 1/6)",
+   "model": "law1",
+   "gam": 0.1,
+   "h": 0.66,
+   "ombh2": 0.022926315789473687,
+   "omch2": 0.11463157894736843,
+   "Obc": 0.3157894736842105,
+   "Om_tot": 0.31726833396799786,
+   "H0": 66.0,
+   "wb100": 2.292631578947369,
+   "Omega_b": 0.052631578947368425,
+   "R_wc_over_wb": 5.0,
+   "w0_fit": -0.9,
+   "wa_tangent": -0.05783122508567972
+  },
+  "C3": {
+   "family": "COSMO",
+   "label": "off-curve CPL (w0 = -0.75, wa = -1.0), matter as C1",
+   "model": "cpl",
+   "w0": -0.75,
+   "wa": -1.0,
+   "h": 0.6736,
+   "ombh2": 0.02237,
+   "omch2": 0.12,
+   "Obc": 0.3137721026737606,
+   "Om_tot": 0.31519184934729094,
+   "H0": 67.36,
+   "wb100": 2.237,
+   "Omega_b": 0.049301692328524445,
+   "R_wc_over_wb": 5.364327223960661
+  },
+  "G1": {
+   "family": "GALAXY",
+   "label": "MODEL-TRUE wide shadow kernel",
+   "kind": "kernel",
+   "sigma_ref_kpc": 9.0,
+   "R_shadow": 5.0,
+   "f_leak": 0.16666666666666666
+  },
+  "G2": {
+   "family": "GALAXY",
+   "label": "MODEL-TRUE narrow shadow kernel",
+   "kind": "kernel",
+   "sigma_ref_kpc": 3.0,
+   "R_shadow": 5.0,
+   "f_leak": 0.16666666666666666
+  },
+  "G3": {
+   "family": "GALAXY",
+   "label": "RAR-TRUE",
+   "kind": "rar",
+   "gdagger_ms2": 1.2e-10
+  },
+  "H1": {
+   "family": "REGIONAL",
+   "label": "NULL (uniform H0 = 73.0)",
+   "amplitude": 0.0,
+   "H0_mean": 73.0,
+   "Om_tot": 0.31519184934729094,
+   "ombh2": 0.02237
+  },
+  "H2": {
+   "family": "REGIONAL",
+   "label": "SMALL VARIATION +-2",
+   "amplitude": 2.0,
+   "H0_mean": 73.0,
+   "Om_tot": 0.31519184934729094,
+   "ombh2": 0.02237
+  },
+  "H3": {
+   "family": "REGIONAL",
+   "label": "LARGE VARIATION +-5",
+   "amplitude": 5.0,
+   "H0_mean": 73.0,
+   "Om_tot": 0.31519184934729094,
+   "ombh2": 0.02237
+  }
+ },
+ "rd_calibration_factor": 0.9757717043394973,
+ "des_mu_offset": -0.08531476026959971,
+ "universes": [
+  {
+   "universe_id": "U-YIG4",
+   "round": 1,
+   "family": "COSMO",
+   "truth": "C1",
+   "realization_seed": 818155527423375002,
+   "noiseless": {
+    "R": 1.7500300257577246,
+    "l_A": 302.086699042905,
+    "wb100": 2.237,
+    "z_star": 1091.9081107403445,
+    "r_s_zstar": 144.27626950275973,
+    "r_d": 147.1026996805658,
+    "lya_DH": 8.615049658807326,
+    "lya_DM": 39.180296092941084
+   },
+   "references": {
+    "description": "external reference measurements for this universe (Gaussian, registered sigma)",
+    "R_omegac_over_omegab": {
+     "value": 5.3722,
+     "sigma": 0.065
+    },
+    "Omega_b": {
+     "value": 0.050042,
+     "sigma": 0.00086
+    },
+    "100omega_b": {
+     "value": 2.2205,
+     "sigma": 0.015
+    },
+    "H0": {
+     "value": 67.274,
+     "sigma": 0.54
+    },
+    "BBN_100omega_b_prior": {
+     "value": 2.261,
+     "sigma": 0.055
+    }
+   },
+   "des_mu_offset": -0.08531476026959971
+  },
+  {
+   "universe_id": "U-CUIZ",
+   "round": 1,
+   "family": "COSMO",
+   "truth": "C3",
+   "realization_seed": 4511271685895734672,
+   "noiseless": {
+    "R": 1.7506961192443435,
+    "l_A": 302.2016787412519,
+    "wb100": 2.237,
+    "z_star": 1091.9081107403445,
+    "r_s_zstar": 144.276269518628,
+    "r_d": 147.10269970052073,
+    "lya_DH": 8.726051487621067,
+    "lya_DM": 39.06747731393917
+   },
+   "references": {
+    "description": "external reference measurements for this universe (Gaussian, registered sigma)",
+    "R_omegac_over_omegab": {
+     "value": 5.3754,
+     "sigma": 0.065
+    },
+    "Omega_b": {
+     "value": 0.049383,
+     "sigma": 0.00086
+    },
+    "100omega_b": {
+     "value": 2.2358,
+     "sigma": 0.015
+    },
+    "H0": {
+     "value": 67.233,
+     "sigma": 0.54
+    },
+    "BBN_100omega_b_prior": {
+     "value": 2.259,
+     "sigma": 0.055
+    }
+   },
+   "des_mu_offset": -0.08531476026959971
+  },
+  {
+   "universe_id": "U-I9FZ",
+   "round": 1,
+   "family": "GALAXY",
+   "truth": "G2",
+   "realization_seed": 6537370466557623294
+  },
+  {
+   "universe_id": "U-IBCC",
+   "round": 1,
+   "family": "REGIONAL",
+   "truth": "H3",
+   "realization_seed": 3609922383477263747,
+   "H0_regions": {
+    "0": 67.31771894093686,
+    "1": 77.31771894093686,
+    "2": 67.31771894093686,
+    "3": 77.31771894093686,
+    "5": 77.31771894093686,
+    "6": 77.31771894093686,
+    "8": 67.31771894093686,
+    "9": 77.31771894093686,
+    "10": 77.31771894093686
+   },
+   "signs": [
+    -1.0,
+    1.0,
+    -1.0,
+    1.0,
+    1.0,
+    1.0,
+    -1.0,
+    1.0,
+    1.0
+   ],
+   "region_counts_HF": {
+    "0": 66,
+    "1": 52,
+    "2": 69,
+    "3": 46,
+    "5": 20,
+    "6": 16,
+    "8": 77,
+    "9": 103,
+    "10": 42
+   },
+   "region_of_pixel": {
+    "0": 0,
+    "1": 1,
+    "2": 2,
+    "3": 3,
+    "4": 0,
+    "5": 5,
+    "6": 6,
+    "7": 2,
+    "8": 8,
+    "9": 9,
+    "10": 10,
+    "11": null
+   },
+   "background_h": 0.73
+  },
+  {
+   "universe_id": "U-LYTB",
+   "round": 1,
+   "family": "REGIONAL",
+   "truth": "H2",
+   "realization_seed": 3529360162581036115,
+   "H0_regions": {
+    "0": 73.16293279022403,
+    "1": 73.16293279022403,
+    "2": 73.16293279022403,
+    "3": 73.16293279022403,
+    "5": 69.16293279022403,
+    "6": 73.16293279022403,
+    "8": 73.16293279022403,
+    "9": 73.16293279022403,
+    "10": 73.16293279022403
+   },
+   "signs": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    -1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "region_counts_HF": {
+    "0": 66,
+    "1": 52,
+    "2": 69,
+    "3": 46,
+    "5": 20,
+    "6": 16,
+    "8": 77,
+    "9": 103,
+    "10": 42
+   },
+   "region_of_pixel": {
+    "0": 0,
+    "1": 1,
+    "2": 2,
+    "3": 3,
+    "4": 0,
+    "5": 5,
+    "6": 6,
+    "7": 2,
+    "8": 8,
+    "9": 9,
+    "10": 10,
+    "11": null
+   },
+   "background_h": 0.73
+  },
+  {
+   "universe_id": "U-8TVY",
+   "round": 1,
+   "family": "GALAXY",
+   "truth": "G3",
+   "realization_seed": 5770438842355080471
+  },
+  {
+   "universe_id": "U-YNED",
+   "round": 1,
+   "family": "COSMO",
+   "truth": "C2",
+   "realization_seed": 1976536779213200122,
+   "noiseless": {
+    "R": 1.7388214198487275,
+    "l_A": 303.27697502842034,
+    "wb100": 2.292631578947369,
+    "z_star": 1090.7116971230193,
+    "r_s_zstar": 145.25423981923797,
+    "r_d": 147.93204515534833,
+    "lya_DH": 8.65739835161871,
+    "lya_DM": 39.09972595000307
+   },
+   "references": {
+    "description": "external reference measurements for this universe (Gaussian, registered sigma)",
+    "R_omegac_over_omegab": {
+     "value": 5.0595,
+     "sigma": 0.065
+    },
+    "Omega_b": {
+     "value": 0.053079,
+     "sigma": 0.00086
+    },
+    "100omega_b": {
+     "value": 2.2963,
+     "sigma": 0.015
+    },
+    "H0": {
+     "value": 65.204,
+     "sigma": 0.54
+    },
+    "BBN_100omega_b_prior": {
+     "value": 2.2539,
+     "sigma": 0.055
+    }
+   },
+   "des_mu_offset": -0.08531476026959971
+  },
+  {
+   "universe_id": "U-J8TH",
+   "round": 1,
+   "family": "REGIONAL",
+   "truth": "H1",
+   "realization_seed": 7846020571148939706,
+   "H0_regions": {
+    "0": 73.0,
+    "1": 73.0,
+    "2": 73.0,
+    "3": 73.0,
+    "5": 73.0,
+    "6": 73.0,
+    "8": 73.0,
+    "9": 73.0,
+    "10": 73.0
+   },
+   "signs": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "region_counts_HF": {
+    "0": 66,
+    "1": 52,
+    "2": 69,
+    "3": 46,
+    "5": 20,
+    "6": 16,
+    "8": 77,
+    "9": 103,
+    "10": 42
+   },
+   "region_of_pixel": {
+    "0": 0,
+    "1": 1,
+    "2": 2,
+    "3": 3,
+    "4": 0,
+    "5": 5,
+    "6": 6,
+    "7": 2,
+    "8": 8,
+    "9": 9,
+    "10": 10,
+    "11": null
+   },
+   "background_h": 0.73
+  },
+  {
+   "universe_id": "U-UD33",
+   "round": 1,
+   "family": "GALAXY",
+   "truth": "G1",
+   "realization_seed": 3970878682747330686
+  },
+  {
+   "universe_id": "U-LMB5",
+   "round": 2,
+   "family": "COSMO",
+   "truth": "C2",
+   "realization_seed": 5861983917906163486,
+   "noiseless": {
+    "R": 1.7388214198487275,
+    "l_A": 303.27697502842034,
+    "wb100": 2.292631578947369,
+    "z_star": 1090.7116971230193,
+    "r_s_zstar": 145.25423981923797,
+    "r_d": 147.93204515534833,
+    "lya_DH": 8.65739835161871,
+    "lya_DM": 39.09972595000307
+   },
+   "references": {
+    "description": "external reference measurements for this universe (Gaussian, registered sigma)",
+    "R_omegac_over_omegab": {
+     "value": 4.9809,
+     "sigma": 0.065
+    },
+    "Omega_b": {
+     "value": 0.052477,
+     "sigma": 0.00086
+    },
+    "100omega_b": {
+     "value": 2.3042,
+     "sigma": 0.015
+    },
+    "H0": {
+     "value": 65.419,
+     "sigma": 0.54
+    },
+    "BBN_100omega_b_prior": {
+     "value": 2.31,
+     "sigma": 0.055
+    }
+   },
+   "des_mu_offset": -0.08531476026959971
+  },
+  {
+   "universe_id": "U-PAKD",
+   "round": 2,
+   "family": "REGIONAL",
+   "truth": "H2",
+   "realization_seed": 2835419958119273365,
+   "H0_regions": {
+    "0": 75.18329938900203,
+    "1": 75.18329938900203,
+    "2": 75.18329938900203,
+    "3": 71.18329938900203,
+    "5": 75.18329938900203,
+    "6": 75.18329938900203,
+    "8": 71.18329938900203,
+    "9": 71.18329938900203,
+    "10": 71.18329938900203
+   },
+   "signs": [
+    1.0,
+    1.0,
+    1.0,
+    -1.0,
+    1.0,
+    1.0,
+    -1.0,
+    -1.0,
+    -1.0
+   ],
+   "region_counts_HF": {
+    "0": 66,
+    "1": 52,
+    "2": 69,
+    "3": 46,
+    "5": 20,
+    "6": 16,
+    "8": 77,
+    "9": 103,
+    "10": 42
+   },
+   "region_of_pixel": {
+    "0": 0,
+    "1": 1,
+    "2": 2,
+    "3": 3,
+    "4": 0,
+    "5": 5,
+    "6": 6,
+    "7": 2,
+    "8": 8,
+    "9": 9,
+    "10": 10,
+    "11": null
+   },
+   "background_h": 0.73
+  },
+  {
+   "universe_id": "U-TLZU",
+   "round": 2,
+   "family": "GALAXY",
+   "truth": "G1",
+   "realization_seed": 8969550099968502934
+  },
+  {
+   "universe_id": "U-Y2N1",
+   "round": 2,
+   "family": "COSMO",
+   "truth": "C1",
+   "realization_seed": 2396873945669564408,
+   "noiseless": {
+    "R": 1.7500300257577246,
+    "l_A": 302.086699042905,
+    "wb100": 2.237,
+    "z_star": 1091.9081107403445,
+    "r_s_zstar": 144.27626950275973,
+    "r_d": 147.1026996805658,
+    "lya_DH": 8.615049658807326,
+    "lya_DM": 39.180296092941084
+   },
+   "references": {
+    "description": "external reference measurements for this universe (Gaussian, registered sigma)",
+    "R_omegac_over_omegab": {
+     "value": 5.2747,
+     "sigma": 0.065
+    },
+    "Omega_b": {
+     "value": 0.048556,
+     "sigma": 0.00086
+    },
+    "100omega_b": {
+     "value": 2.2358,
+     "sigma": 0.015
+    },
+    "H0": {
+     "value": 67.222,
+     "sigma": 0.54
+    },
+    "BBN_100omega_b_prior": {
+     "value": 2.2599,
+     "sigma": 0.055
+    }
+   },
+   "des_mu_offset": -0.08531476026959971
+  },
+  {
+   "universe_id": "U-8S92",
+   "round": 2,
+   "family": "GALAXY",
+   "truth": "G2",
+   "realization_seed": 4206201686813265472
+  },
+  {
+   "universe_id": "U-J0R7",
+   "round": 2,
+   "family": "GALAXY",
+   "truth": "G3",
+   "realization_seed": 3869100763371642064
+  },
+  {
+   "universe_id": "U-EATJ",
+   "round": 2,
+   "family": "REGIONAL",
+   "truth": "H1",
+   "realization_seed": 8663073659245293084,
+   "H0_regions": {
+    "0": 73.0,
+    "1": 73.0,
+    "2": 73.0,
+    "3": 73.0,
+    "5": 73.0,
+    "6": 73.0,
+    "8": 73.0,
+    "9": 73.0,
+    "10": 73.0
+   },
+   "signs": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "region_counts_HF": {
+    "0": 66,
+    "1": 52,
+    "2": 69,
+    "3": 46,
+    "5": 20,
+    "6": 16,
+    "8": 77,
+    "9": 103,
+    "10": 42
+   },
+   "region_of_pixel": {
+    "0": 0,
+    "1": 1,
+    "2": 2,
+    "3": 3,
+    "4": 0,
+    "5": 5,
+    "6": 6,
+    "7": 2,
+    "8": 8,
+    "9": 9,
+    "10": 10,
+    "11": null
+   },
+   "background_h": 0.73
+  },
+  {
+   "universe_id": "U-44A3",
+   "round": 2,
+   "family": "COSMO",
+   "truth": "C3",
+   "realization_seed": 4897657667989298997,
+   "noiseless": {
+    "R": 1.7506961192443435,
+    "l_A": 302.2016787412519,
+    "wb100": 2.237,
+    "z_star": 1091.9081107403445,
+    "r_s_zstar": 144.276269518628,
+    "r_d": 147.10269970052073,
+    "lya_DH": 8.726051487621067,
+    "lya_DM": 39.06747731393917
+   },
+   "references": {
+    "description": "external reference measurements for this universe (Gaussian, registered sigma)",
+    "R_omegac_over_omegab": {
+     "value": 5.3112,
+     "sigma": 0.065
+    },
+    "Omega_b": {
+     "value": 0.050361,
+     "sigma": 0.00086
+    },
+    "100omega_b": {
+     "value": 2.2315,
+     "sigma": 0.015
+    },
+    "H0": {
+     "value": 67.674,
+     "sigma": 0.54
+    },
+    "BBN_100omega_b_prior": {
+     "value": 2.2702,
+     "sigma": 0.055
+    }
+   },
+   "des_mu_offset": -0.08531476026959971
+  },
+  {
+   "universe_id": "U-JNXP",
+   "round": 2,
+   "family": "REGIONAL",
+   "truth": "H3",
+   "realization_seed": 6820723906967167053,
+   "H0_regions": {
+    "0": 69.4969450101833,
+    "1": 69.4969450101833,
+    "2": 79.4969450101833,
+    "3": 69.4969450101833,
+    "5": 69.4969450101833,
+    "6": 69.4969450101833,
+    "8": 69.4969450101833,
+    "9": 79.4969450101833,
+    "10": 69.4969450101833
+   },
+   "signs": [
+    -1.0,
+    -1.0,
+    1.0,
+    -1.0,
+    -1.0,
+    -1.0,
+    -1.0,
+    1.0,
+    -1.0
+   ],
+   "region_counts_HF": {
+    "0": 66,
+    "1": 52,
+    "2": 69,
+    "3": 46,
+    "5": 20,
+    "6": 16,
+    "8": 77,
+    "9": 103,
+    "10": 42
+   },
+   "region_of_pixel": {
+    "0": 0,
+    "1": 1,
+    "2": 2,
+    "3": 3,
+    "4": 0,
+    "5": 5,
+    "6": 6,
+    "7": 2,
+    "8": 8,
+    "9": 9,
+    "10": 10,
+    "11": null
+   },
+   "background_h": 0.73
+  },
+  {
+   "universe_id": "U-099J",
+   "round": 3,
+   "family": "COSMO",
+   "truth": "C1",
+   "realization_seed": 5384936054214140757,
+   "noiseless": {
+    "R": 1.7500300257577246,
+    "l_A": 302.086699042905,
+    "wb100": 2.237,
+    "z_star": 1091.9081107403445,
+    "r_s_zstar": 144.27626950275973,
+    "r_d": 147.1026996805658,
+    "lya_DH": 8.615049658807326,
+    "lya_DM": 39.180296092941084
+   },
+   "references": {
+    "description": "external reference measurements for this universe (Gaussian, registered sigma)",
+    "R_omegac_over_omegab": {
+     "value": 5.4387,
+     "sigma": 0.065
+    },
+    "Omega_b": {
+     "value": 0.048969,
+     "sigma": 0.00086
+    },
+    "100omega_b": {
+     "value": 2.2387,
+     "sigma": 0.015
+    },
+    "H0": {
+     "value": 67.41,
+     "sigma": 0.54
+    },
+    "BBN_100omega_b_prior": {
+     "value": 2.3443,
+     "sigma": 0.055
+    }
+   },
+   "des_mu_offset": -0.08531476026959971
+  },
+  {
+   "universe_id": "U-4JZF",
+   "round": 3,
+   "family": "REGIONAL",
+   "truth": "H1",
+   "realization_seed": 1788291617993285675,
+   "H0_regions": {
+    "0": 73.0,
+    "1": 73.0,
+    "2": 73.0,
+    "3": 73.0,
+    "5": 73.0,
+    "6": 73.0,
+    "8": 73.0,
+    "9": 73.0,
+    "10": 73.0
+   },
+   "signs": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "region_counts_HF": {
+    "0": 66,
+    "1": 52,
+    "2": 69,
+    "3": 46,
+    "5": 20,
+    "6": 16,
+    "8": 77,
+    "9": 103,
+    "10": 42
+   },
+   "region_of_pixel": {
+    "0": 0,
+    "1": 1,
+    "2": 2,
+    "3": 3,
+    "4": 0,
+    "5": 5,
+    "6": 6,
+    "7": 2,
+    "8": 8,
+    "9": 9,
+    "10": 10,
+    "11": null
+   },
+   "background_h": 0.73
+  },
+  {
+   "universe_id": "U-KPN8",
+   "round": 3,
+   "family": "COSMO",
+   "truth": "C2",
+   "realization_seed": 1439606371152399984,
+   "noiseless": {
+    "R": 1.7388214198487275,
+    "l_A": 303.27697502842034,
+    "wb100": 2.292631578947369,
+    "z_star": 1090.7116971230193,
+    "r_s_zstar": 145.25423981923797,
+    "r_d": 147.93204515534833,
+    "lya_DH": 8.65739835161871,
+    "lya_DM": 39.09972595000307
+   },
+   "references": {
+    "description": "external reference measurements for this universe (Gaussian, registered sigma)",
+    "R_omegac_over_omegab": {
+     "value": 5.05,
+     "sigma": 0.065
+    },
+    "Omega_b": {
+     "value": 0.051862,
+     "sigma": 0.00086
+    },
+    "100omega_b": {
+     "value": 2.2722,
+     "sigma": 0.015
+    },
+    "H0": {
+     "value": 65.936,
+     "sigma": 0.54
+    },
+    "BBN_100omega_b_prior": {
+     "value": 2.3278,
+     "sigma": 0.055
+    }
+   },
+   "des_mu_offset": -0.08531476026959971
+  },
+  {
+   "universe_id": "U-6VMC",
+   "round": 3,
+   "family": "REGIONAL",
+   "truth": "H2",
+   "realization_seed": 3121634505034916754,
+   "H0_regions": {
+    "0": 75.13441955193483,
+    "1": 75.13441955193483,
+    "2": 75.13441955193483,
+    "3": 71.13441955193483,
+    "5": 71.13441955193483,
+    "6": 71.13441955193483,
+    "8": 71.13441955193483,
+    "9": 71.13441955193483,
+    "10": 75.13441955193483
+   },
+   "signs": [
+    1.0,
+    1.0,
+    1.0,
+    -1.0,
+    -1.0,
+    -1.0,
+    -1.0,
+    -1.0,
+    1.0
+   ],
+   "region_counts_HF": {
+    "0": 66,
+    "1": 52,
+    "2": 69,
+    "3": 46,
+    "5": 20,
+    "6": 16,
+    "8": 77,
+    "9": 103,
+    "10": 42
+   },
+   "region_of_pixel": {
+    "0": 0,
+    "1": 1,
+    "2": 2,
+    "3": 3,
+    "4": 0,
+    "5": 5,
+    "6": 6,
+    "7": 2,
+    "8": 8,
+    "9": 9,
+    "10": 10,
+    "11": null
+   },
+   "background_h": 0.73
+  },
+  {
+   "universe_id": "U-278Q",
+   "round": 3,
+   "family": "GALAXY",
+   "truth": "G3",
+   "realization_seed": 2995962783269934813
+  },
+  {
+   "universe_id": "U-07FN",
+   "round": 3,
+   "family": "GALAXY",
+   "truth": "G2",
+   "realization_seed": 1784703384831880528
+  },
+  {
+   "universe_id": "U-63X5",
+   "round": 3,
+   "family": "GALAXY",
+   "truth": "G1",
+   "realization_seed": 4050245907783730176
+  },
+  {
+   "universe_id": "U-SU9K",
+   "round": 3,
+   "family": "COSMO",
+   "truth": "C3",
+   "realization_seed": 2850558964489497204,
+   "noiseless": {
+    "R": 1.7506961192443435,
+    "l_A": 302.2016787412519,
+    "wb100": 2.237,
+    "z_star": 1091.9081107403445,
+    "r_s_zstar": 144.276269518628,
+    "r_d": 147.10269970052073,
+    "lya_DH": 8.726051487621067,
+    "lya_DM": 39.06747731393917
+   },
+   "references": {
+    "description": "external reference measurements for this universe (Gaussian, registered sigma)",
+    "R_omegac_over_omegab": {
+     "value": 5.2735,
+     "sigma": 0.065
+    },
+    "Omega_b": {
+     "value": 0.049801,
+     "sigma": 0.00086
+    },
+    "100omega_b": {
+     "value": 2.2347,
+     "sigma": 0.015
+    },
+    "H0": {
+     "value": 67.956,
+     "sigma": 0.54
+    },
+    "BBN_100omega_b_prior": {
+     "value": 2.2432,
+     "sigma": 0.055
+    }
+   },
+   "des_mu_offset": -0.08531476026959971
+  },
+  {
+   "universe_id": "U-ZJBO",
+   "round": 3,
+   "family": "REGIONAL",
+   "truth": "H3",
+   "realization_seed": 2283866543925300100,
+   "H0_regions": {
+    "0": 68.56008146639512,
+    "1": 78.56008146639512,
+    "2": 78.56008146639512,
+    "3": 68.56008146639512,
+    "5": 78.56008146639512,
+    "6": 68.56008146639512,
+    "8": 78.56008146639512,
+    "9": 68.56008146639512,
+    "10": 68.56008146639512
+   },
+   "signs": [
+    -1.0,
+    1.0,
+    1.0,
+    -1.0,
+    1.0,
+    -1.0,
+    1.0,
+    -1.0,
+    -1.0
+   ],
+   "region_counts_HF": {
+    "0": 66,
+    "1": 52,
+    "2": 69,
+    "3": 46,
+    "5": 20,
+    "6": 16,
+    "8": 77,
+    "9": 103,
+    "10": 42
+   },
+   "region_of_pixel": {
+    "0": 0,
+    "1": 1,
+    "2": 2,
+    "3": 3,
+    "4": 0,
+    "5": 5,
+    "6": 6,
+    "7": 2,
+    "8": 8,
+    "9": 9,
+    "10": 10,
+    "11": null
+   },
+   "background_h": 0.73
+  },
+  {
+   "universe_id": "U-LH19",
+   "round": 4,
+   "family": "REGIONAL",
+   "truth": "H3",
+   "realization_seed": 3615117105182743036,
+   "H0_regions": {
+    "0": 67.74541751527495,
+    "1": 67.74541751527495,
+    "2": 67.74541751527495,
+    "3": 67.74541751527495,
+    "5": 77.74541751527495,
+    "6": 77.74541751527495,
+    "8": 77.74541751527495,
+    "9": 77.74541751527495,
+    "10": 77.74541751527495
+   },
+   "signs": [
+    -1.0,
+    -1.0,
+    -1.0,
+    -1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "region_counts_HF": {
+    "0": 66,
+    "1": 52,
+    "2": 69,
+    "3": 46,
+    "5": 20,
+    "6": 16,
+    "8": 77,
+    "9": 103,
+    "10": 42
+   },
+   "region_of_pixel": {
+    "0": 0,
+    "1": 1,
+    "2": 2,
+    "3": 3,
+    "4": 0,
+    "5": 5,
+    "6": 6,
+    "7": 2,
+    "8": 8,
+    "9": 9,
+    "10": 10,
+    "11": null
+   },
+   "background_h": 0.73
+  },
+  {
+   "universe_id": "U-85K4",
+   "round": 4,
+   "family": "GALAXY",
+   "truth": "G3",
+   "realization_seed": 8107549047189494004
+  },
+  {
+   "universe_id": "U-2B0Y",
+   "round": 4,
+   "family": "COSMO",
+   "truth": "C1",
+   "realization_seed": 3404410189153906010,
+   "noiseless": {
+    "R": 1.7500300257577246,
+    "l_A": 302.086699042905,
+    "wb100": 2.237,
+    "z_star": 1091.9081107403445,
+    "r_s_zstar": 144.27626950275973,
+    "r_d": 147.1026996805658,
+    "lya_DH": 8.615049658807326,
+    "lya_DM": 39.180296092941084
+   },
+   "references": {
+    "description": "external reference measurements for this universe (Gaussian, registered sigma)",
+    "R_omegac_over_omegab": {
+     "value": 5.3513,
+     "sigma": 0.065
+    },
+    "Omega_b": {
+     "value": 0.049026,
+     "sigma": 0.00086
+    },
+    "100omega_b": {
+     "value": 2.2619,
+     "sigma": 0.015
+    },
+    "H0": {
+     "value": 67.568,
+     "sigma": 0.54
+    },
+    "BBN_100omega_b_prior": {
+     "value": 2.2292,
+     "sigma": 0.055
+    }
+   },
+   "des_mu_offset": -0.08531476026959971
+  },
+  {
+   "universe_id": "U-B485",
+   "round": 4,
+   "family": "REGIONAL",
+   "truth": "H1",
+   "realization_seed": 2526771198439734485,
+   "H0_regions": {
+    "0": 73.0,
+    "1": 73.0,
+    "2": 73.0,
+    "3": 73.0,
+    "5": 73.0,
+    "6": 73.0,
+    "8": 73.0,
+    "9": 73.0,
+    "10": 73.0
+   },
+   "signs": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "region_counts_HF": {
+    "0": 66,
+    "1": 52,
+    "2": 69,
+    "3": 46,
+    "5": 20,
+    "6": 16,
+    "8": 77,
+    "9": 103,
+    "10": 42
+   },
+   "region_of_pixel": {
+    "0": 0,
+    "1": 1,
+    "2": 2,
+    "3": 3,
+    "4": 0,
+    "5": 5,
+    "6": 6,
+    "7": 2,
+    "8": 8,
+    "9": 9,
+    "10": 10,
+    "11": null
+   },
+   "background_h": 0.73
+  },
+  {
+   "universe_id": "U-BKI0",
+   "round": 4,
+   "family": "COSMO",
+   "truth": "C2",
+   "realization_seed": 4401213607803029232,
+   "noiseless": {
+    "R": 1.7388214198487275,
+    "l_A": 303.27697502842034,
+    "wb100": 2.292631578947369,
+    "z_star": 1090.7116971230193,
+    "r_s_zstar": 145.25423981923797,
+    "r_d": 147.93204515534833,
+    "lya_DH": 8.65739835161871,
+    "lya_DM": 39.09972595000307
+   },
+   "references": {
+    "description": "external reference measurements for this universe (Gaussian, registered sigma)",
+    "R_omegac_over_omegab": {
+     "value": 5.044,
+     "sigma": 0.065
+    },
+    "Omega_b": {
+     "value": 0.052287,
+     "sigma": 0.00086
+    },
+    "100omega_b": {
+     "value": 2.2959,
+     "sigma": 0.015
+    },
+    "H0": {
+     "value": 65.96,
+     "sigma": 0.54
+    },
+    "BBN_100omega_b_prior": {
+     "value": 2.1977,
+     "sigma": 0.055
+    }
+   },
+   "des_mu_offset": -0.08531476026959971
+  },
+  {
+   "universe_id": "U-GL5Z",
+   "round": 4,
+   "family": "COSMO",
+   "truth": "C3",
+   "realization_seed": 1707703144238583333,
+   "noiseless": {
+    "R": 1.7506961192443435,
+    "l_A": 302.2016787412519,
+    "wb100": 2.237,
+    "z_star": 1091.9081107403445,
+    "r_s_zstar": 144.276269518628,
+    "r_d": 147.10269970052073,
+    "lya_DH": 8.726051487621067,
+    "lya_DM": 39.06747731393917
+   },
+   "references": {
+    "description": "external reference measurements for this universe (Gaussian, registered sigma)",
+    "R_omegac_over_omegab": {
+     "value": 5.376,
+     "sigma": 0.065
+    },
+    "Omega_b": {
+     "value": 0.048283,
+     "sigma": 0.00086
+    },
+    "100omega_b": {
+     "value": 2.2171,
+     "sigma": 0.015
+    },
+    "H0": {
+     "value": 67.598,
+     "sigma": 0.54
+    },
+    "BBN_100omega_b_prior": {
+     "value": 2.3122,
+     "sigma": 0.055
+    }
+   },
+   "des_mu_offset": -0.08531476026959971
+  },
+  {
+   "universe_id": "U-P0XK",
+   "round": 4,
+   "family": "GALAXY",
+   "truth": "G1",
+   "realization_seed": 6942818828521086307
+  },
+  {
+   "universe_id": "U-51CN",
+   "round": 4,
+   "family": "REGIONAL",
+   "truth": "H2",
+   "realization_seed": 7397731791372218991,
+   "H0_regions": {
+    "0": 71.4765784114053,
+    "1": 75.4765784114053,
+    "2": 75.4765784114053,
+    "3": 75.4765784114053,
+    "5": 75.4765784114053,
+    "6": 71.4765784114053,
+    "8": 71.4765784114053,
+    "9": 71.4765784114053,
+    "10": 71.4765784114053
+   },
+   "signs": [
+    -1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    -1.0,
+    -1.0,
+    -1.0,
+    -1.0
+   ],
+   "region_counts_HF": {
+    "0": 66,
+    "1": 52,
+    "2": 69,
+    "3": 46,
+    "5": 20,
+    "6": 16,
+    "8": 77,
+    "9": 103,
+    "10": 42
+   },
+   "region_of_pixel": {
+    "0": 0,
+    "1": 1,
+    "2": 2,
+    "3": 3,
+    "4": 0,
+    "5": 5,
+    "6": 6,
+    "7": 2,
+    "8": 8,
+    "9": 9,
+    "10": 10,
+    "11": null
+   },
+   "background_h": 0.73
+  },
+  {
+   "universe_id": "U-YTKL",
+   "round": 4,
+   "family": "GALAXY",
+   "truth": "G2",
+   "realization_seed": 4373292520186480881
+  },
+  {
+   "universe_id": "U-8Z6F",
+   "round": 5,
+   "family": "COSMO",
+   "truth": "C3",
+   "realization_seed": 1275562230843394958,
+   "noiseless": {
+    "R": 1.7506961192443435,
+    "l_A": 302.2016787412519,
+    "wb100": 2.237,
+    "z_star": 1091.9081107403445,
+    "r_s_zstar": 144.276269518628,
+    "r_d": 147.10269970052073,
+    "lya_DH": 8.726051487621067,
+    "lya_DM": 39.06747731393917
+   },
+   "references": {
+    "description": "external reference measurements for this universe (Gaussian, registered sigma)",
+    "R_omegac_over_omegab": {
+     "value": 5.3127,
+     "sigma": 0.065
+    },
+    "Omega_b": {
+     "value": 0.050399,
+     "sigma": 0.00086
+    },
+    "100omega_b": {
+     "value": 2.2275,
+     "sigma": 0.015
+    },
+    "H0": {
+     "value": 67.814,
+     "sigma": 0.54
+    },
+    "BBN_100omega_b_prior": {
+     "value": 2.1981,
+     "sigma": 0.055
+    }
+   },
+   "des_mu_offset": -0.08531476026959971
+  },
+  {
+   "universe_id": "U-KCY8",
+   "round": 5,
+   "family": "REGIONAL",
+   "truth": "H2",
+   "realization_seed": 1504061289839206127,
+   "H0_regions": {
+    "0": 75.74541751527495,
+    "1": 71.74541751527495,
+    "2": 71.74541751527495,
+    "3": 75.74541751527495,
+    "5": 71.74541751527495,
+    "6": 71.74541751527495,
+    "8": 71.74541751527495,
+    "9": 71.74541751527495,
+    "10": 75.74541751527495
+   },
+   "signs": [
+    1.0,
+    -1.0,
+    -1.0,
+    1.0,
+    -1.0,
+    -1.0,
+    -1.0,
+    -1.0,
+    1.0
+   ],
+   "region_counts_HF": {
+    "0": 66,
+    "1": 52,
+    "2": 69,
+    "3": 46,
+    "5": 20,
+    "6": 16,
+    "8": 77,
+    "9": 103,
+    "10": 42
+   },
+   "region_of_pixel": {
+    "0": 0,
+    "1": 1,
+    "2": 2,
+    "3": 3,
+    "4": 0,
+    "5": 5,
+    "6": 6,
+    "7": 2,
+    "8": 8,
+    "9": 9,
+    "10": 10,
+    "11": null
+   },
+   "background_h": 0.73
+  },
+  {
+   "universe_id": "U-8Z0S",
+   "round": 5,
+   "family": "GALAXY",
+   "truth": "G3",
+   "realization_seed": 6808121777808805600
+  },
+  {
+   "universe_id": "U-OEDW",
+   "round": 5,
+   "family": "COSMO",
+   "truth": "C1",
+   "realization_seed": 4850569288709163498,
+   "noiseless": {
+    "R": 1.7500300257577246,
+    "l_A": 302.086699042905,
+    "wb100": 2.237,
+    "z_star": 1091.9081107403445,
+    "r_s_zstar": 144.27626950275973,
+    "r_d": 147.1026996805658,
+    "lya_DH": 8.615049658807326,
+    "lya_DM": 39.180296092941084
+   },
+   "references": {
+    "description": "external reference measurements for this universe (Gaussian, registered sigma)",
+    "R_omegac_over_omegab": {
+     "value": 5.3921,
+     "sigma": 0.065
+    },
+    "Omega_b": {
+     "value": 0.050192,
+     "sigma": 0.00086
+    },
+    "100omega_b": {
+     "value": 2.2475,
+     "sigma": 0.015
+    },
+    "H0": {
+     "value": 67.236,
+     "sigma": 0.54
+    },
+    "BBN_100omega_b_prior": {
+     "value": 2.1721,
+     "sigma": 0.055
+    }
+   },
+   "des_mu_offset": -0.08531476026959971
+  },
+  {
+   "universe_id": "U-J91F",
+   "round": 5,
+   "family": "COSMO",
+   "truth": "C2",
+   "realization_seed": 5635575647325231620,
+   "noiseless": {
+    "R": 1.7388214198487275,
+    "l_A": 303.27697502842034,
+    "wb100": 2.292631578947369,
+    "z_star": 1090.7116971230193,
+    "r_s_zstar": 145.25423981923797,
+    "r_d": 147.93204515534833,
+    "lya_DH": 8.65739835161871,
+    "lya_DM": 39.09972595000307
+   },
+   "references": {
+    "description": "external reference measurements for this universe (Gaussian, registered sigma)",
+    "R_omegac_over_omegab": {
+     "value": 5.0794,
+     "sigma": 0.065
+    },
+    "Omega_b": {
+     "value": 0.051801,
+     "sigma": 0.00086
+    },
+    "100omega_b": {
+     "value": 2.2866,
+     "sigma": 0.015
+    },
+    "H0": {
+     "value": 65.199,
+     "sigma": 0.54
+    },
+    "BBN_100omega_b_prior": {
+     "value": 2.2327,
+     "sigma": 0.055
+    }
+   },
+   "des_mu_offset": -0.08531476026959971
+  },
+  {
+   "universe_id": "U-ZY0Y",
+   "round": 5,
+   "family": "REGIONAL",
+   "truth": "H1",
+   "realization_seed": 8125449522683684138,
+   "H0_regions": {
+    "0": 73.0,
+    "1": 73.0,
+    "2": 73.0,
+    "3": 73.0,
+    "5": 73.0,
+    "6": 73.0,
+    "8": 73.0,
+    "9": 73.0,
+    "10": 73.0
+   },
+   "signs": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "region_counts_HF": {
+    "0": 66,
+    "1": 52,
+    "2": 69,
+    "3": 46,
+    "5": 20,
+    "6": 16,
+    "8": 77,
+    "9": 103,
+    "10": 42
+   },
+   "region_of_pixel": {
+    "0": 0,
+    "1": 1,
+    "2": 2,
+    "3": 3,
+    "4": 0,
+    "5": 5,
+    "6": 6,
+    "7": 2,
+    "8": 8,
+    "9": 9,
+    "10": 10,
+    "11": null
+   },
+   "background_h": 0.73
+  },
+  {
+   "universe_id": "U-KQF9",
+   "round": 5,
+   "family": "GALAXY",
+   "truth": "G1",
+   "realization_seed": 928096483955341991
+  },
+  {
+   "universe_id": "U-NBRH",
+   "round": 5,
+   "family": "REGIONAL",
+   "truth": "H3",
+   "realization_seed": 1279218495628470572,
+   "H0_regions": {
+    "0": 76.0346232179226,
+    "1": 66.0346232179226,
+    "2": 76.0346232179226,
+    "3": 76.0346232179226,
+    "5": 66.0346232179226,
+    "6": 76.0346232179226,
+    "8": 66.0346232179226,
+    "9": 76.0346232179226,
+    "10": 76.0346232179226
+   },
+   "signs": [
+    1.0,
+    -1.0,
+    1.0,
+    1.0,
+    -1.0,
+    1.0,
+    -1.0,
+    1.0,
+    1.0
+   ],
+   "region_counts_HF": {
+    "0": 66,
+    "1": 52,
+    "2": 69,
+    "3": 46,
+    "5": 20,
+    "6": 16,
+    "8": 77,
+    "9": 103,
+    "10": 42
+   },
+   "region_of_pixel": {
+    "0": 0,
+    "1": 1,
+    "2": 2,
+    "3": 3,
+    "4": 0,
+    "5": 5,
+    "6": 6,
+    "7": 2,
+    "8": 8,
+    "9": 9,
+    "10": 10,
+    "11": null
+   },
+   "background_h": 0.73
+  },
+  {
+   "universe_id": "U-NPID",
+   "round": 5,
+   "family": "GALAXY",
+   "truth": "G2",
+   "realization_seed": 6025109289263919110
+  }
+ ]
+}

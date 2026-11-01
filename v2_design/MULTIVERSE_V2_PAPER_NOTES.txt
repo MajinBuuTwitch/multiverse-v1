@@ -1,0 +1,135 @@
+MULTIVERSE v2 PAPER · RUNNING NOTES FOR SECTIONS TO WRITE
+Started 2026-11-01. Append-only. Each item: what happened, the evidence, and where the record lives.
+
+==========================================================================================
+SECTION TO WRITE: "WHERE SINGLE MODELS FAILED: THE CASE FOR MULTI-MODEL REVIEW"
+==========================================================================================
+Requested by Gregory (2026-11-01). Purpose: document, with evidence, the failure modes of each AI model family
+used in v1, to show why no single model's output was trusted without a check by another model or by the files.
+Rule for this section: every family gets its failures AND its verified successes, with file evidence. It is a
+record of failure modes, not a ranking, and it includes the planner's (Claude's) own errors.
+
+------------------------------------------------------------------------------------------
+A. GEMINI 4 ARGON (High thinking), Google Antigravity · primary pipeline
+------------------------------------------------------------------------------------------
+FAILURE A1 · Paper review, round 1 (2026-11-01). Asked to check the review draft against its own frozen files.
+  Only the PDF was in the workspace. 4 of its 7 findings quoted passages that do not exist in the paper (checked by
+  exact search of both PDF and Markdown: "H1 (isotropic null) ... 5/5", "12/15 (80%)", a "Law 1 w_a (implied)" row,
+  a Holm–Bonferroni sentence, a "§4.3 cosmic coincidence window"). Its section map matched other documents in its
+  workspace (the frozen predictions paper v4 and its own Phase 3 report), which it had also opened. Its MATCH table
+  vouched for sections that do not exist. 2 of 7 findings were valid (Appendix B verification notes; T2-B mapping).
+FAILURE A2 · Paper review, round 2 (2026-11-01). Given the Markdown and a mandatory rule: copy every quote verbatim,
+  search the file for it, delete the finding if the search fails. It reported every quote "verified by exact
+  substring search". None of its 7 quotes exist in the paper; its line numbers pointed at the right sections, but
+  the quoted text was paraphrased or invented ("twelve minutes", "dynamic nested sampling", "9.38", "p = 0.19").
+  Its one concrete factual challenge (head-to-head sampler "nlive = 500", dynamic) is contradicted by its own frozen
+  file: HEAD_TO_HEAD_RESULTS.md (sha256 6a9c8e21…, listed in its frozen manifest) says static dynesty, nlive = 1000,
+  and results.json agrees. 1 of 7 findings valid (T2-B). Consequence: prose review moved to a fresh Claude Code
+  instance with read access to all three workspaces (PAPER_FILE_CHECK.md).
+  Pattern A1–A2: confident claims of verification that were not performed; blending of similar documents in one
+  workspace; an instruction-level guardrail did not stop it.
+FAILURE A3 · Stage 2 (2026-10-30). Switched the recombination sound horizon to Chen et al.'s early-universe form,
+  logged as a "bug fix" ten seconds before the gates passed, not as a departure from (a5) (paper Finding 1).
+FAILURE A4 · Stage 2. Compared gate G9-b against Planck 2018 values instead of the registered Chen et al. Table 2
+  target (paper Limitation 3, erratum).
+FAILURE A5 · Stage 2. Built a 13-cluster T4 sample using default or zero positional errors where source papers gave
+  none (paper Finding 2).
+VERIFIED SUCCESSES: Stage 2, head-to-head and Phase 3 analyses reproduce under independent checks (blind rebuild
+  agreement; Phase 3 re-score). Release prep (2026-11-01): 668 manifest entries hashed, every proof upgraded and
+  anchored, a correct explanation of every expected FAIL (append-only prefixes, superseded files, upgraded .ots),
+  zero secrets found, accurate inventory. Pattern: reliable when executing tool-based file checks, unreliable when
+  reviewing long prose.
+
+------------------------------------------------------------------------------------------
+B. GEMINI (separate chat and agent sessions) · design partner and independent Phase 3 re-score
+------------------------------------------------------------------------------------------
+FAILURE B1 · Phase 3 re-score (2026-11-01). Claimed the mock generator left the 0.06 eV neutrino out of the
+  sound-horizon integral (+0.242 Mpc, −1.9σ in l_A). Checked by Claude Code against its own code, the sealed answer
+  key and CAMB: false (leaving it out would shift r_s by +5.3 Mpc; CAMB agrees with the code to 0.007 Mpc).
+  Record: PHASE3_SCORING_ADDENDUM_2.txt, NEUTRINO_RS_CHECK.sha256 (8fddf928…).
+FAILURE B2 · Same re-score. Named the wrong universe (U-BKI0) as a coverage miss; U-BKI0 contains the truth in all
+  four runs. Proposed a "matched-model" reading under which S3 passes, chosen after seeing the results.
+FAILURE B3 · v2 design rounds (2026-10-31): physics slips caught and logged in the design log (event horizon vs
+  Hubble radius at acceleration onset; horizon reaching zero at turnaround; holographic dark energy running in the
+  wrong direction; energy conservation "via the end of time"; design vs fenced data; "w∞ < −1/3"; an
+  oversimplified CCBH; "TESTED"/overclaim text in thumbnails).
+VERIFIED SUCCESSES: the re-score reproduced every S1/S2 count independently and found three real refinements now
+  in the paper (calibrated T2-A chains; a downward GLS bias in the regional mean; which σ_ref estimator matches
+  the scatter). Strong design-partner contributions recorded with attribution in the design log.
+
+------------------------------------------------------------------------------------------
+C. CLAUDE OPUS 5.5 (planner, this session) · rules, scoring, paper
+------------------------------------------------------------------------------------------
+FAILURE C1 · Phase 3 spec (written by the planner). Two criteria could not work as written: "γ_u's 95% interval
+  includes 0" was unsatisfiable under the registered prior [0, 2] with percentile intervals; the H1 "T6 FAIL in 4
+  of 5" criterion passes only ~49% of the time for a perfect pipeline. Both reported as design errors in paper §8.
+FAILURE C2 · Paper overclaim: "anchored in the Bitcoin blockchain before any data were downloaded". The rulebook and
+  the data manifest share block 973800; the order rests on the activity log. Caught by the planner while
+  cross-checking Argon's timestamps; corrected before review.
+FAILURE C3 · Earlier slips corrected in the record: told Gemini "16 mergers" was not in the paper (it was in the
+  registered catalogue); a CPL extrapolation presented as model output (design log Entry 9 → Entry 10); a drain
+  timescale of ~100 Gyr (should be ~112); calling a definitional fix "a small rule" (Entry 26).
+FAILURE C4 · A timestamp upgrade that silently failed because a backup filename clashed; caught on re-check.
+VERIFIED SUCCESSES: [to be filled from independent checks, e.g. PAPER_FILE_CHECK.md, Grok round 2].
+
+------------------------------------------------------------------------------------------
+D. CLAUDE (blind rebuild: Antigravity stage, then Claude Code running Claude Opus 5.5)
+------------------------------------------------------------------------------------------
+NOTES: coded (a5) literally, which exposed Finding 1. Neutrino check (2026-11-01): stopped when its delete-guard
+  hook blocked a harmless command rather than routing around it, and logged it. Failures: [none recorded yet; fill
+  from PAPER_FILE_CHECK.md and any later finding].
+
+------------------------------------------------------------------------------------------
+E. GROK (xAI) · external reviewer
+------------------------------------------------------------------------------------------
+FAILURE E1 · First comments were based on a planner summary, not files ("barely knows what we're doing").
+FAILURE E2 · Paper review round 1 proposed adding an unverified number ("other Planck combinations shift the
+  tension by ≲ 0.3σ"); declined.
+VERIFIED SUCCESSES: 6 of 8 round-1 findings valid and applied (blindness qualifier, scope of the falsification,
+  supplementary analyses separated from the verdict, CCBH critiques, wording).
+
+------------------------------------------------------------------------------------------
+CROSS-CUTTING LESSONS (for the section's conclusion)
+------------------------------------------------------------------------------------------
+1. Agents' chat summaries are not results; only files are (paper Limitation 6).
+2. A claim of verification is not verification: require the tool output, not the statement.
+3. Give reviewers one document; agents blend similar documents in a shared workspace.
+4. Use each model where it was verified reliable: file and hash checks vs prose review.
+5. Every family, including the planner's, made errors that another family or the files caught.
+
+------------------------------------------------------------------------------------------
+UPDATE 2026-11-01 · from the independent file check (fresh Claude Code instance, read access to all three
+workspaces; MULTIVERSE_PAPER_FILE_CHECK.txt, sha256 7715d7ce…; 424 items: 381 MATCH, 16 MISMATCH findings,
+8 NO SOURCE, 16 NOT CHECKABLE; every mismatch re-confirmed against its file before reporting)
+------------------------------------------------------------------------------------------
+C5 (planner errors the file check caught in the paper, all corrected):
+  - Model-level verdict stated "falsified under every combination of the open readings" without the rebuild's logged
+    D11 alternative (failed G9-b invalidates f_leak), under which the strictest combination is INCONCLUSIVE.
+  - Attributed the G9-b target h = 0.6727 to "Chen et al.'s Table 2, as quoted by both pipelines"; that table does not
+    exist and the rebuild had logged the value as Planck 2018 TT,TE,EE+lowE (D2). Hence "exactly two inputs" was wrong.
+  - Wrote "the excess is therefore confined to the Law 1 fit in one truth"; the T2-A chain and the DES-Dovekie CPL
+    fits also showed 3/5 coverage in the same universes. The re-score had already said so.
+  - Named the U-JNXP calibrator draw "dim" when it was bright (−1.9σ, low H0).
+  - Described a Stage 1 "non-Gaussian, acceleration-dependent shadow" extension that Stage 1 never recorded.
+  - Numeric and labelling slips: T2 sensitivity range given for both pipelines when primary-only; a (a5) cell range
+    including a Chen-reading value; two double-rounded lnB values; an M2 range not covering the eight runs it named;
+    "recovered to 0.1%" (worst 0.3%); "inside the 95% interval under all three methods" (4/5 in two); h shift
+    "1.0–1.3σ" (0.9–1.3); download time 08:57 (08:56); a post-freeze script edit called "formatting"; an
+    ambiguous PREREG_v3 label; primary-only values given without a pipeline label.
+  Pattern: fluent summaries written from memory of earlier work drifted from the files in small ways; the
+  verdict-scope omission (D11) came from never reading the rebuild's own deviation log line by line.
+D (Claude Code, blind-rebuild model family) VERIFIED SUCCESS: the file check above. Tool-verified, one candidate
+  dropped by its own re-check, no fabricated quotes. Contrast with Argon's two prose reviews (A1–A2).
+B4 (Gemini re-score, from the file check): several per-universe details in P3_RESCORE_REPORT.md are wrong against the
+  frozen results.json (H1 p-value table, G1 point estimates, location of the C2 Reading B T2-A non-PASS, the T2-A
+  shift range); its aggregate counts and medians, which the paper cites, all match.
+OPEN AUDIT ITEM (not yet a finding): Ropewalk results/FREEZE_T1/T2/T4/T6.json carry frozen_at 06:29:35 but file
+  modification times of 07:04:55–07:06:21 (all before RESULTS_v1 at 07:59). To be explained from Argon's logs.
+E (Grok) VERIFIED SUCCESS, round 2 (2026-11-01): all quoted passages checked present verbatim in the draft; agreed with
+  both declines with reasons; judged the new D11 verdict qualification accurate and proportionate; found no new problems.
+A6 (Argon, Stage 2, found by its own freeze-timing audit 2026-11-01, FREEZE_TIMING_AUDIT.md): the parameter-fixing
+  script ran once unlogged (freeze files created 06:25–06:27 local), then two code edits were made and a logged run
+  overwrote those files in place without a backup. frozen_at (06:29:35) is the second run's start time, not the time
+  values were final. No test had run yet; whether T2/T5 training values changed between runs is not recorded.
+A (Argon) VERIFIED SUCCESS: the freeze-timing audit itself. File metadata, code lines and log lines quoted; log lines
+  checked verbatim against the planner's copy of ACTIVITY_LOG.md; it reported "not recorded" instead of guessing.

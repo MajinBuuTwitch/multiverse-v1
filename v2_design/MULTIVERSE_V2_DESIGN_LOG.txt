@@ -1,0 +1,722 @@
+MULTIVERSE v2 · DESIGN LOG (Phase B, EXPLORATORY)
+Append-only. Each entry records an idea, who proposed it and when, BEFORE any fenced data is consulted.
+Companion to MULTIVERSE_V2_DESIGN_CHARTER.txt (fence list v1 stamped 2026-10-31).
+Nothing here is a locked prediction. Entries are hypotheses to be derived, checked against design data, then
+locked under a v2 pre-registration.
+
+------------------------------------------------------------------------------------------
+ENTRY 1 · 2026-10-31 · Gregory Mandarano (planning-chat critique noted)
+------------------------------------------------------------------------------------------
+IDEA: V1's 1/19 count was too macro. Each string (timeline) has an unbounded number of adjacent neighbours, as
+many-worlds implies, not just six. "Frays" are branches too small to become their own timeline. In v2, frays are
+QUANTUM BRANCHING EVENTS (not conscious choices), and they carry weight that reaches neighbouring timelines as dark
+matter. Strings need not carry the same number of frays, so the dark-matter share can differ from place to place.
+DESIGN TARGETS AND KNOWN PROBLEMS (planning chat):
+ - Infinite neighbours need a falloff with "distance" between timelines so the total converges to a finite,
+   possibly non-integer effective count (~20.3 if the shares are to match). The falloff must be DERIVED, not chosen
+   to hit 20.3 (charter R2).
+ - Dark matter is present at full strength by recombination (CMB), so frays must exist from the start; quantum
+   branching satisfies this, conscious choices do not.
+ - Galaxies' dark matter tracks their visible matter tightly (the radial acceleration relation). Fray counts must
+   therefore correlate with baryon content or acceleration, not vary randomly. This is the decisive design test.
+
+------------------------------------------------------------------------------------------
+ENTRY 2 · 2026-10-31 · Gregory Mandarano
+------------------------------------------------------------------------------------------
+IDEA: Dark energy tracks the universe's branching activity: it rose after the Big Bang, peaked around "cosmic noon"
+(the peak of cosmic star formation, z ≈ 2, about 10 billion years ago) and has weakened since. When it reaches
+zero, or a breaking point, the timeline ends: a crunch, a collapse of the timeline, or a start-over.
+IMPLICATIONS AND CHECKS (planning chat):
+ - A dark-energy density that rises and then falls means w < −1 before the peak and w > −1 after: a crossing of
+   w = −1 AT THE PEAK. This predicts the crossing near z ≈ 2. (v1's Law 1 forbade crossing; v1's exploratory
+   transfer coupling allowed an effective one.) Commonly used two-parameter fits to current data place a crossing
+   much later (roughly z ≈ 0.4–0.5), although that parametrization forces a particular shape: a real point of
+   tension to test, not to tune away.
+ - Amplitude: dark energy cannot have been many times denser at z ≈ 2 than today; expansion-history data constrain
+   it to stay close to today's level. If tied to star formation (which has fallen roughly tenfold since its peak),
+   it must be a small modulation on a steady component, not proportional to the star-formation rate.
+ - Ending: if dark energy only reaches zero, a flat universe keeps expanding forever while slowing. A crunch needs
+   dark energy to turn negative. "Start-over" connects to published cyclic cosmologies (Tier 2) and to the
+   documentary's ending.
+ - Mechanism needed: why branching activity, and why star formation specifically, sets dark energy.
+
+------------------------------------------------------------------------------------------
+ENTRY 3 · 2026-10-31 · Gregory Mandarano (planning-chat critique noted)
+------------------------------------------------------------------------------------------
+IDEA (revises the timing in Entry 2): Dark energy, branching and expansion are all at their MAXIMUM at the Big Bang.
+Gravity then slows the expansion; once matter is spread thin it speeds up again; later it slows again because dark
+energy has been falling. Branching falls as the universe spreads out, because there is less interaction: less
+interaction, fewer branches, fewer frays, less dark energy. NEGATIVE dark energy = the strand fraying INWARD: the
+timeline loses cohesion and holds fewer possibilities every day. At a breaking point the timeline SNAPS: the Big
+Crunch, everything collapses to a 0D point, then bursts apart into fresh timelines with maximum dark energy (a cycle).
+DESIGN TARGETS AND KNOWN PROBLEMS (planning chat):
+ - Two versions now exist: Entry 2 (dark energy peaks at cosmic noon) and Entry 3 (dark energy is maximum at the Big
+   Bang). They can be combined (an inflation-scale spike, near zero through the early eras, then a later bump), but
+   v2 must pick one. Constraint: during the radiation and matter eras dark energy must have been a tiny fraction of
+   the total (CMB and nucleosynthesis limits). If "maximum at the start" means inflation, inflation's energy density
+   was more than ~10^100 times today's dark energy: one mechanism must span that whole range.
+ - Physics wording to fix: the early slowdown came from radiation and matter (mostly dark matter), not stars (the
+   first stars formed ~100–200 million years in). The universe was thinning, not getting "thicker", while slowing.
+ - Interaction → branching: decoherence (quantum branching) continues wherever particles or photons scatter,
+   including the CMB, so it does not obviously fall as space spreads out. "Number of branches" is not a well-defined
+   quantity in many-worlds. v2 needs a measurable proxy for branching rate (e.g. cosmic entropy production rate, star
+   formation rate, or interaction rate) chosen and DERIVED before fenced data are seen (charter R2). Precedent (Tier
+   2): Bousso, Harnik, Kribs & Perez 2007, the causal entropic principle, links entropy production to the VALUE of
+   the cosmological constant (a selection argument, not a time-varying one).
+ - Sign flip: "fewer branches" naturally gives LESS positive dark energy, not negative. A candidate form (planner's
+   suggestion, not Gregory's): dark energy ∝ (branching rate − a fixed cohesion cost of the strand). It goes negative
+   once branching falls below the cohesion cost. Any such baseline counts against the knob budget (R1).
+ - Two jobs for one object: in Entry 1, frays carry dark-matter weight (clumps, no pressure); here they also set dark
+   energy (smooth, negative pressure). The model must say how one population behaves both ways, or split them.
+ - Cycle: published cyclic and bouncing cosmologies exist (Tier 2: Steinhardt–Turok cyclic, loop-quantum-cosmology
+   bounces; Penrose's CCC has no crunch). Known problem: entropy accumulates from cycle to cycle (Tolman), so a fresh
+   start with "maximum" dark energy needs an entropy reset. The snap point is "unquantifiable" as stated: fine as
+   untestable, but the path toward it is testable.
+ - TESTABLE NOW: the shape and timing of the dark-energy density history against the chosen branching proxy; a
+   downward trend in dark-energy density heading toward zero. UNTESTABLE: the snap, the 0D collapse, the rebirth,
+   other timelines.
+
+------------------------------------------------------------------------------------------
+ENTRY 4 · 2026-10-31 · Gregory Mandarano (resolves the Entry 2 / Entry 3 timing conflict)
+------------------------------------------------------------------------------------------
+DECISION: Dark energy does NOT start at its maximum. It starts high, rises a little as worlds, stars and interaction
+multiply, peaks at cosmic noon (z ≈ 2), then declines. Entry 3's "maximum at the Big Bang" is withdrawn; the rest of
+Entry 3 (inward fraying, the snap, the cycle) stands. Shape: the clock hand, not the hourglass.
+NOTES (planning chat):
+ - Shape = a steady component plus a small bump tied to the branching proxy. A near-constant dark energy is
+   automatically negligible in the early universe (matter and radiation were far denser), so "starts high" does
+   not conflict with CMB or nucleosynthesis limits. Inflation is therefore NOT this dark energy; v2 treats it as
+   separate or says nothing about it.
+ - Rising density before the peak means w < −1 before z ≈ 2 and w > −1 after: the crossing is predicted AT the peak.
+ - The peak date is set by the branching proxy. Rate-type proxies (star formation rate, cosmic light output) peak
+   near z ≈ 2; cumulative proxies (total stellar mass) keep rising. The proxy must be chosen on physical grounds and
+   locked BEFORE comparison. Choosing among proxies because one peaks near the fitted z ≈ 0.4–0.5 would be fitting
+   (charter R2) and costs a knob (R1).
+ - For a future crunch, the cohesion line (Entry 3) sits below today's dark-energy level: today is still positive.
+
+------------------------------------------------------------------------------------------
+ENTRY 5 · 2026-10-31 · Gregory Mandarano (adopts the baseline form from the Entry 3 critique)
+------------------------------------------------------------------------------------------
+DEFINITION: Dark energy is a measure of how many quantum interactions are taking place in the universe at a given
+cosmic time, RELATIVE TO A BASELINE. Negative dark energy does not mean negative interaction; it means fewer
+interactions than are required to maintain a stable timeline. Space keeps expanding, so the amount of quantum
+interaction falls over time (even if stellar mass keeps rising), and dark energy falls with it.
+  Working form: ρ_DE(t) ∝ [ I(t) − I_0 ],  I = cosmic quantum-interaction rate, I_0 = the stability baseline.
+NOTES (planning chat):
+ - The definition of I is now the whole theory. RAW interaction rate fails: the early universe was an opaque plasma
+   in which photons scattered constantly; at recombination (~380,000 years) the universe became transparent and
+   the photon scattering rate collapsed by many orders of magnitude. A raw rate would make dark energy enormous
+   early (ruled out by the CMB) and would not rise toward cosmic noon.
+ - Expansion dilutes interactions in intergalactic gas and radiation, but not inside galaxies, which do not expand;
+   stars there keep interacting. The interactions that RISE to cosmic noon and fall since are star-driven,
+   irreversible ones (entropy production by starlight and dust; cf. Bousso et al. 2007, Entry 3). So I is most
+   naturally an irreversible / entropy-producing interaction rate, not a raw count. To be derived, not chosen to fit.
+ - Per what volume: I must be defined per comoving volume, per physical volume, or for the whole observable
+   universe. The choice changes the shape and must be locked.
+ - Knobs: the proportionality constant and I_0 are two numbers. Today's measured dark energy fixes one combination;
+   the other is free unless derived. Plus the choice of I.
+ - Testable form: the ratio of today's dark energy to its peak value, and the peak date, follow from I(t) alone
+   once I_0 is set. A future crossing below zero follows if I(t) keeps falling below I_0.
+
+------------------------------------------------------------------------------------------
+ENTRY 6 · 2026-10-31 · Gregory Mandarano (planner's extension marked)
+------------------------------------------------------------------------------------------
+IDEA: The interactions that count are the ones that MATTER: those with consequences. A photon striking a rock that
+never interacts with anything again, because space carries it away, is meaningless and does not count.
+NOTES (planning chat):
+ - Nearest established physics (Tier 1–2): in decoherence theory, a branch becomes effectively real when its record
+   is copied redundantly into the environment (Zurek's "quantum Darwinism"). "Interactions that matter" ≈
+   interactions whose records spread. Bousso et al. 2007 count only entropy produced inside a CAUSAL DIAMOND, the
+   region whose events can still reach an observer: the same instinct, already in the literature.
+ - PLANNER'S EXTENSION (not Gregory's): expansion cuts consequence chains at the cosmic event horizon. Accelerated
+   expansion pushes more matter beyond reach, so fewer interactions have consequences, so dark energy falls. This
+   is a feedback loop: dark energy suppresses the very interactions that sustain it. It gives a physical reason for
+   the decline to begin once acceleration takes hold (~5–6 billion years ago) and could move the predicted peak later
+   than cosmic noon. CAUTION: the planning chat already knows current fits peak near z ≈ 0.4–0.5 (design data, not
+   fenced). Any peak date must come from the derivation, and the test is on fenced data (F3, F4).
+ - Definition problem: "has consequences" depends on the FUTURE, which would make today's dark energy depend on what
+   happens later (and on the future expansion it causes). Must be recast as something computable from the present
+   state, e.g. "lies within the future causal reach of other matter", or "record copied into at least N systems".
+ - Most interactions DO have downstream effects (the rock warms and re-radiates). The measure therefore needs a
+   weighting (how far consequences spread) with a cutoff; the horizon is the natural cutoff.
+
+------------------------------------------------------------------------------------------
+ENTRY 7 · 2026-10-31 · Gregory Mandarano
+------------------------------------------------------------------------------------------
+IDEA: A timeline with no real consequences for its future has no reason to continue existing. The everpresent now
+(v1's moving present) is a BOW WAVE, not a single point, and the strength of the bow wave IS dark energy. One version
+of the model: when dark energy reaches zero the bow wave stops moving forward; when dark energy goes negative the bow
+wave moves BACKWARD at an accelerating rate, time runs in reverse, and the universe collapses. The rate of time is a
+reflection of two things: velocity and the amount of dark energy in the universe.
+NOTES (planning chat):
+ - "No purpose to continue" restated in physical terms: a timeline with no reachable consequences is no longer
+   sustained (consistent with Entries 5–6).
+ - Relativity already makes clock rates depend on velocity (special relativity) and gravity (general relativity).
+   This adds a cosmic term. A change in the rate of time that affects EVERY clock equally cannot be measured; to be
+   physics it must change a measurable ratio.
+ - Existing measurement: distant supernovae (DES 2024, out to z ~ 1) and quasars evolve slower by the factor (1+z)
+   predicted by standard expansion. A dark-energy-dependent term in the rate of time would show up as a deviation
+   from (1+z) that follows dark energy's history. Current data constrain it to be small. A candidate test.
+ - Negative dark energy → time reversal: separate from a crunch (in general relativity a collapse runs forward in
+   time). Precedent (historical, Tier 2): Thomas Gold proposed that the arrow of time reverses when the universe
+   contracts; Stephen Hawking argued for it in 1985 and later withdrew it after work by Don Page and his student
+   Raymond Laflamme. The snap, stop and reversal are future events: UNTESTABLE bin.
+
+------------------------------------------------------------------------------------------
+ATTRIBUTION NOTE · 2026-10-31 (applies to all entries above)
+------------------------------------------------------------------------------------------
+"Planning chat" and "planner" in this log = Claude Opus 5.5 (Anthropic; model ID claude-opus-5-5), the planning
+session that critiqued each idea. Ideas are Gregory Mandarano's unless marked "planner's suggestion" or "planner's
+extension". The physics translation, checks and cited precedents in the NOTES sections are the planner's.
+
+------------------------------------------------------------------------------------------
+ENTRY 9 · 2026-10-31 · Planner (Claude Opus 5.5), with a Gemini review relayed by Gregory · NO v2 CALCULATIONS YET
+------------------------------------------------------------------------------------------
+DESIGN-DATA CONSTRAINTS (computed from v1's own CPL fits, which are design data; CPL forces a shape, so these are
+indicative, not exact):
+ - Dark-energy density relative to today, ρ_DE(z)/ρ_DE(0): Pantheon+ fit 1.057 (z 0.2), 1.072 (z 0.42), 1.052
+   (z 0.7), 1.008 (z 1), 0.836 (z 2); DES fit 1.069, 1.085, 1.059, 1.005, 0.797. Peak ~7–9% above today near
+   z ≈ 0.4; at cosmic noon (z ≈ 2) dark energy sits ~16–20% BELOW today, not at a peak.
+ - Consequence for Entry 5's form ρ_DE ∝ I(t) − I_0: an interaction rate that tracks star formation (down ~10x
+   since z ≈ 2) cannot give a bump of only ~8% for any positive baseline I_0. I(t) must be a quantity that changes
+   by tens of percent at most over the last 10 billion years, rising until roughly z ≈ 0.4 and falling since.
+ - Gemini's review (relayed): Law 1 locked w_a = −(3/2)γ_u[Ω_m + γ_u(1−Ω_m)] (verified), hence the ~25x shallow
+   slope; v1 could not cross w = −1. v2's rise-then-fall density crosses w = −1 natively at its peak.
+CANDIDATE DEFINITIONS OF I(t), RECORDED BEFORE ANY CALCULATION (each to be computed from published histories,
+then compared with design data; the choice must be argued physically, and listing them here is the guard against
+picking the winner after the fact):
+ C-a  Star formation rate (rate proxy). Expected to fail on amplitude and timing (above).
+ C-b  Cumulative records: total entropy produced / stellar mass formed to date. Monotonic: rises forever, so no
+      peak and no crossing on its own.
+ C-c  Cumulative records × the fraction still causally reachable (Entry 6 horizon extension). Can peak after
+      acceleration begins. PLANNER'S SUGGESTION; highest risk of being chosen because the target is known.
+ C-d  Steady component + small star-formation modulation (Gregory's Entry 2/4 noon peak). Predicts dark energy
+      at z ≈ 2 at or above today's level, the opposite of the CPL-shaped fits: a genuine bet against the CPL shape,
+      decidable by fenced data that does not assume CPL.
+ C-e  Fraction of matter in bound, interacting structures (collapsed halos) × reachable fraction.
+PRE-REGISTRATION LESSONS ADOPTED FROM THE GEMINI REVIEW (for Phase D):
+ - Lock the sound-horizon / CMB-prior convention numerically inside the gates, with reference values both
+   pipelines must hit to ~1e-5 (fixes v1 Finding 1).
+ - Bayesian evidence vs ΛCDM and vs CPL becomes a registered pillar, with priors fixed by physical argument before
+   any fit and the fenced data as the scored data.
+ - Test the dark-energy sector both with free standard ω_b and with any strand-partition rule, so a matter-budget
+   failure cannot mask dark-energy performance (as M1 vs M2 did in v1).
+
+------------------------------------------------------------------------------------------
+ENTRY 10 · 2026-10-31 · Gregory Mandarano (approach), Gemini (equations, relayed), planner critique · NO FITS YET
+------------------------------------------------------------------------------------------
+APPROACH (Gregory, after reviewing the Entry 9 candidates; formalized by Gemini): dark energy is a STOCK of bundle
+tension. Causally productive macroscopic interactions (decoherence events whose consequences can still propagate)
+pump tension in; the bundle's natural unwinding (v1's γ_u) bleeds it out:
+    dρ_de/dt + 3H(γ_u/E)ρ_de = Q(a)   ⇔   w_eff = −1 + γ_u/E − Q/(3Hρ_de)     (algebra verified)
+The stock rises (w_eff < −1) while pumping beats unwinding, peaks when they balance (w_eff = −1), and weakens after.
+Acceleration shrinks the causally connected region, so fewer interactions count: a self-limiting feedback.
+Gemini's timeline numbers check out for ΛCDM-like values (q = 0 at z ≈ 0.65; matter–DE equality z ≈ 0.3) and for
+v1's CPL fits (w = −1 at z ≈ 0.39–0.40). Gemini cites holographic dark energy (Li 2004) as a cousin.
+PLANNER CRITIQUE (Claude Opus 5.5):
+ 1. Stock vs rate: an accumulating stock CAN rise while star formation falls, which removes Entry 9's amplitude
+    objection to rate-type sources (that objection applied to Entry 5's instantaneous form).
+ 2. Wrong horizon: the comoving EVENT horizon shrinks at all times, not only after acceleration begins. The
+    quantity that switches at acceleration onset is the comoving HUBBLE radius 1/(aH), which grows while the
+    expansion decelerates and shrinks once it accelerates. The Hubble radius is also local in time, which avoids
+    the future-dependence problem (Entry 6); the event horizon is the true "can ever be reached" boundary but
+    depends on the whole future. A design choice for Gregory.
+ 3. Energy budget: all starlight ever emitted is ~4e-6 of the critical density (~6e-6 of dark energy). Q cannot be
+    paid for by baryonic processes. In general relativity the energy must come from somewhere: the natural source is
+    the dark sector itself (dark matter ↔ dark energy exchange, i.e. Entry 1's frays). This is an interacting
+    dark-energy model (Tier 2 literature) and predicts that dark matter does not dilute exactly as a^-3: testable
+    in structure growth (fenced F1, KiDS lensing).
+ 4. Holographic dark energy runs the OPPOSITE way: its w = −1/3 − (2/3)√Ω_de/c falls over time (w_a > 0 in CPL
+    terms), whereas the DESI hint has w rising toward today (w_a < 0). A cousin in mechanism, not in result.
+ 5. Correction to Entry 9: at z ≈ 2.3 dark energy is only ~6% of the total energy, so data barely constrain
+    ρ_de at cosmic noon; the "16–20% below today at z = 2" figure is mostly the CPL shape extrapolating. The
+    constrained window is roughly z ≲ 1.5.
+ 6. Knobs: γ_u, the pumping normalization, the source history Q(a) choice, and (for a crunch) a cohesion baseline.
+    Two free rates can place the peak anywhere, so matching z ≈ 0.4 by itself is fitting. Predictions must come
+    from what the knobs do not control: the shape of w(z) over z ≈ 0.5–1.5 given a fixed published source history,
+    and the dark-matter dilution signature.
+ 7. Crunch: with Q ≥ 0 and the unwinding term, ρ_de only decays toward zero. A crunch needs Entry 5's baseline
+    (a constant negative "cohesion" term, i.e. a negative cosmological constant under a positive decaying tension).
+
+------------------------------------------------------------------------------------------
+ENTRY 11 · 2026-10-31 · Gregory Mandarano (idea); "Transaction Starvation" (term coined by Gemini); planner critique
+------------------------------------------------------------------------------------------
+IDEA (Gregory): in the transactional picture (documentary Ch. 4/6: offer waves forward, confirmation waves back to
+the blade), dark energy is the tension of completed handshakes across the Now. As the universe expands, more and
+more emitted light never reaches an absorber, so its handshakes never complete. Fewer completed handshakes, less
+tension, weaker dark energy. Gemini's name: TRANSACTION STARVATION. This is the transactional reading of Entries
+5–6 ("interactions that matter") and supplies the pumping term of Entry 10.
+WORKING EQUATIONS (Gemini's form, assembled by the planner; candidate only, nothing fitted):
+  tension stock:   dρ_T/dt = −3H(γ_u/E) ρ_T + κ · L(a) · P(a)
+  dark energy:     ρ_de = ρ_T − ρ_c            (ρ_c = cohesion baseline, Entry 5; needed only for a crunch)
+  handshake odds:  P(a) = 1 − exp[−τ_f(a)],  τ_f(a) ∝ ∫_a^∞ a'^−4 / E(a') da'   (absorbers diluting as a^−3)
+  L(a) = cosmic emission history (published, e.g. Madau–Dickinson); energy paid by the dark sector (Entry 10.3)
+  E(a) depends on ρ_de and τ_f on the future E: solve self-consistently (the transactional future-dependence,
+  owned rather than hidden).
+PLANNER CHECKS:
+ - Computed for ΛCDM-like expansion: τ_f(a)/τ_f(today) = 12.9 (z 2), 5.6 (z 1), 3.7 (z 0.67), 2.65 (z 0.45);
+   its log-slope steepens smoothly from −1.9 (z 2) to −2.75 (today). NO threshold at the onset of acceleration;
+   Gemini's "handshakes start failing en masse" claim does not hold. Starvation is gradual.
+ - Real light is mostly NOT absorbed in the future already: since recombination the universe is transparent (the
+   CMB has travelled 13.8 billion years largely unabsorbed). Gemini's "nearly 100% of offers answered before
+   z ≈ 0.7" is false. In the realistic regime τ_f ≪ 1, P ≈ τ_f and its normalization merges into κ: one fewer knob.
+ - Definition problem: the overwhelming majority of absorptions happen locally (inside stars, gas, dust) and do not
+   depend on cosmic expansion at all. Starvation acts only on light that ESCAPES into intergalactic space. The rule
+   must say which handshakes count (e.g. escaping radiation only), or local absorptions swamp the effect.
+ - Partridge 1973 found no difference in emission with or without a future absorber. Consistent here: this
+   mechanism changes the bundle's tension, not emission rates.
+ - Energy: Gemini's "conservation intact across the cycle via the end of time" has no equation behind it. In
+   general relativity energy is conserved locally at every moment; tension lost now must go somewhere now.
+ - Knobs: κ, γ_u, ρ_c (crunch), plus the definition of L and of which handshakes count. The peak date still
+   follows from κ and γ_u, so the z ≈ 0.4 match alone is fitting; predictions are the w(z) shape over z ≈ 0.5–1.5
+   and the dark-matter dilution signature.
+ - Note: "the future left him on read" is the documentary's E-sprite quip, not an Einstein quote.
+
+------------------------------------------------------------------------------------------
+ENTRY 12 · 2026-10-31 · Gregory Mandarano
+------------------------------------------------------------------------------------------
+DECISION: Transaction starvation is only a MINOR part of the mechanism. A starved transaction is simply one less
+quantum interaction that affects the future (or the past). The pumping term counts ALL interactions that matter;
+starvation is one channel that subtracts from it.
+NOTES (planning chat): this settles Entry 11's "which handshakes count": all of them. Consequence: the source is
+dominated by local interactions, which track cosmic activity (stars, gas, accretion; down roughly tenfold since
+cosmic noon), so the main shape of the pumping term comes from the published cosmic activity history, with
+starvation adding a late, gradually growing extra decline. In the stock form (Entry 10) dark energy can still rise
+while the source falls, and peaks where source and unwinding balance.
+
+------------------------------------------------------------------------------------------
+ENTRY 13 · 2026-10-31 · Gregory Mandarano (decisions on Entry 10's open questions)
+------------------------------------------------------------------------------------------
+DECISION 1 · HORIZON: the cosmic EVENT horizon, not the Hubble radius ("the Hubble radius only matters in the here
+and now"). The model accepts that whether an interaction counts depends on the future, consistent with the
+transactional picture. Consequence (planning chat): dark energy and the future expansion must be solved together
+as one self-consistent loop (as holographic dark energy already does with the same horizon); in a universe that
+ends in a crunch, the integral runs to the crunch.
+DECISION 2 · PUMPED ENERGY: a mixture of sources, ultimately driven by the ability of interactions in the present
+(wherever that present is) to produce frays.
+NOTES (planning chat): "produce frays" sets the RATE of pumping; the energy bookkeeping still has to name its
+reservoirs, and each extra reservoir's share is a knob unless derived. Planner's suggestion (not Gregory's):
+since frays already carry dark-matter weight (Entry 1), the minimal choice is that fray production moves energy
+within the dark sector (dark matter ↔ tension), adding no new reservoir.
+STILL OPEN: the crunch (keep the cohesion baseline ρ_c or not).
+
+------------------------------------------------------------------------------------------
+ENTRY 14 · 2026-10-31 · Gregory Mandarano
+------------------------------------------------------------------------------------------
+DECISION: dark energy MUST go negative. The cohesion baseline ρ_c stays (a constant negative component under the
+positive, draining tension). Once dark energy reaches 0 the blade stops; once it goes negative the blade moves
+backward at an accelerating rate, collapsing the future into the past; the universe shrinks and eventually crunches.
+NOTES (planning chat):
+ - With the baseline kept, the model predicts a specific date for dark energy reaching zero and for the crunch,
+   both computable from the fitted knobs: untestable directly, but stated in advance.
+ - Testable now: whether the data allow a negative constant underneath a positive dynamical component (a question
+   already explored in Tier 2 literature since DESI; to verify sources).
+ - CONSISTENCY QUESTION (open): in general relativity the expansion does not stop when dark energy reaches zero;
+   matter keeps it expanding while it slows. The expansion stops (H = 0) only later, once negative dark energy
+   cancels matter (ρ_de = −ρ_m), then contraction and the crunch follow. So "blade stops at DE = 0" and "universe
+   turns around at H = 0" are two different moments. Options: (a) the blade tracks dark energy and stops first,
+   which means time stops while space is still expanding (needs a new account of what that means); (b) the blade
+   tracks the expansion and stops at turnaround, with negative dark energy as the cause. Option (b) keeps general
+   relativity intact. Gregory to choose.
+
+------------------------------------------------------------------------------------------
+ENTRY 15 · 2026-10-31 · Gregory Mandarano (resolves Entry 14's consistency question)
+------------------------------------------------------------------------------------------
+DECISION: LAG. Gravity contains motion, and motion has inertia: dark energy turning negative does not bring the
+motion to zero at once. The blade keeps going forward, slowing, after dark energy crosses zero, and stops only
+when the motion is used up (turnaround, H = 0); then it runs backward into the crunch. This is Entry 14's option
+(b), with general relativity intact.
+NOTES (planning chat):
+ - Sequence under v2: tension peaks (z ≈ 0.4) → acceleration ends → dark energy reaches zero (coasting, slowing)
+   → dark energy negative → expansion stops (negative dark energy cancels matter) → blade reverses → crunch.
+ - This matches the Friedmann equations exactly: the expansion rate behaves like a velocity, so a reversed force
+   slows it before it can reverse it (the documentary's thrown-ball image from Chapter 1).
+ - Reconciles Entry 7: the blade's speed follows the expansion (which carries inertia), not dark energy directly.
+
+------------------------------------------------------------------------------------------
+ENTRY 16 · 2026-10-31 · Planner checks on Gemini's reply (relayed by Gregory) · NO FITS YET
+------------------------------------------------------------------------------------------
+ - Gemini accepted Entry 10–11 corrections (event vs Hubble horizon, τ ≪ 1, local-vs-escaping, local energy
+   conservation via dark-matter exchange: ρ̇_dm + 3Hρ_dm = −Q, ρ̇_de + 3H(1+w_bare)ρ_de = +Q).
+ - Gemini's two blade options are both Entry 15 (blade stops at H = 0 after a coasting lag). Two future dates
+   become stated predictions: t_zero (ρ_de = 0) and t_turn (H = 0, ρ_de = −ρ_m); their gap is the lag.
+ - CORRECTION to Gemini: in a recollapsing universe the event horizon does NOT end at turnaround. Light keeps
+   travelling through the contracting phase until the crunch, so the remaining causal future is still finite and
+   non-zero at turnaround; it reaches zero only at the crunch. "Starvation becomes total as the blade stops" is
+   wrong.
+ - OPEN QUESTION (planner): during contraction, absorbers crowd together again (density rises as a shrinks), so
+   the odds that light is absorbed RISE; near the crunch the universe turns opaque and every offer is answered
+   (cf. the documentary's Epilogue). Under v2's own rule that would pump tension back up, which could halt the
+   collapse (a bounce) rather than complete it. v2 must say how the rule works while the blade runs backward.
+ - REVISION NOTE: the documentary (Ch. 10, v1) says the pace of the now is the pace of the unwinding. Entry 15
+   makes the blade follow the expansion instead. This is a deliberate v2 change and the follow-up should say so.
+ - SOURCE TEMPLATE (proposal, Gregory to decide): use the published Madau & Dickinson (2014) cosmic
+   star-formation history as the fixed shape of fray production, its normalization folded into κ (no new knob),
+   with cosmic light output and black-hole accretion history as pre-declared sensitivity variants, all locked
+   before any fit.
+
+------------------------------------------------------------------------------------------
+ENTRY 17 · 2026-10-31 · Planner (Claude Opus 5.5) · consistency check, NO FITS YET
+------------------------------------------------------------------------------------------
+FINDING: CRUNCH + EVENT HORIZON + TRANSACTIONS ⇒ NO STARVATION. If the universe ends in a crunch, the light emitted
+today keeps travelling through the contraction, where absorbers crowd together without limit. The future optical
+depth τ_f = ∫ n σ c dt diverges approaching the crunch (n ∝ a^−3 → ∞), so every photon is eventually absorbed and
+P_handshake → 1 for all light ever emitted. Under the rules as chosen (Entries 11, 13, 14), transaction starvation
+is exactly zero at all times. (Gemini's solver sketch again integrates the horizon only to turnaround; that is the
+Entry 16 error unless adopted as a deliberate rule, option 1 below.)
+OPTIONS (Gregory to decide):
+ 1. Answers count only if they arrive within the expanding phase (before the blade turns). Starvation then works
+    as designed, and Gemini's integral to a_turn becomes correct BY RULE. Cost: the rule must say why late answers
+    do not count.
+ 2. Accept that every offer is eventually answered (the documentary's Epilogue): starvation drops out, and dark
+    energy's decline is driven by falling cosmic activity alone (Entry 12 already made starvation minor).
+ 3. The bounce (Entry 16): answers flooding back during contraction refill the tension and reverse the collapse.
+DEPENDENCY: the pre-data shape check of the dark-energy equation needs this decision (it sets the source term) and
+the source-template decision (Entry 16).
+PROCESS NOTE: the follow-up video's Part Two should present v2 as of a named log entry (a snapshot), since the
+design log keeps growing.
+
+------------------------------------------------------------------------------------------
+ENTRY 18 · 2026-10-31 · Gregory Mandarano (resolves Entry 17)
+------------------------------------------------------------------------------------------
+DECISION: "Not if time is moving backwards." After turnaround the blade runs backward (Entries 7, 14, 15), so the
+contraction is not part of today's forward future. An offer sent now can only be answered by absorbers the blade
+reaches going forward, i.e. before turnaround. Light is never "answered" by the crunch.
+NOTES (planning chat):
+ - This is Entry 17's option 1, now with a physical reason from the model's own rules rather than an ad hoc cutoff.
+   The event-horizon integral runs from a to a_turn BY RULE (Gemini's form becomes correct under v2):
+       r_eh(a) = ∫_a^{a_turn} c da' / (a'^2 H(a'))        (finite; the integrand near a_turn is integrable)
+ - Consequences: starvation survives; the remaining forward future shrinks to zero as the blade approaches
+   turnaround, so starvation becomes total there, reinforcing the drop into negative dark energy; the bounce
+   (Entry 16 option 3) does not arise, since answers do not flood back during a time-reversed contraction.
+ - Commitment: v2 now adopts a Gold-style time-reversed contraction (Tier 2 history: Gold; Hawking 1985; withdrawn
+   after Page and Laflamme). That part is in the UNTESTABLE bin.
+ - Practical size: absorbers thin out fast, so today's starvation depends only weakly on how far away a_turn is,
+   unless turnaround is near. Consistent with Entry 12 (starvation minor).
+
+------------------------------------------------------------------------------------------
+ENTRY 19 · 2026-10-31 · Gemini elaboration of Entry 18 (relayed by Gregory), planner check
+------------------------------------------------------------------------------------------
+Gemini restates Entry 18: the turnaround is a temporal reflection boundary; an offer from the expanding phase can
+only be answered before a_turn; integrating the horizon to a_turn is the definition of the future under v2.
+PLANNER CHECK: consistent with Entry 18, except the final step mixes two pictures of the collapse:
+ (A) TRUE REVERSAL: the backward blade un-happens history. Used to block crunch answers. Then the leftover photons
+     are not compressed into a fireball; run backward, they return to and are reabsorbed by their own emitters.
+ (B) ORDINARY COLLAPSE: physics keeps its usual arrow while space shrinks. Used for "leftover light compressed
+     into the next Big Bang". But under (B) the crunch absorbs everything and Entry 17's cancellation returns.
+v2 must use ONE picture throughout. Planner's suggestion (not Gregory's): (A), stated as "every unanswered offer
+returns to its sender". Bonuses: entropy runs downhill during the reversal, which supplies the entropy reset that
+Entry 3 said any cycle needs (Tolman's problem); the reversal ends at the start state (the 0D point), from which
+fresh timelines burst. Cost: the documentary Epilogue's "answered all at once at the end" becomes "returned to
+sender" in v2; v1's film stays as it is and the follow-up notes the change. Gregory to confirm.
+
+------------------------------------------------------------------------------------------
+ENTRY 20 · 2026-10-31 · Gregory Mandarano (decisions) · SNAPSHOT S1 DECLARED
+------------------------------------------------------------------------------------------
+DECISION 1 · SOURCE TEMPLATE: Madau & Dickinson (2014) cosmic star-formation history is the PRIMARY template of
+fray production:  ψ(z) = 0.015 (1+z)^2.7 / {1 + [(1+z)/2.9]^5.6}  M_sun yr^-1 Mpc^-3.
+Only the shape S(z) = ψ(z)/ψ(0) enters; the 0.015 normalization folds into κ (no new knob). Checked by the
+planner: peak at z = 1.86, peak/today = 8.9.
+ - Future extension (Gemini's spec, adopted): for a > 1 the same formula continues with 1+z = 1/a, up to a_turn.
+   S = 0.335 (a = 1.5), 0.154 (a = 2), 0.024 (a = 4). NOTE (planner): this is an extrapolation of an empirical
+   fit, not a measurement. It barely affects today's predictions but directly sets the predicted dates of
+   ρ_de = 0 and turnaround; those dates are reported with this caveat.
+ - Pre-declared sensitivity variants (secondary, not deciding): cosmic bolometric luminosity density history and
+   black-hole accretion rate density history (specific published references to be fixed before any run).
+DECISION 2 · THE COLLAPSE: TRUE REVERSAL throughout (Entry 19, picture A). Unanswered offers return to their
+senders; entropy runs downhill during the reversal (the cycle's entropy reset); the reversal ends at the start
+state, from which fresh timelines burst. "That would inevitably be in the nature of reversed time."
+SNAPSHOT S1: the v2 dark-energy design as of this entry is the version presented in the follow-up video's Part
+Two. Work after Entry 20 is post-snapshot. Next design target: the galaxy kernel (Entry 1's decisive test).
+
+------------------------------------------------------------------------------------------
+ENTRY 21 · 2026-10-31 · Gregory Mandarano (freeze before computing) · SHAPE-CHECK PLAN, stated BEFORE any run
+------------------------------------------------------------------------------------------
+Gregory: freeze the model before running the Madau–Dickinson shape calculation. Entry 20 (sha 319268…, stamped)
+froze it; no model output has been computed. (Only properties of the published template itself were evaluated:
+its peak z = 1.86, peak/today = 8.9, and its future values.) This entry fixes what the shape check will do and
+what would count as failure, before it runs.
+MODEL AS FROZEN (Entries 10–20):
+  d(ρ_T)/dt = −3H(γ_u/E) ρ_T + κ S(a) P(a)          ρ_de = ρ_T − ρ_c          ρ̇_dm + 3Hρ_dm = −κ S(a) P(a)
+  S(a) = ψ(z)/ψ(0) (Madau–Dickinson 2014), P(a) ∝ ∫_a^{a_turn} a'^−4 / E(a') da' (τ ≪ 1), flat universe,
+  E(a) from matter + radiation + ρ_de; solved self-consistently (iterate H(a) ↔ a_turn ↔ P ↔ ρ_de to convergence).
+  Knobs: κ, γ_u, ρ_c. Today's dark-energy density fixes one combination.
+WHAT THE SHAPE CHECK DOES (design data only; nothing fenced is touched):
+  Scan the two free knob combinations over wide ranges and record, for every point: today's w_0, the redshift(s)
+  where w = −1 is crossed, the peak ρ_de / today ratio and its redshift, the total fraction of dark matter
+  transferred since recombination, and the future dates of ρ_de = 0 and turnaround (with the Entry 20 caveat).
+VIABILITY CRITERIA (wide bands from v1's design data, not fits):
+  V1  Some knob values give ρ_de > 0 today and exactly one w = −1 crossing in 0.2 ≤ z ≤ 0.8.
+  V2  For those values the dark-energy peak is gentle: peak/today ≤ 1.15.
+  V3  A finite turnaround exists (required by the crunch).
+  V4  Dark matter transferred since recombination stays below 5% (larger shifts would visibly alter the CMB and
+      structure growth; a refined limit comes later from the actual likelihoods).
+KILL CONDITION: if no knob values satisfy V1–V4 together, the frozen dark-energy design fails on design data and
+the log records that before any redesign.
+REPORT REGARDLESS: the w(z) curve over z ≈ 0.5–1.5 across the viable region (the part the knobs do not control),
+and the predicted dates.
+
+------------------------------------------------------------------------------------------
+ENTRY 22 · 2026-10-31 · Gregory Mandarano (decisions), Gemini (cascade), planner (spec) · STILL BEFORE ANY RUN
+------------------------------------------------------------------------------------------
+PROTOCOL (Gregory): integrate the frozen equations forward from the published Madau–Dickinson curve over a grid
+of test knob values BEFORE any fit to DESI DR2 or any other likelihood. Evaluate the three starting conditions,
+select one by the rule below, and lock the choice into the Phase D manifest before any cosmological likelihood is
+touched. Then fit knobs on design data; then test on fenced data.
+THRESHOLDS (Gregory confirms Entry 21): V2 peak/today ≤ 1.15; V4 dark matter transferred since recombination < 5%.
+CAVEAT (recorded): V1's crossing window and V2's cap were derived from v1's CPL fits to DESI DR2, so the check is
+lightly data-informed (coarse bands, stated before any run), not data-blind.
+STARTING CONDITIONS (tension T at the start of integration; dark energy = T − Λ_coh):
+  OPTION 3  T_init = Λ_coh   (dark energy starts at zero; "born on the knife edge")         knobs: κ, γ_u, Λ_coh
+  OPTION 1  T_init = 0       (dark energy starts at −Λ_coh; "the stars made dark energy")    knobs: κ, γ_u, Λ_coh
+  OPTION 2  T_init free      (the Big Bang winds the rope; "starts high")                   knobs: + T_init
+  Options 1 and 3 are slices of Option 2 (nested), so Option 2 is viable whenever either is.
+SELECTION RULE (Gregory: fewest knobs; cascade per Gemini), strictly in order:
+  1. OPTION 3 if any grid point passes V1–V4.
+  2. else OPTION 1 if any grid point passes V1–V4.
+  3. else OPTION 2 if any grid point passes V1–V4.
+  4. else the frozen dark-energy design FAILS on design data (Entry 21 kill condition).
+  Note (planner): Option 1 starts with negative dark energy, which contradicts Entry 4's "starts high"; by this rule
+  it is accepted if Option 3 fails and Option 1 passes. Gregory to object now if that is unacceptable.
+SCAN SPECIFICATION (units: today's critical density; flat; Ω_m,0 = 0.315, h = 0.674, radiation from T_CMB):
+  γ_u ∈ [0, 2] (41 points); Ω_coh ∈ [0, 3] (31 points); Option 2 additionally Ω_Tinit ∈ [0, Ω_coh + 3] (31 points).
+  κ is solved so that today's dark energy Ω_de,0 = 1 − Ω_m,0 − Ω_r,0; a point with no κ ≥ 0 that achieves it fails.
+  Integration from a = 1e−3 (pumping is negligible earlier) to turnaround; S(a) per Entry 20 for all a ≤ a_turn.
+  Horizon/starvation integral to a_turn (Entry 18). If no turnaround by a = 100: integrate to a = 100, flag, fail V3.
+  Self-consistency: iterate H(a) ↔ a_turn ↔ P(a) ↔ ρ_de until max relative change in H(a) < 1e−8 (max 50 passes);
+  non-converged points are flagged and counted as failing.
+  Dark matter: today's Ω_dm fixed; earlier dark-matter density reconstructed including the transfer; V4 uses the
+  transferred energy as a fraction of dark matter, from a = 1e−3 to today.
+REQUIRED AT PHASE D (Gemini's checklist, logged now): the sound-horizon / CMB-prior convention as numbers both
+pipelines must hit; exact dynesty prior ranges for every knob; the a > 1 extension of S(a) and the turnaround
+fallback restated in the manifest.
+
+------------------------------------------------------------------------------------------
+ENTRY 23 · 2026-10-31 · Gregory Mandarano (collapse dynamics) · post-turnaround only; does not affect the run
+------------------------------------------------------------------------------------------
+IDEA: during expansion, matter pulls in and tension pushes out (a tug of war), so acceleration stays mild for
+billions of years. After turnaround there is no tug of war: dark energy is negative, so matter and dark energy BOTH
+pull inward ("all the forces in the Friedmann acceleration equation point the same way"). The backward blade
+unmakes frays, collapsing the settled wake back into possibility, so instead of interactions pumping tension in,
+the backward blade sucks tension out at a rate tied to the collapse speed. Hubble friction (dilution during
+expansion) flips into "anti-friction" during contraction ("grease on the rope"), amplifying the collapse: a runaway
+cascade that crunches the universe far faster than it expanded.
+NOTES (planning chat):
+ - Matter and negative dark energy both pull inward from the moment dark energy crosses zero (the start of the
+   coasting lag), not only after turnaround.
+ - "Hubble anti-friction" is a real term in contracting-universe physics (Tier 2): densities that diluted during
+   expansion concentrate during contraction, and the collapse speeds up toward the end.
+ - Floor: with dark energy = tension − Λ_coh and tension ≥ 0, draining all tension takes dark energy only down to
+   −Λ_coh, not beyond. A true exponential runaway of negative dark energy would need a new rule (e.g. the rope can
+   be wound backward, tension < 0).
+ - Speed: in general relativity, collapse with the same ingredients mirrors the expansion (similar duration).
+   Draining tension to the floor makes the collapse somewhat faster than the mirror; "far faster" needs the
+   backward-winding rule above.
+ - CONFLICT with Entry 20 (true reversal = exact mirror: history replays backward, dark energy retraces its own
+   history, the collapse takes as long as the expansion). This entry describes an UNMAKING (not a replay):
+   time-asymmetric and fast. v2 must pick one. Unmaking still blocks crunch answers (absorbers are unmade) and still
+   resets entropy; the "returned to sender" image would change.
+ - Scope: everything here happens after turnaround, so it does not change the shape check, Entry 22 or the Phase D
+   tests (the horizon integral stops at a_turn). It only affects the predicted duration of the collapse
+   (UNTESTABLE bin).
+
+------------------------------------------------------------------------------------------
+ENTRY 24 · 2026-10-31 · Gemini proposal (relayed), planner check · post-turnaround only
+------------------------------------------------------------------------------------------
+PROPOSAL (Gemini): up to turnaround the frozen equations run unchanged (nothing after a_turn affects present data,
+per Entry 18). After turnaround (H < 0) the drain coupling flips into a runaway sink driven by −H, amplifying
+negative dark energy as a shrinks to 0.
+PLANNER CHECK:
+ - The frozen drain does NOT flip by itself: 3H(γ_u/E) = 3H_0 γ_u because E = H/H_0, so the drain is a constant
+   rate in cosmic time whatever the sign of H. A post-turnaround sink driven by −H is a NEW rule and must be
+   written as one.
+ - Acting on the tension, any sink only drives tension to 0 and dark energy to the floor −Λ_coh. To amplify
+   negative dark energy beyond the floor, the rule must act on the negative component itself (the floor deepens
+   as the universe shrinks, i.e. it stops being a constant). That is the "rope wound backward" rule of Entry 23,
+   stated differently.
+ - This is the UNMAKING picture of the collapse; Entry 20 locked the MIRROR picture. Open decision (Entry 23).
+ - The collapse duration ("how fast the snap is") can be computed only after the run fixes the knobs and the
+   collapse rule is chosen.
+
+------------------------------------------------------------------------------------------
+ENTRY 25 · 2026-10-31 · Gregory Mandarano (decision), Gemini options (relayed), planner check · post-turnaround
+------------------------------------------------------------------------------------------
+DECISION: the collapse is NOT a true reversal. Entry 20's "mirror replay" (history replaying backward, photons
+returning to their senders) is withdrawn. What reverses is the blade (the Now), which unmakes the wake rather than
+replaying it.
+CONSEQUENCES TO RESTATE (planner):
+ - Entry 18's wall at a_turn was justified by time reversal. It now rests on the blade itself reversing: answers
+   count only while the blade moves forward. The rule stands; its justification changes.
+ - Entry 20's entropy-reset bonus came from the mirror. Under unmaking, the reset must come from the unmaking
+   itself (settled wake returned to possibility), which is a model rule, not a consequence of physics running
+   backward.
+ - Unanswered offers: no longer "returned to sender"; they are unmade with the wake.
+REMAINING OPTIONS (Gemini's framing):
+ (U1) UNOPPOSED FLOOR COLLAPSE: the frozen equations continue past turnaround; dark energy falls toward the floor
+      −Λ_coh as tension drains, and matter plus the floor pull inward unopposed. Planner checks: (i) the pump must
+      be explicitly switched OFF after turnaround (a backward blade makes no frays; otherwise the Madau–Dickinson
+      formula, a function of a, would restart star formation as a shrinks): a small rule, but a rule; (ii) the
+      tension drains at a constant cosmic-time rate 3H_0γ_u; for γ_u ≈ 0.04 that is a timescale near 100 billion
+      years, so "tension ≈ 0 on the way down" is NOT automatic and depends on the fitted γ_u and the turnaround
+      date; (iii) faster than the mirror, but by how much is only known after the run.
+ (U2) BACKWARD-WOUND RUNAWAY: a new post-turnaround rule makes the floor deepen as the universe shrinks, e.g.
+      ρ_coh(a) = −Λ_coh (a_turn/a)^k for H < 0 (a negative component behaving like a fluid with w = k/3 − 1), or
+      tension allowed below zero. k is a knob that no data can constrain: it costs nothing in the Phase D evidence
+      but makes the collapse duration a choice, not a prediction.
+Neither option affects the shape check, Entry 22 or Phase D. Decision open.
+
+------------------------------------------------------------------------------------------
+ENTRY 26 · 2026-10-31 · Gemini point (relayed), planner check · clarification of Entries 18 and 25 (U1)
+------------------------------------------------------------------------------------------
+Gemini: no separate switch is needed after turnaround; the pump is ψ × the reach into the remaining forward future,
+and after t_turn the remaining forward future is zero (and a backward blade creates no frays).
+PLANNER CHECK: correct, with one wording fix. Starvation already drives P to zero continuously as the blade
+approaches turnaround (Entry 18), so the pump fades to zero without a jump. But P must be DEFINED by the blade's
+remaining forward future in TIME (zero for all t ≥ t_turn), not as an integral over a: an a-integral ∫_a^{a_turn},
+applied naively while a shrinks after turnaround, would become non-zero again. For the Phase D manifest:
+  P(t) ∝ ∫ over the blade's remaining forward path from t to t_turn;   P(t) = 0 for t ≥ t_turn.
+With that wording, U1 needs no extra rule.
+
+------------------------------------------------------------------------------------------
+ENTRY 27 · 2026-10-31 · Gregory Mandarano (decisions) · BEFORE ANY RUN
+------------------------------------------------------------------------------------------
+DECISION 1 · THE COLLAPSE: Picture U1, the UNOPPOSED FLOOR COLLAPSE (Entries 25–26). No new parameters: after
+turnaround the frozen equations continue, the pump is zero (P(t) = 0 for t ≥ t_turn), tension drains at the
+constant cosmic-time rate, and matter plus the floor −Λ_coh pull inward. The collapse duration is an output of
+the fitted knobs, reported with its uncertainty and the Entry 20 extrapolation caveat. The runaway (U2) is
+rejected because its speed could never be tested.
+DECISION 2 · SELECTION: tiebreak (a), fewest knobs wins, with the strict cascade of Entry 22 (Option 3, then
+Option 1, then Option 2, else fail). Gregory raised no objection to Option 1's negative-start story; the cascade
+stands as written.
+Reason given: "the most integrity".
+
+------------------------------------------------------------------------------------------
+ENTRY 28 · 2026-10-31 · Gregory Mandarano · V2 DARK-ENERGY DESIGN FREEZE (DE-F1)
+------------------------------------------------------------------------------------------
+FROZEN: the v2 dark-energy pillar as specified in Entries 10–27 (tension stock pumped by Madau–Dickinson fray
+production × the blade's remaining forward reach, drained by unwinding, minus the cohesion floor; dark-matter
+exchange; event horizon to turnaround; lag; unopposed floor collapse; the three starting conditions with the
+fewest-knobs cascade; the shape-check plan, bands and kill condition of Entries 21–22).
+This freeze is recorded BEFORE any model output has been computed.
+FOLLOW-UP VIDEO: Part Two presents v2 as of this entry (DE-F1 supersedes snapshot S1 of Entry 20).
+NOT YET DESIGNED (v2 is not complete): the galaxy kernel (Entry 1's decisive test against the radial acceleration
+relation), the matter shares (charter B2), and the Phase D pre-registration of all tests on fenced data.
+
+------------------------------------------------------------------------------------------
+ENTRY 29 · 2026-10-31 · Planner (Claude Opus 5.5) · SHAPE-CHECK IMPLEMENTATION CHOICES, stated BEFORE the run
+------------------------------------------------------------------------------------------
+Gregory approved running the shape check now (before the follow-up's release) and stamping the winner. These are
+the implementation choices the Entry 21–22 spec left open, fixed before any output exists:
+ - Units: H_0 = 1, densities in units of today's critical density. Ω_b,0 = 0.0492 (no exchange, ∝ a^−3),
+   Ω_dm,0 = 0.315 − 0.0492, Ω_r,0 = 9.2e−5 (photons + 3.046 neutrino species), Ω_de,0 = 1 − 0.315 − Ω_r,0.
+ - Expanding phase on a fixed grid in ln a from a = 1e−3 to a = 100 (fine spacing); stock solved exactly for a
+   fixed E(a): ρ_T(a) = G(a)[T_init + κ ∫ S P /(E G) dln a], G = exp(−3γ_u ∫ dln a / E). κ fixed each pass by
+   ρ_T(1) − Λ_coh = Ω_de,0; κ < 0 ⇒ point fails.
+ - Dark matter: comoving dark matter today fixed at Ω_dm,0; earlier values add back the energy transferred.
+ - P(a) = ∫_a^{a_turn} a'^−4 / E(a') da' (normalization folded into κ); a_turn = first a > 1 with E² ≤ 0; if E² ≤ 0
+   occurs at or before today the point fails; if none by a = 100, a_turn = 100 and the point fails V3.
+ - Convergence: first guess E(a) = ΛCDM with Ω_de,0; iterate until the max relative change of E over
+   a ≤ a_turn/1.02 is < 1e−8 (the last 2% before turnaround is excluded from the metric because E → 0 there);
+   max 50 passes; non-converged points fail.
+ - V1: ρ_de(today) > 0 and exactly one sign change of dρ_de/dln a inside 0.2 ≤ z ≤ 0.8 (crossings elsewhere are
+   reported). V2: max over the past of ρ_de / ρ_de(today) ≤ 1.15. V3: a turnaround exists. V4: comoving dark
+   matter transferred between a = 1e−3 and today < 5% of today's dark matter.
+ - Dates: cosmic time t = ∫ dln a / E (1/H_0 = 14.51 Gyr); t_zero where ρ_de = 0 after today; t_turn at
+   turnaround; collapse (U1: pump zero, constant-rate drain, no exchange) integrated in time to a = 1e−3.
+ - All three options are run and reported in full; the cascade (3, then 1, then 2) alone selects the winner.
+
+------------------------------------------------------------------------------------------
+ENTRY 30 · 2026-10-31 · Planner (Claude Opus 5.5) · PRIOR-ART NOTE after freeze DE-F1 (no design change)
+------------------------------------------------------------------------------------------
+Found while answering whether v2's results could matter to researchers: the closest published cousin of v2's
+dark-energy pillar is the COSMOLOGICALLY COUPLED BLACK HOLES proposal (Farrah, Croker et al.; e.g. "DESI Dark
+Energy Time Evolution is Recovered by Cosmologically Coupled Black Holes", arXiv:2407.03508; T2, debated): dark
+energy produced by black holes born from stars, so dark energy tracks the cosmic star-formation history, with
+matter converted into dark energy. v2 shares that structure (activity-driven transfer from matter into dark
+energy following star formation) and differs in mechanism and in its drain, starvation and negative floor.
+CONSEQUENCES: (1) v2 is less novel than it looked and must cite this work in the paper and the follow-up's
+real-physics pairings; (2) v2 sits next to a live research question, so a clean pre-registered test on fenced data
+has some value to that debate; (3) proposal for Phase D (Gregory to decide): include the coupled-black-hole model
+as a named comparison in the Bayesian head-to-head, so v2's results speak directly to that literature.
+
+------------------------------------------------------------------------------------------
+ENTRY 31 · 2026-10-31 · Gregory Mandarano (decision, relayed with Gemini's agreement) · PHASE D COMPARISON SET
+------------------------------------------------------------------------------------------
+DECISION: the Phase D Bayesian head-to-head pre-registers FOUR models, scored on FENCED data only (next DESI
+release, Euclid, KiDS lensing, LITTLE THINGS / MHONGOOSE as applicable):
+  ΛCDM · w0waCDM (CPL) · cosmologically coupled black holes (CCBH; Farrah, Croker et al.) · v2.
+CCBH REPRODUCTION GATE (must pass before the Phase D lock): CCBH is implemented from its authors' published
+equations (coupling strength and black-hole population growth as published, not a simplified "integral of
+Madau–Dickinson" stand-in), and the implementation must reproduce the authors' published DESI result on the same
+DESI DR2-era data they used, within a tolerance fixed in the Phase D manifest. DESI DR2 is used here ONLY for this
+validation (design data), never for scoring.
+INTERPRETATION RULES (to restate in the manifest): differences between v2 and CCBH are attributed only to what the
+past light cone can see (chiefly the drain's shaping of the late-time decline); the cohesion floor, turnaround and
+crunch remain in the UNTESTABLE bin. Inclusion of CCBH is a comparison, not an endorsement; v2's paper and the
+follow-up cite it as prior art (Entry 30).
+Corrections accepted by Gemini (relayed): design vs fenced data; faithful CCBH mechanics; w = −1 for a negative
+constant; no data can test the turnaround; no claim that other teams are awaiting this comparison.
+
+------------------------------------------------------------------------------------------
+ENTRY 32 · 2026-11-01 · Planner (from an external review by Grok, relayed by Gregory) · PHASE D REQUIREMENT
+------------------------------------------------------------------------------------------
+Review point (accepted): v1's T4 cluster test was structurally under-powered from data compilation; the registered
+missing-data rule correctly reduced it to one usable object, but the pillar should never have been registered as
+able to decide anything. REQUIREMENT FOR PHASE D: every pillar gets a pre-registration POWER CHECK before the lock:
+(1) count the usable objects/data points under the registered missing-data rules, using metadata only (no fenced
+measurements analysed); (2) show with mock injections (the Phase 3 method) that the test can tell the model from
+its competitor at the registered threshold with that sample. A pillar that fails its power check is registered as
+EXPLORATORY, not decisive.
+
+------------------------------------------------------------------------------------------
+ENTRY 33 · 2026-11-01 · Planner (Claude Opus 5.5), from an external review by Grok and the Phase 3 scoring · PHASE D REQUIREMENTS
+------------------------------------------------------------------------------------------
+Accepted (Grok, point 1, prior volume): every knob's dynesty prior range is fixed by physical argument before any fit
+(already required, line ~200) AND a prior-sensitivity check is registered: evidence recomputed with each visible knob's
+range halved and doubled, all three ln Z reported, verdict taken from the registered range only. Note for the record:
+knobs the past light cone cannot see (post-turnaround rules, U2's k) leave the likelihood flat and cost nothing in ln Z;
+the Occam penalty falls on knobs the data can see but may not need (κ, the lag). The fewest-knobs cascade (Entry 22-25)
+is the main defence.
+Accepted (Grok): freeze sampler settings (nlive, dlogz, seeds), the exact CCBH mapping (Entry 31 gate) and report the full
+ln Z and Δχ² table for all four models, as in v1. ln Z sampler error from at least two seeds per model.
+Held (Grok, point 2): Grok treats the head-to-head as supplementary to locked primary pillars. In v2 it is a REGISTERED
+PILLAR by design (line ~200; Entry 31), because v2's claim lives in the dark-energy shape. No change. Its scope stays as
+Entry 31 restricts it: differences from CCBH speak only to what the past light cone can see.
+Adopted from Phase 3 scoring (v1 findings F1-F6, PHASE3_SCORING_v1.sha256):
+ (a) No registered criterion may put a parameter's expected value on its prior edge unless the criterion is written for
+     it (boundary parameters use one-sided limits; v1's γ_u criterion was unsatisfiable).
+ (b) Before the lock, every injection criterion's pass rate is computed for a PERFECT pipeline; any rate below ~90% is
+     rewritten (v1's H1 criterion passed only ~49% of the time by construction).
+ (c) Calibration check registered: realization-to-realization scatter vs quoted posterior σ for every recovered
+     parameter (v1 F1: Ω_bc scattered ~1.9× its σ in the model-true universes).
+ (d) More realizations per truth for the decisive pillars (target 20; compute cost to be estimated before the lock).
+ (e) CPL posteriors on a ΛCDM sky leaned ~0.9σ toward DESI's quadrant from prior bounds (v1 F5): v2 reports CPL and v2
+     results alongside a ΛCDM-truth injection so projection effects are visible.
+
+------------------------------------------------------------------------------------------
+ENTRY 34 · 2026-11-01 · Gregory Mandarano (decision) · PHASE D COMPUTE
+------------------------------------------------------------------------------------------
+DECISION: v2's injection runs and Phase D fits run on rented cloud machines, not Gregory's PC. Basis (Planner estimate
+from v1 Phase 3's logged runtimes, 48,977 s on 12 workers): ~4-5 h on one 192-core machine vs ~2.3 days locally, about
+$12-15 on spot / $40-50 on-demand before any v2 slowdown. To fix before the lock: per-fit timing from one v2 universe,
+checkpointing so spot interruptions resume cleanly, and the final price.
+
+------------------------------------------------------------------------------------------
+ENTRY 35 · 2026-11-01 · Gregory Mandarano (decision) · RELEASE OF THIS LOG
+------------------------------------------------------------------------------------------
+DECISION: this design log ships in full with the v1 release (GitHub and Zenodo), together with its per-entry stamps, the
+charter, the fence list and fence manifest, the DE-F1 freeze manifest and the v2 math log. Anyone using the release
+should be able to follow the whole workflow immediately; whether that pre-empts the follow-up video does not matter.
+Effect on integrity: none on the fence (no fenced data has been consulted); publishing the design before v2 is tested
+makes its pre-registration easier to check, not harder. Entries continue to be appended after release; later entries
+will appear in later Zenodo versions.
+
+------------------------------------------------------------------------------------------
+ENTRY 36 · 2026-11-01 · Gregory Mandarano (decision) · V2 PAPER SECTION ON SINGLE-MODEL FAILURES
+------------------------------------------------------------------------------------------
+DECISION: the v2 paper includes a section documenting the failure modes of each AI model family used in v1, with
+evidence, to show why every output needed a check by another model or by the files. Trigger: Argon's two paper
+reviews (2026-11-01) quoted passages absent from the paper, the second while claiming exact-search verification,
+and challenged a sampler setting its own frozen file confirms; the paper's file check moved to a fresh Claude Code
+instance. The running ledger (all families, the planner included, failures and verified successes) is
+MULTIVERSE_V2_PAPER_NOTES.txt.
