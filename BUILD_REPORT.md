@@ -7,12 +7,13 @@ Built 2026-11-01 by Claude Code (claude-opus-5-5) from the read-only workspaces 
 | Item | Result |
 |:--|:--|
 | Repository | https://github.com/MajinBuuTwitch/multiverse-v1 (private) |
-| Files and size | 1022 files, 207.9 MB (207,931,348 bytes) including this report and BUILD_LOG.md; largest file 2.25 MB; none over 95 MB |
+| Files and size | 1023 files, 208.0 MB (207,969,253 bytes) including this report and BUILD_LOG.md; largest file 2.25 MB; none over 95 MB |
 | Manifests verified | 73 manifests, 2211 lines: **0 FAIL**; every non-PASS line is an expected exception (table below) |
 | Timestamp proofs | 89 `.ots`/`.ots.bak` files read with `ots info` (no upgrades, no new stamps); every proof commits to its manifest's exact SHA-256 |
 | Scrub | no API keys, tokens, passwords, private keys or `.env` files; one Drive folder ID (frozen, shipped); no email except the README contact line and the GitHub no-reply address in BUILD_LOG.md |
 | Third-party data | not shipped; re-downloaded today into a temp folder outside the repo: DATA_MANIFEST.sha256 58/58 PASS, rebuild data 10/10 fetched PASS, arXiv sources 44/44 PASS |
 | Mock covariance restore | `restore_mock_covariances.py` tested in a temp copy: 120 restored, idempotent rerun, GNU `sha256sum -c` passes all 200 mock lines in both mock sets |
+| Snapshot | `D:\MULTIVERSE_RELEASE_SNAPSHOT.zip` (167,979,208 bytes), SHA-256 `54cf9f2d79310cadc68d385e7d96eb80ab266603724d2d0e597a4bc72408ac82` (also in `D:\MULTIVERSE_RELEASE_SNAPSHOT.zip.sha256`); `git archive` of commit `b00925f` (the repo before this report's final snapshot line) |
 
 ## Commit identity
 
