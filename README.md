@@ -1,6 +1,6 @@
 # MULTIVERSE v1: A Pre-Registered Falsification of a Speculative Multiverse Model
 
-**Paper:** `paper/MULTIVERSE_V1_PAPER.pdf` · **DOI:** [ZENODO DOI] · **Video:** [YOUTUBE LINK]
+**Paper:** `paper/MULTIVERSE_V1_PAPER.pdf` · **DOI:** [10.5281/zenodo.23868218](https://doi.org/10.5281/zenodo.23868218) · **Video:** [YOUTUBE LINK]
 
 This repository is the complete public record behind the MULTIVERSE documentary (WickedAI, 2026). It tests version 1 of the Mandarano Model, a speculative model written for the documentary, against public cosmological and galactic data under rules that were frozen and anchored in the Bitcoin blockchain before any data were downloaded.
 
@@ -20,15 +20,34 @@ Each pipeline's workspace is mirrored with its original folder layout, so every 
 | `planner/` | The planning session's Phase 3 scoring, addenda and stamps, and upgraded timestamp proofs for manifests held here |
 | `v2_design/` | Version 2's design record as it stands: the append-only design log with a proof for every entry, the math log, the charter, the fenced-data list, the dark-energy freeze, and notes for the v2 paper. Version 2 has not been tested; nothing in it is a result. |
 
-Third-party datasets and arXiv source files are not redistributed; `ropewalk/scripts/get_data.py` fetches them and `DATA_MANIFEST.sha256` checks them. The Phase 3 mock folders omit 60 unmodified copies of third-party covariance files; `restore_mock_covariances.py` copies them back after the download.
+Third-party datasets and arXiv source files are not redistributed; `download_data.py` fetches them and checks every file against its manifest. The Phase 3 mock folders omit 60 unmodified copies of third-party covariance files; `restore_mock_covariances.py` copies them back after the download.
 
 ## How to verify it yourself
 
 1. **Fingerprints.** From inside the workspace folder (`ropewalk/`, `blind_rebuild/`, ...), run `sha256sum -c <manifest>.sha256`. Four known cases need care: append-only logs are checked over the frozen prefix length the manifest records (`head -c N file | sha256sum`); some manifest lines carry trailing `#` comments to remove first; superseded manifests list earlier file versions kept in `archive/` (see `PATH_MAP.txt`); and two results manifests list plan proofs by their pre-upgrade fingerprint, kept as `.ots.bak` beside the upgraded `.ots`.
 2. **Timestamps.** Install the OpenTimestamps client (`pip install opentimestamps-client`) and run `ots verify <manifest>.sha256.ots`. It reports the Bitcoin block the manifest existed by.
 3. **Order.** Check that the rulebook was stamped before the data manifest, both before any results, and Phase 3's sealed truths before its analysis plan and both before its results. Appendix A of the paper lists every block.
-4. **Data.** Third-party datasets are not redistributed here. Run `python ropewalk/scripts/get_data.py` from a copy of `ropewalk/` (it rewrites the frozen `data/MANIFEST.csv` and `data/registered_priors.json`), then check the files against `ropewalk/DATA_MANIFEST.sha256` and run `python restore_mock_covariances.py --data <that copy>/data`.
+4. **Data.** Third-party datasets are not redistributed here. Run `python download_data.py` from the repository root: it fetches everything the pipelines used (with TLS certificate checks on) into the folders the manifests expect, never overwrites a file in the repository, and prints PASS or FAIL for every line of `ropewalk/DATA_MANIFEST.sha256`, the cluster e-prints in `ropewalk/RESULTS_v5.sha256`, and the rebuild's `DATA_MANIFEST_REBUILD*.sha256`. Then run `python restore_mock_covariances.py`. The downloaded data is git-ignored. `ropewalk/scripts/get_data.py` is kept unchanged as part of the frozen record; don't run it inside the repository: it rewrites two frozen files (`data/MANIFEST.csv`, `data/registered_priors.json`) and turns off certificate checks.
 5. **Rerun.** Each pipeline folder has a README with its pinned environment and the exact commands used.
+
+### Append-only logs
+
+These logs kept growing after they were frozen, so each manifest fingerprints only the first N bytes. From the folder that holds the manifest, check with `head -c N FILE | sha256sum` and compare with the manifest line.
+
+| Log | Manifest that freezes it | Frozen prefix (bytes) |
+|:--|:--|--:|
+| `ropewalk/ACTIVITY_LOG.md` | `ropewalk/PREREG_v2.sha256` | 10,154 |
+| `ropewalk/ACTIVITY_LOG.md` | `ropewalk/archive/PREREG_v3_prelim.sha256` | 15,814 |
+| `ropewalk/ACTIVITY_LOG.md` | `ropewalk/PREREG_v3.sha256` | 17,891 |
+| `ropewalk/ACTIVITY_LOG.md` | `ropewalk/PREREG_v4.sha256` | 23,542 |
+| `ropewalk/ACTIVITY_LOG.md` | `ropewalk/RESULTS_v4.sha256` | 38,017 |
+| `blind_rebuild/ACTIVITY_LOG_REBUILD.md` | `blind_rebuild/REBUILD_RESULTS_v1.sha256` | 16,271 |
+| `blind_rebuild/phase3/SEALED/GENERATION_LOG.md` | `blind_rebuild/phase3/PHASE3_INJECTION_v1.sha256` (paths relative to `blind_rebuild/phase3/`) | 28,402 |
+| `v2_design/MULTIVERSE_V2_PAPER_NOTES.txt` | `v2_design/MULTIVERSE_V2_DESIGN_LOG_e36.sha256` | 8,788 |
+| `v2_design/MULTIVERSE_V2_DESIGN_LOG.txt` | `v2_design/MULTIVERSE_V2_DE_FREEZE_F1.sha256` | 55,106 |
+| `v2_design/MULTIVERSE_V2_DESIGN_LOG.txt` | `v2_design/MULTIVERSE_V2_DESIGN_LOG_eN.sha256`, one per entry: e2 3,562 · e3 7,220 · e4 8,850 · e5 11,106 · e6 13,272 · e7 15,265 · e8 15,843 · e9 18,856 · e10 22,392 · e11 25,664 · e12 26,684 · e13 28,082 · e14 29,781 · e15 31,001 · e16 33,068 · e17 34,894 · e18 36,498 · e19 38,091 · e20 39,869 · e21 42,226 · e22 45,531 · e23 48,106 · e24 49,513 · e25 51,908 · e26 53,001 · e27 54,030 · e28 55,106 · e29 57,365 · e30 58,751 · e31 60,416 · e32 61,421 · e33 63,923 · e34 64,610 · e35 65,498 | per entry |
+
+`RESULTS_v5.sha256` and `MULTIVERSE_V2_DESIGN_LOG_e36.sha256` fingerprint `ropewalk/ACTIVITY_LOG.md` and `MULTIVERSE_V2_DESIGN_LOG.txt` at their full current length.
 
 ## Honest limits
 
@@ -38,8 +57,8 @@ The paper's Limitations section is the full list. In short: several datasets wer
 
 - **Gregory Mandarano (WickedAI):** the model, the rules, every decision, the documentary.
 - **Claude Opus 5.5 (Anthropic, `claude-opus-5-5`):** planning, rule drafting, review, Phase 3 scoring, paper drafting.
-- **Claude Code (Anthropic) [VERSION FROM LOGS]:** the blind independent rebuild and the Phase 3 mock generator.
-- **Gemini 4 "Argon" (Google) [VERSION FROM LOGS]:** the primary pipeline, the head-to-head and the Phase 3 analysis.
+- Claude Opus 5.5 (Anthropic, claude-opus-5-5) at high effort: the blind independent rebuild (its first half hour in Google Antigravity through Antigravity's third-party model access, then Claude Code on the same folder and instructions, per the author; the rebuild's logs record the Claude Code stage) and the Phase 3 mock generator.
+- Gemini 4 "Argon" (Google), in Google Antigravity, instructed to run at the High thinking level (the logs record no finer version string): the primary pipeline, the head-to-head and the Phase 3 analysis.
 - **Gemini (Google), separate session:** the independent Phase 3 re-score. **Grok (xAI):** external review.
 
 ## Contact

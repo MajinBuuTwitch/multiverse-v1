@@ -22,7 +22,7 @@ header-includes:
 ---
 
 \begin{center}
-\fbox{\parbox{0.92\textwidth}{\small\textbf{Status of this document.} This is the public paper for version 1 of the Mandarano Model. It supersedes, as the readable account, the frozen results report \texttt{MULTIVERSE\_PREDICTIONS\_PAPER\_v4.md} (version 5.0.0, SHA-256 \texttt{a0744ca7\ldots}, frozen in \texttt{RESULTS\_v5.sha256}), which is preserved unchanged as part of the record. Nothing in this paper changes a registered verdict. Section~8 reports the blind injection tests.}}
+\fbox{\parbox{0.92\textwidth}{\small\textbf{Status of this document.} This is the public paper for version 1 of the Mandarano Model. DOI: \href{https://doi.org/10.5281/zenodo.23868218}{10.5281/zenodo.23868218} (the complete record: rules, code, frozen results and timestamp proofs). It supersedes, as the readable account, the frozen results report \texttt{MULTIVERSE\_PREDICTIONS\_PAPER\_v4.md} (version 5.0.0, SHA-256 \texttt{a0744ca7\ldots}, frozen in \texttt{RESULTS\_v5.sha256}), which is preserved unchanged as part of the record. Nothing in this paper changes a registered verdict. Section~8 reports the blind injection tests.}}
 \end{center}
 
 # Plain summary {.unnumbered}
@@ -307,6 +307,8 @@ No unregistered mechanism is used to soften any verdict. Two directions are note
 Under rules frozen before any data were downloaded and anchored in the Bitcoin blockchain before any result existed, version 1 of the Mandarano Model is falsified (with the gate rules read as written; Section 5), through the decisive failure of its galaxy rotation-curve pillar in two independent pipelines, alongside the 3.9σ and 3.7σ failures of its one-in-nineteen predictions and a 3.2–3.7σ miss in its leak ratio. Its dark-energy curve remains neither confirmed nor ruled out, and on Bayesian evidence ΛCDM is preferred over every tested version of its background expansion, except two narrow-prior runs where the comparison is inconclusive. The value of the exercise is that all of this can be checked by anyone.
 
 # Appendix A: Cryptographic record {.unnumbered}
+
+The complete record, with every manifest, proof and file listed below, is archived on Zenodo at [doi.org/10.5281/zenodo.23868218](https://doi.org/10.5281/zenodo.23868218).
 
 | Manifest | SHA-256 (prefix) | Anchor |
 |:-------------------------------------|:----------------------|:----------------------|

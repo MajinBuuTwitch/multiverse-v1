@@ -1,0 +1,20 @@
+# Third-party data fetched by download_data.py: never committed (it keeps its own licences and is checked by the manifests).
+/ropewalk/data/clusters_arxiv/
+/ropewalk/data/clusters_arxiv_exact/
+/ropewalk/data/des_dovekie/
+/ropewalk/data/desi_bao_dr2/
+/ropewalk/data/pantheon_plus/
+/ropewalk/data/sparc/
+/blind_rebuild/data/pantheonplus/
+/blind_rebuild/data/des_dovekie/
+/blind_rebuild/data/desi_bao_dr2/
+/blind_rebuild/data/sparc/
+/blind_rebuild/data/papers/
+# Covariance copies put back into the Phase 3 mocks by restore_mock_covariances.py
+**/MOCKS_FOR_ARGON/*/pantheonplus/Pantheon+SH0ES_STAT+SYS.cov
+**/MOCKS_FOR_ARGON/*/des_dovekie/STAT+SYS.npz
+**/MOCKS_FOR_ARGON/*/desi_bao_dr2/desi_gaussian_bao_ALL_GCcomb_cov.txt
+# Partial downloads and Python caches
+*.part
+__pycache__/
+*.pyc
