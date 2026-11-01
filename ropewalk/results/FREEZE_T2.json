@@ -1,0 +1,544 @@
+{
+  "test_id": "T2 (T2-A Primary Pillar 2, T2-N1, T2-N2)",
+  "frozen_at": "2026-10-30T06:29:35",
+  "deciding_PantheonPlus": {
+    "run_id": "T2-A-Pantheon+_deciding",
+    "sn_dataset": "Pantheon+",
+    "cmb_mode": "conditional_2x2",
+    "bbn_prior_100wb": {
+      "mean": 2.218,
+      "sigma": 0.055
+    },
+    "n_walkers": 32,
+    "n_burn": 1000,
+    "n_prod": 4000,
+    "n_samples_total": 128000,
+    "chi2_min": 1397.6445,
+    "convergence": {
+      "rhat_minus_1": [
+        0.000407,
+        0.001109,
+        0.000145,
+        0.000587,
+        0.000192
+      ],
+      "max_rhat_minus_1": 0.001109,
+      "tau_autocorr": [
+        53.73,
+        53.56,
+        61.54,
+        59.29,
+        67.02
+      ],
+      "max_tau_autocorr": 67.02,
+      "ess": [
+        2382.3,
+        2389.7,
+        2080.1,
+        2158.7,
+        1909.9
+      ],
+      "min_ess": 1909.9
+    },
+    "converged": true,
+    "parameters": {
+      "Omega_m_tot": {
+        "median": 0.310134,
+        "mean": 0.310216,
+        "std": 0.006113,
+        "sigma_68": 0.006072
+      },
+      "Omega_bc": {
+        "median": 0.308725,
+        "mean": 0.308807,
+        "std": 0.006089,
+        "sigma_68": 0.006049
+      },
+      "h": {
+        "median": 0.676105,
+        "mean": 0.676024,
+        "std": 0.006063,
+        "sigma_68": 0.006044
+      },
+      "100_omega_b": {
+        "median": 2.261478,
+        "mean": 2.262136,
+        "std": 0.02872,
+        "sigma_68": 0.028555
+      },
+      "w0": {
+        "median": -0.86467,
+        "mean": -0.863883,
+        "std": 0.057216,
+        "sigma_68": 0.057116
+      },
+      "wa": {
+        "median": -0.42786,
+        "mean": -0.433396,
+        "std": 0.243194,
+        "sigma_68": 0.243012
+      }
+    },
+    "frozen_quantities": {
+      "Omega_bc_median": 0.308725,
+      "sigma_Omega_bc": 0.006049,
+      "f_leak": 0.189038,
+      "sigma_f_leak": 0.019155,
+      "R_pred": 4.865772,
+      "sigma_R_pred": 0.114933
+    }
+  },
+  "deciding_DES_Dovekie": {
+    "run_id": "T2-A-DES-Dovekie_deciding",
+    "sn_dataset": "DES-Dovekie",
+    "cmb_mode": "conditional_2x2",
+    "bbn_prior_100wb": {
+      "mean": 2.218,
+      "sigma": 0.055
+    },
+    "n_walkers": 32,
+    "n_burn": 1000,
+    "n_prod": 4000,
+    "n_samples_total": 128000,
+    "chi2_min": 1640.8,
+    "convergence": {
+      "rhat_minus_1": [
+        0.000164,
+        0.00012,
+        0.000512,
+        0.000671,
+        0.000509
+      ],
+      "max_rhat_minus_1": 0.000671,
+      "tau_autocorr": [
+        52.91,
+        52.46,
+        66.54,
+        58.16,
+        67.7
+      ],
+      "max_tau_autocorr": 67.7,
+      "ess": [
+        2419.1,
+        2439.8,
+        1923.7,
+        2200.7,
+        1890.7
+      ],
+      "min_ess": 1890.7
+    },
+    "converged": true,
+    "parameters": {
+      "Omega_m_tot": {
+        "median": 0.312181,
+        "mean": 0.312206,
+        "std": 0.005816,
+        "sigma_68": 0.005777
+      },
+      "Omega_bc": {
+        "median": 0.310765,
+        "mean": 0.31079,
+        "std": 0.005795,
+        "sigma_68": 0.005757
+      },
+      "h": {
+        "median": 0.674506,
+        "mean": 0.674535,
+        "std": 0.005548,
+        "sigma_68": 0.005534
+      },
+      "100_omega_b": {
+        "median": 2.255187,
+        "mean": 2.255798,
+        "std": 0.028805,
+        "sigma_68": 0.02847
+      },
+      "w0": {
+        "median": -0.837978,
+        "mean": -0.837254,
+        "std": 0.057813,
+        "sigma_68": 0.05746
+      },
+      "wa": {
+        "median": -0.528839,
+        "mean": -0.542137,
+        "std": 0.254836,
+        "sigma_68": 0.252042
+      }
+    },
+    "frozen_quantities": {
+      "Omega_bc_median": 0.310765,
+      "sigma_Omega_bc": 0.005757,
+      "f_leak": 0.182578,
+      "sigma_f_leak": 0.018231,
+      "R_pred": 4.904531,
+      "sigma_R_pred": 0.109383
+    }
+  },
+  "single_frozen_f_leak_for_T5": {
+    "source_run": "T2-A-Pantheon+_deciding",
+    "f_leak": 0.189038,
+    "sigma_f_leak": 0.019155
+  },
+  "sensitivity_runs": {
+    "PantheonPlus_Cooke18": {
+      "run_id": "T2-A-Pantheon+_Cooke18_sensitivity",
+      "sn_dataset": "Pantheon+",
+      "cmb_mode": "conditional_2x2",
+      "bbn_prior_100wb": {
+        "mean": 2.166,
+        "sigma": 0.019
+      },
+      "n_walkers": 32,
+      "n_burn": 1000,
+      "n_prod": 4000,
+      "n_samples_total": 128000,
+      "chi2_min": 1405.7131,
+      "convergence": {
+        "rhat_minus_1": [
+          0.000629,
+          0.000948,
+          0.00031,
+          0.00044,
+          9.4e-05
+        ],
+        "max_rhat_minus_1": 0.000948,
+        "tau_autocorr": [
+          52.54,
+          52.17,
+          49.28,
+          52.83,
+          52.4
+        ],
+        "max_tau_autocorr": 52.83,
+        "ess": [
+          2436.1,
+          2453.7,
+          2597.2,
+          2422.9,
+          2442.9
+        ],
+        "min_ess": 2422.9
+      },
+      "converged": true,
+      "parameters": {
+        "Omega_m_tot": {
+          "median": 0.315417,
+          "mean": 0.315595,
+          "std": 0.005874,
+          "sigma_68": 0.005842
+        },
+        "Omega_bc": {
+          "median": 0.313999,
+          "mean": 0.314176,
+          "std": 0.005851,
+          "sigma_68": 0.005819
+        },
+        "h": {
+          "median": 0.673778,
+          "mean": 0.673756,
+          "std": 0.005985,
+          "sigma_68": 0.006
+        },
+        "100_omega_b": {
+          "median": 2.194404,
+          "mean": 2.194444,
+          "std": 0.015748,
+          "sigma_68": 0.015595
+        },
+        "w0": {
+          "median": -0.82558,
+          "mean": -0.824926,
+          "std": 0.057546,
+          "sigma_68": 0.057365
+        },
+        "wa": {
+          "median": -0.752018,
+          "mean": -0.7596,
+          "std": 0.23405,
+          "sigma_68": 0.232665
+        }
+      },
+      "frozen_quantities": {
+        "Omega_bc_median": 0.313999,
+        "sigma_Omega_bc": 0.005819,
+        "f_leak": 0.172337,
+        "sigma_f_leak": 0.018426,
+        "R_pred": 4.96598,
+        "sigma_R_pred": 0.110558
+      }
+    },
+    "DES_Dovekie_Cooke18": {
+      "run_id": "T2-A-DES-Dovekie_Cooke18_sensitivity",
+      "sn_dataset": "DES-Dovekie",
+      "cmb_mode": "conditional_2x2",
+      "bbn_prior_100wb": {
+        "mean": 2.166,
+        "sigma": 0.019
+      },
+      "n_walkers": 32,
+      "n_burn": 1000,
+      "n_prod": 4000,
+      "n_samples_total": 128000,
+      "chi2_min": 1647.7067,
+      "convergence": {
+        "rhat_minus_1": [
+          0.001135,
+          0.001568,
+          0.002016,
+          0.0009,
+          0.001388
+        ],
+        "max_rhat_minus_1": 0.002016,
+        "tau_autocorr": [
+          59.57,
+          58.8,
+          55.43,
+          58.91,
+          59.18
+        ],
+        "max_tau_autocorr": 59.57,
+        "ess": [
+          2148.7,
+          2176.7,
+          2309.3,
+          2172.7,
+          2163.0
+        ],
+        "min_ess": 2148.7
+      },
+      "converged": true,
+      "parameters": {
+        "Omega_m_tot": {
+          "median": 0.317896,
+          "mean": 0.317987,
+          "std": 0.005583,
+          "sigma_68": 0.005512
+        },
+        "Omega_bc": {
+          "median": 0.316469,
+          "mean": 0.316559,
+          "std": 0.005561,
+          "sigma_68": 0.005489
+        },
+        "h": {
+          "median": 0.671786,
+          "mean": 0.671796,
+          "std": 0.005446,
+          "sigma_68": 0.005416
+        },
+        "100_omega_b": {
+          "median": 2.192099,
+          "mean": 2.192034,
+          "std": 0.015954,
+          "sigma_68": 0.015853
+        },
+        "w0": {
+          "median": -0.785524,
+          "mean": -0.784698,
+          "std": 0.060702,
+          "sigma_68": 0.060762
+        },
+        "wa": {
+          "median": -0.902622,
+          "mean": -0.915965,
+          "std": 0.258428,
+          "sigma_68": 0.257327
+        }
+      },
+      "frozen_quantities": {
+        "Omega_bc_median": 0.316469,
+        "sigma_Omega_bc": 0.005489,
+        "f_leak": 0.164514,
+        "sigma_f_leak": 0.017383,
+        "R_pred": 5.012917,
+        "sigma_R_pred": 0.104298
+      }
+    },
+    "PantheonPlus_MarginalCMB": {
+      "run_id": "T2-A-Pantheon+_MarginalCMB_sensitivity",
+      "sn_dataset": "Pantheon+",
+      "cmb_mode": "marginal_2x2",
+      "bbn_prior_100wb": {
+        "mean": 2.218,
+        "sigma": 0.055
+      },
+      "n_walkers": 32,
+      "n_burn": 1000,
+      "n_prod": 4000,
+      "n_samples_total": 128000,
+      "chi2_min": 1397.7242,
+      "convergence": {
+        "rhat_minus_1": [
+          0.00042,
+          0.000218,
+          0.000842,
+          0.001518,
+          0.001272
+        ],
+        "max_rhat_minus_1": 0.001518,
+        "tau_autocorr": [
+          53.95,
+          52.32,
+          50.89,
+          58.63,
+          56.81
+        ],
+        "max_tau_autocorr": 58.63,
+        "ess": [
+          2372.5,
+          2446.4,
+          2515.2,
+          2183.3,
+          2253.1
+        ],
+        "min_ess": 2183.3
+      },
+      "converged": true,
+      "parameters": {
+        "Omega_m_tot": {
+          "median": 0.312377,
+          "mean": 0.312329,
+          "std": 0.00586,
+          "sigma_68": 0.005847
+        },
+        "Omega_bc": {
+          "median": 0.310955,
+          "mean": 0.310908,
+          "std": 0.005835,
+          "sigma_68": 0.005821
+        },
+        "h": {
+          "median": 0.673275,
+          "mean": 0.673332,
+          "std": 0.006635,
+          "sigma_68": 0.006647
+        },
+        "100_omega_b": {
+          "median": 2.202366,
+          "mean": 2.201954,
+          "std": 0.052237,
+          "sigma_68": 0.051894
+        },
+        "w0": {
+          "median": -0.856166,
+          "mean": -0.856679,
+          "std": 0.055237,
+          "sigma_68": 0.054371
+        },
+        "wa": {
+          "median": -0.511023,
+          "mean": -0.515324,
+          "std": 0.213046,
+          "sigma_68": 0.210592
+        }
+      },
+      "frozen_quantities": {
+        "Omega_bc_median": 0.310955,
+        "sigma_Omega_bc": 0.005821,
+        "f_leak": 0.181976,
+        "sigma_f_leak": 0.018434,
+        "R_pred": 4.908146,
+        "sigma_R_pred": 0.110603
+      }
+    },
+    "DES_Dovekie_MarginalCMB": {
+      "run_id": "T2-A-DES-Dovekie_MarginalCMB_sensitivity",
+      "sn_dataset": "DES-Dovekie",
+      "cmb_mode": "marginal_2x2",
+      "bbn_prior_100wb": {
+        "mean": 2.218,
+        "sigma": 0.055
+      },
+      "n_walkers": 32,
+      "n_burn": 1000,
+      "n_prod": 4000,
+      "n_samples_total": 128000,
+      "chi2_min": 1640.5872,
+      "convergence": {
+        "rhat_minus_1": [
+          7.5e-05,
+          0.000134,
+          0.000485,
+          0.000405,
+          0.000569
+        ],
+        "max_rhat_minus_1": 0.000569,
+        "tau_autocorr": [
+          52.21,
+          49.71,
+          55.07,
+          54.12,
+          59.68
+        ],
+        "max_tau_autocorr": 59.68,
+        "ess": [
+          2451.4,
+          2574.9,
+          2324.2,
+          2365.1,
+          2144.8
+        ],
+        "min_ess": 2144.8
+      },
+      "converged": true,
+      "parameters": {
+        "Omega_m_tot": {
+          "median": 0.313938,
+          "mean": 0.314049,
+          "std": 0.005412,
+          "sigma_68": 0.005359
+        },
+        "Omega_bc": {
+          "median": 0.312512,
+          "mean": 0.312623,
+          "std": 0.005389,
+          "sigma_68": 0.005336
+        },
+        "h": {
+          "median": 0.672195,
+          "mean": 0.672112,
+          "std": 0.006032,
+          "sigma_68": 0.005997
+        },
+        "100_omega_b": {
+          "median": 2.203282,
+          "mean": 2.202903,
+          "std": 0.0519,
+          "sigma_68": 0.051933
+        },
+        "w0": {
+          "median": -0.827076,
+          "mean": -0.826603,
+          "std": 0.057125,
+          "sigma_68": 0.056942
+        },
+        "wa": {
+          "median": -0.622037,
+          "mean": -0.630879,
+          "std": 0.234277,
+          "sigma_68": 0.235022
+        }
+      },
+      "frozen_quantities": {
+        "Omega_bc_median": 0.312512,
+        "sigma_Omega_bc": 0.005336,
+        "f_leak": 0.177047,
+        "sigma_f_leak": 0.016897,
+        "R_pred": 4.937719,
+        "sigma_R_pred": 0.10138
+      }
+    }
+  },
+  "scripts_sha256": {
+    "clusters_t4.py": "b07659e7781322c38577839185c41e542ad162121d187fe73153ca8f5d23bfdd",
+    "cosmology.py": "998296f8916f194ecd0e3974861810425baa3903dc58ea1a624bd0a0c6657f92",
+    "freeze_data_manifest.py": "8b3eb42c59bdc0f087bf7c18794470e4d2bc44b1e1927eb5709f349c35034330",
+    "get_data.py": "04fcc4bc18750011a6ea2893407d3ce018f06e39d8f6a3b89e73a7a835d9cdf2",
+    "local_h0_t6.py": "c891441736f8971e14a2fb75274e4aa55b6948e139fd6b1198296fb2de6de9c4",
+    "run_part10_astrophysics_and_verdict.py": "ccc6a7dcf6a8202e91c279411f2a445b472c616fe703d4e6437a75ab5bb009c5",
+    "run_part8_fixes.py": "0bd1702119f1348e12ff796fa2bd16d133f349c70cb4ff0c04f51f5f736d12e8",
+    "run_part9_cosmology_tests.py": "8da8e3cbcdfeeb6a1b8be53c4730920419411fcfe74250e9b325e4639e818eb5",
+    "sparc_t5.py": "f992b875a087123f2118086bb8c9105e56d56f671e5926778e136a9bad350642"
+  }
+}

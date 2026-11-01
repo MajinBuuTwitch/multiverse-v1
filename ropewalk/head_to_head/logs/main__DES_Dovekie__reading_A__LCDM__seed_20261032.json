@@ -1,0 +1,53 @@
+{
+  "task_id": "main__DES_Dovekie__reading_A__LCDM__seed_20261032",
+  "run_id": "main__DES_Dovekie__reading_A__LCDM",
+  "group": "main",
+  "model": "LCDM",
+  "sn_name": "DES-Dovekie",
+  "reading": "A",
+  "gamma_u_prior": null,
+  "seed": 20261032,
+  "nlive": 1000,
+  "dlogz": 0.01,
+  "ndim": 3,
+  "started_at": "2026-10-31T02:37:19",
+  "completed_at": "2026-10-31T04:22:50",
+  "elapsed_sec": 6330.462523300201,
+  "niter": 17898,
+  "ncall": 365107,
+  "lnZ": -838.18093030023,
+  "lnZ_err_dynesty": 0.11193354015717422,
+  "chi2_min_ns": 1649.8051470329144,
+  "chi2_min_opt": 1649.8047957899248,
+  "best_theta_ns": [
+    0.3031818176407966,
+    0.6840583218638417,
+    2.2480167420419295
+  ],
+  "best_theta_opt": [
+    0.30320728541554115,
+    0.6840506581246175,
+    2.248125636252014
+  ],
+  "parameters": {
+    "Omega_bc": {
+      "mean": 0.3032535456574538,
+      "std": 0.003752197926182778,
+      "best_ns": 0.3031818176407966,
+      "best_opt": 0.30320728541554115
+    },
+    "h": {
+      "mean": 0.6840401715491472,
+      "std": 0.0029288973132533943,
+      "best_ns": 0.6840583218638417,
+      "best_opt": 0.6840506581246175
+    },
+    "100_omega_b": {
+      "mean": 2.248095089633628,
+      "std": 0.012350121078400738,
+      "best_ns": 2.2480167420419295,
+      "best_opt": 2.248125636252014
+    }
+  },
+  "chain_file": "head_to_head/chains/main__DES_Dovekie__reading_A__LCDM__seed_20261032.npz"
+}

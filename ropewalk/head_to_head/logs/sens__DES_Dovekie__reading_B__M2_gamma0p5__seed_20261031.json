@@ -1,0 +1,68 @@
+{
+  "task_id": "sens__DES_Dovekie__reading_B__M2_gamma0p5__seed_20261031",
+  "run_id": "sens__DES_Dovekie__reading_B__M2_gamma0p5",
+  "group": "prior_sensitivity",
+  "model": "M2",
+  "sn_name": "DES-Dovekie",
+  "reading": "B",
+  "gamma_u_prior": [
+    0.0,
+    0.5
+  ],
+  "seed": 20261031,
+  "nlive": 1000,
+  "dlogz": 0.01,
+  "ndim": 3,
+  "started_at": "2026-10-30T23:49:40",
+  "completed_at": "2026-10-31T01:28:27",
+  "elapsed_sec": 5927.307762700133,
+  "niter": 17521,
+  "ncall": 356742,
+  "lnZ": -844.0704196766935,
+  "lnZ_err_dynesty": 0.11009513127403624,
+  "chi2_min_ns": 1662.336869890852,
+  "chi2_min_opt": 1662.3364012925438,
+  "best_theta_ns": [
+    0.32354134488605824,
+    0.6565505534984815,
+    0.14045437818442863
+  ],
+  "best_theta_opt": [
+    0.3235356253604615,
+    0.6565722764199295,
+    0.14039704722945648
+  ],
+  "parameters": {
+    "Omega_bc": {
+      "mean": 0.3236066965094183,
+      "std": 0.002649464711451219,
+      "best_ns": 0.32354134488605824,
+      "best_opt": 0.3235356253604615
+    },
+    "h": {
+      "mean": 0.6565482079989797,
+      "std": 0.0017996106712512164,
+      "best_ns": 0.6565505534984815,
+      "best_opt": 0.6565722764199295
+    },
+    "gamma_u": {
+      "mean": 0.14013129567175564,
+      "std": 0.01041701926671495,
+      "best_ns": 0.14045437818442863,
+      "best_opt": 0.14039704722945648
+    },
+    "omega_b_derived": {
+      "mean": 0.022687304597759583,
+      "std": 0.0001243559460619278,
+      "best_ns": 0.022687296278903285,
+      "best_opt": 0.02268879758753939
+    },
+    "100_omega_b_derived": {
+      "mean": 2.2687304597759583,
+      "std": 0.012435594606192781,
+      "best_ns": 2.2687296278903286,
+      "best_opt": 2.268879758753939
+    }
+  },
+  "chain_file": "head_to_head/chains/sens__DES_Dovekie__reading_B__M2_gamma0p5__seed_20261031.npz"
+}

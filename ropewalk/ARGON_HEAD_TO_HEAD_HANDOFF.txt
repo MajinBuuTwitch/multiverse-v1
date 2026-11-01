@@ -1,0 +1,82 @@
+MULTIVERSE v1: HEAD-TO-HEAD (SUPPLEMENTARY, NOT PRE-REGISTERED)
+Handoff for Argon · 2026-10-30 · from Gregory and the planner
+
+WHAT THIS IS
+Stage 2 is finished and frozen (RESULTS v5). This is a separate, supplementary comparison: how does the
+model's background expansion compare with standard ΛCDM on the same registered data, scored by Bayesian
+evidence? It does not change any registered verdict. Label it "supplementary analysis, not pre-registered"
+everywhere it appears.
+
+SCOPE: background expansion only (BAO + compressed CMB + supernovae). It says nothing about rotation curves,
+clusters or regional H0. The T5-A failure stands whatever this shows, and the results file must say so.
+
+RULES THAT DON'T BEND
+- Don't modify, move or overwrite any frozen file (anything listed in PREREG_v4.sha256, the data manifest,
+  or the RESULTS v5 manifest). New code goes in new files under a new folder: head_to_head/. You may import
+  the frozen likelihood code; you may not edit it.
+- Write HEAD_TO_HEAD_PLAN.md (this handoff's settings, filled in with exact package versions and seeds),
+  hash it into HEAD_TO_HEAD_PLAN.sha256 and stamp it with OpenTimestamps (ots stamp) BEFORE the first run.
+  Any change after that is logged in head_to_head/DEVIATIONS.md with what, why and expected effect, before
+  the affected run.
+- Log every action, with timestamps, in head_to_head/ACTIVITY_LOG_H2H.md (append-only).
+- Never change code because a result came out a particular way. Bug fixes only as logged fixes.
+
+DATA AND LIKELIHOOD
+Use exactly the registered T1-L1 likelihood: DESI DR2 BAO (joint Lyα), the Chen, Huang & Wang 2019
+compressed CMB priors (R, ℓ_A, 100ω_b) with their covariance, and one supernova compilation per run
+(Pantheon+ OR DES-Dovekie, never combined). Neutrinos: Σm_ν = 0.06 eV, as registered.
+
+TWO SOUND-HORIZON READINGS (both are required; this is the open ambiguity from Stage 2)
+- Reading A: the literal registered (a5) full sound-horizon integral. Implement it as a new function
+  (don't touch the frozen one). Validate it: compute r_s(z*) with two independent quadratures (agreement
+  better than 1e-6 relative), and recompute gate G9-b under it. You should get G9-b FAIL with the h offset
+  near 0.58σ. Log the value you get, whatever it is.
+- Reading B: the Chen, Huang & Wang 2019 form already in the frozen code (ω_r = 1/24185, the neutrino
+  counted as matter).
+
+MODELS (all flat; Ω_bc = baryons plus cold dark matter, neutrinos added separately)
+1. ΛCDM: Ω_bc, h, 100ω_b free.
+2. CPL (w0waCDM), for context: Ω_bc, h, 100ω_b, w0, wa free.
+3. M1 = Law 1 unwinding (Stage 1 d4): w(a) = −1 + γ_u/E(a). Ω_bc, h, 100ω_b, γ_u free.
+4. M2 = the model's structural version: Law 1 plus Ω_b = 1/19, imposed as ω_b = h²/19 inside the
+   likelihood (100ω_b is no longer free). Ω_bc, h, γ_u free.
+   This one tests the model as stated, not just its dark-energy curve.
+
+PRIORS (uniform)
+- Ω_bc: [0.10, 0.50] · h: [0.50, 0.90] · 100ω_b: [1.80, 2.60]
+- γ_u: [0, 2] (the registered T1-L1 range)
+- w0: [−3, 1] · wa: [−3, 2], with w0 + wa < 0
+- Prior sensitivity (M1 and M2 only): repeat with γ_u: [0, 0.5].
+  Bayes factors depend on prior width, and the results must show how much.
+
+SAMPLER
+- Nested sampling: dynesty (static, multi-ellipsoid bounding, random-walk sampling), nlive = 1000,
+  stopping at dlogz = 0.01. Three seeds per run, fixed and logged.
+- Report ln Z with dynesty's own error and with the scatter across seeds, and use the larger of the two.
+- Sanity check before the main runs: for ΛCDM, the best-fit χ² from the nested-sampling run should match
+  the Stage 2 ΛCDM χ²_min to within 0.1. Log it.
+- Run independent fits in parallel across CPU cores, leaving about 4 threads free.
+
+RUN GRID
+4 models × 2 SN compilations × 2 r_s readings = 16 main runs, plus 2 models × 2 × 2 = 8 prior-sensitivity
+runs. That's 24 runs, each with 3 seeds.
+
+WHAT TO REPORT (head_to_head/HEAD_TO_HEAD_RESULTS.md)
+1. A table per SN compilation and per r_s reading: ln Z for each model; ln B relative to ΛCDM
+   (positive = favoured over ΛCDM) with its uncertainty; best-fit χ² and Δχ² vs ΛCDM; and the posterior
+   mean ± 1σ for γ_u (M1, M2), w0 and wa (CPL) and Ω_b h² (M2, derived).
+2. The prior-sensitivity table for M1 and M2.
+3. One plain-language line per comparison on the Jeffreys/Kass–Raftery scale (|ln B| < 1 inconclusive,
+   1–2.5 weak, 2.5–5 moderate, > 5 strong), saying which model is favoured.
+4. The validation results (two-quadrature r_s agreement, G9-b under Reading A, the ΛCDM χ² sanity check).
+5. The scope statement (background only; T5-A failure stands) and the label
+   "supplementary analysis, not pre-registered" at the top.
+Also save results.json, all chains/samples and the run logs under head_to_head/.
+
+FREEZE
+Hash every output, every new code file and HEAD_TO_HEAD_RESULTS.md into HEAD_TO_HEAD_RESULTS_v1.sha256,
+and stamp it with OpenTimestamps.
+
+CHAT REPORT
+When it's frozen, report in chat ONLY: the folder path, the list of files, and the two manifest hashes.
+Don't restate any numbers in chat. They get read from the files.

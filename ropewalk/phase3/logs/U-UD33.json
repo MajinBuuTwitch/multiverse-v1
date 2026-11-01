@@ -1,0 +1,150 @@
+{
+  "universe_id": "U-UD33",
+  "family": "GALAXY",
+  "round": 1,
+  "elapsed_sec": 137.524,
+  "f_leak_used": 0.16666666666666666,
+  "T5_A": {
+    "fitted_sigma_ref_kpc": 8.975604,
+    "sigma_ref_uncertainty": {
+      "point_estimate": 8.975604,
+      "bootstrap_train_galaxies": {
+        "mean": 8.975201,
+        "std": 0.011558,
+        "median": 8.975515,
+        "sigma_68": 0.011373,
+        "ci95": [
+          8.951156,
+          8.997941
+        ]
+      },
+      "posterior_sum_chi2_red": {
+        "mean": 8.976378,
+        "std": 0.064071,
+        "median": 8.97348,
+        "sigma_68": 0.064075,
+        "ci95": [
+          8.842229,
+          9.093816
+        ]
+      },
+      "posterior_total_chi2": {
+        "mean": 8.972507,
+        "std": 0.00969,
+        "median": 8.967559,
+        "sigma_68": 0.014122,
+        "ci95": [
+          8.938752,
+          8.983258
+        ]
+      }
+    },
+    "training_fit": {
+      "model_type": "T5A",
+      "loss_metric": "sum_chi2_red",
+      "f_leak": 0.16666666666666666,
+      "fitted_param": 8.975604,
+      "train_summary": {
+        "n_galaxies": 88,
+        "total_pts": 1747,
+        "sum_chi2_red": 84.80246825150908,
+        "mean_chi2_red": 0.9636644119489669,
+        "median_chi2_red": 0.9419641261060616,
+        "total_chi2": 1703.3874422394872,
+        "pooled_chi2_red": 0.9750357425526543,
+        "frac_chi2_red_lt_2": 0.9772727272727273,
+        "median_sigma_kpc": 8.975603618317171
+      }
+    },
+    "test_evaluation": {
+      "n_galaxies": 87,
+      "total_pts": 1644,
+      "sum_chi2_red": 89.23837074436832,
+      "mean_chi2_red": 1.0257283993605555,
+      "median_chi2_red": 1.00296801139524,
+      "total_chi2": 1699.6643809469422,
+      "pooled_chi2_red": 1.03385911249814,
+      "frac_chi2_red_lt_2": 0.9885057471264368,
+      "median_sigma_kpc": 8.975604
+    },
+    "test_median_chi2_red": 1.002968,
+    "test_frac_chi2_red_lt_2": 0.988506,
+    "n_test_lt_2": 86,
+    "n_test_galaxies": 87,
+    "verdict": "PASS",
+    "reasons": []
+  },
+  "T5_B": {
+    "fitted_k": 2.79024,
+    "k_uncertainty": {
+      "point_estimate": 2.79024,
+      "bootstrap_train_galaxies": {
+        "mean": 2.813924,
+        "std": 0.420727,
+        "median": 2.746841,
+        "sigma_68": 0.416909,
+        "ci95": [
+          2.136571,
+          3.740663
+        ]
+      },
+      "posterior_sum_chi2_red": {
+        "mean": 2.790386,
+        "std": 0.018528,
+        "median": 2.788979,
+        "sigma_68": 0.018433,
+        "ci95": [
+          2.75117,
+          2.824695
+        ]
+      },
+      "posterior_total_chi2": {
+        "mean": 3.185254,
+        "std": 0.003767,
+        "median": 3.182298,
+        "sigma_68": 0.003926,
+        "ci95": [
+          3.176416,
+          3.189675
+        ]
+      }
+    },
+    "training_fit": {
+      "model_type": "T5B",
+      "loss_metric": "sum_chi2_red",
+      "f_leak": 0.16666666666666666,
+      "fitted_param": 2.79024,
+      "train_summary": {
+        "n_galaxies": 88,
+        "total_pts": 1747,
+        "sum_chi2_red": 8977.620851679254,
+        "mean_chi2_red": 102.01841876908243,
+        "median_chi2_red": 15.412386918243065,
+        "total_chi2": 322581.64957933204,
+        "pooled_chi2_red": 184.64891218049917,
+        "frac_chi2_red_lt_2": 0.1590909090909091,
+        "median_sigma_kpc": 5.6502365432238015
+      }
+    },
+    "test_evaluation": {
+      "n_galaxies": 87,
+      "total_pts": 1644,
+      "sum_chi2_red": 10080.943115127535,
+      "mean_chi2_red": 115.87290936928201,
+      "median_chi2_red": 11.22592029000557,
+      "total_chi2": 232442.389027527,
+      "pooled_chi2_red": 141.38831449362957,
+      "frac_chi2_red_lt_2": 0.22988505747126436,
+      "median_sigma_kpc": 6.8918928
+    },
+    "test_median_chi2_red": 11.22592,
+    "test_frac_chi2_red_lt_2": 0.229885,
+    "n_test_lt_2": 20,
+    "n_test_galaxies": 87,
+    "verdict": "FAIL",
+    "reasons": [
+      "M_chi2 = 11.2259 > 3.0",
+      "F_<2 = 0.2299 < 0.40"
+    ]
+  }
+}

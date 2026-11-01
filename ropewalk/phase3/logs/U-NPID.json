@@ -1,0 +1,150 @@
+{
+  "universe_id": "U-NPID",
+  "family": "GALAXY",
+  "round": 5,
+  "elapsed_sec": 139.36,
+  "f_leak_used": 0.16666666666666666,
+  "T5_A": {
+    "fitted_sigma_ref_kpc": 3.002958,
+    "sigma_ref_uncertainty": {
+      "point_estimate": 3.002958,
+      "bootstrap_train_galaxies": {
+        "mean": 3.002604,
+        "std": 0.006818,
+        "median": 3.002346,
+        "sigma_68": 0.006037,
+        "ci95": [
+          2.990401,
+          3.017407
+        ]
+      },
+      "posterior_sum_chi2_red": {
+        "mean": 3.003101,
+        "std": 0.024611,
+        "median": 3.002504,
+        "sigma_68": 0.02446,
+        "ci95": [
+          2.951976,
+          3.048484
+        ]
+      },
+      "posterior_total_chi2": {
+        "mean": 3.000961,
+        "std": 0.003646,
+        "median": 2.999182,
+        "sigma_68": 0.004617,
+        "ci95": [
+          2.988762,
+          3.005386
+        ]
+      }
+    },
+    "training_fit": {
+      "model_type": "T5A",
+      "loss_metric": "sum_chi2_red",
+      "f_leak": 0.16666666666666666,
+      "fitted_param": 3.002958,
+      "train_summary": {
+        "n_galaxies": 88,
+        "total_pts": 1747,
+        "sum_chi2_red": 88.85866208081563,
+        "mean_chi2_red": 1.0097575236456322,
+        "median_chi2_red": 1.0023185384758129,
+        "total_chi2": 1764.2170504757169,
+        "pooled_chi2_red": 1.0098552092018986,
+        "frac_chi2_red_lt_2": 0.9886363636363636,
+        "median_sigma_kpc": 3.002957946634567
+      }
+    },
+    "test_evaluation": {
+      "n_galaxies": 87,
+      "total_pts": 1644,
+      "sum_chi2_red": 90.05421641626403,
+      "mean_chi2_red": 1.0351059358191268,
+      "median_chi2_red": 1.0389871505569157,
+      "total_chi2": 1754.3374181569993,
+      "pooled_chi2_red": 1.0671152178570555,
+      "frac_chi2_red_lt_2": 1.0,
+      "median_sigma_kpc": 3.002958
+    },
+    "test_median_chi2_red": 1.038987,
+    "test_frac_chi2_red_lt_2": 1.0,
+    "n_test_lt_2": 87,
+    "n_test_galaxies": 87,
+    "verdict": "PASS",
+    "reasons": []
+  },
+  "T5_B": {
+    "fitted_k": 0.795868,
+    "k_uncertainty": {
+      "point_estimate": 0.795868,
+      "bootstrap_train_galaxies": {
+        "mean": 0.851903,
+        "std": 0.192749,
+        "median": 0.81686,
+        "sigma_68": 0.210424,
+        "ci95": [
+          0.579426,
+          1.25649
+        ]
+      },
+      "posterior_sum_chi2_red": {
+        "mean": 0.79599,
+        "std": 0.009538,
+        "median": 0.795804,
+        "sigma_68": 0.009544,
+        "ci95": [
+          0.776935,
+          0.814425
+        ]
+      },
+      "posterior_total_chi2": {
+        "mean": 0.728664,
+        "std": 0.001393,
+        "median": 0.727854,
+        "sigma_68": 0.001379,
+        "ci95": [
+          0.72535,
+          0.730816
+        ]
+      }
+    },
+    "training_fit": {
+      "model_type": "T5B",
+      "loss_metric": "sum_chi2_red",
+      "f_leak": 0.16666666666666666,
+      "fitted_param": 0.795868,
+      "train_summary": {
+        "n_galaxies": 88,
+        "total_pts": 1747,
+        "sum_chi2_red": 5763.4253096197335,
+        "mean_chi2_red": 65.49346942749698,
+        "median_chi2_red": 15.285591630228083,
+        "total_chi2": 172711.34323124515,
+        "pooled_chi2_red": 98.86167328634525,
+        "frac_chi2_red_lt_2": 0.13636363636363635,
+        "median_sigma_kpc": 1.6116329421674418
+      }
+    },
+    "test_evaluation": {
+      "n_galaxies": 87,
+      "total_pts": 1644,
+      "sum_chi2_red": 7299.464017592355,
+      "mean_chi2_red": 83.90188525968225,
+      "median_chi2_red": 10.614530676017134,
+      "total_chi2": 186661.4032522926,
+      "pooled_chi2_red": 113.54099954519015,
+      "frac_chi2_red_lt_2": 0.21839080459770116,
+      "median_sigma_kpc": 1.9657939600000003
+    },
+    "test_median_chi2_red": 10.614531,
+    "test_frac_chi2_red_lt_2": 0.218391,
+    "n_test_lt_2": 19,
+    "n_test_galaxies": 87,
+    "verdict": "FAIL",
+    "reasons": [
+      "M_chi2 = 10.6145 > 3.0",
+      "F_<2 = 0.2184 < 0.40"
+    ]
+  }
+}

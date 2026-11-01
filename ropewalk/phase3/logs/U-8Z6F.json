@@ -1,0 +1,2241 @@
+{
+  "universe_id": "U-8Z6F",
+  "family": "COSMO",
+  "round": 5,
+  "elapsed_sec": 9475.611,
+  "references_used": {
+    "description": "external reference measurements for this universe (Gaussian, registered sigma)",
+    "R_omegac_over_omegab": {
+      "value": 5.3127,
+      "sigma": 0.065
+    },
+    "Omega_b": {
+      "value": 0.050399,
+      "sigma": 0.00086
+    },
+    "100omega_b": {
+      "value": 2.2275,
+      "sigma": 0.015
+    },
+    "H0": {
+      "value": 67.814,
+      "sigma": 0.54
+    },
+    "BBN_100omega_b_prior": {
+      "value": 2.1981,
+      "sigma": 0.055
+    }
+  },
+  "Reading_B": {
+    "reading": "B",
+    "PantheonPlus": {
+      "Law1": {
+        "universe_id": "U-8Z6F",
+        "run_id": "U-8Z6F__RB__LAW1__Pantheon+",
+        "model_kind": "LAW1",
+        "sn_dataset": "Pantheon+",
+        "reading": "B",
+        "cmb_mode": "full_3x3",
+        "bbn_prior_100wb": null,
+        "seed": 20299031,
+        "n_walkers": 32,
+        "n_burn": 1000,
+        "n_prod": 4000,
+        "n_samples_total": 128000,
+        "chi2_min": 1671.853426,
+        "best_fit_vector": [
+          0.307739,
+          0.67176,
+          2.258924,
+          0.05241
+        ],
+        "convergence": {
+          "rhat_minus_1": [
+            0.002282,
+            0.001802,
+            0.001313,
+            0.001075
+          ],
+          "max_rhat_minus_1": 0.002282,
+          "tau_autocorr": [
+            48.89,
+            50.36,
+            40.3,
+            49.03
+          ],
+          "max_tau_autocorr": 50.36,
+          "ess": [
+            2618.1,
+            2541.8,
+            3175.9,
+            2610.6
+          ],
+          "min_ess": 2541.8
+        },
+        "converged": true,
+        "elapsed_sec": 2046.824,
+        "parameters": {
+          "Omega_bc": {
+            "mean": 0.306563,
+            "std": 0.005078,
+            "median": 0.306434,
+            "sigma_68": 0.005068,
+            "ci95": [
+              0.296984,
+              0.316828
+            ]
+          },
+          "Omega_m_tot": {
+            "mean": 0.307992,
+            "std": 0.0051,
+            "median": 0.30786,
+            "sigma_68": 0.00509,
+            "ci95": [
+              0.298372,
+              0.318303
+            ]
+          },
+          "h": {
+            "mean": 0.671531,
+            "std": 0.005442,
+            "median": 0.671658,
+            "sigma_68": 0.005506,
+            "ci95": [
+              0.660464,
+              0.681616
+            ]
+          },
+          "100_omega_b": {
+            "mean": 2.258828,
+            "std": 0.012758,
+            "median": 2.258729,
+            "sigma_68": 0.012659,
+            "ci95": [
+              2.234088,
+              2.283833
+            ]
+          },
+          "gamma_u": {
+            "mean": 0.053575,
+            "std": 0.026839,
+            "median": 0.052391,
+            "sigma_68": 0.02763,
+            "ci95": [
+              0.006534,
+              0.109693
+            ]
+          },
+          "w0_implied": {
+            "mean": -0.946425,
+            "std": 0.026839,
+            "median": -0.947609,
+            "sigma_68": 0.02763,
+            "ci95": [
+              -0.993466,
+              -0.890307
+            ]
+          },
+          "wa_implied": {
+            "mean": -0.028603,
+            "std": 0.015971,
+            "median": -0.027035,
+            "sigma_68": 0.016101,
+            "ci95": [
+              -0.064194,
+              -0.003005
+            ]
+          }
+        },
+        "Law1_derived_metrics": {
+          "Omega_bc_median": 0.306434,
+          "sigma_Omega_bc_68": 0.005068,
+          "f_leak_median": 0.196294,
+          "R_pred_median": 4.822237,
+          "sigma_R_pred_68": 0.096296,
+          "R_pred_mean": 4.8247,
+          "sigma_R_pred_std": 0.096487,
+          "z_gaussian_gamma_u_gt_0": 1.9961,
+          "P_gamma_u_gt_0_mcmc": 1.0
+        }
+      },
+      "LCDM": {
+        "universe_id": "U-8Z6F",
+        "run_id": "U-8Z6F__RB__LCDM__Pantheon+",
+        "model_kind": "LCDM",
+        "sn_dataset": "Pantheon+",
+        "reading": "B",
+        "cmb_mode": "full_3x3",
+        "bbn_prior_100wb": null,
+        "seed": 20299034,
+        "n_walkers": 32,
+        "n_burn": 1000,
+        "n_prod": 4000,
+        "n_samples_total": 128000,
+        "chi2_min": 1675.078561,
+        "best_fit_vector": [
+          0.300932,
+          0.681007,
+          2.252811
+        ],
+        "convergence": {
+          "rhat_minus_1": [
+            0.000994,
+            0.001046,
+            0.000396
+          ],
+          "max_rhat_minus_1": 0.001046,
+          "tau_autocorr": [
+            34.81,
+            35.41,
+            38.21
+          ],
+          "max_tau_autocorr": 38.21,
+          "ess": [
+            3677.0,
+            3614.3,
+            3349.7
+          ],
+          "min_ess": 3349.7
+        },
+        "converged": true,
+        "elapsed_sec": 1970.098,
+        "parameters": {
+          "Omega_bc": {
+            "mean": 0.299623,
+            "std": 0.003677,
+            "median": 0.29959,
+            "sigma_68": 0.00363,
+            "ci95": [
+              0.292495,
+              0.306941
+            ]
+          },
+          "Omega_m_tot": {
+            "mean": 0.301012,
+            "std": 0.003689,
+            "median": 0.300979,
+            "sigma_68": 0.003643,
+            "ci95": [
+              0.293862,
+              0.308355
+            ]
+          },
+          "h": {
+            "mean": 0.680955,
+            "std": 0.002882,
+            "median": 0.680957,
+            "sigma_68": 0.002865,
+            "ci95": [
+              0.675301,
+              0.686626
+            ]
+          },
+          "100_omega_b": {
+            "mean": 2.252682,
+            "std": 0.012414,
+            "median": 2.252739,
+            "sigma_68": 0.01241,
+            "ci95": [
+              2.228187,
+              2.276768
+            ]
+          }
+        }
+      },
+      "CPL": {
+        "universe_id": "U-8Z6F",
+        "run_id": "U-8Z6F__RB__CPL__Pantheon+",
+        "model_kind": "CPL",
+        "sn_dataset": "Pantheon+",
+        "reading": "B",
+        "cmb_mode": "full_3x3",
+        "bbn_prior_100wb": null,
+        "seed": 20299032,
+        "n_walkers": 32,
+        "n_burn": 1000,
+        "n_prod": 4000,
+        "n_samples_total": 128000,
+        "chi2_min": 1657.672011,
+        "best_fit_vector": [
+          0.31423,
+          0.670096,
+          2.240619,
+          -0.776073,
+          -0.819618
+        ],
+        "convergence": {
+          "rhat_minus_1": [
+            0.001456,
+            0.001041,
+            0.000167,
+            0.000568,
+            0.00025
+          ],
+          "max_rhat_minus_1": 0.001456,
+          "tau_autocorr": [
+            59.69,
+            59.44,
+            55.77,
+            58.41,
+            55.92
+          ],
+          "max_tau_autocorr": 59.69,
+          "ess": [
+            2144.4,
+            2153.6,
+            2295.0,
+            2191.3,
+            2289.1
+          ],
+          "min_ess": 2144.4
+        },
+        "converged": true,
+        "elapsed_sec": 2077.033,
+        "parameters": {
+          "Omega_bc": {
+            "mean": 0.312959,
+            "std": 0.005769,
+            "median": 0.312929,
+            "sigma_68": 0.005771,
+            "ci95": [
+              0.3018,
+              0.324344
+            ]
+          },
+          "Omega_m_tot": {
+            "mean": 0.314393,
+            "std": 0.005793,
+            "median": 0.314364,
+            "sigma_68": 0.005796,
+            "ci95": [
+              0.303192,
+              0.325832
+            ]
+          },
+          "h": {
+            "mean": 0.67016,
+            "std": 0.005929,
+            "median": 0.670127,
+            "sigma_68": 0.005909,
+            "ci95": [
+              0.658715,
+              0.681928
+            ]
+          },
+          "100_omega_b": {
+            "mean": 2.240109,
+            "std": 0.013591,
+            "median": 2.240071,
+            "sigma_68": 0.013469,
+            "ci95": [
+              2.213503,
+              2.266758
+            ]
+          },
+          "w0": {
+            "mean": -0.771593,
+            "std": 0.057812,
+            "median": -0.772585,
+            "sigma_68": 0.057814,
+            "ci95": [
+              -0.881633,
+              -0.655874
+            ]
+          },
+          "wa": {
+            "mean": -0.848231,
+            "std": 0.237989,
+            "median": -0.8395,
+            "sigma_68": 0.237365,
+            "ci95": [
+              -1.340421,
+              -0.411296
+            ]
+          }
+        },
+        "T1_Sign_metrics": {
+          "P_w0_gt_minus1_mcmc": 0.999984,
+          "P_w0_lt_minus1_mcmc": 1.6e-05,
+          "z_gaussian_w0_gt_minus1": 3.9508
+        },
+        "frozen_quantities": {
+          "Omega_bc_median": 0.312929,
+          "sigma_Omega_bc": 0.005771,
+          "f_leak": 0.175724,
+          "sigma_f_leak": 0.018274,
+          "R_pred": 4.945658,
+          "sigma_R_pred": 0.109643
+        }
+      },
+      "T2A_CPL": {
+        "universe_id": "U-8Z6F",
+        "run_id": "U-8Z6F__RB__T2A_CPL__Pantheon+",
+        "model_kind": "T2A_CPL",
+        "sn_dataset": "Pantheon+",
+        "reading": "B",
+        "cmb_mode": "conditional_2x2",
+        "bbn_prior_100wb": {
+          "mean": 2.1981,
+          "sigma": 0.055
+        },
+        "seed": 20299033,
+        "n_walkers": 32,
+        "n_burn": 1000,
+        "n_prod": 4000,
+        "n_samples_total": 128000,
+        "chi2_min": 1657.23589,
+        "best_fit_vector": [
+          0.31316,
+          0.669918,
+          2.263781,
+          -0.788427,
+          -0.694681
+        ],
+        "convergence": {
+          "rhat_minus_1": [
+            0.002175,
+            0.003039,
+            0.003813,
+            0.001642,
+            0.002195
+          ],
+          "max_rhat_minus_1": 0.003813,
+          "tau_autocorr": [
+            61.17,
+            56.36,
+            69.27,
+            68.82,
+            73.36
+          ],
+          "max_tau_autocorr": 73.36,
+          "ess": [
+            2092.6,
+            2271.1,
+            1847.7,
+            1859.9,
+            1744.7
+          ],
+          "min_ess": 1744.7
+        },
+        "converged": true,
+        "elapsed_sec": 2017.04,
+        "parameters": {
+          "Omega_bc": {
+            "mean": 0.311523,
+            "std": 0.006059,
+            "median": 0.311487,
+            "sigma_68": 0.006034,
+            "ci95": [
+              0.299711,
+              0.323399
+            ]
+          },
+          "Omega_m_tot": {
+            "mean": 0.312956,
+            "std": 0.006082,
+            "median": 0.312917,
+            "sigma_68": 0.006057,
+            "ci95": [
+              0.301095,
+              0.324878
+            ]
+          },
+          "h": {
+            "mean": 0.670546,
+            "std": 0.005901,
+            "median": 0.670515,
+            "sigma_68": 0.005839,
+            "ci95": [
+              0.659122,
+              0.682218
+            ]
+          },
+          "100_omega_b": {
+            "mean": 2.261071,
+            "std": 0.02872,
+            "median": 2.26074,
+            "sigma_68": 0.028351,
+            "ci95": [
+              2.206148,
+              2.319257
+            ]
+          },
+          "w0": {
+            "mean": -0.784392,
+            "std": 0.059317,
+            "median": -0.7846,
+            "sigma_68": 0.059252,
+            "ci95": [
+              -0.898825,
+              -0.666735
+            ]
+          },
+          "wa": {
+            "mean": -0.738918,
+            "std": 0.26948,
+            "median": -0.728234,
+            "sigma_68": 0.266027,
+            "ci95": [
+              -1.294555,
+              -0.236573
+            ]
+          }
+        },
+        "T1_Sign_metrics": {
+          "P_w0_gt_minus1_mcmc": 0.999922,
+          "P_w0_lt_minus1_mcmc": 7.8e-05,
+          "z_gaussian_w0_gt_minus1": 3.6348
+        },
+        "frozen_quantities": {
+          "Omega_bc_median": 0.311487,
+          "sigma_Omega_bc": 0.006034,
+          "f_leak": 0.18029,
+          "sigma_f_leak": 0.019107,
+          "R_pred": 4.918257,
+          "sigma_R_pred": 0.114643
+        }
+      },
+      "chi2_min": {
+        "Law1": 1671.853426,
+        "LCDM": 1675.078561,
+        "CPL": 1657.672011,
+        "T2A_CPL": 1657.23589
+      },
+      "verdicts_and_stats": {
+        "T1_L1": {
+          "A_r_Law1_minus_LCDM": -3.2251,
+          "B_r_Law1_minus_CPL": 14.1814,
+          "p_discovery_vs_LCDM": 0.07251582,
+          "verdict": "FAIL",
+          "reasons": [
+            "B_r = Delta_chi2(Law1 - w0waCDM) = +14.1814 > +9.0"
+          ]
+        },
+        "T1_Sign": {
+          "P_w0_gt_minus1_mcmc": 0.999984,
+          "P_w0_lt_minus1_mcmc": 1.6e-05,
+          "z_gaussian_w0_gt_minus1": 3.9508,
+          "Delta_chi2_CPL_minus_LCDM": -17.4065,
+          "Law1_z_gamma_u_gt_0": 1.9961,
+          "verdict": "PASS"
+        },
+        "T2_A": {
+          "sn_dataset": "Pantheon+",
+          "Omega_bc_median": 0.311487,
+          "sigma_Omega_bc": 0.006034,
+          "Omega_bc_summary": {
+            "mean": 0.311523,
+            "std": 0.006059,
+            "median": 0.311487,
+            "sigma_68": 0.006034,
+            "ci95": [
+              0.299711,
+              0.323399
+            ]
+          },
+          "f_leak": 0.18029,
+          "sigma_f_leak": 0.019107,
+          "R_pred": 4.918257,
+          "sigma_R_pred": 0.114643,
+          "R_ref": 5.3127,
+          "sigma_R_ref": 0.065,
+          "sigma_comb": 0.131788,
+          "diff_R_pred_minus_ref": -0.394443,
+          "signed_tension_sigma": -2.993,
+          "tension_sigma": 2.993,
+          "per_run_verdict": "FAIL",
+          "from_Law1_chain": {
+            "Omega_bc_median": 0.306434,
+            "sigma_Omega_bc": 0.005068,
+            "f_leak": 0.196294,
+            "R_pred": 4.822237,
+            "sigma_R_pred": 0.096296,
+            "sigma_comb": 0.116181,
+            "diff_R_pred_minus_ref": -0.490463,
+            "signed_tension_sigma": -4.2216,
+            "tension_sigma": 4.2216,
+            "per_run_verdict": "FAIL"
+          }
+        }
+      }
+    },
+    "DES_Dovekie": {
+      "Law1": {
+        "universe_id": "U-8Z6F",
+        "run_id": "U-8Z6F__RB__LAW1__DES-Dovekie",
+        "model_kind": "LAW1",
+        "sn_dataset": "DES-Dovekie",
+        "reading": "B",
+        "cmb_mode": "full_3x3",
+        "bbn_prior_100wb": null,
+        "seed": 20299035,
+        "n_walkers": 32,
+        "n_burn": 1000,
+        "n_prod": 4000,
+        "n_samples_total": 128000,
+        "chi2_min": 1807.228364,
+        "best_fit_vector": [
+          0.311395,
+          0.66741,
+          2.26026,
+          0.074153
+        ],
+        "convergence": {
+          "rhat_minus_1": [
+            0.000388,
+            0.000424,
+            0.00013,
+            0.000632
+          ],
+          "max_rhat_minus_1": 0.000632,
+          "tau_autocorr": [
+            48.65,
+            48.94,
+            43.84,
+            44.36
+          ],
+          "max_tau_autocorr": 48.94,
+          "ess": [
+            2630.9,
+            2615.2,
+            2919.4,
+            2885.6
+          ],
+          "min_ess": 2615.2
+        },
+        "converged": true,
+        "elapsed_sec": 2684.293,
+        "parameters": {
+          "Omega_bc": {
+            "mean": 0.310126,
+            "std": 0.004984,
+            "median": 0.310153,
+            "sigma_68": 0.004981,
+            "ci95": [
+              0.300485,
+              0.319899
+            ]
+          },
+          "Omega_m_tot": {
+            "mean": 0.311573,
+            "std": 0.005006,
+            "median": 0.3116,
+            "sigma_68": 0.005006,
+            "ci95": [
+              0.301888,
+              0.321386
+            ]
+          },
+          "h": {
+            "mean": 0.667314,
+            "std": 0.005289,
+            "median": 0.667291,
+            "sigma_68": 0.005305,
+            "ci95": [
+              0.657058,
+              0.677683
+            ]
+          },
+          "100_omega_b": {
+            "mean": 2.260395,
+            "std": 0.012807,
+            "median": 2.260362,
+            "sigma_68": 0.012699,
+            "ci95": [
+              2.235113,
+              2.285376
+            ]
+          },
+          "gamma_u": {
+            "mean": 0.074509,
+            "std": 0.026912,
+            "median": 0.074256,
+            "sigma_68": 0.026989,
+            "ci95": [
+              0.022647,
+              0.12778
+            ]
+          },
+          "w0_implied": {
+            "mean": -0.925491,
+            "std": 0.026912,
+            "median": -0.925744,
+            "sigma_68": 0.026989,
+            "ci95": [
+              -0.977353,
+              -0.87222
+            ]
+          },
+          "wa_implied": {
+            "mean": -0.041421,
+            "std": 0.017194,
+            "median": -0.040402,
+            "sigma_68": 0.017149,
+            "ci95": [
+              -0.077723,
+              -0.010902
+            ]
+          }
+        },
+        "Law1_derived_metrics": {
+          "Omega_bc_median": 0.310153,
+          "sigma_Omega_bc_68": 0.004981,
+          "f_leak_median": 0.184514,
+          "R_pred_median": 4.892914,
+          "sigma_R_pred_68": 0.094639,
+          "R_pred_mean": 4.892387,
+          "sigma_R_pred_std": 0.094699,
+          "z_gaussian_gamma_u_gt_0": 2.7687,
+          "P_gamma_u_gt_0_mcmc": 1.0
+        }
+      },
+      "LCDM": {
+        "universe_id": "U-8Z6F",
+        "run_id": "U-8Z6F__RB__LCDM__DES-Dovekie",
+        "model_kind": "LCDM",
+        "sn_dataset": "DES-Dovekie",
+        "reading": "B",
+        "cmb_mode": "full_3x3",
+        "bbn_prior_100wb": null,
+        "seed": 20299038,
+        "n_walkers": 32,
+        "n_burn": 1000,
+        "n_prod": 4000,
+        "n_samples_total": 128000,
+        "chi2_min": 1814.678343,
+        "best_fit_vector": [
+          0.302298,
+          0.679967,
+          2.25081
+        ],
+        "convergence": {
+          "rhat_minus_1": [
+            0.000242,
+            0.000207,
+            0.000149
+          ],
+          "max_rhat_minus_1": 0.000242,
+          "tau_autocorr": [
+            36.45,
+            36.51,
+            35.77
+          ],
+          "max_tau_autocorr": 36.51,
+          "ess": [
+            3511.6,
+            3506.2,
+            3578.1
+          ],
+          "min_ess": 3506.2
+        },
+        "converged": true,
+        "elapsed_sec": 2332.508,
+        "parameters": {
+          "Omega_bc": {
+            "mean": 0.300943,
+            "std": 0.003638,
+            "median": 0.300934,
+            "sigma_68": 0.003619,
+            "ci95": [
+              0.293906,
+              0.308111
+            ]
+          },
+          "Omega_m_tot": {
+            "mean": 0.302337,
+            "std": 0.00365,
+            "median": 0.302327,
+            "sigma_68": 0.00363,
+            "ci95": [
+              0.295277,
+              0.309528
+            ]
+          },
+          "h": {
+            "mean": 0.679943,
+            "std": 0.002856,
+            "median": 0.679917,
+            "sigma_68": 0.002849,
+            "ci95": [
+              0.674368,
+              0.685547
+            ]
+          },
+          "100_omega_b": {
+            "mean": 2.250582,
+            "std": 0.012583,
+            "median": 2.250524,
+            "sigma_68": 0.012547,
+            "ci95": [
+              2.226185,
+              2.275385
+            ]
+          }
+        }
+      },
+      "CPL": {
+        "universe_id": "U-8Z6F",
+        "run_id": "U-8Z6F__RB__CPL__DES-Dovekie",
+        "model_kind": "CPL",
+        "sn_dataset": "DES-Dovekie",
+        "reading": "B",
+        "cmb_mode": "full_3x3",
+        "bbn_prior_100wb": null,
+        "seed": 20299036,
+        "n_walkers": 32,
+        "n_burn": 1000,
+        "n_prod": 4000,
+        "n_samples_total": 128000,
+        "chi2_min": 1791.466421,
+        "best_fit_vector": [
+          0.318777,
+          0.665213,
+          2.240936,
+          -0.738064,
+          -0.897472
+        ],
+        "convergence": {
+          "rhat_minus_1": [
+            0.000367,
+            3.6e-05,
+            0.002502,
+            0.001343,
+            0.001844
+          ],
+          "max_rhat_minus_1": 0.002502,
+          "tau_autocorr": [
+            48.44,
+            48.8,
+            52.82,
+            49.61,
+            52.51
+          ],
+          "max_tau_autocorr": 52.82,
+          "ess": [
+            2642.2,
+            2623.0,
+            2423.5,
+            2580.3,
+            2437.7
+          ],
+          "min_ess": 2423.5
+        },
+        "converged": true,
+        "elapsed_sec": 2672.964,
+        "parameters": {
+          "Omega_bc": {
+            "mean": 0.317373,
+            "std": 0.005515,
+            "median": 0.317317,
+            "sigma_68": 0.005497,
+            "ci95": [
+              0.306876,
+              0.328463
+            ]
+          },
+          "Omega_m_tot": {
+            "mean": 0.318828,
+            "std": 0.005537,
+            "median": 0.318772,
+            "sigma_68": 0.005517,
+            "ci95": [
+              0.308291,
+              0.32996
+            ]
+          },
+          "h": {
+            "mean": 0.665395,
+            "std": 0.005379,
+            "median": 0.665436,
+            "sigma_68": 0.005364,
+            "ci95": [
+              0.654778,
+              0.675766
+            ]
+          },
+          "100_omega_b": {
+            "mean": 2.240486,
+            "std": 0.013628,
+            "median": 2.24064,
+            "sigma_68": 0.013598,
+            "ci95": [
+              2.213672,
+              2.266796
+            ]
+          },
+          "w0": {
+            "mean": -0.734858,
+            "std": 0.058076,
+            "median": -0.735387,
+            "sigma_68": 0.057492,
+            "ci95": [
+              -0.845303,
+              -0.617955
+            ]
+          },
+          "wa": {
+            "mean": -0.922812,
+            "std": 0.244684,
+            "median": -0.913334,
+            "sigma_68": 0.241671,
+            "ci95": [
+              -1.431114,
+              -0.467554
+            ]
+          }
+        },
+        "T1_Sign_metrics": {
+          "P_w0_gt_minus1_mcmc": 1.0,
+          "P_w0_lt_minus1_mcmc": 0.0,
+          "z_gaussian_w0_gt_minus1": 4.5654
+        },
+        "frozen_quantities": {
+          "Omega_bc_median": 0.317317,
+          "sigma_Omega_bc": 0.005497,
+          "f_leak": 0.16183,
+          "sigma_f_leak": 0.017406,
+          "R_pred": 5.029023,
+          "sigma_R_pred": 0.104435
+        }
+      },
+      "T2A_CPL": {
+        "universe_id": "U-8Z6F",
+        "run_id": "U-8Z6F__RB__T2A_CPL__DES-Dovekie",
+        "model_kind": "T2A_CPL",
+        "sn_dataset": "DES-Dovekie",
+        "reading": "B",
+        "cmb_mode": "conditional_2x2",
+        "bbn_prior_100wb": {
+          "mean": 2.1981,
+          "sigma": 0.055
+        },
+        "seed": 20299037,
+        "n_walkers": 32,
+        "n_burn": 1000,
+        "n_prod": 4000,
+        "n_samples_total": 128000,
+        "chi2_min": 1790.958478,
+        "best_fit_vector": [
+          0.316886,
+          0.666106,
+          2.263676,
+          -0.758317,
+          -0.762241
+        ],
+        "convergence": {
+          "rhat_minus_1": [
+            0.000206,
+            0.000124,
+            0.002077,
+            0.001066,
+            0.001192
+          ],
+          "max_rhat_minus_1": 0.002077,
+          "tau_autocorr": [
+            59.15,
+            61.08,
+            63.01,
+            64.78,
+            66.48
+          ],
+          "max_tau_autocorr": 66.48,
+          "ess": [
+            2164.1,
+            2095.6,
+            2031.4,
+            1975.9,
+            1925.5
+          ],
+          "min_ess": 1925.5
+        },
+        "converged": true,
+        "elapsed_sec": 2567.233,
+        "parameters": {
+          "Omega_bc": {
+            "mean": 0.315363,
+            "std": 0.005967,
+            "median": 0.315344,
+            "sigma_68": 0.005959,
+            "ci95": [
+              0.303898,
+              0.327233
+            ]
+          },
+          "Omega_m_tot": {
+            "mean": 0.316815,
+            "std": 0.005988,
+            "median": 0.316796,
+            "sigma_68": 0.005981,
+            "ci95": [
+              0.305307,
+              0.328727
+            ]
+          },
+          "h": {
+            "mean": 0.666172,
+            "std": 0.005495,
+            "median": 0.666123,
+            "sigma_68": 0.005489,
+            "ci95": [
+              0.655425,
+              0.676936
+            ]
+          },
+          "100_omega_b": {
+            "mean": 2.263093,
+            "std": 0.029266,
+            "median": 2.263039,
+            "sigma_68": 0.029079,
+            "ci95": [
+              2.206606,
+              2.321443
+            ]
+          },
+          "w0": {
+            "mean": -0.752902,
+            "std": 0.060465,
+            "median": -0.754149,
+            "sigma_68": 0.060183,
+            "ci95": [
+              -0.867059,
+              -0.63195
+            ]
+          },
+          "wa": {
+            "mean": -0.791347,
+            "std": 0.272771,
+            "median": -0.776778,
+            "sigma_68": 0.271217,
+            "ci95": [
+              -1.357322,
+              -0.295185
+            ]
+          }
+        },
+        "T1_Sign_metrics": {
+          "P_w0_gt_minus1_mcmc": 1.0,
+          "P_w0_lt_minus1_mcmc": 0.0,
+          "z_gaussian_w0_gt_minus1": 4.0866
+        },
+        "frozen_quantities": {
+          "Omega_bc_median": 0.315344,
+          "sigma_Omega_bc": 0.005959,
+          "f_leak": 0.168077,
+          "sigma_f_leak": 0.018869,
+          "R_pred": 4.991535,
+          "sigma_R_pred": 0.113217
+        }
+      },
+      "chi2_min": {
+        "Law1": 1807.228364,
+        "LCDM": 1814.678343,
+        "CPL": 1791.466421,
+        "T2A_CPL": 1790.958478
+      },
+      "verdicts_and_stats": {
+        "T1_L1": {
+          "A_r_Law1_minus_LCDM": -7.45,
+          "B_r_Law1_minus_CPL": 15.7619,
+          "p_discovery_vs_LCDM": 0.00634372,
+          "verdict": "FAIL",
+          "reasons": [
+            "B_r = Delta_chi2(Law1 - w0waCDM) = +15.7619 > +9.0"
+          ]
+        },
+        "T1_Sign": {
+          "P_w0_gt_minus1_mcmc": 1.0,
+          "P_w0_lt_minus1_mcmc": 0.0,
+          "z_gaussian_w0_gt_minus1": 4.5654,
+          "Delta_chi2_CPL_minus_LCDM": -23.2119,
+          "Law1_z_gamma_u_gt_0": 2.7687,
+          "verdict": "PASS"
+        },
+        "T2_A": {
+          "sn_dataset": "DES-Dovekie",
+          "Omega_bc_median": 0.315344,
+          "sigma_Omega_bc": 0.005959,
+          "Omega_bc_summary": {
+            "mean": 0.315363,
+            "std": 0.005967,
+            "median": 0.315344,
+            "sigma_68": 0.005959,
+            "ci95": [
+              0.303898,
+              0.327233
+            ]
+          },
+          "f_leak": 0.168077,
+          "sigma_f_leak": 0.018869,
+          "R_pred": 4.991535,
+          "sigma_R_pred": 0.113217,
+          "R_ref": 5.3127,
+          "sigma_R_ref": 0.065,
+          "sigma_comb": 0.130549,
+          "diff_R_pred_minus_ref": -0.321165,
+          "signed_tension_sigma": -2.4601,
+          "tension_sigma": 2.4601,
+          "per_run_verdict": "FAIL",
+          "from_Law1_chain": {
+            "Omega_bc_median": 0.310153,
+            "sigma_Omega_bc": 0.004981,
+            "f_leak": 0.184514,
+            "R_pred": 4.892914,
+            "sigma_R_pred": 0.094639,
+            "sigma_comb": 0.114811,
+            "diff_R_pred_minus_ref": -0.419786,
+            "signed_tension_sigma": -3.6563,
+            "tension_sigma": 3.6563,
+            "per_run_verdict": "FAIL"
+          }
+        }
+      }
+    },
+    "joint_verdicts": {
+      "T1_L1": {
+        "verdict": "FAIL",
+        "p_T1_L1_holm": 0.07251582,
+        "PantheonPlus_A_r": -3.2251,
+        "PantheonPlus_B_r": 14.1814,
+        "DES_Dovekie_A_r": -7.45,
+        "DES_Dovekie_B_r": 15.7619
+      },
+      "T1_Sign": {
+        "verdict": "PASS",
+        "PantheonPlus_P_w0_gt_m1": 0.999984,
+        "DES_Dovekie_P_w0_gt_m1": 1.0
+      },
+      "T2_A": {
+        "verdict": "FAIL",
+        "verdict_from_Law1_chain": "FAIL",
+        "PantheonPlus_signed_sigma": -2.993,
+        "PantheonPlus_abs_sigma": 2.993,
+        "DES_Dovekie_signed_sigma": -2.4601,
+        "DES_Dovekie_abs_sigma": 2.4601
+      },
+      "T2_N1": {
+        "verdict": "FAIL",
+        "signed_sigma": 2.596,
+        "abs_sigma": 2.596
+      },
+      "T2_N2": {
+        "verdict": "FAIL",
+        "signed_sigma": -4.7333,
+        "abs_sigma": 4.7333
+      }
+    }
+  },
+  "Reading_A": {
+    "reading": "A",
+    "PantheonPlus": {
+      "Law1": {
+        "universe_id": "U-8Z6F",
+        "run_id": "U-8Z6F__RA__LAW1__Pantheon+",
+        "model_kind": "LAW1",
+        "sn_dataset": "Pantheon+",
+        "reading": "A",
+        "cmb_mode": "full_3x3",
+        "bbn_prior_100wb": null,
+        "seed": 20299039,
+        "n_walkers": 32,
+        "n_burn": 1000,
+        "n_prod": 4000,
+        "n_samples_total": 128000,
+        "chi2_min": 1670.449414,
+        "best_fit_vector": [
+          0.308946,
+          0.673478,
+          2.256722,
+          0.048852
+        ],
+        "convergence": {
+          "rhat_minus_1": [
+            0.001168,
+            0.001234,
+            4.1e-05,
+            0.000851
+          ],
+          "max_rhat_minus_1": 0.001234,
+          "tau_autocorr": [
+            48.98,
+            52.43,
+            44.23,
+            55.11
+          ],
+          "max_tau_autocorr": 55.11,
+          "ess": [
+            2613.2,
+            2441.4,
+            2894.1,
+            2322.5
+          ],
+          "min_ess": 2322.5
+        },
+        "converged": true,
+        "elapsed_sec": 2094.369,
+        "parameters": {
+          "Omega_bc": {
+            "mean": 0.307843,
+            "std": 0.005132,
+            "median": 0.307701,
+            "sigma_68": 0.005121,
+            "ci95": [
+              0.298213,
+              0.31828
+            ]
+          },
+          "Omega_m_tot": {
+            "mean": 0.309265,
+            "std": 0.005154,
+            "median": 0.309124,
+            "sigma_68": 0.005143,
+            "ci95": [
+              0.299598,
+              0.319744
+            ]
+          },
+          "h": {
+            "mean": 0.673092,
+            "std": 0.005455,
+            "median": 0.673273,
+            "sigma_68": 0.00552,
+            "ci95": [
+              0.662032,
+              0.683171
+            ]
+          },
+          "100_omega_b": {
+            "mean": 2.257336,
+            "std": 0.012913,
+            "median": 2.257285,
+            "sigma_68": 0.01282,
+            "ci95": [
+              2.232387,
+              2.282889
+            ]
+          },
+          "gamma_u": {
+            "mean": 0.051497,
+            "std": 0.026645,
+            "median": 0.050181,
+            "sigma_68": 0.027578,
+            "ci95": [
+              0.005461,
+              0.107283
+            ]
+          },
+          "w0_implied": {
+            "mean": -0.948503,
+            "std": 0.026645,
+            "median": -0.949819,
+            "sigma_68": 0.027578,
+            "ci95": [
+              -0.994539,
+              -0.892717
+            ]
+          },
+          "wa_implied": {
+            "mean": -0.027499,
+            "std": 0.015794,
+            "median": -0.025875,
+            "sigma_68": 0.015959,
+            "ci95": [
+              -0.06273,
+              -0.002511
+            ]
+          }
+        },
+        "Law1_derived_metrics": {
+          "Omega_bc_median": 0.307701,
+          "sigma_Omega_bc_68": 0.005121,
+          "f_leak_median": 0.19228,
+          "R_pred_median": 4.846321,
+          "sigma_R_pred_68": 0.09729,
+          "R_pred_mean": 4.849011,
+          "sigma_R_pred_std": 0.097509,
+          "z_gaussian_gamma_u_gt_0": 1.9327,
+          "P_gamma_u_gt_0_mcmc": 1.0
+        }
+      },
+      "LCDM": {
+        "universe_id": "U-8Z6F",
+        "run_id": "U-8Z6F__RA__LCDM__Pantheon+",
+        "model_kind": "LCDM",
+        "sn_dataset": "Pantheon+",
+        "reading": "A",
+        "cmb_mode": "full_3x3",
+        "bbn_prior_100wb": null,
+        "seed": 20299042,
+        "n_walkers": 32,
+        "n_burn": 1000,
+        "n_prod": 4000,
+        "n_samples_total": 128000,
+        "chi2_min": 1673.229312,
+        "best_fit_vector": [
+          0.302596,
+          0.682081,
+          2.251059
+        ],
+        "convergence": {
+          "rhat_minus_1": [
+            0.000107,
+            5.2e-05,
+            0.00015
+          ],
+          "max_rhat_minus_1": 0.00015,
+          "tau_autocorr": [
+            35.62,
+            36.02,
+            37.98
+          ],
+          "max_tau_autocorr": 37.98,
+          "ess": [
+            3593.2,
+            3553.8,
+            3369.9
+          ],
+          "min_ess": 3369.9
+        },
+        "converged": true,
+        "elapsed_sec": 2063.186,
+        "parameters": {
+          "Omega_bc": {
+            "mean": 0.30126,
+            "std": 0.003681,
+            "median": 0.301271,
+            "sigma_68": 0.003636,
+            "ci95": [
+              0.294036,
+              0.308552
+            ]
+          },
+          "Omega_m_tot": {
+            "mean": 0.302645,
+            "std": 0.003692,
+            "median": 0.302656,
+            "sigma_68": 0.003647,
+            "ci95": [
+              0.295403,
+              0.309962
+            ]
+          },
+          "h": {
+            "mean": 0.682066,
+            "std": 0.002884,
+            "median": 0.68204,
+            "sigma_68": 0.002856,
+            "ci95": [
+              0.676442,
+              0.687756
+            ]
+          },
+          "100_omega_b": {
+            "mean": 2.251143,
+            "std": 0.012523,
+            "median": 2.251059,
+            "sigma_68": 0.012421,
+            "ci95": [
+              2.226703,
+              2.276073
+            ]
+          }
+        }
+      },
+      "CPL": {
+        "universe_id": "U-8Z6F",
+        "run_id": "U-8Z6F__RA__CPL__Pantheon+",
+        "model_kind": "CPL",
+        "sn_dataset": "Pantheon+",
+        "reading": "A",
+        "cmb_mode": "full_3x3",
+        "bbn_prior_100wb": null,
+        "seed": 20299040,
+        "n_walkers": 32,
+        "n_burn": 1000,
+        "n_prod": 4000,
+        "n_samples_total": 128000,
+        "chi2_min": 1656.055369,
+        "best_fit_vector": [
+          0.315471,
+          0.671869,
+          2.238214,
+          -0.776576,
+          -0.834723
+        ],
+        "convergence": {
+          "rhat_minus_1": [
+            0.000749,
+            0.000428,
+            0.001216,
+            0.001197,
+            0.001059
+          ],
+          "max_rhat_minus_1": 0.001216,
+          "tau_autocorr": [
+            55.15,
+            55.02,
+            56.1,
+            58.65,
+            56.75
+          ],
+          "max_tau_autocorr": 58.65,
+          "ess": [
+            2321.1,
+            2326.4,
+            2281.7,
+            2182.6,
+            2255.6
+          ],
+          "min_ess": 2182.6
+        },
+        "converged": true,
+        "elapsed_sec": 2105.886,
+        "parameters": {
+          "Omega_bc": {
+            "mean": 0.314356,
+            "std": 0.005812,
+            "median": 0.314302,
+            "sigma_68": 0.005798,
+            "ci95": [
+              0.303138,
+              0.325922
+            ]
+          },
+          "Omega_m_tot": {
+            "mean": 0.315783,
+            "std": 0.005836,
+            "median": 0.315732,
+            "sigma_68": 0.00582,
+            "ci95": [
+              0.304525,
+              0.3274
+            ]
+          },
+          "h": {
+            "mean": 0.671776,
+            "std": 0.00595,
+            "median": 0.671736,
+            "sigma_68": 0.005926,
+            "ci95": [
+              0.660185,
+              0.683443
+            ]
+          },
+          "100_omega_b": {
+            "mean": 2.23749,
+            "std": 0.01349,
+            "median": 2.23736,
+            "sigma_68": 0.013442,
+            "ci95": [
+              2.211311,
+              2.264135
+            ]
+          },
+          "w0": {
+            "mean": -0.770521,
+            "std": 0.058723,
+            "median": -0.771147,
+            "sigma_68": 0.058351,
+            "ci95": [
+              -0.882816,
+              -0.653659
+            ]
+          },
+          "wa": {
+            "mean": -0.867865,
+            "std": 0.241108,
+            "median": -0.861418,
+            "sigma_68": 0.239765,
+            "ci95": [
+              -1.360967,
+              -0.419692
+            ]
+          }
+        },
+        "T1_Sign_metrics": {
+          "P_w0_gt_minus1_mcmc": 1.0,
+          "P_w0_lt_minus1_mcmc": 0.0,
+          "z_gaussian_w0_gt_minus1": 3.9078
+        },
+        "frozen_quantities": {
+          "Omega_bc_median": 0.314302,
+          "sigma_Omega_bc": 0.005798,
+          "f_leak": 0.171378,
+          "sigma_f_leak": 0.018362,
+          "R_pred": 4.971732,
+          "sigma_R_pred": 0.110169
+        }
+      },
+      "T2A_CPL": {
+        "universe_id": "U-8Z6F",
+        "run_id": "U-8Z6F__RA__T2A_CPL__Pantheon+",
+        "model_kind": "T2A_CPL",
+        "sn_dataset": "Pantheon+",
+        "reading": "A",
+        "cmb_mode": "conditional_2x2",
+        "bbn_prior_100wb": {
+          "mean": 2.1981,
+          "sigma": 0.055
+        },
+        "seed": 20299041,
+        "n_walkers": 32,
+        "n_burn": 1000,
+        "n_prod": 4000,
+        "n_samples_total": 128000,
+        "chi2_min": 1656.099258,
+        "best_fit_vector": [
+          0.314115,
+          0.672492,
+          2.251136,
+          -0.779667,
+          -0.787064
+        ],
+        "convergence": {
+          "rhat_minus_1": [
+            0.000443,
+            0.000625,
+            0.000502,
+            0.000896,
+            0.000186
+          ],
+          "max_rhat_minus_1": 0.000896,
+          "tau_autocorr": [
+            55.46,
+            57.0,
+            59.6,
+            59.6,
+            67.76
+          ],
+          "max_tau_autocorr": 67.76,
+          "ess": [
+            2308.1,
+            2245.7,
+            2147.8,
+            2147.7,
+            1889.1
+          ],
+          "min_ess": 1889.1
+        },
+        "converged": true,
+        "elapsed_sec": 2031.044,
+        "parameters": {
+          "Omega_bc": {
+            "mean": 0.313172,
+            "std": 0.005994,
+            "median": 0.313144,
+            "sigma_68": 0.00592,
+            "ci95": [
+              0.301439,
+              0.325085
+            ]
+          },
+          "Omega_m_tot": {
+            "mean": 0.314598,
+            "std": 0.006016,
+            "median": 0.31457,
+            "sigma_68": 0.005942,
+            "ci95": [
+              0.30283,
+              0.326562
+            ]
+          },
+          "h": {
+            "mean": 0.672259,
+            "std": 0.005847,
+            "median": 0.672243,
+            "sigma_68": 0.005837,
+            "ci95": [
+              0.660827,
+              0.683854
+            ]
+          },
+          "100_omega_b": {
+            "mean": 2.249999,
+            "std": 0.028695,
+            "median": 2.249594,
+            "sigma_68": 0.028867,
+            "ci95": [
+              2.195387,
+              2.307092
+            ]
+          },
+          "w0": {
+            "mean": -0.781187,
+            "std": 0.059991,
+            "median": -0.782613,
+            "sigma_68": 0.060248,
+            "ci95": [
+              -0.895649,
+              -0.663087
+            ]
+          },
+          "wa": {
+            "mean": -0.792727,
+            "std": 0.275747,
+            "median": -0.786594,
+            "sigma_68": 0.275485,
+            "ci95": [
+              -1.354301,
+              -0.280372
+            ]
+          }
+        },
+        "T1_Sign_metrics": {
+          "P_w0_gt_minus1_mcmc": 0.999977,
+          "P_w0_lt_minus1_mcmc": 2.3e-05,
+          "z_gaussian_w0_gt_minus1": 3.6474
+        },
+        "frozen_quantities": {
+          "Omega_bc_median": 0.313144,
+          "sigma_Omega_bc": 0.00592,
+          "f_leak": 0.175043,
+          "sigma_f_leak": 0.018747,
+          "R_pred": 4.949744,
+          "sigma_R_pred": 0.112484
+        }
+      },
+      "chi2_min": {
+        "Law1": 1670.449414,
+        "LCDM": 1673.229312,
+        "CPL": 1656.055369,
+        "T2A_CPL": 1656.099258
+      },
+      "verdicts_and_stats": {
+        "T1_L1": {
+          "A_r_Law1_minus_LCDM": -2.7799,
+          "B_r_Law1_minus_CPL": 14.394,
+          "p_discovery_vs_LCDM": 0.09545425,
+          "verdict": "FAIL",
+          "reasons": [
+            "B_r = Delta_chi2(Law1 - w0waCDM) = +14.3940 > +9.0"
+          ]
+        },
+        "T1_Sign": {
+          "P_w0_gt_minus1_mcmc": 1.0,
+          "P_w0_lt_minus1_mcmc": 0.0,
+          "z_gaussian_w0_gt_minus1": 3.9078,
+          "Delta_chi2_CPL_minus_LCDM": -17.1739,
+          "Law1_z_gamma_u_gt_0": 1.9327,
+          "verdict": "PASS"
+        },
+        "T2_A": {
+          "sn_dataset": "Pantheon+",
+          "Omega_bc_median": 0.313144,
+          "sigma_Omega_bc": 0.00592,
+          "Omega_bc_summary": {
+            "mean": 0.313172,
+            "std": 0.005994,
+            "median": 0.313144,
+            "sigma_68": 0.00592,
+            "ci95": [
+              0.301439,
+              0.325085
+            ]
+          },
+          "f_leak": 0.175043,
+          "sigma_f_leak": 0.018747,
+          "R_pred": 4.949744,
+          "sigma_R_pred": 0.112484,
+          "R_ref": 5.3127,
+          "sigma_R_ref": 0.065,
+          "sigma_comb": 0.129914,
+          "diff_R_pred_minus_ref": -0.362956,
+          "signed_tension_sigma": -2.7938,
+          "tension_sigma": 2.7938,
+          "per_run_verdict": "FAIL",
+          "from_Law1_chain": {
+            "Omega_bc_median": 0.307701,
+            "sigma_Omega_bc": 0.005121,
+            "f_leak": 0.19228,
+            "R_pred": 4.846321,
+            "sigma_R_pred": 0.09729,
+            "sigma_comb": 0.117006,
+            "diff_R_pred_minus_ref": -0.466379,
+            "signed_tension_sigma": -3.9859,
+            "tension_sigma": 3.9859,
+            "per_run_verdict": "FAIL"
+          }
+        }
+      }
+    },
+    "DES_Dovekie": {
+      "Law1": {
+        "universe_id": "U-8Z6F",
+        "run_id": "U-8Z6F__RA__LAW1__DES-Dovekie",
+        "model_kind": "LAW1",
+        "sn_dataset": "DES-Dovekie",
+        "reading": "A",
+        "cmb_mode": "full_3x3",
+        "bbn_prior_100wb": null,
+        "seed": 20299043,
+        "n_walkers": 32,
+        "n_burn": 1000,
+        "n_prod": 4000,
+        "n_samples_total": 128000,
+        "chi2_min": 1805.812358,
+        "best_fit_vector": [
+          0.312603,
+          0.669135,
+          2.258039,
+          0.070559
+        ],
+        "convergence": {
+          "rhat_minus_1": [
+            0.000207,
+            0.000256,
+            0.000133,
+            0.000246
+          ],
+          "max_rhat_minus_1": 0.000256,
+          "tau_autocorr": [
+            47.36,
+            47.6,
+            40.92,
+            45.43
+          ],
+          "max_tau_autocorr": 47.6,
+          "ess": [
+            2702.5,
+            2689.0,
+            3127.9,
+            2817.5
+          ],
+          "min_ess": 2689.0
+        },
+        "converged": true,
+        "elapsed_sec": 2728.679,
+        "parameters": {
+          "Omega_bc": {
+            "mean": 0.311311,
+            "std": 0.005111,
+            "median": 0.311208,
+            "sigma_68": 0.005066,
+            "ci95": [
+              0.301596,
+              0.321671
+            ]
+          },
+          "Omega_m_tot": {
+            "mean": 0.31275,
+            "std": 0.005133,
+            "median": 0.312649,
+            "sigma_68": 0.005087,
+            "ci95": [
+              0.302995,
+              0.323154
+            ]
+          },
+          "h": {
+            "mean": 0.669,
+            "std": 0.005381,
+            "median": 0.669064,
+            "sigma_68": 0.00538,
+            "ci95": [
+              0.658348,
+              0.679348
+            ]
+          },
+          "100_omega_b": {
+            "mean": 2.257989,
+            "std": 0.012737,
+            "median": 2.258013,
+            "sigma_68": 0.012594,
+            "ci95": [
+              2.232774,
+              2.282936
+            ]
+          },
+          "gamma_u": {
+            "mean": 0.071537,
+            "std": 0.027441,
+            "median": 0.071337,
+            "sigma_68": 0.027678,
+            "ci95": [
+              0.018579,
+              0.125672
+            ]
+          },
+          "w0_implied": {
+            "mean": -0.928463,
+            "std": 0.027441,
+            "median": -0.928663,
+            "sigma_68": 0.027678,
+            "ci95": [
+              -0.981421,
+              -0.874328
+            ]
+          },
+          "wa_implied": {
+            "mean": -0.039735,
+            "std": 0.0174,
+            "median": -0.038695,
+            "sigma_68": 0.017402,
+            "ci95": [
+              -0.076513,
+              -0.008891
+            ]
+          }
+        },
+        "Law1_derived_metrics": {
+          "Omega_bc_median": 0.311208,
+          "sigma_Omega_bc_68": 0.005066,
+          "f_leak_median": 0.181176,
+          "R_pred_median": 4.912945,
+          "sigma_R_pred_68": 0.096263,
+          "R_pred_mean": 4.914903,
+          "sigma_R_pred_std": 0.097116,
+          "z_gaussian_gamma_u_gt_0": 2.6069,
+          "P_gamma_u_gt_0_mcmc": 1.0
+        }
+      },
+      "LCDM": {
+        "universe_id": "U-8Z6F",
+        "run_id": "U-8Z6F__RA__LCDM__DES-Dovekie",
+        "model_kind": "LCDM",
+        "sn_dataset": "DES-Dovekie",
+        "reading": "A",
+        "cmb_mode": "full_3x3",
+        "bbn_prior_100wb": null,
+        "seed": 20299046,
+        "n_walkers": 32,
+        "n_burn": 1000,
+        "n_prod": 4000,
+        "n_samples_total": 128000,
+        "chi2_min": 1812.500846,
+        "best_fit_vector": [
+          0.303944,
+          0.681059,
+          2.249097
+        ],
+        "convergence": {
+          "rhat_minus_1": [
+            0.001239,
+            0.000877,
+            0.000798
+          ],
+          "max_rhat_minus_1": 0.001239,
+          "tau_autocorr": [
+            34.58,
+            34.03,
+            36.01
+          ],
+          "max_tau_autocorr": 36.01,
+          "ess": [
+            3701.2,
+            3761.1,
+            3554.1
+          ],
+          "min_ess": 3554.1
+        },
+        "converged": true,
+        "elapsed_sec": 2593.086,
+        "parameters": {
+          "Omega_bc": {
+            "mean": 0.302607,
+            "std": 0.003708,
+            "median": 0.302622,
+            "sigma_68": 0.003685,
+            "ci95": [
+              0.295381,
+              0.309925
+            ]
+          },
+          "Omega_m_tot": {
+            "mean": 0.303996,
+            "std": 0.003719,
+            "median": 0.304011,
+            "sigma_68": 0.003697,
+            "ci95": [
+              0.296748,
+              0.311337
+            ]
+          },
+          "h": {
+            "mean": 0.68106,
+            "std": 0.002908,
+            "median": 0.681047,
+            "sigma_68": 0.002907,
+            "ci95": [
+              0.675375,
+              0.686745
+            ]
+          },
+          "100_omega_b": {
+            "mean": 2.249302,
+            "std": 0.012422,
+            "median": 2.24935,
+            "sigma_68": 0.012392,
+            "ci95": [
+              2.224821,
+              2.273768
+            ]
+          }
+        }
+      },
+      "CPL": {
+        "universe_id": "U-8Z6F",
+        "run_id": "U-8Z6F__RA__CPL__DES-Dovekie",
+        "model_kind": "CPL",
+        "sn_dataset": "DES-Dovekie",
+        "reading": "A",
+        "cmb_mode": "full_3x3",
+        "bbn_prior_100wb": null,
+        "seed": 20299044,
+        "n_walkers": 32,
+        "n_burn": 1000,
+        "n_prod": 4000,
+        "n_samples_total": 128000,
+        "chi2_min": 1789.866297,
+        "best_fit_vector": [
+          0.320047,
+          0.666958,
+          2.238539,
+          -0.738424,
+          -0.912639
+        ],
+        "convergence": {
+          "rhat_minus_1": [
+            0.00039,
+            0.000578,
+            0.001392,
+            0.0,
+            0.000144
+          ],
+          "max_rhat_minus_1": 0.001392,
+          "tau_autocorr": [
+            60.38,
+            58.79,
+            58.56,
+            55.88,
+            56.54
+          ],
+          "max_tau_autocorr": 60.38,
+          "ess": [
+            2120.0,
+            2177.1,
+            2185.9,
+            2290.7,
+            2264.1
+          ],
+          "min_ess": 2120.0
+        },
+        "converged": true,
+        "elapsed_sec": 2699.856,
+        "parameters": {
+          "Omega_bc": {
+            "mean": 0.318899,
+            "std": 0.005533,
+            "median": 0.318867,
+            "sigma_68": 0.005481,
+            "ci95": [
+              0.308228,
+              0.329973
+            ]
+          },
+          "Omega_m_tot": {
+            "mean": 0.320348,
+            "std": 0.005554,
+            "median": 0.320316,
+            "sigma_68": 0.005504,
+            "ci95": [
+              0.309635,
+              0.33147
+            ]
+          },
+          "h": {
+            "mean": 0.666819,
+            "std": 0.005354,
+            "median": 0.66684,
+            "sigma_68": 0.005293,
+            "ci95": [
+              0.656339,
+              0.677363
+            ]
+          },
+          "100_omega_b": {
+            "mean": 2.237977,
+            "std": 0.013406,
+            "median": 2.237902,
+            "sigma_68": 0.013315,
+            "ci95": [
+              2.21176,
+              2.264269
+            ]
+          },
+          "w0": {
+            "mean": -0.730522,
+            "std": 0.059561,
+            "median": -0.731772,
+            "sigma_68": 0.059534,
+            "ci95": [
+              -0.843511,
+              -0.61068
+            ]
+          },
+          "wa": {
+            "mean": -0.951284,
+            "std": 0.250138,
+            "median": -0.941786,
+            "sigma_68": 0.247575,
+            "ci95": [
+              -1.470671,
+              -0.489079
+            ]
+          }
+        },
+        "T1_Sign_metrics": {
+          "P_w0_gt_minus1_mcmc": 1.0,
+          "P_w0_lt_minus1_mcmc": 0.0,
+          "z_gaussian_w0_gt_minus1": 4.5244
+        },
+        "frozen_quantities": {
+          "Omega_bc_median": 0.318867,
+          "sigma_Omega_bc": 0.005481,
+          "f_leak": 0.156922,
+          "sigma_f_leak": 0.017355,
+          "R_pred": 5.058466,
+          "sigma_R_pred": 0.104131
+        }
+      },
+      "T2A_CPL": {
+        "universe_id": "U-8Z6F",
+        "run_id": "U-8Z6F__RA__T2A_CPL__DES-Dovekie",
+        "model_kind": "T2A_CPL",
+        "sn_dataset": "DES-Dovekie",
+        "reading": "A",
+        "cmb_mode": "conditional_2x2",
+        "bbn_prior_100wb": {
+          "mean": 2.1981,
+          "sigma": 0.055
+        },
+        "seed": 20299045,
+        "n_walkers": 32,
+        "n_burn": 1000,
+        "n_prod": 4000,
+        "n_samples_total": 128000,
+        "chi2_min": 1789.860732,
+        "best_fit_vector": [
+          0.31858,
+          0.668153,
+          2.251985,
+          -0.751501,
+          -0.842985
+        ],
+        "convergence": {
+          "rhat_minus_1": [
+            0.000569,
+            0.001026,
+            0.001078,
+            0.001658,
+            0.00095
+          ],
+          "max_rhat_minus_1": 0.001658,
+          "tau_autocorr": [
+            56.28,
+            54.38,
+            63.8,
+            57.45,
+            66.35
+          ],
+          "max_tau_autocorr": 66.35,
+          "ess": [
+            2274.4,
+            2354.0,
+            2006.4,
+            2227.9,
+            1929.0
+          ],
+          "min_ess": 1929.0
+        },
+        "converged": true,
+        "elapsed_sec": 2620.147,
+        "parameters": {
+          "Omega_bc": {
+            "mean": 0.317352,
+            "std": 0.005912,
+            "median": 0.317254,
+            "sigma_68": 0.005851,
+            "ci95": [
+              0.305964,
+              0.329147
+            ]
+          },
+          "Omega_m_tot": {
+            "mean": 0.318798,
+            "std": 0.005934,
+            "median": 0.318699,
+            "sigma_68": 0.005874,
+            "ci95": [
+              0.307361,
+              0.330638
+            ]
+          },
+          "h": {
+            "mean": 0.667658,
+            "std": 0.00542,
+            "median": 0.66766,
+            "sigma_68": 0.005342,
+            "ci95": [
+              0.657031,
+              0.678415
+            ]
+          },
+          "100_omega_b": {
+            "mean": 2.252359,
+            "std": 0.028357,
+            "median": 2.251855,
+            "sigma_68": 0.028112,
+            "ci95": [
+              2.197856,
+              2.309561
+            ]
+          },
+          "w0": {
+            "mean": -0.7474,
+            "std": 0.061637,
+            "median": -0.74892,
+            "sigma_68": 0.061722,
+            "ci95": [
+              -0.862417,
+              -0.622157
+            ]
+          },
+          "wa": {
+            "mean": -0.85184,
+            "std": 0.282162,
+            "median": -0.841091,
+            "sigma_68": 0.279767,
+            "ci95": [
+              -1.438443,
+              -0.334171
+            ]
+          }
+        },
+        "T1_Sign_metrics": {
+          "P_w0_gt_minus1_mcmc": 1.0,
+          "P_w0_lt_minus1_mcmc": 0.0,
+          "z_gaussian_w0_gt_minus1": 4.0982
+        },
+        "frozen_quantities": {
+          "Omega_bc_median": 0.317254,
+          "sigma_Omega_bc": 0.005851,
+          "f_leak": 0.16203,
+          "sigma_f_leak": 0.018529,
+          "R_pred": 5.027819,
+          "sigma_R_pred": 0.111176
+        }
+      },
+      "chi2_min": {
+        "Law1": 1805.812358,
+        "LCDM": 1812.500846,
+        "CPL": 1789.866297,
+        "T2A_CPL": 1789.860732
+      },
+      "verdicts_and_stats": {
+        "T1_L1": {
+          "A_r_Law1_minus_LCDM": -6.6885,
+          "B_r_Law1_minus_CPL": 15.9461,
+          "p_discovery_vs_LCDM": 0.00970375,
+          "verdict": "FAIL",
+          "reasons": [
+            "B_r = Delta_chi2(Law1 - w0waCDM) = +15.9461 > +9.0"
+          ]
+        },
+        "T1_Sign": {
+          "P_w0_gt_minus1_mcmc": 1.0,
+          "P_w0_lt_minus1_mcmc": 0.0,
+          "z_gaussian_w0_gt_minus1": 4.5244,
+          "Delta_chi2_CPL_minus_LCDM": -22.6345,
+          "Law1_z_gamma_u_gt_0": 2.6069,
+          "verdict": "PASS"
+        },
+        "T2_A": {
+          "sn_dataset": "DES-Dovekie",
+          "Omega_bc_median": 0.317254,
+          "sigma_Omega_bc": 0.005851,
+          "Omega_bc_summary": {
+            "mean": 0.317352,
+            "std": 0.005912,
+            "median": 0.317254,
+            "sigma_68": 0.005851,
+            "ci95": [
+              0.305964,
+              0.329147
+            ]
+          },
+          "f_leak": 0.16203,
+          "sigma_f_leak": 0.018529,
+          "R_pred": 5.027819,
+          "sigma_R_pred": 0.111176,
+          "R_ref": 5.3127,
+          "sigma_R_ref": 0.065,
+          "sigma_comb": 0.128783,
+          "diff_R_pred_minus_ref": -0.284881,
+          "signed_tension_sigma": -2.2121,
+          "tension_sigma": 2.2121,
+          "per_run_verdict": "FAIL",
+          "from_Law1_chain": {
+            "Omega_bc_median": 0.311208,
+            "sigma_Omega_bc": 0.005066,
+            "f_leak": 0.181176,
+            "R_pred": 4.912945,
+            "sigma_R_pred": 0.096263,
+            "sigma_comb": 0.116153,
+            "diff_R_pred_minus_ref": -0.399755,
+            "signed_tension_sigma": -3.4416,
+            "tension_sigma": 3.4416,
+            "per_run_verdict": "FAIL"
+          }
+        }
+      }
+    },
+    "joint_verdicts": {
+      "T1_L1": {
+        "verdict": "FAIL",
+        "p_T1_L1_holm": 0.09545425,
+        "PantheonPlus_A_r": -2.7799,
+        "PantheonPlus_B_r": 14.394,
+        "DES_Dovekie_A_r": -6.6885,
+        "DES_Dovekie_B_r": 15.9461
+      },
+      "T1_Sign": {
+        "verdict": "PASS",
+        "PantheonPlus_P_w0_gt_m1": 1.0,
+        "DES_Dovekie_P_w0_gt_m1": 1.0
+      },
+      "T2_A": {
+        "verdict": "FAIL",
+        "verdict_from_Law1_chain": "FAIL",
+        "PantheonPlus_signed_sigma": -2.7938,
+        "PantheonPlus_abs_sigma": 2.7938,
+        "DES_Dovekie_signed_sigma": -2.2121,
+        "DES_Dovekie_abs_sigma": 2.2121
+      }
+    }
+  },
+  "T2_N1": {
+    "Omega_b_model": 0.052632,
+    "Omega_b_ref": 0.050399,
+    "sigma_Omega_b_ref": 0.00086,
+    "diff": 0.002233,
+    "signed_tension_sigma": 2.596,
+    "tension_sigma": 2.596,
+    "verdict": "FAIL"
+  },
+  "T2_N2": {
+    "H0_pred_kms_Mpc": 65.0557,
+    "sigma_H0_pred": 0.219,
+    "H0_ref_kms_Mpc": 67.814,
+    "sigma_H0_ref": 0.54,
+    "sigma_comb_H0": 0.5827,
+    "diff_H0": -2.7583,
+    "signed_tension_sigma": -4.7333,
+    "tension_sigma": 4.7333,
+    "verdict": "FAIL",
+    "BBN_prior_sensitivity": {
+      "H0_pred": 64.625,
+      "sigma_H0_pred": 0.8085,
+      "signed_tension_sigma": -3.28,
+      "tension_sigma": 3.28
+    }
+  }
+}

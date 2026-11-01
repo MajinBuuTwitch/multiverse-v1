@@ -1,0 +1,19 @@
+# Stage 1 Pre-Registration Freeze Timestamp Record (Unhashed Companion File per REVIEW_V2 N4)
+
+- **Manifest File:** `D:\Argon_Code\Ropewalk\PREREG_v4.sha256` (`SHA-256: 53ce966a0af648edbc23c88199e275a3195f679a68eb4310bb48fb5fa501fc3b`)
+- **OpenTimestamps Proof File:** `D:\Argon_Code\Ropewalk\PREREG_v4.sha256.ots`
+- **Chained Previous Manifest:** `D:\Argon_Code\Ropewalk\PREREG_v3.sha256` (`SHA-256: ab445f9aa11922802f2c8dc7517f6db3e063a579e0a10d92d26bef6eeb348da2`) and `D:\Argon_Code\Ropewalk\PREREG_v3.sha256.ots`
+- **Timestamp Tool:** `opentimestamps-client 0.8.0` (`D:\Argon_Code\Ropewalk\.venv\Scripts\ots.exe`)
+- **Local Timestamp (ISO-8601):** `2026-10-30T04:44:35-04:00`
+- **Remote OpenTimestamps Calendar Servers Attested for `PREREG_v4.sha256.ots` (3 of 3):**
+  1. `https://alice.btc.calendar.opentimestamps.org` (`PendingAttestation`)
+  2. `https://bob.btc.calendar.opentimestamps.org` (`PendingAttestation`)
+  3. `https://finney.calendar.eternitywall.com` (`PendingAttestation`)
+- **`ots upgrade` Status on Chained `PREREG_v3.sha256.ots`:**
+  - `https://alice.btc.calendar.opentimestamps.org`: Timestamped by Bitcoin transaction `b98d543e0d1a6043f0c48652d0ba79c5732bfc71381df5114a165ad6cdab68a9` (waiting for 6 confirmations before full block-header attestation is written to the `.ots` file).
+  - `https://bob.btc.calendar.opentimestamps.org`: Timestamped by Bitcoin transaction `17b1b65c8b9e930a122e57bba01030394a53925a1eaa303b333a2143aec25676` (waiting for 6 confirmations before full block-header attestation is written to the `.ots` file).
+  - `https://finney.calendar.eternitywall.com`: Pending confirmation in Bitcoin blockchain.
+- **Verification Command:**
+  - Inspect proof tree: `ots info PREREG_v4.sha256.ots`
+  - Upgrade / verify once anchored in Bitcoin block (6 confirmations): `ots upgrade PREREG_v4.sha256.ots` and `ots verify PREREG_v4.sha256.ots -f PREREG_v4.sha256`
+- **Note on `ACTIVITY_LOG.md` (`REVIEW_V2` m_v2-8):** `ACTIVITY_LOG.md` is hashed in full at the exact Stage 1 freeze boundary (`23542` bytes). Once Stage 2 (Part 4) begins and new lines are appended to `ACTIVITY_LOG.md`, verify `ACTIVITY_LOG.md` against `PREREG_v4.sha256` using the frozen byte-prefix length (`23542` bytes) recorded in the header comment of `PREREG_v4.sha256`.

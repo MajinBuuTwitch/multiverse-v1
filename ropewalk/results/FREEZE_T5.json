@@ -1,0 +1,137 @@
+{
+  "test_id": "T5 (T5-A Primary Pillar 4, T5-B & T5c Secondary)",
+  "frozen_at": "2026-10-30T06:29:35",
+  "f_leak_frozen_from_T2A_PantheonPlus": 0.189038,
+  "T5A_deciding_training_fit": {
+    "model_type": "T5A",
+    "loss_metric": "sum_chi2_red",
+    "f_leak": 0.189038,
+    "fitted_param": 9.212795,
+    "train_summary": {
+      "n_galaxies": 88,
+      "total_pts": 1747,
+      "sum_chi2_red": 17859.051864108587,
+      "mean_chi2_red": 202.94377118305212,
+      "median_chi2_red": 48.512770838866686,
+      "total_chi2": 438471.464691524,
+      "pooled_chi2_red": 250.98538333802173,
+      "frac_chi2_red_lt_2": 0.03409090909090909,
+      "median_sigma_kpc": 9.21279485632164
+    }
+  },
+  "T5B_deciding_training_fit": {
+    "model_type": "T5B",
+    "loss_metric": "sum_chi2_red",
+    "f_leak": 0.189038,
+    "fitted_param": 2.928045,
+    "train_summary": {
+      "n_galaxies": 88,
+      "total_pts": 1747,
+      "sum_chi2_red": 9506.657484573916,
+      "mean_chi2_red": 108.03019868833995,
+      "median_chi2_red": 25.002079594700692,
+      "total_chi2": 190639.70743922814,
+      "pooled_chi2_red": 109.1240454717963,
+      "frac_chi2_red_lt_2": 0.056818181818181816,
+      "median_sigma_kpc": 5.929291171257917
+    }
+  },
+  "sensitivity_training_fits": {
+    "T5A_total_chi2_loss": {
+      "model_type": "T5A",
+      "loss_metric": "total_chi2",
+      "f_leak": 0.189038,
+      "fitted_param": 8.08743,
+      "train_summary": {
+        "n_galaxies": 88,
+        "total_pts": 1747,
+        "sum_chi2_red": 18000.976883297048,
+        "mean_chi2_red": 204.5565554920119,
+        "median_chi2_red": 45.9452320286467,
+        "total_chi2": 432129.0629498077,
+        "pooled_chi2_red": 247.35493013726827,
+        "frac_chi2_red_lt_2": 0.022727272727272728,
+        "median_sigma_kpc": 8.087429616850253
+      }
+    },
+    "T5A_median_chi2_red_loss": {
+      "model_type": "T5A",
+      "loss_metric": "median_chi2_red",
+      "f_leak": 0.189038,
+      "fitted_param": 1.312603,
+      "train_summary": {
+        "n_galaxies": 88,
+        "total_pts": 1747,
+        "sum_chi2_red": 44199.70001718485,
+        "mean_chi2_red": 502.26931837710055,
+        "median_chi2_red": 25.842073550201846,
+        "total_chi2": 1563696.03252219,
+        "pooled_chi2_red": 895.0750043057756,
+        "frac_chi2_red_lt_2": 0.056818181818181816,
+        "median_sigma_kpc": 1.3126025702367061
+      }
+    },
+    "T5A_f_leak_1_over_6": {
+      "model_type": "T5A",
+      "loss_metric": "sum_chi2_red",
+      "f_leak": 0.16666666666666666,
+      "fitted_param": 9.645406,
+      "train_summary": {
+        "n_galaxies": 88,
+        "total_pts": 1747,
+        "sum_chi2_red": 18201.73908055395,
+        "mean_chi2_red": 206.83794409720397,
+        "median_chi2_red": 52.2455900496449,
+        "total_chi2": 452287.51773892017,
+        "pooled_chi2_red": 258.8938281276017,
+        "frac_chi2_red_lt_2": 0.03409090909090909,
+        "median_sigma_kpc": 9.645406216859833
+      }
+    },
+    "T5B_total_chi2_loss": {
+      "model_type": "T5B",
+      "loss_metric": "total_chi2",
+      "f_leak": 0.189038,
+      "fitted_param": 3.237289,
+      "train_summary": {
+        "n_galaxies": 88,
+        "total_pts": 1747,
+        "sum_chi2_red": 9714.23894522991,
+        "mean_chi2_red": 110.38907892306716,
+        "median_chi2_red": 26.062269101051562,
+        "total_chi2": 183944.2601835204,
+        "pooled_chi2_red": 105.29150554294242,
+        "frac_chi2_red_lt_2": 0.06818181818181818,
+        "median_sigma_kpc": 6.555509576998654
+      }
+    },
+    "T5B_median_chi2_red_loss": {
+      "model_type": "T5B",
+      "loss_metric": "median_chi2_red",
+      "f_leak": 0.189038,
+      "fitted_param": 2.117797,
+      "train_summary": {
+        "n_galaxies": 88,
+        "total_pts": 1747,
+        "sum_chi2_red": 11435.009470000736,
+        "mean_chi2_red": 129.94328943182654,
+        "median_chi2_red": 17.77288737250556,
+        "total_chi2": 290038.45033550804,
+        "pooled_chi2_red": 166.02086453091474,
+        "frac_chi2_red_lt_2": 0.09090909090909091,
+        "median_sigma_kpc": 4.288538533522671
+      }
+    }
+  },
+  "scripts_sha256": {
+    "clusters_t4.py": "b07659e7781322c38577839185c41e542ad162121d187fe73153ca8f5d23bfdd",
+    "cosmology.py": "998296f8916f194ecd0e3974861810425baa3903dc58ea1a624bd0a0c6657f92",
+    "freeze_data_manifest.py": "8b3eb42c59bdc0f087bf7c18794470e4d2bc44b1e1927eb5709f349c35034330",
+    "get_data.py": "04fcc4bc18750011a6ea2893407d3ce018f06e39d8f6a3b89e73a7a835d9cdf2",
+    "local_h0_t6.py": "c891441736f8971e14a2fb75274e4aa55b6948e139fd6b1198296fb2de6de9c4",
+    "run_part10_astrophysics_and_verdict.py": "ccc6a7dcf6a8202e91c279411f2a445b472c616fe703d4e6437a75ab5bb009c5",
+    "run_part8_fixes.py": "0bd1702119f1348e12ff796fa2bd16d133f349c70cb4ff0c04f51f5f736d12e8",
+    "run_part9_cosmology_tests.py": "8da8e3cbcdfeeb6a1b8be53c4730920419411fcfe74250e9b325e4639e818eb5",
+    "sparc_t5.py": "f992b875a087123f2118086bb8c9105e56d56f671e5926778e136a9bad350642"
+  }
+}

@@ -1,0 +1,7 @@
+# Head-to-Head Supplementary Analysis Plan Manifest (HEAD_TO_HEAD_PLAN.sha256)
+# Label: supplementary analysis, not pre-registered
+# Generated at: 2026-10-30T17:15:15-04:00 (prior to first run)
+# Format: <sha256_hex>  <relative_path>
+2e58c8caf27522c457f4dc67c65e88dfc37dfe96c5e0be908f6384be034d44d2  HEAD_TO_HEAD_PLAN.md
+2e58c8caf27522c457f4dc67c65e88dfc37dfe96c5e0be908f6384be034d44d2  head_to_head/HEAD_TO_HEAD_PLAN.md
+88d6ff2277f7c6e5352fe442a36441ffe86a602fabb9301dd197adc2454460b5  head_to_head/DEVIATIONS.md

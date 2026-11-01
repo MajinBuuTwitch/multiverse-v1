@@ -1,0 +1,4173 @@
+{
+  "project": "Ropewalk Multiverse Empirical Test Suite (v1.0.2)",
+  "generated_at": "2026-10-30T07:47:30",
+  "governing_preregistration": {
+    "file": "PREREG.md (v1.0.2)",
+    "prereg_v4_sha256": "53ce966a0af648edbc23c88199e275a3195f679a68eb4310bb48fb5fa501fc3b",
+    "data_manifest_sha256": "73135698afb833e7e95e6a85c55475480132300e29f8b7b42d159c037067896d"
+  },
+  "overall_model_verdict": "MODEL FALSIFIED (FAIL)",
+  "primary_pillar_verdicts": {
+    "Pillar_1_T1_L1": "INCONCLUSIVE",
+    "Pillar_2_T2_A": "FAIL",
+    "Pillar_3_T4b": "INCONCLUSIVE",
+    "Pillar_4_T5_A": "FAIL"
+  },
+  "secondary_test_verdicts": {
+    "T1_Sign": "PASS",
+    "T2_N1": "FAIL",
+    "T2_N2": "FAIL",
+    "T5_B": "FAIL",
+    "T5c": "PASS",
+    "T6": "FAIL",
+    "T4a": "EXPLORATORY (Unscored per PREREG.md Sec 5.4)"
+  },
+  "holm_bonferroni_control": {
+    "alpha_FWE": 0.05,
+    "K_discovery_tests": 3,
+    "first_failing_rank_m_star": 1,
+    "sorted_tests": [
+      {
+        "test": "T1-L1",
+        "p": 0.19074448,
+        "rank": 1,
+        "alpha_threshold": 0.016667,
+        "survives_holm": false
+      },
+      {
+        "test": "T6",
+        "p": 0.34783764,
+        "rank": 2,
+        "alpha_threshold": 0.025,
+        "survives_holm": false
+      },
+      {
+        "test": "T4b",
+        "p": 1.0,
+        "rank": 3,
+        "alpha_threshold": 0.05,
+        "survives_holm": false
+      }
+    ],
+    "raw_verdicts": {
+      "T1-L1": "INCONCLUSIVE",
+      "T4b": "INCONCLUSIVE",
+      "T6": "FAIL"
+    },
+    "post_holm_verdicts": {
+      "T1-L1": "INCONCLUSIVE",
+      "T4b": "INCONCLUSIVE",
+      "T6": "FAIL"
+    }
+  },
+  "validation_gates_g9": {
+    "G9-a": {
+      "gate": "G9-a",
+      "target_Omega_m": 0.2975,
+      "target_sigma": 0.0086,
+      "obtained_Omega_m": 0.2971795816849694,
+      "obtained_sigma": 0.008615583256342417,
+      "obtained_hrd_Mpc": 101.5478700241969,
+      "chi2_min": 10.282297566702711,
+      "diff_in_target_sigma": 0.0372579436082095,
+      "tolerance_sigma": 0.3,
+      "passed": true
+    },
+    "G9-b": {
+      "gate": "G9-b",
+      "obtained_Omega_m": 0.3154829179729922,
+      "obtained_sigma_Omega_m": 0.008438128857672814,
+      "obtained_h": 0.6737370691315694,
+      "obtained_sigma_h": 0.006083444692155824,
+      "obtained_100_omega_b": 2.2359999959243995,
+      "obtained_sigma_100_omega_b": 0.014999999999968315,
+      "diff_Omega_m_sigma": 0.025057256574272806,
+      "diff_h_sigma": 0.025383172512854015,
+      "diff_wb_sigma": 2.717067163852486e-07,
+      "max_diff_sigma": 0.025383172512854015,
+      "tolerance_sigma": 0.3,
+      "passed": true
+    },
+    "G9-c": {
+      "gate": "G9-c",
+      "target_w0": -0.803,
+      "target_sigma_w0": 0.054,
+      "target_wa": -0.72,
+      "target_sigma_wa": 0.21,
+      "obtained_Omega_m": 0.3128637005294595,
+      "obtained_h": 0.6744330645549279,
+      "obtained_100_omega_b": 2.2422722772090355,
+      "obtained_w0": -0.8224848476449165,
+      "obtained_wa": -0.6306124221504065,
+      "chi2_min": 1639.3568054464781,
+      "diff_w0_sigma": 0.3608305119428968,
+      "diff_wa_sigma": 0.4256551326171119,
+      "tolerance_sigma": 1.0,
+      "passed": true
+    },
+    "G9-d": {
+      "gate": "G9-d",
+      "numpy_version": "2.5.4",
+      "scipy_version": "1.18.1",
+      "max_abs_error": 1.4397483205641493e-11,
+      "tolerance": 1e-10,
+      "passed": true
+    },
+    "all_passed": true
+  },
+  "T1": {
+    "T1_L1_deciding": {
+      "joint_verdict_raw": "INCONCLUSIVE",
+      "p_T1_L1_holm": 0.19074448,
+      "fail_reasons": [],
+      "inconclusive_reasons": [
+        "Pantheon+: Intermediate Delta_chi2: A_r = -1.7119, B_r = +5.4558 (neither FAIL nor PASS).",
+        "DES-Dovekie: Intermediate Delta_chi2: A_r = -2.5780, B_r = +7.3552 (neither FAIL nor PASS)."
+      ],
+      "PantheonPlus": {
+        "chi2_min_LCDM": 1405.343634,
+        "chi2_min_Law1": 1403.631776,
+        "chi2_min_w0waCDM": 1398.175982,
+        "A_r_Law1_minus_LCDM": -1.7119,
+        "B_r_Law1_minus_w0waCDM": 5.4558,
+        "p_discovery_vs_LCDM": 0.19074448,
+        "per_run_verdict": "INCONCLUSIVE",
+        "reasons": [
+          "Intermediate Delta_chi2: A_r = -1.7119, B_r = +5.4558 (neither FAIL nor PASS)."
+        ],
+        "Law1_chain": {
+          "run_id": "T1_LAW1_Pantheon+",
+          "model_kind": "LAW1",
+          "sn_dataset": "Pantheon+",
+          "cmb_table": "lcdm",
+          "cmb_mode": "full_3x3",
+          "lya_mode": "joint_ap_deciding",
+          "n_walkers": 32,
+          "n_burn": 1000,
+          "n_prod": 4000,
+          "n_samples_total": 128000,
+          "chi2_min": 1403.631776,
+          "best_fit_vector": [
+            0.307509,
+            0.67646,
+            2.254915,
+            0.038481
+          ],
+          "convergence": {
+            "rhat_minus_1": [
+              0.001999,
+              0.00188,
+              0.003458,
+              0.002919
+            ],
+            "max_rhat_minus_1": 0.003458,
+            "tau_autocorr": [
+              51.37,
+              50.99,
+              45.59,
+              51.14
+            ],
+            "max_tau_autocorr": 51.37,
+            "ess": [
+              2491.6,
+              2510.4,
+              2807.7,
+              2502.8
+            ],
+            "min_ess": 2491.6
+          },
+          "converged": true,
+          "parameters": {
+            "Omega_m_tot": {
+              "median": 0.308254,
+              "mean": 0.308373,
+              "std": 0.005055,
+              "sigma_68": 0.005048
+            },
+            "h": {
+              "median": 0.675615,
+              "mean": 0.675406,
+              "std": 0.005244,
+              "sigma_68": 0.005306
+            },
+            "100_omega_b": {
+              "median": 2.255825,
+              "mean": 2.255841,
+              "std": 0.012954,
+              "sigma_68": 0.012904
+            },
+            "gamma_u": {
+              "median": 0.042946,
+              "mean": 0.04461,
+              "std": 0.02504,
+              "sigma_68": 0.02616
+            },
+            "w0_implied": {
+              "median": -0.957054,
+              "mean": -0.95539,
+              "std": 0.02504,
+              "sigma_68": 0.02616
+            },
+            "wa_implied": {
+              "median": -0.021748,
+              "mean": -0.023462,
+              "std": 0.01447,
+              "sigma_68": 0.01472
+            }
+          }
+        },
+        "LCDM_chain": {
+          "run_id": "T1_LCDM_Pantheon+",
+          "model_kind": "LCDM",
+          "sn_dataset": "Pantheon+",
+          "cmb_table": "lcdm",
+          "cmb_mode": "full_3x3",
+          "lya_mode": "joint_ap_deciding",
+          "n_walkers": 32,
+          "n_burn": 1000,
+          "n_prod": 4000,
+          "n_samples_total": 128000,
+          "chi2_min": 1405.343634,
+          "best_fit_vector": [
+            0.302526,
+            0.683257,
+            2.250432
+          ],
+          "convergence": {
+            "rhat_minus_1": [
+              0.000255,
+              0.000263,
+              0.001048
+            ],
+            "max_rhat_minus_1": 0.001048,
+            "tau_autocorr": [
+              37.31,
+              37.43,
+              35.15
+            ],
+            "max_tau_autocorr": 37.43,
+            "ess": [
+              3431.1,
+              3419.8,
+              3641.5
+            ],
+            "min_ess": 3419.8
+          },
+          "converged": true,
+          "parameters": {
+            "Omega_m_tot": {
+              "median": 0.302571,
+              "mean": 0.302557,
+              "std": 0.003698,
+              "sigma_68": 0.003704
+            },
+            "h": {
+              "median": 0.68324,
+              "mean": 0.683265,
+              "std": 0.002886,
+              "sigma_68": 0.002877
+            },
+            "100_omega_b": {
+              "median": 2.250675,
+              "mean": 2.250548,
+              "std": 0.01226,
+              "sigma_68": 0.012224
+            }
+          }
+        }
+      },
+      "DES_Dovekie": {
+        "chi2_min_LCDM": 1650.961491,
+        "chi2_min_Law1": 1648.38351,
+        "chi2_min_w0waCDM": 1641.028302,
+        "A_r_Law1_minus_LCDM": -2.578,
+        "B_r_Law1_minus_w0waCDM": 7.3552,
+        "p_discovery_vs_LCDM": 0.1083598,
+        "per_run_verdict": "INCONCLUSIVE",
+        "reasons": [
+          "Intermediate Delta_chi2: A_r = -2.5780, B_r = +7.3552 (neither FAIL nor PASS)."
+        ],
+        "Law1_chain": {
+          "run_id": "T1_LAW1_DES-Dovekie",
+          "model_kind": "LAW1",
+          "sn_dataset": "DES-Dovekie",
+          "cmb_table": "lcdm",
+          "cmb_mode": "full_3x3",
+          "lya_mode": "joint_ap_deciding",
+          "n_walkers": 32,
+          "n_burn": 1000,
+          "n_prod": 4000,
+          "n_samples_total": 128000,
+          "chi2_min": 1648.38351,
+          "best_fit_vector": [
+            0.308311,
+            0.675445,
+            2.255386,
+            0.043843
+          ],
+          "convergence": {
+            "rhat_minus_1": [
+              0.000641,
+              0.000582,
+              0.000882,
+              0.000339
+            ],
+            "max_rhat_minus_1": 0.000882,
+            "tau_autocorr": [
+              45.0,
+              45.79,
+              40.06,
+              46.6
+            ],
+            "max_tau_autocorr": 46.6,
+            "ess": [
+              2844.6,
+              2795.3,
+              3195.5,
+              2746.8
+            ],
+            "min_ess": 2746.8
+          },
+          "converged": true,
+          "parameters": {
+            "Omega_m_tot": {
+              "median": 0.308457,
+              "mean": 0.308578,
+              "std": 0.004835,
+              "sigma_68": 0.004847
+            },
+            "h": {
+              "median": 0.675195,
+              "mean": 0.675065,
+              "std": 0.005099,
+              "sigma_68": 0.005207
+            },
+            "100_omega_b": {
+              "median": 2.255866,
+              "mean": 2.255888,
+              "std": 0.012555,
+              "sigma_68": 0.012349
+            },
+            "gamma_u": {
+              "median": 0.045401,
+              "mean": 0.046813,
+              "std": 0.024888,
+              "sigma_68": 0.025781
+            },
+            "w0_implied": {
+              "median": -0.954599,
+              "mean": -0.953187,
+              "std": 0.024888,
+              "sigma_68": 0.025781
+            },
+            "wa_implied": {
+              "median": -0.023131,
+              "mean": -0.024689,
+              "std": 0.014463,
+              "sigma_68": 0.014626
+            }
+          }
+        },
+        "LCDM_chain": {
+          "run_id": "T1_LCDM_DES-Dovekie",
+          "model_kind": "LCDM",
+          "sn_dataset": "DES-Dovekie",
+          "cmb_table": "lcdm",
+          "cmb_mode": "full_3x3",
+          "lya_mode": "joint_ap_deciding",
+          "n_walkers": 32,
+          "n_burn": 1000,
+          "n_prod": 4000,
+          "n_samples_total": 128000,
+          "chi2_min": 1650.961491,
+          "best_fit_vector": [
+            0.302943,
+            0.68294,
+            2.249826
+          ],
+          "convergence": {
+            "rhat_minus_1": [
+              0.000824,
+              0.000853,
+              0.00043
+            ],
+            "max_rhat_minus_1": 0.000853,
+            "tau_autocorr": [
+              38.69,
+              37.6,
+              33.2
+            ],
+            "max_tau_autocorr": 38.69,
+            "ess": [
+              3308.4,
+              3404.3,
+              3855.7
+            ],
+            "min_ess": 3308.4
+          },
+          "converged": true,
+          "parameters": {
+            "Omega_m_tot": {
+              "median": 0.303009,
+              "mean": 0.303002,
+              "std": 0.00374,
+              "sigma_68": 0.003725
+            },
+            "h": {
+              "median": 0.682909,
+              "mean": 0.682927,
+              "std": 0.00292,
+              "sigma_68": 0.0029
+            },
+            "100_omega_b": {
+              "median": 2.250036,
+              "mean": 2.249981,
+              "std": 0.012564,
+              "sigma_68": 0.012463
+            }
+          }
+        }
+      }
+    },
+    "T1_Sign_secondary": {
+      "joint_verdict": "PASS",
+      "PantheonPlus": {
+        "CPL_chain": {
+          "run_id": "T1_CPL_Pantheon+",
+          "model_kind": "CPL",
+          "sn_dataset": "Pantheon+",
+          "cmb_table": "lcdm",
+          "cmb_mode": "full_3x3",
+          "lya_mode": "joint_ap_deciding",
+          "n_walkers": 32,
+          "n_burn": 1000,
+          "n_prod": 4000,
+          "n_samples_total": 128000,
+          "chi2_min": 1398.175982,
+          "best_fit_vector": [
+            0.311525,
+            0.675483,
+            2.24342,
+            -0.858501,
+            -0.492555
+          ],
+          "convergence": {
+            "rhat_minus_1": [
+              0.002399,
+              0.002657,
+              0.001166,
+              0.001071,
+              0.00294
+            ],
+            "max_rhat_minus_1": 0.00294,
+            "tau_autocorr": [
+              58.5,
+              59.05,
+              52.55,
+              57.94,
+              56.98
+            ],
+            "max_tau_autocorr": 59.05,
+            "ess": [
+              2188.0,
+              2167.5,
+              2436.0,
+              2209.2,
+              2246.3
+            ],
+            "min_ess": 2167.5
+          },
+          "converged": true,
+          "parameters": {
+            "Omega_m_tot": {
+              "median": 0.311629,
+              "mean": 0.311696,
+              "std": 0.00576,
+              "sigma_68": 0.005757
+            },
+            "h": {
+              "median": 0.67547,
+              "mean": 0.675524,
+              "std": 0.005961,
+              "sigma_68": 0.005915
+            },
+            "100_omega_b": {
+              "median": 2.243017,
+              "mean": 2.243089,
+              "std": 0.013831,
+              "sigma_68": 0.013701
+            },
+            "w0": {
+              "median": -0.854092,
+              "mean": -0.853765,
+              "std": 0.056226,
+              "sigma_68": 0.055958
+            },
+            "wa": {
+              "median": -0.513975,
+              "mean": -0.519527,
+              "std": 0.216847,
+              "sigma_68": 0.215181
+            }
+          },
+          "T1_Sign_metrics": {
+            "P_w0_gt_minus1_mcmc": 0.995984,
+            "P_w0_lt_minus1_mcmc": 0.004016,
+            "z_gaussian_w0_gt_minus1": 2.6008
+          }
+        },
+        "Delta_chi2_w0wa_minus_LCDM": -7.1677
+      },
+      "DES_Dovekie": {
+        "CPL_chain": {
+          "run_id": "T1_CPL_DES-Dovekie",
+          "model_kind": "CPL",
+          "sn_dataset": "DES-Dovekie",
+          "cmb_table": "lcdm",
+          "cmb_mode": "full_3x3",
+          "lya_mode": "joint_ap_deciding",
+          "n_walkers": 32,
+          "n_burn": 1000,
+          "n_prod": 4000,
+          "n_samples_total": 128000,
+          "chi2_min": 1641.028302,
+          "best_fit_vector": [
+            0.31322,
+            0.674133,
+            2.241805,
+            -0.830766,
+            -0.596283
+          ],
+          "convergence": {
+            "rhat_minus_1": [
+              0.000216,
+              0.000483,
+              0.001139,
+              0.000256,
+              0.000164
+            ],
+            "max_rhat_minus_1": 0.001139,
+            "tau_autocorr": [
+              53.77,
+              54.18,
+              57.49,
+              55.15,
+              55.66
+            ],
+            "max_tau_autocorr": 57.49,
+            "ess": [
+              2380.5,
+              2362.6,
+              2226.5,
+              2320.8,
+              2299.7
+            ],
+            "min_ess": 2226.5
+          },
+          "converged": true,
+          "parameters": {
+            "Omega_m_tot": {
+              "median": 0.313471,
+              "mean": 0.313539,
+              "std": 0.005517,
+              "sigma_68": 0.00546
+            },
+            "h": {
+              "median": 0.673893,
+              "mean": 0.673916,
+              "std": 0.005508,
+              "sigma_68": 0.005476
+            },
+            "100_omega_b": {
+              "median": 2.241487,
+              "mean": 2.241545,
+              "std": 0.013712,
+              "sigma_68": 0.013754
+            },
+            "w0": {
+              "median": -0.825007,
+              "mean": -0.824755,
+              "std": 0.056178,
+              "sigma_68": 0.055675
+            },
+            "wa": {
+              "median": -0.615279,
+              "mean": -0.622977,
+              "std": 0.224962,
+              "sigma_68": 0.222775
+            }
+          },
+          "T1_Sign_metrics": {
+            "P_w0_gt_minus1_mcmc": 0.999219,
+            "P_w0_lt_minus1_mcmc": 0.000781,
+            "z_gaussian_w0_gt_minus1": 3.1195
+          }
+        },
+        "Delta_chi2_w0wa_minus_LCDM": -9.9332
+      }
+    },
+    "T1_sensitivity": {
+      "Pantheon+_wCDM_CMB": {
+        "sn_dataset": "Pantheon+",
+        "cmb_table": "wcdm",
+        "lya_mode": "joint_ap_deciding",
+        "chi2_min_LCDM": 1404.7721,
+        "chi2_min_Law1": 1402.8871,
+        "chi2_min_w0waCDM": 1397.8764,
+        "A_r_Law1_minus_LCDM": -1.885,
+        "B_r_Law1_minus_w0waCDM": 5.0107,
+        "Law1_gamma_u_best": 0.04037,
+        "CPL_w0_best": -0.8609,
+        "CPL_wa_best": -0.4741,
+        "per_run_verdict": "INCONCLUSIVE",
+        "reasons": [
+          "Intermediate Delta_chi2: A_r = -1.8850, B_r = +5.0107 (neither FAIL nor PASS)."
+        ]
+      },
+      "DES-Dovekie_wCDM_CMB": {
+        "sn_dataset": "DES-Dovekie",
+        "cmb_table": "wcdm",
+        "lya_mode": "joint_ap_deciding",
+        "chi2_min_LCDM": 1650.4118,
+        "chi2_min_Law1": 1647.6209,
+        "chi2_min_w0waCDM": 1640.7926,
+        "A_r_Law1_minus_LCDM": -2.7909,
+        "B_r_Law1_minus_w0waCDM": 6.8283,
+        "Law1_gamma_u_best": 0.04561,
+        "CPL_w0_best": -0.8337,
+        "CPL_wa_best": -0.5758,
+        "per_run_verdict": "INCONCLUSIVE",
+        "reasons": [
+          "Intermediate Delta_chi2: A_r = -2.7909, B_r = +6.8283 (neither FAIL nor PASS)."
+        ]
+      },
+      "Pantheon+_Lya_r0": {
+        "sn_dataset": "Pantheon+",
+        "cmb_table": "lcdm",
+        "lya_mode": "joint_ap_r0",
+        "chi2_min_LCDM": 1405.5995,
+        "chi2_min_Law1": 1403.7816,
+        "chi2_min_w0waCDM": 1398.8962,
+        "A_r_Law1_minus_LCDM": -1.8179,
+        "B_r_Law1_minus_w0waCDM": 4.8853,
+        "Law1_gamma_u_best": 0.03995,
+        "CPL_w0_best": -0.8616,
+        "CPL_wa_best": -0.4807,
+        "per_run_verdict": "INCONCLUSIVE",
+        "reasons": [
+          "Intermediate Delta_chi2: A_r = -1.8179, B_r = +4.8853 (neither FAIL nor PASS)."
+        ]
+      },
+      "DES-Dovekie_Lya_r0": {
+        "sn_dataset": "DES-Dovekie",
+        "cmb_table": "lcdm",
+        "lya_mode": "joint_ap_r0",
+        "chi2_min_LCDM": 1651.2065,
+        "chi2_min_Law1": 1648.5133,
+        "chi2_min_w0waCDM": 1641.7942,
+        "A_r_Law1_minus_LCDM": -2.6933,
+        "B_r_Law1_minus_w0waCDM": 6.7191,
+        "Law1_gamma_u_best": 0.04512,
+        "CPL_w0_best": -0.8332,
+        "CPL_wa_best": -0.5888,
+        "per_run_verdict": "INCONCLUSIVE",
+        "reasons": [
+          "Intermediate Delta_chi2: A_r = -2.6933, B_r = +6.7191 (neither FAIL nor PASS)."
+        ]
+      },
+      "Pantheon+_unmodified_BAO": {
+        "sn_dataset": "Pantheon+",
+        "cmb_table": "lcdm",
+        "lya_mode": "unmodified",
+        "chi2_min_LCDM": 1404.1818,
+        "chi2_min_Law1": 1402.1952,
+        "chi2_min_w0waCDM": 1396.6331,
+        "A_r_Law1_minus_LCDM": -1.9866,
+        "B_r_Law1_minus_w0waCDM": 5.5621,
+        "Law1_gamma_u_best": 0.04175,
+        "CPL_w0_best": -0.8521,
+        "CPL_wa_best": -0.5178,
+        "per_run_verdict": "INCONCLUSIVE",
+        "reasons": [
+          "Intermediate Delta_chi2: A_r = -1.9866, B_r = +5.5621 (neither FAIL nor PASS)."
+        ]
+      },
+      "DES-Dovekie_unmodified_BAO": {
+        "sn_dataset": "DES-Dovekie",
+        "cmb_table": "lcdm",
+        "lya_mode": "unmodified",
+        "chi2_min_LCDM": 1649.8427,
+        "chi2_min_Law1": 1646.9174,
+        "chi2_min_w0waCDM": 1639.3567,
+        "A_r_Law1_minus_LCDM": -2.9253,
+        "B_r_Law1_minus_w0waCDM": 7.5607,
+        "Law1_gamma_u_best": 0.047,
+        "CPL_w0_best": -0.8225,
+        "CPL_wa_best": -0.6306,
+        "per_run_verdict": "INCONCLUSIVE",
+        "reasons": [
+          "Intermediate Delta_chi2: A_r = -2.9253, B_r = +7.5607 (neither FAIL nor PASS)."
+        ]
+      }
+    }
+  },
+  "T2": {
+    "T2_A_deciding": {
+      "joint_verdict": "FAIL",
+      "fail_reasons": [
+        "Pantheon+ |R_pred - R_Planck|/sigma_comb = 3.74sigma > 2.0sigma.",
+        "DES-Dovekie |R_pred - R_Planck|/sigma_comb = 3.58sigma > 2.0sigma."
+      ],
+      "PantheonPlus": {
+        "sn_dataset": "Pantheon+",
+        "Omega_bc_median": 0.308725,
+        "sigma_Omega_bc": 0.006049,
+        "f_leak": 0.189038,
+        "sigma_f_leak": 0.019155,
+        "R_pred": 4.865772,
+        "sigma_R_pred": 0.114933,
+        "R_Planck": 5.36,
+        "sigma_Planck": 0.065,
+        "sigma_comb": 0.13204,
+        "diff_R_pred_minus_Planck": -0.494228,
+        "tension_sigma": 3.743,
+        "per_run_verdict": "FAIL"
+      },
+      "DES_Dovekie": {
+        "sn_dataset": "DES-Dovekie",
+        "Omega_bc_median": 0.310765,
+        "sigma_Omega_bc": 0.005757,
+        "f_leak": 0.182578,
+        "sigma_f_leak": 0.018231,
+        "R_pred": 4.904531,
+        "sigma_R_pred": 0.109383,
+        "R_Planck": 5.36,
+        "sigma_Planck": 0.065,
+        "sigma_comb": 0.127239,
+        "diff_R_pred_minus_Planck": -0.455469,
+        "tension_sigma": 3.5796,
+        "per_run_verdict": "FAIL"
+      }
+    },
+    "T2_N1_secondary": {
+      "Omega_b_model": 0.052632,
+      "Omega_b_Planck": 0.0493,
+      "sigma_Omega_b_Planck": 0.00086,
+      "diff": 0.003332,
+      "tension_sigma": 3.8739,
+      "verdict": "FAIL"
+    },
+    "T2_N2_secondary": {
+      "H0_pred_kms_Mpc": 65.1943,
+      "sigma_H0_pred": 0.2186,
+      "H0_Planck_kms_Mpc": 67.36,
+      "sigma_H0_Planck": 0.54,
+      "sigma_comb_H0": 0.5826,
+      "diff_H0": -2.1657,
+      "tension_sigma": -3.7175,
+      "verdict": "FAIL",
+      "sensitivity": {
+        "DESI_LUNA_BBN_vs_Planck": {
+          "H0_pred": 64.9169,
+          "sigma_H0_pred": 0.8049,
+          "tension_sigma": -2.5207
+        },
+        "Cooke18_BBN_vs_Planck": {
+          "H0_pred": 64.1514,
+          "sigma_H0_pred": 0.2814,
+          "tension_sigma_vs_Planck": -5.2695,
+          "tension_sigma_vs_DESI_BBN_68p52": -6.4163
+        }
+      }
+    },
+    "T2_sensitivity": {
+      "T2_B_constrained": {
+        "joint_verdict": "FAIL",
+        "PantheonPlus": {
+          "Omega_bc_median": 0.318258,
+          "sigma_Omega_bc": 0.005753,
+          "f_leak": 0.158849,
+          "R_pred": 5.046905,
+          "sigma_R_pred": 0.109312,
+          "sigma_comb": 0.127178,
+          "tension_sigma_vs_Planck": 2.4619,
+          "chi2_min": 1406.183649,
+          "Delta_chi2_vs_w0waCDM": 8.5391,
+          "per_run_verdict": "FAIL"
+        },
+        "DES_Dovekie": {
+          "Omega_bc_median": 0.31904,
+          "sigma_Omega_bc": 0.005809,
+          "f_leak": 0.156373,
+          "R_pred": 5.061763,
+          "sigma_R_pred": 0.110368,
+          "sigma_comb": 0.128086,
+          "tension_sigma_vs_Planck": 2.3284,
+          "chi2_min": 1650.621924,
+          "Delta_chi2_vs_w0waCDM": 9.8219,
+          "per_run_verdict": "FAIL"
+        }
+      },
+      "T2_A_alternate_priors": {
+        "PantheonPlus_Cooke18": {
+          "sn_dataset": "Pantheon+",
+          "Omega_bc_median": 0.313999,
+          "sigma_Omega_bc": 0.005819,
+          "f_leak": 0.172337,
+          "sigma_f_leak": 0.018426,
+          "R_pred": 4.96598,
+          "sigma_R_pred": 0.110558,
+          "R_Planck": 5.36,
+          "sigma_Planck": 0.065,
+          "sigma_comb": 0.12825,
+          "diff_R_pred_minus_Planck": -0.39402,
+          "tension_sigma": 3.0723,
+          "per_run_verdict": "FAIL"
+        },
+        "DES_Dovekie_Cooke18": {
+          "sn_dataset": "DES-Dovekie",
+          "Omega_bc_median": 0.316469,
+          "sigma_Omega_bc": 0.005489,
+          "f_leak": 0.164514,
+          "sigma_f_leak": 0.017383,
+          "R_pred": 5.012917,
+          "sigma_R_pred": 0.104298,
+          "R_Planck": 5.36,
+          "sigma_Planck": 0.065,
+          "sigma_comb": 0.122895,
+          "diff_R_pred_minus_Planck": -0.347083,
+          "tension_sigma": 2.8242,
+          "per_run_verdict": "FAIL"
+        },
+        "PantheonPlus_MarginalCMB": {
+          "sn_dataset": "Pantheon+",
+          "Omega_bc_median": 0.310955,
+          "sigma_Omega_bc": 0.005821,
+          "f_leak": 0.181976,
+          "sigma_f_leak": 0.018434,
+          "R_pred": 4.908146,
+          "sigma_R_pred": 0.110603,
+          "R_Planck": 5.36,
+          "sigma_Planck": 0.065,
+          "sigma_comb": 0.128289,
+          "diff_R_pred_minus_Planck": -0.451854,
+          "tension_sigma": 3.5222,
+          "per_run_verdict": "FAIL"
+        },
+        "DES_Dovekie_MarginalCMB": {
+          "sn_dataset": "DES-Dovekie",
+          "Omega_bc_median": 0.312512,
+          "sigma_Omega_bc": 0.005336,
+          "f_leak": 0.177047,
+          "sigma_f_leak": 0.016897,
+          "R_pred": 4.937719,
+          "sigma_R_pred": 0.10138,
+          "R_Planck": 5.36,
+          "sigma_Planck": 0.065,
+          "sigma_comb": 0.120428,
+          "diff_R_pred_minus_Planck": -0.422281,
+          "tension_sigma": 3.5065,
+          "per_run_verdict": "FAIL"
+        }
+      }
+    }
+  },
+  "T4": {
+    "T4b_deciding": {
+      "training_fit": {
+        "tau_lag_myr": 805,
+        "tau_lag_gyr": 0.805,
+        "train_acc": 0.875,
+        "n_train_classified": 8,
+        "n_train_correct": 7
+      },
+      "test_evaluation": {
+        "tau_lag_gyr": 0.805,
+        "n_total": 16,
+        "n_unclassified_total": 3,
+        "n_train_classified": 8,
+        "train_acc": 0.875,
+        "n_test_classified": 5,
+        "k_test_correct": 3,
+        "test_acc": 0.6,
+        "p_T4b_raw": 0.5,
+        "p_T4b_holm": 1.0,
+        "n_young_test": 3,
+        "n_old_test": 2,
+        "n_gal_test": 5,
+        "n_gas_test": 0,
+        "n_gas_old_branch_test": 0,
+        "n_gas_old_branch_all": 0,
+        "verdict": "INCONCLUSIVE",
+        "fail_reasons": [],
+        "inconclusive_reasons": [
+          "Rule G8(3) & Sec 5.5(3): n_test = 5 < 6 classified test clusters (3 of 8 even-index test clusters are unclassified under the 2*sigma_diff rule)."
+        ],
+        "per_cluster_test": [
+          {
+            "cluster_id": 2,
+            "cluster_name": "ACT-CL J0102-4915",
+            "t_p_gyr": 0.75,
+            "observed_class": "with_galaxies",
+            "predicted_class": "with_galaxies",
+            "correct": true
+          },
+          {
+            "cluster_id": 4,
+            "cluster_name": "Abell 1758N",
+            "t_p_gyr": 0.4,
+            "observed_class": "unclassified",
+            "predicted_class": "with_galaxies",
+            "correct": null
+          },
+          {
+            "cluster_id": 6,
+            "cluster_name": "Abell 2146",
+            "t_p_gyr": 0.25,
+            "observed_class": "with_galaxies",
+            "predicted_class": "with_galaxies",
+            "correct": true
+          },
+          {
+            "cluster_id": 8,
+            "cluster_name": "Abell 3376",
+            "t_p_gyr": 0.55,
+            "observed_class": "unclassified",
+            "predicted_class": "with_galaxies",
+            "correct": null
+          },
+          {
+            "cluster_id": 10,
+            "cluster_name": "Abell 754",
+            "t_p_gyr": 0.3,
+            "observed_class": "with_galaxies",
+            "predicted_class": "with_galaxies",
+            "correct": true
+          },
+          {
+            "cluster_id": 12,
+            "cluster_name": "DLSCL J0916.2+2951",
+            "t_p_gyr": 1.1,
+            "observed_class": "with_galaxies",
+            "predicted_class": "with_gas",
+            "correct": false
+          },
+          {
+            "cluster_id": 14,
+            "cluster_name": "MACS J1149.5+2223",
+            "t_p_gyr": 1.16,
+            "observed_class": "with_galaxies",
+            "predicted_class": "with_gas",
+            "correct": false
+          },
+          {
+            "cluster_id": 16,
+            "cluster_name": "ZwCl 0008.8+5215",
+            "t_p_gyr": 0.76,
+            "observed_class": "unclassified",
+            "predicted_class": "with_galaxies",
+            "correct": null
+          }
+        ]
+      }
+    },
+    "T4b_sensitivity": {
+      "S1_Bullet_median_400Myr": {
+        "training_fit": {
+          "tau_lag_myr": 805,
+          "tau_lag_gyr": 0.805,
+          "train_acc": 0.875,
+          "n_train_classified": 8,
+          "n_train_correct": 7
+        },
+        "test_evaluation": {
+          "tau_lag_gyr": 0.805,
+          "n_total": 16,
+          "n_unclassified_total": 3,
+          "n_train_classified": 8,
+          "train_acc": 0.875,
+          "n_test_classified": 5,
+          "k_test_correct": 3,
+          "test_acc": 0.6,
+          "p_T4b_raw": 0.5,
+          "p_T4b_holm": 1.0,
+          "n_young_test": 3,
+          "n_old_test": 2,
+          "n_gal_test": 5,
+          "n_gas_test": 0,
+          "n_gas_old_branch_test": 0,
+          "n_gas_old_branch_all": 0,
+          "verdict": "INCONCLUSIVE",
+          "fail_reasons": [],
+          "inconclusive_reasons": [
+            "Rule G8(3) & Sec 5.5(3): n_test = 5 < 6 classified test clusters (3 of 8 even-index test clusters are unclassified under the 2*sigma_diff rule)."
+          ],
+          "per_cluster_test": [
+            {
+              "cluster_id": 2,
+              "cluster_name": "ACT-CL J0102-4915",
+              "t_p_gyr": 0.75,
+              "observed_class": "with_galaxies",
+              "predicted_class": "with_galaxies",
+              "correct": true
+            },
+            {
+              "cluster_id": 4,
+              "cluster_name": "Abell 1758N",
+              "t_p_gyr": 0.4,
+              "observed_class": "unclassified",
+              "predicted_class": "with_galaxies",
+              "correct": null
+            },
+            {
+              "cluster_id": 6,
+              "cluster_name": "Abell 2146",
+              "t_p_gyr": 0.25,
+              "observed_class": "with_galaxies",
+              "predicted_class": "with_galaxies",
+              "correct": true
+            },
+            {
+              "cluster_id": 8,
+              "cluster_name": "Abell 3376",
+              "t_p_gyr": 0.55,
+              "observed_class": "unclassified",
+              "predicted_class": "with_galaxies",
+              "correct": null
+            },
+            {
+              "cluster_id": 10,
+              "cluster_name": "Abell 754",
+              "t_p_gyr": 0.3,
+              "observed_class": "with_galaxies",
+              "predicted_class": "with_galaxies",
+              "correct": true
+            },
+            {
+              "cluster_id": 12,
+              "cluster_name": "DLSCL J0916.2+2951",
+              "t_p_gyr": 1.1,
+              "observed_class": "with_galaxies",
+              "predicted_class": "with_gas",
+              "correct": false
+            },
+            {
+              "cluster_id": 14,
+              "cluster_name": "MACS J1149.5+2223",
+              "t_p_gyr": 1.16,
+              "observed_class": "with_galaxies",
+              "predicted_class": "with_gas",
+              "correct": false
+            },
+            {
+              "cluster_id": 16,
+              "cluster_name": "ZwCl 0008.8+5215",
+              "t_p_gyr": 0.76,
+              "observed_class": "unclassified",
+              "predicted_class": "with_galaxies",
+              "correct": null
+            }
+          ]
+        }
+      },
+      "S2_posterior_weighted": {
+        "tau_lag_myr": 1500,
+        "tau_lag_gyr": 1.5,
+        "train_posterior_acc": 0.93718,
+        "test_posterior_acc": 0.906481
+      },
+      "S3_system_level": {
+        "training_fit": {
+          "tau_lag_myr": 805,
+          "tau_lag_gyr": 0.805,
+          "train_acc": 0.875,
+          "n_train_classified": 8,
+          "n_train_correct": 7
+        },
+        "test_evaluation": {
+          "tau_lag_gyr": 0.805,
+          "n_total": 16,
+          "n_unclassified_total": 3,
+          "n_train_classified": 8,
+          "train_acc": 0.875,
+          "n_test_classified": 5,
+          "k_test_correct": 3,
+          "test_acc": 0.6,
+          "p_T4b_raw": 0.5,
+          "p_T4b_holm": 1.0,
+          "n_young_test": 3,
+          "n_old_test": 2,
+          "n_gal_test": 5,
+          "n_gas_test": 0,
+          "n_gas_old_branch_test": 0,
+          "n_gas_old_branch_all": 0,
+          "verdict": "INCONCLUSIVE",
+          "fail_reasons": [],
+          "inconclusive_reasons": [
+            "Rule G8(3) & Sec 5.5(3): n_test = 5 < 6 classified test clusters (3 of 8 even-index test clusters are unclassified under the 2*sigma_diff rule)."
+          ],
+          "per_cluster_test": [
+            {
+              "cluster_id": 2,
+              "cluster_name": "ACT-CL J0102-4915",
+              "t_p_gyr": 0.75,
+              "observed_class": "with_galaxies",
+              "predicted_class": "with_galaxies",
+              "correct": true
+            },
+            {
+              "cluster_id": 4,
+              "cluster_name": "Abell 1758N",
+              "t_p_gyr": 0.4,
+              "observed_class": "unclassified",
+              "predicted_class": "with_galaxies",
+              "correct": null
+            },
+            {
+              "cluster_id": 6,
+              "cluster_name": "Abell 2146",
+              "t_p_gyr": 0.25,
+              "observed_class": "with_galaxies",
+              "predicted_class": "with_galaxies",
+              "correct": true
+            },
+            {
+              "cluster_id": 8,
+              "cluster_name": "Abell 3376",
+              "t_p_gyr": 0.55,
+              "observed_class": "unclassified",
+              "predicted_class": "with_galaxies",
+              "correct": null
+            },
+            {
+              "cluster_id": 10,
+              "cluster_name": "Abell 754",
+              "t_p_gyr": 0.3,
+              "observed_class": "with_galaxies",
+              "predicted_class": "with_galaxies",
+              "correct": true
+            },
+            {
+              "cluster_id": 12,
+              "cluster_name": "DLSCL J0916.2+2951",
+              "t_p_gyr": 1.1,
+              "observed_class": "with_galaxies",
+              "predicted_class": "with_gas",
+              "correct": false
+            },
+            {
+              "cluster_id": 14,
+              "cluster_name": "MACS J1149.5+2223",
+              "t_p_gyr": 1.16,
+              "observed_class": "with_galaxies",
+              "predicted_class": "with_gas",
+              "correct": false
+            },
+            {
+              "cluster_id": 16,
+              "cluster_name": "ZwCl 0008.8+5215",
+              "t_p_gyr": 0.76,
+              "observed_class": "unclassified",
+              "predicted_class": "with_galaxies",
+              "correct": null
+            }
+          ]
+        }
+      },
+      "S4_Abell520_P3_dark_core": {
+        "training_fit": {
+          "tau_lag_myr": 505,
+          "tau_lag_gyr": 0.505,
+          "train_acc": 0.75,
+          "n_train_classified": 8,
+          "n_train_correct": 6
+        },
+        "test_evaluation": {
+          "tau_lag_gyr": 0.505,
+          "n_total": 16,
+          "n_unclassified_total": 3,
+          "n_train_classified": 8,
+          "train_acc": 0.75,
+          "n_test_classified": 5,
+          "k_test_correct": 2,
+          "test_acc": 0.4,
+          "p_T4b_raw": 0.8125,
+          "p_T4b_holm": 1.0,
+          "n_young_test": 2,
+          "n_old_test": 3,
+          "n_gal_test": 5,
+          "n_gas_test": 0,
+          "n_gas_old_branch_test": 0,
+          "n_gas_old_branch_all": 1,
+          "verdict": "FAIL",
+          "fail_reasons": [
+            "Clause 1(a): n_train=8 or max Acc_train=0.7500 < 0.80."
+          ],
+          "inconclusive_reasons": [],
+          "per_cluster_test": [
+            {
+              "cluster_id": 2,
+              "cluster_name": "ACT-CL J0102-4915",
+              "t_p_gyr": 0.75,
+              "observed_class": "with_galaxies",
+              "predicted_class": "with_gas",
+              "correct": false
+            },
+            {
+              "cluster_id": 4,
+              "cluster_name": "Abell 1758N",
+              "t_p_gyr": 0.4,
+              "observed_class": "unclassified",
+              "predicted_class": "with_galaxies",
+              "correct": null
+            },
+            {
+              "cluster_id": 6,
+              "cluster_name": "Abell 2146",
+              "t_p_gyr": 0.25,
+              "observed_class": "with_galaxies",
+              "predicted_class": "with_galaxies",
+              "correct": true
+            },
+            {
+              "cluster_id": 8,
+              "cluster_name": "Abell 3376",
+              "t_p_gyr": 0.55,
+              "observed_class": "unclassified",
+              "predicted_class": "with_gas",
+              "correct": null
+            },
+            {
+              "cluster_id": 10,
+              "cluster_name": "Abell 754",
+              "t_p_gyr": 0.3,
+              "observed_class": "with_galaxies",
+              "predicted_class": "with_galaxies",
+              "correct": true
+            },
+            {
+              "cluster_id": 12,
+              "cluster_name": "DLSCL J0916.2+2951",
+              "t_p_gyr": 1.1,
+              "observed_class": "with_galaxies",
+              "predicted_class": "with_gas",
+              "correct": false
+            },
+            {
+              "cluster_id": 14,
+              "cluster_name": "MACS J1149.5+2223",
+              "t_p_gyr": 1.16,
+              "observed_class": "with_galaxies",
+              "predicted_class": "with_gas",
+              "correct": false
+            },
+            {
+              "cluster_id": 16,
+              "cluster_name": "ZwCl 0008.8+5215",
+              "t_p_gyr": 0.76,
+              "observed_class": "unclassified",
+              "predicted_class": "with_gas",
+              "correct": null
+            }
+          ]
+        }
+      },
+      "S5_Abell520_Clowe12": {
+        "training_fit": {
+          "tau_lag_myr": 805,
+          "tau_lag_gyr": 0.805,
+          "train_acc": 0.875,
+          "n_train_classified": 8,
+          "n_train_correct": 7
+        },
+        "test_evaluation": {
+          "tau_lag_gyr": 0.805,
+          "n_total": 16,
+          "n_unclassified_total": 3,
+          "n_train_classified": 8,
+          "train_acc": 0.875,
+          "n_test_classified": 5,
+          "k_test_correct": 3,
+          "test_acc": 0.6,
+          "p_T4b_raw": 0.5,
+          "p_T4b_holm": 1.0,
+          "n_young_test": 3,
+          "n_old_test": 2,
+          "n_gal_test": 5,
+          "n_gas_test": 0,
+          "n_gas_old_branch_test": 0,
+          "n_gas_old_branch_all": 0,
+          "verdict": "INCONCLUSIVE",
+          "fail_reasons": [],
+          "inconclusive_reasons": [
+            "Rule G8(3) & Sec 5.5(3): n_test = 5 < 6 classified test clusters (3 of 8 even-index test clusters are unclassified under the 2*sigma_diff rule)."
+          ],
+          "per_cluster_test": [
+            {
+              "cluster_id": 2,
+              "cluster_name": "ACT-CL J0102-4915",
+              "t_p_gyr": 0.75,
+              "observed_class": "with_galaxies",
+              "predicted_class": "with_galaxies",
+              "correct": true
+            },
+            {
+              "cluster_id": 4,
+              "cluster_name": "Abell 1758N",
+              "t_p_gyr": 0.4,
+              "observed_class": "unclassified",
+              "predicted_class": "with_galaxies",
+              "correct": null
+            },
+            {
+              "cluster_id": 6,
+              "cluster_name": "Abell 2146",
+              "t_p_gyr": 0.25,
+              "observed_class": "with_galaxies",
+              "predicted_class": "with_galaxies",
+              "correct": true
+            },
+            {
+              "cluster_id": 8,
+              "cluster_name": "Abell 3376",
+              "t_p_gyr": 0.55,
+              "observed_class": "unclassified",
+              "predicted_class": "with_galaxies",
+              "correct": null
+            },
+            {
+              "cluster_id": 10,
+              "cluster_name": "Abell 754",
+              "t_p_gyr": 0.3,
+              "observed_class": "with_galaxies",
+              "predicted_class": "with_galaxies",
+              "correct": true
+            },
+            {
+              "cluster_id": 12,
+              "cluster_name": "DLSCL J0916.2+2951",
+              "t_p_gyr": 1.1,
+              "observed_class": "with_galaxies",
+              "predicted_class": "with_gas",
+              "correct": false
+            },
+            {
+              "cluster_id": 14,
+              "cluster_name": "MACS J1149.5+2223",
+              "t_p_gyr": 1.16,
+              "observed_class": "with_galaxies",
+              "predicted_class": "with_gas",
+              "correct": false
+            },
+            {
+              "cluster_id": 16,
+              "cluster_name": "ZwCl 0008.8+5215",
+              "t_p_gyr": 0.76,
+              "observed_class": "unclassified",
+              "predicted_class": "with_galaxies",
+              "correct": null
+            }
+          ]
+        }
+      },
+      "S6_Abell1758N_Ragozzine12": {
+        "training_fit": {
+          "tau_lag_myr": 805,
+          "tau_lag_gyr": 0.805,
+          "train_acc": 0.875,
+          "n_train_classified": 8,
+          "n_train_correct": 7
+        },
+        "test_evaluation": {
+          "tau_lag_gyr": 0.805,
+          "n_total": 16,
+          "n_unclassified_total": 2,
+          "n_train_classified": 8,
+          "train_acc": 0.875,
+          "n_test_classified": 6,
+          "k_test_correct": 4,
+          "test_acc": 0.66666667,
+          "p_T4b_raw": 0.34375,
+          "p_T4b_holm": 0.34375,
+          "n_young_test": 4,
+          "n_old_test": 2,
+          "n_gal_test": 6,
+          "n_gas_test": 0,
+          "n_gas_old_branch_test": 0,
+          "n_gas_old_branch_all": 0,
+          "verdict": "FAIL",
+          "fail_reasons": [
+            "Clause 1(c): n_test=6 >= 6 and all 6 classified test systems (including t_p >= 1.0 Gyr) are classified 'with_galaxies'."
+          ],
+          "inconclusive_reasons": [],
+          "per_cluster_test": [
+            {
+              "cluster_id": 2,
+              "cluster_name": "ACT-CL J0102-4915",
+              "t_p_gyr": 0.75,
+              "observed_class": "with_galaxies",
+              "predicted_class": "with_galaxies",
+              "correct": true
+            },
+            {
+              "cluster_id": 4,
+              "cluster_name": "Abell 1758N",
+              "t_p_gyr": 0.4,
+              "observed_class": "with_galaxies",
+              "predicted_class": "with_galaxies",
+              "correct": true
+            },
+            {
+              "cluster_id": 6,
+              "cluster_name": "Abell 2146",
+              "t_p_gyr": 0.25,
+              "observed_class": "with_galaxies",
+              "predicted_class": "with_galaxies",
+              "correct": true
+            },
+            {
+              "cluster_id": 8,
+              "cluster_name": "Abell 3376",
+              "t_p_gyr": 0.55,
+              "observed_class": "unclassified",
+              "predicted_class": "with_galaxies",
+              "correct": null
+            },
+            {
+              "cluster_id": 10,
+              "cluster_name": "Abell 754",
+              "t_p_gyr": 0.3,
+              "observed_class": "with_galaxies",
+              "predicted_class": "with_galaxies",
+              "correct": true
+            },
+            {
+              "cluster_id": 12,
+              "cluster_name": "DLSCL J0916.2+2951",
+              "t_p_gyr": 1.1,
+              "observed_class": "with_galaxies",
+              "predicted_class": "with_gas",
+              "correct": false
+            },
+            {
+              "cluster_id": 14,
+              "cluster_name": "MACS J1149.5+2223",
+              "t_p_gyr": 1.16,
+              "observed_class": "with_galaxies",
+              "predicted_class": "with_gas",
+              "correct": false
+            },
+            {
+              "cluster_id": 16,
+              "cluster_name": "ZwCl 0008.8+5215",
+              "t_p_gyr": 0.76,
+              "observed_class": "unclassified",
+              "predicted_class": "with_galaxies",
+              "correct": null
+            }
+          ]
+        }
+      },
+      "S7_First8_vs_Last8_split": {
+        "training_fit": {
+          "tau_lag_myr": 755,
+          "tau_lag_gyr": 0.755,
+          "train_acc": 1.0,
+          "n_train_classified": 6,
+          "n_train_correct": 6
+        },
+        "test_evaluation": {
+          "tau_lag_gyr": 0.755,
+          "n_total": 16,
+          "n_unclassified_total": 3,
+          "n_train_classified": 6,
+          "train_acc": 1.0,
+          "n_test_classified": 7,
+          "k_test_correct": 2,
+          "test_acc": 0.28571429,
+          "p_T4b_raw": 0.9375,
+          "p_T4b_holm": 0.9375,
+          "n_young_test": 2,
+          "n_old_test": 5,
+          "n_gal_test": 7,
+          "n_gas_test": 0,
+          "n_gas_old_branch_test": 0,
+          "n_gas_old_branch_all": 0,
+          "verdict": "FAIL",
+          "fail_reasons": [
+            "Clause 1(b): n_test=7 >= 6 and Acc_test=0.2857 < 0.60.",
+            "Clause 1(c): n_test=7 >= 6 and all 7 classified test systems (including t_p >= 1.0 Gyr) are classified 'with_galaxies'."
+          ],
+          "inconclusive_reasons": [],
+          "per_cluster_test": [
+            {
+              "cluster_id": 9,
+              "cluster_name": "Abell 520",
+              "t_p_gyr": 0.8,
+              "observed_class": "with_galaxies",
+              "predicted_class": "with_gas",
+              "correct": false
+            },
+            {
+              "cluster_id": 10,
+              "cluster_name": "Abell 754",
+              "t_p_gyr": 0.3,
+              "observed_class": "with_galaxies",
+              "predicted_class": "with_galaxies",
+              "correct": true
+            },
+            {
+              "cluster_id": 11,
+              "cluster_name": "CIZA J2242.8+5301",
+              "t_p_gyr": 0.8,
+              "observed_class": "with_galaxies",
+              "predicted_class": "with_gas",
+              "correct": false
+            },
+            {
+              "cluster_id": 12,
+              "cluster_name": "DLSCL J0916.2+2951",
+              "t_p_gyr": 1.1,
+              "observed_class": "with_galaxies",
+              "predicted_class": "with_gas",
+              "correct": false
+            },
+            {
+              "cluster_id": 13,
+              "cluster_name": "MACS J0025.4-1222",
+              "t_p_gyr": 0.5,
+              "observed_class": "with_galaxies",
+              "predicted_class": "with_galaxies",
+              "correct": true
+            },
+            {
+              "cluster_id": 14,
+              "cluster_name": "MACS J1149.5+2223",
+              "t_p_gyr": 1.16,
+              "observed_class": "with_galaxies",
+              "predicted_class": "with_gas",
+              "correct": false
+            },
+            {
+              "cluster_id": 15,
+              "cluster_name": "RX J0603.3+4214",
+              "t_p_gyr": 1.5,
+              "observed_class": "with_galaxies",
+              "predicted_class": "with_gas",
+              "correct": false
+            },
+            {
+              "cluster_id": 16,
+              "cluster_name": "ZwCl 0008.8+5215",
+              "t_p_gyr": 0.76,
+              "observed_class": "unclassified",
+              "predicted_class": "with_gas",
+              "correct": null
+            }
+          ]
+        }
+      }
+    },
+    "T4a_exploratory": {
+      "status": "EXPLORATORY_UNSCORED",
+      "reason": "Unconditionally locked as exploratory/unscored in PREREG.md Sec 5.4 (Review B3).",
+      "non_bullet_t_le_235Myr": {
+        "sample_label": "Wittman+18 non-Bullet t_col <= 235 Myr (N=1: A2744 S)",
+        "n_subclusters": 1,
+        "ivw_Delta_SI_parallel_kpc": -45.0,
+        "ivw_sigma_Delta_SI_kpc": 52.0,
+        "z_Delta_SI_parallel": -0.8654,
+        "ivw_beta": 0.2961,
+        "ivw_sigma_beta": 0.3421,
+        "n_positive_Delta_SI_parallel": 0
+      },
+      "non_bullet_t_le_400Myr": {
+        "sample_label": "Wittman+18 non-Bullet t_col <= 400 Myr (N=1: A2744 S)",
+        "n_subclusters": 1,
+        "ivw_Delta_SI_parallel_kpc": -45.0,
+        "ivw_sigma_Delta_SI_kpc": 52.0,
+        "z_Delta_SI_parallel": -0.8654,
+        "ivw_beta": 0.2961,
+        "ivw_sigma_beta": 0.3421,
+        "n_positive_Delta_SI_parallel": 0
+      },
+      "non_bullet_all_10": {
+        "sample_label": "Wittman+18 all 10 non-Bullet subclusters",
+        "n_subclusters": 10,
+        "ivw_Delta_SI_parallel_kpc": -43.7569,
+        "ivw_sigma_Delta_SI_kpc": 23.7576,
+        "z_Delta_SI_parallel": -1.8418,
+        "ivw_beta": 0.1236,
+        "ivw_sigma_beta": 0.072,
+        "n_positive_Delta_SI_parallel": 3
+      },
+      "wittman_2018_full_11": {
+        "sample_label": "Wittman+18 full 11 subclusters (including Bullet)",
+        "n_subclusters": 11,
+        "ivw_Delta_SI_parallel_kpc": -19.5689,
+        "ivw_sigma_Delta_SI_kpc": 18.6247,
+        "z_Delta_SI_parallel": -1.0507,
+        "ivw_beta": 0.0984,
+        "ivw_sigma_beta": 0.0685,
+        "n_positive_Delta_SI_parallel": 4
+      },
+      "harvey_2015_72_ensemble": {
+        "sample_label": "Harvey+15 (Science 347, 1462) 72-subcluster ensemble",
+        "beta": -0.04,
+        "sigma_beta": 0.07,
+        "z_stat": 0.5714
+      },
+      "subclusters": [
+        {
+          "subcluster": "A2744 W",
+          "is_bullet": false,
+          "v_col_kms": 1500,
+          "t_col_myr": 500,
+          "dx_SG_kpc": 212.0,
+          "dx_SI_w18_kpc": 100.0,
+          "sigma_SI_kpc": 81.0,
+          "beta": 0.4717,
+          "sigma_beta": 0.3821,
+          "Delta_SI_parallel_kpc": -100.0
+        },
+        {
+          "subcluster": "A2744 S",
+          "is_bullet": false,
+          "v_col_kms": 2100,
+          "t_col_myr": 120,
+          "dx_SG_kpc": 152.0,
+          "dx_SI_w18_kpc": 45.0,
+          "sigma_SI_kpc": 52.0,
+          "beta": 0.2961,
+          "sigma_beta": 0.3421,
+          "Delta_SI_parallel_kpc": -45.0
+        },
+        {
+          "subcluster": "Bullet W (1E0657)",
+          "is_bullet": true,
+          "v_col_kms": 2900,
+          "t_col_myr": 250,
+          "dx_SG_kpc": 135.0,
+          "dx_SI_w18_kpc": -19.0,
+          "sigma_SI_kpc": 30.0,
+          "beta": -0.1407,
+          "sigma_beta": 0.2222,
+          "Delta_SI_parallel_kpc": 19.0
+        },
+        {
+          "subcluster": "MACS J0025 SE",
+          "is_bullet": false,
+          "v_col_kms": 2000,
+          "t_col_myr": 500,
+          "dx_SG_kpc": 255.0,
+          "dx_SI_w18_kpc": -33.0,
+          "sigma_SI_kpc": 61.0,
+          "beta": -0.1294,
+          "sigma_beta": 0.2392,
+          "Delta_SI_parallel_kpc": 33.0
+        },
+        {
+          "subcluster": "MACS J0025 NW",
+          "is_bullet": false,
+          "v_col_kms": 2000,
+          "t_col_myr": 500,
+          "dx_SG_kpc": 333.0,
+          "dx_SI_w18_kpc": 47.0,
+          "sigma_SI_kpc": 48.0,
+          "beta": 0.1411,
+          "sigma_beta": 0.1441,
+          "Delta_SI_parallel_kpc": -47.0
+        },
+        {
+          "subcluster": "ZWCL 0008 E",
+          "is_bullet": false,
+          "v_col_kms": 1900,
+          "t_col_myr": 760,
+          "dx_SG_kpc": 106.0,
+          "dx_SI_w18_kpc": -155.0,
+          "sigma_SI_kpc": 190.0,
+          "beta": -1.4623,
+          "sigma_beta": 1.7925,
+          "Delta_SI_parallel_kpc": 155.0
+        },
+        {
+          "subcluster": "ZWCL 0008 W",
+          "is_bullet": false,
+          "v_col_kms": 1900,
+          "t_col_myr": 760,
+          "dx_SG_kpc": 467.0,
+          "dx_SI_w18_kpc": 168.0,
+          "sigma_SI_kpc": 182.0,
+          "beta": 0.3597,
+          "sigma_beta": 0.3897,
+          "Delta_SI_parallel_kpc": -168.0
+        },
+        {
+          "subcluster": "DLSCL J0916 N",
+          "is_bullet": false,
+          "v_col_kms": 1600,
+          "t_col_myr": 1100,
+          "dx_SG_kpc": 511.0,
+          "dx_SI_w18_kpc": 52.0,
+          "sigma_SI_kpc": 151.0,
+          "beta": 0.1018,
+          "sigma_beta": 0.2955,
+          "Delta_SI_parallel_kpc": -52.0
+        },
+        {
+          "subcluster": "DLSCL J0916 S",
+          "is_bullet": false,
+          "v_col_kms": 1600,
+          "t_col_myr": 1100,
+          "dx_SG_kpc": 420.0,
+          "dx_SI_w18_kpc": 80.0,
+          "sigma_SI_kpc": 60.0,
+          "beta": 0.1905,
+          "sigma_beta": 0.1429,
+          "Delta_SI_parallel_kpc": -80.0
+        },
+        {
+          "subcluster": "CIZA J2242 S",
+          "is_bullet": false,
+          "v_col_kms": 2400,
+          "t_col_myr": 650,
+          "dx_SG_kpc": 329.0,
+          "dx_SI_w18_kpc": 136.0,
+          "sigma_SI_kpc": 100.0,
+          "beta": 0.4134,
+          "sigma_beta": 0.304,
+          "Delta_SI_parallel_kpc": -136.0
+        },
+        {
+          "subcluster": "CIZA J2242 N",
+          "is_bullet": false,
+          "v_col_kms": 2400,
+          "t_col_myr": 650,
+          "dx_SG_kpc": 706.0,
+          "dx_SI_w18_kpc": -71.0,
+          "sigma_SI_kpc": 122.0,
+          "beta": -0.1006,
+          "sigma_beta": 0.1728,
+          "Delta_SI_parallel_kpc": 71.0
+        }
+      ]
+    },
+    "catalog": [
+      {
+        "cluster_id": 1,
+        "cluster_name": "1E 0657-558",
+        "common_name": "Bullet Cluster",
+        "split": "train",
+        "redshift": 0.296,
+        "primary_subcluster": "W subcluster",
+        "t_p_gyr": 0.4,
+        "sigma_t_p_gyr": 0.1,
+        "d_IS_kpc": 25.0,
+        "d_IG_kpc": 161.5,
+        "sigma_I_kpc": 25.0,
+        "sigma_S_kpc": 14.0,
+        "sigma_G_kpc": 5.0,
+        "sigma_diff_kpc": 29.0861,
+        "primary_class": "with_galaxies",
+        "csv_primary_class": "with_galaxies",
+        "secondary_subcluster": "E main",
+        "sec_d_IS_kpc": 4.0,
+        "sec_d_IG_kpc": 206.0,
+        "sec_sigma_diff_kpc": 29.09,
+        "secondary_class": "with_galaxies",
+        "source_citation": "Clowe+06 Table 1 & Sec 2-3; Dawson 2013 Table 2"
+      },
+      {
+        "cluster_id": 2,
+        "cluster_name": "ACT-CL J0102-4915",
+        "common_name": "El Gordo",
+        "split": "test",
+        "redshift": 0.87,
+        "primary_subcluster": "SE subcluster",
+        "t_p_gyr": 0.75,
+        "sigma_t_p_gyr": 0.15,
+        "d_IS_kpc": 11.6,
+        "d_IG_kpc": 65.7,
+        "sigma_I_kpc": 21.6,
+        "sigma_S_kpc": 7.7,
+        "sigma_G_kpc": 5.0,
+        "sigma_diff_kpc": 23.4702,
+        "primary_class": "with_galaxies",
+        "csv_primary_class": "with_galaxies",
+        "secondary_subcluster": "NW subcluster",
+        "sec_d_IS_kpc": 15.4,
+        "sec_d_IG_kpc": 680.0,
+        "sec_sigma_diff_kpc": 25.0,
+        "secondary_class": "with_galaxies",
+        "source_citation": "Jee+14 Table 1 & Sec 3.2-3.3; Ng+15 Table 2"
+      },
+      {
+        "cluster_id": 3,
+        "cluster_name": "Abell 1240",
+        "common_name": "Abell 1240",
+        "split": "train",
+        "redshift": 0.195,
+        "primary_subcluster": "S subcluster (A1240S)",
+        "t_p_gyr": 0.45,
+        "sigma_t_p_gyr": 0.15,
+        "d_IS_kpc": 48.0,
+        "d_IG_kpc": 240.0,
+        "sigma_I_kpc": 75.0,
+        "sigma_S_kpc": 25.0,
+        "sigma_G_kpc": 20.0,
+        "sigma_diff_kpc": 81.5475,
+        "primary_class": "with_galaxies",
+        "csv_primary_class": "with_galaxies",
+        "secondary_subcluster": "N subcluster (A1240N)",
+        "sec_d_IS_kpc": 35.0,
+        "sec_d_IG_kpc": 220.0,
+        "sec_sigma_diff_kpc": 71.0,
+        "secondary_class": "with_galaxies",
+        "source_citation": "Cho+22 Table 2 & Sec 3.2-3.3 / 4.3"
+      },
+      {
+        "cluster_id": 4,
+        "cluster_name": "Abell 1758N",
+        "common_name": "Abell 1758N",
+        "split": "test",
+        "redshift": 0.279,
+        "primary_subcluster": "NW subcluster (A1758NW)",
+        "t_p_gyr": 0.4,
+        "sigma_t_p_gyr": 0.15,
+        "d_IS_kpc": 101.4,
+        "d_IG_kpc": 76.1,
+        "sigma_I_kpc": 50.7,
+        "sigma_S_kpc": 0.0,
+        "sigma_G_kpc": 5.0,
+        "sigma_diff_kpc": 50.946,
+        "primary_class": "unclassified",
+        "csv_primary_class": "unclassified",
+        "secondary_subcluster": "NE subcluster (A1758NE)",
+        "sec_d_IS_kpc": 126.8,
+        "sec_d_IG_kpc": 405.6,
+        "sec_sigma_diff_kpc": 61.5,
+        "secondary_class": "with_galaxies",
+        "source_citation": "Monteiro-Oliveira+17a Table 2-3 & Sec 3.2 / 4.3"
+      },
+      {
+        "cluster_id": 5,
+        "cluster_name": "Abell 2034",
+        "common_name": "Abell 2034",
+        "split": "train",
+        "redshift": 0.113,
+        "primary_subcluster": "N subcluster (A2034N)",
+        "t_p_gyr": 0.3,
+        "sigma_t_p_gyr": 0.1,
+        "d_IS_kpc": 117.5,
+        "d_IG_kpc": 299.0,
+        "sigma_I_kpc": 72.2,
+        "sigma_S_kpc": 0.0,
+        "sigma_G_kpc": 5.0,
+        "sigma_diff_kpc": 72.3729,
+        "primary_class": "with_galaxies",
+        "csv_primary_class": "with_galaxies",
+        "secondary_subcluster": "S subcluster (A2034S)",
+        "sec_d_IS_kpc": 173.2,
+        "sec_d_IG_kpc": 348.5,
+        "sec_sigma_diff_kpc": 71.3,
+        "secondary_class": "with_galaxies",
+        "source_citation": "Monteiro-Oliveira+18 Table 2 & 5 & Sec 3.1-3.2 / 4.2"
+      },
+      {
+        "cluster_id": 6,
+        "cluster_name": "Abell 2146",
+        "common_name": "Abell 2146",
+        "split": "test",
+        "redshift": 0.234,
+        "primary_subcluster": "NW subcluster (A2146-A)",
+        "t_p_gyr": 0.25,
+        "sigma_t_p_gyr": 0.08,
+        "d_IS_kpc": 1.63,
+        "d_IG_kpc": 30.3,
+        "sigma_I_kpc": 5.0,
+        "sigma_S_kpc": 1.0,
+        "sigma_G_kpc": 2.0,
+        "sigma_diff_kpc": 5.4772,
+        "primary_class": "with_galaxies",
+        "csv_primary_class": "with_galaxies",
+        "secondary_subcluster": "SE subcluster (A2146-B)",
+        "sec_d_IS_kpc": 10.0,
+        "sec_d_IG_kpc": 120.0,
+        "sec_sigma_diff_kpc": 36.0,
+        "secondary_class": "with_galaxies",
+        "source_citation": "Coleman+17 Table 2-3 & Sec 3.3; White+15 Sec 4.2"
+      },
+      {
+        "cluster_id": 7,
+        "cluster_name": "Abell 2744",
+        "common_name": "Pandora's Cluster",
+        "split": "train",
+        "redshift": 0.308,
+        "primary_subcluster": "Core/NW subcluster",
+        "t_p_gyr": 0.15,
+        "sigma_t_p_gyr": 0.05,
+        "d_IS_kpc": 61.7,
+        "d_IG_kpc": 205.0,
+        "sigma_I_kpc": 43.1,
+        "sigma_S_kpc": 10.0,
+        "sigma_G_kpc": 10.0,
+        "sigma_diff_kpc": 45.3609,
+        "primary_class": "with_galaxies",
+        "csv_primary_class": "with_galaxies",
+        "secondary_subcluster": "NW subcluster",
+        "sec_d_IS_kpc": 163.3,
+        "sec_d_IG_kpc": 467.2,
+        "sec_sigma_diff_kpc": 52.9,
+        "secondary_class": "with_galaxies",
+        "source_citation": "Merten+11 Table 2 & Sec 4.2 / 5.2"
+      },
+      {
+        "cluster_id": 8,
+        "cluster_name": "Abell 3376",
+        "common_name": "Abell 3376",
+        "split": "test",
+        "redshift": 0.046,
+        "primary_subcluster": "E subcluster (A3376E)",
+        "t_p_gyr": 0.55,
+        "sigma_t_p_gyr": 0.15,
+        "d_IS_kpc": 32.0,
+        "d_IG_kpc": 28.0,
+        "sigma_I_kpc": 40.0,
+        "sigma_S_kpc": 0.0,
+        "sigma_G_kpc": 5.0,
+        "sigma_diff_kpc": 40.3113,
+        "primary_class": "unclassified",
+        "csv_primary_class": "unclassified",
+        "secondary_subcluster": "W subcluster (A3376W)",
+        "sec_d_IS_kpc": 45.0,
+        "sec_d_IG_kpc": 980.0,
+        "sec_sigma_diff_kpc": 55.2,
+        "secondary_class": "with_galaxies",
+        "source_citation": "Monteiro-Oliveira+17b Table 2 & Sec 3.2; Machado & Lima Neto 2013 Table 1"
+      },
+      {
+        "cluster_id": 9,
+        "cluster_name": "Abell 520",
+        "common_name": "Train Wreck",
+        "split": "train",
+        "redshift": 0.203,
+        "primary_subcluster": "SW subcluster (P4)",
+        "t_p_gyr": 0.8,
+        "sigma_t_p_gyr": 0.25,
+        "d_IS_kpc": 18.0,
+        "d_IG_kpc": 485.6,
+        "sigma_I_kpc": 12.6,
+        "sigma_S_kpc": 10.0,
+        "sigma_G_kpc": 10.0,
+        "sigma_diff_kpc": 18.941,
+        "primary_class": "with_galaxies",
+        "csv_primary_class": "with_galaxies",
+        "secondary_subcluster": "NE subcluster (P2)",
+        "sec_d_IS_kpc": 15.0,
+        "sec_d_IG_kpc": 395.0,
+        "sec_sigma_diff_kpc": 20.0,
+        "secondary_class": "with_galaxies",
+        "source_citation": "Jee+14 Table 1 & Sec 3.2; Markevitch+05 Sec 4"
+      },
+      {
+        "cluster_id": 10,
+        "cluster_name": "Abell 754",
+        "common_name": "Abell 754",
+        "split": "test",
+        "redshift": 0.0542,
+        "primary_subcluster": "E shock subcluster",
+        "t_p_gyr": 0.3,
+        "sigma_t_p_gyr": 0.1,
+        "d_IS_kpc": 28.0,
+        "d_IG_kpc": 165.0,
+        "sigma_I_kpc": 42.0,
+        "sigma_S_kpc": 15.0,
+        "sigma_G_kpc": 10.0,
+        "sigma_diff_kpc": 45.7056,
+        "primary_class": "with_galaxies",
+        "csv_primary_class": "with_galaxies",
+        "secondary_subcluster": "C/W main subcluster",
+        "sec_d_IS_kpc": 18.0,
+        "sec_d_IG_kpc": 140.0,
+        "sec_sigma_diff_kpc": 39.5,
+        "secondary_class": "with_galaxies",
+        "source_citation": "Okabe & Umetsu 2008 Table 2 & Sec 3.2; Macario+11 Sec 5.2"
+      },
+      {
+        "cluster_id": 11,
+        "cluster_name": "CIZA J2242.8+5301",
+        "common_name": "Sausage Cluster",
+        "split": "train",
+        "redshift": 0.188,
+        "primary_subcluster": "N subcluster",
+        "t_p_gyr": 0.8,
+        "sigma_t_p_gyr": 0.15,
+        "d_IS_kpc": 189.0,
+        "d_IG_kpc": 520.0,
+        "sigma_I_kpc": 85.0,
+        "sigma_S_kpc": 45.0,
+        "sigma_G_kpc": 25.0,
+        "sigma_diff_kpc": 99.373,
+        "primary_class": "with_galaxies",
+        "csv_primary_class": "with_galaxies",
+        "secondary_subcluster": "S subcluster",
+        "sec_d_IS_kpc": 145.0,
+        "sec_d_IG_kpc": 480.0,
+        "sec_sigma_diff_kpc": 104.0,
+        "secondary_class": "with_galaxies",
+        "source_citation": "Jee+15 Table 1 & 3 & Sec 3.2; Dawson+15 Table 2"
+      },
+      {
+        "cluster_id": 12,
+        "cluster_name": "DLSCL J0916.2+2951",
+        "common_name": "Musket Ball",
+        "split": "test",
+        "redshift": 0.533,
+        "primary_subcluster": "S subcluster",
+        "t_p_gyr": 1.1,
+        "sigma_t_p_gyr": 0.65,
+        "d_IS_kpc": 129.0,
+        "d_IG_kpc": 530.0,
+        "sigma_I_kpc": 52.0,
+        "sigma_S_kpc": 35.0,
+        "sigma_G_kpc": 28.0,
+        "sigma_diff_kpc": 68.6513,
+        "primary_class": "with_galaxies",
+        "csv_primary_class": "with_galaxies",
+        "secondary_subcluster": "N subcluster",
+        "sec_d_IS_kpc": 95.0,
+        "sec_d_IG_kpc": 530.0,
+        "sec_sigma_diff_kpc": 170.0,
+        "secondary_class": "with_galaxies",
+        "source_citation": "Dawson+12 Table 1 & Sec 3; Dawson 2013 Table 3"
+      },
+      {
+        "cluster_id": 13,
+        "cluster_name": "MACS J0025.4-1222",
+        "common_name": "Baby Bullet",
+        "split": "train",
+        "redshift": 0.586,
+        "primary_subcluster": "SE subcluster",
+        "t_p_gyr": 0.5,
+        "sigma_t_p_gyr": 0.2,
+        "d_IS_kpc": 45.3,
+        "d_IG_kpc": 326.3,
+        "sigma_I_kpc": 72.1,
+        "sigma_S_kpc": 79.4,
+        "sigma_G_kpc": 31.8,
+        "sigma_diff_kpc": 111.866,
+        "primary_class": "with_galaxies",
+        "csv_primary_class": "with_galaxies",
+        "secondary_subcluster": "NW subcluster",
+        "sec_d_IS_kpc": 7.9,
+        "sec_d_IG_kpc": 284.8,
+        "sec_sigma_diff_kpc": 42.0,
+        "secondary_class": "with_galaxies",
+        "source_citation": "Bradac+08 Table 2 & Sec 3.2 / 4.2"
+      },
+      {
+        "cluster_id": 14,
+        "cluster_name": "MACS J1149.5+2223",
+        "common_name": "MACS J1149",
+        "split": "test",
+        "redshift": 0.544,
+        "primary_subcluster": "NW subcluster 1",
+        "t_p_gyr": 1.16,
+        "sigma_t_p_gyr": 0.38,
+        "d_IS_kpc": 19.0,
+        "d_IG_kpc": 95.8,
+        "sigma_I_kpc": 19.0,
+        "sigma_S_kpc": 16.3,
+        "sigma_G_kpc": 10.0,
+        "sigma_diff_kpc": 26.9572,
+        "primary_class": "with_galaxies",
+        "csv_primary_class": "with_galaxies",
+        "secondary_subcluster": "SE subcluster 2",
+        "sec_d_IS_kpc": 30.0,
+        "sec_d_IG_kpc": 995.0,
+        "sec_sigma_diff_kpc": 66.0,
+        "secondary_class": "with_galaxies",
+        "source_citation": "Golovich+16 Table 2-4 & Sec 4.2 / 5.3"
+      },
+      {
+        "cluster_id": 15,
+        "cluster_name": "RX J0603.3+4214",
+        "common_name": "Toothbrush Cluster",
+        "split": "train",
+        "redshift": 0.225,
+        "primary_subcluster": "N subcluster (P1)",
+        "t_p_gyr": 1.5,
+        "sigma_t_p_gyr": 0.3,
+        "d_IS_kpc": 18.0,
+        "d_IG_kpc": 108.3,
+        "sigma_I_kpc": 32.0,
+        "sigma_S_kpc": 15.0,
+        "sigma_G_kpc": 10.0,
+        "sigma_diff_kpc": 36.7287,
+        "primary_class": "with_galaxies",
+        "csv_primary_class": "with_galaxies",
+        "secondary_subcluster": "S subcluster (P2)",
+        "sec_d_IS_kpc": 22.0,
+        "sec_d_IG_kpc": 433.2,
+        "sec_sigma_diff_kpc": 44.0,
+        "secondary_class": "with_galaxies",
+        "source_citation": "Jee+16 Table 2 & Sec 3.3 / 4.3"
+      },
+      {
+        "cluster_id": 16,
+        "cluster_name": "ZwCl 0008.8+5215",
+        "common_name": "ZwCl 0008",
+        "split": "test",
+        "redshift": 0.104,
+        "primary_subcluster": "E subcluster",
+        "t_p_gyr": 0.76,
+        "sigma_t_p_gyr": 0.21,
+        "d_IS_kpc": 249.0,
+        "d_IG_kpc": 319.0,
+        "sigma_I_kpc": 135.0,
+        "sigma_S_kpc": 30.0,
+        "sigma_G_kpc": 15.0,
+        "sigma_diff_kpc": 139.1043,
+        "primary_class": "unclassified",
+        "csv_primary_class": "unclassified",
+        "secondary_subcluster": "W subcluster",
+        "sec_d_IS_kpc": 170.0,
+        "sec_d_IG_kpc": 176.0,
+        "sec_sigma_diff_kpc": 133.0,
+        "secondary_class": "unclassified",
+        "source_citation": "Golovich+17 Table 4-5 & Sec 4.1-4.2 / 5.2"
+      }
+    ]
+  },
+  "T5": {
+    "f_leak_frozen_used": 0.189038,
+    "T5A_deciding": {
+      "fitted_param": 9.212795,
+      "training_fit": {
+        "model_type": "T5A",
+        "loss_metric": "sum_chi2_red",
+        "f_leak": 0.189038,
+        "fitted_param": 9.212795,
+        "train_summary": {
+          "n_galaxies": 88,
+          "total_pts": 1747,
+          "sum_chi2_red": 17859.051864108587,
+          "mean_chi2_red": 202.94377118305212,
+          "median_chi2_red": 48.512770838866686,
+          "total_chi2": 438471.464691524,
+          "pooled_chi2_red": 250.98538333802173,
+          "frac_chi2_red_lt_2": 0.03409090909090909,
+          "median_sigma_kpc": 9.21279485632164
+        }
+      },
+      "test_evaluation": {
+        "n_galaxies": 87,
+        "total_pts": 1644,
+        "sum_chi2_red": 20644.056841140966,
+        "mean_chi2_red": 237.28800966828697,
+        "median_chi2_red": 45.12590017788276,
+        "total_chi2": 533012.9814782474,
+        "pooled_chi2_red": 324.2171420183987,
+        "frac_chi2_red_lt_2": 0.06896551724137931,
+        "median_sigma_kpc": 9.212795,
+        "per_galaxy": [
+          {
+            "galaxy": "D512-2",
+            "n_pts": 4,
+            "sigma_kpc": 9.21279,
+            "chi2_red": 22.8522
+          },
+          {
+            "galaxy": "D631-7",
+            "n_pts": 16,
+            "sigma_kpc": 9.21279,
+            "chi2_red": 93.6633
+          },
+          {
+            "galaxy": "DDO154",
+            "n_pts": 12,
+            "sigma_kpc": 9.21279,
+            "chi2_red": 5494.9586
+          },
+          {
+            "galaxy": "DDO168",
+            "n_pts": 10,
+            "sigma_kpc": 9.21279,
+            "chi2_red": 153.1663
+          },
+          {
+            "galaxy": "ESO079-G014",
+            "n_pts": 15,
+            "sigma_kpc": 9.21279,
+            "chi2_red": 11.5004
+          },
+          {
+            "galaxy": "ESO444-G084",
+            "n_pts": 7,
+            "sigma_kpc": 9.21279,
+            "chi2_red": 279.4837
+          },
+          {
+            "galaxy": "F561-1",
+            "n_pts": 6,
+            "sigma_kpc": 9.21279,
+            "chi2_red": 2.017
+          },
+          {
+            "galaxy": "F563-V1",
+            "n_pts": 6,
+            "sigma_kpc": 9.21279,
+            "chi2_red": 0.597
+          },
+          {
+            "galaxy": "F565-V2",
+            "n_pts": 7,
+            "sigma_kpc": 9.21279,
+            "chi2_red": 31.6947
+          },
+          {
+            "galaxy": "F568-1",
+            "n_pts": 12,
+            "sigma_kpc": 9.21279,
+            "chi2_red": 22.2525
+          },
+          {
+            "galaxy": "F568-V1",
+            "n_pts": 15,
+            "sigma_kpc": 9.21279,
+            "chi2_red": 32.2692
+          },
+          {
+            "galaxy": "F571-V1",
+            "n_pts": 7,
+            "sigma_kpc": 9.21279,
+            "chi2_red": 16.4472
+          },
+          {
+            "galaxy": "F574-2",
+            "n_pts": 5,
+            "sigma_kpc": 9.21279,
+            "chi2_red": 1.5936
+          },
+          {
+            "galaxy": "F583-1",
+            "n_pts": 25,
+            "sigma_kpc": 9.21279,
+            "chi2_red": 28.3089
+          },
+          {
+            "galaxy": "IC2574",
+            "n_pts": 34,
+            "sigma_kpc": 9.21279,
+            "chi2_red": 192.8148
+          },
+          {
+            "galaxy": "KK98-251",
+            "n_pts": 15,
+            "sigma_kpc": 9.21279,
+            "chi2_red": 20.4756
+          },
+          {
+            "galaxy": "NGC0055",
+            "n_pts": 21,
+            "sigma_kpc": 9.21279,
+            "chi2_red": 34.1329
+          },
+          {
+            "galaxy": "NGC0247",
+            "n_pts": 26,
+            "sigma_kpc": 9.21279,
+            "chi2_red": 203.4206
+          },
+          {
+            "galaxy": "NGC0300",
+            "n_pts": 25,
+            "sigma_kpc": 9.21279,
+            "chi2_red": 97.4379
+          },
+          {
+            "galaxy": "NGC0891",
+            "n_pts": 18,
+            "sigma_kpc": 9.21279,
+            "chi2_red": 329.515
+          },
+          {
+            "galaxy": "NGC1090",
+            "n_pts": 24,
+            "sigma_kpc": 9.21279,
+            "chi2_red": 249.8079
+          },
+          {
+            "galaxy": "NGC2366",
+            "n_pts": 26,
+            "sigma_kpc": 9.21279,
+            "chi2_red": 77.5732
+          },
+          {
+            "galaxy": "NGC2683",
+            "n_pts": 11,
+            "sigma_kpc": 9.21279,
+            "chi2_red": 18.571
+          },
+          {
+            "galaxy": "NGC2903",
+            "n_pts": 34,
+            "sigma_kpc": 9.21279,
+            "chi2_red": 68.8114
+          },
+          {
+            "galaxy": "NGC2955",
+            "n_pts": 24,
+            "sigma_kpc": 9.21279,
+            "chi2_red": 103.8301
+          },
+          {
+            "galaxy": "NGC2998",
+            "n_pts": 13,
+            "sigma_kpc": 9.21279,
+            "chi2_red": 494.0818
+          },
+          {
+            "galaxy": "NGC3198",
+            "n_pts": 43,
+            "sigma_kpc": 9.21279,
+            "chi2_red": 54.5871
+          },
+          {
+            "galaxy": "NGC3726",
+            "n_pts": 12,
+            "sigma_kpc": 9.21279,
+            "chi2_red": 59.7989
+          },
+          {
+            "galaxy": "NGC3769",
+            "n_pts": 12,
+            "sigma_kpc": 9.21279,
+            "chi2_red": 3.6298
+          },
+          {
+            "galaxy": "NGC3893",
+            "n_pts": 10,
+            "sigma_kpc": 9.21279,
+            "chi2_red": 4.4111
+          },
+          {
+            "galaxy": "NGC3949",
+            "n_pts": 7,
+            "sigma_kpc": 9.21279,
+            "chi2_red": 1.96
+          },
+          {
+            "galaxy": "NGC3972",
+            "n_pts": 10,
+            "sigma_kpc": 9.21279,
+            "chi2_red": 45.1259
+          },
+          {
+            "galaxy": "NGC4010",
+            "n_pts": 12,
+            "sigma_kpc": 9.21279,
+            "chi2_red": 14.228
+          },
+          {
+            "galaxy": "NGC4051",
+            "n_pts": 7,
+            "sigma_kpc": 9.21279,
+            "chi2_red": 13.7084
+          },
+          {
+            "galaxy": "NGC4085",
+            "n_pts": 7,
+            "sigma_kpc": 9.21279,
+            "chi2_red": 6.5291
+          },
+          {
+            "galaxy": "NGC4100",
+            "n_pts": 24,
+            "sigma_kpc": 9.21279,
+            "chi2_red": 14.5704
+          },
+          {
+            "galaxy": "NGC4157",
+            "n_pts": 17,
+            "sigma_kpc": 9.21279,
+            "chi2_red": 76.1767
+          },
+          {
+            "galaxy": "NGC4214",
+            "n_pts": 14,
+            "sigma_kpc": 9.21279,
+            "chi2_red": 44.725
+          },
+          {
+            "galaxy": "NGC4389",
+            "n_pts": 6,
+            "sigma_kpc": 9.21279,
+            "chi2_red": 17.1798
+          },
+          {
+            "galaxy": "NGC5005",
+            "n_pts": 18,
+            "sigma_kpc": 9.21279,
+            "chi2_red": 1.718
+          },
+          {
+            "galaxy": "NGC5055",
+            "n_pts": 28,
+            "sigma_kpc": 9.21279,
+            "chi2_red": 3778.1573
+          },
+          {
+            "galaxy": "NGC5585",
+            "n_pts": 24,
+            "sigma_kpc": 9.21279,
+            "chi2_red": 153.083
+          },
+          {
+            "galaxy": "NGC5985",
+            "n_pts": 33,
+            "sigma_kpc": 9.21279,
+            "chi2_red": 92.645
+          },
+          {
+            "galaxy": "NGC6195",
+            "n_pts": 23,
+            "sigma_kpc": 9.21279,
+            "chi2_red": 446.715
+          },
+          {
+            "galaxy": "NGC6674",
+            "n_pts": 15,
+            "sigma_kpc": 9.21279,
+            "chi2_red": 392.4603
+          },
+          {
+            "galaxy": "NGC6946",
+            "n_pts": 58,
+            "sigma_kpc": 9.21279,
+            "chi2_red": 40.8556
+          },
+          {
+            "galaxy": "NGC7793",
+            "n_pts": 46,
+            "sigma_kpc": 9.21279,
+            "chi2_red": 11.1272
+          },
+          {
+            "galaxy": "PGC51017",
+            "n_pts": 6,
+            "sigma_kpc": 9.21279,
+            "chi2_red": 1.4826
+          },
+          {
+            "galaxy": "UGC00191",
+            "n_pts": 9,
+            "sigma_kpc": 9.21279,
+            "chi2_red": 448.4833
+          },
+          {
+            "galaxy": "UGC00731",
+            "n_pts": 12,
+            "sigma_kpc": 9.21279,
+            "chi2_red": 116.0032
+          },
+          {
+            "galaxy": "UGC01230",
+            "n_pts": 11,
+            "sigma_kpc": 9.21279,
+            "chi2_red": 6.9235
+          },
+          {
+            "galaxy": "UGC02023",
+            "n_pts": 5,
+            "sigma_kpc": 9.21279,
+            "chi2_red": 2.6481
+          },
+          {
+            "galaxy": "UGC02455",
+            "n_pts": 8,
+            "sigma_kpc": 9.21279,
+            "chi2_red": 24.8565
+          },
+          {
+            "galaxy": "UGC02885",
+            "n_pts": 19,
+            "sigma_kpc": 9.21279,
+            "chi2_red": 89.8315
+          },
+          {
+            "galaxy": "UGC02953",
+            "n_pts": 115,
+            "sigma_kpc": 9.21279,
+            "chi2_red": 1511.0192
+          },
+          {
+            "galaxy": "UGC03546",
+            "n_pts": 30,
+            "sigma_kpc": 9.21279,
+            "chi2_red": 660.4391
+          },
+          {
+            "galaxy": "UGC04278",
+            "n_pts": 25,
+            "sigma_kpc": 9.21279,
+            "chi2_red": 42.4358
+          },
+          {
+            "galaxy": "UGC04325",
+            "n_pts": 8,
+            "sigma_kpc": 9.21279,
+            "chi2_red": 206.2997
+          },
+          {
+            "galaxy": "UGC04499",
+            "n_pts": 9,
+            "sigma_kpc": 9.21279,
+            "chi2_red": 68.7743
+          },
+          {
+            "galaxy": "UGC05253",
+            "n_pts": 73,
+            "sigma_kpc": 9.21279,
+            "chi2_red": 223.1681
+          },
+          {
+            "galaxy": "UGC05716",
+            "n_pts": 12,
+            "sigma_kpc": 9.21279,
+            "chi2_red": 1696.444
+          },
+          {
+            "galaxy": "UGC05750",
+            "n_pts": 11,
+            "sigma_kpc": 9.21279,
+            "chi2_red": 4.3322
+          },
+          {
+            "galaxy": "UGC05829",
+            "n_pts": 11,
+            "sigma_kpc": 9.21279,
+            "chi2_red": 16.6911
+          },
+          {
+            "galaxy": "UGC05986",
+            "n_pts": 15,
+            "sigma_kpc": 9.21279,
+            "chi2_red": 269.5782
+          },
+          {
+            "galaxy": "UGC06399",
+            "n_pts": 9,
+            "sigma_kpc": 9.21279,
+            "chi2_red": 54.6592
+          },
+          {
+            "galaxy": "UGC06614",
+            "n_pts": 13,
+            "sigma_kpc": 9.21279,
+            "chi2_red": 41.9154
+          },
+          {
+            "galaxy": "UGC06667",
+            "n_pts": 9,
+            "sigma_kpc": 9.21279,
+            "chi2_red": 183.3424
+          },
+          {
+            "galaxy": "UGC06787",
+            "n_pts": 71,
+            "sigma_kpc": 9.21279,
+            "chi2_red": 90.6729
+          },
+          {
+            "galaxy": "UGC06917",
+            "n_pts": 11,
+            "sigma_kpc": 9.21279,
+            "chi2_red": 65.857
+          },
+          {
+            "galaxy": "UGC06930",
+            "n_pts": 10,
+            "sigma_kpc": 9.21279,
+            "chi2_red": 11.9657
+          },
+          {
+            "galaxy": "UGC06983",
+            "n_pts": 17,
+            "sigma_kpc": 9.21279,
+            "chi2_red": 50.5283
+          },
+          {
+            "galaxy": "UGC07125",
+            "n_pts": 13,
+            "sigma_kpc": 9.21279,
+            "chi2_red": 11.3273
+          },
+          {
+            "galaxy": "UGC07232",
+            "n_pts": 4,
+            "sigma_kpc": 9.21279,
+            "chi2_red": 18.1694
+          },
+          {
+            "galaxy": "UGC07323",
+            "n_pts": 10,
+            "sigma_kpc": 9.21279,
+            "chi2_red": 25.9442
+          },
+          {
+            "galaxy": "UGC07524",
+            "n_pts": 31,
+            "sigma_kpc": 9.21279,
+            "chi2_red": 50.2166
+          },
+          {
+            "galaxy": "UGC07577",
+            "n_pts": 9,
+            "sigma_kpc": 9.21279,
+            "chi2_red": 0.583
+          },
+          {
+            "galaxy": "UGC07608",
+            "n_pts": 8,
+            "sigma_kpc": 9.21279,
+            "chi2_red": 23.2542
+          },
+          {
+            "galaxy": "UGC07866",
+            "n_pts": 7,
+            "sigma_kpc": 9.21279,
+            "chi2_red": 7.2743
+          },
+          {
+            "galaxy": "UGC08490",
+            "n_pts": 30,
+            "sigma_kpc": 9.21279,
+            "chi2_red": 115.4753
+          },
+          {
+            "galaxy": "UGC08699",
+            "n_pts": 41,
+            "sigma_kpc": 9.21279,
+            "chi2_red": 22.7029
+          },
+          {
+            "galaxy": "UGC09037",
+            "n_pts": 22,
+            "sigma_kpc": 9.21279,
+            "chi2_red": 78.7109
+          },
+          {
+            "galaxy": "UGC09992",
+            "n_pts": 5,
+            "sigma_kpc": 9.21279,
+            "chi2_red": 3.6048
+          },
+          {
+            "galaxy": "UGC11455",
+            "n_pts": 36,
+            "sigma_kpc": 9.21279,
+            "chi2_red": 262.3524
+          },
+          {
+            "galaxy": "UGC11820",
+            "n_pts": 10,
+            "sigma_kpc": 9.21279,
+            "chi2_red": 289.1421
+          },
+          {
+            "galaxy": "UGC12506",
+            "n_pts": 31,
+            "sigma_kpc": 9.21279,
+            "chi2_red": 8.1405
+          },
+          {
+            "galaxy": "UGC12732",
+            "n_pts": 16,
+            "sigma_kpc": 9.21279,
+            "chi2_red": 52.5542
+          },
+          {
+            "galaxy": "UGCA442",
+            "n_pts": 8,
+            "sigma_kpc": 9.21279,
+            "chi2_red": 431.5849
+          }
+        ]
+      },
+      "verdict": "FAIL",
+      "reasons": [
+        "M_chi2 = 45.1259 > 3.0",
+        "F_<2 = 0.0690 < 0.40"
+      ]
+    },
+    "T5B_secondary": {
+      "fitted_param": 2.928045,
+      "training_fit": {
+        "model_type": "T5B",
+        "loss_metric": "sum_chi2_red",
+        "f_leak": 0.189038,
+        "fitted_param": 2.928045,
+        "train_summary": {
+          "n_galaxies": 88,
+          "total_pts": 1747,
+          "sum_chi2_red": 9506.657484573916,
+          "mean_chi2_red": 108.03019868833995,
+          "median_chi2_red": 25.002079594700692,
+          "total_chi2": 190639.70743922814,
+          "pooled_chi2_red": 109.1240454717963,
+          "frac_chi2_red_lt_2": 0.056818181818181816,
+          "median_sigma_kpc": 5.929291171257917
+        }
+      },
+      "test_evaluation": {
+        "n_galaxies": 87,
+        "total_pts": 1644,
+        "sum_chi2_red": 10963.180623526936,
+        "mean_chi2_red": 126.01357038536707,
+        "median_chi2_red": 23.741180062757405,
+        "total_chi2": 385698.50066950277,
+        "pooled_chi2_red": 234.60979359458807,
+        "frac_chi2_red_lt_2": 0.08045977011494253,
+        "median_sigma_kpc": 7.232271150000001,
+        "per_galaxy": [
+          {
+            "galaxy": "D512-2",
+            "n_pts": 4,
+            "sigma_kpc": 3.63078,
+            "chi2_red": 16.2592
+          },
+          {
+            "galaxy": "D631-7",
+            "n_pts": 16,
+            "sigma_kpc": 2.04963,
+            "chi2_red": 6.538
+          },
+          {
+            "galaxy": "DDO154",
+            "n_pts": 12,
+            "sigma_kpc": 1.08338,
+            "chi2_red": 145.56
+          },
+          {
+            "galaxy": "DDO168",
+            "n_pts": 10,
+            "sigma_kpc": 2.98661,
+            "chi2_red": 62.2593
+          },
+          {
+            "galaxy": "ESO079-G014",
+            "n_pts": 15,
+            "sigma_kpc": 14.87447,
+            "chi2_red": 128.6169
+          },
+          {
+            "galaxy": "ESO444-G084",
+            "n_pts": 7,
+            "sigma_kpc": 1.3469,
+            "chi2_red": 80.8382
+          },
+          {
+            "galaxy": "F561-1",
+            "n_pts": 6,
+            "sigma_kpc": 8.16925,
+            "chi2_red": 2.9919
+          },
+          {
+            "galaxy": "F563-V1",
+            "n_pts": 6,
+            "sigma_kpc": 11.09729,
+            "chi2_red": 0.5646
+          },
+          {
+            "galaxy": "F565-V2",
+            "n_pts": 7,
+            "sigma_kpc": 6.35386,
+            "chi2_red": 22.4077
+          },
+          {
+            "galaxy": "F568-1",
+            "n_pts": 12,
+            "sigma_kpc": 15.16727,
+            "chi2_red": 32.4852
+          },
+          {
+            "galaxy": "F568-V1",
+            "n_pts": 15,
+            "sigma_kpc": 8.34493,
+            "chi2_red": 30.3552
+          },
+          {
+            "galaxy": "F571-V1",
+            "n_pts": 7,
+            "sigma_kpc": 7.23227,
+            "chi2_red": 9.8295
+          },
+          {
+            "galaxy": "F574-2",
+            "n_pts": 5,
+            "sigma_kpc": 11.00945,
+            "chi2_red": 0.7569
+          },
+          {
+            "galaxy": "F583-1",
+            "n_pts": 25,
+            "sigma_kpc": 6.91019,
+            "chi2_red": 21.3894
+          },
+          {
+            "galaxy": "IC2574",
+            "n_pts": 34,
+            "sigma_kpc": 8.13997,
+            "chi2_red": 149.7999
+          },
+          {
+            "galaxy": "KK98-251",
+            "n_pts": 15,
+            "sigma_kpc": 3.92358,
+            "chi2_red": 13.3384
+          },
+          {
+            "galaxy": "NGC0055",
+            "n_pts": 21,
+            "sigma_kpc": 17.89035,
+            "chi2_red": 94.6666
+          },
+          {
+            "galaxy": "NGC0247",
+            "n_pts": 26,
+            "sigma_kpc": 10.95089,
+            "chi2_red": 241.3978
+          },
+          {
+            "galaxy": "NGC0300",
+            "n_pts": 25,
+            "sigma_kpc": 5.12408,
+            "chi2_red": 37.7949
+          },
+          {
+            "galaxy": "NGC0891",
+            "n_pts": 18,
+            "sigma_kpc": 7.46651,
+            "chi2_red": 773.5578
+          },
+          {
+            "galaxy": "NGC1090",
+            "n_pts": 24,
+            "sigma_kpc": 10.336,
+            "chi2_red": 186.0714
+          },
+          {
+            "galaxy": "NGC2366",
+            "n_pts": 26,
+            "sigma_kpc": 1.90323,
+            "chi2_red": 4.635
+          },
+          {
+            "galaxy": "NGC2683",
+            "n_pts": 11,
+            "sigma_kpc": 6.38314,
+            "chi2_red": 51.8824
+          },
+          {
+            "galaxy": "NGC2903",
+            "n_pts": 34,
+            "sigma_kpc": 6.82234,
+            "chi2_red": 500.2053
+          },
+          {
+            "galaxy": "NGC2955",
+            "n_pts": 24,
+            "sigma_kpc": 54.93012,
+            "chi2_red": 13.6092
+          },
+          {
+            "galaxy": "NGC2998",
+            "n_pts": 13,
+            "sigma_kpc": 18.15388,
+            "chi2_red": 50.5867
+          },
+          {
+            "galaxy": "NGC3198",
+            "n_pts": 43,
+            "sigma_kpc": 9.19406,
+            "chi2_red": 54.3439
+          },
+          {
+            "galaxy": "NGC3726",
+            "n_pts": 12,
+            "sigma_kpc": 9.95535,
+            "chi2_red": 43.9284
+          },
+          {
+            "galaxy": "NGC3769",
+            "n_pts": 12,
+            "sigma_kpc": 9.89679,
+            "chi2_red": 5.4427
+          },
+          {
+            "galaxy": "NGC3893",
+            "n_pts": 10,
+            "sigma_kpc": 6.96875,
+            "chi2_red": 11.041
+          },
+          {
+            "galaxy": "NGC3949",
+            "n_pts": 7,
+            "sigma_kpc": 10.51168,
+            "chi2_red": 3.0292
+          },
+          {
+            "galaxy": "NGC3972",
+            "n_pts": 10,
+            "sigma_kpc": 6.38314,
+            "chi2_red": 17.1485
+          },
+          {
+            "galaxy": "NGC4010",
+            "n_pts": 12,
+            "sigma_kpc": 8.22781,
+            "chi2_red": 8.7413
+          },
+          {
+            "galaxy": "NGC4051",
+            "n_pts": 7,
+            "sigma_kpc": 13.61541,
+            "chi2_red": 2.8898
+          },
+          {
+            "galaxy": "NGC4085",
+            "n_pts": 7,
+            "sigma_kpc": 4.83127,
+            "chi2_red": 12.2304
+          },
+          {
+            "galaxy": "NGC4100",
+            "n_pts": 24,
+            "sigma_kpc": 6.2953,
+            "chi2_red": 51.5851
+          },
+          {
+            "galaxy": "NGC4157",
+            "n_pts": 17,
+            "sigma_kpc": 6.79306,
+            "chi2_red": 158.6983
+          },
+          {
+            "galaxy": "NGC4214",
+            "n_pts": 14,
+            "sigma_kpc": 1.4933,
+            "chi2_red": 5.8669
+          },
+          {
+            "galaxy": "NGC4389",
+            "n_pts": 6,
+            "sigma_kpc": 8.16925,
+            "chi2_red": 18.7806
+          },
+          {
+            "galaxy": "NGC5005",
+            "n_pts": 18,
+            "sigma_kpc": 27.67003,
+            "chi2_red": 1.8022
+          },
+          {
+            "galaxy": "NGC5055",
+            "n_pts": 28,
+            "sigma_kpc": 9.36974,
+            "chi2_red": 3599.6089
+          },
+          {
+            "galaxy": "NGC5585",
+            "n_pts": 24,
+            "sigma_kpc": 4.47991,
+            "chi2_red": 22.7742
+          },
+          {
+            "galaxy": "NGC5985",
+            "n_pts": 33,
+            "sigma_kpc": 20.5256,
+            "chi2_red": 267.2396
+          },
+          {
+            "galaxy": "NGC6195",
+            "n_pts": 23,
+            "sigma_kpc": 40.81695,
+            "chi2_red": 5.6828
+          },
+          {
+            "galaxy": "NGC6674",
+            "n_pts": 15,
+            "sigma_kpc": 17.68539,
+            "chi2_red": 90.2269
+          },
+          {
+            "galaxy": "NGC6946",
+            "n_pts": 58,
+            "sigma_kpc": 7.14443,
+            "chi2_red": 215.6879
+          },
+          {
+            "galaxy": "NGC7793",
+            "n_pts": 46,
+            "sigma_kpc": 3.54293,
+            "chi2_red": 3.4944
+          },
+          {
+            "galaxy": "PGC51017",
+            "n_pts": 6,
+            "sigma_kpc": 1.55186,
+            "chi2_red": 41.2211
+          },
+          {
+            "galaxy": "UGC00191",
+            "n_pts": 9,
+            "sigma_kpc": 4.62631,
+            "chi2_red": 83.1402
+          },
+          {
+            "galaxy": "UGC00731",
+            "n_pts": 12,
+            "sigma_kpc": 6.7345,
+            "chi2_red": 77.8671
+          },
+          {
+            "galaxy": "UGC01230",
+            "n_pts": 11,
+            "sigma_kpc": 12.70772,
+            "chi2_red": 9.0701
+          },
+          {
+            "galaxy": "UGC02023",
+            "n_pts": 5,
+            "sigma_kpc": 4.53847,
+            "chi2_red": 1.2882
+          },
+          {
+            "galaxy": "UGC02455",
+            "n_pts": 8,
+            "sigma_kpc": 2.89876,
+            "chi2_red": 80.5275
+          },
+          {
+            "galaxy": "UGC02885",
+            "n_pts": 19,
+            "sigma_kpc": 33.37971,
+            "chi2_red": 11.0028
+          },
+          {
+            "galaxy": "UGC02953",
+            "n_pts": 115,
+            "sigma_kpc": 10.39456,
+            "chi2_red": 1057.4332
+          },
+          {
+            "galaxy": "UGC03546",
+            "n_pts": 30,
+            "sigma_kpc": 11.09729,
+            "chi2_red": 163.6939
+          },
+          {
+            "galaxy": "UGC04278",
+            "n_pts": 25,
+            "sigma_kpc": 6.47098,
+            "chi2_red": 29.1896
+          },
+          {
+            "galaxy": "UGC04325",
+            "n_pts": 8,
+            "sigma_kpc": 5.44616,
+            "chi2_red": 156.3673
+          },
+          {
+            "galaxy": "UGC04499",
+            "n_pts": 9,
+            "sigma_kpc": 5.06552,
+            "chi2_red": 18.767
+          },
+          {
+            "galaxy": "UGC05253",
+            "n_pts": 73,
+            "sigma_kpc": 23.62932,
+            "chi2_red": 137.2248
+          },
+          {
+            "galaxy": "UGC05716",
+            "n_pts": 12,
+            "sigma_kpc": 3.33797,
+            "chi2_red": 347.9705
+          },
+          {
+            "galaxy": "UGC05750",
+            "n_pts": 11,
+            "sigma_kpc": 10.13104,
+            "chi2_red": 5.1394
+          },
+          {
+            "galaxy": "UGC05829",
+            "n_pts": 11,
+            "sigma_kpc": 5.82681,
+            "chi2_red": 8.1663
+          },
+          {
+            "galaxy": "UGC05986",
+            "n_pts": 15,
+            "sigma_kpc": 4.88984,
+            "chi2_red": 116.8489
+          },
+          {
+            "galaxy": "UGC06399",
+            "n_pts": 9,
+            "sigma_kpc": 6.00249,
+            "chi2_red": 34.5229
+          },
+          {
+            "galaxy": "UGC06614",
+            "n_pts": 13,
+            "sigma_kpc": 14.93303,
+            "chi2_red": 5.958
+          },
+          {
+            "galaxy": "UGC06667",
+            "n_pts": 9,
+            "sigma_kpc": 15.07943,
+            "chi2_red": 211.0148
+          },
+          {
+            "galaxy": "UGC06787",
+            "n_pts": 71,
+            "sigma_kpc": 15.7236,
+            "chi2_red": 495.139
+          },
+          {
+            "galaxy": "UGC06917",
+            "n_pts": 11,
+            "sigma_kpc": 8.0814,
+            "chi2_red": 52.6616
+          },
+          {
+            "galaxy": "UGC06930",
+            "n_pts": 10,
+            "sigma_kpc": 11.5365,
+            "chi2_red": 21.0322
+          },
+          {
+            "galaxy": "UGC06983",
+            "n_pts": 17,
+            "sigma_kpc": 9.39902,
+            "chi2_red": 52.1022
+          },
+          {
+            "galaxy": "UGC07125",
+            "n_pts": 13,
+            "sigma_kpc": 9.89679,
+            "chi2_red": 10.4755
+          },
+          {
+            "galaxy": "UGC07232",
+            "n_pts": 4,
+            "sigma_kpc": 0.84913,
+            "chi2_red": 8.0517
+          },
+          {
+            "galaxy": "UGC07323",
+            "n_pts": 10,
+            "sigma_kpc": 6.61738,
+            "chi2_red": 15.5766
+          },
+          {
+            "galaxy": "UGC07524",
+            "n_pts": 31,
+            "sigma_kpc": 10.13104,
+            "chi2_red": 57.4689
+          },
+          {
+            "galaxy": "UGC07577",
+            "n_pts": 9,
+            "sigma_kpc": 2.63524,
+            "chi2_red": 0.2753
+          },
+          {
+            "galaxy": "UGC07608",
+            "n_pts": 8,
+            "sigma_kpc": 4.39207,
+            "chi2_red": 16.1577
+          },
+          {
+            "galaxy": "UGC07866",
+            "n_pts": 7,
+            "sigma_kpc": 1.78611,
+            "chi2_red": 1.6976
+          },
+          {
+            "galaxy": "UGC08490",
+            "n_pts": 30,
+            "sigma_kpc": 1.96179,
+            "chi2_red": 13.3976
+          },
+          {
+            "galaxy": "UGC08699",
+            "n_pts": 41,
+            "sigma_kpc": 9.04766,
+            "chi2_red": 21.4038
+          },
+          {
+            "galaxy": "UGC09037",
+            "n_pts": 22,
+            "sigma_kpc": 12.53203,
+            "chi2_red": 23.7412
+          },
+          {
+            "galaxy": "UGC09992",
+            "n_pts": 5,
+            "sigma_kpc": 3.04517,
+            "chi2_red": 1.2745
+          },
+          {
+            "galaxy": "UGC11455",
+            "n_pts": 36,
+            "sigma_kpc": 17.36331,
+            "chi2_red": 55.8108
+          },
+          {
+            "galaxy": "UGC11820",
+            "n_pts": 10,
+            "sigma_kpc": 6.09033,
+            "chi2_red": 57.983
+          },
+          {
+            "galaxy": "UGC12506",
+            "n_pts": 31,
+            "sigma_kpc": 21.60897,
+            "chi2_red": 20.8885
+          },
+          {
+            "galaxy": "UGC12732",
+            "n_pts": 16,
+            "sigma_kpc": 5.79753,
+            "chi2_red": 22.6552
+          },
+          {
+            "galaxy": "UGCA442",
+            "n_pts": 8,
+            "sigma_kpc": 3.45509,
+            "chi2_red": 140.3337
+          }
+        ]
+      },
+      "verdict": "FAIL",
+      "reasons": [
+        "M_chi2 = 23.7412 > 3.0",
+        "F_<2 = 0.0805 < 0.40"
+      ]
+    },
+    "T5c_secondary_DF2": {
+      "sigma_ref_kpc_used": 9.212795,
+      "f_leak_used": 0.189038,
+      "r_2p7_kpc_danieli19": {
+        "r_eval_kpc": 2.7,
+        "M_b_enc_1e8_Msun": 0.9318,
+        "M_sh_DF2_1e8_Msun": 0.0559,
+        "M_sh_group_1e8_Msun": 0.0,
+        "M_pred_1e8_Msun": 0.9877,
+        "M_pred_Msun": 98769656.29205993
+      },
+      "r_3p1_kpc_vd18": {
+        "r_eval_kpc": 3.1,
+        "M_b_enc_1e8_Msun": 1.0847,
+        "M_sh_DF2_1e8_Msun": 0.0839,
+        "M_sh_group_1e8_Msun": 0.0,
+        "M_pred_1e8_Msun": 1.1686,
+        "M_pred_Msun": 116864310.65725526
+      },
+      "r_7p6_kpc_vd18": {
+        "r_eval_kpc": 7.6,
+        "M_b_enc_1e8_Msun": 1.7726,
+        "M_sh_DF2_1e8_Msun": 1.0583,
+        "M_sh_group_1e8_Msun": 0.0,
+        "M_pred_1e8_Msun": 2.8309,
+        "M_pred_Msun": 283085399.5435013
+      },
+      "verdict": "PASS",
+      "reasons": []
+    },
+    "RAR_benchmark": {
+      "fixed_McGaugh16_g_dagger_1p2e-10": {
+        "g_dagger_m_s2": 1.2e-10,
+        "train_summary": {
+          "sum_chi2_red": 3054.048780605191,
+          "median_chi2_red": 12.102469846325157,
+          "mean_chi2_red": 34.705099779604446,
+          "pooled_chi2_red": 42.59569689179507,
+          "frac_chi2_red_lt_2": 0.11363636363636363
+        },
+        "test_summary": {
+          "sum_chi2_red": 3250.0443256471663,
+          "median_chi2_red": 9.400055504505225,
+          "mean_chi2_red": 37.356831329277775,
+          "pooled_chi2_red": 57.46878579159846,
+          "frac_chi2_red_lt_2": 0.11494252873563218
+        }
+      },
+      "fitted_g_dagger": {
+        "g_dagger_m_s2": 1.1478e-10,
+        "train_summary": {
+          "sum_chi2_red": 3041.0247747092103,
+          "median_chi2_red": 10.71915413226353,
+          "mean_chi2_red": 34.55709971260466,
+          "pooled_chi2_red": 43.018577557340194,
+          "frac_chi2_red_lt_2": 0.13636363636363635
+        },
+        "test_summary": {
+          "sum_chi2_red": 3093.8944179028454,
+          "median_chi2_red": 8.426288084700523,
+          "mean_chi2_red": 35.56200480348098,
+          "pooled_chi2_red": 57.28537313815072,
+          "frac_chi2_red_lt_2": 0.11494252873563218
+        }
+      }
+    },
+    "baryon_only_test": {
+      "n_galaxies": 87,
+      "total_pts": 1644,
+      "sum_chi2_red": 29912.88548462219,
+      "mean_chi2_red": 343.8262699381861,
+      "median_chi2_red": 77.92208057536018,
+      "total_chi2": 865755.1190679428,
+      "pooled_chi2_red": 526.6150359294056,
+      "frac_chi2_red_lt_2": 0.04597701149425287,
+      "median_sigma_kpc": 0.0
+    },
+    "mechanistic_diagnostics_f3_f4": {
+      "saturation_cap_ratio_1_plus_R": 5.8658,
+      "total_radial_pts": 3391,
+      "pts_exceeding_cap": 442,
+      "frac_pts_exceeding_cap": 0.1303,
+      "galaxies_with_pts_exceeding_cap": 67,
+      "frac_galaxies_exceeding_cap": 0.3829,
+      "vc_tau_lag_check": {
+        "tau_lag_gyr_used": 0.805,
+        "sigma_ref_kpc_used": 9.2128,
+        "n_galaxies_with_vflat": 135,
+        "median_vc_tau_lag_kpc": 93.031,
+        "iqr_vc_tau_lag_kpc": [
+          65.492,
+          150.29
+        ]
+      }
+    },
+    "T5_sensitivity": {
+      "T5A_total_chi2_loss": {
+        "training_fit": {
+          "model_type": "T5A",
+          "loss_metric": "total_chi2",
+          "f_leak": 0.189038,
+          "fitted_param": 8.08743,
+          "train_summary": {
+            "n_galaxies": 88,
+            "total_pts": 1747,
+            "sum_chi2_red": 18000.976883297048,
+            "mean_chi2_red": 204.5565554920119,
+            "median_chi2_red": 45.9452320286467,
+            "total_chi2": 432129.0629498077,
+            "pooled_chi2_red": 247.35493013726827,
+            "frac_chi2_red_lt_2": 0.022727272727272728,
+            "median_sigma_kpc": 8.087429616850253
+          }
+        },
+        "test_summary": {
+          "n_galaxies": 87,
+          "total_pts": 1644,
+          "sum_chi2_red": 23610.157042011968,
+          "mean_chi2_red": 271.3811154254249,
+          "median_chi2_red": 41.55286010561369,
+          "total_chi2": 678767.0911661128,
+          "pooled_chi2_red": 412.87535959009296,
+          "frac_chi2_red_lt_2": 0.05747126436781609,
+          "median_sigma_kpc": 8.08743
+        },
+        "verdict": "FAIL",
+        "reasons": [
+          "M_chi2 = 41.5529 > 3.0",
+          "F_<2 = 0.0575 < 0.40"
+        ]
+      },
+      "T5A_median_chi2_red_loss": {
+        "training_fit": {
+          "model_type": "T5A",
+          "loss_metric": "median_chi2_red",
+          "f_leak": 0.189038,
+          "fitted_param": 1.312603,
+          "train_summary": {
+            "n_galaxies": 88,
+            "total_pts": 1747,
+            "sum_chi2_red": 44199.70001718485,
+            "mean_chi2_red": 502.26931837710055,
+            "median_chi2_red": 25.842073550201846,
+            "total_chi2": 1563696.03252219,
+            "pooled_chi2_red": 895.0750043057756,
+            "frac_chi2_red_lt_2": 0.056818181818181816,
+            "median_sigma_kpc": 1.3126025702367061
+          }
+        },
+        "test_summary": {
+          "n_galaxies": 87,
+          "total_pts": 1644,
+          "sum_chi2_red": 94808.50532532526,
+          "mean_chi2_red": 1089.7529347738534,
+          "median_chi2_red": 58.77211530927364,
+          "total_chi2": 3702903.9529086105,
+          "pooled_chi2_red": 2252.3746672193492,
+          "frac_chi2_red_lt_2": 0.09195402298850575,
+          "median_sigma_kpc": 1.312603
+        },
+        "verdict": "FAIL",
+        "reasons": [
+          "M_chi2 = 58.7721 > 3.0",
+          "F_<2 = 0.0920 < 0.40"
+        ]
+      },
+      "T5A_f_leak_1_over_6": {
+        "training_fit": {
+          "model_type": "T5A",
+          "loss_metric": "sum_chi2_red",
+          "f_leak": 0.16666666666666666,
+          "fitted_param": 9.645406,
+          "train_summary": {
+            "n_galaxies": 88,
+            "total_pts": 1747,
+            "sum_chi2_red": 18201.73908055395,
+            "mean_chi2_red": 206.83794409720397,
+            "median_chi2_red": 52.2455900496449,
+            "total_chi2": 452287.51773892017,
+            "pooled_chi2_red": 258.8938281276017,
+            "frac_chi2_red_lt_2": 0.03409090909090909,
+            "median_sigma_kpc": 9.645406216859833
+          }
+        },
+        "test_summary": {
+          "n_galaxies": 87,
+          "total_pts": 1644,
+          "sum_chi2_red": 20383.70404411973,
+          "mean_chi2_red": 234.29544878298543,
+          "median_chi2_red": 47.68196195494333,
+          "total_chi2": 516780.7493279601,
+          "pooled_chi2_red": 314.3435214890268,
+          "frac_chi2_red_lt_2": 0.06896551724137931,
+          "median_sigma_kpc": 9.645406
+        },
+        "verdict": "FAIL",
+        "reasons": [
+          "M_chi2 = 47.6820 > 3.0",
+          "F_<2 = 0.0690 < 0.40"
+        ]
+      },
+      "T5B_total_chi2_loss": {
+        "training_fit": {
+          "model_type": "T5B",
+          "loss_metric": "total_chi2",
+          "f_leak": 0.189038,
+          "fitted_param": 3.237289,
+          "train_summary": {
+            "n_galaxies": 88,
+            "total_pts": 1747,
+            "sum_chi2_red": 9714.23894522991,
+            "mean_chi2_red": 110.38907892306716,
+            "median_chi2_red": 26.062269101051562,
+            "total_chi2": 183944.2601835204,
+            "pooled_chi2_red": 105.29150554294242,
+            "frac_chi2_red_lt_2": 0.06818181818181818,
+            "median_sigma_kpc": 6.555509576998654
+          }
+        },
+        "test_summary": {
+          "n_galaxies": 87,
+          "total_pts": 1644,
+          "sum_chi2_red": 9570.567520348219,
+          "mean_chi2_red": 110.00652322239331,
+          "median_chi2_red": 28.358751943668175,
+          "total_chi2": 318770.23082887265,
+          "pooled_chi2_red": 193.8991671708471,
+          "frac_chi2_red_lt_2": 0.06896551724137931,
+          "median_sigma_kpc": 7.996103830000001
+        },
+        "verdict": "FAIL",
+        "reasons": [
+          "M_chi2 = 28.3588 > 3.0",
+          "F_<2 = 0.0690 < 0.40"
+        ]
+      },
+      "T5B_median_chi2_red_loss": {
+        "training_fit": {
+          "model_type": "T5B",
+          "loss_metric": "median_chi2_red",
+          "f_leak": 0.189038,
+          "fitted_param": 2.117797,
+          "train_summary": {
+            "n_galaxies": 88,
+            "total_pts": 1747,
+            "sum_chi2_red": 11435.009470000736,
+            "mean_chi2_red": 129.94328943182654,
+            "median_chi2_red": 17.77288737250556,
+            "total_chi2": 290038.45033550804,
+            "pooled_chi2_red": 166.02086453091474,
+            "frac_chi2_red_lt_2": 0.09090909090909091,
+            "median_sigma_kpc": 4.288538533522671
+          }
+        },
+        "test_summary": {
+          "n_galaxies": 87,
+          "total_pts": 1644,
+          "sum_chi2_red": 20162.713670870293,
+          "mean_chi2_red": 231.75532955023326,
+          "median_chi2_red": 23.236037968485984,
+          "total_chi2": 754430.2439489921,
+          "pooled_chi2_red": 458.89917515145504,
+          "frac_chi2_red_lt_2": 0.09195402298850575,
+          "median_sigma_kpc": 5.23095859
+        },
+        "verdict": "FAIL",
+        "reasons": [
+          "M_chi2 = 23.2360 > 3.0",
+          "F_<2 = 0.0920 < 0.40"
+        ]
+      }
+    }
+  },
+  "T6": {
+    "calibrator_freeze_used": {
+      "n_calibrators": 77,
+      "M_B_fixed": -19.24888455,
+      "sigma_M_B_fixed": 0.03010569,
+      "var_M_B_fixed": 0.0009063526713554595
+    },
+    "T6_deciding": {
+      "coord_frame": "galactic",
+      "z_column": "zHD",
+      "apply_merge": true,
+      "n_hf_total_in_z_range": 496,
+      "n_hf_retained": 491,
+      "N_pix": 9,
+      "dof": 8,
+      "H0_bar_kms_Mpc": 73.5056,
+      "sigma_H0_bar_hf_only": 0.2419,
+      "sigma_H0_bar_total": 1.0474,
+      "Z_all_sky_vs_Planck": 5.2152,
+      "chi2_het": 8.9347,
+      "p_het": 0.34783764,
+      "p_T6_holm": 0.34783764,
+      "h0_min_region": 72.5255,
+      "h0_max_region": 75.0888,
+      "h0_range_max_minus_min": 2.5633,
+      " h0_rms_scatter": 0.7232,
+      "verdict": "FAIL",
+      "fail_reasons": [
+        "p_het = 0.347838 > 0.3173 (< 1-sigma regional H_0 heterogeneity)."
+      ],
+      "inconclusive_reasons": [],
+      "pixel_merging_summary": {
+        "initial_counts": {
+          "0": 63,
+          "1": 52,
+          "2": 61,
+          "3": 46,
+          "4": 3,
+          "5": 20,
+          "6": 16,
+          "7": 8,
+          "8": 77,
+          "9": 103,
+          "10": 42,
+          "11": 5
+        },
+        "merge_actions": [
+          {
+            "from_pixel": 4,
+            "to_pixel": 0,
+            "count_moved": 3
+          },
+          {
+            "from_pixel": 7,
+            "to_pixel": 2,
+            "count_moved": 8
+          },
+          {
+            "from_pixel": 11,
+            "to_pixel": 4,
+            "count_moved": 5
+          }
+        ],
+        "post_merge_counts": {
+          "0": 66,
+          "1": 52,
+          "2": 69,
+          "3": 46,
+          "4": 5,
+          "5": 20,
+          "6": 16,
+          "7": 0,
+          "8": 77,
+          "9": 103,
+          "10": 42,
+          "11": 0
+        },
+        "retained_pixels": [
+          0,
+          1,
+          2,
+          3,
+          5,
+          6,
+          8,
+          9,
+          10
+        ],
+        "dropped_sparse_pixels": [
+          4
+        ]
+      },
+      "regional_H0": [
+        {
+          "pixel_ring_id": 0,
+          "n_sn": 66,
+          "H0_kms_Mpc": 74.0787,
+          "sigma_H0_hf_only": 0.6267
+        },
+        {
+          "pixel_ring_id": 1,
+          "n_sn": 52,
+          "H0_kms_Mpc": 73.5106,
+          "sigma_H0_hf_only": 0.6649
+        },
+        {
+          "pixel_ring_id": 2,
+          "n_sn": 69,
+          "H0_kms_Mpc": 72.9294,
+          "sigma_H0_hf_only": 0.6302
+        },
+        {
+          "pixel_ring_id": 3,
+          "n_sn": 46,
+          "H0_kms_Mpc": 75.0888,
+          "sigma_H0_hf_only": 0.7261
+        },
+        {
+          "pixel_ring_id": 5,
+          "n_sn": 20,
+          "H0_kms_Mpc": 73.4131,
+          "sigma_H0_hf_only": 1.177
+        },
+        {
+          "pixel_ring_id": 6,
+          "n_sn": 16,
+          "H0_kms_Mpc": 73.5201,
+          "sigma_H0_hf_only": 1.1821
+        },
+        {
+          "pixel_ring_id": 8,
+          "n_sn": 77,
+          "H0_kms_Mpc": 73.5095,
+          "sigma_H0_hf_only": 0.514
+        },
+        {
+          "pixel_ring_id": 9,
+          "n_sn": 103,
+          "H0_kms_Mpc": 73.266,
+          "sigma_H0_hf_only": 0.4665
+        },
+        {
+          "pixel_ring_id": 10,
+          "n_sn": 42,
+          "H0_kms_Mpc": 72.5255,
+          "sigma_H0_hf_only": 0.7279
+        }
+      ]
+    },
+    "T6_sensitivity": {
+      "equatorial_RING": {
+        "coord_frame": "equatorial",
+        "z_column": "zHD",
+        "apply_merge": true,
+        "n_hf_total_in_z_range": 496,
+        "n_hf_retained": 496,
+        "N_pix": 11,
+        "dof": 10,
+        "H0_bar_kms_Mpc": 73.5011,
+        "sigma_H0_bar_hf_only": 0.2402,
+        "sigma_H0_bar_total": 1.047,
+        "Z_all_sky_vs_Planck": 5.2131,
+        "chi2_het": 14.7714,
+        "p_het": 0.14062124,
+        "p_T6_holm": 0.14062124,
+        "h0_min_region": 71.8337,
+        "h0_max_region": 76.7833,
+        "h0_range_max_minus_min": 4.9495,
+        " h0_rms_scatter": 1.4519,
+        "verdict": "INCONCLUSIVE",
+        "fail_reasons": [],
+        "inconclusive_reasons": [
+          "Intermediate heterogeneity: 0.00270 < p_het = 0.140621 <= 0.3173 (or Z_all_sky = 5.21 < 3.0)."
+        ],
+        "pixel_merging_summary": {
+          "initial_counts": {
+            "0": 27,
+            "1": 48,
+            "2": 80,
+            "3": 19,
+            "4": 137,
+            "5": 41,
+            "6": 68,
+            "7": 18,
+            "8": 22,
+            "9": 9,
+            "10": 17,
+            "11": 10
+          },
+          "merge_actions": [
+            {
+              "from_pixel": 9,
+              "to_pixel": 5,
+              "count_moved": 9
+            }
+          ],
+          "post_merge_counts": {
+            "0": 27,
+            "1": 48,
+            "2": 80,
+            "3": 19,
+            "4": 137,
+            "5": 50,
+            "6": 68,
+            "7": 18,
+            "8": 22,
+            "9": 0,
+            "10": 17,
+            "11": 10
+          },
+          "retained_pixels": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            10,
+            11
+          ],
+          "dropped_sparse_pixels": []
+        },
+        "regional_H0": [
+          {
+            "pixel_ring_id": 0,
+            "n_sn": 27,
+            "H0_kms_Mpc": 72.8375,
+            "sigma_H0_hf_only": 1.0113
+          },
+          {
+            "pixel_ring_id": 1,
+            "n_sn": 48,
+            "H0_kms_Mpc": 72.8306,
+            "sigma_H0_hf_only": 0.7405
+          },
+          {
+            "pixel_ring_id": 2,
+            "n_sn": 80,
+            "H0_kms_Mpc": 74.1907,
+            "sigma_H0_hf_only": 0.5409
+          },
+          {
+            "pixel_ring_id": 3,
+            "n_sn": 19,
+            "H0_kms_Mpc": 72.3868,
+            "sigma_H0_hf_only": 1.1249
+          },
+          {
+            "pixel_ring_id": 4,
+            "n_sn": 137,
+            "H0_kms_Mpc": 73.3373,
+            "sigma_H0_hf_only": 0.395
+          },
+          {
+            "pixel_ring_id": 5,
+            "n_sn": 50,
+            "H0_kms_Mpc": 72.9231,
+            "sigma_H0_hf_only": 0.6988
+          },
+          {
+            "pixel_ring_id": 6,
+            "n_sn": 68,
+            "H0_kms_Mpc": 73.9486,
+            "sigma_H0_hf_only": 0.6217
+          },
+          {
+            "pixel_ring_id": 7,
+            "n_sn": 18,
+            "H0_kms_Mpc": 71.8337,
+            "sigma_H0_hf_only": 1.3095
+          },
+          {
+            "pixel_ring_id": 8,
+            "n_sn": 22,
+            "H0_kms_Mpc": 72.8873,
+            "sigma_H0_hf_only": 1.0119
+          },
+          {
+            "pixel_ring_id": 10,
+            "n_sn": 17,
+            "H0_kms_Mpc": 75.5177,
+            "sigma_H0_hf_only": 1.304
+          },
+          {
+            "pixel_ring_id": 11,
+            "n_sn": 10,
+            "H0_kms_Mpc": 76.7833,
+            "sigma_H0_hf_only": 1.4951
+          }
+        ]
+      },
+      "galactic_zCMB": {
+        "coord_frame": "galactic",
+        "z_column": "zCMB",
+        "apply_merge": true,
+        "n_hf_total_in_z_range": 492,
+        "n_hf_retained": 487,
+        "N_pix": 9,
+        "dof": 8,
+        "H0_bar_kms_Mpc": 73.0436,
+        "sigma_H0_bar_hf_only": 0.2416,
+        "sigma_H0_bar_total": 1.0411,
+        "Z_all_sky_vs_Planck": 4.8461,
+        "chi2_het": 14.809,
+        "p_het": 0.06296769,
+        "p_T6_holm": 0.06296769,
+        "h0_min_region": 72.2883,
+        "h0_max_region": 75.2417,
+        "h0_range_max_minus_min": 2.9534,
+        " h0_rms_scatter": 0.9477,
+        "verdict": "INCONCLUSIVE",
+        "fail_reasons": [],
+        "inconclusive_reasons": [
+          "Intermediate heterogeneity: 0.00270 < p_het = 0.062968 <= 0.3173 (or Z_all_sky = 4.85 < 3.0)."
+        ],
+        "pixel_merging_summary": {
+          "initial_counts": {
+            "0": 63,
+            "1": 50,
+            "2": 61,
+            "3": 48,
+            "4": 4,
+            "5": 20,
+            "6": 16,
+            "7": 8,
+            "8": 77,
+            "9": 99,
+            "10": 41,
+            "11": 5
+          },
+          "merge_actions": [
+            {
+              "from_pixel": 4,
+              "to_pixel": 0,
+              "count_moved": 4
+            },
+            {
+              "from_pixel": 7,
+              "to_pixel": 2,
+              "count_moved": 8
+            },
+            {
+              "from_pixel": 11,
+              "to_pixel": 4,
+              "count_moved": 5
+            }
+          ],
+          "post_merge_counts": {
+            "0": 67,
+            "1": 50,
+            "2": 69,
+            "3": 48,
+            "4": 5,
+            "5": 20,
+            "6": 16,
+            "7": 0,
+            "8": 77,
+            "9": 99,
+            "10": 41,
+            "11": 0
+          },
+          "retained_pixels": [
+            0,
+            1,
+            2,
+            3,
+            5,
+            6,
+            8,
+            9,
+            10
+          ],
+          "dropped_sparse_pixels": [
+            4
+          ]
+        },
+        "regional_H0": [
+          {
+            "pixel_ring_id": 0,
+            "n_sn": 67,
+            "H0_kms_Mpc": 73.8449,
+            "sigma_H0_hf_only": 0.6211
+          },
+          {
+            "pixel_ring_id": 1,
+            "n_sn": 50,
+            "H0_kms_Mpc": 72.7927,
+            "sigma_H0_hf_only": 0.67
+          },
+          {
+            "pixel_ring_id": 2,
+            "n_sn": 69,
+            "H0_kms_Mpc": 72.7253,
+            "sigma_H0_hf_only": 0.6294
+          },
+          {
+            "pixel_ring_id": 3,
+            "n_sn": 48,
+            "H0_kms_Mpc": 75.2417,
+            "sigma_H0_hf_only": 0.7226
+          },
+          {
+            "pixel_ring_id": 5,
+            "n_sn": 20,
+            "H0_kms_Mpc": 72.2883,
+            "sigma_H0_hf_only": 1.1594
+          },
+          {
+            "pixel_ring_id": 6,
+            "n_sn": 16,
+            "H0_kms_Mpc": 72.5973,
+            "sigma_H0_hf_only": 1.167
+          },
+          {
+            "pixel_ring_id": 8,
+            "n_sn": 77,
+            "H0_kms_Mpc": 73.0627,
+            "sigma_H0_hf_only": 0.5106
+          },
+          {
+            "pixel_ring_id": 9,
+            "n_sn": 99,
+            "H0_kms_Mpc": 72.4804,
+            "sigma_H0_hf_only": 0.466
+          },
+          {
+            "pixel_ring_id": 10,
+            "n_sn": 41,
+            "H0_kms_Mpc": 72.365,
+            "sigma_H0_hf_only": 0.7314
+          }
+        ]
+      },
+      "galactic_drop_sparse_no_merge": {
+        "coord_frame": "galactic",
+        "z_column": "zHD",
+        "apply_merge": false,
+        "n_hf_total_in_z_range": 496,
+        "n_hf_retained": 480,
+        "N_pix": 9,
+        "dof": 8,
+        "H0_bar_kms_Mpc": 73.5415,
+        "sigma_H0_bar_hf_only": 0.2444,
+        "sigma_H0_bar_total": 1.0485,
+        "Z_all_sky_vs_Planck": 5.2414,
+        "chi2_het": 8.6121,
+        "p_het": 0.37606814,
+        "p_T6_holm": 0.37606814,
+        "h0_min_region": 72.4956,
+        "h0_max_region": 75.0982,
+        "h0_range_max_minus_min": 2.6025,
+        " h0_rms_scatter": 0.7184,
+        "verdict": "FAIL",
+        "fail_reasons": [
+          "p_het = 0.376068 > 0.3173 (< 1-sigma regional H_0 heterogeneity)."
+        ],
+        "inconclusive_reasons": [],
+        "pixel_merging_summary": {
+          "initial_counts": {
+            "0": 63,
+            "1": 52,
+            "2": 61,
+            "3": 46,
+            "4": 3,
+            "5": 20,
+            "6": 16,
+            "7": 8,
+            "8": 77,
+            "9": 103,
+            "10": 42,
+            "11": 5
+          },
+          "merge_actions": [],
+          "post_merge_counts": {
+            "0": 63,
+            "1": 52,
+            "2": 61,
+            "3": 46,
+            "4": 3,
+            "5": 20,
+            "6": 16,
+            "7": 8,
+            "8": 77,
+            "9": 103,
+            "10": 42,
+            "11": 5
+          },
+          "retained_pixels": [
+            0,
+            1,
+            2,
+            3,
+            5,
+            6,
+            8,
+            9,
+            10
+          ],
+          "dropped_sparse_pixels": [
+            4,
+            7,
+            11
+          ]
+        },
+        "regional_H0": [
+          {
+            "pixel_ring_id": 0,
+            "n_sn": 63,
+            "H0_kms_Mpc": 74.1416,
+            "sigma_H0_hf_only": 0.6359
+          },
+          {
+            "pixel_ring_id": 1,
+            "n_sn": 52,
+            "H0_kms_Mpc": 73.5329,
+            "sigma_H0_hf_only": 0.6659
+          },
+          {
+            "pixel_ring_id": 2,
+            "n_sn": 61,
+            "H0_kms_Mpc": 73.1577,
+            "sigma_H0_hf_only": 0.686
+          },
+          {
+            "pixel_ring_id": 3,
+            "n_sn": 46,
+            "H0_kms_Mpc": 75.0982,
+            "sigma_H0_hf_only": 0.7271
+          },
+          {
+            "pixel_ring_id": 5,
+            "n_sn": 20,
+            "H0_kms_Mpc": 73.4052,
+            "sigma_H0_hf_only": 1.1775
+          },
+          {
+            "pixel_ring_id": 6,
+            "n_sn": 16,
+            "H0_kms_Mpc": 73.4651,
+            "sigma_H0_hf_only": 1.1832
+          },
+          {
+            "pixel_ring_id": 8,
+            "n_sn": 77,
+            "H0_kms_Mpc": 73.4955,
+            "sigma_H0_hf_only": 0.5145
+          },
+          {
+            "pixel_ring_id": 9,
+            "n_sn": 103,
+            "H0_kms_Mpc": 73.2569,
+            "sigma_H0_hf_only": 0.4669
+          },
+          {
+            "pixel_ring_id": 10,
+            "n_sn": 42,
+            "H0_kms_Mpc": 72.4956,
+            "sigma_H0_hf_only": 0.7287
+          }
+        ]
+      }
+    }
+  },
+  "coincidence_window_sec6": {
+    "t0_cosmic_age_gyr": 13.8005,
+    "planck_present_shares": {
+      "Omega_b0": 0.049302,
+      "Omega_dm0": 0.26447,
+      "Omega_de0": 0.6847
+    },
+    "f_leak_1_over_6": {
+      "label": "Geometric f_leak = 1/6 (1:5:13)",
+      "f_leak": 0.166667,
+      "target_shares": {
+        "s_b": 0.052632,
+        "s_dm": 0.263158,
+        "s_de": 0.684211
+      },
+      "present_day_a1_deviations": {
+        "max_abs_err": 0.00333,
+        "max_rel_err": 0.06329
+      },
+      "Criterion_H_Abs_5pct": {
+        "delta_t_gyr": 2.2549,
+        "frac_of_t0": 0.1634,
+        "a_min": 0.9277,
+        "a_max": 1.0835,
+        "z_at_a_min": 0.0779,
+        "z_at_a_max": -0.0771,
+        "contains_present_a1": true
+      },
+      "Criterion_H_Rel_10pct": {
+        "delta_t_gyr": 0.9269,
+        "frac_of_t0": 0.0672,
+        "a_min": 0.9561,
+        "a_max": 1.0195,
+        "z_at_a_min": 0.046,
+        "z_at_a_max": -0.0191,
+        "contains_present_a1": true
+      }
+    },
+    "f_leak_T2A_PantheonPlus": {
+      "label": "Frozen T2-A-Pantheon+ f_leak",
+      "f_leak": 0.189038,
+      "target_shares": {
+        "s_b": 0.052632,
+        "s_dm": 0.256093,
+        "s_de": 0.691275
+      },
+      "present_day_a1_deviations": {
+        "max_abs_err": 0.00837,
+        "max_rel_err": 0.06329
+      },
+      "Criterion_H_Abs_5pct": {
+        "delta_t_gyr": 2.2956,
+        "frac_of_t0": 0.1663,
+        "a_min": 0.9372,
+        "a_max": 1.0968,
+        "z_at_a_min": 0.067,
+        "z_at_a_max": -0.0882,
+        "contains_present_a1": true
+      },
+      "Criterion_H_Rel_10pct": {
+        "delta_t_gyr": 0.7308,
+        "frac_of_t0": 0.053,
+        "a_min": 0.9693,
+        "a_max": 1.0195,
+        "z_at_a_min": 0.0317,
+        "z_at_a_max": -0.0191,
+        "contains_present_a1": true
+      }
+    }
+  }
+}

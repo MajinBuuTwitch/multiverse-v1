@@ -1,0 +1,29 @@
+{
+  "test_id": "T4b (Cluster Merger Age Cutoff Primary Pillar 3)",
+  "frozen_at": "2026-10-30T06:29:35",
+  "deciding_training_fit": {
+    "tau_lag_myr": 805,
+    "tau_lag_gyr": 0.805,
+    "train_acc": 0.875,
+    "n_train_classified": 8,
+    "n_train_correct": 7
+  },
+  "sensitivity_Bullet_median_400Myr_fit": {
+    "tau_lag_myr": 805,
+    "tau_lag_gyr": 0.805,
+    "train_acc": 0.875,
+    "n_train_classified": 8,
+    "n_train_correct": 7
+  },
+  "scripts_sha256": {
+    "clusters_t4.py": "b07659e7781322c38577839185c41e542ad162121d187fe73153ca8f5d23bfdd",
+    "cosmology.py": "998296f8916f194ecd0e3974861810425baa3903dc58ea1a624bd0a0c6657f92",
+    "freeze_data_manifest.py": "8b3eb42c59bdc0f087bf7c18794470e4d2bc44b1e1927eb5709f349c35034330",
+    "get_data.py": "04fcc4bc18750011a6ea2893407d3ce018f06e39d8f6a3b89e73a7a835d9cdf2",
+    "local_h0_t6.py": "c891441736f8971e14a2fb75274e4aa55b6948e139fd6b1198296fb2de6de9c4",
+    "run_part10_astrophysics_and_verdict.py": "ccc6a7dcf6a8202e91c279411f2a445b472c616fe703d4e6437a75ab5bb009c5",
+    "run_part8_fixes.py": "0bd1702119f1348e12ff796fa2bd16d133f349c70cb4ff0c04f51f5f736d12e8",
+    "run_part9_cosmology_tests.py": "8da8e3cbcdfeeb6a1b8be53c4730920419411fcfe74250e9b325e4639e818eb5",
+    "sparc_t5.py": "f992b875a087123f2118086bb8c9105e56d56f671e5926778e136a9bad350642"
+  }
+}

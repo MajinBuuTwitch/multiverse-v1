@@ -1,0 +1,76 @@
+MULTIVERSE v1: PHASE 3 INJECTION TESTS (BLIND ANALYSIS OF MOCK UNIVERSES)
+Handoff for Argon · 2026-10-31 · from Gregory and the planner
+
+WHAT THIS IS
+Your Stage 2 pipeline is frozen (RESULTS v5). Phase 3 checks whether that pipeline gets the right answers
+when the right answers are known. Someone else has built 45 mock universes from the real data's
+structure, with properties that are hidden from you. You analyze each one with your FROZEN Stage 2 code
+exactly as if it were the real universe, then freeze your results. The hidden answers are revealed only
+after your results are stamped. Label everything "Phase 3 injection tests: supplementary, not
+pre-registered in Stage 1".
+
+THE MOCKS
+- Folder: MOCKS_FOR_ARGON/ (copied into your workspace by Gregory), with MOCK_MANIFEST.csv listing
+  universe_id, family and round.
+- Each universe's data files are in the ORIGINAL public formats of the real datasets, so your frozen loaders
+  read them with only a path change.
+  - COSMO universes: DESI DR2 BAO, the Chen+19 compressed CMB prior, Pantheon+ and DES-Dovekie, plus
+    REFERENCES.json with that universe's own "external measurements" (its Planck-like R = ω_c/ω_b, Ω_b,
+    ω_b, H0, and BBN ω_b prior). Use these in place of the real external values wherever your registered
+    tests use them.
+  - GALAXY universes: SPARC-format rotation curves for the registered galaxy sample and the registered
+    training/test split.
+  - REGIONAL universes: the registered T6 supernova sample.
+
+RULES THAT DON'T BEND
+- Never modify, move or overwrite any frozen file (PREREG_v4, data manifest, RESULTS v5, head_to_head).
+  New code goes in a new folder, phase3/. It may import your frozen functions and point them at mock
+  inputs. If a frozen function can't take a mock input without editing it, write a thin wrapper and log
+  exactly what you overrode.
+- Treat every universe exactly like the real data: same registered procedures, priors, samplers,
+  convergence rules and decision rules. Never adjust anything per universe.
+- Don't try to work out which universe is which, and don't look for any answer key. If you come across
+  one by accident, stop reading, log it, and continue.
+- Before the first run, write phase3/PHASE3_ANALYSIS_PLAN.md (this handoff's settings, with exact
+  package versions, seeds and run order), hash it into PHASE3_ANALYSIS_PLAN.sha256, and stamp it with
+  OpenTimestamps. Any later change goes in phase3/DEVIATIONS.md, with what, why and expected effect,
+  before the affected run.
+- Log every action, with timestamps, in phase3/ACTIVITY_LOG_PHASE3.md (append-only).
+- Never change code because a result came out a particular way. Bug fixes only as logged fixes.
+
+WHAT TO RUN, PER FAMILY
+COSMO (both SN compilations separately, as registered):
+ 1. Reading B (your frozen Stage 2 code, unchanged): the full registered set: the Law 1 fit, ΛCDM, CPL,
+    and the registered verdicts for T1-L1, T1-Sign, T2-A, T2-N1 and T2-N2, using that universe's
+    REFERENCES.json.
+ 2. Reading A (the literal (a5) sound horizon from head_to_head/h2h_cosmology.py): the Law 1 fit only,
+    with the T1-Sign and T2-A statistics.
+GALAXY: the registered T5-A procedure (fit σ_ref on the training half, score the test half) and T5-B as
+ registered. Use f_leak = 1/6 as the fixed Phase 3 input for every galaxy universe, in place of the
+ Stage 2 cosmology value.
+REGIONAL: the registered T6 procedure.
+
+RUN ORDER AND COMPUTE
+- Run by ROUND (all universes in round 1, then round 2, and so on). Parallelize across CPU cores,
+  leaving about 4 threads free.
+- After the first universe of each family, log the measured runtime and the projected total. If the
+  projected total exceeds 24 hours, finish complete rounds in order and stop after the last complete
+  round that fits, logging why. Never skip a family inside a round.
+
+WHAT TO REPORT (phase3/PHASE3_RESULTS.md, plus phase3/results.json)
+For every universe:
+- COSMO: per SN compilation and reading, the posterior mean ± 1σ and the 95% interval for Ω_bc, h,
+  100ω_b and γ_u (and w0, wa for CPL), χ²_min per model, and every registered verdict with its statistic.
+- GALAXY: fitted σ_ref (mean ± 1σ, 95% interval), the median χ²_red on the test half, the registered
+  fraction statistic, and the T5-A and T5-B verdicts.
+- REGIONAL: per-region H0 with errors, the registered test statistic and p-value, and the T6 verdict.
+Also include the runtime log and any DEVIATIONS.md entries. Do NOT summarize or interpret across
+universes; that happens after the reveal.
+
+FREEZE
+Hash every output, every new code file and PHASE3_RESULTS.md into PHASE3_RESULTS_v1.sha256, and stamp it
+with OpenTimestamps.
+
+CHAT REPORT
+When it's frozen, report in chat ONLY: the folder path, the list of files, and the two manifest hashes.
+Don't restate any numbers in chat.

@@ -1,0 +1,1396 @@
+{
+  "completed_at": "2026-10-30T07:45:34",
+  "T1": {
+    "T1_L1_deciding": {
+      "joint_verdict_raw": "INCONCLUSIVE",
+      "p_T1_L1_holm": 0.19074448,
+      "fail_reasons": [],
+      "inconclusive_reasons": [
+        "Pantheon+: Intermediate Delta_chi2: A_r = -1.7119, B_r = +5.4558 (neither FAIL nor PASS).",
+        "DES-Dovekie: Intermediate Delta_chi2: A_r = -2.5780, B_r = +7.3552 (neither FAIL nor PASS)."
+      ],
+      "PantheonPlus": {
+        "chi2_min_LCDM": 1405.343634,
+        "chi2_min_Law1": 1403.631776,
+        "chi2_min_w0waCDM": 1398.175982,
+        "A_r_Law1_minus_LCDM": -1.7119,
+        "B_r_Law1_minus_w0waCDM": 5.4558,
+        "p_discovery_vs_LCDM": 0.19074448,
+        "per_run_verdict": "INCONCLUSIVE",
+        "reasons": [
+          "Intermediate Delta_chi2: A_r = -1.7119, B_r = +5.4558 (neither FAIL nor PASS)."
+        ],
+        "Law1_chain": {
+          "run_id": "T1_LAW1_Pantheon+",
+          "model_kind": "LAW1",
+          "sn_dataset": "Pantheon+",
+          "cmb_table": "lcdm",
+          "cmb_mode": "full_3x3",
+          "lya_mode": "joint_ap_deciding",
+          "n_walkers": 32,
+          "n_burn": 1000,
+          "n_prod": 4000,
+          "n_samples_total": 128000,
+          "chi2_min": 1403.631776,
+          "best_fit_vector": [
+            0.307509,
+            0.67646,
+            2.254915,
+            0.038481
+          ],
+          "convergence": {
+            "rhat_minus_1": [
+              0.001999,
+              0.00188,
+              0.003458,
+              0.002919
+            ],
+            "max_rhat_minus_1": 0.003458,
+            "tau_autocorr": [
+              51.37,
+              50.99,
+              45.59,
+              51.14
+            ],
+            "max_tau_autocorr": 51.37,
+            "ess": [
+              2491.6,
+              2510.4,
+              2807.7,
+              2502.8
+            ],
+            "min_ess": 2491.6
+          },
+          "converged": true,
+          "parameters": {
+            "Omega_m_tot": {
+              "median": 0.308254,
+              "mean": 0.308373,
+              "std": 0.005055,
+              "sigma_68": 0.005048
+            },
+            "h": {
+              "median": 0.675615,
+              "mean": 0.675406,
+              "std": 0.005244,
+              "sigma_68": 0.005306
+            },
+            "100_omega_b": {
+              "median": 2.255825,
+              "mean": 2.255841,
+              "std": 0.012954,
+              "sigma_68": 0.012904
+            },
+            "gamma_u": {
+              "median": 0.042946,
+              "mean": 0.04461,
+              "std": 0.02504,
+              "sigma_68": 0.02616
+            },
+            "w0_implied": {
+              "median": -0.957054,
+              "mean": -0.95539,
+              "std": 0.02504,
+              "sigma_68": 0.02616
+            },
+            "wa_implied": {
+              "median": -0.021748,
+              "mean": -0.023462,
+              "std": 0.01447,
+              "sigma_68": 0.01472
+            }
+          }
+        },
+        "LCDM_chain": {
+          "run_id": "T1_LCDM_Pantheon+",
+          "model_kind": "LCDM",
+          "sn_dataset": "Pantheon+",
+          "cmb_table": "lcdm",
+          "cmb_mode": "full_3x3",
+          "lya_mode": "joint_ap_deciding",
+          "n_walkers": 32,
+          "n_burn": 1000,
+          "n_prod": 4000,
+          "n_samples_total": 128000,
+          "chi2_min": 1405.343634,
+          "best_fit_vector": [
+            0.302526,
+            0.683257,
+            2.250432
+          ],
+          "convergence": {
+            "rhat_minus_1": [
+              0.000255,
+              0.000263,
+              0.001048
+            ],
+            "max_rhat_minus_1": 0.001048,
+            "tau_autocorr": [
+              37.31,
+              37.43,
+              35.15
+            ],
+            "max_tau_autocorr": 37.43,
+            "ess": [
+              3431.1,
+              3419.8,
+              3641.5
+            ],
+            "min_ess": 3419.8
+          },
+          "converged": true,
+          "parameters": {
+            "Omega_m_tot": {
+              "median": 0.302571,
+              "mean": 0.302557,
+              "std": 0.003698,
+              "sigma_68": 0.003704
+            },
+            "h": {
+              "median": 0.68324,
+              "mean": 0.683265,
+              "std": 0.002886,
+              "sigma_68": 0.002877
+            },
+            "100_omega_b": {
+              "median": 2.250675,
+              "mean": 2.250548,
+              "std": 0.01226,
+              "sigma_68": 0.012224
+            }
+          }
+        }
+      },
+      "DES_Dovekie": {
+        "chi2_min_LCDM": 1650.961491,
+        "chi2_min_Law1": 1648.38351,
+        "chi2_min_w0waCDM": 1641.028302,
+        "A_r_Law1_minus_LCDM": -2.578,
+        "B_r_Law1_minus_w0waCDM": 7.3552,
+        "p_discovery_vs_LCDM": 0.1083598,
+        "per_run_verdict": "INCONCLUSIVE",
+        "reasons": [
+          "Intermediate Delta_chi2: A_r = -2.5780, B_r = +7.3552 (neither FAIL nor PASS)."
+        ],
+        "Law1_chain": {
+          "run_id": "T1_LAW1_DES-Dovekie",
+          "model_kind": "LAW1",
+          "sn_dataset": "DES-Dovekie",
+          "cmb_table": "lcdm",
+          "cmb_mode": "full_3x3",
+          "lya_mode": "joint_ap_deciding",
+          "n_walkers": 32,
+          "n_burn": 1000,
+          "n_prod": 4000,
+          "n_samples_total": 128000,
+          "chi2_min": 1648.38351,
+          "best_fit_vector": [
+            0.308311,
+            0.675445,
+            2.255386,
+            0.043843
+          ],
+          "convergence": {
+            "rhat_minus_1": [
+              0.000641,
+              0.000582,
+              0.000882,
+              0.000339
+            ],
+            "max_rhat_minus_1": 0.000882,
+            "tau_autocorr": [
+              45.0,
+              45.79,
+              40.06,
+              46.6
+            ],
+            "max_tau_autocorr": 46.6,
+            "ess": [
+              2844.6,
+              2795.3,
+              3195.5,
+              2746.8
+            ],
+            "min_ess": 2746.8
+          },
+          "converged": true,
+          "parameters": {
+            "Omega_m_tot": {
+              "median": 0.308457,
+              "mean": 0.308578,
+              "std": 0.004835,
+              "sigma_68": 0.004847
+            },
+            "h": {
+              "median": 0.675195,
+              "mean": 0.675065,
+              "std": 0.005099,
+              "sigma_68": 0.005207
+            },
+            "100_omega_b": {
+              "median": 2.255866,
+              "mean": 2.255888,
+              "std": 0.012555,
+              "sigma_68": 0.012349
+            },
+            "gamma_u": {
+              "median": 0.045401,
+              "mean": 0.046813,
+              "std": 0.024888,
+              "sigma_68": 0.025781
+            },
+            "w0_implied": {
+              "median": -0.954599,
+              "mean": -0.953187,
+              "std": 0.024888,
+              "sigma_68": 0.025781
+            },
+            "wa_implied": {
+              "median": -0.023131,
+              "mean": -0.024689,
+              "std": 0.014463,
+              "sigma_68": 0.014626
+            }
+          }
+        },
+        "LCDM_chain": {
+          "run_id": "T1_LCDM_DES-Dovekie",
+          "model_kind": "LCDM",
+          "sn_dataset": "DES-Dovekie",
+          "cmb_table": "lcdm",
+          "cmb_mode": "full_3x3",
+          "lya_mode": "joint_ap_deciding",
+          "n_walkers": 32,
+          "n_burn": 1000,
+          "n_prod": 4000,
+          "n_samples_total": 128000,
+          "chi2_min": 1650.961491,
+          "best_fit_vector": [
+            0.302943,
+            0.68294,
+            2.249826
+          ],
+          "convergence": {
+            "rhat_minus_1": [
+              0.000824,
+              0.000853,
+              0.00043
+            ],
+            "max_rhat_minus_1": 0.000853,
+            "tau_autocorr": [
+              38.69,
+              37.6,
+              33.2
+            ],
+            "max_tau_autocorr": 38.69,
+            "ess": [
+              3308.4,
+              3404.3,
+              3855.7
+            ],
+            "min_ess": 3308.4
+          },
+          "converged": true,
+          "parameters": {
+            "Omega_m_tot": {
+              "median": 0.303009,
+              "mean": 0.303002,
+              "std": 0.00374,
+              "sigma_68": 0.003725
+            },
+            "h": {
+              "median": 0.682909,
+              "mean": 0.682927,
+              "std": 0.00292,
+              "sigma_68": 0.0029
+            },
+            "100_omega_b": {
+              "median": 2.250036,
+              "mean": 2.249981,
+              "std": 0.012564,
+              "sigma_68": 0.012463
+            }
+          }
+        }
+      }
+    },
+    "T1_Sign_secondary": {
+      "joint_verdict": "PASS",
+      "PantheonPlus": {
+        "CPL_chain": {
+          "run_id": "T1_CPL_Pantheon+",
+          "model_kind": "CPL",
+          "sn_dataset": "Pantheon+",
+          "cmb_table": "lcdm",
+          "cmb_mode": "full_3x3",
+          "lya_mode": "joint_ap_deciding",
+          "n_walkers": 32,
+          "n_burn": 1000,
+          "n_prod": 4000,
+          "n_samples_total": 128000,
+          "chi2_min": 1398.175982,
+          "best_fit_vector": [
+            0.311525,
+            0.675483,
+            2.24342,
+            -0.858501,
+            -0.492555
+          ],
+          "convergence": {
+            "rhat_minus_1": [
+              0.002399,
+              0.002657,
+              0.001166,
+              0.001071,
+              0.00294
+            ],
+            "max_rhat_minus_1": 0.00294,
+            "tau_autocorr": [
+              58.5,
+              59.05,
+              52.55,
+              57.94,
+              56.98
+            ],
+            "max_tau_autocorr": 59.05,
+            "ess": [
+              2188.0,
+              2167.5,
+              2436.0,
+              2209.2,
+              2246.3
+            ],
+            "min_ess": 2167.5
+          },
+          "converged": true,
+          "parameters": {
+            "Omega_m_tot": {
+              "median": 0.311629,
+              "mean": 0.311696,
+              "std": 0.00576,
+              "sigma_68": 0.005757
+            },
+            "h": {
+              "median": 0.67547,
+              "mean": 0.675524,
+              "std": 0.005961,
+              "sigma_68": 0.005915
+            },
+            "100_omega_b": {
+              "median": 2.243017,
+              "mean": 2.243089,
+              "std": 0.013831,
+              "sigma_68": 0.013701
+            },
+            "w0": {
+              "median": -0.854092,
+              "mean": -0.853765,
+              "std": 0.056226,
+              "sigma_68": 0.055958
+            },
+            "wa": {
+              "median": -0.513975,
+              "mean": -0.519527,
+              "std": 0.216847,
+              "sigma_68": 0.215181
+            }
+          },
+          "T1_Sign_metrics": {
+            "P_w0_gt_minus1_mcmc": 0.995984,
+            "P_w0_lt_minus1_mcmc": 0.004016,
+            "z_gaussian_w0_gt_minus1": 2.6008
+          }
+        },
+        "Delta_chi2_w0wa_minus_LCDM": -7.1677
+      },
+      "DES_Dovekie": {
+        "CPL_chain": {
+          "run_id": "T1_CPL_DES-Dovekie",
+          "model_kind": "CPL",
+          "sn_dataset": "DES-Dovekie",
+          "cmb_table": "lcdm",
+          "cmb_mode": "full_3x3",
+          "lya_mode": "joint_ap_deciding",
+          "n_walkers": 32,
+          "n_burn": 1000,
+          "n_prod": 4000,
+          "n_samples_total": 128000,
+          "chi2_min": 1641.028302,
+          "best_fit_vector": [
+            0.31322,
+            0.674133,
+            2.241805,
+            -0.830766,
+            -0.596283
+          ],
+          "convergence": {
+            "rhat_minus_1": [
+              0.000216,
+              0.000483,
+              0.001139,
+              0.000256,
+              0.000164
+            ],
+            "max_rhat_minus_1": 0.001139,
+            "tau_autocorr": [
+              53.77,
+              54.18,
+              57.49,
+              55.15,
+              55.66
+            ],
+            "max_tau_autocorr": 57.49,
+            "ess": [
+              2380.5,
+              2362.6,
+              2226.5,
+              2320.8,
+              2299.7
+            ],
+            "min_ess": 2226.5
+          },
+          "converged": true,
+          "parameters": {
+            "Omega_m_tot": {
+              "median": 0.313471,
+              "mean": 0.313539,
+              "std": 0.005517,
+              "sigma_68": 0.00546
+            },
+            "h": {
+              "median": 0.673893,
+              "mean": 0.673916,
+              "std": 0.005508,
+              "sigma_68": 0.005476
+            },
+            "100_omega_b": {
+              "median": 2.241487,
+              "mean": 2.241545,
+              "std": 0.013712,
+              "sigma_68": 0.013754
+            },
+            "w0": {
+              "median": -0.825007,
+              "mean": -0.824755,
+              "std": 0.056178,
+              "sigma_68": 0.055675
+            },
+            "wa": {
+              "median": -0.615279,
+              "mean": -0.622977,
+              "std": 0.224962,
+              "sigma_68": 0.222775
+            }
+          },
+          "T1_Sign_metrics": {
+            "P_w0_gt_minus1_mcmc": 0.999219,
+            "P_w0_lt_minus1_mcmc": 0.000781,
+            "z_gaussian_w0_gt_minus1": 3.1195
+          }
+        },
+        "Delta_chi2_w0wa_minus_LCDM": -9.9332
+      }
+    },
+    "T1_sensitivity": {
+      "Pantheon+_wCDM_CMB": {
+        "sn_dataset": "Pantheon+",
+        "cmb_table": "wcdm",
+        "lya_mode": "joint_ap_deciding",
+        "chi2_min_LCDM": 1404.7721,
+        "chi2_min_Law1": 1402.8871,
+        "chi2_min_w0waCDM": 1397.8764,
+        "A_r_Law1_minus_LCDM": -1.885,
+        "B_r_Law1_minus_w0waCDM": 5.0107,
+        "Law1_gamma_u_best": 0.04037,
+        "CPL_w0_best": -0.8609,
+        "CPL_wa_best": -0.4741,
+        "per_run_verdict": "INCONCLUSIVE",
+        "reasons": [
+          "Intermediate Delta_chi2: A_r = -1.8850, B_r = +5.0107 (neither FAIL nor PASS)."
+        ]
+      },
+      "DES-Dovekie_wCDM_CMB": {
+        "sn_dataset": "DES-Dovekie",
+        "cmb_table": "wcdm",
+        "lya_mode": "joint_ap_deciding",
+        "chi2_min_LCDM": 1650.4118,
+        "chi2_min_Law1": 1647.6209,
+        "chi2_min_w0waCDM": 1640.7926,
+        "A_r_Law1_minus_LCDM": -2.7909,
+        "B_r_Law1_minus_w0waCDM": 6.8283,
+        "Law1_gamma_u_best": 0.04561,
+        "CPL_w0_best": -0.8337,
+        "CPL_wa_best": -0.5758,
+        "per_run_verdict": "INCONCLUSIVE",
+        "reasons": [
+          "Intermediate Delta_chi2: A_r = -2.7909, B_r = +6.8283 (neither FAIL nor PASS)."
+        ]
+      },
+      "Pantheon+_Lya_r0": {
+        "sn_dataset": "Pantheon+",
+        "cmb_table": "lcdm",
+        "lya_mode": "joint_ap_r0",
+        "chi2_min_LCDM": 1405.5995,
+        "chi2_min_Law1": 1403.7816,
+        "chi2_min_w0waCDM": 1398.8962,
+        "A_r_Law1_minus_LCDM": -1.8179,
+        "B_r_Law1_minus_w0waCDM": 4.8853,
+        "Law1_gamma_u_best": 0.03995,
+        "CPL_w0_best": -0.8616,
+        "CPL_wa_best": -0.4807,
+        "per_run_verdict": "INCONCLUSIVE",
+        "reasons": [
+          "Intermediate Delta_chi2: A_r = -1.8179, B_r = +4.8853 (neither FAIL nor PASS)."
+        ]
+      },
+      "DES-Dovekie_Lya_r0": {
+        "sn_dataset": "DES-Dovekie",
+        "cmb_table": "lcdm",
+        "lya_mode": "joint_ap_r0",
+        "chi2_min_LCDM": 1651.2065,
+        "chi2_min_Law1": 1648.5133,
+        "chi2_min_w0waCDM": 1641.7942,
+        "A_r_Law1_minus_LCDM": -2.6933,
+        "B_r_Law1_minus_w0waCDM": 6.7191,
+        "Law1_gamma_u_best": 0.04512,
+        "CPL_w0_best": -0.8332,
+        "CPL_wa_best": -0.5888,
+        "per_run_verdict": "INCONCLUSIVE",
+        "reasons": [
+          "Intermediate Delta_chi2: A_r = -2.6933, B_r = +6.7191 (neither FAIL nor PASS)."
+        ]
+      },
+      "Pantheon+_unmodified_BAO": {
+        "sn_dataset": "Pantheon+",
+        "cmb_table": "lcdm",
+        "lya_mode": "unmodified",
+        "chi2_min_LCDM": 1404.1818,
+        "chi2_min_Law1": 1402.1952,
+        "chi2_min_w0waCDM": 1396.6331,
+        "A_r_Law1_minus_LCDM": -1.9866,
+        "B_r_Law1_minus_w0waCDM": 5.5621,
+        "Law1_gamma_u_best": 0.04175,
+        "CPL_w0_best": -0.8521,
+        "CPL_wa_best": -0.5178,
+        "per_run_verdict": "INCONCLUSIVE",
+        "reasons": [
+          "Intermediate Delta_chi2: A_r = -1.9866, B_r = +5.5621 (neither FAIL nor PASS)."
+        ]
+      },
+      "DES-Dovekie_unmodified_BAO": {
+        "sn_dataset": "DES-Dovekie",
+        "cmb_table": "lcdm",
+        "lya_mode": "unmodified",
+        "chi2_min_LCDM": 1649.8427,
+        "chi2_min_Law1": 1646.9174,
+        "chi2_min_w0waCDM": 1639.3567,
+        "A_r_Law1_minus_LCDM": -2.9253,
+        "B_r_Law1_minus_w0waCDM": 7.5607,
+        "Law1_gamma_u_best": 0.047,
+        "CPL_w0_best": -0.8225,
+        "CPL_wa_best": -0.6306,
+        "per_run_verdict": "INCONCLUSIVE",
+        "reasons": [
+          "Intermediate Delta_chi2: A_r = -2.9253, B_r = +7.5607 (neither FAIL nor PASS)."
+        ]
+      }
+    }
+  },
+  "T2": {
+    "T2_A_deciding": {
+      "joint_verdict": "FAIL",
+      "fail_reasons": [
+        "Pantheon+ |R_pred - R_Planck|/sigma_comb = 3.74sigma > 2.0sigma.",
+        "DES-Dovekie |R_pred - R_Planck|/sigma_comb = 3.58sigma > 2.0sigma."
+      ],
+      "PantheonPlus": {
+        "sn_dataset": "Pantheon+",
+        "Omega_bc_median": 0.308725,
+        "sigma_Omega_bc": 0.006049,
+        "f_leak": 0.189038,
+        "sigma_f_leak": 0.019155,
+        "R_pred": 4.865772,
+        "sigma_R_pred": 0.114933,
+        "R_Planck": 5.36,
+        "sigma_Planck": 0.065,
+        "sigma_comb": 0.13204,
+        "diff_R_pred_minus_Planck": -0.494228,
+        "tension_sigma": 3.743,
+        "per_run_verdict": "FAIL"
+      },
+      "DES_Dovekie": {
+        "sn_dataset": "DES-Dovekie",
+        "Omega_bc_median": 0.310765,
+        "sigma_Omega_bc": 0.005757,
+        "f_leak": 0.182578,
+        "sigma_f_leak": 0.018231,
+        "R_pred": 4.904531,
+        "sigma_R_pred": 0.109383,
+        "R_Planck": 5.36,
+        "sigma_Planck": 0.065,
+        "sigma_comb": 0.127239,
+        "diff_R_pred_minus_Planck": -0.455469,
+        "tension_sigma": 3.5796,
+        "per_run_verdict": "FAIL"
+      }
+    },
+    "T2_N1_secondary": {
+      "Omega_b_model": 0.052632,
+      "Omega_b_Planck": 0.0493,
+      "sigma_Omega_b_Planck": 0.00086,
+      "diff": 0.003332,
+      "tension_sigma": 3.8739,
+      "verdict": "FAIL"
+    },
+    "T2_N2_secondary": {
+      "H0_pred_kms_Mpc": 65.1943,
+      "sigma_H0_pred": 0.2186,
+      "H0_Planck_kms_Mpc": 67.36,
+      "sigma_H0_Planck": 0.54,
+      "sigma_comb_H0": 0.5826,
+      "diff_H0": -2.1657,
+      "tension_sigma": -3.7175,
+      "verdict": "FAIL",
+      "sensitivity": {
+        "DESI_LUNA_BBN_vs_Planck": {
+          "H0_pred": 64.9169,
+          "sigma_H0_pred": 0.8049,
+          "tension_sigma": -2.5207
+        },
+        "Cooke18_BBN_vs_Planck": {
+          "H0_pred": 64.1514,
+          "sigma_H0_pred": 0.2814,
+          "tension_sigma_vs_Planck": -5.2695,
+          "tension_sigma_vs_DESI_BBN_68p52": -6.4163
+        }
+      }
+    },
+    "T2_sensitivity": {
+      "T2_B_constrained": {
+        "joint_verdict": "FAIL",
+        "PantheonPlus": {
+          "Omega_bc_median": 0.318258,
+          "sigma_Omega_bc": 0.005753,
+          "f_leak": 0.158849,
+          "R_pred": 5.046905,
+          "sigma_R_pred": 0.109312,
+          "sigma_comb": 0.127178,
+          "tension_sigma_vs_Planck": 2.4619,
+          "chi2_min": 1406.183649,
+          "Delta_chi2_vs_w0waCDM": 8.5391,
+          "per_run_verdict": "FAIL"
+        },
+        "DES_Dovekie": {
+          "Omega_bc_median": 0.31904,
+          "sigma_Omega_bc": 0.005809,
+          "f_leak": 0.156373,
+          "R_pred": 5.061763,
+          "sigma_R_pred": 0.110368,
+          "sigma_comb": 0.128086,
+          "tension_sigma_vs_Planck": 2.3284,
+          "chi2_min": 1650.621924,
+          "Delta_chi2_vs_w0waCDM": 9.8219,
+          "per_run_verdict": "FAIL"
+        }
+      },
+      "T2_A_alternate_priors": {
+        "PantheonPlus_Cooke18": {
+          "sn_dataset": "Pantheon+",
+          "Omega_bc_median": 0.313999,
+          "sigma_Omega_bc": 0.005819,
+          "f_leak": 0.172337,
+          "sigma_f_leak": 0.018426,
+          "R_pred": 4.96598,
+          "sigma_R_pred": 0.110558,
+          "R_Planck": 5.36,
+          "sigma_Planck": 0.065,
+          "sigma_comb": 0.12825,
+          "diff_R_pred_minus_Planck": -0.39402,
+          "tension_sigma": 3.0723,
+          "per_run_verdict": "FAIL"
+        },
+        "DES_Dovekie_Cooke18": {
+          "sn_dataset": "DES-Dovekie",
+          "Omega_bc_median": 0.316469,
+          "sigma_Omega_bc": 0.005489,
+          "f_leak": 0.164514,
+          "sigma_f_leak": 0.017383,
+          "R_pred": 5.012917,
+          "sigma_R_pred": 0.104298,
+          "R_Planck": 5.36,
+          "sigma_Planck": 0.065,
+          "sigma_comb": 0.122895,
+          "diff_R_pred_minus_Planck": -0.347083,
+          "tension_sigma": 2.8242,
+          "per_run_verdict": "FAIL"
+        },
+        "PantheonPlus_MarginalCMB": {
+          "sn_dataset": "Pantheon+",
+          "Omega_bc_median": 0.310955,
+          "sigma_Omega_bc": 0.005821,
+          "f_leak": 0.181976,
+          "sigma_f_leak": 0.018434,
+          "R_pred": 4.908146,
+          "sigma_R_pred": 0.110603,
+          "R_Planck": 5.36,
+          "sigma_Planck": 0.065,
+          "sigma_comb": 0.128289,
+          "diff_R_pred_minus_Planck": -0.451854,
+          "tension_sigma": 3.5222,
+          "per_run_verdict": "FAIL"
+        },
+        "DES_Dovekie_MarginalCMB": {
+          "sn_dataset": "DES-Dovekie",
+          "Omega_bc_median": 0.312512,
+          "sigma_Omega_bc": 0.005336,
+          "f_leak": 0.177047,
+          "sigma_f_leak": 0.016897,
+          "R_pred": 4.937719,
+          "sigma_R_pred": 0.10138,
+          "R_Planck": 5.36,
+          "sigma_Planck": 0.065,
+          "sigma_comb": 0.120428,
+          "diff_R_pred_minus_Planck": -0.422281,
+          "tension_sigma": 3.5065,
+          "per_run_verdict": "FAIL"
+        }
+      }
+    }
+  },
+  "T6": {
+    "calibrator_freeze_used": {
+      "n_calibrators": 77,
+      "M_B_fixed": -19.24888455,
+      "sigma_M_B_fixed": 0.03010569,
+      "var_M_B_fixed": 0.0009063526713554595
+    },
+    "T6_deciding": {
+      "coord_frame": "galactic",
+      "z_column": "zHD",
+      "apply_merge": true,
+      "n_hf_total_in_z_range": 496,
+      "n_hf_retained": 491,
+      "N_pix": 9,
+      "dof": 8,
+      "H0_bar_kms_Mpc": 73.5056,
+      "sigma_H0_bar_hf_only": 0.2419,
+      "sigma_H0_bar_total": 1.0474,
+      "Z_all_sky_vs_Planck": 5.2152,
+      "chi2_het": 8.9347,
+      "p_het": 0.34783764,
+      "p_T6_holm": 0.34783764,
+      "h0_min_region": 72.5255,
+      "h0_max_region": 75.0888,
+      "h0_range_max_minus_min": 2.5633,
+      " h0_rms_scatter": 0.7232,
+      "verdict": "FAIL",
+      "fail_reasons": [
+        "p_het = 0.347838 > 0.3173 (< 1-sigma regional H_0 heterogeneity)."
+      ],
+      "inconclusive_reasons": [],
+      "pixel_merging_summary": {
+        "initial_counts": {
+          "0": 63,
+          "1": 52,
+          "2": 61,
+          "3": 46,
+          "4": 3,
+          "5": 20,
+          "6": 16,
+          "7": 8,
+          "8": 77,
+          "9": 103,
+          "10": 42,
+          "11": 5
+        },
+        "merge_actions": [
+          {
+            "from_pixel": 4,
+            "to_pixel": 0,
+            "count_moved": 3
+          },
+          {
+            "from_pixel": 7,
+            "to_pixel": 2,
+            "count_moved": 8
+          },
+          {
+            "from_pixel": 11,
+            "to_pixel": 4,
+            "count_moved": 5
+          }
+        ],
+        "post_merge_counts": {
+          "0": 66,
+          "1": 52,
+          "2": 69,
+          "3": 46,
+          "4": 5,
+          "5": 20,
+          "6": 16,
+          "7": 0,
+          "8": 77,
+          "9": 103,
+          "10": 42,
+          "11": 0
+        },
+        "retained_pixels": [
+          0,
+          1,
+          2,
+          3,
+          5,
+          6,
+          8,
+          9,
+          10
+        ],
+        "dropped_sparse_pixels": [
+          4
+        ]
+      },
+      "regional_H0": [
+        {
+          "pixel_ring_id": 0,
+          "n_sn": 66,
+          "H0_kms_Mpc": 74.0787,
+          "sigma_H0_hf_only": 0.6267
+        },
+        {
+          "pixel_ring_id": 1,
+          "n_sn": 52,
+          "H0_kms_Mpc": 73.5106,
+          "sigma_H0_hf_only": 0.6649
+        },
+        {
+          "pixel_ring_id": 2,
+          "n_sn": 69,
+          "H0_kms_Mpc": 72.9294,
+          "sigma_H0_hf_only": 0.6302
+        },
+        {
+          "pixel_ring_id": 3,
+          "n_sn": 46,
+          "H0_kms_Mpc": 75.0888,
+          "sigma_H0_hf_only": 0.7261
+        },
+        {
+          "pixel_ring_id": 5,
+          "n_sn": 20,
+          "H0_kms_Mpc": 73.4131,
+          "sigma_H0_hf_only": 1.177
+        },
+        {
+          "pixel_ring_id": 6,
+          "n_sn": 16,
+          "H0_kms_Mpc": 73.5201,
+          "sigma_H0_hf_only": 1.1821
+        },
+        {
+          "pixel_ring_id": 8,
+          "n_sn": 77,
+          "H0_kms_Mpc": 73.5095,
+          "sigma_H0_hf_only": 0.514
+        },
+        {
+          "pixel_ring_id": 9,
+          "n_sn": 103,
+          "H0_kms_Mpc": 73.266,
+          "sigma_H0_hf_only": 0.4665
+        },
+        {
+          "pixel_ring_id": 10,
+          "n_sn": 42,
+          "H0_kms_Mpc": 72.5255,
+          "sigma_H0_hf_only": 0.7279
+        }
+      ]
+    },
+    "T6_sensitivity": {
+      "equatorial_RING": {
+        "coord_frame": "equatorial",
+        "z_column": "zHD",
+        "apply_merge": true,
+        "n_hf_total_in_z_range": 496,
+        "n_hf_retained": 496,
+        "N_pix": 11,
+        "dof": 10,
+        "H0_bar_kms_Mpc": 73.5011,
+        "sigma_H0_bar_hf_only": 0.2402,
+        "sigma_H0_bar_total": 1.047,
+        "Z_all_sky_vs_Planck": 5.2131,
+        "chi2_het": 14.7714,
+        "p_het": 0.14062124,
+        "p_T6_holm": 0.14062124,
+        "h0_min_region": 71.8337,
+        "h0_max_region": 76.7833,
+        "h0_range_max_minus_min": 4.9495,
+        " h0_rms_scatter": 1.4519,
+        "verdict": "INCONCLUSIVE",
+        "fail_reasons": [],
+        "inconclusive_reasons": [
+          "Intermediate heterogeneity: 0.00270 < p_het = 0.140621 <= 0.3173 (or Z_all_sky = 5.21 < 3.0)."
+        ],
+        "pixel_merging_summary": {
+          "initial_counts": {
+            "0": 27,
+            "1": 48,
+            "2": 80,
+            "3": 19,
+            "4": 137,
+            "5": 41,
+            "6": 68,
+            "7": 18,
+            "8": 22,
+            "9": 9,
+            "10": 17,
+            "11": 10
+          },
+          "merge_actions": [
+            {
+              "from_pixel": 9,
+              "to_pixel": 5,
+              "count_moved": 9
+            }
+          ],
+          "post_merge_counts": {
+            "0": 27,
+            "1": 48,
+            "2": 80,
+            "3": 19,
+            "4": 137,
+            "5": 50,
+            "6": 68,
+            "7": 18,
+            "8": 22,
+            "9": 0,
+            "10": 17,
+            "11": 10
+          },
+          "retained_pixels": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            10,
+            11
+          ],
+          "dropped_sparse_pixels": []
+        },
+        "regional_H0": [
+          {
+            "pixel_ring_id": 0,
+            "n_sn": 27,
+            "H0_kms_Mpc": 72.8375,
+            "sigma_H0_hf_only": 1.0113
+          },
+          {
+            "pixel_ring_id": 1,
+            "n_sn": 48,
+            "H0_kms_Mpc": 72.8306,
+            "sigma_H0_hf_only": 0.7405
+          },
+          {
+            "pixel_ring_id": 2,
+            "n_sn": 80,
+            "H0_kms_Mpc": 74.1907,
+            "sigma_H0_hf_only": 0.5409
+          },
+          {
+            "pixel_ring_id": 3,
+            "n_sn": 19,
+            "H0_kms_Mpc": 72.3868,
+            "sigma_H0_hf_only": 1.1249
+          },
+          {
+            "pixel_ring_id": 4,
+            "n_sn": 137,
+            "H0_kms_Mpc": 73.3373,
+            "sigma_H0_hf_only": 0.395
+          },
+          {
+            "pixel_ring_id": 5,
+            "n_sn": 50,
+            "H0_kms_Mpc": 72.9231,
+            "sigma_H0_hf_only": 0.6988
+          },
+          {
+            "pixel_ring_id": 6,
+            "n_sn": 68,
+            "H0_kms_Mpc": 73.9486,
+            "sigma_H0_hf_only": 0.6217
+          },
+          {
+            "pixel_ring_id": 7,
+            "n_sn": 18,
+            "H0_kms_Mpc": 71.8337,
+            "sigma_H0_hf_only": 1.3095
+          },
+          {
+            "pixel_ring_id": 8,
+            "n_sn": 22,
+            "H0_kms_Mpc": 72.8873,
+            "sigma_H0_hf_only": 1.0119
+          },
+          {
+            "pixel_ring_id": 10,
+            "n_sn": 17,
+            "H0_kms_Mpc": 75.5177,
+            "sigma_H0_hf_only": 1.304
+          },
+          {
+            "pixel_ring_id": 11,
+            "n_sn": 10,
+            "H0_kms_Mpc": 76.7833,
+            "sigma_H0_hf_only": 1.4951
+          }
+        ]
+      },
+      "galactic_zCMB": {
+        "coord_frame": "galactic",
+        "z_column": "zCMB",
+        "apply_merge": true,
+        "n_hf_total_in_z_range": 492,
+        "n_hf_retained": 487,
+        "N_pix": 9,
+        "dof": 8,
+        "H0_bar_kms_Mpc": 73.0436,
+        "sigma_H0_bar_hf_only": 0.2416,
+        "sigma_H0_bar_total": 1.0411,
+        "Z_all_sky_vs_Planck": 4.8461,
+        "chi2_het": 14.809,
+        "p_het": 0.06296769,
+        "p_T6_holm": 0.06296769,
+        "h0_min_region": 72.2883,
+        "h0_max_region": 75.2417,
+        "h0_range_max_minus_min": 2.9534,
+        " h0_rms_scatter": 0.9477,
+        "verdict": "INCONCLUSIVE",
+        "fail_reasons": [],
+        "inconclusive_reasons": [
+          "Intermediate heterogeneity: 0.00270 < p_het = 0.062968 <= 0.3173 (or Z_all_sky = 4.85 < 3.0)."
+        ],
+        "pixel_merging_summary": {
+          "initial_counts": {
+            "0": 63,
+            "1": 50,
+            "2": 61,
+            "3": 48,
+            "4": 4,
+            "5": 20,
+            "6": 16,
+            "7": 8,
+            "8": 77,
+            "9": 99,
+            "10": 41,
+            "11": 5
+          },
+          "merge_actions": [
+            {
+              "from_pixel": 4,
+              "to_pixel": 0,
+              "count_moved": 4
+            },
+            {
+              "from_pixel": 7,
+              "to_pixel": 2,
+              "count_moved": 8
+            },
+            {
+              "from_pixel": 11,
+              "to_pixel": 4,
+              "count_moved": 5
+            }
+          ],
+          "post_merge_counts": {
+            "0": 67,
+            "1": 50,
+            "2": 69,
+            "3": 48,
+            "4": 5,
+            "5": 20,
+            "6": 16,
+            "7": 0,
+            "8": 77,
+            "9": 99,
+            "10": 41,
+            "11": 0
+          },
+          "retained_pixels": [
+            0,
+            1,
+            2,
+            3,
+            5,
+            6,
+            8,
+            9,
+            10
+          ],
+          "dropped_sparse_pixels": [
+            4
+          ]
+        },
+        "regional_H0": [
+          {
+            "pixel_ring_id": 0,
+            "n_sn": 67,
+            "H0_kms_Mpc": 73.8449,
+            "sigma_H0_hf_only": 0.6211
+          },
+          {
+            "pixel_ring_id": 1,
+            "n_sn": 50,
+            "H0_kms_Mpc": 72.7927,
+            "sigma_H0_hf_only": 0.67
+          },
+          {
+            "pixel_ring_id": 2,
+            "n_sn": 69,
+            "H0_kms_Mpc": 72.7253,
+            "sigma_H0_hf_only": 0.6294
+          },
+          {
+            "pixel_ring_id": 3,
+            "n_sn": 48,
+            "H0_kms_Mpc": 75.2417,
+            "sigma_H0_hf_only": 0.7226
+          },
+          {
+            "pixel_ring_id": 5,
+            "n_sn": 20,
+            "H0_kms_Mpc": 72.2883,
+            "sigma_H0_hf_only": 1.1594
+          },
+          {
+            "pixel_ring_id": 6,
+            "n_sn": 16,
+            "H0_kms_Mpc": 72.5973,
+            "sigma_H0_hf_only": 1.167
+          },
+          {
+            "pixel_ring_id": 8,
+            "n_sn": 77,
+            "H0_kms_Mpc": 73.0627,
+            "sigma_H0_hf_only": 0.5106
+          },
+          {
+            "pixel_ring_id": 9,
+            "n_sn": 99,
+            "H0_kms_Mpc": 72.4804,
+            "sigma_H0_hf_only": 0.466
+          },
+          {
+            "pixel_ring_id": 10,
+            "n_sn": 41,
+            "H0_kms_Mpc": 72.365,
+            "sigma_H0_hf_only": 0.7314
+          }
+        ]
+      },
+      "galactic_drop_sparse_no_merge": {
+        "coord_frame": "galactic",
+        "z_column": "zHD",
+        "apply_merge": false,
+        "n_hf_total_in_z_range": 496,
+        "n_hf_retained": 480,
+        "N_pix": 9,
+        "dof": 8,
+        "H0_bar_kms_Mpc": 73.5415,
+        "sigma_H0_bar_hf_only": 0.2444,
+        "sigma_H0_bar_total": 1.0485,
+        "Z_all_sky_vs_Planck": 5.2414,
+        "chi2_het": 8.6121,
+        "p_het": 0.37606814,
+        "p_T6_holm": 0.37606814,
+        "h0_min_region": 72.4956,
+        "h0_max_region": 75.0982,
+        "h0_range_max_minus_min": 2.6025,
+        " h0_rms_scatter": 0.7184,
+        "verdict": "FAIL",
+        "fail_reasons": [
+          "p_het = 0.376068 > 0.3173 (< 1-sigma regional H_0 heterogeneity)."
+        ],
+        "inconclusive_reasons": [],
+        "pixel_merging_summary": {
+          "initial_counts": {
+            "0": 63,
+            "1": 52,
+            "2": 61,
+            "3": 46,
+            "4": 3,
+            "5": 20,
+            "6": 16,
+            "7": 8,
+            "8": 77,
+            "9": 103,
+            "10": 42,
+            "11": 5
+          },
+          "merge_actions": [],
+          "post_merge_counts": {
+            "0": 63,
+            "1": 52,
+            "2": 61,
+            "3": 46,
+            "4": 3,
+            "5": 20,
+            "6": 16,
+            "7": 8,
+            "8": 77,
+            "9": 103,
+            "10": 42,
+            "11": 5
+          },
+          "retained_pixels": [
+            0,
+            1,
+            2,
+            3,
+            5,
+            6,
+            8,
+            9,
+            10
+          ],
+          "dropped_sparse_pixels": [
+            4,
+            7,
+            11
+          ]
+        },
+        "regional_H0": [
+          {
+            "pixel_ring_id": 0,
+            "n_sn": 63,
+            "H0_kms_Mpc": 74.1416,
+            "sigma_H0_hf_only": 0.6359
+          },
+          {
+            "pixel_ring_id": 1,
+            "n_sn": 52,
+            "H0_kms_Mpc": 73.5329,
+            "sigma_H0_hf_only": 0.6659
+          },
+          {
+            "pixel_ring_id": 2,
+            "n_sn": 61,
+            "H0_kms_Mpc": 73.1577,
+            "sigma_H0_hf_only": 0.686
+          },
+          {
+            "pixel_ring_id": 3,
+            "n_sn": 46,
+            "H0_kms_Mpc": 75.0982,
+            "sigma_H0_hf_only": 0.7271
+          },
+          {
+            "pixel_ring_id": 5,
+            "n_sn": 20,
+            "H0_kms_Mpc": 73.4052,
+            "sigma_H0_hf_only": 1.1775
+          },
+          {
+            "pixel_ring_id": 6,
+            "n_sn": 16,
+            "H0_kms_Mpc": 73.4651,
+            "sigma_H0_hf_only": 1.1832
+          },
+          {
+            "pixel_ring_id": 8,
+            "n_sn": 77,
+            "H0_kms_Mpc": 73.4955,
+            "sigma_H0_hf_only": 0.5145
+          },
+          {
+            "pixel_ring_id": 9,
+            "n_sn": 103,
+            "H0_kms_Mpc": 73.2569,
+            "sigma_H0_hf_only": 0.4669
+          },
+          {
+            "pixel_ring_id": 10,
+            "n_sn": 42,
+            "H0_kms_Mpc": 72.4956,
+            "sigma_H0_hf_only": 0.7287
+          }
+        ]
+      }
+    }
+  },
+  "coincidence_window_sec6": {
+    "t0_cosmic_age_gyr": 13.8005,
+    "planck_present_shares": {
+      "Omega_b0": 0.049302,
+      "Omega_dm0": 0.26447,
+      "Omega_de0": 0.6847
+    },
+    "f_leak_1_over_6": {
+      "label": "Geometric f_leak = 1/6 (1:5:13)",
+      "f_leak": 0.166667,
+      "target_shares": {
+        "s_b": 0.052632,
+        "s_dm": 0.263158,
+        "s_de": 0.684211
+      },
+      "present_day_a1_deviations": {
+        "max_abs_err": 0.00333,
+        "max_rel_err": 0.06329
+      },
+      "Criterion_H_Abs_5pct": {
+        "delta_t_gyr": 2.2549,
+        "frac_of_t0": 0.1634,
+        "a_min": 0.9277,
+        "a_max": 1.0835,
+        "z_at_a_min": 0.0779,
+        "z_at_a_max": -0.0771,
+        "contains_present_a1": true
+      },
+      "Criterion_H_Rel_10pct": {
+        "delta_t_gyr": 0.9269,
+        "frac_of_t0": 0.0672,
+        "a_min": 0.9561,
+        "a_max": 1.0195,
+        "z_at_a_min": 0.046,
+        "z_at_a_max": -0.0191,
+        "contains_present_a1": true
+      }
+    },
+    "f_leak_T2A_PantheonPlus": {
+      "label": "Frozen T2-A-Pantheon+ f_leak",
+      "f_leak": 0.189038,
+      "target_shares": {
+        "s_b": 0.052632,
+        "s_dm": 0.256093,
+        "s_de": 0.691275
+      },
+      "present_day_a1_deviations": {
+        "max_abs_err": 0.00837,
+        "max_rel_err": 0.06329
+      },
+      "Criterion_H_Abs_5pct": {
+        "delta_t_gyr": 2.2956,
+        "frac_of_t0": 0.1663,
+        "a_min": 0.9372,
+        "a_max": 1.0968,
+        "z_at_a_min": 0.067,
+        "z_at_a_max": -0.0882,
+        "contains_present_a1": true
+      },
+      "Criterion_H_Rel_10pct": {
+        "delta_t_gyr": 0.7308,
+        "frac_of_t0": 0.053,
+        "a_min": 0.9693,
+        "a_max": 1.0195,
+        "z_at_a_min": 0.0317,
+        "z_at_a_max": -0.0191,
+        "contains_present_a1": true
+      }
+    }
+  }
+}

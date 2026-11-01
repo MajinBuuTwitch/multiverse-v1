@@ -1,0 +1,55 @@
+{
+  "G9-a": {
+    "gate": "G9-a",
+    "target_Omega_m": 0.2975,
+    "target_sigma": 0.0086,
+    "obtained_Omega_m": 0.2971795816849694,
+    "obtained_sigma": 0.008615583256342417,
+    "obtained_hrd_Mpc": 101.5478700241969,
+    "chi2_min": 10.282297566702711,
+    "diff_in_target_sigma": 0.0372579436082095,
+    "tolerance_sigma": 0.3,
+    "passed": true
+  },
+  "G9-b": {
+    "gate": "G9-b",
+    "obtained_Omega_m": 0.3154829179729922,
+    "obtained_sigma_Omega_m": 0.008438128857672814,
+    "obtained_h": 0.6737370691315694,
+    "obtained_sigma_h": 0.006083444692155824,
+    "obtained_100_omega_b": 2.2359999959243995,
+    "obtained_sigma_100_omega_b": 0.014999999999968315,
+    "diff_Omega_m_sigma": 0.025057256574272806,
+    "diff_h_sigma": 0.025383172512854015,
+    "diff_wb_sigma": 2.717067163852486e-07,
+    "max_diff_sigma": 0.025383172512854015,
+    "tolerance_sigma": 0.3,
+    "passed": true
+  },
+  "G9-c": {
+    "gate": "G9-c",
+    "target_w0": -0.803,
+    "target_sigma_w0": 0.054,
+    "target_wa": -0.72,
+    "target_sigma_wa": 0.21,
+    "obtained_Omega_m": 0.3128637005294595,
+    "obtained_h": 0.6744330645549279,
+    "obtained_100_omega_b": 2.2422722772090355,
+    "obtained_w0": -0.8224848476449165,
+    "obtained_wa": -0.6306124221504065,
+    "chi2_min": 1639.3568054464781,
+    "diff_w0_sigma": 0.3608305119428968,
+    "diff_wa_sigma": 0.4256551326171119,
+    "tolerance_sigma": 1.0,
+    "passed": true
+  },
+  "G9-d": {
+    "gate": "G9-d",
+    "numpy_version": "2.5.4",
+    "scipy_version": "1.18.1",
+    "max_abs_error": 1.4397483205641493e-11,
+    "tolerance": 1e-10,
+    "passed": true
+  },
+  "all_passed": true
+}

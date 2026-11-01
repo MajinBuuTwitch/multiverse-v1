@@ -1,0 +1,64 @@
+{
+  "task_id": "sens__PantheonPlus__reading_A__M1_gamma0p5__seed_20261032",
+  "run_id": "sens__PantheonPlus__reading_A__M1_gamma0p5",
+  "group": "prior_sensitivity",
+  "model": "M1",
+  "sn_name": "Pantheon+",
+  "reading": "A",
+  "gamma_u_prior": [
+    0.0,
+    0.5
+  ],
+  "seed": 20261032,
+  "nlive": 1000,
+  "dlogz": 0.01,
+  "ndim": 4,
+  "started_at": "2026-10-30T21:52:28",
+  "completed_at": "2026-10-30T23:30:01",
+  "elapsed_sec": 5853.719175000209,
+  "niter": 20236,
+  "ncall": 433731,
+  "lnZ": -717.0680175349999,
+  "lnZ_err_dynesty": 0.12084745396980014,
+  "chi2_min_ns": 1402.9044363453781,
+  "chi2_min_opt": 1402.8979299922044,
+  "best_theta_ns": [
+    0.3072918523926956,
+    0.6781261853116217,
+    2.253323423229979,
+    0.03621102080009507
+  ],
+  "best_theta_opt": [
+    0.3072982482127462,
+    0.6782166896703083,
+    2.252714161932946,
+    0.03476468032629058
+  ],
+  "parameters": {
+    "Omega_bc": {
+      "mean": 0.3085453096462201,
+      "std": 0.004961941987572539,
+      "best_ns": 0.3072918523926956,
+      "best_opt": 0.3072982482127462
+    },
+    "h": {
+      "mean": 0.6767026058230361,
+      "std": 0.005175023684699784,
+      "best_ns": 0.6781261853116217,
+      "best_opt": 0.6782166896703083
+    },
+    "100_omega_b": {
+      "mean": 2.253365402370342,
+      "std": 0.012941930952965653,
+      "best_ns": 2.253323423229979,
+      "best_opt": 2.252714161932946
+    },
+    "gamma_u": {
+      "mean": 0.04276668091478139,
+      "std": 0.025009108045556373,
+      "best_ns": 0.03621102080009507,
+      "best_opt": 0.03476468032629058
+    }
+  },
+  "chain_file": "head_to_head/chains/sens__PantheonPlus__reading_A__M1_gamma0p5__seed_20261032.npz"
+}

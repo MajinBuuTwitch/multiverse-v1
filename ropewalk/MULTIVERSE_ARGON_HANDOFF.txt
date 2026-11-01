@@ -1,0 +1,455 @@
+MULTIVERSE: MATH HANDOFF FOR GEMINI 4 ARGON (GOOGLE ANTIGRAVITY)
+Version 1.0.1, October 2026 (matches version 1.0.1 of the paper package). Author: Gregory Mandarano / WickedAI. License: CC BY 4.0.
+
+This file has two parts.
+PART A is for Gregory: a one-time setup on this PC. Do it before pasting anything.
+PART B is the brief for Argon. Paste everything from the line "=== START OF BRIEF FOR ARGON ===" down to the end of this file into a new Antigravity conversation.
+
+
+======================================================================
+PART A. SETUP FOR GREGORY (one time, about 30 minutes)
+======================================================================
+
+You do not need to know how to code for any of this. Do the steps in order.
+
+1. INSTALL THE ANTIGRAVITY DESKTOP APP
+   a. Open your web browser and type this address exactly: antigravity.google/download
+   b. Click "Download for x64". (Only pick "Download for ARM64" if you know your PC has an ARM processor. This PC is a normal Windows 10 PC, so x64.)
+   c. The same page also shows a PowerShell one-line installer (it starts with "irm https://antigravity.google/cli/install.ps1"). SKIP IT. That line installs the command-line version, not the desktop app.
+   d. Open the downloaded installer from your Downloads folder and click through it. The app needs Windows 10 (64-bit) or later.
+
+2. SIGN IN WITH YOUR GOOGLE ACCOUNT
+   a. Open Antigravity. On the first screen, click "Continue with Google". Do not click "Use business account".
+   b. Sign in with the Google account that has your Google AI Ultra subscription.
+   c. Never paste an API key anywhere in Antigravity. You do not need one; your Ultra account covers the usage.
+   d. Click "Open Antigravity". The setup then asks for a theme (pick any), offers optional Google plugins (you can skip them), and shows the Terms. Read and accept the Terms yourself, then click "Finish".
+
+3. SET AI CREDIT OVERAGES TO NEVER
+   a. Open the user settings and find the setting called "AI Credit Overages".
+   b. Choose "Never". This means Antigravity will never spend paid AI credits automatically. When your included quota runs out, it waits until the quota refreshes (on Ultra the quota refreshes every five hours, and there is also a weekly limit).
+   c. If your version names the setting differently (for example "overage" or "AI credits"), pick the option that never uses credits automatically.
+   d. To see how much quota is left, use "View Usage" if your version shows it.
+
+4. THE PROJECT FOLDER
+   a. The project folder is this local folder on the PC:
+      C:\Users\User\Desktop\Code\multiverse\FOR_ARGON
+   b. It holds these six files, side by side in the same folder:
+      - 00_READ_FIRST.txt
+      - MULTIVERSE_ARGON_HANDOFF.txt (this file)
+      - MULTIVERSE_EQUATION_SHEET_v1.md
+      - MULTIVERSE_TESTS_v1.md
+      - MULTIVERSE_DATASETS_v1.md
+      - MULTIVERSE_PREDICTIONS_PAPER_v1.md
+      Argon reads them only from this folder. Check that all six are there and that the five MULTIVERSE files say version 1.0.1 at the top. If one is missing or older, stop and ask Code to rebuild the folder.
+   c. In Antigravity, click "Create New Project" in the left panel, then "New Project", and choose the FOR_ARGON folder.
+   d. Open the Project Settings for this project and set:
+      - Security Preset: require review before terminal commands and file access. You will see each command before it runs and can say yes or no.
+      - Local Permissions: limit file access to the FOR_ARGON folder.
+      If your version shows these settings under different names, choose the most cautious option.
+
+5. PICK THE MODEL
+   a. In the model selector just below the message box, choose Gemini 4 Argon.
+   b. Set the thinking level to High (the choices are Low, Medium and High, chosen next to the model). If your picker shows a single entry called "Gemini 4 Argon (High)", pick that.
+
+6. START THE JOB
+   a. Open a new conversation inside the FOR_ARGON project.
+   b. Paste everything in this file from "=== START OF BRIEF FOR ARGON ===" to the end, and send it.
+   c. Argon should answer with Part 0: its restatement of the rules, then stop.
+   d. Read it. If it looks right, type CONTINUE. Type CONTINUE again after each part. If something looks wrong, say so in plain words instead.
+   e. Approving a command: when Argon wants to run something, Antigravity shows it to you first. If you do not understand a command, ask Argon "What does this do and what does it change?" before approving.
+
+7. WSL2 ONLY WHEN COBAYA OR CLASS ARE NEEDED
+   The first stages run in ordinary Windows Python. Install WSL2 only when Argon says the job now needs cobaya with CLASS (the large cosmology codes, which are built for Linux).
+   a. Click Start, type PowerShell, right-click "Windows PowerShell", choose "Run as administrator".
+   b. Type: wsl --install
+      and press Enter. When it finishes, restart the PC.
+   c. After the restart, an Ubuntu window opens (Ubuntu is the default). Wait for it to finish, then make a Linux username and password when asked. Keep the password somewhere safe. Never type it into Antigravity's chat.
+   d. This PC runs Windows 10 build 19041, the minimum WSL2 needs, so it qualifies.
+   e. Some cosmology data packages are large. Argon is told to state the size of every download before starting it. Say no to anything over 1 GB until you are sure you want it.
+
+8. KEEP THE PC USABLE: ABOUT 12 CORES
+   Argon is told to use at most 12 parallel processes or threads. If a run makes the PC sluggish, tell Argon "use fewer cores". (Optional, for WSL2 only: Argon can show you how to make a small settings file that caps WSL2 at 12 processors. Approve it only if you want that cap to be permanent.)
+
+9. WHEN ARGON FINISHES
+   Everything it produces stays in the FOR_ARGON folder. The equations and code then go to an independent reviewer (Claude), cold, as files only. Do not ask Argon to write a summary for the reviewer beyond the files Stage 4 lists.
+
+
+=== START OF BRIEF FOR ARGON ===
+
+You are the math and code worker for the Mandarano Model (nickname: the cable), a speculative multiverse model written by Gregory Mandarano (WickedAI), a screenwriter. Gregory is the author and makes every decision. He is a coding beginner: explain every command in plain words, say what it changes, and wait for his approval. This brief stands alone. The project folder (FOR_ARGON, the folder this brief sits in) also holds 00_READ_FIRST.txt and the published version 1.0.1 files of the same content: MULTIVERSE_EQUATION_SHEET_v1.md, MULTIVERSE_TESTS_v1.md, MULTIVERSE_DATASETS_v1.md and MULTIVERSE_PREDICTIONS_PAPER_v1.md (the paper). All of them are local files in this same folder; read them there, and look for them nowhere else.
+
+Your job: turn a starter equation sheet into tightened equations, write analysis code, run it against public data under rules fixed in advance, and report the results honestly, failures included. The public package (version 1.0.1) contains no computation. You are the first to compute anything. Afterward, your equations and code go to an independent reviewer (Claude), cold, with no access to this conversation, so everything you produce must be self-contained and reproducible from the files alone.
+
+----------------------------------------------------------------------
+B0. HOW TO WORK: THE CONTINUE PROTOCOL AND THE RULES
+----------------------------------------------------------------------
+
+CONTINUE PROTOCOL
+1. Work in numbered parts (the plan is in B6). Do one part per reply.
+2. End every part with exactly: "END OF PART n. Type CONTINUE for Part n+1: <title>."
+3. Do not start the next part until Gregory types CONTINUE. If he types anything else, answer it and stop again.
+4. If a part is too long for one reply, split it as n.1, n.2 and stop after each.
+5. PART 0 comes first: restate every rule below and the general rules of B5 in your own words as a numbered list, say "I confirm these rules", list what Part 1 will contain, and stop. Do nothing else in Part 0.
+
+RULES
+R1. Honesty labels. Mark every equation "established" (standard published physics) or "model ansatz" (a form chosen to represent the model). Tag every claim Tier 1 (established), Tier 2 (published speculation) or Tier 3 (this model). The 1:6:12 numerology stays labeled numerology.
+R2. Flag every assumption. Number them [A1], [A2], ... and keep a running list in ASSUMPTIONS.md. Say which results each assumption drives.
+R3. No invented results. Never report a number you did not compute in this project or read from a cited source. Never invent a citation; if you cannot find a source, say so.
+R4. Pre-registration. Each free parameter is FIXED on one dataset and TESTED on a different one. Before any test dataset is loaded by your code, write PREREG.md (fixed values, uncertainties, seeds, data versions, test statistics, thresholds), print its SHA-256 hash, and stop for Gregory's approval. After that, nothing in PREREG.md changes. No parameter may be tuned after seeing test data. Any deviation is reported as a deviation, with the reason, and the original pre-registered result is reported too.
+R5. Report failures. A FAIL is a result. Report it with the same prominence as a PASS.
+R6. Data from official sources only (B4). Record for each file: URL, download date, size, SHA-256, in data/MANIFEST.csv. State the size of every download before starting it, and ask before any download or install over 1 GB.
+R7. No paid services, no API keys, no accounts. If something needs one, stop and tell Gregory.
+R8. Resources. Use at most 12 parallel processes or threads in total (set OMP_NUM_THREADS, MKL_NUM_THREADS, mpirun -n and any pool sizes accordingly). Keep the PC usable.
+R9. Files. Work only inside the project folder. Never delete anything. Never run recursive or forced delete commands (rm -rf, rmdir /s, del /s, Remove-Item -Recurse, or any equivalent). Move superseded files into a folder named _old instead. Never overwrite a results file; write a new version with a version number.
+R10. Environment. Start in Windows with a Python virtual environment inside the project folder (numpy, scipy, matplotlib, emcee or similar). Use WSL2 only when cobaya with CLASS is truly needed, and tell Gregory first, because he has to install WSL2 himself (an administrator step).
+R11. Plain writing for Gregory. In each reply, start with two or three plain sentences saying what this part does and what he needs to do.
+R12. Never edit the files 00_READ_FIRST.txt, MULTIVERSE_ARGON_HANDOFF.txt, MULTIVERSE_EQUATION_SHEET_v1.md, MULTIVERSE_TESTS_v1.md, MULTIVERSE_DATASETS_v1.md or MULTIVERSE_PREDICTIONS_PAPER_v1.md (all in this same folder). Write your own files (B7). If MULTIVERSE_TESTS_v1.md and section B5 of this brief ever disagree, follow MULTIVERSE_TESTS_v1.md (the tests file wins) and report the disagreement in Part 0 or as soon as you see it.
+
+----------------------------------------------------------------------
+B1. THE MODEL IN BRIEF (Tier 3 unless marked)
+----------------------------------------------------------------------
+
+Status: a model, not a theory. Not peer reviewed. Written to be broken.
+
+Structure.
+- Each complete history of our universe is a STRING. The present is a fixed "blade" (the model promotes cosmological cosmic time, Tier 1 bookkeeping, to a physical preferred present, by analogy with the Lorentz and Poincare preferred-frame versions of relativity; it is built to reproduce every measured relativistic effect). Histories are coils that turn through the fixed blade.
+- Strings are held under tension. Changing the past "plucks" a string; small plucks heal (elastic), large ones bend history for good (plastic, past a yield point), the largest snap it. These time-travel mechanics have no cosmological observable and are not part of this job.
+- Histories that split recently stay close and in step ("sync"); decoherence pushes them apart. The twist of a strand sets the balance.
+- STRAND: 19 strings, N_s = 1 + 6 + 12 = 19 (ours at the center, six touching it, twelve around those; the six-around-one packing is forced by geometry). ROPE: 7 strands, N_r = 7 x 19 = 133. CABLE: all ropes. There are gaps ("voids") at every level: small gaps between strings, larger ones between strands, and THE Void between ropes, which is uncrossable.
+- Many-worlds' countless branches are mostly fine fuzz on each string; only a large difference makes a string of its own.
+- Dimension ladder (narrative only): 0D to 7D are our universe under our laws; 8D is the cable as a point; 9D to 11D are other cables with different laws.
+- LOCALITY: differences between histories spread no faster than light. A split of age dt differs only inside a bubble of radius about c dt. So the six touching neighbors, which split recently, contain the same matter in the same places as ours on galaxy scales. Every place has its own six neighbors, so the dark universe is a local reading.
+
+The dark sector mapping.
+- DARK MATTER = THE SHADOW. Gravity crosses mainly where strings touch. The six touching neighbors' baryons pull on our universe; that pull is dark matter. It never collides with anything here because it is not here.
+- REFRACTION: crossing the small void between strings spreads the pull, so it lands as a wide halo (width sigma_ref).
+- THE LAG: the crossing takes time tau_lag, and the shadow carries its source's motion, pointing to where the source would be had it kept its velocity (analogy: in general relativity the field of a uniformly moving mass points at its current extrapolated position, Carlip 2000, Tier 1). In the Bullet Cluster the gas stopped, but its shadow, sent before the crash, kept going with the galaxies. Pure lag without carried motion puts the mass on the wrong side and fails. Required: tau_lag greater than about 150 Myr. Underived.
+- THE LEAK: about a sixth (f_leak) of the six neighbors' pull is lost in transit into the voids and is stored as tension in the outer twelve. It must raise dark energy's SHARE, not make dark energy density RISE over time (that would fight the weakening below). One fitted number: since shares sum to 100 percent, it fixes the dark matter and dark energy gaps together by construction. "About a sixth" is the EXPECTED value, not a fitted one. f_leak has ONE pre-registered role: it is FIXED from the expansion history (DESI DR2 BAO + compressed CMB priors + supernovae, with a BBN baryon density), and the dark-to-ordinary ratio it then predicts, 6 (1 - f_leak), is TESTED against Planck 2018 (T2).
+- FAR STRINGS: every other string adds a faint pull (epsilon_far), mostly arriving as smooth tension after more crossings and more leak. A weak prediction with no target yet.
+- DARK ENERGY = OUTER-RING TENSION, not mass (Tier 1 fact underneath: a cosmological constant behaves as a tension, p = -rho c^2).
+- THE TWIST: the strand is slowly unwinding, losing tension, so dark energy should be weakening (w0 > -1, wa < 0), as DESI hinted in 2024 and 2025. If future data say constant forever, the model loses this claim. The beginning was maximum twist; the arrow of time points from wound to unwound (a picture, not a solution). A fully unwound strand is rewound for the next cycle (analogy: Steinhardt and Turok cyclic model).
+- PREDICTIONS the job touches: dark energy weakening; the dark-to-ordinary ratio fixed over cosmic time; offsets in merging clusters with an age cutoff at tau_lag; halo widths set by sigma_ref; no dark matter particle in direct detection (not part of this job); the Hubble tension as a local reading (report only).
+
+Open problems the model states plainly (do not try to hide them; flag where your work bears on them): the lag is underived; f_leak is fitted, not derived; NGC 1052-DF2 and DF4 (dark-matter-poor galaxies that recently split neighbors should share, so their shadow should give them dark matter); Abell 520 (a disputed dark core at the gas); the coincidence (the shares line up only today); known instabilities of interacting dark energy; no physical derivation of the N_s geometry; the ratio tension (the leak cannot match both the shares and the ratio; see the paper's open problems); DESI's rise-then-fall dark energy history (a phantom past, a crossing of w = -1, weakening today), which a steadily unwinding strand does not obviously allow.
+
+----------------------------------------------------------------------
+B2. THE EQUATION SHEET (inline, plain text)
+----------------------------------------------------------------------
+
+Conventions: flat space; a = scale factor, a = 1 today, 1+z = 1/a; t = cosmic time; dot = d/dt; H = (da/dt)/a; Omega_i = rho_i0 / rho_crit0, rho_crit0 = 3 H0^2 / (8 pi G); omega_i = Omega_i h^2. Subscripts: b baryons; dm the shadow; de tension (dark energy); r radiation.
+Shared parameter names (identical in every file): N_s, N_r, f_leak, epsilon_far, w0, wa, tau_lag, sigma_ref.
+
+(a) BACKGROUND COSMOLOGY (Tier 1 equations; Tier 3 mapping)
+a1 [established] ds^2 = -c^2 dt^2 + a(t)^2 [dr^2 + r^2 dOmega^2].
+a2 [established] H^2 = (8 pi G / 3) sum_i rho_i; H(a)^2 / H0^2 = Omega_r a^-4 + (Omega_b + Omega_dm) a^-3 + Omega_de g(a), with g(a) = rho_de(a)/rho_de0 and sum Omega_i = 1. The a^-3 for dark matter holds only if it is uncoupled.
+a3 [established] Each uncoupled fluid: d(rho_i)/dt + 3 H (1 + w_i) rho_i = 0.
+a4 [established] CPL (Chevallier and Polarski 2001; Linder 2003): w(a) = w0 + wa (1 - a); uncoupled g(a) = a^(-3(1 + w0 + wa)) exp(-3 wa (1 - a)). LambdaCDM is w0 = -1, wa = 0.
+a5 [established] D_M(z) = c Int_0^z dz'/H(z'); D_H = c/H(z); D_V = (z D_M^2 D_H)^(1/3); D_L = (1+z) D_M; mu = 5 log10(D_L / 10 pc); r_d = Int_{z_d}^inf c_s(z)/H(z) dz. BAO data give D_M/r_d, D_H/r_d, D_V/r_d. Compressed CMB priors (Chen, Huang and Wang 2019) use R = sqrt(Omega_m H0^2) D_M(z*)/c, l_A = pi D_M(z*)/r_s(z*), and omega_b, with their published covariance. They assume standard pre-recombination physics; check that assumption before using them for any model that changes early-time dark matter. The f_leak fix (c4) uses only R and l_A from these priors, with omega_b from a BBN prior instead.
+a6 [model ansatz] Background components: baryons; the shadow (pressureless, w = 0, in the static form of b5); tension (dark energy, described by w0, wa or by a coupled fluid).
+Reference values [Tier 1], Planck 2018 base LambdaCDM, TT,TE,EE+lowE+lensing (Planck Collaboration 2020, Table 2): omega_b = 0.02237 +/- 0.00015; omega_c = 0.1200 +/- 0.0012; H0 = 67.36 +/- 0.54 km/s/Mpc; Omega_m = 0.3153 +/- 0.0073; Omega_Lambda = 0.6847 +/- 0.0073. So Omega_b about 0.049, Omega_c about 0.265, omega_c/omega_b about 5.36.
+
+(b) THE LEAK AS INTERACTING DARK ENERGY (Tier 1 conservation; Tier 2 couplings; Tier 3 link)
+b1 [established] Sign convention here: Q > 0 means energy flows FROM dark matter TO dark energy (the leak's direction).
+    d(rho_dm)/dt + 3 H rho_dm = -Q
+    d(rho_de)/dt + 3 H (1 + w) rho_de = +Q
+    d(rho_b)/dt + 3 H rho_b = 0
+    Papers differ: Gavela et al. 2009 put +Q on the dark matter side (their Q = minus ours); Boehmer et al. 2008 use our direction.
+b2 [established] Effective equations of state (signs adapted from Gavela et al. 2009, Eqs. 5 and 6): w_dm_eff = Q / (3 H rho_dm); w_de_eff = w - Q / (3 H rho_de). Energy flowing into dark energy lowers its effective w; an analysis that ignores the coupling can infer w < -1 even when the true w > -1 (Das, Corasaniti and Khoury 2006).
+b3 [established forms; Tier 2 as physics]
+    Q-dm:    Q = xi_m H rho_dm   (Boehmer et al. 2008 model II; xi_m > 0 is dark matter decaying to dark energy). Integrates to rho_dm proportional to a^(-3 - xi_m), so rho_dm/rho_b drifts as a^(-xi_m).
+    Q-de:    Q = xi_e H rho_de   (Gavela et al. 2009 write Q = xi H rho_de with the opposite sign: xi_e = -xi).
+    Q-rate:  Q = Gamma rho_dm, constant Gamma (Boehmer et al. 2008 model III; Valiviita, Majerotto and Maartens 2008).
+    Q-field: Q proportional to beta rho_dm dphi/dt, coupled quintessence (Amendola 2000).
+    Review: Wang, Abdalla, Atrio-Barandela and Pavon 2016.
+b4 [established, known problems]
+    - Valiviita, Majerotto and Maartens 2008: constant-w fluid dark energy with these simple couplings has an early-time, large-scale (super-Hubble) instability in the curvature perturbation, however weak the coupling.
+    - Gavela et al. 2009: the instability is governed by the sign of the "doom factor" d = Q_G / (3 H rho_de (1 + w)) in their convention (Q_G = -Q here); unstable when d is positive and large. For Q-de there is an instability-free region with (their notation) xi < 0 and w > -1, which in our convention is energy flowing from dark matter to dark energy with w > -1: the model's direction.
+    - For couplings proportional to rho_dm, the ratio rho_dm/rho_de makes |d| large at early times even for tiny couplings, and Gavela et al. note that with energy flowing from dark matter to dark energy, rho_de turns negative in the past.
+    - Consequence: the form the narration suggests (a fixed fraction of the shadow's pull, so Q proportional to rho_dm) is the problematic one; Q-de has a published stable branch in the model's direction. This is an open choice for Stage 1.
+b5 [model ansatz] One definition of f_leak, two candidate mechanisms. f_leak has a single definition and a single pre-registered role: it is the parameter of today's shares (c3), fixed from the expansion history and tested on the ratio (c4). What the model has not chosen is the mechanism:
+    Static form (transit efficiency; no energy transfer in the background):
+        rho_dm(a) = (1 - f_leak) N_in rho_b(a), N_in = 6.
+        The ratio stays fixed at all times at 6 (1 - f_leak), the value T2 tests. How the leaked part becomes non-diluting tension is unexplained bookkeeping (a Stage 1 task).
+    Transfer form (dynamic transfer through Q from b3): the coupling must reproduce today's shares with the fixed f_leak. The transferred fraction of the shadow's energy since a_i is
+        1 - rho_dm(1) / (rho_dm(a_i) a_i^3) = [1 / (rho_dm(a_i) a_i^3)] Int_{t_i}^{t0} Q a^3 dt,
+        which for Q-dm with constant xi_m is 1 - a_i^(xi_m). The start epoch a_i is an assumption to state. The transfer form breaks the fixed ratio of (c) at a level set by the coupling (for Q-de, mostly at late times).
+    Model constraint: in the transfer form, d(rho_de)/dt = -3 H (1 + w) rho_de + Q must stay negative or near zero today (share grows, density does not rise).
+
+(c) THE FIXED RATIO AND HOW THE LEAK ALTERS IT (Tier 1 scaling; Tier 3 count; numerology label)
+c1 [established] Uncoupled: R = rho_dm / rho_b = omega_c / omega_b = constant. Observed about 5.36.
+c2 [model ansatz] R_model = 6 (1 - f_leak). No leak: 6. f_leak = 1/6: 5.0. With f_leak fixed as in c4, R_model is a prediction, tested against Planck in T2 (the ratio tension is listed in the paper's open problems).
+c3 [model ansatz, numerology] Shares today: Omega_b = 1/N_s; Omega_dm = (6/N_s)(1 - f_leak); Omega_de = 12/N_s + (6/N_s) f_leak; N_s = 19. They sum to 1 for any f_leak.
+    Count only: 0.053 / 0.316 / 0.632, R = 6.
+    f_leak = 1/6: 0.053 / 0.263 / 0.684, R = 5.0.
+    Planck 2018: 0.049 / 0.265 / 0.685, R = 5.36.
+    Real information left after the fit: the baryon share 1/19 (parameter-free) vs 0.049; R = 5.0 at one sixth vs 5.36, the registered test of c4; and the epoch (shares line up only near today, section h; the ratio is epoch-free). The ratio tension (the leak cannot match both the shares and the ratio) is listed in the paper's open problems; it must be faced in Stage 1, not smoothed over, and never by adding a second fix for f_leak.
+    Local reading: R(x) may vary between galaxies; only its sky average is c2. No form proposed.
+c4 [model ansatz] How f_leak is fixed and tested (one pre-registered role).
+    Model matter share: Omega_m = Omega_b + Omega_dm = (7 - 6 f_leak) / 19, so f_leak = 1 - (19 Omega_m - 1) / 6, sigma_f = (19/6) sigma_Omega_m. At exactly f_leak = 1/6, Omega_m = 6/19, about 0.316.
+    FIX: Omega_m from a flat w0waCDM fit to DESI DR2 BAO + the compressed CMB priors R and l_A only (a5) + supernovae (Pantheon+ and DES SN in separate runs, never combined), with omega_b from a BBN prior (Cooke, Pettini and Steidel 2018). Planck's omega_b and omega_c are not used.
+    TEST: R_pred = 6 (1 - f_leak) = 19 Omega_m - 1, uncertainty 6 sigma_f, against Planck 2018 (TT,TE,EE+lowE+lensing) R_Planck = omega_c / omega_b = 0.1200 / 0.02237 = 5.36 +/- 0.065 (propagated as uncorrelated). PASS if |R_pred - R_Planck| <= 2 sigma_comb, sigma_comb = sqrt((6 sigma_f)^2 + sigma_Planck^2); FAIL otherwise (B5 T2; the tests file governs).
+    Stated in advance: at f_leak = 1/6, R_pred = 5.0, about 5.6 sigma below Planck counting Planck's uncertainty alone; T2 is expected to fail unless the expansion fit lands well below one sixth.
+    Independence caveat: R and l_A come from the same Planck data as omega_c / omega_b, and R depends on the matter density. Keeping Planck's omega_b and omega_c out of the fix reduces the overlap between fix and test; it does not remove it.
+
+(d) THE UNWINDING (Tier 1 for d1, d2; Tier 3 for d3 to d5)
+d1 [established] A cosmological constant is a tension: p = -rho c^2 (w = -1). Acceleration: (d^2a/dt^2)/a = -(4 pi G / 3) sum_i (rho_i + 3 p_i / c^2).
+d2 [established] Uncoupled component: w(a) = -1 - (1/3) dln(rho_de)/dln(a). Falling density gives w > -1.
+d3 [model ansatz] rho_de(a) = rho_de0 (theta(a)/theta0)^n, theta = dimensionless twist, theta0 = today's twist, n > 0 free (n = 2 is the elastic analogy: strain energy of a twisted elastic rod is quadratic in twist).
+d4 [model ansatz] Unwinding: dtheta/dt < 0. First candidate law: dtheta/dt = -Gamma_u theta (constant relaxation rate Gamma_u). From d2 and d3: w(a) = -1 - (n/3) dln(theta)/dln(a), so any monotonic unwinding gives w > -1 at all times and never crosses -1 by itself.
+d5 [model ansatz] Map to CPL: w0 = w(a=1), wa = -dw/da at a = 1. Stage 1: derive the (w0, wa) relation each unwinding law implies; say whether the model predicts a band in the w0-wa plane rather than two free numbers.
+Target: w0 > -1 and wa < 0. Context [Tier 1]: DESI DR2 BAO with CMB and supernovae prefers this quadrant at 2.8 to 4.2 sigma depending on the supernova sample (DESI Collaboration 2025b). The July 2026 DESI DR2 Lyman-alpha Alcock-Paczynski analysis (arXiv:2607.27410) reports 2.7 to 3.2 sigma depending on the datasets. Fitted CPL curves in this quadrant cross w = -1 in the past; pure unwinding cannot, but a coupling (b2) can make the effective w look phantom. Whether leak plus unwinding reproduce the fitted shape is open. T1 tests only w0; DESI's rise-then-fall history (a phantom past, a crossing of w = -1, weakening today) is listed in the paper's open problems.
+Not mapped: pace of time = rate of unwinding; arrow of time from wound to unwound; rewinding between cycles.
+
+(e) THE SHADOW (Tier 1 for e1, e2; Tier 2 nonlocal-kernel precedent; Tier 3 for e3 to e7)
+e1 [established] Laplacian(Phi) = 4 pi G (rho_b + rho_sh).
+e2 [established, the analogy] Carlip 2000: the GR field of a uniformly moving source points almost exactly at its current extrapolated position (velocity-dependent terms cancel aberration). The model substitutes the crossing delay tau_lag for the light travel time. That substitution is the ansatz. Note: the cancellation is for uniform motion; extrapolating accelerated sources is a further assumption.
+e3 [model ansatz] rho_sh(x, t) = (1 - f_leak) sum_{k=1..6} Int d^3y K_sigma(x - y) rhotilde_b^(k)(y, t)
+    rhotilde_b^(k)(y, t) = sum_j m_j^(k) delta^3( y - [ x_j^(k)(t - tau_lag) + v_j^(k)(t - tau_lag) tau_lag ] )
+    (j runs over baryonic mass elements of neighbor k.)
+e4 [model ansatz] Locality: rho_b^(k) = rho_b for all six, so rho_sh = 6 (1 - f_leak) [K_sigma convolved with rhotilde_b].
+e5 [model ansatz] Default kernel: K_sigma(r) = (2 pi sigma_ref^2)^(-3/2) exp(-|r|^2 / (2 sigma_ref^2)), normalized to 1, so the total shadow mass is 6 (1 - f_leak) times the baryonic mass. Physical vs comoving width, and any scaling with the source, are open (see f). Precedent [Tier 2]: nonlocal gravity sourced by an integral transform of ordinary matter (Hehl and Mashhoon 2009).
+e6 [model ansatz] Merging clusters, 1D along the merger axis. S = stars/galaxies, G = gas, I = lensing-inferred mass (labels of Harvey et al. 2015). A symmetric kernel and linear extrapolation preserve centroids, so the shadow of component c has centroid
+    xtilde_c(t) = x_c(t - tau_lag) + v_c(t - tau_lag) tau_lag, c in {S, G}
+    x_I(t) = [ M_S x_S + M_G x_G + 6 (1 - f_leak) (M_S xtilde_S + M_G xtilde_G) ] / ( [1 + 6 (1 - f_leak)] (M_S + M_G) )
+    Observables: delta_SG = x_G - x_S; delta_SI = x_I - x_S; beta = delta_SI / delta_SG. Lensing analyses measure peaks, not centroids; handle that difference explicitly.
+e7 [model ansatz] T = time since first pericenter.
+    Young (T < tau_lag): both shadows are extrapolated from before the collision; the gas's shadow did not stop. The project's stated expectation: the shadow keeps its pre-crash speed and sits slightly AHEAD of the galaxies, more so the older and faster the collision (up to T = tau_lag), so beta <= 0. The sign depends on the infall history (velocities at t - tau_lag may be lower than at pericenter): compute it with a dynamical merger model, do not assume it.
+    Old (T > tau_lag): if xtilde_G = x_G and xtilde_S = x_S, then beta -> M_G / (M_S + M_G), the baryonic gas fraction: the mass snaps back onto the gas. Collisionless cold dark matter predicts beta about 0 at all ages.
+    A fixed tau_lag is an AGE CUTOFF.
+Targets: tau_lag greater than about 150 Myr (Bullet Cluster core passage 0.1 to 0.2 Gyr ago, Markevitch et al. 2002; its mass sits with the galaxies, Clowe et al. 2006). Ensemble: dark mass within 5.8 +/- 8.2 kpc of the stars over 72 collisions in 30 systems (Harvey et al. 2015), systematics revisited by Wittman, Golovich and Dawson 2018. Dawson 2013: the Musket Ball is further progressed than the Bullet by at least about 0.8 Gyr (large uncertainty). Abell 520: dark core near the gas reported by Jee et al. 2014, not detected by Clowe et al. 2012; in the model a peak at the gas is natural only for T > tau_lag, and then the galaxies should carry correspondingly less mass.
+
+(f) ROTATION CURVES (Tier 1 for f1, f2; Tier 3 for f3, f4)
+f1 [established] v_c(r)^2 = G [M_b(<r) + M_sh(<r)] / r (spherical approximation). Flat curve over a range: total M(<r) proportional to r there.
+f2 [established, empirical] Radial acceleration relation (McGaugh, Lelli and Schombert 2016; 2693 points in 153 SPARC galaxies): g_obs = g_bar / (1 - exp(-sqrt(g_bar / g_dagger))), g_dagger = 1.20 +/- 0.02 (random) +/- 0.24 (systematic) x 10^-10 m/s^2.
+f3 [model ansatz] g_obs = g_bar + g_sh, with g_sh from e4 and e5 applied to each galaxy's measured baryons (SPARC mass models). Targets: (1) flat outer curves; (2) the radial acceleration relation with ONE rule for sigma_ref; (3) the cap: with a normalized kernel an isolated galaxy's shadow totals 6 (1 - f_leak) M_b, about 5 M_b, so beyond saturation v_c falls as r^(-1/2); SPARC's low-acceleration points have g_obs/g_bar above 6; check whether the cap allows that, or whether overlapping shadows, local variation of R, or a different kernel is needed.
+f4 [model ansatz] Carried motion on a circular orbit: shadow radius r_ext = r sqrt(1 + (v_c tau_lag / r)^2) > r. Conversion: 1 km/s for 1 Myr is about 1.02 pc. Evaluate v_c tau_lag for disks with tau_lag above about 150 Myr and decide whether it helps or ruins halo shapes.
+Candidate extensions (declare before fitting, or do not use): sigma_ref = s R_d (R_d = disk scale length, s dimensionless); a non-Gaussian kernel.
+
+(g) LOCALITY (Tier 1 for g1; Tier 2 receipt; Tier 3 for g2 to g4)
+g1 [established] Proper radius reached by light emitted at t_s: R_light(t; t_s) = a(t) Int_{t_s}^{t} c dt' / a(t'), about c (t - t_s) when expansion is negligible.
+g2 [model ansatz] Histories split at t_s by an event at x_s differ only where |x - x_s| <= R_light(t; t_s). Receipt [Tier 2]: Deutsch and Hayden 2000 (many-worlds described locally).
+g3 [model ansatz] Sideways distance tracks the age of a split: recent = strand-mates; older = across the strand gaps; oldest = other ropes. Small bubbles justify e4.
+g4 [model ansatz] Local reading: local H0 = 73.04 +/- 1.04 (Riess et al. 2022) vs 67.36 +/- 0.54 (Planck 2018), about 8 percent, read as a local accent (compatible with the published local-void idea). No equation in v1.
+
+(h) THE COINCIDENCE (Tier 1 for h1; open problem for the model)
+h1 [established] Omega_de(a) = Omega_de g(a) / (Omega_r a^-4 + Omega_m a^-3 + Omega_de g(a)). In LambdaCDM, rho_dm/rho_de is proportional to a^-3, so the dark shares are comparable only in a limited era that includes today.
+h2 [model statement] The 1:6:12 shares (with the leak) match only near today; the model has no mechanism that selects today. Task: with Planck 2018 parameters, compute the span of cosmic time during which all three shares stay within a tolerance declared in PREREG.md of the section c values; report it without tuning.
+Tier 2 note: interacting dark energy has been proposed as a route to the coincidence problem (late-time attractors with constant dark matter to dark energy ratio; Boehmer et al. 2008; Wang et al. 2016). A possible lead, not a claim.
+
+(i) FREE PARAMETERS (test IDs refer to B5, which mirrors MULTIVERSE_TESTS_v1.md)
+Name | Meaning | Target or constraint | FIX on | TEST on
+N_s | strings per strand | fixed at 19 by geometry; may not be varied to rescue a test | none | Planck shares (numerology only)
+N_r | strings per rope | fixed at 133 | none | no observable in v1
+f_leak | leaked fraction of the six neighbors' pull | expected about 1/6; fitted value 1 - (19 Omega_m - 1)/6 (c4); one registered role | DESI DR2 BAO + compressed CMB priors (R, l_A only) + SNe (Pantheon+ and DES SN in separate runs) (+BBN omega_b), flat w0waCDM (T2) | Planck 2018 omega_c/omega_b ratio against R_pred = 6 (1 - f_leak) (T2)
+xi_m or xi_e | coupling strength (transfer form only) | sign: dark matter to dark energy; stability (b4) | not registered in v1 | not registered in v1
+w0, wa | CPL summary of unwinding | w0 > -1 tested; wa < 0 expected | none from data (sign fixed by model text; Planck only as CMB prior) | DESI DR2 BAO + Ly-alpha (incl. arXiv:2607.27410) + Pantheon+ in one run, DES-Dovekie in another (T1)
+n, Gamma_u | twist exponent, unwinding rate | n > 0, Gamma_u > 0 | not registered in v1 | not registered in v1
+epsilon_far | far-string pull, mostly tension | small, positive; no target yet | not registered | not registered
+tau_lag | shadow crossing delay | > about 150 Myr; one value for all systems | Bullet Cluster (T4a); Bullet + training half of aged mergers (T4b) | Harvey 2015 and Wittman 2018 offsets (T4a); test half of aged mergers (T4b); Abell 520 stress test
+sigma_ref | refraction width | flat curves and the RAR with one rule | SPARC training half (T5-A) | SPARC held-out half; NGC 1052-DF2 stress check (T5c)
+k (variant) | sigma_ref = k R_d | registered variant T5-B | SPARC training half | SPARC held-out half
+Goal stated by the author: find one underlying quantity (for example the twist, or a void width between strings) that sets f_leak, tau_lag and sigma_ref together. None is proposed in v1. If you find a candidate, present it as a model ansatz with its assumptions; do not fit it to the test data.
+
+----------------------------------------------------------------------
+B3. TARGETS (summary)
+----------------------------------------------------------------------
+T-leak: f_leak expected about 1/6; fixed from the expansion history (c4); the ratio it implies, 6 (1 - f_leak), tested against Planck's 5.36 (T2).
+T-ratio: dark-to-ordinary ratio constant over cosmic time (exact in the static form; bounded drift in the transfer form).
+T-DE: w0 > -1, wa < 0, from unwinding (and possibly the coupling).
+T-lag: tau_lag greater than about 150 Myr; offsets change regime at T = tau_lag (beta about 0 or slightly negative young; toward the baryonic gas fraction old).
+T-refraction: one rule for sigma_ref gives flat curves and the radial acceleration relation across SPARC.
+T-far: epsilon_far small and positive (no numerical target yet).
+T-local: Hubble tension about 8 percent as a local reading (report only).
+T-coincidence: report the time window; no target (open problem).
+
+----------------------------------------------------------------------
+B4. DATASETS (official sources only)
+----------------------------------------------------------------------
+1. DESI DR2 BAO. Paper: DESI Collaboration 2025b, "DESI DR2 Results II", Phys. Rev. D 112, 083515, arXiv:2503.14738; Lyman-alpha BAO: arXiv:2503.14739. Machine-readable BAO means and covariances: https://github.com/CobayaSampler/bao_data (folder desi_bao_dr2). DESI releases page: https://data.desi.lbl.gov/doc/releases/ (DR2 spectra are not public; the cosmology products and chains are linked there). Use the published tables; cross-check against the paper.
+2. DESI DR2 Lyman-alpha Alcock-Paczynski (July 2026): arXiv:2607.27410, https://arxiv.org/abs/2607.27410. External comparison only (no refit) unless its data products are public.
+3. Planck 2018: Planck Collaboration 2020, A&A 641, A6, arXiv:1807.06209. Planck Legacy Archive: https://pla.esac.esa.int/ ; parameter tables and chains: https://wiki.cosmos.esa.int/planck-legacy-archive/index.php/Cosmological_Parameters
+4. Compressed CMB distance priors: Chen, Huang and Wang 2019, JCAP 02 (2019) 028, arXiv:1808.05724 (R, l_A, omega_b and correlation matrix from Planck 2018 TT,TE,EE+lowE). Take values and covariance from the paper. The T2 fix uses only the (R, l_A) block, marginalized over their omega_b.
+4b. BBN baryon density for the T2 fix: Cooke, Pettini and Steidel 2018, ApJ 855, 102, arXiv:1710.11129: 100 omega_b = 2.166 +/- 0.015 +/- 0.011 (headline value; T2 adds the two errors in quadrature, 2.166 +/- 0.019). Take the value from the paper.
+5. Pantheon+ SNe: https://github.com/PantheonPlusSH0ES/DataRelease (folder Pantheon+_Data; distance moduli and covariance). Papers: Scolnic et al. 2022, ApJ 938, 113; Brout et al. 2022, ApJ 938, 110. Do not combine with SH0ES calibrators unless a test says so; marginalize the absolute magnitude.
+6. DES supernovae: https://github.com/des-science/DES-SN5YR (folder 4_DISTANCES_COVMAT). Paper: DES Collaboration 2024, ApJL 973, L14, arXiv:2401.02929. The repository also carries the recalibrated DES-Dovekie sample (Popovic et al., arXiv:2511.07517). T1 uses the DES-Dovekie version (as registered); record the exact files in PREREG.md.
+7. SPARC rotation curves: https://astroweb.case.edu/SPARC/ (Table 1 galaxy sample; Newtonian mass models with V_obs, errors, V_gas, V_disk, V_bul per radius; surface density profiles). Paper: Lelli, McGaugh and Schombert 2016, AJ 152, 157, arXiv:1606.09251. RAR: McGaugh, Lelli and Schombert 2016, PRL 117, 201101, arXiv:1609.05917.
+8. Merging clusters: Harvey et al. 2015, Science 347, 1462, arXiv:1503.07675 (72 collisions in 30 systems; offsets delta_SG, delta_SI); Wittman, Golovich and Dawson 2018, ApJ 869, 104, arXiv:1701.05877 (re-measurement); Merging Cluster Collaboration, https://www.mergingclustercollaboration.org/ ; Golovich et al. 2019, ApJS 240, 39, arXiv:1711.01347 (spectroscopic survey of 29 radio-relic mergers); Golovich et al. 2019, ApJ 882, 69, arXiv:1806.10619 (panchromatic atlas); Dawson 2013, ApJ 772, 131, arXiv:1210.0014 (Monte Carlo merger dynamics: collision speed and time since pericenter for the Bullet and Musket Ball). Key systems: Bullet Cluster (1E 0657-56; Markevitch et al. 2002, ApJ 567, L27; Clowe et al. 2006, ApJ 648, L109), MACS J0025, Musket Ball (DLSCL J0916.2+2951), El Gordo, Abell 520 (Jee et al. 2014, ApJ 783, 78; Clowe et al. 2012, ApJ 758, 128). Use tables from the papers and their published catalogs (for example VizieR). Record which table each number came from.
+9. SH0ES local H0: Riess et al. 2022, ApJL 934, L7, arXiv:2112.04510; data in the Pantheon+ repository (folder SH0ES_Data). Report only.
+10. Tools (install only when needed, R10): cobaya, https://cobaya.readthedocs.io/ (Torrado and Lewis 2021, JCAP 05 (2021) 057, arXiv:2005.05290); CLASS, https://github.com/lesgourg/class_public (site class-code.net; Blas, Lesgourgues and Tram 2011, JCAP 07 (2011) 034, arXiv:1104.2933). For background-only fits you do not need CLASS: write the background integrals yourself in Python and validate them (Stage 2).
+
+----------------------------------------------------------------------
+B5. PRE-REGISTERED PASS / FAIL RULES
+----------------------------------------------------------------------
+These rules and thresholds are copied from the public file MULTIVERSE_TESTS_v1.md, version 1.0.1 (in this same folder). They were set before any data were examined. If anything here differs from that file, the file governs (R12). Do not change any threshold, sample, split or kernel. If you think a rule is flawed, say so in a part's notes and propose a NEW registered test for a later version; never alter these.
+
+GENERAL RULES
+G1. No tuning after seeing the test data. No parameter, kernel shape, sample cut, error model or criterion may change after a test dataset has been loaded; a change voids the test.
+G2. Fix on one dataset, test on another. A dataset used to fix a parameter is never used to test that same parameter. One partial overlap is registered and stated plainly: in T2, the Planck CMB enters the fix only through the compressed distance priors (R, l_A) and the test only through omega_c / omega_b (see the T2 independence caveat).
+G3. Freeze before testing. Before a test dataset is opened, write the fixed values (with uncertainties), the analysis code version and the date to a freeze file (FREEZE_<test>.json), and record its SHA-256. For the code version, use a git commit hash if git is available in the project folder; otherwise the SHA-256 of a zip of scripts/. The test run must load the frozen values from that file. (PREREG.md from R4 records all of this together.)
+G4. Thresholds are fixed. Three outcomes, all reported: PASS, FAIL, INCONCLUSIVE.
+G5. Structural constants are not free: N_s = 19 and N_r = 133 may not be varied.
+G6. No double counting. Pantheon+ and DES SN are never combined in one fit; every supernova test is run separately with each, and both results are reported. Planck's omega_b and omega_c are used only to test f_leak (T2), never to fix it; the T2 fix may use Planck only through the compressed distance priors R and l_A. Planck also serves as the CMB prior in T1, a test of a different parameter.
+G7. "n sigma" means the two-sided Gaussian-equivalent significance, computed with each dataset's published likelihood and covariance.
+G8. Ambiguities count as of the freeze: if a prediction is ambiguous, resolve it in writing in PREREG.md before the freeze, or that part of the test is INCONCLUSIVE.
+G9. Validation before any test run: the background code must reproduce a published LambdaCDM result from the same data (for example the DESI DR2 BAO-only Omega_m stated in DESI Collaboration 2025b) to within 0.3 sigma. MCMC runs must converge (Gelman-Rubin R - 1 below 0.01, or effective sample size above 1000 per parameter); an unconverged run is INCONCLUSIVE, not PASS.
+
+T1. DARK ENERGY WEAKENING (w0, wa)
+  Prediction fixed in advance: w0 > -1 (dark energy density falling today). v1 does not say whether w < -1 was allowed in the past, so only w0 is tested. DESI's rise-then-fall dark energy history (a phantom past and a crossing of w = -1) is not tested here; it is listed in the paper's open problems.
+  FIX: none fitted. Planck 2018 enters only as the standard CMB prior (compressed or full, as used by the DESI DR2 analysis).
+  TEST: DESI DR2 BAO and DESI DR2 Lyman-alpha (including the Alcock-Paczynski constraints of arXiv:2607.27410), plus Pantheon+ in one run and DES SN 5-year, DES-Dovekie version, in a second run. Flat w0waCDM.
+  PASS: in both supernova runs, w0 > -1 at 95 percent credibility (marginalized over wa and the standard parameters).
+  FAIL: in either run, w0 < -1 at 95 percent credibility; or, in any future release where the 68 percent uncertainty on w0 is 0.03 or smaller, (w0, wa) = (-1, 0) lies inside the 68 percent region in both supernova runs.
+  INCONCLUSIVE: anything else.
+  Note: if the Lyman-alpha Alcock-Paczynski data products are not public, use the published constraint as described in the paper and state exactly how; if that is impossible, run without it and record the deviation.
+
+T2. THE LEAK AND THE DARK-TO-ORDINARY RATIO (f_leak)
+  Parameter: f_leak, with model shares s_b = 1/19, s_dm = 6 (1 - f_leak) / 19, s_de = (12 + 6 f_leak) / 19. One pre-registered role: fixed from the expansion history, then tested on the dark-to-ordinary ratio. "About one sixth" is the expected value, not a fitted one.
+  FIX: DESI DR2 BAO + the compressed CMB distance priors + supernovae, with a BBN baryon density, in flat w0waCDM (the background of T1) with the sum of neutrino masses fixed at 0.06 eV. Declared now:
+    - the CMB enters only through the shift parameter R and the acoustic scale l_A: the (R, l_A) block of the Planck 2018 distance priors of Chen, Huang and Wang 2019 (JCAP 02 (2019) 028), marginalized over their omega_b;
+    - omega_b comes from the BBN prior of Cooke, Pettini and Steidel 2018 (ApJ 855, 102): 100 omega_b = 2.166 +/- 0.019 (their headline value, statistical and BBN-calculation errors of 0.015 and 0.011 added in quadrature). Planck's omega_b and omega_c are not used anywhere in the fix;
+    - the fit is run separately with Pantheon+ and with DES SN 5-year (DES-Dovekie version), never combined (G6);
+    - from the marginalized posterior of the total matter density today, Omega_m (median and 68 percent half-width): f_leak = 1 - (19 Omega_m - 1) / 6 and sigma_f = 19 sigma_Omega_m / 6. At exactly one sixth, Omega_m = 6/19, about 0.316.
+  TEST: Planck 2018 base LambdaCDM, TT,TE,EE+lowE+lensing (Planck Collaboration 2020, Table 2): omega_b = 0.02237 +/- 0.00015, omega_c = 0.1200 +/- 0.0012, so R_Planck = omega_c / omega_b = 5.36 +/- 0.065 (relative errors added in quadrature, the correlation between the two ignored; this value and uncertainty are fixed now).
+  Prediction: R_pred = 6 (1 - f_leak), equivalently 19 Omega_m - 1, with uncertainty 6 sigma_f.
+  PASS: |R_pred - R_Planck| <= 2 sigma_comb, where sigma_comb = sqrt((6 sigma_f)^2 + sigma_Planck^2) and sigma_Planck = 0.065, in both supernova runs.
+  FAIL: otherwise (|R_pred - R_Planck| > 2 sigma_comb in either supernova run).
+  INCONCLUSIVE: only for insufficient data (a fixing run whose code fails to reproduce a published LambdaCDM result from the same data, or whose sampling does not converge; see G9). T2 has no threshold region between PASS and FAIL.
+  Stated in advance, honestly: at f_leak = 1/6 the prediction is 6 x 5/6 = 5.0, which sits about 5.6 sigma below Planck's 5.36 counting Planck's uncertainty alone. The combined sigma also contains 6 sigma_f, so the final margin depends on how tightly the expansion fit pins f_leak, but this test is expected to FAIL unless the expansion fit lands well below one sixth. This is the ratio tension listed in the paper's open problems. A FAIL here does not touch the other tests, but it would mean the leak, in its v1 form, does not work.
+  Independence caveat: R and l_A are derived from the same Planck maps as the test's omega_c / omega_b, and R depends on the matter density, so the fix and the test are not fully independent. Keeping Planck's omega_b and omega_c out of the fix (BBN supplies omega_b) reduces the overlap; it does not remove it.
+  Downstream use: T5 uses the f_leak frozen in the Pantheon+ run (declared now).
+  Forbidden: f_leak has no other fix and no alternative value. It may not be refitted to the ratio or fixed on Planck's omega_b or omega_c, and epsilon_far may not be introduced to absorb a T2 failure, unless such a change is registered in a later version and tested on new data.
+
+T3. NO DIRECT DETECTION: not part of your job (no computation; tracked by Gregory from LZ and other results).
+
+T4a. OFFSET SIGN IN YOUNG MERGERS (carried motion)
+  Prediction: the dark mass sits slightly AHEAD of the galaxies (away from the gas) in mergers younger than tau_lag.
+  FIX: Bullet Cluster (time since core passage 0.1 to 0.2 Gyr, Markevitch et al. 2002; lensing mass on the galaxies, Clowe et al. 2006) fixes tau_lag > 150 Myr.
+  TEST: star, gas and lensing positions of Harvey et al. 2015, repeated on the Wittman, Golovich and Dawson 2018 re-measurement. Primary sample: systems with an independently published time since pericenter below 150 Myr. Secondary sample: all systems (reported; alone it can only give INCONCLUSIVE).
+  Statistic: mean dark-mass-minus-stars offset projected on the axis from the gas to the stars (positive = away from the gas).
+  PASS: positive at 2 sigma or more in the primary sample in both catalogs. FAIL: negative (toward the gas) at 2 sigma or more in the primary sample in both catalogs. INCONCLUSIVE: consistent with zero, or the catalogs disagree. (v1 gives no predicted magnitude, so a null cannot fail the model; report that weakness.)
+
+T4b. THE AGE CUTOFF (tau_lag)
+  Prediction: a single tau_lag >= 150 Myr separates mergers whose dark mass sits with the galaxies (t_p < tau_lag) from mergers whose dark mass has shifted toward the gas (t_p > tau_lag).
+  Sample: every merging cluster with (i) a published time since pericenter from a dynamical analysis and (ii) a published lensing map and X-ray gas map (Merging Cluster Collaboration systems, Bullet, Musket Ball, MACS J0025.4-1222, El Gordo, Abell 520 and others). Freeze the sample list and every age, with its source, before any classification.
+  Classification: "dark mass with gas" if the main lensing peak is closer to the X-ray gas peak than to the galaxy luminosity centroid and the difference exceeds twice the combined positional uncertainty; "dark mass with galaxies" by the mirror rule; otherwise unclassified and excluded.
+  Split: order systems alphabetically by catalog designation; odd positions = training half, even = test half; the Bullet Cluster is always in the training half.
+  FIX: on the training half, tau_lag = the step location (grid from 150 Myr upward) that classifies the most systems correctly; ties go to the smallest value.
+  PASS: on the test half, the frozen step classifies at least 80 percent of classified systems correctly, with at least six classified test systems.
+  FAIL: (a) no step at or above 150 Myr classifies at least 80 percent of the training half correctly; or (b) the frozen step classifies fewer than 60 percent of the test half correctly; or (c) every classified system, including at least one with t_p >= 1 Gyr, has its dark mass with the galaxies (no cutoff below 1 Gyr), unless tau_lag > 1 Gyr was registered before this test.
+  INCONCLUSIVE: fewer than six classified test systems, or test accuracy between 60 and 80 percent.
+  Report alongside (no pass/fail): the beta(T) curve from your e6/e7 model at the frozen tau_lag against the data, and Abell 520 as a stress test with its age and both lensing analyses.
+
+T5. HALO WIDTHS (sigma_ref)
+  Model declared: each galaxy isolated. Shadow = 6 (1 - f_leak) times the galaxy's baryonic mass distribution convolved with a normalized 3D Gaussian of width sigma_ref; f_leak = the T2 frozen value (Pantheon+ run). Baryons from SPARC mass models with fixed 3.6 micron mass-to-light ratios 0.5 (disk) and 0.7 (bulge) plus the SPARC gas; no per-galaxy freedom. Variants (both reported, no others): T5-A, one constant sigma_ref in kpc; T5-B, sigma_ref = k R_d with one constant k (R_d = SPARC disk scale length).
+  FIX: SPARC training half (galaxies ordered by SPARC name, odd positions): sigma_ref (or k) minimizes the total chi-square using SPARC's quoted velocity errors.
+  TEST: SPARC held-out half (even positions), frozen value.
+  PASS: median reduced chi-square <= 1.5 AND at least 70 percent of galaxies with reduced chi-square below 2. FAIL: median reduced chi-square > 3, OR fewer than 40 percent below 2. INCONCLUSIVE: between.
+  T5c stress check (NGC 1052-DF2): with frozen f_leak and sigma_ref (T5-A), including the shadow of the published baryonic mass of the NGC 1052 group in the convolution, compute the predicted mass within DF2's stellar half-light radius. PASS within 2 sigma of the published dynamical mass (van Dokkum et al. 2018, Nature 555, 629, arXiv:1803.10237); FAIL if it exceeds it by more than 3 sigma; otherwise INCONCLUSIVE. Freeze any group-baryon model before comparing.
+  Report alongside (no pass/fail): the RAR benchmark (f2) fitted on the same training half, the cap fraction (f3), and v_c tau_lag (f4).
+
+T6. THE HUBBLE TENSION AS A LOCAL READING
+  FIX: the SH0ES Cepheid-calibrated supernova absolute magnitude, calibrator sample only (Riess et al. 2022), frozen.
+  TEST: Pantheon+ Hubble-flow supernovae (the SH0ES Hubble-flow redshift range) with published peculiar-velocity corrections, split into the 12 equal-area regions of a HEALPix Nside = 1 grid; fit H0 in each region with the frozen absolute magnitude.
+  Statistic: chi-square of the regional H0 values about their weighted mean, full covariance.
+  PASS: heterogeneity significant at 3 sigma or more, while the all-sky local H0 still exceeds the Planck 2018 LambdaCDM value at 3 sigma or more. FAIL: heterogeneity consistent with zero (p > 0.32) while the all-sky tension remains at 3 sigma or more; or a published resolution traced to distance-ladder systematics, accepted by the SH0ES team. INCONCLUSIVE: anything else.
+
+NOT YET TESTABLE (no test registered; do not invent one as if it were registered): epsilon_far (P6), locality (P8, tested only through T4 and T5), the quantum departure (P9), transfer-form couplings, unwinding laws (n, Gamma_u), the coincidence window. You may PROPOSE registered tests for these in your report, clearly marked as proposals for a later version.
+
+----------------------------------------------------------------------
+B6. THE STAGED JOB (one part per reply; stop after each)
+----------------------------------------------------------------------
+PART 0. Restate the rules (B0, B5) in your own words; confirm; list Part 1's contents; stop.
+
+STAGE 1: DERIVE AND TIGHTEN THE EQUATIONS (no data, no fits)
+PART 1. Sections a, b, c. Check each equation and sign, including the c4 relation f_leak = 1 - (19 Omega_m - 1)/6. Work out the static form and the transfer form of the leak fully, including how the leaked energy can become non-diluting tension under each, the ratio drift under each coupling form, and the stability status of each coupling in the leak's direction. State the ratio tension listed in the paper's open problems plainly; do not propose a second fix or an alternative value for f_leak (T2 registers one role). Recommend one mechanism (static or transfer) with reasons; Gregory decides. Number every assumption.
+PART 2. Sections d, g, h. Derive (w0, wa) for the unwinding law d4 and at least one alternative; state whether the model predicts a band in the w0-wa plane; combine with the coupling's effective w (b2). Compute the coincidence window method (not yet the number if it needs data). Write g in the form the code will use.
+PART 3. Sections e, f, i. Derive the merger offset model (e6, e7) with a dynamical merger model for the pre-pericenter extrapolation; give beta(T; tau_lag) explicitly; state the sign of the young-merger offset you derive and under which assumptions. Derive the rotation-curve shadow for a thin exponential disk plus gas, the cap, and the orbit extrapolation (f4). Propose a measurable form for epsilon_far. Write EQUATIONS.md (all tightened equations, each labeled established or model ansatz, with tiers) and ASSUMPTIONS.md. Then write PREREG.md: every choice B5 leaves to you (data versions, the exact SPARC sample after cuts, the frozen merger list with every age and its source, the coincidence tolerance, likelihood details, the written resolution of any ambiguity under G8), restating B5's thresholds unchanged. Print its SHA-256 and stop for Gregory's approval.
+
+STAGE 2: WRITE THE ANALYSIS CODE (FIX data may be loaded; TEST data may be downloaded and checksummed but not read by any fitting code)
+PART 4. Environment: a Python virtual environment in the project folder; requirements.txt with pinned versions; explain every install command to Gregory. One download script, scripts/get_data.py, for every dataset in B4 (sizes stated first; MANIFEST.csv with URL, date, size, SHA-256).
+PART 5. Background-expansion-only code (do this before anything else that fits data): H(z), distances, r_d (or the BAO parameterization used by the data release), and likelihoods in this order: DESI DR2 BAO tables, then Pantheon+ and DES SNe (separately, never combined), then compressed CMB distance priors, then the BBN prior on omega_b. Unit tests. Validation G9.
+PART 6. Merging-cluster code: build MERGERS.csv from published tables (positions of lensing peak, gas peak and galaxy centroid with uncertainties, time since pericenter with its source), implement the T4a statistic, the T4b classification rule and step fit, and the e6/e7 model, and test them on a synthetic merger with a known answer.
+PART 7. SPARC code: read the mass models, implement the T5 shadow (T5-A and T5-B), the T5c DF2 stress check, and the RAR benchmark; test on synthetic galaxies with a known answer.
+
+STAGE 3: RUN IT
+PART 8. FIX steps: T2 (DESI DR2 BAO + compressed CMB priors R, l_A + supernovae + BBN omega_b; one run with Pantheon+, one with DES-Dovekie; Planck's omega_b and omega_c are not used in the fit), T4a and T4b (Bullet Cluster bound; training half), T5-A and T5-B (SPARC training half), T6 (SH0ES calibrators). T1 has no fixing step. Write results/FIXED_VALUES.json and one FREEZE file per test with its SHA-256 (G3); stop.
+PART 9. TEST runs for T1, T2 (against Planck 2018 omega_c / omega_b) and T6, exactly as pre-registered. No changes. Stop.
+PART 10. TEST runs for T4a, T4b, T5-A, T5-B and T5c, exactly as pre-registered. No changes. Stop.
+
+STAGE 4: REPORT
+PART 11. Write the report in the format of B7, failures included, and the review packet. Stop.
+
+----------------------------------------------------------------------
+B7. OUTPUT FORMAT
+----------------------------------------------------------------------
+Folder layout (inside the project folder):
+  README.md            what is here, how to reproduce every number from scratch, in order
+  EQUATIONS.md         tightened equations (LaTeX math), each labeled established or model ansatz, with tier
+  ASSUMPTIONS.md       numbered assumptions [A1]... and which results each drives
+  PREREG.md            pre-registration, plus PREREG.sha256
+  requirements.txt     pinned Python environment (and WSL2 notes if used)
+  scripts/             get_data.py and every analysis script, each runnable from the command line
+  tests/               unit and validation tests
+  data/                downloaded data and MANIFEST.csv
+  runs/                chains and logs, one folder per run, named by test and date
+  results/             FIXED_VALUES.json, RESULTS.md, results.json, figures/
+  _old/                superseded files (never deleted)
+
+results/RESULTS.md must contain, in this order:
+  1. Summary table, one row per test:
+     Test ID | Parameter | FIX dataset | Fixed value (median, 68% interval) | TEST dataset | Statistic | Pre-registered threshold | Value obtained | Outcome (PASS / FAIL / INCONCLUSIVE)
+  2. One section per test: what was run (script and command), the numbers, one figure, and a plain-English paragraph Gregory can read.
+  3. Deviations from PREREG.md (or "none"), each with the reason and both results.
+  4. Assumptions that drive the outcomes (cross-referenced to ASSUMPTIONS.md).
+  5. What could not be done, and why.
+  6. Open problems touched (from B1), with what this work adds to each.
+  7. References actually used (author, year, journal, volume, page or arXiv ID).
+
+results/results.json: a list of objects with keys
+  test_id, parameter, fix_dataset, fixed_value, fixed_interval_68, test_dataset, statistic, threshold, value, outcome, convergence, deviations, notes.
+
+Review packet: REVIEW_PACKET.md listing every file the independent reviewer needs, the exact commands to reproduce each result, the environment, and the PREREG hash. Do not include persuasive summaries or conclusions beyond RESULTS.md. The reviewer (Claude) receives the files cold.
+
+----------------------------------------------------------------------
+B8. REFERENCES (all verified before this brief was written)
+----------------------------------------------------------------------
+Amendola 2000, PRD 62, 043511, astro-ph/9908023.
+Blas, Lesgourgues and Tram 2011, JCAP 07 (2011) 034, arXiv:1104.2933.
+Boehmer, Caldera-Cabral, Lazkoz and Maartens 2008, PRD 78, 023505, arXiv:0801.1565.
+Brout et al. 2022, ApJ 938, 110, arXiv:2202.04077.
+Carlip 2000, Phys. Lett. A 267, 81, gr-qc/9909087.
+Chen, Huang and Wang 2019, JCAP 02 (2019) 028, arXiv:1808.05724.
+Chevallier and Polarski 2001, IJMPD 10, 213, gr-qc/0009008.
+Clowe et al. 2006, ApJ 648, L109, astro-ph/0608407.
+Clowe et al. 2012, ApJ 758, 128, arXiv:1209.2143.
+Cooke, Pettini and Steidel 2018, ApJ 855, 102, arXiv:1710.11129.
+Das, Corasaniti and Khoury 2006, PRD 73, 083509, astro-ph/0510628.
+Dawson 2013, ApJ 772, 131, arXiv:1210.0014.
+DES Collaboration 2024, ApJL 973, L14, arXiv:2401.02929.
+DESI Collaboration 2025a, DESI DR2 Results I, arXiv:2503.14739.
+DESI Collaboration 2025b, DESI DR2 Results II, PRD 112, 083515, arXiv:2503.14738.
+DESI Collaboration 2026, DESI DR2 Results IV (Lyman-alpha Alcock-Paczynski), arXiv:2607.27410.
+Deutsch and Hayden 2000, Proc. R. Soc. Lond. A 456, 1759, quant-ph/9906007.
+Dodelson and Schmidt 2020, Modern Cosmology, 2nd ed., Academic Press (textbook for a1 to a5, h1).
+Gavela, Hernandez, Lopez Honorez, Mena and Rigolin 2009, JCAP 07 (2009) 034, arXiv:0901.1611.
+Golovich et al. 2019, ApJS 240, 39, arXiv:1711.01347.
+Golovich et al. 2019, ApJ 882, 69, arXiv:1806.10619.
+Harvey, Massey, Kitching, Taylor and Tittley 2015, Science 347, 1462, arXiv:1503.07675.
+Hehl and Mashhoon 2009, Phys. Lett. B 673, 279, arXiv:0812.1059.
+Jee, Hoekstra, Mahdavi and Babul 2014, ApJ 783, 78, arXiv:1401.3356.
+Lelli, McGaugh and Schombert 2016, AJ 152, 157, arXiv:1606.09251.
+Linder 2003, PRL 90, 091301, astro-ph/0208512.
+Markevitch et al. 2002, ApJ 567, L27, astro-ph/0110468.
+McGaugh, Lelli and Schombert 2016, PRL 117, 201101, arXiv:1609.05917.
+Planck Collaboration 2020, A&A 641, A6, arXiv:1807.06209.
+Popovic et al., DES-Dovekie reanalysis, arXiv:2511.07517.
+Riess et al. 2022, ApJL 934, L7, arXiv:2112.04510.
+Scolnic et al. 2022, ApJ 938, 113, arXiv:2112.03863.
+Torrado and Lewis 2021, JCAP 05 (2021) 057, arXiv:2005.05290.
+Valiviita, Majerotto and Maartens 2008, JCAP 07 (2008) 020, arXiv:0804.0232.
+Wang, Abdalla, Atrio-Barandela and Pavon 2016, Rep. Prog. Phys. 79, 096901, arXiv:1603.08299.
+Wittman, Golovich and Dawson 2018, ApJ 869, 104, arXiv:1701.05877.
+
+Begin with PART 0 now. Do nothing else until Gregory types CONTINUE.
+
+=== END OF BRIEF FOR ARGON ===

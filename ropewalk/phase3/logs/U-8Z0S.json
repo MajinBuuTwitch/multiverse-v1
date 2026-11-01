@@ -1,0 +1,153 @@
+{
+  "universe_id": "U-8Z0S",
+  "family": "GALAXY",
+  "round": 5,
+  "elapsed_sec": 135.879,
+  "f_leak_used": 0.16666666666666666,
+  "T5_A": {
+    "fitted_sigma_ref_kpc": 9.802732,
+    "sigma_ref_uncertainty": {
+      "point_estimate": 9.802732,
+      "bootstrap_train_galaxies": {
+        "mean": 10.747881,
+        "std": 3.312104,
+        "median": 9.905792,
+        "sigma_68": 3.138474,
+        "ci95": [
+          6.366986,
+          18.918357
+        ]
+      },
+      "posterior_sum_chi2_red": {
+        "mean": 9.805203,
+        "std": 0.109773,
+        "median": 9.79975,
+        "sigma_68": 0.109347,
+        "ci95": [
+          9.582056,
+          10.013168
+        ]
+      },
+      "posterior_total_chi2": {
+        "mean": 9.200648,
+        "std": 0.015282,
+        "median": 9.193531,
+        "sigma_68": 0.014173,
+        "ci95": [
+          9.163147,
+          9.221082
+        ]
+      }
+    },
+    "training_fit": {
+      "model_type": "T5A",
+      "loss_metric": "sum_chi2_red",
+      "f_leak": 0.16666666666666666,
+      "fitted_param": 9.802732,
+      "train_summary": {
+        "n_galaxies": 88,
+        "total_pts": 1747,
+        "sum_chi2_red": 16021.154627289221,
+        "mean_chi2_red": 182.05857531010477,
+        "median_chi2_red": 45.4216959620283,
+        "total_chi2": 366267.9534039494,
+        "pooled_chi2_red": 209.65538260100138,
+        "frac_chi2_red_lt_2": 0.0,
+        "median_sigma_kpc": 9.802731803159388
+      }
+    },
+    "test_evaluation": {
+      "n_galaxies": 87,
+      "total_pts": 1644,
+      "sum_chi2_red": 21491.80922064818,
+      "mean_chi2_red": 247.03228989250783,
+      "median_chi2_red": 56.12380097230049,
+      "total_chi2": 596219.9863200199,
+      "pooled_chi2_red": 362.6642252554866,
+      "frac_chi2_red_lt_2": 0.011494252873563218,
+      "median_sigma_kpc": 9.802732
+    },
+    "test_median_chi2_red": 56.123801,
+    "test_frac_chi2_red_lt_2": 0.011494,
+    "n_test_lt_2": 1,
+    "n_test_galaxies": 87,
+    "verdict": "FAIL",
+    "reasons": [
+      "M_chi2 = 56.1238 > 3.0",
+      "F_<2 = 0.0115 < 0.40"
+    ]
+  },
+  "T5_B": {
+    "fitted_k": 2.987385,
+    "k_uncertainty": {
+      "point_estimate": 2.987385,
+      "bootstrap_train_galaxies": {
+        "mean": 3.00532,
+        "std": 0.342111,
+        "median": 3.012083,
+        "sigma_68": 0.359917,
+        "ci95": [
+          2.314322,
+          3.606563
+        ]
+      },
+      "posterior_sum_chi2_red": {
+        "mean": 2.987564,
+        "std": 0.020574,
+        "median": 2.986052,
+        "sigma_68": 0.020021,
+        "ci95": [
+          2.944131,
+          3.025116
+        ]
+      },
+      "posterior_total_chi2": {
+        "mean": 3.482031,
+        "std": 0.00387,
+        "median": 3.480285,
+        "sigma_68": 0.00454,
+        "ci95": [
+          3.469983,
+          3.486874
+        ]
+      }
+    },
+    "training_fit": {
+      "model_type": "T5B",
+      "loss_metric": "sum_chi2_red",
+      "f_leak": 0.16666666666666666,
+      "fitted_param": 2.987385,
+      "train_summary": {
+        "n_galaxies": 88,
+        "total_pts": 1747,
+        "sum_chi2_red": 8023.009764038887,
+        "mean_chi2_red": 91.1705655004419,
+        "median_chi2_red": 25.509894329837692,
+        "total_chi2": 170371.65544264542,
+        "pooled_chi2_red": 97.52241296087317,
+        "frac_chi2_red_lt_2": 0.011363636363636364,
+        "median_sigma_kpc": 6.0494536896137285
+      }
+    },
+    "test_evaluation": {
+      "n_galaxies": 87,
+      "total_pts": 1644,
+      "sum_chi2_red": 9542.701615034206,
+      "mean_chi2_red": 109.68622546016329,
+      "median_chi2_red": 27.872533935700574,
+      "total_chi2": 394314.8631782865,
+      "pooled_chi2_red": 239.8508900111232,
+      "frac_chi2_red_lt_2": 0.011494252873563218,
+      "median_sigma_kpc": 7.378840950000001
+    },
+    "test_median_chi2_red": 27.872534,
+    "test_frac_chi2_red_lt_2": 0.011494,
+    "n_test_lt_2": 1,
+    "n_test_galaxies": 87,
+    "verdict": "FAIL",
+    "reasons": [
+      "M_chi2 = 27.8725 > 3.0",
+      "F_<2 = 0.0115 < 0.40"
+    ]
+  }
+}

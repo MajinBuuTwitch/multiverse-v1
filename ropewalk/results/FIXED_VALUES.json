@@ -1,0 +1,46 @@
+{
+  "frozen_at": "2026-10-30T06:29:35",
+  "seed": 20261030,
+  "freeze_file_sha256": {
+    "FREEZE_T1.json": "bfc4e2531f1cc1ac2d2853253564676227ad786186c2e0039b18f86630cfc0d1",
+    "FREEZE_T2.json": "ea12e85f5a9334cb8495d1ad0f52bdc024c5efb329990bddcd12363abdc7d970",
+    "FREEZE_T4.json": "ba0312c8fd604668c01b5ba004ca7c329b641b7e780868f1d3600a533b63141b",
+    "FREEZE_T5.json": "42555e320386a4eb9fdedb8a4cc5592594d066e0162b00efbb20726dac768743",
+    "FREEZE_T6.json": "30125149716c3b1de0932ac3e7b247f5ec5f1a04316f77d025cbb6b488478e3a"
+  },
+  "summary_of_frozen_parameters": {
+    "T2_A_PantheonPlus": {
+      "Omega_bc_median": 0.308725,
+      "sigma_Omega_bc": 0.006049,
+      "f_leak": 0.189038,
+      "sigma_f_leak": 0.019155,
+      "R_pred": 4.865772,
+      "sigma_R_pred": 0.114933
+    },
+    "T2_A_DES_Dovekie": {
+      "Omega_bc_median": 0.310765,
+      "sigma_Omega_bc": 0.005757,
+      "f_leak": 0.182578,
+      "sigma_f_leak": 0.018231,
+      "R_pred": 4.904531,
+      "sigma_R_pred": 0.109383
+    },
+    "T4b_tau_lag_myr": 805,
+    "T4b_tau_lag_gyr": 0.805,
+    "T5_A_sigma_ref_kpc": 9.212795,
+    "T5_B_k": 2.928045,
+    "T6_M_B_fixed_mag": -19.24888455,
+    "T6_sigma_M_B_fixed_mag": 0.03010569
+  },
+  "scripts_sha256": {
+    "clusters_t4.py": "b07659e7781322c38577839185c41e542ad162121d187fe73153ca8f5d23bfdd",
+    "cosmology.py": "998296f8916f194ecd0e3974861810425baa3903dc58ea1a624bd0a0c6657f92",
+    "freeze_data_manifest.py": "8b3eb42c59bdc0f087bf7c18794470e4d2bc44b1e1927eb5709f349c35034330",
+    "get_data.py": "04fcc4bc18750011a6ea2893407d3ce018f06e39d8f6a3b89e73a7a835d9cdf2",
+    "local_h0_t6.py": "c891441736f8971e14a2fb75274e4aa55b6948e139fd6b1198296fb2de6de9c4",
+    "run_part10_astrophysics_and_verdict.py": "ccc6a7dcf6a8202e91c279411f2a445b472c616fe703d4e6437a75ab5bb009c5",
+    "run_part8_fixes.py": "0bd1702119f1348e12ff796fa2bd16d133f349c70cb4ff0c04f51f5f736d12e8",
+    "run_part9_cosmology_tests.py": "8da8e3cbcdfeeb6a1b8be53c4730920419411fcfe74250e9b325e4639e818eb5",
+    "sparc_t5.py": "f992b875a087123f2118086bb8c9105e56d56f671e5926778e136a9bad350642"
+  }
+}

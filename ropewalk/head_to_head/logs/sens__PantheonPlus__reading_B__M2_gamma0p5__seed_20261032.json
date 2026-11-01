@@ -1,0 +1,68 @@
+{
+  "task_id": "sens__PantheonPlus__reading_B__M2_gamma0p5__seed_20261032",
+  "run_id": "sens__PantheonPlus__reading_B__M2_gamma0p5",
+  "group": "prior_sensitivity",
+  "model": "M2",
+  "sn_name": "Pantheon+",
+  "reading": "B",
+  "gamma_u_prior": [
+    0.0,
+    0.5
+  ],
+  "seed": 20261032,
+  "nlive": 1000,
+  "dlogz": 0.01,
+  "ndim": 3,
+  "started_at": "2026-10-31T01:40:04",
+  "completed_at": "2026-10-31T03:02:56",
+  "elapsed_sec": 4971.509888099972,
+  "niter": 17690,
+  "ncall": 359809,
+  "lnZ": -721.4607982781109,
+  "lnZ_err_dynesty": 0.11085994180812034,
+  "chi2_min_ns": 1416.7795892363656,
+  "chi2_min_opt": 1416.7781665360048,
+  "best_theta_ns": [
+    0.32362715022596455,
+    0.6564363466014693,
+    0.1407823135466702
+  ],
+  "best_theta_opt": [
+    0.3236868319891964,
+    0.6564272114177241,
+    0.14058628826028854
+  ],
+  "parameters": {
+    "Omega_bc": {
+      "mean": 0.32370085746938715,
+      "std": 0.0026878479409357496,
+      "best_ns": 0.32362715022596455,
+      "best_opt": 0.3236868319891964
+    },
+    "h": {
+      "mean": 0.6564190131686489,
+      "std": 0.0018289125875003724,
+      "best_ns": 0.6564363466014693,
+      "best_opt": 0.6564272114177241
+    },
+    "gamma_u": {
+      "mean": 0.14057743063426756,
+      "std": 0.01053668281705895,
+      "best_ns": 0.1407823135466702,
+      "best_opt": 0.14058628826028854
+    },
+    "omega_b_derived": {
+      "mean": 0.022678382371972908,
+      "std": 0.00012634752366170633,
+      "best_ns": 0.022679404059972864,
+      "best_opt": 0.022678772836297337
+    },
+    "100_omega_b_derived": {
+      "mean": 2.267838237197291,
+      "std": 0.012634752366170633,
+      "best_ns": 2.2679404059972863,
+      "best_opt": 2.2678772836297334
+    }
+  },
+  "chain_file": "head_to_head/chains/sens__PantheonPlus__reading_B__M2_gamma0p5__seed_20261032.npz"
+}

@@ -1,0 +1,24 @@
+MULTIVERSE: FILES FOR GEMINI 4 ARGON (package v1.0.1)
+
+This folder is everything you have. There is no Google Drive access and nothing else to fetch from Gregory's side;
+public datasets are downloaded from the official links in MULTIVERSE_DATASETS_v1.md.
+
+READ IN THIS ORDER
+1. MULTIVERSE_ARGON_HANDOFF.txt
+   Your brief. The rules, the CONTINUE protocol, the staged job (derive, code, run, report) and the output format.
+   Start here and confirm the rules before doing anything else.
+2. MULTIVERSE_TESTS_v1.md
+   The pre-registered tests: which dataset FIXES each parameter, which dataset TESTS it, and the PASS / FAIL
+   criteria set in advance. No parameter may be tuned after seeing its test data. If any file disagrees with this
+   one, this one wins.
+3. MULTIVERSE_EQUATION_SHEET_v1.md
+   The starter equations, every one marked "established" or "model ansatz", and the table of free parameters.
+4. MULTIVERSE_DATASETS_v1.md
+   Every dataset with its official link, what it constrains, and which prediction it tests.
+5. MULTIVERSE_PREDICTIONS_PAPER_v1.md
+   The public paper: the model in plain language, the predictions, and the open problems. Background for
+   understanding what the model claims; the handoff and the tests govern the work.
+
+All files are Markdown or plain text; math is written in LaTeX notation.
+
+A separate step-by-step handoff note from Gregory will be added to this folder later.

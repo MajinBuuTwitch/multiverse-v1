@@ -1,0 +1,53 @@
+{
+  "task_id": "main__PantheonPlus__reading_B__LCDM__seed_20261031",
+  "run_id": "main__PantheonPlus__reading_B__LCDM",
+  "group": "main",
+  "model": "LCDM",
+  "sn_name": "Pantheon+",
+  "reading": "B",
+  "gamma_u_prior": null,
+  "seed": 20261031,
+  "nlive": 1000,
+  "dlogz": 0.01,
+  "ndim": 3,
+  "started_at": "2026-10-31T03:03:00",
+  "completed_at": "2026-10-31T04:24:44",
+  "elapsed_sec": 4903.835972600151,
+  "niter": 17933,
+  "ncall": 365379,
+  "lnZ": -715.9859850603145,
+  "lnZ_err_dynesty": 0.11222805284928802,
+  "chi2_min_ns": 1405.344734916982,
+  "chi2_min_opt": 1405.3436337442254,
+  "best_theta_ns": [
+    0.3011057576976738,
+    0.6833093506921194,
+    2.250791858409476
+  ],
+  "best_theta_opt": [
+    0.3011459174204897,
+    0.68325762009731,
+    2.250433821404471
+  ],
+  "parameters": {
+    "Omega_bc": {
+      "mean": 0.3012094231214272,
+      "std": 0.0037021241862979924,
+      "best_ns": 0.3011057576976738,
+      "best_opt": 0.3011459174204897
+    },
+    "h": {
+      "mean": 0.6832393023014752,
+      "std": 0.002906477979877491,
+      "best_ns": 0.6833093506921194,
+      "best_opt": 0.68325762009731
+    },
+    "100_omega_b": {
+      "mean": 2.2505118567465514,
+      "std": 0.012425368882660943,
+      "best_ns": 2.250791858409476,
+      "best_opt": 2.250433821404471
+    }
+  },
+  "chain_file": "head_to_head/chains/main__PantheonPlus__reading_B__LCDM__seed_20261031.npz"
+}

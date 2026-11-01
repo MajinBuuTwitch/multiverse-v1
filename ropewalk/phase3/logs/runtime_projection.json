@@ -1,0 +1,14 @@
+{
+  "first_galaxy_universe": "U-8TVY",
+  "first_galaxy_sec": 145.404,
+  "first_regional_universe": "U-IBCC",
+  "first_regional_sec": 6.528,
+  "first_cosmo_universe": "U-CUIZ",
+  "first_cosmo_sec": 3472.657,
+  "projected_total_parallel_sec": 52849.51,
+  "projected_total_parallel_min": 880.83,
+  "projected_total_15x_sum_sec": 54368.84,
+  "projected_total_15x_sum_min": 906.15,
+  "limit_sec": 86400,
+  "fits_within_24h": true
+}

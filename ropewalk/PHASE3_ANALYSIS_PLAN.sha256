@@ -1,0 +1,8 @@
+# Phase 3 Injection Tests Analysis Plan Manifest (PHASE3_ANALYSIS_PLAN.sha256)
+# Label: Phase 3 injection tests: supplementary, not pre-registered in Stage 1
+# Generated at: 2026-10-31T06:53:07-04:00 (prior to first run)
+# Format: <sha256_hex>  <relative_path>
+8476aeb01096c266a683e6baed9788fffdb1e227738b3c653c382c2ff82b431d  PHASE3_ANALYSIS_PLAN.md
+8476aeb01096c266a683e6baed9788fffdb1e227738b3c653c382c2ff82b431d  phase3/PHASE3_ANALYSIS_PLAN.md
+d93fff066adcd43ca1d6593e244cb32eac4d78b796cafdc35d494eebcd21992d  phase3/DEVIATIONS.md
+b7d08d57c24bfea919edefff85a62320ebc364d5cb062a9a343c5525d0f3f352  MOCKS_FOR_ARGON/MOCK_MANIFEST.csv
