@@ -1,0 +1,3 @@
+# Store every file byte-for-byte: no line-ending conversion, no diffs/merges rewriting content.
+# Frozen files are verified by SHA-256; any conversion would break their fingerprints.
+* -text

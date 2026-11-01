@@ -1,0 +1,13 @@
+cff-version: 1.2.0
+message: "If you use this work, please cite it as below."
+title: "A Pre-Registered Falsification of a Speculative Multiverse Model (MULTIVERSE v1)"
+authors:
+  - family-names: Mandarano
+    given-names: Gregory
+    affiliation: WickedAI
+version: "6.0.0"
+date-released: "YYYY-MM-DD"
+doi: "10.5281/zenodo.XXXXXXX"
+license: [MIT, CC-BY-4.0]
+repository-code: "https://github.com/MajinBuuTwitch/multiverse-v1"
+keywords: [pre-registration, falsification, cosmology, dark energy, rotation curves, blind analysis, injection tests, OpenTimestamps]

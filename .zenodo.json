@@ -1,0 +1,11 @@
+{
+  "title": "A Pre-Registered Falsification of a Speculative Multiverse Model (MULTIVERSE v1)",
+  "upload_type": "publication",
+  "publication_type": "preprint",
+  "creators": [{"name": "Mandarano, Gregory", "affiliation": "WickedAI"}],
+  "description": "Complete public record (rules, data manifests, code, frozen results, timestamp proofs and paper) for a pre-registered test of version 1 of the Mandarano Model, a speculative model written for the WickedAI documentary MULTIVERSE. Version 1 is falsified through the decisive failure of its galaxy rotation-curve pillar in two independent pipelines. AI systems used in the work are credited in the README and paper.",
+  "license": "cc-by-4.0",
+  "keywords": ["pre-registration", "falsification", "cosmology", "dark energy", "rotation curves", "blind analysis", "OpenTimestamps"],
+  "version": "6.0.0",
+  "related_identifiers": [{"identifier": "https://github.com/MajinBuuTwitch/multiverse-v1", "relation": "isSupplementTo", "scheme": "url"}]
+}
