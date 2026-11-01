@@ -1,0 +1,8 @@
+run G9a_lcdm_BAOstd cfg={'model': 'lcdm', 'bao': 'std', 'cmb': None, 'sn': None, 'bbn': None, 'role': 'gate G9-a'} seed=20261030 start=2026-10-30T06:40:38
+  start mode [0.29721229 0.71694136 2.59996385] chi2=10.281
+  adapt done: acceptance 0.318, scale 1.888
+  prod 4000/chain (extra burn 0): Rmax-1=0.0032 ESSmin=2689 tau_max=11.6 acc=0.306
+  prod 8000/chain (extra burn 0): Rmax-1=0.0020 ESSmin=5599 tau_max=11.7 acc=0.308
+  prod 12000/chain (extra burn 0): Rmax-1=0.0013 ESSmin=8242 tau_max=11.7 acc=0.309
+  prod 16000/chain (extra burn 0): Rmax-1=0.0006 ESSmin=10806 tau_max=11.6 acc=0.308
+done chi2_min=10.2810 at [0.29721285 0.71694471 2.6       ] runtime 386s converged=True

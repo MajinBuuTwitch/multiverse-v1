@@ -1,0 +1,8 @@
+run S_T1LyaStd_cpl_P cfg={'model': 'cpl', 'bao': 'std', 'cmb': 'lcdm3', 'sn': 'P', 'bbn': None, 'role': 'T1 unmodified Lya row sensitivity'} seed=20265030 start=2026-10-30T07:28:32
+  start mode [ 0.31243164  0.67757513  2.24179486 -0.85755504 -0.50701682] chi2=1395.809
+  adapt done: acceptance 0.247, scale 1.133
+  prod 4000/chain (extra burn 0): Rmax-1=0.0046 ESSmin=1530 tau_max=19.6 acc=0.250
+  prod 8000/chain (extra burn 0): Rmax-1=0.0045 ESSmin=3224 tau_max=19.4 acc=0.255
+  prod 12000/chain (extra burn 0): Rmax-1=0.0027 ESSmin=4803 tau_max=19.4 acc=0.256
+  prod 16000/chain (extra burn 0): Rmax-1=0.0021 ESSmin=6363 tau_max=19.6 acc=0.256
+done chi2_min=1395.8085 at [ 0.31243238  0.67757458  2.2417962  -0.85755739 -0.50699812] runtime 1876s converged=True

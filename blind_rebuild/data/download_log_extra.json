@@ -1,0 +1,5 @@
+[
+ {"path": "data/papers/chen2019/1808.05724.tar.gz", "url": "https://arxiv.org/e-print/1808.05724", "version": "arXiv:1808.05724 e-print (Chen, Huang & Wang 2019, JCAP 02, 028)", "downloaded_utc": "2026-10-30T10:24:58Z", "sha256": "9a01121d3a36ff2fd00b39023906e030a4044b9581a5596b7c0e7b535ec4a110"},
+ {"path": "data/papers/planck2018_VI/1807.06209.tar.gz", "url": "https://arxiv.org/e-print/1807.06209", "version": "arXiv:1807.06209 e-print (Planck 2018 VI, A&A 641, A6)", "downloaded_utc": "2026-10-30T10:26:40Z", "sha256": "868a49562c9550e510d7446739aa36f9ece5c72a9d5e2f7248eb4772dd11e18b"},
+ {"path": "data/des_dovekie/docs/DES-Dovekie-SN_Likelihood.py", "url": "https://raw.githubusercontent.com/des-science/DES-SN5YR/c9a4fcafc4cbd19bd750dee47fc76194a45c181f/4_DISTANCES_COVMAT/DES-Dovekie-SN_Likelihood.py", "version": "des-science/DES-SN5YR@c9a4fcafc4cbd19bd750dee47fc76194a45c181f (documentation of the inverse-covariance packing only; not used as code)", "downloaded_utc": "2026-10-30T10:26:00Z", "sha256": "78526c0e6013619e3586a5509be504f0bc5f0461d1e55a3d5bec0154353645ff"}
+]

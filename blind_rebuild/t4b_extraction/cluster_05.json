@@ -1,0 +1,68 @@
+{
+  "row": 5,
+  "designation": "Abell 2034",
+  "paper_ref": "Monteiro-Oliveira et al. 2018, MNRAS 481, 1097; pointer: Table 2 & Sec. 3.1-3.2 / Fig. 5",
+  "paper_found": {
+    "authors": "R. Monteiro-Oliveira, E. S. Cypriano, A. Z. Vitorelli, A. L. B. Ribeiro, L. Sodre Jr., R. Dupke, C. Mendes de Oliveira",
+    "title": "New insights on the dissociative merging galaxy cluster Abell 2034",
+    "journal_ref": "MNRAS 481, 1097-1114 (2018), doi:10.1093/mnras/sty2349",
+    "arxiv_id": "1808.09449",
+    "source_file": "d:/Blind_Rebuild/data/papers/A2034_MO2018/src/A2034_paper_accepted.tex",
+    "journal_ref_match": "yes (authors/year/journal/volume/first page match). NOTE: the pointer numbering does not map exactly onto the arXiv LaTeX: the mass-clump coordinate table is the 5th table environment (label A2034.tab:masses), weak lensing is Sec. 2 (not 3); the BCG/mass-peak/X-ray offsets are in Sec. 2 (end of 'Results' subsection, label sec:mass.results) and caption of Fig. label fig:mass.peak.uncer."
+  },
+  "subcluster_designated": "A2034N (northern subcluster)",
+  "z_cl": {
+    "value": 0.114,
+    "location": "Sec. 1 (adopted cosmology paragraph); also abstract",
+    "quote": "At the mean cluster redshift of $z=0.114$ we then have $1$ arcsec equals $2.06$~kpc"
+  },
+  "I": {
+    "type": "weak-lensing convergence (LensEnt2 kappa map) peak, clump 1 (A2034N), peak centre from peak finder (pixel-weighted mean inside ~1.2 arcmin window)",
+    "ra": "15:10:13",
+    "dec": "+33:33:43",
+    "offset": {"from": "S", "value": 57, "unit": "arcsec", "asym_errors": "+36/-34 arcsec", "note": "separation between BCG N and A2034N mass peak"},
+    "location": "Table 'Summary of the statistically relevant mass clumps' (label A2034.tab:masses), row 1 (footnote star = A2034N); offset in Sec. 2.4 Results paragraph after Fig. fig:mass.peak.uncer",
+    "quote": "1$^\\star$ &  15:10:13 & +33:33:43 & 4.1 & 0.055 & ... ; $^\\star$ A2034N ; \"In relation to the mass peak, the BCG N is found $57^{+36}_{-34}$ arcsec away from it.\"",
+    "uncertainty": {
+      "value": "NOT GIVEN as a positional sigma; only bootstrap 1/2 sigma contours shown in figure, plus the uncertainty of the BCG N - mass peak separation 57 (+36/-34) arcsec",
+      "unit": "arcsec",
+      "kind": "other",
+      "components": ["+36", "-34"],
+      "location": "Sec. 2 Results paragraph (line ~572 of tex); Fig. fig:mass.peak.uncer caption (contours only, no numbers)",
+      "quote": "Given the relatively low mass of A2034N and the proximity with a neighbouring structure (\\#7), the determination of its peak position is less precise than we found for A2034S. ... In relation to the mass peak, the BCG N is found $57^{+36}_{-34}$ arcsec away from it."
+    }
+  },
+  "G": {
+    "type": "NONE for A2034N: paper states no gas concentration related to the A2034N mass clump (gas stripped; shock front behind BCG N per Owers+14). The only X-ray peak is associated with A2034S.",
+    "ra": null,
+    "dec": null,
+    "offset": null,
+    "location": "Sec. 2 Results (line ~576) and Sec. 5 Discussion (line ~776)",
+    "quote": "In A2034N, as pointed by previous studies \\citep{kempner03,owers14}, its gas content was stripped out during the collision in the sense that we cannot identify any gas concentration related to the mass clump.",
+    "uncertainty": "NOT GIVEN",
+    "related_info_not_for_N": "Single X-ray peak (related to A2034S): '$91\\pm1$ arcsec from the BGC S and $169^{+48}_{-42}$ arcsec from the mass peak related to A2034S'. No absolute X-ray peak coordinates are given. Chandra merged image pixel scale 0.984 arcsec."
+  },
+  "S_candidates": [
+    {
+      "label": "BCG N (galaxy ID 103, marked diamond = BCG of A2034N in appendix catalogue)",
+      "type": "subcluster BCG",
+      "ra": "15:10:10.2",
+      "dec": "33:34:01.5",
+      "offset": {"from": "I", "value": 57, "unit": "arcsec", "asym_errors": "+36/-34"},
+      "location": "Appendix A catalogue (longtable), row ID 103; caption defines diamond",
+      "quote": "103$^\\diamondsuit$  &--  & 13  & 15:10:10.2 & 33:34:01.5 & 19.18  & 17.47  & 16.64  & 34476.  & 100. ; caption: \"The galaxies highlighted as $^\\star$ and $^\\diamondsuit$ are respectively the BCGs of the subclusters A2034S and A2034N.\"",
+      "uncertainty": "NOT GIVEN"
+    },
+    {
+      "label": "No luminosity-weighted centroid tabulated. Galaxy-density peaks of A2034N (bkde2d smoothed red-sequence map, 3.0 sigma) are only shown in a figure; no coordinates given.",
+      "type": "none tabulated",
+      "ra": null,
+      "dec": null,
+      "offset": null,
+      "location": "Sec. 3.2 (label sec:search.sub), Fig. fig:peak.significance; Fig. fig:density right panel (R_C luminosity-weighted density map, figure only)",
+      "quote": "At the end we found that the merging components A2034S and A2034N were detected respectively $3.6\\sigma$ and $3.0\\sigma$ above the mean density.",
+      "uncertainty": "NOT GIVEN"
+    }
+  ],
+  "notes": "1) Label inconsistency inside the paper: text line ~357 says 'The straightforward mass counterparts of A2034S and A2034N, labelled as \\#1 and \\#2 respectively', but the mass-clump table footnotes give 1=star=A2034N and 2=diamond=A2034S; the table declinations (clump 1 at +33:33:43 north of clump 2 at +33:27:50) and BCG catalogue positions (BCG N +33:34:01.5, BCG S +33:29:10.4) support the table footnote (clump 1 = A2034N). 2) Mass peak positions are given only to 1 s in RA / 1 arcsec in Dec. 3) For A2034N no X-ray peak/gas clump exists per the paper, so x_G is not available for the designated subcluster. 4) For reference A2034S values (not designated): clump 2 at 15:10:09 +33:27:50; BCG S (ID 95 star) 15:10:11.7 +33:29:10.4; BCG S - mass peak 84 (+37/-32) arcsec; X-ray peak - BCG S 91+/-1 arcsec; X-ray peak - S mass peak 169 (+48/-42) arcsec. 5) Text also says BCG N within 1 sigma (68% c.l.) of its mass peak bootstrap contours. 6) A northern neighbour clump (#7, 15:10:17 +33:36:52) sometimes confused with the A2034N peak: 'far $199_{+45}^{-41}$ arcsec from the BCG N'."
+}

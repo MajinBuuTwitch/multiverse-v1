@@ -1,0 +1,8 @@
+run S_T2A_cooke_P cfg={'model': 'cpl', 'bao': 'mod', 'cmb': 'cond', 'sn': 'P', 'bbn': 'cooke', 'role': 'T2-A Cooke BBN sensitivity'} seed=20285030 start=2026-10-30T08:08:01
+  start mode [ 0.31690119  0.67562961  2.19149435 -0.8291508  -0.75745176] chi2=1403.446
+  adapt done: acceptance 0.230, scale 0.920
+  prod 4000/chain (extra burn 0): Rmax-1=0.0050 ESSmin=1294 tau_max=25.6 acc=0.212
+  prod 8000/chain (extra burn 0): Rmax-1=0.0040 ESSmin=2532 tau_max=25.3 acc=0.214
+  prod 12000/chain (extra burn 0): Rmax-1=0.0027 ESSmin=3849 tau_max=24.8 acc=0.218
+  prod 16000/chain (extra burn 0): Rmax-1=0.0017 ESSmin=5004 tau_max=25.7 acc=0.217
+done chi2_min=1403.4456 at [ 0.31690029  0.67563194  2.19149325 -0.82917108 -0.75743657] runtime 1982s converged=True

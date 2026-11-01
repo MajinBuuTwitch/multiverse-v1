@@ -1,0 +1,146 @@
+# DATA_MANIFEST_REBUILD_PAPERS -- literature sources for T4b/T4a + frozen T4b extraction (DEVIATIONS D6)
+# Generated: 2026-10-30T07:30:05-04:00 (before any T4b statistic is computed)
+# Format: <sha256_hex>  <relative_path>   (metadata in the comment line above each file)
+# url=https://arxiv.org/e-print/1808.09449 | downloaded_utc=2026-10-30T10:24:54Z | bytes=4671970
+c1c3b85dfad35683496b6a83e88df0a5b0248e92446606619e35209996088c10  data/papers/A2034_MO2018/1808.09449_eprint.gz
+# url=https://arxiv.org/e-print/1609.06734 | downloaded_utc=2026-10-30T10:24:52Z | bytes=10106814
+ec394943dba9d306ce06a73b6d7f281ba4b06a5eaaaf48732d5752487e8bc11f  data/papers/A2146_Coleman2017/1609.06734_eprint.gz
+# url=https://arxiv.org/e-print/1609.06765 | downloaded_utc=2026-10-30T10:27:08Z | bytes=5132933
+4073b89bbee9793b6eec4f22d46da0c0f4e93841e9aa20d15c09762e16d3e025  data/papers/A2146_Coleman2017_SL/1609.06765_eprint.gz
+# url=https://arxiv.org/e-print/1103.2772 | downloaded_utc=2026-10-30T10:24:55Z | bytes=3810192
+11fba7e09686dd123fa056c482b177d094ee0debbb9eaeccf6a8a38eca138022  data/papers/A2744_Merten2011/1103.2772_eprint.gz
+# url=https://arxiv.org/e-print/1612.07935 (download time not recorded in the sub-agent TSV; file mtime 2026-10-30T06:24:48 local) | bytes=3394582
+31d39155c4c6f796dba1cdf93e4c9caf6f54f0263496f1fc8a2493da5f6d3367  data/papers/A3376_MO2017/1612.07935_eprint.gz
+# url=https://arxiv.org/e-print/1612.07935v1 | downloaded_utc=2026-10-30T10:30:56Z | bytes=3262752
+50dd0171a2f928256bd8a20ecaf00cfa6b70f8b2580e619abe99ea4e36390da8  data/papers/A3376_MO2017/1612.07935v1_eprint.gz
+# url=https://arxiv.org/e-print/0806.2320 | downloaded_utc=2026-10-30T10:24:55Z | bytes=1076064
+deb891390496b73a6b02f1c0b67d5d999d25910416cc1da6243a113f6eb0d8b5  data/papers/bradac2008_macs0025/0806.2320_eprint.gz
+# url=https://arxiv.org/e-print/2109.06879 | downloaded_utc=2026-10-30T10:24:50Z | bytes=3964244
+998bc07c1b0fe181902418914789908c750d21ebfdcb8713b0ff85f68c13d698  data/papers/cho2022/cho2022_eprint.gz
+# url=https://arxiv.org/e-print/astro-ph/0608407 | downloaded_utc=2026-10-30T10:24:43Z | bytes=122274
+9919979069b417eacc31158825e051cef54e2f50fdd03f6823e09785fa36d204  data/papers/clowe2006/clowe2006_eprint.gz
+# url=https://arxiv.org/pdf/1209.2143 | downloaded_utc=2026-10-30T10:42:11Z | bytes=982708
+80447b7e1f49535025d27bd9c02d36c37cfe4951e1b9dd50cc0e0faffd2f51b4  data/papers/clowe2012_a520/1209.2143.pdf
+# url=https://arxiv.org/e-print/1209.2143 | downloaded_utc=2026-10-30T10:42:09Z | bytes=1926564
+12bdb6f566b3dd4a7c89f9d96d9e7baaa38be7f9c49dad3d2e8953fbed80cdc9  data/papers/clowe2012_a520/1209.2143_eprint.gz
+# derived text extracted locally from the PDF/e-print in the same folder | bytes=94672
+a36d3ee909740864a747ea002cbbabef2d2786d5161c501e4e87200d390c98e2  data/papers/clowe2012_a520/pdf.txt
+# url=https://arxiv.org/e-print/1110.4391 | downloaded_utc=2026-10-30T10:25:09Z | bytes=1544732
+5c14f294d01cb7f19aaa533cd991df937bb35b91d1e6f325f1fcc737fb225cb8  data/papers/dawson2012_musketball/dawson2012_musketball.eprint.gz
+# url=https://arxiv.org/pdf/1110.4391 | downloaded_utc=2026-10-30T10:25:13Z | bytes=669658
+a91297e20494472bb0bcbeaad422df7db1c6f65bf0b48a3a1279bbd050636574  data/papers/dawson2012_musketball/dawson2012_musketball.pdf
+# derived text extracted locally from the PDF/e-print in the same folder | bytes=29781
+e26b6bbe280850ab3cca58cfd270dba638a728e7239903f64a9882de82b92a3e  data/papers/dawson2012_musketball/dawson2012_musketball_pdftext.txt
+# url=https://arxiv.org/e-print/1608.01329 | downloaded_utc=2026-10-30T10:25:00Z | bytes=5987617
+4818d9a907c9d408ec1afb40afddafe740b41a758ec096a8659a3c6fd464fa51  data/papers/golovich2016_macs1149/1608.01329_eprint.gz
+# url=https://arxiv.org/e-print/1703.04803 | downloaded_utc=2026-10-30T10:25:09Z | bytes=5120444
+3d2ef0cc185b489293dfb136dbd3693af257ba4b1b46e6b0db27136d8d592e9f  data/papers/golovich2017_zwcl0008/1703.04803_eprint.gz
+# url=https://arxiv.org/pdf/1401.3356 | downloaded_utc=2026-10-30T10:42:06Z | bytes=985223
+07ceb442fc1439f0557d5153a8f099dfc50e432afc4c46d8599188ab944876ea  data/papers/groupE_jee2014_a520/1401.3356.pdf
+# url=https://arxiv.org/e-print/1401.3356 | downloaded_utc=2026-10-30T10:42:04Z | bytes=997127
+a464cdeb6cb99a73b8498a0489c86bbdffef928d10b46703e6f274e24d8927df  data/papers/groupE_jee2014_a520/1401.3356_eprint.gz
+# derived text extracted locally from the PDF/e-print in the same folder | bytes=94712
+1fd6b1babdcefd00d7214f46c1ab8ea9355591d45aca4018da996797a2eca5fe  data/papers/groupE_jee2014_a520/pdf.txt
+# url=https://arxiv.org/pdf/1503.07675 | downloaded_utc=2026-10-30T10:42:36Z | bytes=2275401
+2a5d4e9b0ddaeaa3d98bc8e6452f39583f2e00a3658f1f62ec1cee0f561d3522  data/papers/harvey2015/1503.07675.pdf
+# url=https://arxiv.org/e-print/1503.07675 | downloaded_utc=2026-10-30T10:42:33Z | bytes=4316313
+29dd9b68881c24ec895c08f3292fddd16ce8bf44c0e354ab9bf80bf7a8ef30fd  data/papers/harvey2015/1503.07675_eprint.gz
+# derived text extracted locally from the PDF/e-print in the same folder | bytes=1664
+4adf0724f9075b59183f28955801884921393cd042fcc87683676484a3a3344a  data/papers/harvey2015/FigureS1.txt
+# derived text extracted locally from the PDF/e-print in the same folder | bytes=354
+b41c25827686303b4a75d9d22ecaee6e85acc92712b0aa0acfafb161f459b2ae  data/papers/harvey2015/FigureS2.txt
+# derived text extracted locally from the PDF/e-print in the same folder | bytes=54055
+561f7e448448b090d01faa8099eb43d1f39d127bcf1742eeaf3b5c19a0f4b34a  data/papers/harvey2015/pdf.txt
+# url=https://arxiv.org/e-print/1309.5097 | downloaded_utc=2026-10-30T10:24:46Z | bytes=972164
+cee8d6dd9aeda81efc5c1d6dee43cf74923256ca9c5b89f46fb7c76a17a50335  data/papers/jee2014/jee2014_eprint.gz
+# url=https://arxiv.org/e-print/1401.3356 | downloaded_utc=2026-10-30T10:24:47Z | bytes=997127
+a464cdeb6cb99a73b8498a0489c86bbdffef928d10b46703e6f274e24d8927df  data/papers/jee2014_a520/jee2014_a520.eprint.gz
+# url=https://arxiv.org/pdf/1401.3356 | downloaded_utc=2026-10-30T10:24:50Z | bytes=985223
+07ceb442fc1439f0557d5153a8f099dfc50e432afc4c46d8599188ab944876ea  data/papers/jee2014_a520/jee2014_a520.pdf
+# derived text extracted locally from the PDF/e-print in the same folder | bytes=94299
+e1fb4031d0370f72ceef59c3917223974342f2fc4f2c57b55b0a8d4c6e0d0374  data/papers/jee2014_a520/jee2014_a520_pdftext.txt
+# url=https://arxiv.org/e-print/1410.2898 | downloaded_utc=2026-10-30T10:25:01Z | bytes=966356
+59222128d9f9d80f3e0af5938fc909ec86da82123826b4313daa206a0315c8f2  data/papers/jee2015_ciza2242/jee2015_ciza2242.eprint.gz
+# url=https://arxiv.org/pdf/1410.2898 | downloaded_utc=2026-10-30T10:25:05Z | bytes=1460172
+32d1b8d3fb1e44ad94d2dcfe8e8acd5360b8316781276937c6acb75d4e69d4da  data/papers/jee2015_ciza2242/jee2015_ciza2242.pdf
+# derived text extracted locally from the PDF/e-print in the same folder | bytes=68507
+325e66db3662422d913e58e8e96a6165292b704b71eef1574022a53d7aed1801  data/papers/jee2015_ciza2242/jee2015_ciza2242_pdftext.txt
+# url=https://arxiv.org/e-print/1510.03486 | downloaded_utc=2026-10-30T10:25:03Z | bytes=870371
+e044456e9d233103e1611197ff978c3c06626b84f5b275feb163bf8d744a4e77  data/papers/jee2016_toothbrush/1510.03486_eprint.gz
+# url=https://arxiv.org/e-print/1605.07595 | downloaded_utc=2026-10-30T10:24:52Z | bytes=1763023
+1b5d4adbc841013e43f7a6545a33c0f97739ff924a75cd32106fb4da9426ddbd  data/papers/monteirooliveira2017/mo2017_eprint.gz
+# url=https://arxiv.org/e-print/astro-ph/0702649 | downloaded_utc=2026-10-30T10:24:54Z | bytes=763973
+c938926eab0be0dc60744df56e6de873295d54af0b4b97e2198bbffd781a8933  data/papers/okabe_umetsu2008/okabe_umetsu2008.eprint.gz
+# url=https://arxiv.org/pdf/astro-ph/0702649 | downloaded_utc=2026-10-30T10:24:57Z | bytes=1514777
+c2b59cc768ccbb4b4c8e4011ccb9c63951ba39959047c8568b3a4318fa1e2174  data/papers/okabe_umetsu2008/okabe_umetsu2008.pdf
+# derived text extracted locally from the PDF/e-print in the same folder | bytes=131230
+38844c372fc5e1de631e78a5b0d4c4487cbf24426e8939a4b04e461211b85514  data/papers/okabe_umetsu2008/okabe_umetsu2008_pdftext.txt
+# url=https://arxiv.org/pdf/1111.4983 | downloaded_utc=2026-10-30T10:42:01Z | bytes=1254574
+0e89fea527777ab8043e3713a6d1ff455892c9ff700e7e2258fed97ae867c840  data/papers/ragozzine2012_a1758/1111.4983.pdf
+# url=https://arxiv.org/e-print/1111.4983 | downloaded_utc=2026-10-30T10:41:58Z | bytes=923485
+a5f76a50e6834061e2b56b770b69912243b2f5dc85e6304ef8c5f39ffb5b2d62  data/papers/ragozzine2012_a1758/1111.4983_eprint.gz
+# derived text extracted locally from the PDF/e-print in the same folder | bytes=52259
+15105f8fb12fa38b2492a0adabffc34057f371b989465c47fff5bba8a4ecf35e  data/papers/ragozzine2012_a1758/pdf.txt
+# url=https://arxiv.org/pdf/1402.7321 | downloaded_utc=2026-10-30T10:42:19Z | bytes=4515543
+86123c95b0773ecc66be90fcfc2107b044e3d3ee3ad2c701fd855731a017d0a7  data/papers/rau2014_macs1149/1402.7321.pdf
+# url=https://arxiv.org/e-print/1402.7321 | downloaded_utc=2026-10-30T10:42:15Z | bytes=4035034
+5fd25b0d2e722f6f508805683faaaeeef408b8b0f8591e875cf9ef85a0f19f6f  data/papers/rau2014_macs1149/1402.7321_eprint.gz
+# derived text extracted locally from the PDF/e-print in the same folder | bytes=60117
+02e1bacb213e1294fdb036396e16f456777b1eaf1991ce2a31a805695472003f  data/papers/rau2014_macs1149/pdf.txt
+# url=https://arxiv.org/pdf/1701.05877 | downloaded_utc=2026-10-30T10:42:29Z | bytes=5429350
+01e8410408e39c86c779382357f16e22113578116862d0773136ac4d48076a22  data/papers/wittman2018/1701.05877.pdf
+# url=https://arxiv.org/e-print/1701.05877 | downloaded_utc=2026-10-30T10:42:24Z | bytes=5616857
+51f5d94d1b761a81c8278c148565259782f20472a37fe1e8b9556810858ca68b  data/papers/wittman2018/1701.05877_eprint.gz
+# derived text extracted locally from the PDF/e-print in the same folder | bytes=71082
+2e7a7fccc546ce30c0c82d9690cc71961bcec41bd5168cad87748e9f93074896  data/papers/wittman2018/pdf.txt
+# ---- frozen T4b extraction (protocol, per-cluster records, structured table)
+a6b75c0553c5c4f27e91685e4a205592c23607b1b5243e3d35a59933389681f3  t4b_extraction/EXTRACTION_PROTOCOL.md
+cd2bb06bee320f872d12d78f5e60b62a19693fbd03ce296edf457f560bf65035  t4b_extraction/cluster_01.json
+23d6d9dcd76576cac029b6669aeaf4a6f2d5c3e071d5c8a3d789e12e95ab9a65  t4b_extraction/cluster_01_notes.md
+ccfd94eab793599e7beb79ee03e801db281837f8e30805f7c4a0fe0697d85453  t4b_extraction/cluster_02.json
+0431d064084b1724e0cc5dbc5c6bd17313bbd35ee3bdf5303ac491edf918d212  t4b_extraction/cluster_02_notes.md
+bae10905c1b631cb5e34151405c815d18924f408b0196db11ae61d3c9cdb72db  t4b_extraction/cluster_03.json
+0ac655d7b14a465ee4fb96768be78ecdaa9f5d8103d039ade77140faedd8a8a0  t4b_extraction/cluster_03_notes.md
+e5e699342ef098565afd92b232f911f334bfbcdf367509a0deaacd4959719668  t4b_extraction/cluster_04.json
+19369ba7b17e783b1541db1f55a6b3217daf015dfbcfae687e2822e6092f8e63  t4b_extraction/cluster_04_notes.md
+5f97a44071e6fa77c988641252168ddf018d9bd9ab18e4eced0b2ca67e2dc888  t4b_extraction/cluster_04_sec_ragozzine12.json
+803c649f7acee09135b4cd50148eac0150d282674681d5fdc53cf48b183c5c49  t4b_extraction/cluster_04_sec_ragozzine12_notes.md
+32d468548cdafc53633795277a91c81d94cbea5c74941aab6f3ff384c07b931c  t4b_extraction/cluster_05.json
+100685396d0f5472826e2b8728f04665185f6f6078bacb4e653078c700a2600b  t4b_extraction/cluster_05_notes.md
+3898c7784bbfe29c2d7ad4a2f278b7436d318f363a70467b5caf63a952f15755  t4b_extraction/cluster_06.json
+80b3bc790f97ab1fe1a8312bc18b28593bb6e75eb401836ea5165bec6f96d9c2  t4b_extraction/cluster_06_notes.md
+be38b0b699d6e0fbab7476324a16434e1a3abfeabb80f271fcd9d28f1b718c14  t4b_extraction/cluster_07.json
+cff6e77128c38b3368ee3e2ef7e7cb00b1173bc998d06a13e853d2c850f3b608  t4b_extraction/cluster_07_notes.md
+e32d2702d31146f13fc7bbfb6adde89398350f0c5897837bc8b52d43a7261b97  t4b_extraction/cluster_08.json
+d30b8f63d28931d817f01f04a58be16e0575ff73d52b3038e87659c519815b6f  t4b_extraction/cluster_08_notes.md
+2b3967bc6eb9ee548dfa133f65c8c686f2f28465a807932a4b5091585911382a  t4b_extraction/cluster_09.json
+917241608dafd953bfeed5750b011aa088a960304aecba8c0fe007a6f085a07b  t4b_extraction/cluster_09_notes.md
+4e9dc8e8fce865c6afbab55f58ddf7fa073c1a22f9a068c0b86e6329c79aab58  t4b_extraction/cluster_09_sec_clowe12.json
+74f7d25733f08f231ff8b0dd54648249484b05ef49a89d2e1f4da74fccdc9fc0  t4b_extraction/cluster_09_sec_jee14_P3.json
+dbe9d878c37ed4d2c1eb27ca179ee41923b193835e4cb0fc75264ad64d6fe590  t4b_extraction/cluster_10.json
+1adfa9f7073cebc0c897c505fcebcd1f9472a68d450bf8fb06eb3c8b5cecc865  t4b_extraction/cluster_10_notes.md
+7f257de5a0ed1678dff84387631feb662e71bb2c006151ba5d8d4338e429c45e  t4b_extraction/cluster_11.json
+e58961354e81c48e42b2e942f6978d726b6ecb06ff9dad31d1845de3f8b177e8  t4b_extraction/cluster_11_notes.md
+94259fd56a20ab0b6d3ffcb17c169fc311ed0959eec7cf3666d8dc620932a097  t4b_extraction/cluster_12.json
+7258102e556e8aa8f4ae5eb7d0f5975714c7adb2abe2341fdccfe06adc0e0d08  t4b_extraction/cluster_12_notes.md
+219ac87362986b7c2c60555bad990ea54b65805ee82d8afaca2bdfcc1293dd6b  t4b_extraction/cluster_13.json
+f6303fc90a2fa8b8710d3fdd344d5e841a6a665103613ef4111bdf166f8d8384  t4b_extraction/cluster_13_notes.md
+0e5210612c95f1ebb25dd1052e6a768d29f2b88427e3af8d3c60ee8a5b4db53a  t4b_extraction/cluster_14.json
+dc10cb9665bc57be33bbb24849d4a56b1e61df3661fe1942a3e3173abef926c1  t4b_extraction/cluster_14_notes.md
+5fa49407edea7abae5bcd83ca2d8284391207ff07457640a8a48ec5652f93c99  t4b_extraction/cluster_15.json
+4a5f09088c85a6d675f7214c448b264c1df0720dddee33b3e765db7ed06bd027  t4b_extraction/cluster_15_notes.md
+81a8fccd67653a05284ef4fb0c6be188dbee2272b6bd2db28d00afc88950d60d  t4b_extraction/cluster_16.json
+b494d189a7ee684ebac02e687b9ac990c5e5d2a905aa9ae8e1b70efc19fb7177  t4b_extraction/cluster_16_notes.md
+a5d92fab6e1a383e552f1c9d3ba2387aa19266788ccc230c74344742a88f7f2c  t4b_extraction/dl_groupC.ps1
+cb417d5c3fbbbf60f504e22f5e6b08d9b5a0e074329484d0221927f74ed9cbd6  t4b_extraction/dl_groupE.ps1
+464ef6e2dd7adcee0b037ffdea5ef1a297cbb5236453ffccc3132a84156caa7f  t4b_extraction/downloads_A.tsv
+de2e92550e7913d76d590e0fd45268beb0516f145d54ba6454b4899e709ec2c8  t4b_extraction/downloads_B.tsv
+9e743d1336b4d8592a0bebebbe0c099f06fd782fadf498b5d915ec5a021807e2  t4b_extraction/downloads_C.tsv
+b2c17406e847e3683dab594692e1fb9aa54eb64b4bc28701e115d053a137614c  t4b_extraction/downloads_D.tsv
+c189add588740d200582897e836b8f9947e2332ddf0b74d0cb1d24ff284b57f0  t4b_extraction/downloads_E.tsv
+e7c02ba2ae71bff69023ae18a7c4dae9592ac1a5c15e5b9067f648d08d503282  t4b_extraction/extract_groupC.py
+884aa41928f57049a076793c795875af1066e8af6673084985f936a1f6bceeba  t4b_extraction/pdf2txt_groupE.py
+0be2a69b824f2a49ce2c6f6904e448b6fe8aebb7372ea33a2faca66bbd22409d  t4b_extraction/pdfcheck_groupC.py
+19ec20b13b3c6c1192d67b2382e9eceb8ba23c4bd2af76b763bb7ee1d20810fb  t4b_extraction/reextract_groupC.py
+69e4f84859add6fad83df8347a1252fa26b5a7804d9c87d440f297538368a49d  t4b_extraction/summarize.py
+755f30abf4535daef210936e0942b59fda4141dd60bc3a56fd0a309fd0d8c427  t4b_extraction/t4b_positions_rebuild.json

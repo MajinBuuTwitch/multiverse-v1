@@ -1,0 +1,73 @@
+{
+  "row": 9,
+  "designation": "Abell 520, P3 ('dark peak') region (secondary / sensitivity source)",
+  "paper_ref": "Jee et al. 2014, ApJ 783, 78, Table 1",
+  "paper_found": {
+    "authors": "M. J. Jee, H. Hoekstra, A. Mahdavi, A. Babul",
+    "title": "Hubble Space Telescope/Advanced Camera for Surveys Confirmation of the Dark Substructure in A520",
+    "journal_ref": "ApJ 783, 78 (2014); DOI 10.1088/0004-637X/783/2/78 (confirmed on arXiv abs page)",
+    "arxiv_id": "1401.3356 (e-print source ms.tex), re-downloaded independently into data/papers/groupE_jee2014_a520/",
+    "journal_ref_match": "matches"
+  },
+  "subcluster_designated": "P3 of Jee et al. 2014 Table 1. The table has TWO P3 rows: 'P3 (old centroid)' (the J12 WFPC2 dark-peak location, no positional error) and 'P3' (new centroid)' (this ACS analysis, with bootstrap error). Both reported below.",
+  "z_cl": {
+    "value": 0.2,
+    "location": "Sect. 1 (Introduction), last paragraph",
+    "quote": "This gives a plate scale of $\\mytilde3.3$~kpc/$\\arcsec$ at the redshift ($z=0.2$) of Abell 520. All the quoted uncertainties are at the 1-$\\sigma$ ($\\sim68$\\%) level."
+  },
+  "I": {
+    "type": "P3' (new centroid) — ACS weak-lensing mass (convergence) substructure centroid",
+    "ra": "04 54 07.51",
+    "dec": "+02 54 41.3",
+    "offset": null,
+    "location": "Table 1 ('Mass Properties of Substructure (r<150 kpc)'), row P3'",
+    "quote": "P3' (new centroid) & (04 54 07.51, +02 54 41.3) & (5.1,6.2) & $3.94\\pm0.30$ & $  <0.85$ \\\\",
+    "uncertainty": {
+      "value": [5.1, 6.2],
+      "unit": "arcsec",
+      "kind": "per-axis",
+      "components": [{"axis": "Delta alpha", "value": 5.1}, {"axis": "Delta delta", "value": 6.2}],
+      "location": "Table 1 column header '$\\Delta \\alpha, \\Delta \\delta$ ($\\arcsec,\\arcsec$)' and table comment; Sect. 4.x 'Centroid and Significance of the Dark Peak'; Sect.1 says all quoted uncertainties are 1-sigma",
+      "quote": "\\tablecomments{The positional uncertainty is estimated from bootstrapping. ...} | Sect. 'Centroid and Significance of the Dark Peak in A520': \"We measure the centroids using the first moments weighted by a circular Gaussian, whose FWHM matches the size of the substructure.  The results are displayed in Table~1.  The mean positional uncertainty is small ($\\mytilde5\\arcsec$)\" | Sect.1: \"All the quoted uncertainties are at the 1-$\\sigma$ ($\\sim68$\\%) level.\""
+    },
+    "alternate_row": {
+      "type": "P3 (old centroid) — J12 WFPC2 dark-peak centroid, used here as an aperture centre",
+      "ra": "04 54 11.07",
+      "dec": "+02 55 35.3",
+      "location": "Table 1, row 'P3 (old centroid)'",
+      "quote": "P3 (old centroid) & (04 54 11.07, +02 55 35.3) &  - & $3.35\\pm0.34$ & $  <0.74$ \\\\",
+      "uncertainty": "NOT GIVEN (table entry '-')"
+    }
+  },
+  "G": {
+    "type": "X-ray emission peak (qualitative only)",
+    "ra": null,
+    "dec": null,
+    "offset": null,
+    "location": "Abstract",
+    "quote": "Interestingly, this new centroid is in better spatial agreement with the location where the X-ray emission is strongest",
+    "uncertainty": "NOT GIVEN",
+    "notes": "No X-ray peak coordinates or I-G separation in arcsec/kpc are given anywhere in the paper. Gas masses in Table 1 are Cauchy-Schwarz upper limits in apertures, not positions."
+  },
+  "S_candidates": [
+    {
+      "label": "none — P3/P3' is the 'dark peak' with no luminous cluster galaxies",
+      "type": null,
+      "ra": null,
+      "dec": null,
+      "offset": null,
+      "location": "Abstract; Sect. 4 (CTI comparison paragraph)",
+      "quote": "We examine the distribution of cluster galaxies and observe very little light at this location. | \"The most critical substructure in A520 is the overdensity P3' ... between the two dominant mass peaks, where there are no luminous cluster members.\"",
+      "uncertainty": "NOT GIVEN"
+    }
+  ],
+  "other_table1_rows_verbatim": [
+    "P1  &  (04 54 20.76,  +02 57 38.4)   & (5.3,4.1) & $2.10\\pm0.43$ &    $  <0.23$\\\\",
+    "P2  & (04 54 15.02,  +02 57 09.2)    & (4.0,4.9) & $4.05\\pm0.28$ &    $  <0.40 $\\\\",
+    "P3 (old centroid) & (04 54 11.07, +02 55 35.3) &  - & $3.35\\pm0.34$ & $  <0.74$ \\\\",
+    "P3' (new centroid) & (04 54 07.51, +02 54 41.3) & (5.1,6.2) & $3.94\\pm0.30$ & $  <0.85$ \\\\",
+    "P4  & (04 54 04.32,  +02 53 51.0)  & (3.0,4.4)   & $4.23\\pm0.28$ &   $ <0.34$ \\\\",
+    "P5  & (04 54 16.53,  +02 55 26.7)  & (5.4,8.2)   & $2.93\\pm0.39$ &   $  <0.21$"
+  ],
+  "notes": "Jee14 provides only weak-lensing (I) positions with per-axis bootstrap 1-sigma errors (P1, P2, P3', P4, P5); P3 (old) has no error. No X-ray peak (G) or galaxy/BCG (S) coordinates for P3/P3' or any other substructure. Table 1 header units: alpha,delta in (h m s, deg arcmin arcsec); Delta alpha, Delta delta in (arcsec, arcsec); Projected Mass in h70^-1 10^13 Msun; Gas Mass in h70^-5/2 10^13 Msun (90% CL upper limits). It is not stated whether Delta alpha is multiplied by cos(dec) (negligible at dec=+2.9 deg). Text states P3' is ~1 arcmin SW of P3 (old). Text (Sect. 'Comparison with C12') mentions 'the dark peak P4$^{\\prime}$ appears $\\mytilde99$\\% of the random realizations' — apparently a typo for P3' (no P4' row exists). For the P4 (SW luminous subcluster) row see other_table1_rows_verbatim. Under the protocol: G and S missing -> unclassifiable from this source alone."
+}

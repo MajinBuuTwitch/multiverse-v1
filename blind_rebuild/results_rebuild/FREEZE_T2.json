@@ -1,0 +1,26 @@
+{
+ "test": "T2-A",
+ "runs": {
+  "P": {
+   "Obc_median": 0.31090119682959133,
+   "sigma_Obc": 0.006009567930572196,
+   "f_leak": 0.1821462100396274,
+   "sigma_f": 0.019030298446811953,
+   "R_pred": 4.907122739762236,
+   "sigma_R_pred": 0.11418179068087173
+  },
+  "D": {
+   "Obc_median": 0.3128062100710787,
+   "sigma_Obc": 0.005878230542218671,
+   "f_leak": 0.1761136681082508,
+   "sigma_f": 0.01861439671702579,
+   "R_pred": 4.943317991350495,
+   "sigma_R_pred": 0.11168638030215475
+  }
+ },
+ "f_leak_for_T5": 0.1821462100396274,
+ "f_leak_source": "T2-A-Pantheon+ (DESI/LUNA BBN)",
+ "T2A_Pantheon_converged": true,
+ "code_sha256_rebuild_scripts": "937d0a1163d8e929c1afa56ab32de8c05ba2284f4f7b075dda00226cf3fa0a66",
+ "written": "2026-10-30T09:01:03-0400"
+}

@@ -1,0 +1,90 @@
+{
+  "row": 13,
+  "designation": "MACS J0025.4-1222 (Baby Bullet)",
+  "paper_ref": "Bradač et al. 2008, ApJ 687, 959, pointer: Table 2 & §3.2 / Fig. 2",
+  "paper_found": {
+    "authors": "Maruša Bradač, Steven W. Allen, Tommaso Treu, Harald Ebeling, Richard Massey, R. Glenn Morris, Anja von der Linden, Douglas Applegate",
+    "title": "Revealing the properties of dark matter in the merging cluster MACS J0025.4-1222",
+    "journal_ref": "ApJ 687, 959 (2008); DOI 10.1086/591246 (DOI as listed on the arXiv abs page)",
+    "arxiv_id": "0806.2320 (e-print source, latest version v2, downloaded 2026-10-30T10:24:55Z)",
+    "source_file": "d:/Blind_Rebuild/data/papers/bradac2008_macs0025/src_D/ms.tex"
+  },
+  "subcluster_designated": "SE",
+  "z_cl": {
+    "value": 0.586,
+    "location": "Abstract; Introduction (sec:intro); §1 last paragraph (cosmology); §3 (sec:dyn) gives z_Cl=0.5857",
+    "quote": "{\\bbullet} consists of two merging subclusters of similar richness at $z=0.586$. ... At a redshift $z=0.586$, the length scale is 6.61 kpc/arcsec. ... This yields $z_{\\rm Cl}=0.5857$ and $\\sigma_{\\rm Cl} = 835^{+58}_{-59}\\kms$, measured from 108 galaxies."
+  },
+  "I": {
+    "type": "Table 2 row 'SE / total' = peak of total surface mass density kappa from combined strong+weak lensing reconstruction",
+    "ra": null,
+    "dec": null,
+    "offset": {
+      "from": "G",
+      "value": null,
+      "components": {"dx_arcmin": -0.70, "dy_arcmin": -0.43},
+      "unit": "arcmin",
+      "value_note": "2-D offset given as (Delta x, Delta y) in arcmin from the X-ray gas peak (00:25:29.5, -12:22:36.6); magnitude to be computed by analyst. Sign convention inferred (not stated): SE rows have dx<0, dy<0, NW rows dx>0, dy>0, so +x = west, +y = north."
+    },
+    "location": "Table 2 (tab:offset, 'Offsets (with 1sigma errorbars) of the mass peaks and gas peaks.'), and §4.3 (sec:results)",
+    "quote": " & total & $-0.70 \\pm 0.25$ & $-0.43 \\pm 0.06$ \\phn \\\\  [SE block]; tablecomments: 'Offsets are calculated from (00:25:29.5, -12:22:36.6) which corresponds to the peak in gas distribution'; text: 'The recovered distribution of mass in {\\bbullet} shows two distinct peaks, each centered approximately at the centers of the light distributions (galaxies). The measured positions and error bars are given in Table~\\ref{tab:offset}.'",
+    "uncertainty": {
+      "value": null,
+      "unit": "arcmin",
+      "kind": "per-axis",
+      "components": [0.25, 0.06],
+      "location": "Table 2 (caption: '1$\\sigma$ errorbars'); §4.3/§4.4 describe composition",
+      "quote": "$-0.70 \\pm 0.25$ & $-0.43 \\pm 0.06$ ; 'The quoted error bars reflect the effects of exploring different initial conditions and other systematic effects (like misidentification of multiply imaged systems), and the statistical and systematic errors in the weak lensing data'"
+    }
+  },
+  "G": {
+    "type": "Peak of the adaptively smoothed Chandra X-ray surface-brightness contours (single X-ray peak between the subclusters; Table 2 'SE / gas' row is this same peak, offset 0,0)",
+    "ra": "00:25:29.5",
+    "dec": "-12:22:36.6",
+    "offset": null,
+    "location": "§5 (sect:xray_analysis) first paragraph; Table 2 comments and rows 'SE gas' / 'NW gas'",
+    "quote": "The peak position in the adaptively smoothed X-ray contours is 00:25:29.5, -12:22:36.6. Although the precise position of this peak depends in detail on the smoothing algorithm, we conservatively estimate the accuracy to be better than 5 arcsec (i.e., the X-ray brightness peak is constrained to lie within 5 arcsec of this position).",
+    "uncertainty": {
+      "value": null,
+      "unit": "arcmin",
+      "kind": "per-axis",
+      "components": [0.08, 0.08],
+      "location": "Table 2 row 'SE gas' (1sigma errorbars per caption); alternative statement §5: 'within 5 arcsec' (top-hat, see §7)",
+      "quote": "SE & gas& $0.0 \\pm 0.08$ & $0.0 \\pm 0.08$ \\phn \\\\ ; §5: 'we conservatively estimate the accuracy to be better than 5 arcsec (i.e., the X-ray brightness peak is constrained to lie within 5 arcsec of this position)'; §7: 'We calculate the significance by assuming that the errors on the total mass distribution follow Gaussian distribution and those on the peak gas position a top-hat function.'"
+    }
+  },
+  "S_candidates": [
+    {
+      "label": "Table 2 row 'SE / galaxies' (not defined in the paper as luminosity-weighted centroid; the paper's luminosity distribution is an I-band/K-band luminosity map smoothed with an 80 kpc FWHM Gaussian, so this is most likely the peak of that smoothed light map - not stated explicitly)",
+      "ra": null,
+      "dec": null,
+      "offset": {
+        "from": "G",
+        "value": null,
+        "components": {"dx_arcmin": -0.79, "dy_arcmin": -0.50},
+        "unit": "arcmin",
+        "value_note": "Offset from X-ray gas peak (00:25:29.5, -12:22:36.6); same convention as I."
+      },
+      "location": "Table 2 (tab:offset), SE block, row 'galaxies'; §6 (sec:stellarmass) describes the luminosity distribution",
+      "quote": " & galaxies & $-0.79\\pm 0.20$ & $-0.50\\pm 0.20$ \\phn\\\\ ; §6: 'The resulting luminosity distribution (smoothed with a Gaussian kernel with FWHM $80\\mbox{ kpc}$) is shown in Fig.~\\ref{fig:kappa}.'",
+      "uncertainty": {
+        "value": null,
+        "unit": "arcmin",
+        "kind": "per-axis",
+        "components": [0.20, 0.20],
+        "location": "Table 2 (caption: 1sigma errorbars)",
+        "quote": "$-0.79\\pm 0.20$ & $-0.50\\pm 0.20$"
+      }
+    },
+    {
+      "label": "BCG1 and BCG2 (SE subcluster has two equally dominant galaxies) - NO coordinates given in the paper; only marked in Fig. 3 (fig:arcs)",
+      "ra": null,
+      "dec": null,
+      "offset": null,
+      "location": "§3 (sec:dyn) paragraph 3; Fig. 3 caption (fig:arcs); §4.3",
+      "quote": "The south-eastern (SE) subcluster has two equally-dominant galaxies (BCG1 and BCG2; their magnitudes are equal within the errorbars; see Fig.~\\ref{fig:arcs}) of redshifts $z=0.5856 \\pm 0.0003$ and $z=0.5838 \\pm 0.0003$. ... The first sphere was centered between the two brightest galaxies in the SE cluster (BCG1 and BCG2)",
+      "uncertainty": "NOT GIVEN"
+    }
+  ],
+  "notes": "Paper match: arXiv 0806.2320 = Bradač et al. 2008 ApJ 687, 959 (DOI 10.1086/591246); author list matches. Pointer mismatch (minor): in the arXiv source the offsets table is the 2nd table (Table 2, label tab:offset) as pointed, but the lensing analysis is §4 (Mass reconstruction §4.3), the X-ray peak is §5, and Fig. 2 in the arXiv version is the LRIS spectrum; Fig. 4 (fig:kappa) shows kappa/X-ray/light contours with the mass-peak cyan cross. Published-version numbering may differ. No absolute RA/Dec is given for the lensing peak or galaxies; only (Delta x, Delta y) arcmin offsets from the gas peak, so d_IG is directly |offset_I| and d_IS = |offset_I - offset_S| (analyst to compute). The sign convention of Delta x is not stated; only magnitudes/differences matter. The 'galaxies' row is not described as a luminosity-weighted centroid anywhere in the text; no BCG coordinates are tabulated, so under the protocol the S fallback (BCG) has no numeric value in this paper. G uncertainty: Table 2 gives ±0.08 arcmin per axis (=4.8 arcsec), consistent with the §5 statement of 'within 5 arcsec' which the authors treat as a top-hat (not Gaussian) bound. The X-ray peak is a single peak shared by both subclusters (same row 'gas' at 0,0 for SE and NW). Conclusion text: 'There is no significant offset between the peaks of the total mass distribution and the galaxies.'"
+}

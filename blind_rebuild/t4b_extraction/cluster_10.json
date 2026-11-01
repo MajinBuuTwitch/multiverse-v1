@@ -1,0 +1,56 @@
+{
+  "row": 10,
+  "designation": "Abell 754",
+  "paper_ref": "Okabe & Umetsu 2008, PASJ 60, 345 (pointer: Table 2 & §3.2 / Fig. 3–5)",
+  "paper_found": {
+    "authors": "Nobuhiro Okabe, Keiichi Umetsu",
+    "title": "Subaru Weak Lensing Study of Seven Merging Clusters: Distributions of Mass and Baryons",
+    "journal_ref": "PASJ 60, 345 (2008); DOI 10.1093/pasj/60.2.345 (DOI listed on arXiv abs page; matches assigned reference)",
+    "arxiv_id": "astro-ph/0702649 (v4, 26 Apr 2008; e-print source draft_pub_astroph.tex used; cross-checked against arXiv PDF text). Journal (OUP) page returned HTTP 403, so the published version itself could not be inspected."
+  },
+  "subcluster_designated": "E shock subcluster = east mass clump 'E' and east X-ray gas clump 'XE' in Fig. 5 (arXiv numbering)",
+  "z_cl": {
+    "value": 0.0542,
+    "location": "Table 2 'Cluster X-ray Properties', row A754 (also §3.1: 'z=0.054'; §2.2: 'z = 0.0542')",
+    "quote": "A754 ~~& 0.0542 & On-going & 63.1 & & $10.0\\pm0.3^{\\rm a}$ ; §3.1: 'A754 is an on-going merger at a redshift of $z=0.054$.'"
+  },
+  "I": {
+    "type": "east mass clump 'E' (peak in Subaru weak-lensing kappa map, Gaussian FWHM 1.67 arcmin)",
+    "ra": null,
+    "dec": null,
+    "offset": null,
+    "location": "§3.1 'A754' (arXiv numbering), Fig. 5 — position NOT GIVEN numerically",
+    "quote": "We found moderate signal-to-noise ratios of 5.8 and 5.1 in the $\\kappa$ map for the central and east mass (E in Figure \\ref{fig:a754}) clumps, respectively … The east mass clump is offset from the east X-ray clump towards the southwest, which is opposite to the moving direction of this gas clump (bottom-right panel).",
+    "uncertainty": "NOT GIVEN"
+  },
+  "G": {
+    "type": "east X-ray gas clump 'XE' (Chandra ObsID 577, adaptively smoothed 0.7–7 keV)",
+    "ra": null,
+    "dec": null,
+    "offset": null,
+    "location": "§3.1 'A754', Fig. 5 — position NOT GIVEN numerically",
+    "quote": "From this configuration, the east X-ray gas clump (XE in Figure \\ref{fig:a754}) seems to have been running through the cluster center from the west. … The X-ray contours of the east gas clump are compressed and elongated towards the north-east direction, indicating that the east gas clump is currently moving towards the northeast.",
+    "uncertainty": "NOT GIVEN"
+  },
+  "S_candidates": [
+    {
+      "label": "luminous, large elliptical galaxy in the east mass concentration (no name, no coordinates)",
+      "ra": null,
+      "dec": null,
+      "offset": null,
+      "location": "§3.1 'A754'",
+      "quote": "The peak locations in the luminosity map of cluster sequence galaxies are in good agreement with these mass substructures (bottom-left panel). The central mass peak coincides with the BCG (top-left panel). The east mass concentration contains a luminous, large elliptical galaxy.",
+      "uncertainty": "NOT GIVEN"
+    },
+    {
+      "label": "peak of smoothed luminosity map of cluster-sequence galaxies near E (a luminosity PEAK, not a centroid; no coordinates)",
+      "ra": null,
+      "dec": null,
+      "offset": null,
+      "location": "§3.1 'A754'; Fig. 5 bottom-left panel",
+      "quote": "The peak locations in the luminosity map of cluster sequence galaxies are in good agreement with these mass substructures (bottom-left panel).",
+      "uncertainty": "NOT GIVEN"
+    }
+  ],
+  "notes": "No numerical positions, separations or positional uncertainties are given for any of E, XE or the east elliptical galaxy; only qualitative statements (E offset from XE 'towards the southwest'; luminosity peaks 'in good agreement' with mass substructures). Figures are not to be read by eye. Possibly relevant generic numbers (NOT peak-centroid errors): Subaru astrometric calibration 'After the astrometry correction typical rms residuals are about 1 pixel ($=0\\farcs 202$).' (§2.1); kappa-map smoothing 'The Gaussian FWHM used for the mass reconstruction is $1\\farcm 67$.' (§3.1); Chandra: 'We found an aspect offset in the reduced data of A754 (Obs.ID=577), which was then corrected using the aspect calculator.' (§2.1.x) — no residual value stated. Other quoted A754 numbers: 'the cool gas is offset from the X-ray brightness peak towards the northeast by ~200 kpc' (refers to the cool-gas region vs the X-ray brightness peak, from Markevitch et al. 2003 Chandra temperature map; not an I-G or I-S offset). Pointer mismatch: in the arXiv version Table 2 is 'Cluster X-ray Properties' (redshift/type/scale/T only, no positions) and A754 is §3.1 with Fig. 5 (§3.2 is A1750); published-version numbering could not be checked (journal page 403). Result: I, G, S all unavailable -> unclassified under the missing-data rule. CONTAMINATION NOTE: data\\papers\\okabe_umetsu2008\\src\\ was found to contain foreign files from another group (mnras.tex etc., reportedly Monteiro-Oliveira 2017). I used only draft_pub_astroph.tex, which is byte-identical to my clean re-extraction in src_clean_C\\ (title/authors verified); I did not open the foreign files."
+}

@@ -1,0 +1,8 @@
+run S_T1r0_lcdm_P cfg={'model': 'lcdm', 'bao': 'mod_r0', 'cmb': 'lcdm3', 'sn': 'P', 'bbn': None, 'role': 'T1 Lya r=0 sensitivity'} seed=20275030 start=2026-10-30T08:02:45
+  start mode [0.30453287 0.68426304 2.24801211] chi2=1404.135
+  adapt done: acceptance 0.310, scale 1.888
+  prod 4000/chain (extra burn 0): Rmax-1=0.0023 ESSmin=2979 tau_max=10.2 acc=0.326
+  prod 8000/chain (extra burn 0): Rmax-1=0.0013 ESSmin=5930 tau_max=10.8 acc=0.318
+  prod 12000/chain (extra burn 0): Rmax-1=0.0009 ESSmin=8759 tau_max=11.3 acc=0.319
+  prod 16000/chain (extra burn 0): Rmax-1=0.0006 ESSmin=11874 tau_max=10.9 acc=0.320
+done chi2_min=1404.1352 at [0.30452306 0.68426915 2.24803728] runtime 1888s converged=True

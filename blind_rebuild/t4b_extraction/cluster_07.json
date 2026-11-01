@@ -1,0 +1,95 @@
+{
+  "row": 7,
+  "designation": "Abell 2744 (Pandora's Cluster)",
+  "paper_ref": "Merten et al. 2011, MNRAS 417, 333; pointer: Table 2 & Sec. 4.2 / Fig. 7",
+  "paper_found": {
+    "authors": "J. Merten, D. Coe, R. Dupke, R. Massey, A. Zitrin, E. S. Cypriano, N. Okabe, B. Frye, F. G. Braglia, Y. Jimenez-Teja, N. Benitez, T. Broadhurst, J. Rhodes, M. Meneghetti, L. A. Moustakas, L. Sodre Jr., J. Krick, J. N. Bregman",
+    "title": "Creation of cosmic structure in the complex galaxy cluster merger Abell 2744",
+    "journal_ref": "MNRAS 417, 333-347 (2011)",
+    "arxiv_id": "1103.2772",
+    "source_file": "d:/Blind_Rebuild/data/papers/A2744_Merten2011/src_clean/a2744_rev3.tex",
+    "journal_ref_match": "yes (title/first author/year/journal/volume/page per search; arXiv tex = revision 3). Table 2 = 'Structures identified within our lensing reconstruction' (label STRUCTURES) - matches pointer. In the tex, Sec. 4.2 is 'Northern, the bullet' (4.1 Core, 4.3 Northwestern) and Fig. 7 is the W-box X-ray figure, so the Sec./Fig. part of the pointer does not map cleanly onto the arXiv version."
+  },
+  "subcluster_designated": "'Core/NW subcluster' (ambiguous). Primary record below = 'Core' clump (the paper's Southern core; the only one with BCG, X-ray-peak and offset numbers). The NW ('dark') clump is given fully under notes/alternative_NW.",
+  "z_cl": {
+    "value": 0.308,
+    "location": "Abstract and Sec. 1 (last paragraph)",
+    "quote": "At the cluster's redshift $z=0.308$, one arcsecond corresponds to $4.536$~kpc."
+  },
+  "I": {
+    "type": "combined strong+weak lensing convergence (surface-mass density) peak, 'Core' clump",
+    "ra": null,
+    "dec": null,
+    "offset": {"from": "S", "value_xy_arcsec": [-13, -4], "unit": "arcsec", "note": "Table 2 gives x,y of the Core mass peak in arcsec RELATIVE TO THE BCG position (alpha=3.58611 deg, delta=-30.40024 deg). Radial offset sqrt(13^2+4^2) to be computed by analyst. Axis sign convention not stated explicitly (NW clump at +x,+y and W clump at large +x suggest +x=West, +y=North)."},
+    "location": "Table 2 (label STRUCTURES), row 'Core'; table note",
+    "quote": "Core&$-13^{+11}_{-8}$&$-4^{+6}_{-13}$&$2.24\\pm0.55$ ; \"The x-and y-coordinates are provided in arcseconds, relative to the BCG position ($\\alpha_{\\textrm{J2000}} =3.58611^{\\circ}$, $\\delta_{\\textrm{J2000}} =-30.40024^{\\circ}$).\"",
+    "uncertainty": {
+      "value": "x: +11/-8 arcsec; y: +6/-13 arcsec (68% confidence limits, 500 bootstrap realisations)",
+      "unit": "arcsec",
+      "kind": "per-axis",
+      "components": ["x +11/-8", "y +6/-13"],
+      "location": "Table 2 (label STRUCTURES) and table note",
+      "quote": "The 68\\% confidence limits on peak positions are derived from 500 bootstrap realisations for the Core peak, and from the pixel size of the coarse weak lensing mesh in the reconstruction outskirts for the other mass peaks."
+    }
+  },
+  "G": {
+    "type": "peak of X-ray emission identified by Owers et al. (2011), near the Core mass peak (no absolute coordinates in this paper)",
+    "ra": null,
+    "dec": null,
+    "offset": {"from": "I", "value": 22, "unit": "arcsec", "error": "+/-12 arcsec", "note": "A second number, 'projected 17 arcsec separation' between DM and gas in the Core, is used for the cross-section estimate (Sec. 4.1)."},
+    "location": "Sec. 4.1 'Core, the massive clump'",
+    "quote": "The mass peak is centred amongst the bright cluster member galaxies (within $1\\sigma$ errors, it is consistent with the position of the BCG) and only $22\\pm12$ arcseconds from a peak of X-ray emission identified by \\citet{Owers2011}. ... In the Core of Abell~2744, we observe a projected $17\\arcsec$ separation",
+    "uncertainty": {
+      "value": "+/-12 (on the I-G separation of 22 arcsec)",
+      "unit": "arcsec",
+      "kind": "other",
+      "components": [],
+      "location": "Sec. 4.1",
+      "quote": "only $22\\pm12$ arcseconds from a peak of X-ray emission"
+    }
+  },
+  "S_candidates": [
+    {
+      "label": "BCG (reference position for all x,y offsets in Tables 1 and 2)",
+      "type": "BCG of the Core",
+      "ra": "3.58611 deg",
+      "dec": "-30.40024 deg",
+      "offset": {"from": "I", "value_xy_arcsec": [13, 4], "unit": "arcsec", "note": "inverse of the Core peak offset"},
+      "location": "Table 2 note (also Table 1 note)",
+      "quote": "relative to the BCG position ($\\alpha_{\\textrm{J2000}} =3.58611^{\\circ}$, $\\delta_{\\textrm{J2000}} =-30.40024^{\\circ}$)",
+      "uncertainty": "NOT GIVEN"
+    },
+    {
+      "label": "No luminosity-weighted galaxy centroid given; Fig. 1 'white rulers' show DM-galaxy separations only graphically (not quoted in text).",
+      "type": "none",
+      "ra": null,
+      "dec": null,
+      "offset": null,
+      "location": "Fig. 1 caption (label DMXOVERLAY)",
+      "quote": "The small red circles show the position of the local overdensities in the gas distribution, associated with each individual dark matter clump. The white rulers show the separation between dark matter peaks and the bright clusters galaxies and local gas peaks.",
+      "uncertainty": "NOT GIVEN"
+    }
+  ],
+  "alternative_NW": {
+    "I": {
+      "type": "lensing surface-mass density peak 'NW' ('dark' clump); note NW1/NW2 double peak (NW1 in 95% of bootstraps, NW2 in 54%)",
+      "offset_from_BCG_xy_arcsec": [71, 84],
+      "quote": "NW&$71^{+11}_{-10}$&$84^{+15}_{-7}$&$1.15\\pm0.23$",
+      "location": "Table 2 (label STRUCTURES)",
+      "uncertainty": {"value": "x +11/-10, y +15/-7 arcsec (68%, from pixel size of the coarse WL mesh)", "unit": "arcsec", "kind": "per-axis"}
+    },
+    "G": {
+      "type": "NW interloper ('ghost' clump, X-ray feature of Owers+2011); no coordinates given",
+      "offset": "separation to NW mass peak '>150 kpc for NW2'; to NW1 'at least 400 kpc'; abstract: ghost leads dark clump 'by more than 150 kpc'; Sec. 4.3: 'more than 100 arcsec separation'",
+      "quote": "However, the separation between our different possible NW mass peak positions and the NW interloper is large ($>150$~kpc for NW2). When compared to the more prominent Eastern mass peak NW1, which is identified in 95\\% of the bootstrap realisations, the distance is even at least $400$~kpc.",
+      "location": "Sec. 4.3 'Northwestern, the ghostly and dark clumps'",
+      "uncertainty": "NOT GIVEN"
+    },
+    "S": {
+      "type": "no BCG/galaxy position given; 'clear separation between the peak of the NW mass clump and any cluster member galaxies'; 'pair of giant ellipticals' to the West (figure only). Conclusions: 'very large $>35\\arcsec$ observed separation between any gas (ghostly clump or NW interloper), galaxies and dark matter (dark clump)'.",
+      "location": "Sec. 4.3; Sec. 5",
+      "uncertainty": "NOT GIVEN"
+    }
+  },
+  "notes": "1) Designation 'Core/NW' is ambiguous; both clumps extracted. 2) No absolute RA/Dec for mass peaks or X-ray peaks; mass peaks are offsets from the BCG (x,y arcsec). 3) Core I-G: two different numbers in Sec. 4.1: 22+/-12 arcsec (mass peak to Owers+2011 X-ray peak) and 'projected 17 arcsec separation' (used for sigma/m). 4) A commented-out (not compiled; marked 'TABLE CHANGED FOR REVISED MANUSCRIPT') table in the tex lists 'Core 17+/-10 (DM-gas) 10+/-10 (DM-light)', 'NW 103+/-10, 36+/-10' arcsec; it is NOT part of the published paper text and should not be used, recorded here only for transparency. 5) Conclusions say none of the X-ray ridges (NMRC, SMRC) coincide with mass clumps. 6) The NW clump lies outside HST coverage (VLT WL only)."
+}

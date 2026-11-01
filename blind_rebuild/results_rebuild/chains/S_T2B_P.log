@@ -1,0 +1,8 @@
+run S_T2B_P cfg={'model': 't2b', 'bao': 'mod', 'cmb': 'cond', 'sn': 'P', 'bbn': 'desi', 'role': 'T2-B sensitivity'} seed=20291030 start=2026-10-30T08:36:01
+  start mode [ 0.32364568  0.66161792 -0.80625421 -0.31619207] chi2=1408.949
+  adapt done: acceptance 0.253, scale 1.416
+  prod 4000/chain (extra burn 0): Rmax-1=0.0060 ESSmin=1740 tau_max=16.7 acc=0.250
+  prod 8000/chain (extra burn 0): Rmax-1=0.0025 ESSmin=3395 tau_max=18.3 acc=0.251
+  prod 12000/chain (extra burn 0): Rmax-1=0.0024 ESSmin=4442 tau_max=21.6 acc=0.251
+  prod 16000/chain (extra burn 0): Rmax-1=0.0013 ESSmin=5822 tau_max=22.4 acc=0.249
+done chi2_min=1408.8882 at [ 0.32248789  0.66226151 -0.81973903 -0.25984238] runtime 1242s converged=True

@@ -1,0 +1,8 @@
+run T2A_D cfg={'model': 'cpl', 'bao': 'mod', 'cmb': 'cond', 'sn': 'D', 'bbn': 'desi', 'role': 'T2-A deciding'} seed=20298030 start=2026-10-30T08:40:51
+  start mode [ 0.31407823  0.67627292  2.24484565 -0.83702794 -0.57496536] chi2=1640.205
+  adapt done: acceptance 0.253, scale 1.133
+  prod 4000/chain (extra burn 0): Rmax-1=0.0070 ESSmin=956 tau_max=33.1 acc=0.249
+  prod 8000/chain (extra burn 0): Rmax-1=0.0039 ESSmin=2335 tau_max=27.8 acc=0.250
+  prod 12000/chain (extra burn 0): Rmax-1=0.0023 ESSmin=3426 tau_max=29.8 acc=0.249
+  prod 16000/chain (extra burn 0): Rmax-1=0.0022 ESSmin=4496 tau_max=30.5 acc=0.251
+done chi2_min=1640.2052 at [ 0.31407968  0.67627164  2.24484487 -0.83702463 -0.57496706] runtime 1201s converged=True

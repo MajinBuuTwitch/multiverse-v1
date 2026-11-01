@@ -1,0 +1,74 @@
+{
+  "row": 3,
+  "designation": "Abell 1240",
+  "paper_ref": "Cho et al. 2022, ApJ 925, 68; pointer: Table 2 & §3.2-3.3 / Fig. 5",
+  "paper_found": {
+    "authors": "Hyejeon Cho, M. James Jee, Rory Smith, Kyle Finner, Wonki Lee",
+    "title": "Multiwavelength Analysis of A1240, the Double Radio Relic Merging Galaxy Cluster Embedded in a ~80 Mpc-long Cosmic Filament",
+    "journal_ref": "ApJ 925, 68 (2022), doi:10.3847/1538-4357/ac36c8",
+    "arxiv_id": "2109.06879",
+    "source_file": "d:\\Blind_Rebuild\\data\\papers\\cho2022\\src_clean\\ms-a1240-R1.tex",
+    "match_to_assigned_ref": "Matches. Table 2 = 'Measured Properties of Subclusters in the A1240 Field' (Table 1 = spectroscopic catalogue). Journal HTML (https://iopscience.iop.org/article/10.3847/1538-4357/ac36c8, read 2026-10-30 ~10:26 UTC, not saved as a file) shows identical Table 2 A1240S coordinates; journal §3.2.5 = '2D WL Mass Reconstruction'."
+  },
+  "subcluster_designated": "S subcluster = A1240S",
+  "z_cl": {
+    "value": 0.195,
+    "location": "Abstract and §1 (last paragraph before §2)",
+    "quote": "At the redshift of A1240, $z=0.195$, an angular scale of 1\\arcsec\\ corresponds to a physical scale of \\mytilde3.24~kpc (\\mytilde194~kpc~arcmin$^{-1}$).",
+    "subcluster_value": {"value": "0.194987 +/- 0.000486", "location": "Table 2, row A1240S, column z (mean redshift of luminosity peak)"}
+  },
+  "I": {
+    "type": "A1240S weak-lensing mass clump (FIATMAP convergence peak)",
+    "ra": null,
+    "dec": null,
+    "offset": null,
+    "location": "§3.2.5 (journal) '2D WL Mass Reconstruction' and Fig. 10 caption",
+    "quote": "The $\\mytilde68$\\% peak distributions measured from the 1000 bootstrap-resampled mass maps show that all the three peaks are in good spatial agreement with the corresponding luminosity peaks.",
+    "uncertainty": "NOT GIVEN",
+    "uncertainty_context": "68% centroid ellipses are only drawn in Fig. 10 (top left): \"In the top left panel, the 68\\% covariance confidence limits of the mass centroid uncertainties are marked with cyan ellipses.\" No numerical value. NOTE: mass-peak coordinates are NOT given anywhere in the paper (text or tables); NFW fits used centroids fixed at the luminosity centres (§3.2.6)."
+  },
+  "G": {
+    "type": "X-ray peak of A1240S",
+    "ra": null,
+    "dec": null,
+    "offset": null,
+    "location": "Abstract; §3.2.5",
+    "quote": "The northern ... and middle ... mass clumps separated by \\mytilde1.3~Mpc are associated with A1240 and co-located with the X-ray peaks and cluster galaxy overdensities ; §3.2.5: \"the X-ray surface brightness map shows a clumpy, elongated structure, from which it is somewhat difficult to quantify the exact number of the substructures.\"",
+    "uncertainty": "NOT GIVEN"
+  },
+  "S_candidates": [
+    {
+      "label": "Luminosity Density Peak (A1240S)",
+      "type": "peak of adaptively-smoothed luminosity-weighted galaxy density map (table comment: 'coordinate of the ... luminosity-weighted density peaks'); used as the substructure centre",
+      "ra": "170.903349",
+      "dec": "43.061313",
+      "unit": "deg",
+      "offset": null,
+      "location": "Table 2, row A1240S, column (3)",
+      "quote": "A1240S & 170.896442, 43.062998 & 170.903349, 43.061313 & 0.194987\\pm0.000486 & 841\\pm109 & 464_{-63}^{+55} & 1.09_{-0.43}^{+0.34} \\\\ ; table comment: \"(2) and (3) coordinate of the number and luminosity-weighted density peaks (see bottom panels of Figure~\\ref{fig:galmap})\"",
+      "uncertainty": "NOT GIVEN"
+    },
+    {
+      "label": "Number Density Peak (A1240S)",
+      "type": "peak of adaptively-smoothed galaxy number density map",
+      "ra": "170.896442",
+      "dec": "43.062998",
+      "unit": "deg",
+      "offset": null,
+      "location": "Table 2, row A1240S, column (2)",
+      "quote": "A1240S & 170.896442, 43.062998 & 170.903349, 43.061313 & ...",
+      "uncertainty": "NOT GIVEN"
+    },
+    {
+      "label": "A1240S-BCG",
+      "type": "BCG of southern subcluster; marked in Fig. 6(a) only, coordinates NOT given",
+      "ra": null,
+      "dec": null,
+      "offset": null,
+      "location": "§3.1.2",
+      "quote": "We refer to two BCGs of A1240 as A1240N-BCG and A1240S-BCG, which are located at the approximate centers of the northern (A1240N) and southern (A1240S) subclusters in A1240.",
+      "uncertainty": "NOT GIVEN"
+    }
+  ],
+  "notes": "Only galaxy-based positions are tabulated (number-density peak and luminosity-weighted density PEAK). Per protocol, a luminosity peak of a smoothed map is NOT a centroid, and the A1240S BCG position is not given in this paper, so S may be unavailable under the strict rule (analyst decision). Neither the WL mass-peak position (I) nor the X-ray peak position (G) is given numerically, nor any I-G/I-S separation in arcsec/kpc; only qualitative statements ('good spatial agreement', 'co-located'). §3.1.2 says 'the 2D density peak coordinates, redshift and velocity dispersion measurements, and their bootstrapped uncertainties are summarized in Table 2', but Table 2 lists no coordinate uncertainties. No instrument centroiding error stated. Plate scale 3.24 kpc/arcsec (their cosmology). Section numbering in arXiv/journal: §3.1.2 galaxies, §3.2.5 WL map, §3.2.6 masses; 'Fig. 5' of the pointer is the size-magnitude diagram here; the relevant figures are Fig. 6 (galaxy maps) and Fig. 10 (mass map)."
+}

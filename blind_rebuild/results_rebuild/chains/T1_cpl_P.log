@@ -1,0 +1,8 @@
+run T1_cpl_P cfg={'model': 'cpl', 'bao': 'mod', 'cmb': 'lcdm3', 'sn': 'P', 'bbn': None, 'role': 'T1 deciding'} seed=20293030 start=2026-10-30T08:36:50
+  start mode [ 0.31289493  0.67738162  2.24078897 -0.86080177 -0.50045279] chi2=1397.293
+  adapt done: acceptance 0.253, scale 1.133
+  prod 4000/chain (extra burn 0): Rmax-1=0.0083 ESSmin=1359 tau_max=25.2 acc=0.248
+  prod 8000/chain (extra burn 0): Rmax-1=0.0024 ESSmin=3040 tau_max=22.8 acc=0.252
+  prod 12000/chain (extra burn 0): Rmax-1=0.0011 ESSmin=4865 tau_max=20.4 acc=0.256
+  prod 16000/chain (extra burn 0): Rmax-1=0.0013 ESSmin=6522 tau_max=20.0 acc=0.249
+done chi2_min=1397.2933 at [ 0.31289442  0.67738238  2.24079099 -0.86080598 -0.50044552] runtime 1206s converged=True

@@ -1,0 +1,8 @@
+run G9b_lcdm_CMB cfg={'model': 'lcdm', 'bao': None, 'cmb': 'lcdm3', 'sn': None, 'bbn': None, 'role': 'gate G9-b'} seed=20262030 start=2026-10-30T06:37:23
+  start mode [0.31533835 0.67632925 2.23605181] chi2=0.000
+  adapt done: acceptance 0.330, scale 1.888
+  prod 4000/chain (extra burn 0): Rmax-1=0.0056 ESSmin=2558 tau_max=12.9 acc=0.315
+  prod 8000/chain (extra burn 0): Rmax-1=0.0021 ESSmin=5210 tau_max=12.9 acc=0.310
+  prod 12000/chain (extra burn 0): Rmax-1=0.0017 ESSmin=7699 tau_max=12.8 acc=0.315
+  prod 16000/chain (extra burn 0): Rmax-1=0.0010 ESSmin=10588 tau_max=12.2 acc=0.316
+done chi2_min=0.0000 at [0.31538209 0.67629862 2.23600007] runtime 411s converged=True

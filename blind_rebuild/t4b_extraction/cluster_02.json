@@ -1,0 +1,103 @@
+{
+  "row": 2,
+  "designation": "ACT-CL J0102-4915 (El Gordo)",
+  "paper_ref": "Jee et al. 2014, ApJ 785, 20; pointer: Table 1 & §3.2-3.3 / Fig. 3-4",
+  "paper_found": {
+    "authors": "M. J. Jee, J. P. Hughes, F. Menanteau, C. Sifon, R. Mandelbaum, L. F. Barrientos, L. Infante, K. Y. Ng",
+    "title": "Weighing \"El Gordo\" with a Precision Scale: Hubble Space Telescope Weak-lensing Analysis of the Merging Galaxy Cluster ACT-CL J0102-4915 at z=0.87",
+    "journal_ref": "ApJ 785, 20 (2014)",
+    "arxiv_id": "1309.5097",
+    "source_file": "d:\\Blind_Rebuild\\data\\papers\\jee2014\\src_clean\\ms.tex",
+    "match_to_assigned_ref": "Matches assigned reference. NOTE: pointer numbering does not match the arXiv source: Table 1 here is 'Mass Estimates ... based on 1D fit' (no positions); the mass-peak positions are in §4.1 ('Two-dimensional Mass Reconstruction') and §4.2 ('Significance and Locations of the Weak-Lensing Mass Peaks'); Fig. 5 = mass map, Fig. 7 = centroid comparison overlay, Fig. 8 = bootstrap centroid distribution (figure numbers counted from the LaTeX order)."
+  },
+  "subcluster_designated": "SE subcluster (southeastern mass clump)",
+  "z_cl": {
+    "value": 0.87,
+    "location": "Abstract (also title and §4.3)",
+    "quote": "We present a {\\it Hubble Space Telescope} weak-lensing study of the merging galaxy cluster ``El Gordo'' (\\elgordo)~at $z=0.87$"
+  },
+  "I": {
+    "type": "SE shear (weak-lensing mass) peak",
+    "ra": "01:02:56.31",
+    "dec": "-49:16:23.2",
+    "offset": null,
+    "location": "§4.1 'Two-dimensional Mass Reconstruction', paragraph after Fig. 8; same position (more digits) in Fig. 8 caption (bootstrap centroid figure)",
+    "quote": "The shear peaks are located at R.A.=01:02:50.60, Decl.=$-$49:15:04.5 for the NW component and R.A.=01:02:56.31, Delc.=$-$49:16:23.2 for the SE one.  ; Fig. 8 caption: \"The (0,0) positions correspond to positions of R.A.=01:02:50.601, Decl.=$-$49:15:04.48 for the NW component and R.A.=01:02:56.312, Delc.=$-$49:16:23.15 for the SE one.\"",
+    "uncertainty": {
+      "value": 4,
+      "unit": "arcsec",
+      "kind": "other",
+      "components": null,
+      "location": "Abstract",
+      "quote": "The centroids of both components are tightly constrained ($\\mytilde4\\arcsec$) and close to the optical luminosity centers.",
+      "alternatives": [
+        {
+          "value": 3,
+          "qualifier": "<~ (upper bound), MCMC 2-NFW-halo centroid, not the kappa-map peak",
+          "location": "§4.3 'Mass Determination', paragraph before Fig. 12/13",
+          "quote": "In Figure~\\ref{fig_centroid}, we display the centroid distributions of the two halos, which illustrate that the mass centroid is well-constrained ($\\lesssim3\\arcsec$)."
+        }
+      ],
+      "caveat": "Paper does not say whether ~4\" is a 1D sigma, a radius, or per-axis; bootstrap 1/2-sigma contours are only shown graphically (Fig. 8; SE distribution 'elongated east-west')."
+    }
+  },
+  "G": {
+    "type": "X-ray peak (single Chandra X-ray peak, located close to the SE mass peak)",
+    "ra": null,
+    "dec": null,
+    "offset": {
+      "from": "I",
+      "value": 8,
+      "unit": "arcsec",
+      "approximate": true,
+      "also_stated": "~100 h^-1 kpc (abstract)"
+    },
+    "location": "§4.2 'Significance and Locations of the Weak-Lensing Mass Peaks'; also Abstract",
+    "quote": "The X-ray emission is strongest near this SE mass peak. The distance between the X-ray and SE mass peaks is $\\mytilde8\\arcsec$.  Based on the above bootstrapping analysis, the significance of the offset is at the $\\mytilde2\\sigma$ level.  ; Abstract: \"The X-ray and mass peaks are spatially offset by $\\mytilde8\\arcsec$ ($\\mytilde100\\hubblem$ kpc), which is significant at the $\\mytilde2\\sigma$ confidence level.\"",
+    "uncertainty": "NOT GIVEN",
+    "uncertainty_context": "Only the offset significance (~2 sigma, from bootstrapping the lensing centroid) is given; no X-ray centroiding error is stated. NOTE: offset is from I (the protocol schema lists 'G'|'S' as reference; here the reference is I)."
+  },
+  "S_candidates": [
+    {
+      "label": "SE galaxy luminosity peak",
+      "type": "peak of smoothed optical luminosity map (a luminosity PEAK, not a tabulated luminosity-weighted centroid); no coordinates or numerical offset given",
+      "ra": null,
+      "dec": null,
+      "offset": null,
+      "location": "§4.2",
+      "quote": "The southeastern (SE) mass peak is close to the corresponding SE galaxy luminosity peak.",
+      "uncertainty": "NOT GIVEN"
+    },
+    {
+      "label": "optical luminosity centers",
+      "type": "qualitative mention only",
+      "ra": null,
+      "dec": null,
+      "offset": null,
+      "location": "Abstract",
+      "quote": "The centroids of both components are tightly constrained ($\\mytilde4\\arcsec$) and close to the optical luminosity centers.",
+      "uncertainty": "NOT GIVEN"
+    },
+    {
+      "label": "SE number density centroid",
+      "type": "galaxy number-density centroid (not luminosity-weighted; not a BCG)",
+      "ra": null,
+      "dec": null,
+      "offset": {"from": "I", "value": 50, "unit": "arcsec", "approximate": true, "also_stated": "~400 h^-1 kpc"},
+      "location": "§4.2",
+      "quote": "the SE number density centroid is separated from the SE mass peak by $\\mytilde400\\hubblem$ kpc ($\\mytilde50\\arcsec$)",
+      "uncertainty": "NOT GIVEN"
+    },
+    {
+      "label": "SE BCG",
+      "type": "NOT GIVEN - the paper never gives a BCG position (string 'BCG'/'brightest' does not occur in the source)",
+      "ra": null,
+      "dec": null,
+      "offset": null,
+      "location": "whole paper searched",
+      "quote": null,
+      "uncertainty": "NOT GIVEN"
+    }
+  ],
+  "notes": "I: absolute position given. G: only a stated I-G separation of ~8\" (~100 h^-1 kpc), ~2 sigma significance. S: no luminosity-weighted centroid tabulated and no BCG position given anywhere; only 'luminosity peak' (qualitatively 'close to' the SE mass peak, used as halo centre in 1D fits and in Fig. 7 'Various measures of the cluster centroids are shown as illustrated') - positions only in figures, not reportable. I uncertainty: abstract '~4\"' (type unspecified) and MCMC '<~3\"'; no G or S uncertainty. Pointer section/table numbers (§3.2-3.3, Table 1, Fig. 3-4) do not correspond to the arXiv source numbering; content used is §4.1-4.3, Figs 5/7/8."
+}

@@ -1,0 +1,67 @@
+{
+  "row": 8,
+  "designation": "Abell 3376",
+  "paper_ref": "Monteiro-Oliveira et al. 2017b, MNRAS 468, 4566; pointer: Table 2 & Sec. 3.2 / Fig. 6",
+  "paper_found": {
+    "authors": "R. Monteiro-Oliveira, G. B. Lima Neto, E. S. Cypriano, R. E. G. Machado, H. V. Capelato, T. F. Lagana, F. Durret, J. Bagchi",
+    "title": "Weak lensing and spectroscopic analysis of the nearby dissociative merging galaxy cluster Abell 3376",
+    "journal_ref": "MNRAS 468(4), 4566-4578 (2017), doi:10.1093/mnras/stx791 (verified via Crossref)",
+    "arxiv_id": "1612.07935 (v2 used as primary; v1 also downloaded and checked - neither contains coordinates)",
+    "source_file": "d:/Blind_Rebuild/data/papers/A3376_MO2017/src_clean/A3376_paper.tex",
+    "journal_ref_match": "yes. Pointer numbering: Table 2 of the tex is 'Median and 68% range of the marginalised masses' (label tab:masses) - masses only, NO positions. The mass-centre / X-ray / BCG comparison is at the end of Sec. 2.6 'Results' (label sec:results) and in the figure labelled fig:A3376:mass.rx."
+  },
+  "subcluster_designated": "A3376E (eastern subcluster)",
+  "z_cl": {
+    "value": 0.0461,
+    "location": "Sec. 1 (adopted cosmology paragraph); abstract gives z = 0.046",
+    "quote": "At the mean cluster redshift of $z=0.0461$ we then have $1$ arcsec equals $0.905$~kpc"
+  },
+  "I": {
+    "type": "weak-lensing convergence (LensEnt2) peak #8 = A3376E mass peak (peak finder, moving 2.8 arcmin window; 1.6 sigma significance)",
+    "ra": null,
+    "dec": null,
+    "offset": null,
+    "location": "Fig. label fig:peak.id caption (identification only); Sec. 2.6 Results; no coordinates anywhere in the paper",
+    "quote": "The peaks \\#10, \\#8 and \\#4 correspond, respectively, to the A3376W, A3376E and A3376N subclusters.",
+    "uncertainty": {
+      "value": "NOT GIVEN numerically; only 68% and 95% bootstrap (1e4 resamplings) confidence contours drawn in figure",
+      "unit": null,
+      "kind": "other",
+      "components": [],
+      "location": "Sec. 2.6 Results; Fig. fig:A3376:mass.rx caption",
+      "quote": "To estimate the uncertainties on the mass centre positions, we performed $1\\times10^4$ bootstrap re-samplings of the ellipticity field. ... The confidence contours are presented in Fig.~\\ref{fig:A3376:mass.rx}."
+    }
+  },
+  "G": {
+    "type": "single XMM-Newton X-ray surface-brightness peak (related to A3376E); no coordinates given",
+    "ra": null,
+    "dec": null,
+    "offset": null,
+    "location": "Sec. 2.6 Results (after fig:A3376:mass.rx); Sec. 5 Discussion; Summary",
+    "quote": "The comet-like X-ray morphology reveals just one more concentrated location close to the BCG E. Their positions are, within 95\\% c.l., in agreement to both BCG and mass centre location.",
+    "uncertainty": "NOT GIVEN"
+  },
+  "S_candidates": [
+    {
+      "label": "BCG E (Eastern BCG)",
+      "type": "subcluster BCG",
+      "ra": null,
+      "dec": null,
+      "offset": null,
+      "location": "figures only (green circles / magenta X); qualitative statement Sec. 2.6",
+      "quote": "Both BCG and X-ray position are comparable within 95\\% c.l. with the mass centre.",
+      "uncertainty": "NOT GIVEN"
+    },
+    {
+      "label": "No luminosity-weighted centroid tabulated; r'-luminosity-weighted galaxy density map shown only as figure (fig:luminosity).",
+      "type": "none",
+      "ra": null,
+      "dec": null,
+      "offset": null,
+      "location": "Fig. label fig:luminosity",
+      "quote": "The magenta contours correspond to the numerical density distribution weighted by the $r'$ luminosity for the 294 red sequence galaxies selected through colour-colour statistical subtraction.",
+      "uncertainty": "NOT GIVEN"
+    }
+  ],
+  "notes": "The paper gives NO numerical positions (no RA/Dec) and NO numerical separations for any of x_I, x_G, x_S of A3376E; it only states qualitative agreement 'within 95% c.l.' between the X-ray peak, BCG E and the A3376E mass peak (bootstrap contours in figure). Other numbers available: projected mass-peak separation W-E d_proj = 1096 +/- 66 kpc (MCMAC input table, 'The projected distance $d_{\\rm proj}$ corresponds to the mass peak separation'); A3376N-A3376E separation 1147 +/- 62 kpc; BCG W-E ~970 kpc (citing Machado+13); A3376E mass distribution 'looks blended with another nearby mass concentration'. The weak-lensing map smoothing is a Gaussian with sigma = 160 arcsec. Both arXiv v1 and v2 checked: no coordinates in either. Under the protocol this cluster lacks positional data from the designated paper."
+}

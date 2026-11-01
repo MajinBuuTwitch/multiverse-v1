@@ -1,0 +1,8 @@
+run G9c_cpl_BAOstd_CMB_D cfg={'model': 'cpl', 'bao': 'std', 'cmb': 'lcdm3', 'sn': 'D', 'bbn': None, 'role': 'gate G9-c'} seed=20263030 start=2026-10-30T07:28:32
+  start mode [ 0.31416317  0.67625385  2.24002474 -0.82781862 -0.62143421] chi2=1638.599
+  adapt done: acceptance 0.273, scale 1.133
+  prod 4000/chain (extra burn 0): Rmax-1=0.0048 ESSmin=1276 tau_max=23.7 acc=0.267
+  prod 8000/chain (extra burn 0): Rmax-1=0.0018 ESSmin=2819 tau_max=22.3 acc=0.267
+  prod 12000/chain (extra burn 0): Rmax-1=0.0025 ESSmin=4384 tau_max=22.6 acc=0.263
+  prod 16000/chain (extra burn 0): Rmax-1=0.0019 ESSmin=5796 tau_max=23.1 acc=0.270
+done chi2_min=1638.5993 at [ 0.31416298  0.67625505  2.24001877 -0.82784067 -0.62139982] runtime 2157s converged=True

@@ -1,0 +1,66 @@
+{
+  "row": 4,
+  "designation": "Abell 1758N",
+  "paper_ref": "Monteiro-Oliveira et al. 2017a, MNRAS 466, 2614; pointer: Table 2 & §3.2 / Fig. 5",
+  "paper_found": {
+    "authors": "R. Monteiro-Oliveira, E. S. Cypriano, R. E. G. Machado, G. B. Lima Neto, A. L. B. Ribeiro, L. Sodre Jr., R. Dupke",
+    "title": "The merger history of the complex cluster Abell 1758: a combined weak lensing and spectroscopic view",
+    "journal_ref": "MNRAS 466, 2614-2634 (2017)",
+    "arxiv_id": "1605.07595",
+    "source_file": "d:\\Blind_Rebuild\\data\\papers\\monteirooliveira2017\\src_clean\\mnras.tex",
+    "match_to_assigned_ref": "Matches. NOTE: in the arXiv source Table 2 is 'Imaging data characteristics' (no positions; Table 1 = literature masses, Table 3 = marginalized masses); the position results are in §2.6.2 'Central positions' (arXiv numbering), Fig. 5 = 7-parameter posterior triangle plot (centre positions shown in WCS degrees, graphically only), Fig. 7 = 95% centre contours, Fig. 8 = 1/2-sigma contours with X-ray peaks; BCG coordinates in Appendix Table A1."
+  },
+  "subcluster_designated": "NW subcluster = A1758NW",
+  "z_cl": {
+    "value": 0.278,
+    "location": "Abstract; §1 (end, adopted cosmology)",
+    "quote": "Throughout this paper we adopt the following cosmology: $\\Omega_m=0.27$, $\\Omega_\\Lambda=0.73$, $\\Omega_k=0$, and $H_0=70$~km~s$^{-1}$ Mpc$^{-1}$.  At mean cluster redshift $z=0.278$ we have $1^{\\prime\\prime}=4.25$ kpc",
+    "subcluster_value": {"value": "0.2799(6)", "location": "§3.2.3 (2-D analysis, arXiv numbering) and Fig. 14 caption", "quote": "$\\bar{z}_{\\rm NW}= 0.2799(6)$"}
+  },
+  "I": {
+    "type": "NW NFW mass-centre (MCMC posterior centre of the A1758NW NFW halo; distortion+magnification)",
+    "ra": null,
+    "dec": null,
+    "offset": {
+      "from": "S",
+      "value": 24,
+      "unit": "arcsec",
+      "error_plus": 10,
+      "error_minus": 14,
+      "reference_point": "A1758NW BCG"
+    },
+    "location": "§2.6.2 'Central positions' (arXiv numbering), paragraph after Fig. 7",
+    "quote": "As in previous studies \\citep{sevenmergers,ragozzine} we found no significant offsets between the BCGs and the mass centres. Those distances are $24_{-14}^{+10}$ and $30_{-18}^{+12}$ arcsec, for NW and NE, respectively. Thus, in both cases,  the BCG position is consistent with the halo mass centre within 95\\% c.l.",
+    "uncertainty": {
+      "value": "+10/-14 (on the I-S separation, not on the I position itself)",
+      "unit": "arcsec",
+      "kind": "other",
+      "components": [10, -14],
+      "location": "§2.6.2",
+      "quote": "Those distances are $24_{-14}^{+10}$ and $30_{-18}^{+12}$ arcsec, for NW and NE, respectively.",
+      "caveat": "Confidence level of the +10/-14 interval is not stated explicitly (paper elsewhere quotes 68% ranges for MCMC masses, Table 3). Positional contours: 95% in Fig. 7, 1 and 2 sigma in Fig. 8 - graphical only."
+    }
+  },
+  "G": {
+    "type": "NW X-ray peak (Chandra, barycentre technique in 0.6x0.6 arcmin box)",
+    "ra": null,
+    "dec": null,
+    "offset": null,
+    "location": "§2.6.2; Fig. 8 caption; §6 Summary",
+    "quote": "For A1758NW, the position of the X-ray peak emission is compatible with that of the BCG and the mass clump centre, considering the uncertainties. ; Fig. 8: \"in NW the positions of the three components (BCG, mass peak and  X-ray peak) are compatible within $2\\sigma$.\" ; method: \"The peaks of the X-ray emission were determined by using the barycentre technique. It consists on a search for local maxima, around which we define a box of  $0.6 \\times 0.6$ arcmin ($\\sim$ the size of central brightest regions). The peak is then the intensity weighted average position.\"",
+    "uncertainty": "NOT GIVEN"
+  },
+  "S_candidates": [
+    {
+      "label": "A1758NW BCG (Table A1 galaxy ID 89, marked with star)",
+      "type": "subcluster BCG",
+      "ra": "13:32:38.3",
+      "dec": "+50:33:35.8",
+      "offset": null,
+      "location": "Appendix A, Table A1 (A1758N catalogue), row ID 89; caption: 'The galaxies marked with $^\\star$ and $^\\diamondsuit$ are the A1758NW e A1758NE BGCs respectively.'",
+      "quote": "89.$^\\star$&  56.&         55.& 13:32:38.3& +50:33:35.8&       19.65&       17.41&       16.74&      83378.&         88.\\\\",
+      "uncertainty": "NOT GIVEN"
+    }
+  ],
+  "notes": "I is available only as an offset from the NW BCG (24 +10/-14 arcsec); G (NW X-ray peak) has no coordinates and no numerical offset - only 'compatible within 2 sigma' with BCG and mass centre. No luminosity-weighted centroid is tabulated (red-sequence density maps only graphical), so S = NW BCG from Appendix Table A1. No positional uncertainties for G or S and no instrument centroiding error stated. For context (not designated): NE mass centre is 96 +14/-15 arcsec from the NE X-ray peak and 30 +12/-18 arcsec from the NE BCG (13:32:52.0 +50:31:33.9, ID 113). Plate scale 4.25 kpc/arcsec (their cosmology). Pointer 'Table 2 & §3.2' does not match the arXiv numbering (§3.2 here is dynamical 1-D/2-D analysis of A1758N); Fig. 5 (triangle plot) does show the centre-position posteriors but only graphically."
+}

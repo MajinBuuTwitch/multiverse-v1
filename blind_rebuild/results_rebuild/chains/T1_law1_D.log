@@ -1,0 +1,8 @@
+run T1_law1_D cfg={'model': 'law1', 'bao': 'mod', 'cmb': 'lcdm3', 'sn': 'D', 'bbn': None, 'role': 'T1 deciding'} seed=20294030 start=2026-10-30T07:28:32
+  start mode [0.30962476 0.67733457 2.25291967 0.03956199] chi2=1647.616
+  adapt done: acceptance 0.287, scale 1.416
+  prod 4000/chain (extra burn 0): Rmax-1=0.0076 ESSmin=2234 tau_max=14.7 acc=0.292
+  prod 8000/chain (extra burn 0): Rmax-1=0.0028 ESSmin=4311 tau_max=14.4 acc=0.292
+  prod 12000/chain (extra burn 0): Rmax-1=0.0018 ESSmin=6345 tau_max=14.7 acc=0.292
+  prod 16000/chain (extra burn 0): Rmax-1=0.0010 ESSmin=8761 tau_max=14.8 acc=0.300
+done chi2_min=1647.6161 at [0.30963969 0.67732324 2.25290656 0.03955621] runtime 2398s converged=True

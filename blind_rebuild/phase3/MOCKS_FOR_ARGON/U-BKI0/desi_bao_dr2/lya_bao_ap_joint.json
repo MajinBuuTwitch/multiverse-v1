@@ -1,0 +1,9 @@
+{
+ "description": "joint Lyman-alpha BAO+AP distance ratios at z_eff = 2.33 (same quantities as arXiv:2607.27410 used by PREREG 5.1); replaces the z = 2.33 rows of desi_gaussian_bao_ALL_GCcomb_mean.txt in the model fits",
+ "z_eff": 2.33,
+ "DH_over_rd": 8.6233,
+ "DM_over_rd": 38.891,
+ "sigma_DH_over_rd": 0.066,
+ "sigma_DM_over_rd": 0.33,
+ "corr_DH_DM": -0.431
+}

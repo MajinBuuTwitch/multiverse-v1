@@ -1,0 +1,81 @@
+{
+  "row": 9,
+  "designation": "Abell 520 — Clowe 2012 substructures: P3 ('dark core' location of J12 = region of Jee14 P3/P3') and P4 (SW subcluster); all rows recorded (secondary / sensitivity source)",
+  "paper_ref": "Clowe et al. 2012, ApJ 758, 128, Table 2",
+  "paper_found": {
+    "authors": "D. Clowe, M. Markevitch, M. Bradac, A. H. Gonzalez, S. M. Chung, R. Massey, D. Zaritsky",
+    "title": "On Dark Peaks and Missing Mass: A Weak Lensing Mass Reconstruction of the Merging Cluster System Abell 520",
+    "journal_ref": "ApJ 758, 128 (2012); DOI 10.1088/0004-637X/758/2/128 (confirmed on arXiv abs page)",
+    "arxiv_id": "1209.2143 (e-print source A520.tex)",
+    "journal_ref_match": "Journal reference matches. TABLE NUMBER MISMATCH: positions (RA, Dec) are in Table 1 ('Mass Reconstruction Substructure Properties (r<150 kpc)'). Table 2 ('Aperture Densitometry Substructure Properties') has NO positions (only zeta / zeta_c masses and M/L). Same numbering in arXiv source and the published IOP HTML version. Table 1 used."
+  },
+  "subcluster_designated": "P3 (region 3 = J12 dark-peak location; in C12 this is NOT a detected peak, it is the J12 location used as an aperture centre) and P4 (SW subcluster, detected mass structure 4). Nearest C12 row to Jee14 P3' (04 54 07.51, +02 54 41.3) is ambiguous: C12 has no row at P3'.",
+  "z_cl": {
+    "value": 0.199,
+    "location": "Sect. 1 (Introduction)",
+    "quote": "A weak lensing study \\citep[][hereafter M07]{MA07.1} of Abell 520 \\citep[hereafter A520,][]{ACO}, at $z=0.199$ \\citep{ST99.1}, finds instead",
+    "also": "Sect. 3.4 (Mass Measurements): '...if it were to be lensed by a $z=0.2$ cluster.'"
+  },
+  "I": {
+    "type": "P3 — 2-D weak-lensing mass reconstruction table position for region 3 (the J12 dark-peak location; not detected as a peak by C12)",
+    "ra": "04:54:11.25",
+    "dec": "+02:55:37.28",
+    "offset": null,
+    "location": "Table 1, row P3",
+    "quote": "P3 & 04:54:11.25 & +02:55:37.28 & 2.26$\\pm$0.75 & 1.38 & 0.69 & 114$\\pm$54 \\\\",
+    "uncertainty": "NOT GIVEN",
+    "uncertainty_notes": "Positional uncertainties shown only graphically: Fig. 3 caption 'contours enclosing the mass centroid position uncertainties for structures 1 (red), 2 (blue), 3(magenta), 4 (green), and 5 (cyan) ... encompass 68\\%, 95\\%, and 99.7\\% of the centroid measurements.' No numbers in text/tables. Sect. 3.3 notes the region-3 distribution 'has multiple peaks in the centroid location distribution'.",
+    "identity_quote": "Sect. 3.4: \"The resulting mass and luminosity measurements for the six structures detected in our mass reconstruction and the dark peak location can be found in Table 1.\" | Sect. 3.2: \"We find no evidence of the mass overdensity in the dark peak region 3\""
+  },
+  "I_P4_SW": {
+    "type": "P4 — weak-lensing mass structure 4 (SW subcluster)",
+    "ra": "04:54:04.57",
+    "dec": "+02:53:58.60",
+    "offset": null,
+    "location": "Table 1, row P4",
+    "quote": "P4 & 04:54:04.57 & +02:53:58.60 & 4.64$\\pm$0.63 & 3.11 & 0.50 & 133$\\pm$20 \\\\",
+    "uncertainty": "NOT GIVEN (Fig. 3 contours only; Sect. 3.3: 'Structure 4 is also found in all of the resamplings, with a major axis in its centroid uncertainty running mostly N-S')"
+  },
+  "G": {
+    "type": "X-ray peak / gas core",
+    "ra": null,
+    "dec": null,
+    "offset": null,
+    "location": "—",
+    "quote": "No X-ray peak coordinates or offsets given. Gas mass map described in Sect. 2.3; Table 1 gives only aperture gas masses (P3: 0.69, P4: 0.50 h70^-5/2 10^13 Msun). Conclusions: 'we do not detect the mass overdensity spatially coincident with the X-ray plasma cloud that was found in both M07 and J12.'",
+    "uncertainty": "NOT GIVEN"
+  },
+  "S_candidates": [
+    {
+      "label": "P4 cluster-galaxy luminosity peak (qualitative only; no coordinates)",
+      "type": "cluster galaxy luminosity peak / centroid (not tabulated)",
+      "ra": null,
+      "dec": null,
+      "offset": null,
+      "location": "Sect. 3.3 (Bootstrap Resampling) and Sect. 3.4",
+      "quote": "Sect.3.3: \"This result suggests that the northern offset of structure 4 from the galaxy peak seen in the original reconstruction is likely just due to noise and not a significant feature of the merger.\" | Sect.3.4: \"If structure 4 is assumed to be a noise peak superimposed on the underlying mass distribution and instead we measure the mass-to-light centered on the cluster galaxy luminosity peak, the weak lensing mass decreases by only $\\sim 2\\%$ while the cluster luminosity increases by $\\sim 17\\%$\" | \"None of the other structures are misaligned with the underlying light distribution enough to significantly change the reduced $\\chi^2$ by centering them on their cluster luminosity centroids.\"",
+      "uncertainty": "NOT GIVEN"
+    },
+    {
+      "label": "P3 region galaxies (no coordinates)",
+      "type": null,
+      "ra": null,
+      "dec": null,
+      "offset": null,
+      "location": "Sect. 3.2",
+      "quote": "instead find a surface density distribution in that region which is in very good agreement with the underlying cluster galaxy light distribution.",
+      "uncertainty": "NOT GIVEN"
+    }
+  ],
+  "table1_all_rows_verbatim": [
+    "P1 & 04:54:19.60 & +02:57:49.09 & 3.03$\\pm$0.69 & 2.43 & 0.25 & 114$\\pm$28 \\\\",
+    "P2 & 04:54:14.84 & +02:57:06.25 & 4.08$\\pm$0.73 & 4.16 & 0.40 & 88$\\pm$18 \\\\",
+    "P3 & 04:54:11.25 & +02:55:37.28 & 2.26$\\pm$0.75 & 1.38 & 0.69 & 114$\\pm$54 \\\\",
+    "P4 & 04:54:04.57 & +02:53:58.60 & 4.64$\\pm$0.63 & 3.11 & 0.50 & 133$\\pm$20 \\\\",
+    "P5 & 04:54:17.11 & +02:55:30.09 & 3.00$\\pm$0.77 & 2.66 & 0.44 & 96$\\pm$29 \\\\",
+    "P6 & 04:54:09.61 & +02:53:55.90 & 3.03$\\pm$0.66 & 1.15 & 0.65 & 207$\\pm$57 \\\\"
+  ],
+  "table1_header": "Substructure | RA (h:m:s) | Dec (deg:arcmin:arcsec) | Column Mass (h70^-1 10^13 Msun) | Luminosity (h70^-2 10^11 L_z,sun) | Gas Mass (h70^-5/2 10^13 Msun) | M/L (Msun/L_z,sun); tablecomments: 'M/L is calculated after subtraction of the gas mass.'",
+  "table2_note": "Table 2 rows (no positions): P1 2.33±0.77 95±35 2.81±0.671 99±27; P2 3.45±0.73 62±15 4.16±0.67 70±13; P3 2.01±0.73 125±68 2.84±0.64 150±44; P4 4.71±0.76 113±20 5.59±0.68 123±17; P5 2.48±0.70 89±31 3.17±0.66 102±25; P6 2.95±0.78 242±82 3.68±0.68 224±50 (zeta column mass, M/L(zeta), zeta_c column mass, M/L(zeta_c)).",
+  "notes": "C12 provides only lensing-table positions (no numeric positional errors; Fig. 3 bootstrap contours only), and no X-ray or galaxy coordinates. P3 in C12 is the J12 dark-peak location (C12 P3 04:54:11.25 +02:55:37.28 vs Jee14 'P3 (old centroid)' 04 54 11.07 +02 55 35.3), NOT a C12-detected peak, and NOT the Jee14 P3' position. Under the protocol, G, S and all sigmas are missing -> unclassifiable from this source alone."
+}

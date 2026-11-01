@@ -1,0 +1,62 @@
+{
+  "row": 11,
+  "designation": "CIZA J2242.8+5301 (Sausage Cluster)",
+  "paper_ref": "Jee et al. 2015, ApJ 802, 46 (pointer: Table 1 & §3.2 / Fig. 5)",
+  "paper_found": {
+    "authors": "M. James Jee, Andra Stroe, William Dawson, David Wittman, Henk Hoekstra, Marcus Brüggen, Huub Röttgering, David Sobral, Reinout J. van Weeren",
+    "title": "MC^2: Constraining the Dark Matter Distribution of the Violent Merging Galaxy Cluster CIZA J2242.8+5301 by Piercing through the Milky Way",
+    "journal_ref": "ApJ 802, 46 (2015); DOI 10.1088/0004-637X/802/1/46 (DOI listed on arXiv abs page; matches assigned reference)",
+    "arxiv_id": "1410.2898 (e-print source ms.tex used; cross-checked against arXiv PDF text)"
+  },
+  "subcluster_designated": "N (northern) subcluster",
+  "z_cl": {
+    "value": 0.19,
+    "location": "§1 Introduction, last paragraph (ms.tex l.81); northern-clump spectroscopic value in §7.1",
+    "quote": "At the redshift of CIZA J2242.8+5301 $z\\sim0.19$, the plate scale is ~3.17 kpc per arcsec. ; §7.1: 'The redshift of each component is determined with bi-weight estimator, giving $<z>=0.18794\\pm0.00053$ and $0.18821\\pm0.00052$ for the northern and southern clumps.'"
+  },
+  "I": {
+    "type": "northern weak-lensing mass centroid / mass peak (Subaru+CFHT combined maximum-entropy mass map; bootstrap centroid)",
+    "ra": null,
+    "dec": null,
+    "offset": {
+      "from": "S",
+      "value": 60,
+      "unit": "arcsec",
+      "value_as_stated": "~1 arcmin (~190 kpc)",
+      "caveat": "Stated jointly for both sub-clusters ('offsets in both northern and southern sub-clusters') and in §5 as a MEAN over mass-vs-luminosity/number-density peaks; approximate ('~'); which galaxy tracer (luminosity vs number density) is not specified in the abstract sentence."
+    },
+    "location": "Abstract; §5 'Two dimensional mass reconstruction'; §7.3 'Mass-Galaxy Offset' (Fig. 9 centroid bootstrap, Fig. 10 offset significance, Table 3 p-values; mass-over-galaxy map is Fig. 5). No coordinates given.",
+    "quote": "Abstract: 'When the mass and galaxy centroids are compared in detail, we detect ~1′ (~190 kpc) offsets in both northern and southern sub-clusters.' §5: 'It is apparent that the mass centroids do not perfectly align with the cluster galaxies. The mean offset between the mass and luminosity/number density peaks is ~1′.' §7.3: 'The comparison of the mass and galaxy centroids in CIZA J2242.8+5301 shows that on average they are offset by ~1′.'",
+    "uncertainty": "NOT GIVEN"
+  },
+  "G": {
+    "type": "X-ray peak of northern subcluster",
+    "ra": null,
+    "dec": null,
+    "offset": null,
+    "location": "NOT GIVEN in this paper",
+    "quote": "No X-ray peak position or mass-X-ray offset is given; the only X-ray statements are qualitative, e.g. §7.3: 'As seen in Figure~1, the X-ray emission is more centrally concentrated than the cluster galaxies, which may imply that a significant fraction of ICM may be present between the two halos'.",
+    "uncertainty": "NOT GIVEN"
+  },
+  "S_candidates": [
+    {
+      "label": "northern galaxy luminosity centroid / 'luminosity center' (bootstrap 'luminosity centroid'; derived from a smoothed (FWHM ~3.4') luminosity map; no coordinates)",
+      "ra": null,
+      "dec": null,
+      "offset": null,
+      "location": "§6 (MCMC initial centroid), Fig. 6 caption, §7.3",
+      "quote": "§6: 'We choose the galaxy luminosity center as an initial centroid and allow it to vary as we run our MCMC. We use a flat prior with a bounding box 200″×200″ centered on the luminosity peak.' §7.3: 'we bootstrap the cluster galaxies as well to estimate the uncertainty of their centroid in both luminosity and number density. … We note that the luminosity centroid uncertainty shown here should be considered an upper limit'",
+      "uncertainty": "NOT GIVEN (shown only as 1/2-sigma contours in Fig. 9; not tabulated)"
+    },
+    {
+      "label": "northern galaxy number-density centroid/peak (no coordinates)",
+      "ra": null,
+      "dec": null,
+      "offset": null,
+      "location": "§5, §7.3, Table 3 (p-value only)",
+      "quote": "Table 3: 'North & 0.082 & 0.310' (Mass-Luminosity, Mass-Number p-values for the null hypothesis that the mass and galaxy centroids coincide).",
+      "uncertainty": "NOT GIVEN"
+    }
+  ],
+  "notes": "No subcluster coordinates are tabulated anywhere in the paper (Table 1 = 1D NFW/SIS mass fits, Table 2 = simultaneous 2D fit masses, Table 3 = offset p-values). The only coordinates given are the overall cluster position '(α,δ)=(22h42m49.1s, 53°00′51″)' (§2, from Kocevski et al. 2007) and the mean position of the two halos '(22h42m47.3s, 53°01′56″)' (§6) — neither is a northern-subcluster I, G or S position. Only an approximate I-S offset (~1′ ~190 kpc, 'in both' subclusters / 'mean') is stated; no numerical positional uncertainties (only figure contours; 'the northern galaxy-luminosity–mass offset is significant at the ≳2σ level', p=0.082). No X-ray (G) position. Also, the 'luminosity center' is from a smoothed luminosity map and is variously called 'luminosity peak'/'luminosity centroid' by the authors — ambiguous with respect to the protocol's centroid-vs-peak rule; no BCG position given. Pointer mismatch: Table 1 contains masses, not positions; §3.2 is 'CFHT/MegaCam Data Reduction'. CONTAMINATION NOTE: data\\papers\\jee2015_ciza2242\\src\\ was found to contain foreign files (El Gordo source, e.g. *.eps) from another group; ms.tex there is byte-identical to my clean re-extraction in src_clean_C\\ (title verified); only my clean ms.tex was used."
+}

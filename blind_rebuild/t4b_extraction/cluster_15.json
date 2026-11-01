@@ -1,0 +1,69 @@
+{
+  "row": 15,
+  "designation": "RX J0603.3+4214 (Toothbrush Cluster)",
+  "paper_ref": "Jee et al. 2016, ApJ 817, 179, pointer: Table 2 & §3.3 / Fig. 6",
+  "paper_found": {
+    "authors": "M. James Jee, William A. Dawson, Andra Stroe, David Wittman, Reinout J. van Weeren, Marcus Brüggen, Maruša Bradač, Huub Röttgering",
+    "title": "MC^2: Mapping the Dark Matter Distribution of the 'Toothbrush' Cluster RX J0603.3+4214 with Hubble Space Telescope and Subaru Weak-lensing",
+    "journal_ref": "ApJ 817, 179 (2016); DOI 10.3847/0004-637X/817/2/179",
+    "arxiv_id": "1510.03486 (e-print source, latest version v2; downloaded 2026-10-30T10:25:03Z)",
+    "source_file": "d:/Blind_Rebuild/data/papers/jee2016_toothbrush/src_D/ms.tex"
+  },
+  "subcluster_designated": "N",
+  "z_cl": {
+    "value": 0.225,
+    "location": "Abstract; §1; cosmology paragraph end of §1",
+    "quote": "The galaxy cluster \\tb~ at $z=0.225$ ... At the redshift of \\tb, $z\\sim0.225$, the plate scale is $\\mytilde 3.61~\\mbox{kpc}/\\arcsec$ ($\\mytilde217~\\mbox{kpc}/\\arcmin$)."
+  },
+  "I": {
+    "type": "Table 2 'Centroid' of mass peak P1 (dominant northern peak, 4.39 sigma) in the joint HST+Subaru maximum-entropy WL mass map (Fig. 6, fig_hst_subaru_massmap)",
+    "ra": "90.81674 deg",
+    "dec": "42.24823 deg",
+    "offset": null,
+    "location": "Table 2 ('Significance of substructures in RX J0603.3+4214'), column P1; §4.3 'Two-dimensional Mass Distribution' (section_massmap)",
+    "quote": "Centroid ($\\alpha,\\delta$)  & $(90\\fdg81674, 42\\fdg24823)$   &  $(90\\fdg85078, 42\\fdg15961)$ & $(90\\fdg77961, 42\\fdg26730)$ & $(90\\fdg79856, 42\\fdg21122)$ \\\\ Significance ($\\sigma$)  & 4.39 &  3.95    &  3.08   &  2.60 ; text: 'Our significance estimation shows that the two dominant mass peaks (P1 and P2) are solid, corresponding 4.39 $\\sigma$ and 3.95 $\\sigma$, respectively.'",
+    "uncertainty": "NOT GIVEN",
+    "alternate": {
+      "label": "P3 - second northern HST-resolved mass peak (3.08 sigma), ~120 arcsec NW of P1 (my computation)",
+      "ra": "90.77961 deg",
+      "dec": "42.26730 deg",
+      "location": "Table 2 column P3; §4.3",
+      "quote": "The northern mass peak in the Subaru mass map is further resolved into two peaks thanks to the factor of two increase in the {\\it HST} source density. ... It is not trivial to compare the centroids of P1 and P3 because the two mass peaks are not resolved in the Subaru-only version."
+    },
+    "uncertainty_related_text": {
+      "location": "§4.3 paragraph 4 and footnote",
+      "quote": "The centroids of P2 and P4 between the two mass reconstructions agree within $\\mytilde0\\farcm2$, which is expected from the noise level of the Subaru-only result. ... when we smooth the mass map from the HST-Subaru joint analysis, the centroid of the merged mass peak differs from that of the Subaru-only version by $\\mytilde0\\farcm5$, which is again consistent with the noise\\footnote{We estimate the centroid errors by utilizing the publicly available {\\tt FIATMAP} code (Fischer \\& Tyson 1997), ...}.",
+      "comment": "Centroid errors are said to be estimated (FIATMAP) but no numerical 1-sigma value is reported."
+    }
+  },
+  "G": {
+    "type": "Northern X-ray peak (Chandra/XMM; adaptively smoothed X-ray emission in Fig. 8) - NO coordinates given; only offset from the northern mass peak",
+    "ra": null,
+    "dec": null,
+    "offset": {"from": "I", "value": 0.5, "unit": "arcmin", "value_note": "Approximate ('~0.5 arcmin'); northern mass peak lies NW of the northern X-ray peak. Converted: ~30 arcsec. It is not stated whether 'northern mass peak' here means P1 or the merged/smoothed northern peak."},
+    "location": "§5.2 'Comparison with X-ray Results and Implication for the Toothbrush Merging Scenario', paragraph 3; Fig. 8 caption (fig_massoverxray)",
+    "quote": "We find offsets between X-ray and mass peaks. The northern mass peak is offset toward the northwest with respect to the corresponding X-ray peak by $\\mytilde0.5\\arcmin$ whereas the the southern mass peak is offset to the south by $\\mytilde2\\arcmin$.",
+    "uncertainty": "NOT GIVEN"
+  },
+  "S_candidates": [
+    {
+      "label": "Northern galaxy luminosity peak (L1 / 'brightest luminosity center'; i-band luminosity of members smoothed with FWHM=100 arcsec Gaussian) - NO coordinates given; stated qualitatively to coincide with the northern mass clump",
+      "ra": null,
+      "dec": null,
+      "offset": null,
+      "location": "§6 Conclusions; §4.3; §4.4 Mass Estimation; §4.2 (tangential shear centred at northern luminosity peak)",
+      "quote": "The northern mass clump encloses $M_{200}=6.29_{-1.62}^{+2.24}\\times 10^{14} M_{\\sun}$ and coincides with the galaxy luminosity peak. ... we assume the mass-concentration relation of Duffy et al. (2008) and fix the two halo centers at the two brightest luminosity centers. ... We identify at least four luminosity peaks, and three of them (L1, L2, and L4) are resolved by the Subaru weak lensing.",
+      "uncertainty": "NOT GIVEN"
+    },
+    {
+      "label": "Northern BCG - not mentioned / no coordinates in this paper",
+      "ra": null,
+      "dec": null,
+      "offset": null,
+      "location": "whole paper searched for 'BCG' - no occurrence",
+      "quote": "",
+      "uncertainty": "NOT GIVEN"
+    }
+  ],
+  "notes": "Paper match: arXiv 1510.03486 = Jee et al. 2016 ApJ 817, 179 (DOI 10.3847/0004-637X/817/2/179). Pointer: Table 2 (tablenum 2) is the substructure table with P1-P4 centroids - matches; 'Two-dimensional Mass Distribution' is §4.3 in the arXiv source (sections: 1 Intro, 2 Observations, 3 WL Method, 4 WL Results, 5 Discussion, 6 Conclusions), so pointer §3.3 is off by one section (published numbering may differ); Fig. 6 = joint HST+Subaru mass map (fig_hst_subaru_massmap) - matches; Fig. 8 = mass vs X-ray comparison. Only x_I has absolute coordinates (P1; P3 also northern). No positional uncertainty is given for any mass peak (Table 2 gives significance only). x_G: only an approximate offset '~0.5 arcmin' between the northern mass peak and the northern X-ray peak. x_S: no coordinates for luminosity peaks or BCG; only qualitative 'coincides with the galaxy luminosity peak' (no number). Other positions in paper (not relevant): bright star at (6:03:17.5, 42:12:25) 'between the two X-ray peaks'. Redshift used for kpc: 0.225."
+}

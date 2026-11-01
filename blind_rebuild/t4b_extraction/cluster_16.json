@@ -1,0 +1,91 @@
+{
+  "row": 16,
+  "designation": "ZwCl 0008.8+5215",
+  "paper_ref": "Golovich et al. 2017, ApJ 838, 110, pointer: Table 4 & §4.1–4.2 / Fig. 9",
+  "paper_found": {
+    "authors": "Nathan Golovich, Reinout J. van Weeren, William A. Dawson, M. James Jee, David Wittman",
+    "title": "MC^2: Multi-wavelength and dynamical analysis of the merging galaxy cluster ZwCl 0008.8+5215: An older and less massive Bullet Cluster",
+    "journal_ref": "ApJ 838, 110 (2017); DOI 10.3847/1538-4357/aa667f",
+    "arxiv_id": "1703.04803 (e-print source v1, 'Accepted to ApJ: March 13, 2017'; downloaded 2026-10-30T10:25:09Z)",
+    "source_file": "d:/Blind_Rebuild/data/papers/golovich2017_zwcl0008/src_D/ms.tex"
+  },
+  "subcluster_designated": "E",
+  "z_cl": {
+    "value": 0.104,
+    "location": "§1 Introduction, last paragraph (cosmology); also §5.1",
+    "quote": "At the cluster redshift ($z = 0.104$), 1$\\arcmin$ corresponds to 115 kpc. ... We assume a value of 0.104 for the redshift of the cluster."
+  },
+  "I": {
+    "type": "WL massmap east peak location (joint HST+Subaru maximum-entropy mass map; position and uncertainty from 1000 bootstrap mass maps)",
+    "ra": "00h12m03.8s (+18.4 / -11.1 s)",
+    "dec": "+52d34m16.9s (+27.8 / -32.6 arcsec)",
+    "offset": null,
+    "location": "Table 3 (table:offsets, 'Subcluster component peak locations and east--west offsets'), row 'WL massmap', East column; §4.3.2 (sssec:massmap)",
+    "quote": "WL massmap & 00$^{\\text{h}}$12$^{\\text{m}}$03.8$^{+\\text{18.4}}_{-\\text{11.1}}$$^{\\text{s}}$, 52$^{\\circ}$34$\\arcmin$16.9$^{+\\text{27.8}}_{-\\text{32.6}}\\arcsec$ & ...",
+    "uncertainty": {
+      "value": null,
+      "unit": "RA: seconds of time (as printed); Dec: arcsec",
+      "kind": "per-axis",
+      "components": ["RA +18.4/-11.1 s", "Dec +27.8/-32.6 arcsec"],
+      "location": "Table 3; §4.3.2; Fig. 10 caption; Fig. 11 caption",
+      "quote": "To quantify the significance and uncertainty in the peak locations, we perform bootstrap analysis on the source catalog ... The estimated position and uncertainties of the mass peaks ... are summarized in Table \\ref{table:offsets}. [Fig. 10:] The red error bars indicate the 1-$\\sigma$ confidence intervals for the peak location of the two subclusters in the lensing data."
+    }
+  },
+  "G": {
+    "type": "X-ray surface brightness east peak (the 'distinct albeit substantially disturbed remnant core of gas' of the east subcluster; position from bootstrap)",
+    "ra": "00h11m53.7s ± 5.3 s",
+    "dec": "+52d32m02.2s ± 2.0 arcsec",
+    "offset": null,
+    "location": "Table 3 (table:offsets), row 'X-ray surface brightness', East column; §5.1 (subsec:xray)",
+    "quote": "X-ray surface brightness & 00$^{\\text{h}}$11$^{\\text{m}}$53.7$\\pm5.3$$^{\\text{s}}$, 52$^{\\circ}$32$\\arcmin$02.2$\\pm2.0\\arcsec$ & ... ; §5.1: 'To the east, there is a distinct albeit substantially disturbed remnant core of gas, which may be what remains of the core of the east subcluster's ICM. This has been substantially offset from the BCG in the east by $\\sim$320 kpc (see Table \\ref{table:offsets1}).'",
+    "uncertainty": {
+      "value": null,
+      "unit": "RA: seconds of time (as printed); Dec: arcsec",
+      "kind": "per-axis",
+      "components": ["RA ±5.3 s", "Dec ±2.0 arcsec"],
+      "location": "Table 3; §4.3.2 / Fig. 11 caption ('X-ray surface brightness peak locations ... inferred from the respective bootstrap analyses'); confidence level not separately stated for X-ray",
+      "quote": "The results are shown in Figure \\ref{fig:centroid} along with the red sequence luminosity, BCGs, and X-ray surface brightness peak locations in inferred from the respective bootstrap analyses."
+    }
+  },
+  "S_candidates": [
+    {
+      "label": "Red sequence luminosity (east peak of r-band-luminosity-weighted red-sequence map smoothed with 74-arcsec kernel; a PEAK, not described as a centroid)",
+      "ra": "00h12m13.9s (+2.7 / -3.8 s)",
+      "dec": "+52d33m51.6s (+4.8 / -4.2 arcsec)",
+      "offset": {"from": "I", "value": -249, "unit": "kpc", "value_note": "Table 4 'DM--Luminosity' East: -249 (+126/-141) kpc; footnote: 'Negative offsets indicate the first component listed is closer to the center of the cluster.' Magnitude 249 kpc."},
+      "location": "Table 3 row 'Red sequence luminosity' (East); Table 4 row 'DM--Luminosity'; §4.3.1 (sssec:densitymaps)",
+      "quote": "Red sequence luminosity & 00$^{\\text{h}}$12$^{\\text{m}}$13.9$^{+\\text{2.7}}_{-\\text{3.8}}$$^{\\text{s}}$, 52$^{\\circ}$33$\\arcmin$51.6$^{+\\text{4.8}}_{-\\text{4.2}}\\arcsec$ & ... ; Table 4: DM--Luminosity &  -249$^{+\\text{126}}_{-\\text{141}}$  &  170$^{+\\text{130}}_{-\\text{131}}$",
+      "uncertainty": {
+        "value": null,
+        "unit": "RA: seconds of time (as printed); Dec: arcsec",
+        "kind": "per-axis",
+        "components": ["RA +2.7/-3.8 s", "Dec +4.8/-4.2 arcsec"],
+        "location": "Table 3; §4.3.1 (bootstrap on red-sequence catalog)",
+        "quote": "To quantify the uncertainty, we perform a bootstrap analysis on the red sequence catalog. ... the uncertainty is small except for the eastern subcluster, where several bright galaxies lie east to west in the vicinity of the BCG."
+      }
+    },
+    {
+      "label": "BCG (east)",
+      "ra": "00h12m18.8s",
+      "dec": "+52d33m46.9s",
+      "ra_deg_table2": "3.078217",
+      "dec_deg_table2": "52.56305",
+      "offset": {"from": "I", "value": -319, "unit": "kpc", "value_note": "Table 4 'DM--BCG' East: -319 (+72/-173) kpc (negative = first component (DM) closer to cluster centre). Magnitude 319 kpc."},
+      "location": "Table 3 row 'BCG' (East); Table 2 (DEIMOS high-quality galaxies) row 'BCG east' (RA, Dec in deg, z=0.105983); Table 4 row 'DM--BCG'",
+      "quote": "BCG\t& 00$^{\\text{h}}$12$^{\\text{m}}$18.8$^{\\text{s}}$, 52$^{\\circ}$33$\\arcmin$46.9$\\arcsec$ & ... ; Table 2: 3.078217\t & 52.56305 \t& 0.105983 \t&\t1.35E-05\t\t&\t16.0\t \t&\tBCG east, H$\\beta$, Mg I (B), Fe I, Na I (D), H$\\alpha$, [N II]",
+      "uncertainty": "NOT GIVEN"
+    }
+  ],
+  "offsets_table4_east": {
+    "location": "Table 4 (table:offsets1, 'Offsets between subcluster components'), East column; footnote: 'Negative offsets indicate the first component listed is closer to the center of the cluster.' Offsets 'estimated with bootstrap analyses' (§4.3.2).",
+    "rows_verbatim": [
+      "DM--Luminosity &  -249$^{+\\text{126}}_{-\\text{141}}$  &  170$^{+\\text{130}}_{-\\text{131}}$",
+      "DM--BCG\t&\t-319$^{+\\text{72}}_{-\\text{173}}$  &  168$^{+\\text{131}}_{-\\text{133}}$",
+      "DM--ICM &  319$^{+\\text{149}}_{-\\text{52}}$  &  176$^{+\\text{134}}_{-\\text{129}}$",
+      "Luminosity--ICM &  420$^{+\\text{20}}_{-\\text{53}}$  &  12$^{+0.5}_{-\\text{2.6}}$",
+      "BCG--ICM &  480$\\pm$5.0  &  12$^{+\\text{0.5}}_{-\\text{2.6}}$"
+    ],
+    "east_values_kpc": {"DM-Luminosity": "-249 +126/-141", "DM-BCG": "-319 +72/-173", "DM-ICM": "319 +149/-52", "Luminosity-ICM": "420 +20/-53", "BCG-ICM": "480 ± 5.0"}
+  },
+  "notes": "Paper match: arXiv 1703.04803 = Golovich et al. 2017 ApJ 838, 110 (DOI 10.3847/1538-4357/aa667f). Pointer: Table 4 (offsets between components, kpc) matches; absolute positions are in Table 3; Fig. 9 = red-sequence luminosity map matches; positions are discussed in §4.3 (4.3.1 galaxy distribution, 4.3.2 mass distribution) rather than §4.1-4.2 of the arXiv numbering. Fig. 10 = WL mass map with 1-sigma peak error bars; Fig. 11 = bootstrap peak locations (68%/95% contours). All four proxies (WL peak, X-ray peak, red-sequence luminosity peak, BCG) have absolute coordinates; WL, X-ray and luminosity peaks have asymmetric per-axis bootstrap errors; RA errors are printed in seconds of time (1 s of RA = 9.12 arcsec at Dec +52.57 deg). No luminosity-weighted CENTROID is tabulated (only a luminosity-map peak), so the protocol S fallback is the east BCG, which has no stated positional uncertainty. Table 4 offsets are bootstrap estimates and differ from separations computed from the Table 3 point positions (my computation using the paper's 115 kpc/arcmin: I-G ~313 kpc (163 arcsec), I-Lum ~183 kpc (95.5 arcsec), I-BCG ~268 kpc (140 arcsec), BCG-G ~483 kpc, Lum-G ~411 kpc). Internal inconsistency: §5.1 says the east gas core is offset 'from the BCG in the east by ~320 kpc (see Table 4)', but Table 4 BCG--ICM East = 480±5.0 kpc and DM--ICM East = 319 kpc; the 320-kpc text figure seems to correspond to DM--ICM. §4.3.2 text: 'This is due to the BCG sitting ~300 kpc east of the mass peak.' Abstract: 'We do not find significant offsets between dark matter and galaxies, but the uncertainties are large with the current lensing data.'"
+}

@@ -1,0 +1,8 @@
+{
+ "test": "T6",
+ "M_B_fixed": -19.248884547006142,
+ "sigma_M_B": 0.030105691677080923,
+ "n_calibrators": 77,
+ "code_sha256_rebuild_scripts": "937d0a1163d8e929c1afa56ab32de8c05ba2284f4f7b075dda00226cf3fa0a66",
+ "written": "2026-10-30T09:01:42-0400"
+}

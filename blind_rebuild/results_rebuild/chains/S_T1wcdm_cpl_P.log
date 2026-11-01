@@ -1,0 +1,8 @@
+run S_T1wcdm_cpl_P cfg={'model': 'cpl', 'bao': 'mod', 'cmb': 'wcdm3', 'sn': 'P', 'bbn': None, 'role': 'T1 wCDM CMB prior sensitivity'} seed=20277030 start=2026-10-30T08:03:31
+  start mode [ 0.31260757  0.67741564  2.24300265 -0.86338786 -0.4806643 ] chi2=1397.105
+  adapt done: acceptance 0.258, scale 1.133
+  prod 4000/chain (extra burn 0): Rmax-1=0.0066 ESSmin=1642 tau_max=19.8 acc=0.263
+  prod 8000/chain (extra burn 0): Rmax-1=0.0034 ESSmin=2983 tau_max=22.3 acc=0.261
+  prod 12000/chain (extra burn 0): Rmax-1=0.0018 ESSmin=4284 tau_max=22.4 acc=0.263
+  prod 16000/chain (extra burn 0): Rmax-1=0.0013 ESSmin=5697 tau_max=22.7 acc=0.259
+done chi2_min=1397.1046 at [ 0.31260861  0.67741482  2.24300359 -0.86337729 -0.48069927] runtime 1983s converged=True

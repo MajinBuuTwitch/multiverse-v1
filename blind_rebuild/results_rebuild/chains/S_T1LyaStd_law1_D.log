@@ -1,0 +1,8 @@
+run S_T1LyaStd_law1_D cfg={'model': 'law1', 'bao': 'std', 'cmb': 'lcdm3', 'sn': 'D', 'bbn': None, 'role': 'T1 unmodified Lya row sensitivity'} seed=20266030 start=2026-10-30T07:28:32
+  start mode [0.30935868 0.67719164 2.25395216 0.04361374] chi2=1645.769
+  adapt done: acceptance 0.281, scale 1.416
+  prod 4000/chain (extra burn 0): Rmax-1=0.0038 ESSmin=1946 tau_max=16.4 acc=0.291
+  prod 8000/chain (extra burn 0): Rmax-1=0.0023 ESSmin=4186 tau_max=15.1 acc=0.288
+  prod 12000/chain (extra burn 0): Rmax-1=0.0014 ESSmin=6386 tau_max=15.0 acc=0.290
+  prod 16000/chain (extra burn 0): Rmax-1=0.0014 ESSmin=8490 tau_max=15.0 acc=0.288
+done chi2_min=1645.7690 at [0.30935635 0.67719429 2.25397026 0.04361908] runtime 2410s converged=True

@@ -1,0 +1,8 @@
+{
+ "test": "T4b",
+ "tau_lag_hat_myr": 505.0,
+ "n_train": 1,
+ "acc_train_max": 1.0,
+ "code_sha256_rebuild_scripts": "937d0a1163d8e929c1afa56ab32de8c05ba2284f4f7b075dda00226cf3fa0a66",
+ "written": "2026-10-30T09:01:43-0400"
+}

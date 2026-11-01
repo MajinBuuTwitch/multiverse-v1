@@ -1,0 +1,80 @@
+{
+  "row": 14,
+  "designation": "MACS J1149.5+2223",
+  "paper_ref": "Golovich et al. 2016, ApJ 831, 110, pointer: Table 2 & §4.2 / Fig. 8",
+  "paper_found": {
+    "authors": "Nathan Golovich, William A. Dawson, David Wittman, Georgiana Ogrean, Reinout van Weeren, Annalisa Bonafede",
+    "title": "MC^2: Dynamical Analysis of the Merging Galaxy Cluster MACS J1149.5+2223",
+    "journal_ref": "ApJ 831, 110 (2016); DOI 10.3847/0004-637X/831/1/110",
+    "arxiv_id": "1608.01329 (e-print source v1, 'Accepted to ApJ: July 9, 2016'; downloaded 2026-10-30T10:25:00Z)",
+    "source_file": "d:/Blind_Rebuild/data/papers/golovich2016_macs1149/src_D/MACSJ1149_final.tex"
+  },
+  "subcluster_designated": "NW (= 'subcluster one' in the paper; contains the BCG)",
+  "z_cl": {
+    "value": 0.544,
+    "location": "§1 Introduction (paragraph 3 and cosmology paragraph)",
+    "quote": "MACS J1149.5+2223 (hereafter MACS J1149) is a Frontier Field cluster at a redshift of 0.544 ... At the cluster redshift ($z = 0.544$), 1$\\arcmin$ corresponds to 383 kpc."
+  },
+  "I": {
+    "type": "NOT MEASURED IN THIS PAPER (no lensing map). Only a quoted offset, attributed to Smith et al. 2009 (strong-lensing), between X-ray peak and lensing mass peak",
+    "ra": null,
+    "dec": null,
+    "offset": {"from": "G", "value": 15, "unit": "arcsec", "value_note": "Stated as the X-ray peak offset from the lensing mass peak, 15 arcsec along the merger axis to the NW; the value is cited from Smith09, not measured in this paper."},
+    "location": "§6.4 'Comparison to other MCMAC analyses' (subsec:compare)",
+    "quote": "\\cite{Smith09} shows the X-ray peak in MACS J1149 to be offset from the lensing mass peak by 15$\\arcsec$ along the merger axis to the northwest (i.e. further from the center of mass of the cluster).",
+    "uncertainty": "NOT GIVEN"
+  },
+  "G": {
+    "type": "X-ray surface-brightness peak - NO coordinates given in this paper (Chandra map reproduced from Ogrean et al. 2016 in Fig. 8)",
+    "ra": null,
+    "dec": null,
+    "offset": null,
+    "location": "§6.4 (subsec:compare); §5.1 last sentence; §6.5 Summary; Fig. 8 caption",
+    "quote": "MACS J1149 has an X-ray peak slightly leading subcluster one ... This analysis is supported by the location of the X-ray surface brightness peak, which is situated further from the cluster center than the BCG. ... The ICM is primarily associated with subcluster one, but it is peaked ahead of the BCG.",
+    "uncertainty": "NOT GIVEN"
+  },
+  "S_candidates": [
+    {
+      "label": "Northwestern peak of the red-sequence R-band luminosity-weighted galaxy density map (a PEAK of a 20-arcsec-smoothed map, not a centroid); paper says it is 'very near the location of the BCG'",
+      "ra": "11h49m36.81s (+4.3 / -8.5 s)",
+      "dec": "+22d23m57.2s (+2.4 / -6.1 arcsec)",
+      "offset": null,
+      "location": "§3.2 Two dimensional analysis (subsec:twod)",
+      "quote": "We located the peak of the luminosity weighted density map and performed a bootstrap-uncertainty analysis with our red sequence catalog to find the uncertainty in the peak locations of our density map. The northwestern peak is located at RA$=$11$^{h}$49$^{m}$36.81$^{+\\text{4.3}}_{-\\text{8.5}}$$^{s}$, DEC$=$22$^{\\circ}$23$\\arcmin$57.2$^{+\\text{2.4}}_{-\\text{6.1}}\\arcsec$",
+      "uncertainty": {
+        "value": null,
+        "unit": "RA: seconds of time (as printed); Dec: arcsec",
+        "kind": "per-axis",
+        "components": ["RA +4.3/-8.5 s", "Dec +2.4/-6.1 arcsec"],
+        "location": "§3.2 (bootstrap uncertainty; confidence level not stated)",
+        "quote": "performed a bootstrap-uncertainty analysis with our red sequence catalog to find the uncertainty in the peak locations"
+      }
+    },
+    {
+      "label": "Subcluster 1 centre from MCMC-GMM fit to spectroscopic members (Table 3 'Results for the three subclusters'; unweighted Gaussian-mixture mean, not luminosity-weighted)",
+      "ra": "11h49m35.6s ± 4.5 s",
+      "dec": "+22d24m11.0s ± 6.0 arcsec",
+      "offset": null,
+      "location": "Table 3 (table:results), row 1; §3.3.2 (sssec:MCMCGMM)",
+      "quote": "1 \t& 133 \t& 11$^{h}$49$^{m}$35.6$\\pm$4.5$^{s}$ \t& 22$^{\\circ}$24$^{\\prime}$11.0$\\pm$6.0$^{\\prime\\prime}$\t& 0.54256$^{+0.00085}_{-0.00077}$ & 1260$^{+31}_{-42}$ ...; text: 'the MCMC-GMM analysis treated cluster members equally without accounting for luminosity'",
+      "uncertainty": {
+        "value": null,
+        "unit": "RA: seconds of time (as printed); Dec: arcsec",
+        "kind": "per-axis",
+        "components": ["RA ±4.5 s", "Dec ±6.0 arcsec"],
+        "location": "Table 3 / §3.3.2 ('widths corresponding to the marginal 1-sigma confidence')",
+        "quote": "The subcluster Gaussians are presented as projected ellipses centered on the most likely value with widths corresponding to the marginal 1-$\\sigma$ confidence in the X, Y, and z positions."
+      }
+    },
+    {
+      "label": "BCG of subcluster one - NO coordinates given in this paper",
+      "ra": null,
+      "dec": null,
+      "offset": null,
+      "location": "§5.1 (subsec:primary); abstract",
+      "quote": "The brightest cluster galaxy is a member of the northern subcluster of the primary merger. ... the BCG and other bright central galaxies are members of subcluster one and dominate the luminosity. The luminosity peak is very near the location of the BCG.",
+      "uncertainty": "NOT GIVEN"
+    }
+  ],
+  "notes": "Paper match: arXiv 1608.01329 = Golovich et al. 2016 ApJ 831, 110 (DOI 10.3847/0004-637X/831/1/110). This is a dynamical (galaxy/spectroscopy) paper: it contains NO weak-lensing map or lensing-peak coordinates and NO X-ray peak coordinates. The only I-G information is a single sentence citing Smith et al. 2009 (strong lensing): X-ray peak offset 15 arcsec NW of the lensing mass peak (no uncertainty). There is no stated I-S offset or G-S offset value. Pointer mismatch: in the arXiv source Table 2 is 'Subcluster membership and BIC scores' (no positions); positions are in §3.2 text and Table 3; §4 'Merger scenario' has no subsection 4.2 in the arXiv version (published numbering may differ); Fig. 8 = reproduction of Ogrean et al. 2016 Chandra map with white plusses at subcluster locations (no numbers). RA uncertainties are printed in seconds of time (1 s of RA = 13.87 arcsec at Dec +22.4 deg); the Table 3 RA error (±4.5 s ≈ 62 arcsec) vs Dec error (±6.0 arcsec) asymmetry is large and might indicate a unit typo (arcsec printed as s) - flag, do not resolve. Separation (my computation, not a paper value) between the NW luminosity peak and the GMM subcluster-1 centre is ~21.7 arcsec. Under the protocol (luminosity-weighted centroid tabulated? no; BCG coordinates given? no) this paper gives no numeric BCG position; x_I and x_G are not given as positions either. Classification is left to the analyst."
+}

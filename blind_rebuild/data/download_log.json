@@ -1,0 +1,82 @@
+[
+ {
+  "path": "data/desi_bao_dr2/desi_gaussian_bao_ALL_GCcomb_mean.txt",
+  "url": "https://raw.githubusercontent.com/CobayaSampler/bao_data/bb0c1c9009dc76d1391300e169e8df38fd1096db/desi_bao_dr2/desi_gaussian_bao_ALL_GCcomb_mean.txt",
+  "version": "CobayaSampler/bao_data@bb0c1c9009dc76d1391300e169e8df38fd1096db",
+  "downloaded_utc": "2026-10-30T10:24:43+00:00",
+  "bytes": 472,
+  "sha256": "9ac154ab583ce759c0f7eef3c978c7c70a6ead2d18774caceadf1a350a640585"
+ },
+ {
+  "path": "data/desi_bao_dr2/desi_gaussian_bao_ALL_GCcomb_cov.txt",
+  "url": "https://raw.githubusercontent.com/CobayaSampler/bao_data/bb0c1c9009dc76d1391300e169e8df38fd1096db/desi_bao_dr2/desi_gaussian_bao_ALL_GCcomb_cov.txt",
+  "version": "CobayaSampler/bao_data@bb0c1c9009dc76d1391300e169e8df38fd1096db",
+  "downloaded_utc": "2026-10-30T10:24:43+00:00",
+  "bytes": 2547,
+  "sha256": "252a143274c8a07c78694c119617d36594f6d7965d00319ca611c6ffb886e509"
+ },
+ {
+  "path": "data/pantheonplus/Pantheon+SH0ES.dat",
+  "url": "https://raw.githubusercontent.com/PantheonPlusSH0ES/DataRelease/c447f0fea703fcd0fff57de5000947b5ca81286b/Pantheon%2B_Data/4_DISTANCES_AND_COVAR/Pantheon%2BSH0ES.dat",
+  "version": "PantheonPlusSH0ES/DataRelease@c447f0fea703fcd0fff57de5000947b5ca81286b",
+  "downloaded_utc": "2026-10-30T10:24:44+00:00",
+  "bytes": 579283,
+  "sha256": "1cb0fc379ef066afdc2ffd1857681cc478024570d8a3eba284fb645775198cf8"
+ },
+ {
+  "path": "data/pantheonplus/Pantheon+SH0ES_STAT+SYS.cov",
+  "url": "https://raw.githubusercontent.com/PantheonPlusSH0ES/DataRelease/c447f0fea703fcd0fff57de5000947b5ca81286b/Pantheon%2B_Data/4_DISTANCES_AND_COVAR/Pantheon%2BSH0ES_STAT%2BSYS.cov",
+  "version": "PantheonPlusSH0ES/DataRelease@c447f0fea703fcd0fff57de5000947b5ca81286b",
+  "downloaded_utc": "2026-10-30T10:24:45+00:00",
+  "bytes": 33284960,
+  "sha256": "abf806d966485e64afdb359c87bffc0ecc00d05eff0a31ced66f247385df0fdc"
+ },
+ {
+  "path": "data/pantheonplus/README",
+  "url": "https://raw.githubusercontent.com/PantheonPlusSH0ES/DataRelease/c447f0fea703fcd0fff57de5000947b5ca81286b/Pantheon%2B_Data/4_DISTANCES_AND_COVAR/README",
+  "version": "PantheonPlusSH0ES/DataRelease@c447f0fea703fcd0fff57de5000947b5ca81286b",
+  "downloaded_utc": "2026-10-30T10:24:45+00:00",
+  "bytes": 4056,
+  "sha256": "e2b0d262757f01c1794a938c78d32600a21e289b2a0320e5c660c4c6fc9aa87e"
+ },
+ {
+  "path": "data/des_dovekie/DES-Dovekie_HD.csv",
+  "url": "https://raw.githubusercontent.com/des-science/DES-SN5YR/c9a4fcafc4cbd19bd750dee47fc76194a45c181f/4_DISTANCES_COVMAT/DES-Dovekie_HD.csv",
+  "version": "des-science/DES-SN5YR@c9a4fcafc4cbd19bd750dee47fc76194a45c181f",
+  "downloaded_utc": "2026-10-30T10:24:45+00:00",
+  "bytes": 148002,
+  "sha256": "2f57019d783eaa976df80a41b0054171a2d994ee9808d715ce850c2df5720aaf"
+ },
+ {
+  "path": "data/des_dovekie/STAT+SYS.npz",
+  "url": "https://raw.githubusercontent.com/des-science/DES-SN5YR/c9a4fcafc4cbd19bd750dee47fc76194a45c181f/4_DISTANCES_COVMAT/STAT%2BSYS.npz",
+  "version": "des-science/DES-SN5YR@c9a4fcafc4cbd19bd750dee47fc76194a45c181f",
+  "downloaded_utc": "2026-10-30T10:24:46+00:00",
+  "bytes": 6244951,
+  "sha256": "ffd3124b32148b1372bd95fda9299269f0352a9f8eee02d416c610e38495463b"
+ },
+ {
+  "path": "data/des_dovekie/README.md",
+  "url": "https://raw.githubusercontent.com/des-science/DES-SN5YR/c9a4fcafc4cbd19bd750dee47fc76194a45c181f/4_DISTANCES_COVMAT/README.md",
+  "version": "des-science/DES-SN5YR@c9a4fcafc4cbd19bd750dee47fc76194a45c181f",
+  "downloaded_utc": "2026-10-30T10:24:46+00:00",
+  "bytes": 1680,
+  "sha256": "7afa1b4c11f465d90eeb0352eb4ca0721f2baa856f545e16ac24af9aa067cf7e"
+ },
+ {
+  "path": "data/sparc/MassModels_Lelli2016c.mrt",
+  "url": "https://astroweb.cwru.edu/SPARC/MassModels_Lelli2016c.mrt",
+  "version": "SPARC (Lelli+2016c), astroweb.cwru.edu",
+  "downloaded_utc": "2026-10-30T10:25:43+00:00",
+  "bytes": 269518,
+  "sha256": "9108994b12cc401b94a1768beca61c53ec354779385c9c9cc571049f3043244c"
+ },
+ {
+  "path": "data/sparc/SPARC_Lelli2016c.mrt",
+  "url": "https://astroweb.cwru.edu/SPARC/SPARC_Lelli2016c.mrt",
+  "version": "SPARC (Lelli+2016c), astroweb.cwru.edu",
+  "downloaded_utc": "2026-10-30T10:25:43+00:00",
+  "bytes": 28259,
+  "sha256": "5aa0501f6b0d881fa579030e315e7b5b6ef561a5bd3a07472f9929c7e5728243"
+ }
+]

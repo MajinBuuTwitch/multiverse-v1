@@ -1,0 +1,35 @@
+{
+ "description": "compressed CMB distance prior, same structure as Chen, Huang & Wang (2019) JCAP 02 028 Table 1 (column used by PREREG); only the mean vector differs",
+ "parameters": [
+  "R",
+  "l_A",
+  "100omega_b"
+ ],
+ "mean": [
+  1.74864,
+  302.2483,
+  2.2464
+ ],
+ "sigma": [
+  0.0046,
+  0.09,
+  0.015
+ ],
+ "correlation": [
+  [
+   1.0,
+   0.46,
+   -0.66
+  ],
+  [
+   0.46,
+   1.0,
+   -0.33
+  ],
+  [
+   -0.66,
+   -0.33,
+   1.0
+  ]
+ ]
+}

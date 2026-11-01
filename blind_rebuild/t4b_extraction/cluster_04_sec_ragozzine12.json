@@ -1,0 +1,60 @@
+{
+  "row": 4,
+  "designation": "Abell 1758N, NW subcluster (secondary / sensitivity source)",
+  "paper_ref": "Ragozzine et al. 2012, ApJ 744, 94, Table 2",
+  "paper_found": {
+    "authors": "B. Ragozzine, D. Clowe, M. Markevitch, A. H. Gonzalez, M. Bradac",
+    "title": "Weak Lensing Results of the Merging Cluster A1758",
+    "journal_ref": "ApJ 744, 94 (2012); DOI 10.1088/0004-637X/744/2/94 (DOI confirmed on arXiv abs page)",
+    "arxiv_id": "1111.4983 (v2; e-print source A1758_em_apj.tex)",
+    "journal_ref_match": "Journal reference matches. BUT the paper has only ONE table (Table 1, 'Mass', aperture masses/luminosities/M/L). There is NO Table 2 in either the arXiv v2 source or the published IOP HTML version (only table id apj413920t1 exists). No table or text in the paper gives RA/Dec coordinates of any lensing peak, X-ray peak or BCG."
+  },
+  "subcluster_designated": "NW cluster of A1758N = weak-lensing 'Peak 2' (Sect. 4: 'The BCGs of both the SE and NW clusters line up well with the weak lensing peaks in our analysis, which are labeled Peak 1 and Peak 2, respectively.')",
+  "z_cl": {
+    "value": 0.279,
+    "location": "Sect. 1 (Introduction), last paragraph before Sect. 1 ends; also Fig. 1 caption",
+    "quote": "There is very little redshift information for A1758 ($z=0.279$)."
+  },
+  "I": {
+    "type": "weak-lensing kappa peak 'Peak 2' (NW cluster)",
+    "ra": null,
+    "dec": null,
+    "offset": null,
+    "location": "Sect. 4 (Results of A1758), first paragraph; Fig. 1 caption",
+    "quote": "The BCGs of both the SE and NW clusters line up well with the weak lensing peaks in our analysis, which are labeled Peak 1 and Peak 2, respectively. | Fig.1 caption: \"The NW cluster's BCG aligns with the X-ray gas and the weak lensing peak.\"",
+    "uncertainty": "NOT GIVEN",
+    "uncertainty_notes": "Only shown graphically: Sect. 4.2 'The results are the green and red contours, which show one, two, and three standard deviations of the centroids of Peaks 1 and 2' (Fig. 1 lower-right panel; not readable as a number). Systematic (not 1-sigma): 'If left uncorrected, the mass reconstruction based solely on the stellar shear field at Peak 1 (2) would shift the centroid by a maximum amount of $2\\arcsec$ ($6\\arcsec$). This is a smaller shift than the 68\\% contour levels in Figure 1.' -> so the 68% contour for Peak 2 is stated to be larger than 6 arcsec, but no value given."
+  },
+  "G": {
+    "type": "X-ray peak overlying NW cluster (qualitative only)",
+    "ra": null,
+    "dec": null,
+    "offset": null,
+    "location": "Fig. 1 caption; Abstract; Sect. 5 (Summary)",
+    "quote": "Abstract: \"one of its X-ray peaks overlays the corresponding gravitational potential\" | Fig.1 caption: \"The NW cluster's BCG aligns with the X-ray gas and the weak lensing peak.\" | Sect.5: \"The X-ray peak that overlaps the NW cluster member may simply be a line of sight effect\"",
+    "uncertainty": "NOT GIVEN"
+  },
+  "S_candidates": [
+    {
+      "label": "NW cluster BCG (qualitative only; no coordinates given)",
+      "type": "BCG",
+      "ra": null,
+      "dec": null,
+      "offset": null,
+      "location": "Sect. 4 first paragraph; Fig. 1 caption; Sect. 5",
+      "quote": "The location of the two mass peaks reconstructed from our weak lensing analysis are in good agreement with the positions of both BCGs of A1758N.",
+      "uncertainty": "NOT GIVEN"
+    },
+    {
+      "label": "flux-weighted red-sequence cluster light (map only, no centroid tabulated)",
+      "type": "smoothed luminosity map (not a tabulated centroid)",
+      "ra": null,
+      "dec": null,
+      "offset": null,
+      "location": "Sect. 4.1 and Fig. 1 caption",
+      "quote": "The side panels in Figure 1 show the flux weighted cluster light.",
+      "uncertainty": "NOT GIVEN"
+    }
+  ],
+  "notes": "No numerical positions or offsets for any of I, G, S are reported anywhere in this paper; all statements are qualitative ('aligns', 'line up well', 'overlays'). The requested 'Table 2' does not exist (paper has only Table 1 = aperture masses centred on kappa peaks, no coordinates). Astrometric accuracy statements (not object centroid errors): Sect. 2.1 'Our mapping to the USNO catalogs was accurate to $0\\farcs43$ (median)'; Sect. 2.2 HST WFPC2 'final mosaic has a mean internal astrometric uncertainty of $0\\farcs021$'. Kappa-to-BCG separation of the two BCGs: Fig.1 caption 'the two BCGs are separated by $\\sim 3\\arcmin$ (800 kpc)'. Under the protocol this source cannot supply d_IG or d_IS for the NW subcluster -> unclassifiable from this source alone."
+}

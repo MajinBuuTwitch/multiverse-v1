@@ -1,0 +1,64 @@
+{
+ "cosmology": {
+  "h": 0.6736,
+  "ombh2": 0.02237,
+  "omch2": 0.12,
+  "Om_tot": 0.31519184934729094,
+  "Onu": 0.0014197466735303638,
+  "omega_nu": 0.0006441915396177796,
+  "Or": 7.961562764228813e-05
+ },
+ "z_star_HS96": 1091.9081107403445,
+ "omega_m_used_in_zstar": 0.14301419153961778,
+ "D_M_zstar_Mpc": 13873.19961883388,
+ "R": 1.7500300257577246,
+ "cosmo_sound_horizon_rs_zstar": 144.27626950275973,
+ "cosmo_lA": 302.086699042905,
+ "variants": {
+  "a_as_coded (exact Fermi-Dirac, cosmo.E2)": {
+   "r_s_zstar": 144.27626950262083,
+   "l_A": 302.08669904319584,
+   "d_rs_vs_a": 0.0,
+   "d_lA_vs_a": 0.0,
+   "d_lA_vs_a_in_sigma": 0.0
+  },
+  "b_nu_as_nonrelativistic_matter_in_rs": {
+   "r_s_zstar": 149.41096169028933,
+   "l_A": 291.70511662094395,
+   "d_rs_vs_a": 5.134692187668492,
+   "d_lA_vs_a": -10.381582422251881,
+   "d_lA_vs_a_in_sigma": -115.35091580279868
+  },
+  "c_nu_as_relativistic_(one massless species)_in_rs": {
+   "r_s_zstar": 144.27749222492025,
+   "l_A": 302.08413892007763,
+   "d_rs_vs_a": 0.0012227222994170006,
+   "d_lA_vs_a": -0.0025601231182008632,
+   "d_lA_vs_a_in_sigma": -0.02844581242445404
+  },
+  "d_nu_left_out_of_rs_(reviewer_hypothesis)": {
+   "r_s_zstar": 149.58655232211635,
+   "l_A": 291.36270157801715,
+   "d_rs_vs_a": 5.310282819495512,
+   "d_lA_vs_a": -10.723997465178684,
+   "d_lA_vs_a_in_sigma": -119.15552739087427
+  }
+ },
+ "nu_mass_density_at_zstar_over_one_massless_species": 1.0064714509574797,
+ "nu_mass_density_early_limit_over_one_massless_species": 0.9989732334130373,
+ "Y_nu_a_at_zstar (m/kT_nu)": 0.3262961195720018,
+ "r_d_as_coded": 147.1026996805658,
+ "z_drag_EH98": 1020.717008781986,
+ "answer_key_C1": {
+  "universe": "U-YIG4",
+  "r_s_zstar": 144.27626950275973,
+  "z_star": 1091.9081107403445,
+  "l_A": 302.086699042905,
+  "R": 1.7500300257577246,
+  "r_d": 147.1026996805658,
+  "diff_rs": 1.3889689398638438e-10,
+  "diff_zstar": 0.0,
+  "diff_lA": -2.908109308918938e-10,
+  "diff_rd": 0.0
+ }
+}

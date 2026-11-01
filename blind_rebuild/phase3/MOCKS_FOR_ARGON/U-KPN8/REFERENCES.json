@@ -1,0 +1,23 @@
+{
+ "description": "external reference measurements for this universe (Gaussian, registered sigma)",
+ "R_omegac_over_omegab": {
+  "value": 5.05,
+  "sigma": 0.065
+ },
+ "Omega_b": {
+  "value": 0.051862,
+  "sigma": 0.00086
+ },
+ "100omega_b": {
+  "value": 2.2722,
+  "sigma": 0.015
+ },
+ "H0": {
+  "value": 65.936,
+  "sigma": 0.54
+ },
+ "BBN_100omega_b_prior": {
+  "value": 2.3278,
+  "sigma": 0.055
+ }
+}

@@ -1,0 +1,8 @@
+run S_T1wcdm_lcdm_P cfg={'model': 'lcdm', 'bao': 'mod', 'cmb': 'wcdm3', 'sn': 'P', 'bbn': None, 'role': 'T1 wCDM CMB prior sensitivity'} seed=20281030 start=2026-10-30T08:03:37
+  start mode [0.30399555 0.68472203 2.24995926] chi2=1403.674
+  adapt done: acceptance 0.325, scale 1.888
+  prod 4000/chain (extra burn 0): Rmax-1=0.0027 ESSmin=3129 tau_max=9.9 acc=0.326
+  prod 8000/chain (extra burn 0): Rmax-1=0.0016 ESSmin=6003 tau_max=10.6 acc=0.328
+  prod 12000/chain (extra burn 0): Rmax-1=0.0007 ESSmin=9215 tau_max=10.2 acc=0.326
+  prod 16000/chain (extra burn 0): Rmax-1=0.0005 ESSmin=12436 tau_max=10.1 acc=0.328
+done chi2_min=1403.6741 at [0.30400493 0.6847161  2.24998768] runtime 1944s converged=True

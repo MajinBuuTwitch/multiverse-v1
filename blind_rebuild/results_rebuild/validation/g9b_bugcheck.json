@@ -1,0 +1,53 @@
+{
+ "registered_at_planck_mean": {
+  "R": 1.7507180980823056,
+  "lA": 302.096872139918,
+  "wb100": 2.236,
+  "z_star": 1091.9389088312455,
+  "r_s_zstar": 144.23235788000875
+ },
+ "chi2_cmb_at_planck_mean": 60.60710013236854,
+ "pulls_at_planck_mean": [
+  0.11263001789252808,
+  6.954134887977641,
+  0.0
+ ],
+ "camb_check": {
+  "DM_zstar_camb": 13869.407602296806,
+  "DM_zstar_rebuild": 13869.444253737818,
+  "frac": 2.6426104173804532e-06,
+  "rs_zstar_camb": 144.22535331344147,
+  "rs_zstar_rebuild": 144.23235788000875,
+  "frac_rs": 4.856681856790779e-05,
+  "lA_from_camb_pieces": 302.1107456628935,
+  "camb_exact_zstar": 1089.9367198242587,
+  "lA_camb_exact_zstar": 301.7386790013255
+ },
+ "zstar_formula_check": {
+  "rebuild": 1091.9389088312455,
+  "chen_cosmomc_module": 1091.9389088312455,
+  "diff": 0.0
+ },
+ "R_quadrature": {
+  "rebuild": 1.7507180980823056,
+  "quad": 1.7507180981166197
+ },
+ "cmb_cov": [
+  [
+   2.116e-05,
+   0.00019044,
+   -4.554e-05
+  ],
+  [
+   0.00019044,
+   0.0081,
+   -0.0004455
+  ],
+  [
+   -4.554e-05,
+   -0.0004455,
+   0.000225
+  ]
+ ],
+ "conclusion": "No implementation bug: distances and sound horizon reproduce CAMB to <1e-4, z* reproduces the registered HS96 formula (identical to Chen+19's own module), R agrees with an independent quadrature. The registered theory computation places l_A about +0.6 above the Chen+19 mean at the Planck TT,TE,EE+lowE point, which shifts the compressed-prior LCDM posterior in h."
+}

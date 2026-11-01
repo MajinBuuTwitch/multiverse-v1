@@ -1,0 +1,10 @@
+{
+ "test": "T5-A/T5-B/T5c",
+ "f_leak": 0.1821462100396274,
+ "Rfac": 4.907122739762236,
+ "sigma_ref_hat_kpc": 9.343606167396581,
+ "k_hat": 2.950900142821238,
+ "objective": "sum of per-galaxy reduced chi2 over 88 training galaxies",
+ "code_sha256_rebuild_scripts": "937d0a1163d8e929c1afa56ab32de8c05ba2284f4f7b075dda00226cf3fa0a66",
+ "written": "2026-10-30T09:01:15-0400"
+}

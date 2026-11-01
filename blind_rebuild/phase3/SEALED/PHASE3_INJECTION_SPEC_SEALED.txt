@@ -1,0 +1,120 @@
+MULTIVERSE v1 · PHASE 3 INJECTION TESTS · INJECTION SPEC (SEALED)
+Written by the planning chat (Claude), 2026-10-31. For Claude Code's blind-rebuild workspace ONLY.
+
+!! SEALED: this file contains the hidden truths. It must NEVER be placed in Argon's workspace or shown to
+!! Argon. Its SHA-256 goes into the Phase 3 manifest before Argon starts, so the truths and the success
+!! criteria are locked before any analysis. It is revealed only after Argon's Phase 3 results are frozen.
+
+==========================================================================================
+1. PURPOSE
+==========================================================================================
+Check that the frozen Stage 2 pipeline (Argon's) gets the right answers when the right answer is known.
+We build fake universes with known properties, using real data's structure (redshifts, radii, error
+bars, covariances), and Argon analyzes them blind with its frozen code. If the pipeline recovers the
+planted values and gives the expected verdicts, then its verdicts on the real universe can be trusted.
+This is the same idea as LIGO's blind injections.
+INDEPENDENCE: the mocks are generated with the BLIND REBUILD's own forward models (Claude Code's code),
+and analyzed with ARGON's frozen pipeline. Generator and analyzer share no code.
+
+==========================================================================================
+2. GENERATION RULES (Claude Code)
+==========================================================================================
+G1  Use your rebuild's registered forward models, unchanged: expansion history and distances, the
+    registered literal (a5) sound horizon and your registered drag-epoch convention for BAO, the
+    registered compressed-CMB quantities (R, ℓ_A, 100ω_b), the registered T5-A shadow kernel (Stage 1
+    f3) with the registered mass-to-light values, and the registered T6 region scheme (HEALPix Nside = 1
+    as registered).
+G2  Same structure as the real data: write every mock dataset in the ORIGINAL public file format of the
+    dataset it imitates (same columns, same order, same row count, same redshifts/radii, same error
+    columns, same covariance files). Only the measured values change. Argon's loaders must read a mock
+    with nothing but a path change.
+G3  Noise: draw correlated Gaussian noise from the dataset's own published covariance (full SN
+    covariance; BAO covariance; Chen+19 3×3 CMB covariance; SPARC errV per point, independent). Fixed
+    master seed, logged in the answer key only.
+G4  Neutrinos Σm_ν = 0.06 eV and flatness in every cosmology universe, as registered.
+G5  Supernovae: observed magnitudes = truth distance modulus at each SN's redshift + absolute magnitude
+    M = −19.253 + noise. Update every column the pipeline reads as a measurement (e.g. m_b_corr and
+    MU_SH0ES for Pantheon+; calibrator host distances set from the truth). Keep all other columns.
+G6  Blinding:
+    - Each universe gets a random 4-character ID (e.g. U-7Q2K). The folder and file names carry no truth
+      information.
+    - Strip any metadata, comments or headers that could reveal a truth value.
+    - Rounds: 5 rounds. Each round contains exactly one realization of each of the 9 truths below,
+      shuffled within the round. The manifest lists universe ID, FAMILY (COSMO / GALAXY / REGIONAL)
+      and ROUND only. If Argon has to stop early, every finished round still covers every truth.
+G7  Reference values: the cosmology tests compare against external measurements (Planck R = ω_c/ω_b,
+    Planck Ω_b, Planck ω_b, Planck H0, and the BBN ω_b prior). For each COSMO universe, write
+    REFERENCES.json with that universe's own "external measurements": the truth value plus Gaussian noise
+    with the registered σ (σ_R = 0.065, σ_Ωb = 0.00086, σ_100ωb = 0.015, σ_H0 = 0.54, BBN prior σ_100ωb
+    = 0.055 centred on truth + noise). (Known limit: these values can hint at which universes follow
+    the model. The analysis is mechanical frozen code, so the room for bias is small; disclosed.)
+
+==========================================================================================
+3. THE TRUTHS (9 truths × 5 realizations = 45 universes)
+==========================================================================================
+COSMO family (each universe includes DESI DR2 BAO + Chen+19 compressed CMB + Pantheon+ + DES-Dovekie,
+all generated from the same truth):
+ C1  ΛCDM (Planck 2018): h = 0.6736, ω_b = 0.02237, ω_c = 0.1200 (Ω_bc = 0.31377), w = −1.
+ C2  MODEL-TRUE: Law 1 unwinding with γ_u = 0.10 (w0 = −0.90), Ω_b = 1/19 exactly, f_leak = 1/6.
+     h = 0.6600, ω_b = h²/19 = 0.022926, Ω_bc = 6/19 = 0.315789 (so R = ω_c/ω_b = 5.000).
+ C3  OFF-CURVE WEAKENING DARK ENERGY (CPL): w0 = −0.75, wa = −1.0, matter as C1. Law 1 at w0 = −0.75
+     would need wa ≈ −0.18, so Law 1 should be rejected.
+GALAXY family (SPARC baryons and radii, SPARC errV; same 88/87 training/test split as registered):
+ G1  MODEL-TRUE WIDE: registered shadow kernel, σ_ref = 9.0 kpc, R = 5 (f_leak = 1/6).
+ G2  MODEL-TRUE NARROW: same, σ_ref = 3.0 kpc.
+ G3  RAR-TRUE (what real galaxies do): g_obs = g_bar / (1 − exp(−√(g_bar/g†))), g† = 1.20 × 10⁻¹⁰ m/s²,
+     with g_bar = V_bar²/r from the registered baryon model; V_obs = √(g_obs · r).
+REGIONAL family (the registered T6 supernova sample, ΛCDM background, mean local H0 = 73.0):
+ H1  NULL: the same H0 = 73.0 in every region.
+ H2  SMALL VARIATION: per-region offsets of ±2 km/s/Mpc (random signs from the seed), shifted so the
+     SN-count-weighted mean stays 73.0.
+ H3  LARGE VARIATION: the same pattern scheme at ±5 km/s/Mpc.
+     Implement as Δμ = 5 log10(73.0 / H0_region) on each SN's distance modulus.
+
+==========================================================================================
+4. SUCCESS CRITERIA (locked here, before analysis)
+==========================================================================================
+S1  PARAMETER RECOVERY: for each truth and each fitted parameter that has a true value (Ω_bc, h, 100ω_b,
+    γ_u for Law 1 fits; w0, wa for CPL fits; σ_ref for G1/G2; regional H0 for H-family), the truth lies
+    inside the 95% interval in at least 4 of 5 realizations (or all but at most one, if fewer rounds
+    finish), and the mean bias |mean(recovered) − truth| is below 1 mean posterior σ.
+    Reported separately for the frozen Reading B and the Reading A Law 1 fits.
+S2  EXPECTED VERDICTS (a truth passes S2 if its registered verdicts match in at least 4 of 5
+    realizations, or all but one if fewer rounds finish):
+     C1  T2-A FAIL; T2-N1 FAIL; T2-N2 FAIL; T1-L1 not PASS; γ_u's 95% interval includes 0.
+     C2  T2-A PASS; T2-N1 PASS; T2-N2 PASS; T1-L1 not FAIL; T1-Sign PASS.
+     C3  T1-L1 FAIL; T1-Sign PASS; T2-A FAIL.
+     G1, G2  T5-A PASS.
+     G3  T5-A FAIL (report the median χ²_red next to the real-data value of ~45).
+     H1  T6 FAIL (no variation detected).
+     H3  T6 PASS (variation detected).
+     H2  no criterion: report the detection rate as the test's power at ±2 km/s/Mpc.
+S3  PIPELINE VALIDATED if S1 and S2 hold for the decisive pillars: T5-A (G1, G2, G3), T2-A (C1, C2),
+    T1-L1 (C2, C3). Every miss is reported as a finding, never patched.
+S4  The real-data Stage 2 verdicts are NOT changed by Phase 3 whatever happens. Phase 3 reports how far
+    they can be trusted.
+
+==========================================================================================
+5. OUTPUTS (Claude Code)
+==========================================================================================
+In your blind-rebuild folder, create phase3/:
+  phase3/MOCKS_FOR_ARGON/          the ONLY folder that goes to Argon
+     MOCK_MANIFEST.csv              universe_id, family, round
+     U-xxxx/ ...                    one folder per universe, data files in original formats
+                                    (+ REFERENCES.json for COSMO universes)
+  phase3/SEALED/                    never goes to Argon
+     PHASE3_INJECTION_SPEC_SEALED.txt   this file
+     ANSWER_KEY.json                universe_id → truth, all truth values, master seed, realization seeds
+     generate_mocks.py              the generator
+     GENERATION_LOG.md              append-only log, with a self-check (section 6)
+  phase3/PHASE3_INJECTION_v1.sha256  SHA-256 of every file in MOCKS_FOR_ARGON and SEALED
+  phase3/PHASE3_INJECTION_v1.sha256.ots   OpenTimestamps stamp of the manifest
+
+==========================================================================================
+6. GENERATOR SELF-CHECK (before stamping)
+==========================================================================================
+- Every mock file parses with the same reader as the original and has identical structure.
+- For one realization per truth, the noiseless prediction fits the truth with χ² ≈ 0 using your rebuild
+  code (a sanity check of the generator, not an analysis).
+- No file in MOCKS_FOR_ARGON contains a truth value, seed or truth label (grep for the numbers in
+  section 3 and the truth names).

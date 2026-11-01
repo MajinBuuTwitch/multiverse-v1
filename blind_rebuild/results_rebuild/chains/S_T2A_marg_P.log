@@ -1,0 +1,8 @@
+run S_T2A_marg_P cfg={'model': 'cpl', 'bao': 'mod', 'cmb': 'marg', 'sn': 'P', 'bbn': 'desi', 'role': 'T2-A marginal (R,lA) block sensitivity'} seed=20287030 start=2026-10-30T08:08:30
+  start mode [ 0.31342896  0.67572796  2.21039777 -0.86188717 -0.50238831] chi2=1397.118
+  adapt done: acceptance 0.262, scale 1.133
+  prod 4000/chain (extra burn 0): Rmax-1=0.0081 ESSmin=1098 tau_max=26.0 acc=0.264
+  prod 8000/chain (extra burn 0): Rmax-1=0.0036 ESSmin=2902 tau_max=20.7 acc=0.265
+  prod 12000/chain (extra burn 0): Rmax-1=0.0019 ESSmin=4309 tau_max=21.4 acc=0.264
+  prod 16000/chain (extra burn 0): Rmax-1=0.0016 ESSmin=5883 tau_max=20.7 acc=0.266
+done chi2_min=1397.1175 at [ 0.31342645  0.67572954  2.21038776 -0.86190188 -0.50234871] runtime 1956s converged=True

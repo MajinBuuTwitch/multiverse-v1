@@ -1,0 +1,77 @@
+{
+  "row": 1,
+  "designation": "1E 0657-558 (Bullet Cluster)",
+  "paper_ref": "Clowe et al. 2006, ApJ 648, L109 (\"A direct empirical proof of the existence of dark matter\"); pointer: Table 1 & §2-3 / Fig. 1b",
+  "paper_found": {
+    "authors": "Douglas Clowe, Marusa Bradac, Anthony H. Gonzalez, Maxim Markevitch, Scott W. Randall, Christine Jones, Dennis Zaritsky",
+    "title": "A direct empirical proof of the existence of dark matter",
+    "journal_ref": "ApJ 648, L109 (2006) [arXiv source says 'ApJ Letters in press']",
+    "arxiv_id": "astro-ph/0608407",
+    "source_file": "d:\\Blind_Rebuild\\data\\papers\\clowe2006\\src_clean\\1e0657.emapj.tex",
+    "match_to_assigned_ref": "Title/authors/year match the assigned reference. NOTE: in this paper Table 1 is 'Optical Imaging Sets' (no positions); the positions are in Table 2 ('Component Masses', LaTeX label table2)."
+  },
+  "subcluster_designated": "W subcluster (the bullet) = 'subcluster' / 'western subcluster' in the paper",
+  "z_cl": {
+    "value": 0.296,
+    "location": "Abstract and §1 (Introduction), last paragraph",
+    "quote": "In this paper, we measure distances at the redshift of the cluster, $z=0.296$, by assuming an $\\Omega_\\mathrm{m} =0.3, \\lambda =0.7, H_0=70\\mathrm{km/s/Mpc}$ cosmology which results in $4.413$ kpc/$\\arcsec$ plate-scale."
+  },
+  "I": {
+    "type": "weak-lensing kappa peak of the subcluster (2D kappa reconstruction; peak detected at 8 sigma)",
+    "ra": null,
+    "dec": null,
+    "offset": {
+      "from": "S",
+      "value": 9.63,
+      "unit": "arcsec",
+      "value_is_derived": true,
+      "derivation": "sqrt(7.1^2 + 6.5^2) = 9.63 arcsec, computed by extractor from the two stated components; the paper does not state the total",
+      "components": [
+        {"direction": "east", "value": 7.1, "unit": "arcsec"},
+        {"direction": "north", "value": 6.5, "unit": "arcsec"}
+      ],
+      "reference_point": "the subcluster's brightest cluster galaxy (BCG) = Table 2 row 'Subcluster BCG'"
+    },
+    "location": "§3 (Analysis), first paragraph",
+    "quote": "Two major peaks are clearly visible in the reconstruction, one centered $7\\farcs1$ east and $6\\farcs5$ north of the subcluster's brightest cluster galaxy (BCG) and detected at $8\\sigma$ significance",
+    "uncertainty": "NOT GIVEN",
+    "uncertainty_context": {
+      "note": "No numerical centroid error is stated. Bootstrap centroid errors are only shown as contours in Fig. 1 (68.3/95.5/99.7%). The text gives only significance multiples of the (unstated) sigma.",
+      "location": "§3 (Analysis), first paragraph; Fig. 1 caption",
+      "quote": "We estimate centroid uncertainties by repeating bootstrap samplings of the background galaxy catalog, performing a $\\kappa$ reconstruction with the resampled catalogs, and measuring the centroid of each peak.  Both peaks are offset from their respective BCG by $\\sim 2\\sigma$, but are within $1\\sigma$ of the luminosity centroid of the respective component's galaxies (both BCGs are slightly offset from the center of galaxy concentrations).  Both peaks are also offset at $\\sim 8\\sigma$ from the center of mass of their respective plasma clouds.",
+      "fig1_caption_quote": "The white contours show the errors on the positions of the $\\kappa$ peaks and correspond to $68.3\\%$, $95.5\\%$, and $99.7\\%$ confidence levels."
+    }
+  },
+  "G": {
+    "type": "Subcluster plasma (Table 2 row label); text: centre of 100-kpc aperture on the 'X-ray plasma peaks'; Fig. 1 caption: 'centers used to measure the masses of the plasma clouds'",
+    "ra": "06:58:21.2",
+    "dec": "-55:56:30.0",
+    "offset": null,
+    "location": "Table 2 ('Component Masses', label table2), row 'Subcluster plasma'; described in §3 paragraph after Table 2",
+    "quote": "Subcluster plasma & $06:58:21.2$ & $-55:56:30.0$ & $5.8\\pm 0.6$ & $0.12\\pm 0.01$ & $0.02\\pm 0.06$\\\\ ; text: \"The projected cluster galaxy stellar mass and plasma mass within 100 kpc apertures centered on the BCGs and X-ray plasma peaks are shown in Table~\\ref{table2}.\"",
+    "uncertainty": "NOT GIVEN"
+  },
+  "S_candidates": [
+    {
+      "label": "Subcluster BCG",
+      "type": "subcluster brightest cluster galaxy",
+      "ra": "06:58:16.0",
+      "dec": "-55:56:35.1",
+      "offset": null,
+      "location": "Table 2 ('Component Masses', label table2), row 'Subcluster BCG'",
+      "quote": "Subcluster BCG & $06:58:16.0$ & $-55:56:35.1$ & $2.7\\pm 0.3$ & $0.58\\pm 0.09$ & $0.20\\pm 0.05$\\\\",
+      "uncertainty": "NOT GIVEN"
+    },
+    {
+      "label": "luminosity centroid of the respective component's galaxies",
+      "type": "luminosity centroid (mentioned in text only; NOT tabulated, no coordinates or offset value given)",
+      "ra": null,
+      "dec": null,
+      "offset": null,
+      "location": "§3 (Analysis), first paragraph",
+      "quote": "Both peaks are offset from their respective BCG by $\\sim 2\\sigma$, but are within $1\\sigma$ of the luminosity centroid of the respective component's galaxies (both BCGs are slightly offset from the center of galaxy concentrations).",
+      "uncertainty": "NOT GIVEN"
+    }
+  ],
+  "notes": "Positions are in Table 2 of the arXiv source (Table 1 = optical imaging sets), contrary to the pointer 'Table 1'. Kappa peak given only as an offset (7.1\" E, 6.5\" N) from the subcluster BCG; total 9.63\" is derived by the extractor. If an absolute I position is wanted it follows from BCG + offset (extractor-derived, not in paper: approx RA 06:58:16.85, Dec -55:56:28.6, using cos(dec)=0.560). No numerical positional uncertainty for I, G or S is stated anywhere in the paper; no instrument centroiding error is stated. Only the qualitative statements '~2 sigma from BCG' (implies sigma ~ 4.8\" if taken literally, NOT stated by the paper), 'within 1 sigma of the luminosity centroid', and '~8 sigma from the centre of mass of the plasma clouds'. Ambiguity: the text calls the plasma positions 'X-ray plasma peaks' (Table 2 paragraph) while §3 uses 'center of mass of their respective plasma clouds' for the 8-sigma offset; the Table 2 position is the only plasma coordinate given. Platescale stated: 4.413 kpc/arcsec (their cosmology). Luminosity centroid is not tabulated, so per protocol the BCG is the S position."
+}

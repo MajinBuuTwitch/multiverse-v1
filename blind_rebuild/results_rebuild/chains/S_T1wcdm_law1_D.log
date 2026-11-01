@@ -1,0 +1,8 @@
+run S_T1wcdm_law1_D cfg={'model': 'law1', 'bao': 'mod', 'cmb': 'wcdm3', 'sn': 'D', 'bbn': None, 'role': 'T1 wCDM CMB prior sensitivity'} seed=20278030 start=2026-10-30T07:28:32
+  start mode [0.30947396 0.67733121 2.25465633 0.04158371] chi2=1646.908
+  adapt done: acceptance 0.295, scale 1.416
+  prod 4000/chain (extra burn 0): Rmax-1=0.0038 ESSmin=2173 tau_max=14.4 acc=0.287
+  prod 8000/chain (extra burn 0): Rmax-1=0.0019 ESSmin=4416 tau_max=14.5 acc=0.287
+  prod 12000/chain (extra burn 0): Rmax-1=0.0020 ESSmin=6775 tau_max=14.3 acc=0.285
+  prod 16000/chain (extra burn 0): Rmax-1=0.0013 ESSmin=9088 tau_max=14.5 acc=0.288
+done chi2_min=1646.9079 at [0.30948006 0.67732201 2.25464606 0.04162081] runtime 2378s converged=True

@@ -1,0 +1,69 @@
+{
+  "row": 9,
+  "designation": "Abell 520 (Train Wreck)",
+  "paper_ref": "Jee et al. 2014, ApJ 783, 78 (pointer: Table 1 & §3.2 / Fig. 3)",
+  "paper_found": {
+    "authors": "M. J. Jee, H. Hoekstra, A. Mahdavi, A. Babul",
+    "title": "Hubble Space Telescope/Advanced Camera for Surveys Confirmation of the Dark Substructure in A520",
+    "journal_ref": "ApJ 783, 78 (2014); DOI 10.1088/0004-637X/783/2/78 (DOI listed on arXiv abs page; matches assigned reference)",
+    "arxiv_id": "1401.3356 (v2, e-print source used: ms.tex; cross-checked against arXiv PDF text)"
+  },
+  "subcluster_designated": "P4/SW subcluster (Table 1 label 'P4')",
+  "z_cl": {
+    "value": 0.2,
+    "location": "§1 Introduction, last paragraph (ms.tex l.194-198)",
+    "quote": "This gives a plate scale of ~3.3 kpc/arcsec at the redshift (z=0.2) of Abell 520. All the quoted uncertainties are at the 1-sigma (~68%) level."
+  },
+  "I": {
+    "type": "P4 (weak-lensing mass substructure centroid, ACS maximum-entropy/FIATMAP mass reconstruction; centroid from Gaussian-weighted first moments)",
+    "ra": "04 54 04.32",
+    "dec": "+02 53 51.0",
+    "offset": null,
+    "location": "Table 1 'Mass Properties of Substructure (r<150 kpc)', row P4; centroid method in §4.1 'Centroid and Significance of the Dark Peak in A520'",
+    "quote": "P4 & (04 54 04.32, +02 53 51.0) & (3.0,4.4) & $4.23\\pm0.28$ & $ <0.34$",
+    "uncertainty": {
+      "value": [
+        3.0,
+        4.4
+      ],
+      "unit": "arcsec",
+      "kind": "per-axis",
+      "components": [
+        {
+          "axis": "Delta alpha",
+          "value": 3.0,
+          "unit": "arcsec"
+        },
+        {
+          "axis": "Delta delta",
+          "value": 4.4,
+          "unit": "arcsec"
+        }
+      ],
+      "location": "Table 1 column header 'Δα, Δδ (″,″)' and table comment; confidence level from §1 general statement",
+      "quote": "Table 1 header: \\colhead{$\\Delta \\alpha, \\Delta \\delta$} ... \\colhead{ ($\\arcsec,\\arcsec$)}; tablecomments: 'The positional uncertainty is estimated from bootstrapping.'; §4.1: 'We measure the centroids using the first moments weighted by a circular Gaussian, whose FWHM matches the size of the substructure. The results are displayed in Table~1. The mean positional uncertainty is small (~5″)'; §1: 'All the quoted uncertainties are at the 1-sigma (~68%) level.'"
+    }
+  },
+  "G": {
+    "type": "X-ray peak / gas core of P4 subcluster",
+    "ra": null,
+    "dec": null,
+    "offset": null,
+    "location": "NOT GIVEN in this paper",
+    "quote": "No X-ray position for P4 is given. Only qualitative X-ray statements concern the dark peak P3': '…its position has shifted … and now coincides well with the peak in the X-ray emission' (§7); and '…the location of the bow-shock feature indicates that P4 may correspond to the \"bullet\" of the Bullet Cluster' (§7). Table 1 'Gas Mass' column for P4 is an upper limit '<0.34', not a position.",
+    "uncertainty": "NOT GIVEN"
+  },
+  "S_candidates": [
+    {
+      "label": "none tabulated",
+      "type": "no luminosity-weighted centroid and no BCG position for P4 given in the paper",
+      "ra": null,
+      "dec": null,
+      "offset": null,
+      "location": "§5.1 'Luminosity and M/L Estimation' (qualitative only)",
+      "quote": "However, the location of P4 in C12 is offset from the peak in the luminosity distribution, whereas the position in our mass reconstruction coincides better with the light.",
+      "uncertainty": "NOT GIVEN"
+    }
+  ],
+  "notes": "Only x_I (P4) with per-axis bootstrap errors (3.0, 4.4) arcsec is available. Neither an X-ray peak position nor any galaxy/BCG/luminosity-centroid position for P4 is given anywhere in the paper (searched full LaTeX for coordinates '04 54', 'X-ray', 'BCG', 'brightest', 'centroid', 'luminosity'); no numerical I-G or I-S offset for P4 is stated. Pointer mismatch: in the arXiv source, Table 1 is in §4 (Mass reconstruction); §3.2 is 'PSF Model' and contains no positions. Other Table 1 rows for context: P3' (new dark-peak centroid) (04 54 07.51, +02 54 41.3) (5.1,6.2). Interpretation note: 'Δα' is given in arcsec (header), i.e. presumably an on-sky arcsec error, not seconds of RA. CONTAMINATION NOTE: the folder data\\papers\\jee2014_a520\\src\\ was later found (per lead-analyst warning) to contain foreign files from another group's extraction (El Gordo source). I verified ms.tex in src\\ is byte-identical to my clean re-extraction in src_clean_C\\ (title confirmed 'HST/ACS CONFIRMATION OF THE DARK SUBSTRUCTURE IN A520') and the archive SHA-256 matches my download record; no foreign file was read."
+}
