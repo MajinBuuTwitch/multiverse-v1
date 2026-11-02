@@ -1,8 +1,8 @@
 # MULTIVERSE v1: A Pre-Registered Falsification of a Speculative Multiverse Model
 
-**Paper:** `paper/MULTIVERSE_V1_PAPER.pdf` · **DOI:** [10.5281/zenodo.23868218](https://doi.org/10.5281/zenodo.23868218) · **Video:** [YOUTUBE LINK]
+**Paper:** `paper/MULTIVERSE_V1_PAPER.pdf` · **DOI:** [10.5281/zenodo.23868218](https://doi.org/10.5281/zenodo.23868218) · **Video:** https://youtu.be/KZ_8tOKs3xE
 
-This repository is the complete public record behind the MULTIVERSE documentary (WickedAI, 2026). It tests version 1 of the Mandarano Model, a speculative model written for the documentary, against public cosmological and galactic data under rules that were frozen and anchored in the Bitcoin blockchain before any data were downloaded.
+This repository is the complete public record behind the MULTIVERSE documentary (WickedAI, 2026). It tests version 1 of the Mandarano Model, a speculative model written for the documentary, against public cosmological and galactic data under rules that were frozen before any data were downloaded and anchored in the Bitcoin blockchain before any test ran.
 
 **Result: version 1 is falsified.** Its galaxy rotation-curve pillar (T5-A) fails decisively in two independent pipelines, and blind injection tests confirm the pipeline gets that test right in both directions. Its one-in-nineteen predictions miss by 3.7 to 3.9σ, and its leak ratio misses by 3.2 to 3.7σ. Its dark-energy curve is neither confirmed nor ruled out. Nothing in this repository is claimed as new physics.
 
