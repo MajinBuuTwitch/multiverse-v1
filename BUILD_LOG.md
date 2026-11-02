@@ -62,3 +62,13 @@ Builder: Claude Code (claude-opus-5-5). Sources (read-only): D:\Argon_Code\Ropew
   - Log sha256 78ae289d0a9a555b486d7a0c8951f6c78f38350ffdc19245da1aca83f4aff3f1 and notes 4bb40727575cd0964920857397c93a55bff89b1204ed90bc8785cb37e61479b6, both as briefed.
   - All 13 files match EXPECTED_SHA256, and sha256sum -c e41 is OK.
   - D:\Argon_Code\Ropewalk untouched. This log entry is pushed as one more commit.
+
+## Paper label fix v6.0.1 (PAPER_FIX_6.0.1.zip)
+- 2026-11-02T18:32:24-05:00 Gregory's push. C:\Users\User\Downloads\PAPER_FIX_6.0.1.zip sha256 fcb7dee0d3650de9a2a0d35ef78d5bd0558cb04f625d5bf9490459d551ebcd98 (match). Contents match: MULTIVERSE_V1_PAPER.md e07d77b6cdbbf7f3f5ae0d358860db42b05bf90126254decd71dff2d0c12b311; MULTIVERSE_V1_PAPER.pdf 940238283d3510ad54882d515e11aa980d629ca18793e4cf7e88aed134f0f5a2.
+- 2026-11-02T18:32:24-05:00 git pull --ff-only brought in Gregory's GitHub edits to README.md and CITATION.cff: HEAD f14f9c1.
+- 2026-11-02T18:32:24-05:00 The new .md differs from the repo's (778ab424fd6d97965ee835183f9fc38c1ecee97124ef08a315d47ee7175f70f2) in line 5 only:
+  - old: `date: "Version 6.0.0 · FOR REVIEW (draft, not for citation) · 1 November 2026"`
+  - new: `date: "Version 6.0.1 · 2 November 2026"`
+- 2026-11-02T18:32:24-05:00 The paper .md and .pdf were replaced; the old PDF was 178b227994a4c88e1f17fa24b2bf2b7f004fec01fc17e86292962ef95aa0fdfe, 139,267 B, and the new one is 139,210 B. CITATION.cff: `version: "6.0.0"` changed to `version: "6.0.1"`, nothing else.
+- 2026-11-02T18:32:24-05:00 Committed those three files only: b388fd6 "Paper v6.0.1: remove the review-draft label from the title block; CITATION version 6.0.1". Plain push: f14f9c1..b388fd6.
+- 2026-11-02T18:32:24-05:00 Remote check (raw files at b388fd6): the .md is e07d77b6... and the .pdf is 940238283d...; both match. CITATION.cff reads version "6.0.1". This log entry is pushed as one more commit.
