@@ -2,7 +2,7 @@
 title: "A Pre-Registered Falsification of a Speculative Multiverse Model"
 subtitle: "The Mandarano Model (v1, the 19-strand \"Ropewalk\" formulation) tested against cosmological and galactic data, with a blind independent rebuild, a Bayesian head-to-head against ΛCDM, and blind injection tests"
 author: "Gregory Mandarano (WickedAI)"
-date: "Version 6.0.0 · FOR REVIEW (draft, not for citation) · 1 November 2026"
+date: "Version 6.0.1 · 2 November 2026"
 geometry: margin=1in
 fontsize: 11pt
 mainfont: "DejaVu Serif"

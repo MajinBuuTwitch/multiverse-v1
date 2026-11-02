@@ -5,7 +5,7 @@ authors:
   - family-names: Mandarano
     given-names: Gregory
     affiliation: WickedAI
-version: "6.0.0"
+version: "6.0.1"
 date-released: "2026-11-02"
 doi: "10.5281/zenodo.23868218"
 license: [MIT, CC-BY-4.0]
