@@ -744,3 +744,349 @@ PLANNER'S NOTES (not Gregory's):
 CORRECTION TO ENTRY 37 (planner, 2026-11-01): Gregory's reference is right. The rule that matter touching an earlier
 copy of itself detonates and releases "paradox" energy is from the 12 Monkeys TV series (Syfy, 2015–2018), not only
 Timecop. The planner wrongly assumed he meant the 1995 film. The physics note stands: it is a fiction convention.
+------------------------------------------------------------------------------------------
+ENTRY 38 · 2026-11-01 · Gregory Mandarano (decision); pre-run flags from a design-discussion instance (Gemini 4 Argon),
+checked by the planner · SHAPE-CHECK TIMING REVERSED · NOTHING RUN
+------------------------------------------------------------------------------------------
+DECISION (Gregory): Entry 29's approval to run the shape check before the follow-up video's release is withdrawn.
+No version 2 model output of any kind is computed before the follow-up is released. The shape check opens the v2
+trial afterwards, and its result is published whichever way it goes. As of this entry no v2 model output exists.
+PRE-RUN FLAGS (found 2026-11-01; quotes checked verbatim against this log by the planner; resolution OPEN):
+ F-A Turnaround consistency. The drain is a constant rate in cosmic time (Entry 24), so it removes energy even when
+     H = 0. The implied pressure, H_0 γ_u ρ_T / H, diverges at turnaround, and total density would go negative just
+     after it, which the Friedmann equation forbids. This affects V3, t_turn and the collapse. Candidate fixes, each a
+     post-DE-F1 amendment: drained tension returns to dark matter, or the drain rate scales with |H|.
+ F-B Starvation weight. Entry 12 decided starvation is a minor channel, but the frozen pump (Entries 18–21, 28)
+     multiplies ALL fray production by the forward reach P. For standard-model-like expansion the reach factor falls
+     ~12.9x from z = 2 to today (Entry 11), more steeply than the star-formation shape's 8.9x. The frozen formula and
+     Entry 12 disagree. Options: accept the frozen form (starvation as a full partner) or amend to a minor-channel
+     form (adds a dial).
+ F-C Bookkeeping. The comoving dark-matter reconstruction (Entry 29) must carry the a'^3 factor:
+     Ω_dm(a) a^3 = Ω_dm,0 + κ ∫_a^1 a'^3 S P / E dln a'. To be written into the Phase D manifest.
+PLANNER CORRECTION: the planner described late fray production as a small "top-up" to dark matter. In DE-F1 it is a
+sink (ρ̇_dm + 3Hρ_dm = −Q): up to 5% of dark matter is converted into tension.
+STATUS: DE-F1 stands as recorded. Any amendment arising from F-A or F-B will be a new, stamped freeze (DE-F2) made
+before any run.
+
+------------------------------------------------------------------------------------------
+ENTRY 39 · 2026-11-01 · Gregory Mandarano (decisions); planner (Claude Opus 5.5) and Gemini 4 Argon (checks, algebra
+and draft) · V2 DARK-ENERGY SECOND FREEZE (DE-F2) · STILL BEFORE ANY RUN
+------------------------------------------------------------------------------------------
+PURPOSE: Resolves pre-run flags F-A, F-B and F-C recorded in Entry 38, records Gregory's cable-wide reversal,
+dead-universe negative strain and all-universe 0D detonation as interpretation, and freezes the amended dark-energy
+pillar (DE-F2) BEFORE any v2 model output or shape-check calculation is run.
+APPROVAL: Gregory approved Version A of the proposal (shared discussion thread MULTIVERSE_V2_DISCUSSION, files 001–014;
+draft in 013, Argon, Part 2.2) with the planner's two edits from 014, on 2026-11-01.
+
+1. RESOLUTION OF F-B (STARVATION AS A FULL MULTIPLICATIVE PARTNER; NO NEW DIAL):
+   - Decision (Gregory, from the physics review): keep the frozen multiplicative pump of Entries 18–21 and 28,
+       Q(t) = κ · S(a) · P(t),
+     with zero new dials. Entry 12's description of transaction starvation as a "minor" subtraction is superseded.
+   - Physical basis and literature sources (Argon, planner):
+     (a) Radiative reprocessing and causal reach (Entry 6): in integrated cosmic starlight measurements, roughly half
+         of all UV/optical starlight ever emitted is absorbed locally inside galaxies by interstellar dust and thermally
+         re-emitted in the far-infrared, where galaxies are optically thin, so the reprocessed radiation escapes into
+         intergalactic space (Dole et al. 2006, A&A 451, 417; Madau & Dickinson 2014, ARA&A 52, 415, §3; Driver et al.
+         2016, ApJ 827, 108). More generally, any interaction's downstream consequences matter in proportion to the
+         remaining forward causal reach P(t) ahead of the blade.
+     (b) Knob budget (charter R1/R2): published photon escape fractions span orders of magnitude depending on the
+         wavelength band, from the Lyman-continuum ionizing escape fraction f_esc,LyC = 1.8×10^−4 (1+z)^3.4 (Haardt &
+         Madau 2012, ApJ 746, 125) to unattenuated UV/optical (~0.3–0.5, Madau & Dickinson 2014) to bolometric
+         (~1.0). Because decoherence records have no wavelength filter, picking a sub-bolometric band would introduce
+         a hidden knob; bolometric escape gives the frozen multiplicative form with zero extra parameters.
+   - Consequence: between z = 2 and today (for ΛCDM-like expansion), S(z) falls ~8.9x and P(t) ∝ τ_f falls ~12.9x
+     (more if a_turn is near). Forward causal reach P(t) and star-formation activity S(a) act as full co-equal
+     partners in turning down the tap since cosmic noon.
+
+2. RESOLUTION OF F-A (CLOSED DARK-SECTOR CYCLE; GR INTACT THROUGH THE LAG AND THE U1 COLLAPSE):
+   - Why F-A broke Entry 15 and Entry 27 in DE-F1 (Argon, planner): Entry 15 states that general relativity holds
+     through the lag to turnaround (H = 0), and Entry 27 Decision 1 (frozen in Entry 28 and scheduled in Entry 29)
+     requires the frozen equations to continue after turnaround (Picture U1, with P(t) = 0 for t ≥ t_turn and the
+     collapse duration an output of the fitted knobs). In DE-F1, the constant-time drain (−3H_0 γ_u ρ_T) removed energy
+     from ρ_T at H = 0 (where ρ̇_m = ρ̇_r = 0) without returning it to another fluid, forcing p_T = −ρ_T + (H_0 γ_u/H)ρ_T
+     to diverge as H → 0^+ (a weak sudden future singularity with a_turn − a ∝ (t_turn − t)^(3/2); Barrow 2004, Class.
+     Quantum Grav. 21, L79; Fernández-Jambrina & Lazkoz 2004, Phys. Rev. D 70, 121503) and pulling total energy density
+     ρ_tot negative (H^2 < 0) immediately after t_turn, preventing U1 from integrating past turnaround.
+   - Free-fray / wound-fray physical picture (Argon, planner, sharpening Gregory's fray model):
+     Frays are never destroyed; they cycle between two states inside the dark sector:
+       * UNWOUND (FREE) FRAYS = dark matter (ρ_dm): small-scale quantum branches that never became full ropes, sitting
+         as cold, pressureless gravitational weight (w_dm,bare = 0).
+       * WOUND (LOCKED) FRAYS = bundle tension (ρ_T, where ρ_de = ρ_T − Λ_coh): causally productive interactions (+Q)
+         pull free frays taut across the Now into bundle tension (ρ_dm → ρ_T), and natural unwinding relaxes that
+         tension back into free frays (ρ_T → ρ_dm).
+   - PRIMARY DECIDING EQUATIONS (DE-F2, Fix 1: closed dark-sector cycle with constant-time unwinding):
+       dρ_T/dt = −3 H_0 γ_u ρ_T + Q(t)                              [tension bathtub, unchanged from DE-F1]
+       ρ_de = ρ_T − Λ_coh                                           [dark energy above the cohesion floor]
+       ρ̇_dm + 3H ρ_dm = −Q(t) + 3 H_0 γ_u ρ_T = −dρ_T/dt           [closed dark-sector conservation]
+     Algebraic verification through turnaround and the U1 collapse (Argon, planner; labelled as algebra):
+     Because ρ̇_dm + ρ̇_de = −3H ρ_dm, total dark-sector energy is locally conserved at every instant with bare tension
+     equation of state w_de,bare = −1. At and after turnaround (t ≥ t_turn, where P(t) = 0 and Q(t) = 0 per Entry 26),
+     every unit of tension drained by −3H_0 γ_u ρ_T returns to ρ_dm, so:
+       dρ_tot/dt = −3H ρ_m − 4H ρ_r,   dρ_tot/dln a = −3ρ_m − 4ρ_r < 0,
+       (ä/a) |_{t_turn} = −(4πG/3)(3ρ_m + 4ρ_r) < 0   unconditionally for all γ_u ≥ 0, Λ_coh > 0.        [algebra]
+     Entry 15 ("GR intact through the lag") and Entry 27 Decision 1 (Picture U1) both stand without change: E^2(t) > 0
+     holds throughout the contraction as ρ_tot grows monotonically from 0 at a_turn to a = 10^−3, and the U1 collapse
+     integrates cleanly in cosmic time as Entry 27 and Entry 29 intended, with the collapse duration an output of the
+     fitted knobs.
+   - PRE-DECLARED NON-DECIDING SENSITIVITY VARIANTS (per v1 PREREG §1.1, one deciding version per test):
+     (i)  Closed cycle with expansion-paced drain (Entry 15): dρ_T/dt = −3|H|γ_u ρ_T + Q(t), ρ̇_dm + 3Hρ_dm = −Q(t) +
+          3|H|γ_u ρ_T. (Algebraic note [Argon, verified by planner]: an |H|-paced drain ALONE, without returning the
+          drained energy to ρ_dm, removes the H = 0 divergence but still yields dρ_tot/dln a = −3ρ_m − 4ρ_r + 3γ_u ρ_T
+          during contraction, which pulls ρ_tot < 0 just after turnaround whenever γ_u ρ_T(a_turn) > ρ_m(a_turn) +
+          (4/3)ρ_r(a_turn); returning the drain to ρ_dm is required for unconditional GR consistency.)
+     (ii) Option C (planner, from Gregory's question): DE-F1's unreturned expanding-phase equations (ρ̇_dm + 3Hρ_dm =
+          −Q), under which t = t_turn is a Barrow (2004) n = 3/2 sudden turnaround singularity. Variant (ii) is run
+          for the expanding phase only (the shape check V1–V4, and dates up to and including t_turn); no collapse is
+          calculated for it, because 4D general relativity cannot be continued past t_turn under it and no
+          post-turnaround rule is adopted.
+     Both sensitivity variants are computed and reported alongside DE-F2 in Round 1 and cannot alter any pass/fail
+     verdict.
+
+3. DARK-MATTER SIGNATURE UNDER DE-F2 · SIGN FLIP AT THE DARK-ENERGY PEAK (Argon, planner; symbolic algebra only):
+   - Multiplying ρ̇_dm + 3H ρ_dm = −dρ_T/dt by a^3 gives the exact comoving dark-matter evolution:
+       d(ρ_dm a^3)/dt = −a^3 (dρ_T/dt) = −a^3 [ Q(t) − 3 H_0 γ_u ρ_T(t) ],                                [algebra]
+       w_dm,eff(a) ≡ −(1/3) dln(ρ_dm a^3)/dln a = −(1 + w_de,eff(a)) · [ ρ_de(a) / ρ_dm(a) ].             [algebra]
+   - Three regimes (independent of knob values):
+     (i)   Before the tension peak (Q > 3H_0 γ_u ρ_T ⇔ w_de,eff < −1): d(ρ_dm a^3)/dt < 0; dark matter feeds tension
+           and thins slightly FASTER than a^−3.
+     (ii)  At the tension peak (Q = 3H_0 γ_u ρ_T ⇔ w_de,eff = −1): d(ρ_dm a^3)/dt = 0; comoving dark matter hits its
+           exact local minimum at z_peak.
+     (iii) After the tension peak (Q < 3H_0 γ_u ρ_T ⇔ w_de,eff > −1): d(ρ_dm a^3)/dt > 0; unwinding returns energy to
+           free frays faster than the tap pumps it in, so dark matter thins slightly SLOWER than a^−3.
+   - Direction of today's (z = 0) signature under each ordering of t_peak and t_0 (no numbers):
+     * If t_peak < t_0 (peak in our past, z_peak > 0, as required by V1): dark matter thinned faster than a^−3 before
+       z_peak, flipped at z_peak, and TODAY is gaining energy back and thinning slightly SLOWER than a^−3.
+     * If t_peak = t_0 (peak today): comoving dark matter is at its minimum today.
+     * If t_peak > t_0 (peak in the future, failing V1): dark matter is still thinning faster than a^−3 today.
+
+4. RESOLUTION OF F-C AND UNAMBIGUOUS DEFINITION OF BAND V4 FOR DE-F2 (Argon, planner):
+   - Explicit comoving dark-matter bookkeeping with the a'^3 factor (F-C, units H_0 = 1):
+       Ω_dm(a) a^3 = Ω_dm,0 + ∫_a^1 a'^3 [ κ S(a') P(a') − 3 γ_u Ω_T(a') ] / E(a') dln a',                [algebra]
+     where Ω_dm,0 = 0.315 − 0.0492 = 0.2658 (Entry 29). (During the post-turnaround U1 collapse, t > t_turn, P = 0 and
+     d(Ω_dm a^3)/dt = +3 H_0 γ_u a^3 Ω_T(t) > 0.)
+   - Because pre-peak depletion and post-peak return have opposite signs, checking only the net endpoint difference at
+     a = 10^−3 would allow a cancellation loophole. Therefore V4 in DE-F2 (replacing Entry 29's V4 wording) requires
+     BOTH the maximum comoving excursion over a ∈ [10^−3, 1] AND the gross comoving inflow pumped into tension since
+     a = 10^−3 to stay below 5%:
+       f_dm,excur ≡ max_{a ∈ [10^−3, 1]} | Ω_dm(a) a^3 − Ω_dm,0 | / Ω_dm,0 < 0.05
+       AND
+       f_dm,gross ≡ (1 / Ω_dm,0) ∫_{10^−3}^1 [ a'^3 κ S(a') P(a') / E(a') ] dln a' < 0.05.
+     Both quantities plus the net endpoint shift f_dm,net are recorded for every grid point.
+
+5. CABLE-WIDE REVERSAL, DEAD-UNIVERSE NEGATIVE STRAIN, AND ALL-UNIVERSE 0D DETONATION (Gregory, planner, Argon;
+   INTERPRETATION, UNTESTABLE BIN, extending Entries 3, 5, 7, 14, 15, 18 and 37):
+   - One cable, one turnaround (Gregory, planner Option 1, Argon): Because the bow wave of the Now (Entry 7) slices
+     across the entire cable (all ropes and dimensions up to the 8D cable), ropes cannot reverse one at a time (which
+     would shear the bow wave and allow cross-strand coupling to keep P(t_turn) > 0, breaking Entries 18 and 26).
+     Instead, coupled ropes in the bundle phase-lock like the documentary's metronomes (stated as a Model Assumption in
+     the Untestable Bin: our universe's densities are typical of the cable average, so our turnaround H = 0 from our
+     own Friedmann equation coincides with the cable-wide reversal at zero new dials). Gregory's Kang image, the
+     "Citadel at the End of Time", is the moment t = t_turn, where P(t_turn) = 0 because no forward future remains
+     ahead of the blade.
+   - Dead universes, negative strain, and the metronome drag mechanism (Gregory, planner, Argon): In v2's pump
+     Q(t) = κ S(a) P(t), a rope goes dark ("dies") when its star formation S(a) ends, leaving only cold remnants and
+     black holes, long before the Hawking evaporation era (since for any Λ_coh on the cosmic budget scale, ρ_m + ρ_r +
+     ρ_T − Λ_coh = 0 turns the universe around well before black-hole evaporation timescales). Once a rope's star
+     formation ends (S → 0), its tap shuts off and its tension ρ_T drains toward zero, dropping its dark energy
+     ρ_T − Λ_coh toward the negative cohesion floor −Λ_coh (Entries 3, 5, 14) while its unwound tension returns to ρ_dm
+     as free frays that also pull inward. Ropes whose stars burn out early are carried forward by the shared bow wave of
+     the Now (matching Gregory's image of the blade sweeping past already-dead timelines without shearing the Now),
+     while acting as slack dead weight that drags inward ("negative strain") on the cable. As more ropes go dark, their
+     cumulative inward pull slows the cable until the collective forward push is spent and every rope reverses together
+     at t_turn.
+   - Pruned frays vs ropes (planner Option 3): small-scale branches that never became full ropes are the free frays
+     whose weight remains in our universe as dark matter (ρ_dm), cycling into and out of bundle tension (ρ_T). (Unlike
+     standard 5D brane–bulk models, where bulk energy projects as Weyl dark radiation ∝ a^−4 [Shiromizu et al. 2000, PRD
+     62, 024012; Langlois et al. 2002, PRL 89, 171301; Kiritsis et al. 2002, JHEP 03, 019], the return of unwound
+     tension as cold dark matter is stated as THE MODEL, not derived from brane gravity.)
+   - All-universe 0D detonation (Gregory, extending Entry 37): during the backward U1 unmaking, every rope in the cable
+     collapses back to the single 0D origin point, where all matter across ALL universes in the cable touches itself at
+     once, triggering one collective detonation that births all the branches of the new cable. All items in §5 sit in
+     the UNTESTABLE bin.
+
+6. STATUS · SECOND FREEZE (DE-F2):
+   The v2 dark-energy pillar as amended above is FROZEN as DE-F2 before any v2 model output has been computed. DE-F2
+   supersedes DE-F1 (Entry 28) as the version presented in the follow-up video and tested in the v2 retrial. As of
+   this entry no v2 model output exists.
+
+------------------------------------------------------------------------------------------
+ENTRY 40 · 2026-11-02 · Gregory Mandarano (decisions); planner (Claude Opus 5.5) and Gemini 4 Argon (checks) ·
+COMPLETENESS REVIEW: ORDER OF WORK, RETRIAL STRUCTURE, FENCE BUCKETS · NOTHING RUN
+------------------------------------------------------------------------------------------
+PURPOSE: Records the decisions reached in the completeness review of the shared discussion thread (files 016–021),
+none of which changes DE-F2 (Entry 39). As of this entry no v2 model output exists.
+APPROVAL: Gregory approved this entry as drafted in thread file 021 ("lets stamp it"), 2026-11-02. Argon's check
+of the draft had not yet been posted; any correction it raises becomes a later entry.
+
+1. RATE OF TIME (Gregory): the dark-energy-dependent clock rate of Entry 7 stays Gregory's idea and a candidate test
+   only. DE-F2 contains no rate-of-time term, and none will be added (no new dial, no further freeze for it). As
+   frozen, v2 predicts the standard (1+z) stretch of distant supernova light curves (DES 2024: b = 1.003 ± 0.005
+   (stat) ± 0.010 (sys)). The follow-up narration and on-screen data say so.
+
+2. ORDER OF WORK (Gregory, reaffirming charter section 5): no v2 test of any pillar runs until the whole model
+   exists. The galaxy side (B1) and the shares (B2) are designed, the consistency checks (B4) are specified, v2 is
+   written down in full and reviewed cold (Phase C), and every test is pre-registered, locked and stamped (Phase D).
+   Only then does the trial begin (Phase E). Reason: free frays are the same dark-matter reservoir in the
+   dark-energy pillar and the galaxy, cluster and shares sectors, so a dark-energy fit seen before B1 and B2 are
+   designed could steer them.
+
+3. THE RETRIAL IN TWO ROUNDS (Gregory; structure from the planning discussion, refined in the thread):
+   - Round 1, after the Phase D lock: every registered test is run on design data (bucket 1 below), including the
+     shape check (V1–V4) and the four-model comparison of Entry 31.
+   - Asymmetric authority: under the charter's founding rule (section 0), design data cannot count as evidence FOR
+     v2. Round 1 can therefore only sink v2 or let it through; it can never support it. A non-failing outcome is
+     reported as "Round 1 survived", never as a pass.
+   - Round 1 sink line, to be fixed at the Phase D lock as an amendment to Entry 31 (which scores the head-to-head on
+     fenced data only): intended at ln B(v2 vs ΛCDM) ≤ −5.0, the "strong" boundary of the scale used in v1's
+     head-to-head (Trotta 2008, Contemp. Phys. 49, 71; Kass & Raftery 1995, JASA 90, 773). Measured against ΛCDM
+     rather than w0wa because ΛCDM had the higher evidence on v1's design data, which makes this line the stricter
+     one. Calibration from v1 (charter section 1): v1's free unwinding curve (ln B −2.1 to −2.7) would have survived;
+     v1 with one-in-nineteen imposed (−6.9 to −8.5) would have sunk.
+   - If v2 survives Round 1, its posterior predictions are locked and stamped before any fenced data is opened.
+   - Round 2: those locked predictions are scored on fenced data as it becomes available (F1 and F2 for the galaxy
+     side; F3 and F4 as released, 2027 onward), with no refitting of the locked predictions.
+
+4. FENCE BUCKETS (Gregory; options set out by the planner, argued independently by Argon; the stamped fence list
+   v1 is unchanged):
+   Bucket 1 · DESIGN DATA (what v2 may be built and fitted on, and what Round 1 uses): exactly the files hashed in
+     v1's data manifest, plus the published model ingredients and benchmarks the design itself uses: the cosmic
+     star-formation history of Madau & Dickinson 2014 (S(a), Entry 20); the dust-reprocessing and escape-fraction
+     literature of Entry 39 §1; the published CCBH equations and DESI-era validation target for the Entry 31 gate;
+     standard physical constants and CAMB/CLASS reference outputs for the sound-horizon gate (Entries 9, 22).
+   Bucket 2 · FENCED DATA (what scores Round 2): F1–F4 as stamped, with F3 and F4 restricted to releases made after
+     the fence was stamped (2026-10-31), so that the fence list's "F3 and F4 did not exist when this list was stamped"
+     stays literally true.
+   Bucket 3 · UNUSED (neither designed on nor scored): everything else, including CMB results newer than Planck 2018
+     that were published before the fence was stamped (for example ACT DR6, SPT-3G, Planck PR4), and DESI products
+     not in v1's manifest (for example full-shape clustering analyses of DR1 or DR2).
+   Ratchet: before the Phase D lock the off-limits set may grow but never shrink. Any dataset moved from bucket 3 into
+   the fence is recorded with the same "published before the lock" caveat as F1 and F2.
+
+5. MATTER SHARES IN THE DARK-ENERGY TESTS (Entry 9, restated): the dark-energy sector is tested twice, once with the
+   matter shares (Ω_bc, ω_b) fitted as standard free parameters, as in the other three models, and once with v2's
+   derived shares (B2), so that a matter-budget failure cannot mask dark-energy performance.
+
+6. CONSISTENCY CHECKS KEPT (charter B4): clusters (T-d), gravitational-wave speed (T-h) and no regional variation in
+   the expansion rate (T-g) remain required. A proposal to retire T-d and drop T-g (thread file 017) was withdrawn.
+
+7. GALAXY SIDE (B1), DESIGN GUIDANCE ONLY (not a design): the kernel must respond non-linearly to acceleration (v1's
+   linear blur is ruled out: it gives the wrong asymptotic slope); any link between its acceleration scale and the
+   cosmic horizon (a_0 ≈ cH_0/2π) counts only if it enters with zero adjustable galaxy dials, and is otherwise treated
+   as numerology (charter R5); the galaxy pass line is calibrated against how well the measured relation itself
+   scores on the same data.
+
+8. PROCESS NOTE: in thread file 017 Argon quoted narration and log text from its own context summary after a context
+   compaction, producing paraphrased quotes and a non-existent "Entry 8". All were corrected in 020 by re-reading the
+   files. Rule adopted for every participant: after a context compaction, re-open every file before quoting it.
+
+STATUS: DE-F2 (Entry 39) unchanged. Design work continues with B1.
+
+------------------------------------------------------------------------------------------
+ENTRY 41 · 2026-11-02 · Gregory Mandarano (decisions); planner (Claude Opus 5.5) and Gemini 4 Argon (checks) ·
+GALAXY SIDE (B1): MECHANISM, GRAVITY RULE, CLOUD, ROPE STRUCTURE · NOTHING RUN
+------------------------------------------------------------------------------------------
+PURPOSE: Records the design of v2's galaxy side reached in the shared discussion thread (files 030–063). None of it
+changes DE-F2 (Entry 39). As of this entry no v2 model output exists: no fit has been run on any data, including
+design data.
+APPROVAL: Gregory approved this entry as drafted in thread file 063 ("ok great", thread file 064) and asked for it to
+be stamped and published with the v2 records ("lets take care of this first", thread file 068), 2026-11-02. Argon
+checked the first draft (thread file 061) line by line in thread file 062 and found no errors; its three completeness
+notes are added in items 4, 6 and 8.
+
+1. MECHANISM (THE MODEL; Gregory's fading-branch picture, built out in files 036–052):
+   - Two ingredients. (a) A conserved, cored cloud of free frays, ρ_dm: the dark matter of DE-F2, exchanged only with
+     ρ_T as frozen. (b) The pull of fresh tangent branches of our own matter (the "Donnie Darko" branches), which are
+     born at the bow wave in step with our string and pull alongside it until they fall out of step.
+   - Rates: branches are born at Γ_birth = K a₀/c everywhere and fade at Γ_fade = K g_tot/c, so the number in step
+     is N − 1 = a₀/g_tot. This gives the simple-ν radial acceleration relation and the baryonic Tully–Fisher relation.
+     K cancels from every observable.
+   - Fading is desync of the cross-gap coupling. A faded branch stops pulling on us and its matter stays in its own
+     branch; nothing is deposited into our ρ_dm. (If it were, every galaxy would create dark matter without limit,
+     violating T-b and V4.) "Two life stages" is story imagery only; the cloud is a separate, fixed stock.
+   - The pulse (Gregory): the birth–fade cycle at the bow wave is the mechanism itself. Births form a Poisson train
+     with mean a₀/g_tot and fluctuations falling as N^(−1/2), which average to the smooth relation.
+   - A stationary interference pattern between strings is EXPLORATORY only. It requires copies to add as amplitudes,
+     which the model does not yet license, and it adds nothing to the galaxy law.
+
+2. FADING REGIME AND STRUCTURE (Gregory): instant settling (Regime τ-2, fade time far below one second) is the v2
+   default. The 133 and 19 counts are not inputs. The 7 × 19 cable remains the picture of the structure. Strings are
+   equal in size; unequal sizes are ruled out.
+
+3. GRAVITY RULE (THE MODEL; chosen by the planner on Gregory's written authorisation, thread files 053 and 060):
+   ∇·[μ(|∇Φ|/a₀)∇Φ] = 4πG(ρ_b + ρ_dm), μ(x) = x/(1 + x), from the Bekenstein & Milgrom 1984 action (ApJ 286, 7), so
+   momentum, angular momentum and energy are conserved. The boost acts on all matter a branch carries, ordinary
+   matter and cloud alike. The baryons-only alternative was rejected: it has no action, lets offset systems
+   accelerate themselves, and could be repaired only by letting ordinary and dark matter fall differently. QUMOND
+   may be used only as a computing shortcut where it coincides with AQUAL (spherical symmetry) or with the difference
+   checked. Light bending follows the same potential as the motion of matter (Φ = Ψ), and gravitational waves travel
+   at c; both are stated rules, with AeST (Skordis & Złośnik 2021) as the published relativistic theory showing they
+   can hold together.
+
+4. BACKGROUND-DECELERATION RULE (THE MODEL, fixed before any test): g_tot includes the universe's own deceleration
+   across the system's size, |ä/a| L. For a bound galaxy or cluster, L = r measured from its centre; for a linear
+   perturbation of comoving wavenumber k, L = a/k and g_tot = (g_bg² + g_pec²)^(1/2) (thread file 044 §2.1). At
+   recombination this is 4.4–6.0 × 10⁴ a₀ on 100–135 kpc scales (the sound horizon), so the boost there is about
+   2 × 10⁻⁵. For 2–5 kpc scales the boost switches on at 1 + z ≈ 100–134. At late times the rule is
+   negligible on galaxy and cluster scales (it falls below a₀ for every scale under about 1.4–1.6 Gpc at z = 0–1).
+
+5. CLUSTERS: handled by their own high total pull (g_tot above a₀), with no cluster dial. Superfluid dark matter is
+   out; the temperature and velocity cutoffs proposed earlier are withdrawn; the "no negative frays" floor is
+   withdrawn.
+
+6. a₀ (THE MODEL rule, with disclosures): a₀ = (c H₀ / 2π)√Ω_coh, one branch born per cycle of the bow's baseline
+   beat. Disclosures: H_coh is an expansion rate in DE-F2, so reading it as a beat rate is a rule, not a derivation;
+   the near-match a₀ ≈ cH₀/2π was known before the factor was chosen (charter R5); 1/2π and 1/6 differ by 4.7%. The
+   testable content: a₀ = 1.2 × 10⁻¹⁰ m s⁻² requires the DE-F2 fit to land on Ω_coh ≈ 1.2–1.3 (1.33 at H₀ = 67.4,
+   1.23 at H₀ = 70). Under Entry 40 §7 the link counts because a₀ is set in the inner region, where the cloud is
+   negligible and no galaxy dial acts. At the lock the galaxy side is tested two ways (thread files 030, 031, 048):
+   once with one universal a₀ fitted to the galaxies, and once with a₀ predicted from the DE-F2 fit with no galaxy
+   dial. The cross-check is whether the two agree.
+
+7. THE CLOUD:
+   - Shape: cored (Plummer form), one universal core radius R_core for all systems.
+   - R_core: no derivation exists. It is one honest dial (Option A), set on Bucket 1 design data after the video's
+     release and before the fence opens. The sound-horizon ansatz (Option B) was dropped under R5.
+   - Cloud mass per system (Gregory, thread file 063; options in 061, checked in 062): every system carries the
+     cosmic share, M_cloud = (Ω_dm/Ω_b) M_b ≈ 5.36 M_b, with no dial. This is an explicit model assumption, not an
+     identity. Rejected: a second fitted dial (weaker test; too little cloud for cluster lensing if fitted low), one
+     central density for all clouds (swamps dwarfs, starves clusters), clouds only around groups and clusters (an
+     unmotivated threshold), and a share set by retained gas (hidden dials; worsens the outer-curve risk). Because
+     the cloud's share inside radius r depends only on r/R_core, dwarfs measured inside ~10 kpc are unaffected.
+   - Consequences, recorded before any data is examined: because the cloud's own field is boosted (item 3), outer
+     rotation curves feel it (for M_b = 5 × 10¹⁰ M☉ and R_core = 110 kpc, extra pull of about 5 / 11 / 19% at
+     30 / 40 / 50 kpc; about 1 / 2 / 4% for R_core = 200 kpc); the radial acceleration and Tully–Fisher relations hold
+     unchanged only where the enclosed cloud is small compared with M_b; at weak-lensing radii the pull rises to
+     √(1 + 5.36) ≈ 2.5 times the ordinary-matter value, a step rather than a bump.
+
+8. ELLIPTICALS: target T-c includes early-type galaxies (Lelli et al. 2017). That check is closed. What was looked
+   at, under the fence rule's unused-data bucket, solely to check the T-c source and test a since-withdrawn velocity
+   cutoff (thread files 030–035): individual early-type points read off Lelli et al. 2017's figures (Argon), and the
+   published hot-gas temperature profiles of Humphrey et al. 2006, 2011 and 2012 (planner). None of it drives a design
+   choice; no further elliptical numbers enter the design.
+
+9. ROPE STRUCTURE (interpretation only; no term in any equation):
+   - Strings exchange between neighbouring strands inside a rope, timed by the twist: a string can cross only while
+     it faces a neighbouring strand. Strings on the rope's outer surface face the Void and cannot cross. A string that
+     leaves one strand lands in another, so the rope keeps its total.
+   - Every string carries frays. Inside a rope, frays lie between strings and strands; taut frays hold dark energy's
+     tension (ρ_T) and slack frays are the free frays (ρ_dm). On the rope's outer surface the outward frays have
+     nothing to hook onto and are slack.
+   - Between ropes there is only the outer strings' fuzz, which never reaches the next rope. Nothing crosses the Void,
+     consistent with no-signalling between branches (Polchinski 1991).
+   - The gap between ropes is decoherence that cannot be undone, not a force: no field, no potential, no dial. Ropes
+     touch only at the 0D point (Entry 39 §5).
+   - Dark energy weakening is the twist releasing against drag. The reading "net string drift = γ_u" is withdrawn.
+
+10. PARKED: the "two waves" carry-over of dark matter from the previous crunch (thread file 049).
+
+11. RISKS RECORDED FOR ROUND 1 AND ROUND 2: cluster abundance at late times, since the boost acts on cloud
+    perturbations once the background term is negligible (Angus & Diaferio 2011; Angus et al. 2013, MNRAS 436, 202);
+    the reionization optical depth after an early switch-on (Planck 2018: τ = 0.054 ± 0.007, midpoint z ≈ 7.7);
+    the Lyman-α forest; outer rotation curves and the weak-lensing step under the cloud-mass rule (item 7).
+
+12. PROCESS NOTE: errors found and corrected in the thread are listed in the paper notes (planner C14–C17, Argon
+    A8–A14). C16: the planner's first cloud-pull figures treated the cloud as unboosted; corrected in thread file 060
+    before this entry.
+
+STATUS: DE-F2 (Entry 39) unchanged. The galaxy side (B1) is designed except for the value of R_core, which is set at
+the first allowed fit. Design work continues with the matter shares (B2).

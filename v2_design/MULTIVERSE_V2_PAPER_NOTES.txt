@@ -133,3 +133,129 @@ A6 (Argon, Stage 2, found by its own freeze-timing audit 2026-11-01, FREEZE_TIMI
   values were final. No test had run yet; whether T2/T5 training values changed between runs is not recorded.
 A (Argon) VERIFIED SUCCESS: the freeze-timing audit itself. File metadata, code lines and log lines quoted; log lines
   checked verbatim against the planner's copy of ACTIVITY_LOG.md; it reported "not recorded" instead of guessing.
+
+------------------------------------------------------------------------------------------
+UPDATE 2026-11-01 · v2 design-discussion instance (Gemini 4 Argon, Antigravity; briefing ANTIGRAVITY_PUSH_V2_BRIEFING)
+------------------------------------------------------------------------------------------
+C6 (planner): the briefing (and the planner's chat analysis the same day) called late fray production a "small top-up"
+  to dark matter. In DE-F1 it is a sink: ρ̇_dm + 3Hρ_dm = −Q. Caught by Argon; recorded in design log Entry 38.
+C7 (planner, design rounds): the frozen pump Q = κ S(a) P(t) applies the forward reach to ALL fray production, which
+  contradicts Gregory's Entry 12 decision that starvation is a minor channel; the planner wrote both without noticing.
+  Caught by Argon (Entry 38, F-B).
+C8 (planner, design rounds): the constant-cosmic-time drain (Entry 24's own check) was never tested at H = 0; it breaks
+  local energy conservation at turnaround. Caught by Argon (Entry 38, F-A).
+A (Argon) VERIFIED SUCCESS: first reply read every briefed file, verified sizes and SHA-256 prefixes, made no lookups and
+  no fence contacts, computed no v2 numbers (symbolic algebra only, labelled), and raised four flags (F-A, F-B, F-C and
+  the unlogged Entry 29 timing reversal). Every quote it gave was checked verbatim against the files by the planner and
+  found present. Contrast with A1–A2 (prose reviews).
+
+------------------------------------------------------------------------------------------
+UPDATE 2026-11-01 · shared discussion thread (MULTIVERSE_V2_DISCUSSION 001–014) · Entry 39 / DE-F2
+------------------------------------------------------------------------------------------
+C9 (planner, thread file 006): claimed that under Option C "the frozen equations survive the outside check untouched".
+  Wrong: Entry 28 also froze the unopposed floor collapse (Entry 27 Decision 1, scheduled in Entry 29), which cannot be
+  integrated past turnaround under DE-F1. Argon's 009 repeated the claim. Caught by the planner against the stamped log
+  (012); confirmed by Argon (013). Decided in Entry 39.
+C10 (planner, 005): withdrew its earlier lean toward the |H|-paced drain as the deciding fix after Argon showed (004)
+  that the |H| drain alone still drives total density negative after turnaround. Recorded in Entry 39 §2.
+A (Argon) VERIFIED SUCCESS: 009 and 013 gave the sudden-singularity structure at turnaround (n = 3/2), the proof that
+  the closed cycle integrates the whole U1 collapse, and the finding that the acceleration-equation route for Option C
+  is an energy return in disguise; the planner rederived each and found them correct. Literature citations were looked
+  up (unfenced); two unverified equation numbers were dropped before logging. No v2 numbers, no fence contacts.
+A (Argon) minor: a stray non-English word in 011 ("puluhan"), corrected by Argon in 013 before anything was logged.
+
+------------------------------------------------------------------------------------------
+UPDATE 2026-11-02 · shared discussion thread 016–021 · Entry 40 (completeness review)
+------------------------------------------------------------------------------------------
+A7 (Argon, thread file 017): after an automatic context compaction, Argon quoted narration and design-log text from
+  its own context summary instead of the files: paraphrased "current text" for FU5_09, FU5_10, FU6_21, FU6_39, FU7_07
+  and half of FU7_03, and a non-existent "Entry 8". Two claims also failed against the log (the sound-horizon lock
+  is in Entry 9; T-d and T-g are required by charter B4), and several of its own new proposals were filed as agreed.
+  Caught by the planner by exact text search (018); corrected by Argon (020), whose 95 re-quoted lines all matched
+  the files. Rule adopted in Entry 40 §8: after a context compaction, re-open every file before quoting it.
+A (Argon) VERIFIED SUCCESS: the substantive catches in 017 held: the supernova-stretch claim in FU6_33 / FU7_03 / M14
+  has no term in the frozen equations; FU8_08's "only then does the trial begin" depends on the order of work; M9
+  and M17 need Entry 39's note. In 020 Argon also found that the interim fence wording would contradict the stamped
+  fence list and FU5_05 (leading to the bucket rule of Entry 40 §4).
+C11 (planner, 018): listed "V3 as a_turn < 100" among Argon's unagreed proposals; it is in Entry 22. Corrected in 021.
+C12 (planner, 019): cited charter section 3 for the order of work; it is section 5. Corrected in 021.
+C13 (planner, 015): stamped Entry 39 on Gregory's approval of the design choice without first asking whether he wanted
+  the freeze before a completeness check. No harm (nothing placed or run), but Entry 40 records decisions that a
+  check would have folded into one entry. Recorded in 016.
+
+------------------------------------------------------------------------------------------
+UPDATE 2026-11-02 · shared discussion thread 032–033 · galaxy side (B1), ellipticals
+------------------------------------------------------------------------------------------
+C14 (planner, 032): told Gregory the elliptical X-ray data contradicts Argon's 030 velocity cutoff and that the
+  cutoff would "cut the boost by a factor of two or more" there. Two errors: (i) treated stellar velocity dispersion
+  as the trigger, when 030's cutoff is on gas thermal speed (NGC 720 and NGC 1521 gas is about 0.5 keV, about
+  220 km/s on 030's conversion); (ii) quoted the factor on the boost, when the observable pull at low acceleration
+  goes as its square root (the cutoff acts as a0 -> a0/F), so the predicted offset is at most 0.09–0.17 dex for those
+  galaxies against a 0.13 dex scatter. Corrected in 033 after Gregory asked to check data against assumptions:
+  disfavoured, not ruled out; the cutoff fails on rule grounds (hand-set sigma_crit).
+A8 (Argon, thread file 032): reversed the Lelli et al. 2017 elliptical subsamples (said 16 X-ray, 9 rotating; the
+  paper has 9 X-ray, 16 rotating ATLAS3D), cited section 4 for the section 5 results, gave an unverified 0.5–1.5 keV
+  range in a different velocity convention from its own 030, and repeated the boost-versus-observable slip ("a
+  factor of 2 to 5"). Raised in 033.
+A (Argon) VERIFIED SUCCESS: 032 confirmed the planner's three 031 holes with correct algebra (K = 1 gives a 16–17%
+  capped boost; a common factor K cancels in g_obs; near-copy plasma cannot be CDM), and withdrew its own cutoff.
+A9 (Argon, thread file 033): listed NGC 1332 among the group-truncated ellipticals (Lelli §2.2.2 has it isolated);
+  read per-galaxy point counts and values off Lelli et al. 2017 Figure 8 (Bucket 3 data, not needed); offered a
+  cluster mechanism (ram-pressure timing) that needs K ~ 10^2–10^3, contradicting its own 032 bound. Raised in 035.
+A (Argon) VERIFIED SUCCESS: 034 corrected the velocity convention and retracted unverified temperatures, confirmed
+  the planner's square-root algebra, answered the galaxies-versus-clusters question with one core radius for all
+  halos, and stated plainly that under Candidate 1 the 027 derivation does not carry over (the alignment law would
+  be assumed and would need a non-gravitational force and a dissipation channel). Its two quoted temperature lines
+  were checked against Humphrey et al. 2011 and 2012 and match.
+A10 (Argon, thread file 038): numerical slips in the background-deceleration argument: g_bg(z = 0, 10 kpc) given as
+  1.1e-3 a0 (correct ~7e-6 a0), g_bg(z = 2, 10 kpc) as 0.011 a0 (correct ~4.7e-5 a0), and a boost switch-on for
+  2–5 kpc proto-galaxies at z ~ 12–18 (correct 1 + z ~ 100–134), on which it claimed a zero-parameter match to the
+  published high-z MOND prediction. Also: fresh-fray weight "plucked" from the local faded bath, which holds ~200x
+  too little inside 30 kpc. Raised in 039.
+A (Argon) VERIFIED SUCCESS: 038 showed the planner's ballistic-outflow suggestion (036) fails the BTFR mass scaling;
+  confirmed the shared-period pulse algebra and fringe visibility; stated plainly that no PTA-band period is derived;
+  verified Bradač et al. 2006 from source and corrected its own earlier M_sub and core-radius figures.
+A (Argon) VERIFIED SUCCESS: 044 confirmed the planner's weight-ratio arithmetic, chose branch-borne weight with
+  fading as desync (no mass deposit), corrected its own 038 background-deceleration numbers and withdrew the
+  high-z "zero-parameter match", listed 133 / 19 / R_core / grain size as unselected hypotheses (R5), and confirmed
+  the Bullet Cluster is in the v1 16-merger design set. Planner spot-check of its Plummer lensing figures agrees.
+A11 (Argon, 044): minor inconsistencies raised in 047: the 034 positivity floor carried forward although the pull is
+  now branch-borne (QUMOND allows negative phantom density); and "sound speed c_s = c" asserted for a w = −1 component.
+A (Argon) VERIFIED SUCCESS: 050 conceded the planner's objection that the fading mechanism implies AQUAL rather than
+  QUMOND; withdrew the positivity floor; stated lensing and GW speed as model rules with the AeST reference; verified
+  Planck reionization figures and the 049 bounce citations. 052 retired the turnover algebra and confirmed the
+  birth–fade (M/M/inf) pulse mean and N^(-1/2) noise.
+A12 (Argon, 050): claimed the background-deceleration rule protects v2 from nuHDM-style cluster overproduction (it is
+  negligible on cluster scales at late times); overstated the SPARC lower bound on R_core (~2–5% effect at 30–50 kpc,
+  not 15–35%); garbled the Brada & Milgrom 1995 citation. Raised in 053.
+C15 (planner, 050): misread Gregory's answer on where outer strings go. He meant strings DO exchange between
+  neighbouring strands, gated by the twist (only strings facing a neighbouring strand can cross; strings on the rope's
+  outer surface face the Void and cannot). The planner read "exchange" as contact handover, declared membership fixed,
+  and had Argon retire the exchange algebra (052 §1.1). Caught by Gregory; corrected in 055; nothing stamped or
+  dependent on it.
+C16 (planner, 053): gave the cloud's extra pull at 30–50 kpc as 2–5% of g_obs, computed as an unboosted add-on, in the
+  same post that proposed the all-matter AQUAL rule, under which the cloud's own field is boosted. Under that rule
+  (stamped in 060) the increase in g is ~5 / 11 / 19% at 30 / 40 / 50 kpc for R_core = 110 kpc (M_b = 5e10, cloud
+  5.36 M_b), so the A12 line "~2–5% effect" and the conclusion that rotation curves barely constrain R_core do not
+  hold under the stamped rule. Argon confirmed the add-on figures in 056 without catching it. Corrected in 060.
+A13 (Argon, 056): stated g_dm <~ 1–2% of g_bar inside r <~ 30 kpc (it is ~10% at 30 kpc for R_core = 110 kpc;
+  <~ 2% only inside ~15 kpc); gave the Brada & Milgrom 1995 arXiv number as astro-ph/9407079 (it is 9407071).
+  Raised in 060.
+A (Argon) VERIFIED SUCCESS: 056 derived the Bekenstein–Milgrom AQUAL Lagrangian for the simple mu correctly
+  (F = x^2 - 2x + 2 ln(1+x)), showed the baryons-only hybrid has no momentum-conservation identity, withdrew the
+  cluster-protection claim, stated the per-galaxy cloud-mass rule as an explicit assumption, recorded the four a0
+  disclosures, and reproduced the planner's L_switch and Omega_coh figures. 056–058 restored twist-gated strand
+  exchange (rope total 133), restated frays as attached to strings, checked no-signalling under both fuzz sub-cases,
+  and confirmed 0D-only rope contact against Entries 25 and 39 §5.
+A14 (Argon, 057 and 059): reverted to the superseded 038 bookkeeping by describing faded tangent frays as collapsing
+  into the rho_dm cloud (044 ruled fading is desync with no mass deposit); stated the interference contrast as
+  2 sqrt(a0/g), the g >> a0 limit of 2 sqrt(r)/(1 + r), and so placed the strongest bands in the deep outskirts (they
+  peak at g = a0) and called the FDM heating problem "solved" for an exploratory, unlicensed coherent case; called
+  BTFR exact and a0 a zero-dial prediction without the 056 disclosures. Raised in 060.
+A (Argon) VERIFIED SUCCESS: 062 confirmed every 060 correction and withdrew the faded-frays-feed-the-cloud lines,
+  audited the Entry 41 draft line by line (no errors; three genuine omissions found: the L definition, the two-way a0
+  test agreed in 048, and the 035 elliptical disclosure), and gave correct algebra for all five cloud-mass options.
+  Minor slips raised in 063: the 044 acoustic-scale g_bg figure applied across k = 0.01–0.2 Mpc^-1 (it holds near the
+  sound horizon only); "< 0.1%" dwarf figure valid for R_core >= 135 kpc.
+C17 (planner, 061): left the agreed two-way a0 test (048) and the elliptical disclosure the planner itself asked for
+  (035) out of the Entry 41 draft. Caught by Argon in 062; added in 063 before stamping.
