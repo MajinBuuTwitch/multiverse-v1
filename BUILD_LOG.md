@@ -43,3 +43,22 @@ Builder: Claude Code (claude-opus-5-5). Sources (read-only): D:\Argon_Code\Ropew
 - 2026-11-01T17:45:36-05:00 Step 3: README: bolded the two credit names (text otherwise unchanged); append-only table v2 design-log row now lists e36 66,366, e37 68,337, e37b 68,686 (full length); the note under the table now names e37b as the full-length stamp; added the planner audit line under 'How to verify it yourself'.
 - 2026-11-01T17:45:46-05:00 Step 4: full verification on staging: 75 manifests, 2,213 lines, 0 FAIL; all 37 design-log stamp manifests (e2-e37b) pass as exact prefixes or full length (e37b). Committing and pushing (normal push).
 - 2026-11-01T17:46:05-05:00 Pushed 848b497..32e33cf. Remote check: PRIVATE, no releases, remote main = local HEAD 32e33cf, 1,031 blobs, path-to-blob map identical to staging. This log line is pushed as one more commit.
+
+## V2 design records: Entries 38-41 (V2_DESIGN_UPDATE_e38_e41.zip)
+- 2026-11-02T03:18:36-05:00 Started Gregory's records push (records only: no computation, no GitHub release, no Zenodo version). C:\Users\User\Downloads\V2_DESIGN_UPDATE_e38_e41.zip sha256 25357834eb14e5d56f78adb104b5e452399a78f6a0bae0b9d9f0f25041c1137f (match), extracted to a temp folder. All 13 files match its EXPECTED_SHA256.txt.
+- 2026-11-02T03:18:36-05:00 D:\Multiverse_V2\00_design (design master):
+  - Backed up the log, the notes and the four .ots being replaced to D:\CodeData\_TRASH\2026-11-02\v2_design_pre_e41\.
+  - Append-only checks: the old log (90,907 B) = the first 90,907 B of the new log (100,670 B); the old notes (17,477 B) = the first 17,477 B of the new notes (25,484 B).
+  - Placed the new log and notes, the upgraded e38/e39/e40/DE_FREEZE_F2 proofs (Bitcoin attestations present), and the new e41 manifest and proof (pending). The e38/e39/e40/F2 manifests were already identical.
+- 2026-11-02T03:18:36-05:00 Clone: git pull --ff-only (already up to date at 6417483). The repo's log (68,686 B) and notes (12,649 B) are exact prefixes of the new files. Copied repo/ in (README.md at the root, 12 files in v2_design/); all 13 match EXPECTED_SHA256.
+- 2026-11-02T03:18:36-05:00 Verification in v2_design/, all PASS:
+  - Every per-entry manifest e2-e41 on its README prefix: e38 70,982; e39 84,597; e40 90,907; e41 100,670 (full length, with the notes at full length 25,484). The e36 notes line passes on its README prefix of 8,788 B.
+  - DE_FREEZE_F1 (log 55,106 + charter + fenced data) and DE_FREEZE_F2 (log 84,597 + charter + fenced data).
+  - sha256sum -c MULTIVERSE_V2_DESIGN_LOG_e41.sha256: both OK.
+  - The five new .ots files are valid OpenTimestamps proofs whose digests equal their manifests. e38, e39, e40 and F2 carry Bitcoin attestations; e41 is pending.
+- 2026-11-02T03:18:36-05:00 Committed README.md and the 12 v2_design files only: 7a3e00a "v2 design log Entries 38–41 (DE-F2, retrial rules, galaxy side), stamps and upgraded proofs; README log table". Plain push: 6417483..7a3e00a.
+- 2026-11-02T03:18:36-05:00 Remote check (a fresh clone of the GitHub repo, outside the clone):
+  - HEAD 7a3e00a.
+  - Log sha256 78ae289d0a9a555b486d7a0c8951f6c78f38350ffdc19245da1aca83f4aff3f1 and notes 4bb40727575cd0964920857397c93a55bff89b1204ed90bc8785cb37e61479b6, both as briefed.
+  - All 13 files match EXPECTED_SHA256, and sha256sum -c e41 is OK.
+  - D:\Argon_Code\Ropewalk untouched. This log entry is pushed as one more commit.
