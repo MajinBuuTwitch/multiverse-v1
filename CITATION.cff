@@ -5,8 +5,8 @@ authors:
   - family-names: Mandarano
     given-names: Gregory
     affiliation: WickedAI
-version: "6.0.1"
-date-released: "2026-11-02"
+version: "6.0.2"
+date-released: "2026-11-04"
 doi: "10.5281/zenodo.23868218"
 license: [MIT, CC-BY-4.0]
 repository-code: "https://github.com/MajinBuuTwitch/multiverse-v1"

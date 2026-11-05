@@ -2,7 +2,7 @@
 title: "A Pre-Registered Falsification of a Speculative Multiverse Model"
 subtitle: "The Mandarano Model (v1, the 19-strand \"Ropewalk\" formulation) tested against cosmological and galactic data, with a blind independent rebuild, a Bayesian head-to-head against ΛCDM, and blind injection tests"
 author: "Gregory Mandarano (WickedAI)"
-date: "Version 6.0.1 · 2 November 2026"
+date: "Version 6.0.2 · 4 November 2026"
 geometry: margin=1in
 fontsize: 11pt
 mainfont: "DejaVu Serif"
@@ -22,7 +22,7 @@ header-includes:
 ---
 
 \begin{center}
-\fbox{\parbox{0.92\textwidth}{\small\textbf{Status of this document.} This is the public paper for version 1 of the Mandarano Model. DOI: \href{https://doi.org/10.5281/zenodo.23868218}{10.5281/zenodo.23868218} (the complete record: rules, code, frozen results and timestamp proofs). It supersedes, as the readable account, the frozen results report \texttt{MULTIVERSE\_PREDICTIONS\_PAPER\_v4.md} (version 5.0.0, SHA-256 \texttt{a0744ca7\ldots}, frozen in \texttt{RESULTS\_v5.sha256}), which is preserved unchanged as part of the record. Nothing in this paper changes a registered verdict. Section~8 reports the blind injection tests.}}
+\fbox{\parbox{0.92\textwidth}{\small\textbf{Status of this document.} This is the public paper for version 1 of the Mandarano Model. DOI: \href{https://doi.org/10.5281/zenodo.23868218}{10.5281/zenodo.23868218} (the complete record: rules, code, frozen results and timestamp proofs). It supersedes, as the readable account, the frozen results report \texttt{MULTIVERSE\_PREDICTIONS\_PAPER\_v4.md} (version 5.0.0, SHA-256 \texttt{a0744ca7\ldots}, frozen in \texttt{RESULTS\_v5.sha256}), which is preserved unchanged as part of the record. Nothing in this paper changes a registered verdict. Section~8 reports the blind injection tests. Version 6.0.2 corrects one reference: Croker et al.\ (2024) is JCAP 10, 094 (arXiv:2405.12282); version 6.0.1 gave arXiv:2407.03508, the number of an unrelated paper. Nothing else changes.}}
 \end{center}
 
 # Plain summary {.unnumbered}
@@ -339,4 +339,4 @@ Full 64-character hashes appear in the release files.
 
 # References {.unnumbered}
 
-Amendola, L., Rodrigues, D. C., Kumar, S., & Quartin, M. 2024, MNRAS, 528, 2377 · Andrae, R., & El-Badry, K. 2023, A&A, 673, L10 · Bradač, M., et al. 2008, ApJ, 687, 959 · Brout, D., et al. 2022, ApJ, 938, 110 · Chen, L., Huang, Q.-G., & Wang, K. 2019, JCAP, 02, 028 · Chevallier, M., & Polarski, D. 2001, IJMPD, 10, 213 · Cooke, R. J., Pettini, M., & Steidel, C. C. 2018, ApJ, 855, 102 · Croker, K. S., et al. 2024, arXiv:2407.03508 · DESI Collaboration 2025, arXiv:2503.14738 · DESI Collaboration 2026, arXiv:2607.27410 · Farrah, D., et al. 2023, ApJL, 944, L31 (arXiv:2302.07878) · Lelli, F., McGaugh, S. S., & Schombert, J. M. 2016, AJ, 152, 157 · Linder, E. V. 2003, PRL, 90, 091301 · McGaugh, S. S., Lelli, F., & Schombert, J. M. 2016, PRL, 117, 201101 · Planck Collaboration 2020, A&A, 641, A6 · Popovic, B., et al. 2025 (DES-SN5YR Dovekie) · Riess, A. G., et al. 2022, ApJ, 934, L7 · Rodriguez, C. L. 2023, ApJL (arXiv:2302.12386) · Schöneberg, N. 2024, JCAP, 06, 006 · Skilling, J. 2006, Bayesian Analysis, 1, 833 · Speagle, J. S. 2020, MNRAS, 493, 3132 (dynesty) · van Dokkum, P., et al. 2018, Nature, 555, 629 · Wittman, D., Golovich, N., & Dawson, W. A. 2018, ApJ, 869, 104. The full cluster-source reference list is in the frozen results report.
+Amendola, L., Rodrigues, D. C., Kumar, S., & Quartin, M. 2024, MNRAS, 528, 2377 · Andrae, R., & El-Badry, K. 2023, A&A, 673, L10 · Bradač, M., et al. 2008, ApJ, 687, 959 · Brout, D., et al. 2022, ApJ, 938, 110 · Chen, L., Huang, Q.-G., & Wang, K. 2019, JCAP, 02, 028 · Chevallier, M., & Polarski, D. 2001, IJMPD, 10, 213 · Cooke, R. J., Pettini, M., & Steidel, C. C. 2018, ApJ, 855, 102 · Croker, K. S., et al. 2024, JCAP, 10, 094 (arXiv:2405.12282) · DESI Collaboration 2025, arXiv:2503.14738 · DESI Collaboration 2026, arXiv:2607.27410 · Farrah, D., et al. 2023, ApJL, 944, L31 (arXiv:2302.07878) · Lelli, F., McGaugh, S. S., & Schombert, J. M. 2016, AJ, 152, 157 · Linder, E. V. 2003, PRL, 90, 091301 · McGaugh, S. S., Lelli, F., & Schombert, J. M. 2016, PRL, 117, 201101 · Planck Collaboration 2020, A&A, 641, A6 · Popovic, B., et al. 2025 (DES-SN5YR Dovekie) · Riess, A. G., et al. 2022, ApJ, 934, L7 · Rodriguez, C. L. 2023, ApJL (arXiv:2302.12386) · Schöneberg, N. 2024, JCAP, 06, 006 · Skilling, J. 2006, Bayesian Analysis, 1, 833 · Speagle, J. S. 2020, MNRAS, 493, 3132 (dynesty) · van Dokkum, P., et al. 2018, Nature, 555, 629 · Wittman, D., Golovich, N., & Dawson, W. A. 2018, ApJ, 869, 104. The full cluster-source reference list is in the frozen results report.
