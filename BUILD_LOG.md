@@ -83,3 +83,40 @@ Builder: Claude Code (claude-opus-5-5). Sources (read-only): D:\Argon_Code\Ropew
 - 2026-11-05T17:27:26-05:00 Committed those three files only: c1e763c "Paper v6.0.2: correct the Croker et al. 2024 reference (JCAP 10, 094; arXiv:2405.12282); CITATION 6.0.2". Plain push: 679562b..c1e763c.
 - 2026-11-05T17:27:26-05:00 Remote check (raw files at c1e763c91f21f0d8eb727b8499f238f42ced2c6a): the .md is 4e1f9661... and the .pdf is 3a9065b1...; both match. CITATION.cff reads version "6.0.2", date-released "2026-11-04".
 - 2026-11-05T17:27:26-05:00 Drive release copy (MULTIVERSE_PUBLIC_RELEASE/MULTIVERSE_V1_PAPER.pdf): it was 940238283d..., 139,210 B, as briefed. Backed up to D:\CodeData\_TRASH\2026-11-04\paper_6.0.1\MULTIVERSE_V1_PAPER.pdf (hash checked), then overwritten in place with the new PDF, same name; the local copy hashes 3a9065b1.... Drive for desktop synced: the same Drive file (id and created time unchanged, so the share link is the same) now shows 139,455 B, modified 2026-11-05T22:27:17Z. No other file in the folder was touched. This log entry is pushed as one more commit.
+
+## V2 design records: Entries 42-47 and the frozen v2 spec (SPEC_FREEZE_v1)
+- 2026-11-05T22:58:44-05:00 Gregory's records push (records only: no computation, no GitHub release, no Zenodo version; no frozen file's bytes changed). Entries 42-45 were appended and stamped on 2026-11-04, and Entries 46-47 and the spec freeze (Stage 2.4) on 2026-11-05, in D:\Multiverse_V2\00_design.
+- 2026-11-05T22:58:44-05:00 Proof backups, in D:\Multiverse_V2\_ots_backup_2026-11-05\ (its own folder, outside 00_design), all hash-checked:
+  - The eight .ots before the upgrade: e41, e42, e43, e44, e45, e46, e47, SPEC_FREEZE_v1.
+  - old_bak\: the four old .ots.bak files for e42, e43, e44 and e45 were moved out of 00_design, so ots upgrade could write fresh ones.
+  - repo_stale_pending\: the clone's uncommitted pending copies of the e46, e47 and SPEC_FREEZE_v1 .ots were moved there and replaced by the upgraded proofs. They are identical to the 1a backups.
+- 2026-11-05T22:58:44-05:00 ots upgrade on the eight proofs. Each proof's digest equals the SHA-256 of its .sha256 manifest. Bitcoin attestations:
+
+  | Proof | Bitcoin block | Changed in this upgrade |
+  |:--|:--|:--|
+  | e41 | 974236, 974257, 974272 | yes (was pending) |
+  | e42 | 974492 | no |
+  | e43 | 974492 | no |
+  | e44 | 974503, 974530 | no |
+  | e45 | 974503, 974530 | no |
+  | e46 | 974730 | yes |
+  | e47 | 974730 | yes |
+  | SPEC_FREEZE_v1 | 974730 | yes |
+
+  - The catallaxy calendar's second attestation for e46, e47 and SPEC_FREEZE_v1 is still pending. A later upgrade can add it; no re-push is needed for that now.
+  - The four new .bak files ots wrote (e41, e46, e47, SPEC_FREEZE_v1) stay in 00_design and are not committed.
+- 2026-11-05T22:58:44-05:00 Drive (MULTIVERSE_REPORTS/V2_MODEL): the planning chat renamed the old 440 B pending freeze proof to MULTIVERSE_V2_SPEC_FREEZE_v1_PENDING_SUPERSEDED.sha256.ots, and the sync was checked. The upgraded MULTIVERSE_V2_SPEC_FREEZE_v1.sha256.ots (1,265 B, ddef7e05763f8c503e1dec9ac3a2f8b9fa33c7ea0da64dee0b059415355f92a0) was then written as a new file and its hash checked. Nothing on Drive was overwritten. The other seven proofs were never on Drive.
+- 2026-11-05T22:58:44-05:00 Checks in 00_design, all PASS:
+  - The log is 163,041 B, be03c6b29d3a67505d9f6215a342d2ad32d62283290418c1e9b5257776210392.
+  - The spec is 92,575 B, 293218ef4fa0c1e58e495ffe2d7633d9e12bf065f6910866690dba80d6072d87.
+  - The SPEC_FREEZE_v1 manifest is c32cf366374308fe90f49d7391cfe91b750fd6f9832da69e48439822d993eca7, and sha256sum -c on it passes both lines.
+  - Each eN manifest on its prefix: e42 107,542; e43 113,641; e44 122,088; e45 133,559; e46 140,809 (67344018f13c67147c66254c737bcefcdd12121ff1f7b93f161c99eee833e089); e47 163,041 (full length).
+  - MULTIVERSE_V2_PAPER_NOTES.txt is unchanged (25,484 B, identical to the repo's), so it was not included.
+- 2026-11-05T22:58:44-05:00 Clone: git pull --ff-only (already up to date at 30d81a2). The repo's log (100,670 B, e41 value 78ae289d...f3f1) is an exact prefix of the new log. Copied in the log, the spec, the e42-e47 .sha256 and .ots, the SPEC_FREEZE_v1 .sha256 and .ots, and the upgraded e41 .ots; each is identical to 00_design. README: the e42-e47 lengths, a SPEC_FREEZE_v1 row, the newest-manifests sentence, and the frozen spec in the v2_design/ row.
+- 2026-11-05T22:58:44-05:00 Committed README.md and those 17 v2_design files only (no .bak): 423c9d8 "v2 design log Entries 42–47, frozen v2 spec (SPEC_FREEZE_v1), stamps and upgraded proofs; README log table". Plain push: 30d81a2..423c9d8.
+- 2026-11-05T22:58:44-05:00 Remote check (a fresh clone of the GitHub repo, outside the clone), all PASS:
+  - HEAD 423c9d8.
+  - All 17 pushed v2_design files and README.md match their sources by SHA-256.
+  - sha256sum -c MULTIVERSE_V2_SPEC_FREEZE_v1.sha256: both OK.
+  - The first 100,670 B of the remote log equal the log at 30d81a2, and every e42-e47 manifest passes on its prefix.
+  - D:\Argon_Code\Ropewalk untouched. This log entry is pushed as one more commit.
