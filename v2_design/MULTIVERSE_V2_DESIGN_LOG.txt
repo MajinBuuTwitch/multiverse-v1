@@ -1770,3 +1770,140 @@ transcription (205–207); r3 revised D14 (208, 209); r4 applied the Grok audit 
     unchanged: nothing moves out of Bucket 3. v2's dial count is unchanged by this
     entry (the 20 and 50 kpc radii in D13(c) are fixed modelling inputs, not sampled, and are disclosed as choices),
     and CCBH keeps its four sampled parameters.
+
+------------------------------------------------------------------------------------------
+ENTRY 48 · 2026-11-05 · Gregory Mandarano (decisions); planner (Claude Opus 5.5) and Gemini 4 Argon (checks) ·
+T4b INSIDE T-d1 (G5); CCBH's LOW-REDSHIFT STAR-FORMATION CURVE CORRECTED (G6); POWER-CHECK TIMING · NOTHING RUN
+------------------------------------------------------------------------------------------
+PURPOSE: Drafting the Stage 4 rulebook found two things the frozen spec (SPEC_FREEZE_v1, Bitcoin block 974730) can't
+settle by rulebook alone, since the rulebook may not change the model or a pass line (rulebook R0). (1) Spec §5.3
+lists the T4b merger table under the deciding test T-d1 without saying whether its score can sink v2. (2) The CCBH
+comparison model's star-formation curve below z = 4 was transcribed as Madau & Dickinson 2014, but the published
+model uses Madau & Fragos 2017 (planner error C33, found by Argon in 240 and confirmed by the planner in 242). This
+entry also confirms how spec §6.7's power-check timing reads beside D7, so no reader can find a conflict. Worked out
+in threads 238–247. As of this entry no v2 model output exists, and no T-d quantity has been computed.
+APPROVAL: Gregory approved G5 and G6 on 2026-11-05 ("yes to everything you both agree on", thread 243), each on the
+joint recommendation of the planner and Argon, and the planner's leans on the T4b scoring rule and the shared merger
+table the same day ("i agree with your leans. move forward", thread 248). He approved this entry as written,
+revision 2, on 2026-11-06 (thread 256), after Argon checked r1 line by line (249) and confirmed r2's hashes and
+changes, including the either-FAIL rule and the strict headline (254), and a blind third-family audit (Grok) of r2,
+spec REV1 and Rulebook Draft 3 found no blocking items (8 NOTEs; thread 253). Revisions: r1 (248); r2 applied
+Argon's 249 and the planner's error C35 (250).
+
+1. G5 · THE T4b CLAUSE IS PART OF T-d1'S VERDICT (spec §5.3).
+   (a) Input. Both pipelines score the clause on two shared, hashed tables, side by side (rulebook R2.5):
+       the LENIENT table, v1 primary's 16-merger ropewalk/data/MERGERS.csv (3,593 B; SHA-256
+       71898466b798c8ba442aa88b7e3ceb326c07720c295ebaded4d47c99a60d3f67; hashed in v1's RESULTS_v1–v5 manifests),
+       and the STRICT table, v1 rebuild's t4b_extraction/t4b_positions_rebuild.json (SHA-256
+       755f30abf4535daef210936e0942b59fda4141dd60bc3a56fd0a309fd0d8c427; spec §7.1). v1 itself documented the
+       difference (v1 DEVIATIONS.md D2; COMPARISON_ARGON_vs_REBUILD.md Finding 2): 14 of the lenient table's 16 rows
+       rest on default errors or figure-read offsets that their designated papers don't tabulate with 1σ errors,
+       and v1 wrote that "any public claim based on '13 classifiable clusters' depends on Argon's lenient inputs
+       and should not be made". Under the strict rule only #13 MACS J0025.4-1222 (with the galaxies, resting on
+       Bradač et al. 2008's "galaxies" row) and #16 ZwCl 0008.8+5215 (unresolved) are complete. Each row of
+       either table is scored on its primary subcluster, as in v1; secondaries are reported, never counted. Where
+       the lenient table gives σ_S = 0 (rows 4 Abell 1758N, 5 Abell 2034, 8 Abell 3376: the BCG position was
+       published without an error), a nominal BCG astrometric error σ_S = 5 kpc is used instead, fixed here before
+       any v2 computation. v1's missing-uncertainty rule is otherwise unchanged: a row lacking any position or
+       uncertainty is excluded.
+       Why both tables, shared: v1's two builds read the source papers differently, and that difference, not the
+       physics, would otherwise decide whether the clause can run. Sharing both fixes the inputs (rulebook R8.1
+       requires one agreed count per table before the lock), and reporting both keeps any claim from resting on
+       the lenient numbers alone.
+   (b) Classification (v1's metric, unchanged): with Δd = d_IG − d_IS and σ_diff = √(σ_I² + σ_G² + σ_S²), the
+       quadrature sum of all three as v1 registered it (PREREG §5.5, clusters_t4.py and every row of MERGERS.csv;
+       r1 had a stray /2, planner error C35, caught by Argon in 249), a cluster is "dark mass with the galaxies"
+       if Δd > 2σ_diff, "dark mass with the gas" if Δd < −2σ_diff, and unresolved otherwise.
+   (c) No split and no clause 1(a). v2's prediction ("dark mass with the galaxies" for every merger, at any age) has
+       no fitted parameter, so v1's training/test split, and v1 PREREG §5.5's rule that n_train = 0 forces FAIL
+       (clause 1(a)), do not apply. They existed because v1 fitted a lag on the training half.
+   (d) The clause's outcomes, computed on each table. With N_gal and N_gas the counts of the two classes and
+       N_class = N_gal + N_gas:
+         INCONCLUSIVE  if N_class < 6 (v1's minimum sample);
+         FAIL          if N_gas ≥ k_fail;
+         PASS          if N_gas = 0 and N_class ≥ 6;
+         TENSION       otherwise.
+       k_fail is the smallest integer, at least 1, that keeps the clause's false-sink rate at or below 10% on v2-true
+       fake universes (rulebook R8.2), fixed before the lock. Unresolved clusters are reported and never count
+       against v2: only a cluster that clearly shows dark mass on the gas can sink it, so thin data can't.
+       The clause returns FAIL if either table returns FAIL (the more cautious reading, in the spirit of G7);
+       otherwise it reports both outcomes, and its headline outcome is the strict table's, so no claim rests on the
+       lenient numbers alone.
+   (e) T-d1's verdict combines its two parts: FAIL if either the κ̄ ratio test or the T4b clause returns FAIL;
+       otherwise TENSION if either returns TENSION; otherwise PASS. An INCONCLUSIVE T4b clause never sinks v2 and is
+       reported in full.
+   (f) Disclosure (in the manner of T-g's, spec §5.1). On Bucket 1 the lenient table classifies 13 of the 16
+       primary subclusters "with the galaxies", none "with the gas", and 3 unresolved (#4, #8, #16; secondaries: 15,
+       0 and 1); the strict table has N_class = 1 (or 0) and returns INCONCLUSIVE. The nominal σ_S changes no class
+       (all 16 rows checked by Argon, 249; e.g. #5, Δd = 181.5 kpc against 2σ_diff = 145.1 kpc). So the clause
+       can't fail v2 on design data. It also can't separate v2 from ΛCDM, which makes the same prediction.
+       Its rival is "dark mass with the gas", which none of the four compared models predicts. It guards against a
+       gross v2 failure. The κ̄ ratio is T-d1's discriminating part: it depends on (R_core, a₀) across the prior box
+       (Argon, 246: a large R_core dilutes the cloud inside the BCG aperture while the plasma's MOND boost grows), and
+       it can't go INCONCLUSIVE for lack of data. Larger collision samples exist (Harvey et al. 2015, Science 347,
+       1462; arXiv:1503.07675; 72 collisions; dark mass within 5.8 ± 8.2 kpc of the stars). They are not added to
+       Bucket 1: they would confirm a prediction v2 shares with ΛCDM, so they wouldn't sharpen the test of v2.
+       Abell 520 (#9, "the Train Wreck"), checked against its papers by Argon (249): v1's primary and secondary
+       subclusters are the two colliding galaxy groups, P4 (south-west) and P2 (north-east) of Jee et al. 2014 (ApJ
+       783, 78), whose lensing peaks sit on their galaxies. The disputed "dark core" P3/P3' lies between them, near
+       the X-ray gas, with almost no light (M/L_R = 813 ± 78 in Jee et al. 2014) and no galaxy group of its own;
+       Clowe et al. 2012 (ApJ 758, 128) did not detect it. v1 registered it as sensitivity runs (S4, the core in
+       place of P4: "with the gas"; S5, Clowe et al. 2012: "with the galaxies"), reported beside the clause and never
+       deciding, as in v1. Stated plainly: if that core is real, it is dark mass away from the galaxies, which v2's
+       "dark mass with the galaxies" does not explain. Since the metric scores galaxy subclusters, the core has none,
+       and the detection is disputed, it is reported, not scored.
+
+2. G6 · CCBH's STAR-FORMATION CURVE BELOW z = 4 IS MADAU & FRAGOS 2017 (amends Entry 47 D15; spec §2.10).
+   (a) The finding. Croker et al. 2024 (arXiv:2405.12282v3, main.tex line 294) write "the standard Madau & Dickinson
+       \cite{MadauDickinson2014, madaufragos2017} SFRD", which the spec read as Madau & Dickinson 2014. Their Fig. 1
+       was drawn with Madau & Fragos 2017. The figure's vector paths (pidgeon-crop.pdf, SHA-256 8c568c28…426), turned
+       back into the star-formation rate behind them (Ξψ = H a⁴ dρ_DE/da at k = 3), match the 2017 formula to 0.3%
+       (solid curve) and 0.5% (dashed). The 2014 formula is off by up to 18%. The paper's "required factor ∼ 2"
+       (line 295) also fits: the 2017 curve needs 2.217 to meet the Trinca table at z = 4, against 1.647 for the 2014
+       one. Found by Argon (240), confirmed independently by the planner (242). Planner error C33: Entry 47 D15 and
+       spec §2.10 took the curve from the sentence without checking the figure.
+   (b) The fix. Below z = 4, CCBH's "Trinca ψ" uses Madau & Fragos 2017 (ApJ 840, 39; doi:10.3847/1538-4357/aa6af9;
+       arXiv:1606.07887v2, Eq. 1),
+         ψ(z) = 0.01 (1 + z)^2.6 / {1 + [(1 + z)/3.2]^6.2} M☉ yr⁻¹ Mpc⁻³,
+       scaled by the single factor that makes it equal the Trinca table at z = 4. This applies in the deciding fits,
+       the reproduction gate and every companion. The "Madau ψ" companion is Madau & Fragos 2017 unscaled at all z,
+       matching the paper's dashed curve. Citation checks: the formula is read from the e-print source (planner and
+       Argon); the journal reference and DOI come from the publisher's Crossref record (Argon, 246) and arXiv's
+       record (planner). The e-print joins Bucket 1's model ingredients, hashed (arXiv:1606.07887v2 source, 76,486 B,
+       SHA-256 c2516c305004dd106aebaadf1ccccf35a35a6d89f853d15feb27b78e1cecba40).
+   (c) Unchanged. v2's own star-formation shape S(a) stays Madau & Dickinson 2014 (spec §2.3). That is v2's model
+       choice, not a transcription of CCBH. The reproduction gate's tolerance stays at 2% of today's ρ_DE (rulebook
+       R4.3(i)). Loosening it would have let a model that isn't the published one pass, and the same curve would then
+       have entered the deciding fits.
+
+3. POWER-CHECK TIMING (spec §6.7 read with D7, spec §7.3). Spec §6.7 says the power check runs "before the lock";
+   D7 (Entry 46 §3) runs the dark-energy fake universes only after the shape check, because v2-true dark-energy fakes
+   need the winning option and a viable setting. Both hold as follows. Before the lock, the power check runs for every
+   pillar that doesn't need the shape check: the galaxy and cluster tests (T-d1 with its T4b clause, T-e, the SPARC
+   test) and T-g. After the lock and the shape check, in D7's order, it runs for the dark-energy pillar (the
+   evidence sink line and the a₀ cross-check), with its thresholds, its fake-universe recipe and its consequence
+   (EXPLORATORY if it fails) all fixed before the lock. So that outcome is automatic, not a choice. §6.7's "before
+   the lock" is read this way; nothing else in §6.7 changes.
+
+4. RULEBOOK DECISIONS RECORDED HERE FOR COMPLETENESS (rulebook only; no spec change): G3, the SPARC pass line
+   (paired per-galaxy comparison with the RAR on the held-out galaxies, bootstrap 95% interval, free-a₀ route; 243);
+   G7, an unexplained split between the two pipelines on a deciding test counts as FAIL (both recommended, 246–247);
+   cloud-first compute (Gregory, 247); the due-diligence rule (Gregory, 243): every deciding test gets an outcome
+   map before the lock, and any route to INCONCLUSIVE from thin data is remedied or registered EXPLORATORY in
+   advance (rulebook R8.0).
+
+5. THE SPEC REVISION. Spec revision 1 (MULTIVERSE_V2_SPEC_REV1.txt) applies §§1–3 to the frozen spec. It doesn't edit
+   MULTIVERSE_V2_SPEC.txt, which stays frozen and stamped (spec §0.2). REV1 changes only:
+   §2.10 (ψ below z = 4; "Madau ψ"), §5.3 (the T4b clause, its verdict rule and disclosure), §6.7 (the timing
+   sentence), §7.1 (Madau & Fragos 2017 and MERGERS.csv among Bucket 1's inputs), the header, §0.4 and Appendices B
+   and C. It is frozen and stamped with this entry (SPEC_FREEZE_v2: REV1 plus the design log through Entry 48).
+
+6. AUDIT. This entry changes a deciding rule (T-d1) and a compared model (CCBH), so it is one of the agreed
+   third-family audit points (threads 181, 183). To save a round, the blind pass reviews Entry 48, spec REV1's
+   changes and Rulebook Draft 3 together, before any of them is stamped. The items to attack hardest are §1(d)–(f)
+   and §2.
+
+7. UNCHANGED: Entries 1–47, apart from the amendment to Entry 47 D15 in §2. Entry 40's buckets and ratchet are
+   unchanged: nothing leaves Bucket 3, and the two additions to Bucket 1 are a published model ingredient and v1's
+   own derived table, both from outside the fence. v2's dial count is unchanged (σ_S = 5 kpc and k_fail are fixed
+   inputs, not sampled), and CCBH keeps its four sampled parameters.
