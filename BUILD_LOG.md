@@ -120,3 +120,54 @@ Builder: Claude Code (claude-opus-5-5). Sources (read-only): D:\Argon_Code\Ropew
   - sha256sum -c MULTIVERSE_V2_SPEC_FREEZE_v1.sha256: both OK.
   - The first 100,670 B of the remote log equal the log at 30d81a2, and every e42-e47 manifest passes on its prefix.
   - D:\Argon_Code\Ropewalk untouched. This log entry is pushed as one more commit.
+
+## V2 design records: Entry 48 and spec revision 1 (SPEC_FREEZE_v2)
+- 2026-11-06T00:52:27-05:00 Gregory's records push (records only: no computation, no GitHub release, no Zenodo version; no frozen file's bytes changed). Gregory approved Entry 48 as written (revision 2, final text) on 2026-11-06.
+- 2026-11-06T00:52:27-05:00 Fetched by name, read-only, from Drive MULTIVERSE_REPORTS/V2_MODEL/MULTIVERSE_V2_DISCUSSION into D:\Multiverse_V2\00_design\_incoming_2026-11-06\. All match their bytes and SHA-256:
+  - ENTRY48_FINAL.txt 13,241 B 3f36e1beb7a9922d67a24b4240623fcf23609e20a8652140c7f3ae621680a96a
+  - MULTIVERSE_V2_SPEC_REV1.patch 14,352 B 4857d05a67cb3d8d83e7ca478b5474809a5b75ddc16d59d3c97c5bab12c2a1af
+  - MULTIVERSE_V2_SPEC_REV1_r1_to_r2.patch 6,212 B f80c0165828f1417d6f8b6baa1b14968dc5ec108282efc9e9d6d0c4bac83d70c
+  - MULTIVERSE_V2_RULEBOOK_DRAFT2.txt 63,426 B 1082a5dc491bfb9a1c2440b907bf81e681290cc18205d2642371040dfe840419
+  - RULEBOOK_DRAFT2_TO_3.patch 13,213 B b0cb4871b100c2bc0bbaf663915abe1b3a01f1ca94bcf1e98ff6efc440aa4b54
+- 2026-11-06T00:52:27-05:00 Checks in 00_design before any change, all PASS:
+  - The log is 163,041 B, be03c6b2...76210392; its last entry was Entry 47, with no Entry 48.
+  - The spec is 92,575 B, 293218ef...2d87.
+  - The SPEC_FREEZE_v1 manifest is c32cf366...eca7, and sha256sum -c passes both lines.
+- 2026-11-06T00:52:27-05:00 Patch builds (GNU patch 2.7.6, --binary, on copies in _incoming_2026-11-06\build\), all as expected:
+  - r1.txt 96,800 B a01e1b306d74cdff4d61836cec1c740218097c882b1702fdc3e2c4f1d3a6287d
+  - MULTIVERSE_V2_SPEC_REV1.txt 97,499 B 8d7eeb11a03cf5f8e38276a569cfe76dffab731765f4fa94fd1201503e887680
+  - MULTIVERSE_V2_RULEBOOK_DRAFT3.txt 65,308 B d3b464dd6c071fbc9b9877046cb8b8e3a8c9204634125e7b143abae137cf31ba
+  - REV1 and Draft 3 were placed in 00_design as new files. The frozen MULTIVERSE_V2_SPEC.txt is unchanged.
+- 2026-11-06T00:52:27-05:00 Entry 48 appended as one blank line, then ENTRY48_FINAL.txt exactly (UTF-8, LF, the same spacing as earlier entries). All checks PASS:
+  - The first 163,041 B still hash to be03c6b2...76210392.
+  - The appended block (bytes 163,043-176,283) hashes to 3f36e1be...80a96a.
+  - Entry 48 is at lines 1774-1909.
+  - L_48 = 176,283 B; e48 = 932247f1a9349de166abe538ff8ed999df548e2576b6b9a03b2619e25680978e.
+- 2026-11-06T00:52:27-05:00 MULTIVERSE_V2_SPEC_FREEZE_v2.sha256 (a539e0f07a1f77f0bb03a6c000dad2296478060fa78545204d583aacd9a7450a) has the same format and line order as v1. sha256sum -c passes both lines:
+  - `8d7eeb11a03cf5f8e38276a569cfe76dffab731765f4fa94fd1201503e887680  MULTIVERSE_V2_SPEC_REV1.txt`
+  - `932247f1a9349de166abe538ff8ed999df548e2576b6b9a03b2619e25680978e  MULTIVERSE_V2_DESIGN_LOG.txt`
+- 2026-11-06T00:52:27-05:00 Stamped with OpenTimestamps (bob and catallaxy calendars). Each proof's digest equals the SHA-256 of its manifest:
+
+  | Proof | Bitcoin block |
+  |:--|:--|
+  | e48 | pending |
+  | SPEC_FREEZE_v2 | pending |
+
+  Both are pushed pending, as e41 was; a later records push upgrades them. The catallaxy attestation for e46, e47 and SPEC_FREEZE_v1 is also still pending (bob confirmed them in block 974730).
+- 2026-11-06T00:52:27-05:00 The v1 freeze manifest after the append: MULTIVERSE_V2_SPEC_FREEZE_v1.sha256's log line covers the log as it stood at Entry 47 (163,041 B). So plain sha256sum -c on it now reports the spec line OK and the log line FAILED. That is expected for an append-only log, not tampering.
+  - Check it from now on this way: the spec line by sha256sum, and the log line against `head -c 163041 MULTIVERSE_V2_DESIGN_LOG.txt`. Both pass.
+  - The v1 manifest is unchanged. The README says the same, and its v1 table row now reads "163,041 (log prefix) and 92,575 (spec in full)".
+- 2026-11-06T00:52:27-05:00 Drive (MULTIVERSE_REPORTS/V2_MODEL):
+  - New files: MULTIVERSE_V2_SPEC_REV1.txt, MULTIVERSE_V2_SPEC_FREEZE_v2.sha256 and .ots, MULTIVERSE_V2_RULEBOOK_DRAFT3.txt, and MULTIVERSE_V2_STAMP_REPORT_e48_FREEZE_v2_2026-11-06.txt. Each matches 00_design by SHA-256.
+  - MULTIVERSE_V2_DESIGN_LOG.txt was refreshed under the same name, as in earlier pushes: 176,283 B, hash equal to e48.
+  - Nothing was written into MULTIVERSE_V2_DISCUSSION.
+- 2026-11-06T00:52:27-05:00 Clone: git pull --ff-only (already up to date at 588dffd). The repo's log (163,041 B) is an exact prefix of the new log.
+  - Copied in the log, MULTIVERSE_V2_SPEC_REV1.txt, the e48 .sha256 and .ots, and the SPEC_FREEZE_v2 .sha256 and .ots. MULTIVERSE_V2_SPEC.txt and the v1 freeze files are unchanged.
+  - Rulebook Draft 3 is not on GitHub: only the locked rulebook goes public (rulebook R0.2).
+- 2026-11-06T00:52:27-05:00 Committed README.md and those 6 v2_design files only (no .bak): ffa83f4 "v2 design log Entry 48, spec revision 1 (SPEC_FREEZE_v2), stamps; README log table". Plain push: 588dffd..ffa83f4.
+- 2026-11-06T00:52:27-05:00 Remote check (a fresh clone of the GitHub repo, outside the clone), all PASS:
+  - HEAD ffa83f4.
+  - The 6 pushed v2_design files, the unchanged spec and v1 freeze files, and README.md all match by SHA-256.
+  - sha256sum -c MULTIVERSE_V2_SPEC_FREEZE_v2.sha256: both OK. The v1 freeze manifest passes the step 6 check.
+  - The first 163,041 B of the remote log equal the log at 588dffd, and every e42-e48 manifest passes on its prefix. No rulebook draft is in the repo.
+  - D:\Argon_Code\Ropewalk untouched. This log entry is pushed as one more commit.
