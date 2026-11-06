@@ -1090,3 +1090,683 @@ notes are added in items 4, 6 and 8.
 
 STATUS: DE-F2 (Entry 39) unchanged. The galaxy side (B1) is designed except for the value of R_core, which is set at
 the first allowed fit. Design work continues with the matter shares (B2).
+
+------------------------------------------------------------------------------------------
+ENTRY 42 · 2026-11-03 · Gregory Mandarano (decision); planner (Claude Opus 5.5) and Gemini 4 Argon (checks) ·
+B2 THE MATTER SHARES: MEASURED TODAY, DRIFT PREDICTED · NOTHING RUN
+------------------------------------------------------------------------------------------
+PURPOSE: Closes design item B2 (charter targets T-a, T-b) and fixes how Entry 40 §5's "dark energy tested twice"
+works under it. Worked out in the shared thread, files 088–095. Changes nothing in DE-F2 (Entry 39) or the galaxy
+side (Entry 41). As of this entry no v2 model output exists.
+APPROVAL: Gregory approved this entry as drafted (thread 096, §8 added in 099), after Argon's line-by-line checks
+(threads 097 and 100), on 2026-11-04.
+Naming: this entry's options are called B2-1 to B2-4, so they can't be confused with the shape check's start
+options (Options 3 → 1 → 2, Entries 22 and 27).
+
+1. THE DECISION (Gregory): B2-2, MEASURED TODAY, DRIFT PREDICTED.
+   - Today's shares (Ω_bc,0, ω_b) are fitted as standard free parameters, as in ΛCDM, CPL and CCBH. v2 makes no
+     claim on the static dark-to-ordinary ratio (T-a).
+   - v2's claim on T-b is the drift DE-F2 already predicts, with zero new dials. Ordinary matter is conserved
+     (ρ_b a³ = ρ_b,0), and comoving dark matter follows Entry 39 §4:
+       Ω_dm(a) a³ = Ω_dm,0 + ∫_a^1 a'³ [κ S(a') P(a') − 3γ_u Ω_T(a')] / E(a') d ln a'
+     so the ratio 𝓡(a) = Ω_dm(a) a³ / Ω_b,0 falls slightly from recombination to the dark-energy peak, reaches its
+     minimum at the peak, and rises slightly after it. Its largest fractional swing equals f_dm,excur, which V4
+     already caps below 0.05.
+   - v2 declines to replace v1's one-in-nineteen with a number chosen after seeing the data (charter R5).
+
+2. WHY NOT THE OTHER OPTIONS:
+   - B2-1, no share claim: leaves Entry 40 §5's second dark-energy run with nothing to test.
+   - B2-3, derived from the rope: nothing in Entries 1–41 fixes the ratio without a dial (Entry 41 §9's rope has no
+     share rule), and any rule written now is aimed at a known target (Planck 5.36 ± 0.065), so it can't count as
+     blind evidence (R5). It stays open only under the advance criterion in §3.
+   - B2-4, a new count (e.g. 1/20): barred by charter R5 and Entry 41 §2.
+
+3. ADVANCE CRITERION IF A ROPE RULE (B2-3) IS EVER PROPOSED: Gregory states the rule in words before its number is
+   worked out, and the criterion below applies as written here.
+   - Hit: the implied Ω_b and 𝓡 lie within 2.0σ of Planck (Ω_b = 0.04930 ± 0.00086; 𝓡 = 5.36 ± 0.065), AND imposing
+     the rule in Run 2 does not reach ln B(v2 vs ΛCDM) ≤ −5.0.
+   - Miss: otherwise.
+   - A hit on design data can only mean "Round 1 survived" (Entry 40 §3), never evidence for v2.
+
+4. DARK ENERGY TESTED TWICE, AS IT WORKS UNDER B2-2 (fulfils Entry 40 §5 and the follow-up's FU8_03):
+   RUN 2 · DECIDING: the full DE-F2 model. The compressed CMB prior (R, ℓ_A, 100ω_b) and the sound horizon r_s(z*)
+     are evaluated with the recombination-era comoving share Ω_dm(a*) a*³ from §1. BAO and supernovae see Ω_dm(a)
+     through E(a). Run 2 is:
+       - the only run that carries the Round 1 sink line, ln B(v2 vs ΛCDM) ≤ −5.0 (Entry 40 §3);
+       - the only v2 run whose posterior predictions are locked at Stage 5.7 and scored in Round 2;
+       - the run on which Stage 4.4's v2-true pass criteria are evaluated.
+   RUN 1-PINNED · REGISTERED DIAGNOSTIC: identical to Run 2, except the CMB prior and r_s(z*) use today's share
+     Ω_bc,0, "the way the others get it". Reported beside Run 2 in Round 1. It never carries the sink line. Its
+     construction is deliberately mixed (the background carries the drift, the CMB is told there is none), so it is
+     a diagnostic, not a physical model.
+   RUN 1-FREE · CONDITIONAL TIE-BREAKER: Run 1 with one extra parameter, the early-share shift
+     δ_dm ≡ [Ω_dm(a*) a*³ − Ω_dm,0] / Ω_dm,0, prior uniform on [−0.05, +0.05] (bound taken from V4's 5% cap),
+     checked at half and double width under Entry 33. It is a diagnostic parameter, not a v2 dial, and doesn't count
+     in the knob budget (R1). It runs only in case C below.
+   INTERPRETATION (each supernova compilation scored separately; the cross-compilation rule is fixed in the
+   rulebook, Stage 4.1):
+     A. Run 2 survives: v2 survives Round 1. Run 1-pinned reported beside it. Run 1-free does not run.
+     B. Run 2 sinks, Run 1-pinned survives: v2 sinks. Reported as "the dark-energy curve held; the predicted drift
+        sank v2". Run 1-free does not run.
+     C. Run 2 and Run 1-pinned both sink: v2 sinks. Run 1-free runs as a post-mortem:
+          - Run 1-free sinks: "the dark-energy curve failed".
+          - Run 1-free survives: "ambiguous: a real drift unlike v2's, or a bad curve rescued by the free share",
+            reported with its Δχ²_min and fitted δ_dm.
+
+5. WHY THE FREE VERSION IS NOT THE MAIN DIAGNOSTIC [algebra; thread 095 §1.3]. With the compressed prior, H₀
+   cancels out of R. A wrong late-time curve shifts D_M(z*) by Δ_DE, and a free δ_dm with h can zero that shift in
+   both R and ℓ_A (δ_dm = −2.38 Δ_DE, δln h = +1.00 Δ_DE; up to |Δ_DE| ≈ 2.1% inside the prior), leaving only the BAO
+   and supernova shape to catch it. Pinned can't absorb it in R. So the free version can let a bad curve look fine,
+   the failure Entry 40 §5 exists to prevent, run the other way. Pinned's own bias is read only when Run 2 sinks; in
+   a v2-true sky Run 2 survives, so that bias matters only if the sky has a drift unlike v2's.
+
+6. SENSITIVITY, ANALYTIC ESTIMATES ONLY [algebra; threads 092 §3b and 095 §1.2; properties of the CMB prior, not v2
+   outputs]: about 1.6σ in R per 1% recombination-to-today drift at fixed D_M(z*); about 1.6–2.3σ per 1% after
+   profiling over Ω_m,0 and h. The Stage 4.3 power check (master plan A6) replaces these with fake-universe results.
+
+7. UNCHANGED: DE-F2 and its V1–V4 (Entry 39); the shape-check cascade (Entries 22, 27); the galaxy side (Entry 41);
+   the Round 1 / Round 2 structure and fence buckets (Entry 40). v2's dial count is unchanged by this entry.
+
+8. THE CLOUD'S RATIO (Argon's recommendation, thread 097 §2; planner agrees): Entry 41 §7's M_cloud = (Ω_dm/Ω_b) M_b
+   keeps Planck's 5.36 as its registered input for the galaxy (Stage 5.4) and Bullet Cluster (Stage 5.5) tests, so
+   those tests stay single-valued across the two supernova tracks and can run in parallel with Stage 5.2. Once Run 2
+   finishes, its implied present-day ratio (Ω_bc,0 h² − ω_b)/ω_b is reported for each supernova track beside 5.36,
+   with one non-deciding check at the best-fit R_core that swapping it in doesn't change the galaxy or cluster
+   verdict.
+
+------------------------------------------------------------------------------------------
+ENTRY 43 · 2026-11-03 · Gregory Mandarano (decisions and §5's idea); planner (Claude Opus 5.5) and Gemini 4 Argon
+(algebra and checks) · PRE-RUN EXPECTATION FOR THE SHAPE CHECK; MEANING OF OPTION 2'S STARTING TENSION ·
+NOTHING RUN
+------------------------------------------------------------------------------------------
+PURPOSE: Records, before the shape check (Stage 5.1) runs, what the frozen DE-F2 equations and bands V1–V4 imply by
+algebra alone, and records Gregory's physical reading of Option 2's starting tension. Worked out in the shared
+thread, files 098–102 (both sides). No v2 equation was solved, no knob was fitted and no grid point was run. The
+only curves used are Bucket 1 design data already seen (the CPL fits shown as M7) and ΛCDM reference integrals.
+Nothing in DE-F2 (Entry 39), V1–V4 (Entries 21–22, 39 §4), the cascade (Entries 22, 27) or Entry 42 changes in
+response.
+APPROVAL: Gregory approved this entry as drafted (thread 103, §2(e) tightened in 105), after Argon's line-by-line
+checks (threads 104 and 106), on 2026-11-04.
+
+1. THE BOOKKEEPING IDENTITY [algebra; 098 Item 1, 099, 100_ARGON §2a]. DE-F2's closed cycle gives
+     d(Ω_dm a³)/da = −a³ dΩ_de/da,   so   Ω_dm(a) a³ − Ω_dm,0 = ∫_a^1 a'³ (dΩ_de/da') da'.
+   In model terms: frays only switch between loose (dark matter) and wound (tension). Loose frays thin as space grows
+   and tension doesn't, so dark energy wound at scale factor a costs a³ of today's comoving dark matter for each
+   unit gained. Today Ω_de,0/Ω_dm,0 ≈ 2.58, and V4's 5% cap is 0.0133 in Ω units (1.94% of Ω_de,0).
+
+2. PRE-RUN EXPECTATION [algebra; estimates, with the simplifications stated; the shape check decides]:
+   (a) V4 caps the late bump. A smooth dark-energy bump peaking at z = 0.4 passes V4's excursion part only if it
+       stays below about 4% above today. The Bucket 1 CPL curves (peaks 7.2% and 8.6%) would give f_dm,excur of
+       13.7% (Pantheon+) and 16.3% (DES-Dovekie).
+   (b) V3 needs a minimum drain. Turning around by a = 100 requires 3γ_u Ω_T,0 ≳ 0.082–0.123 (in H₀ρ_crit,0 units,
+       across Ω_coh from ∞ down to 0.3). Ignoring matter and setting the tap to zero after today both make this a
+       strict lower bound; the real requirement is higher.
+   (c) V3 and V4 pull against each other. The past drain implied by (b), about 9–12% of Ω_dm,0, must be covered by
+       the pump (f_dm,gross < 5%) or show up as dark energy falling after its peak (f_dm,excur < 5%):
+         D_past + Δf_fill = f_dm,gross + |Δf_dm(a_peak)| < 0.10,
+       where Δf_fill is the cost of filling the tub before the peak.
+   (d) Options 3 and 1 are expected to fail V4. Starting at the floor (Option 3) or below it (Option 1), the
+       star-driven tap must build today's dark energy mostly after z ≈ 4, costing Δf_fill ≈ 11–38% of Ω_dm,0 (more
+       for Option 1), several times the 5% gross limit on its own.
+   (e) Option 2 is the only expected candidate, and it is marginal. Starting wound, it pays almost no filling cost.
+       But at the peak the tap must equal the drain, and the tap was stronger before the peak (star formation and
+       forward reach both rise toward cosmic noon), so the gross inflow depends on where the peak sits: roughly
+       13–18% of Ω_dm,0 for a peak at z = 0.4, falling to roughly 4–5% (3.8–5.3%) for a peak at z = 0.8 (the same
+       reference integral evaluated by both sides, threads 103 and 104). Any surviving points are therefore
+       expected only near the top of V1's band (z_peak ≈ 0.65–0.80) with Ω_coh ≈ 1.3–3, and Option 2 may also miss
+       V4 narrowly, which would trigger the kill switch (Entry 21).
+   (f) Consequence if v2 survives: its dark energy would peak earlier (z ≈ 0.65–0.8) and more gently (a few percent)
+       than the DESI-style hint (z ≈ 0.4, 7–9%). That is a sharper, more distinctive prediction, not a match to the
+       hint.
+
+3. NO RESPONSE IN THE DESIGN (Gregory). DE-F2, V1–V4, the cascade and Entry 42 stay as frozen. Loosening V4 would
+   be redesigning after a preview, which the kill switch forbids, and Part Two states the bands on camera. It would
+   also not help: Run 2's CMB test (Entry 42 §6) constrains the drift more tightly than V4.
+
+4. PRIORS (Stage 1.4, Entry 33). γ_u's evidence prior is bounded below by V3's inequality (2b) and above by V4's
+   (2c), both by algebra, with no input from any grid or fit. Ω_coh's prior is set independently of a₀ (Entry 41
+   §6) so the galaxy cross-check stays non-circular. Entry 33's halve-and-double check applies.
+
+5. WHAT OPTION 2'S STARTING TENSION MEANS (Gregory; interpretation, extending Entries 37 and 39 §5). The collapse of
+   the previous cycle ends in the all-universe 0D detonation. At that instant every fray of the collapsed cable is
+   condensed together with the whole future still ahead of the Now: the most interaction the model allows, with the
+   most forward reach. That burst winds the newborn rope. As the universe expands and cools the interaction rate
+   drops hard through the dark ages, then climbs again as gas collapses and stars ignite toward cosmic noon. Tension
+   wound in the burst costs almost nothing from the loose-fray supply, because the frays are then packed as tightly
+   as they ever will be. DE-F2 begins at a* = 10⁻³, after the burst, so the burst enters only as Option 2's existing
+   starting value T_init: no new equation, no new dial, no change to S(a) (which has no primordial term, Entry 20)
+   or to Entry 9's stand-ins. The model does not say how much the burst winds (applying the tap law at a → 0, where
+   P → 1, would over-wind without limit), so T_init stays free. A rule carrying the end-of-cycle tension through the
+   bounce, which would turn T_init into a prediction, goes in the untestable bin for v2 and is noted as a candidate
+   v3 target.
+
+6. UNCHANGED: everything in Entries 1–42. v2's dial count is unchanged by this entry.
+
+------------------------------------------------------------------------------------------
+ENTRY 44 · 2026-11-04 · Gregory Mandarano (decisions); planner (Claude Opus 5.5) and Gemini 4 Argon (checks) ·
+CONSISTENCY CHECKS (B4: T-d, T-e, T-g, T-h), THE ENTRY 41 RISKS CLASSIFIED, SOURCE-TEMPLATE VARIANTS RETIRED ·
+NOTHING RUN
+------------------------------------------------------------------------------------------
+PURPOSE: Closes Stage 1.2 (the B4 consistency checks, Entry 40 §6), Stage 1.3 (the Entry 41 §11 risks) and Stage 1.3b
+(the source-template variants of Entry 20, Decision 1). Worked out in the shared thread, files 118–128. As of this
+entry no v2 model output exists. Two rough pre-run estimates made in thread 120 are disclosed in §7. Every test
+below has zero new dials: R_core and a₀ come from the Stage 5.4 SPARC fit, and each system's cloud is
+M_cloud = 5.36 M_b (Entry 41 §7; Entry 42 §8).
+APPROVAL: Gregory approved everything Argon and the planner agree on (thread 127, 2026-11-04), which settles his three
+decisions: T-d1 scored on the plasma-to-BCG ratio with T-d2 exploratory (§3), the three risks report-only (§5), and
+the two templates retired (§6). Argon checked revision 2 line by line against the primary sources in thread 128_ARGON
+and cleared it, confirming the ratio errors verbatim, Σ_crit = 2.84 × 10⁹ M☉ kpc⁻² (its 3.10 corrected, Argon A17),
+and that the paper's core bias can't be forward-modelled.
+
+1. T-g · NO REGIONAL VARIATION IN THE EXPANSION RATE. v2 has no regional term: DE-F2 is a function of cosmic time only
+   (Entry 39), and Entry 41 §2 rules out unequal strings. The check is v1's T6 pipeline exactly (v1 PREREG §5.7:
+   Pantheon+SH0ES Hubble-flow supernovae, 0.023 ≤ z_HD ≤ 0.15, calibrators excluded; HEALPix N_side = 1 regions with
+   at least 10 supernovae; the heterogeneity χ²_het and its tail probability p_het). Consistent if p_het > 0.00270
+   (no region stands out at 3σ). Light; Round 1. Disclosure: v1 already found p_het > 0.3173 on this data, so the
+   check can't fail on design data; it guards against any regional term entering v2.
+
+2. T-h · GRAVITATIONAL-WAVE SPEED. Satisfied by stated rule, not tested. Entry 41 §3 states c_T = c and Φ = Ψ, which
+   meets the GW170817 / GRB 170817A bound (−3 × 10⁻¹⁵ < Δc/c < +7 × 10⁻¹⁶; Abbott et al. 2017, ApJL 848, L13) by
+   construction. Disclosure: v2 works in the non-relativistic AQUAL limit and has no relativistic action of its own;
+   AeST (Skordis & Złośnik 2021, PRL 127, 161302) is the published example that such rules can hold together.
+
+3. T-d · CLUSTERS. Data: Clowe et al. 2006 (ApJL 648, L109), which is Bucket 1 (hashed in v1's paper manifest): its
+   Table 2 (100 kpc-radius apertures on the main and subcluster BCGs and plasma peaks: X-ray and stellar masses, mean
+   weak-lensing convergence κ̄, each with 1σ errors), its §3 plasma-to-BCG ratios, and its positions; plus v1's T4b
+   merger table. Bradač et al. 2006 is Bucket 3 and is not used. Method: the full 3D AQUAL solve with each
+   subcluster's gas at its plasma position and its stars plus cloud at its BCG position, projected to a 2D κ map;
+   QUMOND only where Stage 3.3d [A3] allows. κ̄ is then measured from v2's map by the paper's own definition (its §3
+   and Table 2 note): a two-peak fit, each peak circularly symmetric about its BCG; each BCG's κ̄ has the other peak's
+   wing subtracted; each plasma κ̄ is the residual after both peaks are subtracted.
+   T-d1 · WHERE THE LENSING SITS (deciding). v2's clouds are collisionless and travel with the galaxies, so v2
+   predicts the lensing mass sits with the BCGs, not the stripped gas. Measure: the ratio κ̄_plasma/κ̄_BCG, which the
+   paper states as 14% (+16%/−14%) for the main cluster and 10% (+30%/−10%) for the subcluster. A ratio cancels the
+   convergence scale (Σ_crit), which the paper leaves uncalibrated, where a difference would not. Pass: v2's predicted
+   ratios lie within 2σ of both measured ratios (main ≤ 0.46, subcluster ≤ 0.70). Fail: either lies beyond 3σ
+   (main > 0.62, subcluster > 1.00). Between: reported as tension. The low side can't fail, since both 2σ ranges reach
+   zero. Disclosure: the paper (§2) says its reconstruction underestimates κ in cluster cores, so the measured BCG
+   values are lower bounds and the measured ratios, if anything, run high; v2's map is compared without that bias
+   applied. Also, across v1's T4b table, v2 predicts "dark mass with the galaxies" for every classified merger at any
+   age, scored with v1's T4b metric (d_IG − d_IS > 2σ_diff) and v1's missing-uncertainty rule unchanged.
+   T-d2 · AMPLITUDE (EXPLORATORY). The paper states its core κ values are lower bounds (§2), gives the source redshift
+   only as a mean z ~ 1 (§4), and states no calibrated Σ_crit, so an absolute amplitude test can't be scored fairly.
+   Round 1 reports v2's κ̄ on the two BCG apertures beside Table 2's lower bounds (0.36 ± 0.06; 0.20 ± 0.05), at the
+   paper's stated cosmology (Ω_m = 0.3, Ω_Λ = 0.7, H₀ = 70; z_l = 0.296) with z_s = 1.0, giving Σ_crit =
+   2.84 × 10⁹ M☉ kpc⁻². Non-deciding. Entry 32's power check applies to T-d1 and is reported for T-d2.
+
+4. T-e · GALAXIES WITH LITTLE DARK MATTER. Deciding: v1's T5c for NGC 1052-DF2, exactly (v1 PREREG §5.6: D = 20.0 Mpc;
+   M_* = 2.0 × 10⁸ M☉; Plummer profile with R_e = 2.2 kpc; host NGC 1052 with M_b = 1.0 × 10¹¹ M☉ at d_3D = 98.0 kpc;
+   PASS if M_pred(<2.7 kpc) ≤ 2.9 × 10⁸ M☉ and M_pred(<3.1 kpc) < 3.2 × 10⁸ M☉; FAIL if M_pred(<2.7 kpc) >
+   3.7 × 10⁸ M☉). M_pred comes from v2's 3D AQUAL solve for DF2 (stars and its own cloud) inside the external field of
+   NGC 1052 (stars and its own cloud). NGC 1052-DF4 is dropped: v1's manifests and PREREG hold no DF4 data
+   (van Dokkum et al. 2019 is a bibliographic reference only), so its numbers are Bucket 3.
+
+5. THE ENTRY 41 §11 RISKS (Stage 1.3; Gregory's decision D2). Outer-curve creep and the weak-lensing step are
+   already registered tests (Stage 5.4; Round 2 on F1 and F2). The other three are REPORT-ONLY:
+   - Cluster abundance at late times: no Bucket 1 cluster-count data, and v2 has no AQUAL structure-formation code.
+   - The reionization optical depth: turning v2's early switch-on into τ needs astrophysical inputs (escape fraction,
+     star-formation efficiency, minimum halo mass) that v2 doesn't contain and would become hidden dials. Round 1
+     reports v2's switch-on redshift beside Planck 2018's τ = 0.054 ± 0.007.
+   - The Lyman-α forest: its BAO measurement is already in Stage 5.2; the small-scale flux power spectrum is
+     report-only.
+   The paper states plainly that v2's growth of structure is untested, and that these three are the likeliest places
+   it fails outside this trial.
+
+6. SOURCE-TEMPLATE VARIANTS RETIRED (Stage 1.3b; Gregory, on Argon's and the planner's joint
+   recommendation; this reverses Argon's 098 advice to keep them, given before the Bucket 1 and mechanism check).
+   Entry 20's two non-deciding templates are retired. The bolometric luminosity history tracks ψ(z) under
+   instantaneous recycling (Madau & Dickinson 2014), so it adds no information. The black-hole accretion history lies
+   outside Entry 39 §1's mechanism (starlight and dust-reprocessed light). Neither is in Entry 40 §4's Bucket 1 list.
+   Entry 39 §2's two drain variants stay.
+
+7. DISCLOSED PRE-RUN ESTIMATES (thread 120; Argon A15 in the paper notes). Before this entry, rough spherical
+   estimates of v2's predictions were compared with two tests' data: DF2's enclosed cloud and total effective mass at
+   2.7, 3.1 and 7.6 kpc for R_core = 50–200 kpc (inside T5c's pass range in those approximations), and a generic rich
+   cluster at 1 Mpc (effective mass about 9 times its ordinary matter, about 40% above typical observed ratios). They
+   were not extended, no Bullet Cluster estimate was made, and the rules above come from v1's registered tests and the
+   published paper, not from these estimates. Because the cluster estimate pointed to heavy clusters, note that T-d2
+   is exploratory for the reasons the paper itself states (lower bounds, no calibrated Σ_crit), and that a lower bound
+   couldn't sink a heavy prediction in any case. Round 1 can only sink v2.
+
+8. UNCHANGED: Entries 1–43. v2's dial count is unchanged by this entry.
+
+------------------------------------------------------------------------------------------
+ENTRY 45 · 2026-11-04 · Gregory Mandarano (decision); planner (Claude Opus 5.5) and Gemini 4 Argon (checks and
+algebra); Grok 4.7, High (outside cold review) · PRIOR RANGES AND THE EVIDENCE-FIT SUPPORT (STAGE 1.4) ·
+NOTHING RUN
+------------------------------------------------------------------------------------------
+PURPOSE: Fixes, before any fit, every sampled parameter's prior range (Entry 33; v1 log line ~200: "priors fixed by
+physical argument before any fit") and closes a gap no earlier entry addressed: which region the Round 1 evidence fit
+samples, and which viability bands act inside it. Worked out in the shared thread, files 127–135, with a neutral cold
+review by a fresh, private Grok instance (brief GROK_BRIEF_STAGE1.4_PRIORS_v1, thread 130; reply verbatim in 131). As
+of this entry no v2 model output exists: no fit, no grid point and no likelihood has been run.
+APPROVAL: Gregory approved Option 6 (setup S6) in thread 134, on Argon's recommendation in 133. Argon checked this
+entry line by line in thread 135 and cleared it, with one disclosure clause added in §7.
+
+1. SAMPLED PARAMETERS AND PRIORS. Log-uniform means uniform in ln θ over the stated box.
+   (a) Standard parameters, copied from v1 PREREG §5.1 (lines 123, 137, 156; quoted in 128_ARGON B1), identical for
+       v2, ΛCDM, CPL and CCBH: Ω_m uniform [0.1, 0.6]; h uniform [0.5, 0.9]; 100ω_b uniform [1.8, 2.6]. Fixed:
+       Σm_ν = 0.06 eV; radiation from T_CMB = 2.7255 K with N_eff = 3.046. The supernova absolute magnitude is
+       marginalised analytically in both supernova likelihoods. The CMB term is the 3×3 compressed Planck 2018
+       likelihood in (R, ℓ_A, 100ω_b) of Chen, Huang & Wang 2019 (JCAP 02, 028, Table 1), as in v1 §5.1; no separate
+       BBN prior on ω_b (v1 used one only in T2-A).
+   (b) Comparison-model extras, copied from v1 PREREG: CPL w₀ uniform [−3.0, 1.0] and w_a uniform [−3.0, 2.0], with
+       ln L = −∞ if w₀ + w_a ≥ 0; CCBH k uniform [0.0, 3.0] (Entry 31). These are wide boxes, not set from any data.
+   (c) v2, dark-energy side (κ is not sampled: it is solved from today's Ω_de at every evaluation, Entry 22):
+       - γ_u log-uniform [10⁻³, 2]. Lower edge: at 10⁻³ the tension's e-folding time is about 330 Hubble times, under
+         0.3% drained per Hubble time, indistinguishable from no drain. Upper edge: registered in Entry 22 and in v1
+         PREREG (line 123) before DE-F2 existed; at γ_u = 2 the unwinding rate is 6H₀, an e-folding time of about
+         2.4 Gyr, so the reservoir can't hold tension across cosmic history. Neither edge refers to where any viable
+         region lies (Grok Q2, Q5(b)).
+       - Ω_coh log-uniform [0.1, 10]: two decades centred on unity, the natural scale of a budget term in units of
+         today's critical density. Set without reference to a₀ (Entry 43 §4), so the galaxy cross-check of Entry 41 §6
+         stays non-circular.
+       - Ω_Tinit (Option 2 only) uniform [0, Ω_coh + 3], Entry 22's registered range: 0 is the positivity floor, and
+         the range nests Option 1 (Ω_Tinit = 0) and Option 3 (Ω_Tinit = Ω_coh) as slices.
+   (d) v2, galaxy side (Stage 5.4):
+       - R_core log-uniform [10, 1000] kpc: no smaller than the galaxies the cloud surrounds, no larger than typical
+         separations between neighbouring galaxies.
+       - a₀ (free-a₀ route only) log-uniform [0.1, 10] × cH₀/2π, the model's own scale, evaluated at H₀ =
+         67.4 km s⁻¹ Mpc⁻¹ (cH₀/2π = 1.042 × 10⁻¹⁰ m s⁻²), so a₀ ∈ [1.042 × 10⁻¹¹, 1.042 × 10⁻⁹] m s⁻². The box
+         contains the whole range [0.316, 3.16] × cH₀/2π implied by Ω_coh ∈ [0.1, 10] under Entry 41 §6. In the
+         predicted-a₀ route, a₀ is not sampled.
+   (e) Run 1-free's δ_dm uniform [−0.05, +0.05] stays as fixed in Entry 42 §4.
+
+2. THE EVIDENCE-FIT SUPPORT (SETUP S6; deciding). Applies identically to Run 2, Run 1-pinned and Run 1-free
+   (Entry 42).
+   - Priors as in §1, normalised over the full box. No prior is restricted or renormalised to the region passing the
+     bands.
+   - ln L = −∞ only where (i) the model is undefined: κ < 0, or no convergence of the H(a) ↔ a_turn ↔ P(a) ↔ ρ_de
+     iteration within 50 passes (Entry 22); a finite turnaround is guaranteed for every γ_u > 0 and Λ_coh > 0
+     (128_ARGON B3, algebra), so it needs no cut; or (ii) V4 fails: f_dm,excur ≥ 0.05 or f_dm,gross ≥ 0.05
+     (Entry 39 §4). V4 stays as a cut because no Round 1 likelihood sees it: BAO and supernovae depend only on E(a),
+     which sees the sum Ω_dm + Ω_de in DE-F2's closed dark sector, and the compressed CMB sees only the net shift
+     δ_dm (133_ARGON B2', algebra). The cut stands in for data the likelihood lacks and does not count any Round 1
+     data twice.
+   - Not applied as cuts: V1's crossing window (0.2 ≤ z ≤ 0.8), V2's peak cap (1.15) and V3's turnaround deadline
+     (a_turn ≤ 100). V1 and V2 were derived from CPL fits to DESI DR2 (Entry 22 caveat), which is in the Round 1
+     likelihood, so cutting on them would count DESI twice. V3's deadline is a scan ceiling, not a model boundary
+     (128_ARGON B3).
+   - The three principles behind S6: no double counting of Round 1 data; no cuts on scan artefacts; cuts kept only
+     where the model is undefined or the likelihood is blind.
+
+3. THE SHAPE CHECK IS UNCHANGED. Stage 5.1 runs exactly as frozen (Entries 21, 22, 39 §4), with V1–V4 as its kill gate
+   and V3's a_turn ≤ 100 included. Changing it now would be redesigning after a preview (Entry 43 §3). Because V3's
+   deadline is a scan ceiling, a kill at the gate could come from that ceiling and not from v2's physics; if it does,
+   the paper says so plainly, and the registered post-kill diagnostic (master plan 4.1, [A8]) runs with the priors of
+   §1 and the support of §2 without the V4 cut.
+
+4. REPORTED BESIDE THE DECIDING ln B (Grok Q4; all from the same runs where possible):
+   - −ln of the prior mass inside V1–V4, per parameter and joint;
+   - ln Z with each sampled v2 parameter's box halved and doubled (§5), with the verdict taken from §1's boxes only
+     (Entry 33);
+   - the S5 value: V1–V4 all applied as ln L = −∞ cuts, by reweighting the S6 posterior samples, or by a separate run
+     if too few samples pass V1–V3;
+   - the S4 value: the S5 ln Z minus the log prior mass inside V1–V4 (the prior renormalised over the viable region);
+   - Δln L_max of the best V1–V4 point against ΛCDM, so a reader can separate fit quality from prior volume.
+   S4 and S5 are diagnostics. Neither carries the sink line.
+
+5. HALVE-AND-DOUBLE RULE (Entry 33) FOR THESE BOXES.
+   - Log-uniform knobs: the log-width halved and doubled about the geometric centre θ_mid = √(θ_min θ_max).
+     γ_u: halved [0.00669, 0.299], doubled [2.24 × 10⁻⁵, 89.4]. Ω_coh and a₀/(cH₀/2π): halved [0.316, 3.16], doubled
+     [0.01, 100]. R_core: halved [31.6, 316] kpc, doubled [1, 10⁴] kpc.
+   - Ω_Tinit: halved and doubled about the Option 3 slice Ω_Tinit = Ω_coh (dark energy starting at zero), the model's
+     own reference point: halved [Ω_coh/2, Ω_coh + 1.5]; doubled [0, Ω_coh + 6], its lower side held at the positivity
+     floor.
+
+6. BOUNDARY RULE (Entry 33(a)). With no V3 cut, γ_u's posterior may reach its lower edge, and CCBH's k has true
+   value 0 on ΛCDM-truth injections. So: any Stage 4.4 ΛCDM-truth recovery criterion on γ_u or k is a one-sided upper
+   credible limit, never a two-sided interval; any v2-truth recovery criterion on γ_u allows the lower bound to touch
+   10⁻³ (or is evaluated on well-constrained combinations: Ω_m, h, 100ω_b, δ_dm, w₀); and the Round 1 parameter table
+   reports a one-sided 95% upper limit wherever a marginal has non-negligible density at its lower edge
+   (p(θ_min) > 0.1 max p). No verdict depends on a γ_u interval (133_ARGON B3').
+
+7. DISCLOSURE: WHAT WAS KNOWN WHEN, AND WHO RECOMMENDED WHAT.
+   - Ω_Tinit's range and γ_u's upper edge come from Entry 22 (2026-10-31), fixed before DE-F2 (Entry 39) or any
+     estimate. The other edges (γ_u's lower edge, Ω_coh, R_core, a₀) were proposed in thread 127, after Entry 43
+     (2026-11-03) had shown by algebra that V3's deadline needs γ_u ≳ 0.008–0.02 for Ω_coh ≈ 1.3–3 while V4 leaves
+     room for only about 10% more drain, so any V1–V4 window in γ_u is Δγ_u ≲ 0.1 γ_min wide or empty, and that
+     expected Ω_coh survivors sit near Entry 22's scan edge of 3. Each of those edges rests on the physical argument
+     given in §1.
+   - While specifying this stage (thread 127), the planner estimated the Occam cost of that window alone at about 7–8
+     nats under a flat prior on [0, 2], about 4.4 nats under log-uniform [10⁻³, 2], and about 4.0 nats under
+     log-uniform [γ_min, 2], against the −5.0 sink line; renormalising over the viable region removes it. Argon
+     confirmed the algebra (128 B2) and added that Run 2's CMB term alone narrows the drift to σ(δ_dm) ≈ 0.45–0.60%.
+     In 133 (B1'), Argon showed by algebra that under S6 the κ ≥ 0 and V4 cuts force Option 2's Ω_Tinit into a slice
+     about 0.08–0.11 wide, an Occam cost of about 3.8–4.1 nats, so a ΛCDM-like corner with no likelihood gain would
+     sit near ln B ≈ −4.5 to −5.0. These are rough pre-run estimates; Stage 5.2 decides.
+   - Because the team knew roughly what each setup does to the verdict, a neutral brief (thread 130), written before
+     the planner opened Argon's 128, went to a fresh private Grok instance. The recommendations, in order: the planner
+     S5 (127); Argon S5, after arguing the case against it (128); Grok no band cuts inside the evidence at all (131);
+     the planner S6 (132), taking Grok's case on V1–V3 and Argon's on V4; Argon S6 (133), after testing it against
+     the ΛCDM-corner objection. S6 is probably kinder to v2 than S5, because dropping V3's deadline removes the forced
+     drain behind the largest tuning cost. It was chosen on §2's three principles, not for that. It still charges any
+     tuning the data or the V4 cut demand.
+   - Two errors in the Grok brief, both the planner's (paper notes C23, C24): §3 said Round 1's compressed CMB
+     constrains "the same drift" as V4, more tightly, which holds only for the net δ_dm (Grok's remark that V4 "adds
+     little independent information" rests on that sentence); §1 listed a BBN prior on ω_b among the Round 1 data,
+     where Round 1 uses the 3×3 compressed CMB with no separate BBN prior. Argon's errors in the thread: A17 (Σ_crit,
+     Entry 44) and A18 (the doubled γ_u box, given as [10⁻⁶, 4000] in 128 B5, corrected in §5).
+   - The Ω_Tinit halving rule in §5 replaces 128_ARGON's midpoint rule [¼(Ω_coh + 3), ¾(Ω_coh + 3)]. The planner (134)
+     noticed, by comparing with Option 2's expected surviving value, that the midpoint rule excludes Ω_coh + Ω_de,0
+     once Ω_coh > 6.3; Argon (135) added that it excludes the Option 3 slice Ω_Tinit = Ω_coh itself once Ω_coh > 9.
+     The replacement is centred on that model-defined slice and halves the width exactly.
+
+8. UNCHANGED: Entries 1–44, including DE-F2, V1–V4 and the cascade. No dial is added: this entry sets ranges for
+   dials already counted.
+
+------------------------------------------------------------------------------------------
+ENTRY 46 · 2026-11-04 · Gregory Mandarano (decisions); planner (Claude Opus 5.5) and Gemini 4 Argon (checks
+and algebra) · DECISIONS D5–D7 REGISTERED; FOUR CONVENTIONS LOCKED FOR THE SPEC · NOTHING RUN
+------------------------------------------------------------------------------------------
+PURPOSE: Writing the v2 spec (Stage 2.2; draft 1, thread 141–143) found three decisions that exist only in the testing
+master plan and the thread, and four conventions the spec needs that no entry fixes. This entry registers the first
+and locks the second, so that every rule in the spec rests on a stamped entry. Worked out in the shared thread, files
+141–149. Nothing in DE-F2 (Entry 39), V1–V4 or the cascade changes. As of this entry no v2 model output exists.
+APPROVAL: Gregory approved this entry as written on 2026-11-04 (thread 173), after Argon cleared revision 2 line by
+line (146, 148, 152, 171) and the planner concurred (150, 172). Before stamping, the CCBH citation in §7 was corrected
+and the note in §8 added (planner error C27; thread 182–183).
+
+1. D5 · ENTRY 38'S TIMING RULE LIFTED (Gregory, 2026-11-03, thread 087). Entry 38's decision that "No version 2 model
+   output of any kind is computed before the follow-up is released" no longer applies. Computing may start before
+   Part Two is released. Part Two is frozen as of its creation, so its statement that the shape check hadn't run
+   stays true as of when it was made. Every other rule of Entry 38, and its pre-run flags as resolved in Entry 39,
+   stand.
+
+2. D6 · ROUND 1 JUDGES v2 AS A WHOLE (Gregory, 2026-11-04, threads 104–109; making explicit what Entry 40 §3
+   implies). Round 1 returns one verdict on v2, not one per pillar. If v2 sinks, no fenced file is opened for any part
+   of it. The galaxy and cluster tests still run on design data and are reported in full. Testing one part of a sunk
+   v2 later (for example its galaxy law on F1 or F2) would be a new hypothesis, registered separately before any
+   fenced data is opened.
+
+3. D7 · THE ORDER OF THE RUNS (Gregory, 2026-11-04, threads 114 and 120; adds two details to Entries 22, 40 §2 and
+   45 §3, which already fix that the shape check comes before any fit or likelihood and that nothing is tested before
+   every test is locked). The order is: the spec frozen; the whole rulebook (every test, threshold, prior and sampler
+   setting, both rounds, every pillar) locked and stamped, with the solver code hashed; the shape check in both
+   pipelines. The two added details: (a) the dark-energy fake universes (Stages 4.3–4.5) run only after the shape
+   check finds a viable region, because v2-true fakes need its winning option and a viable setting; (b) the galaxy
+   and cluster fake-universe calibration runs whatever the shape check finds.
+
+4. CONVENTION · LATE TURNAROUNDS IN THE EVIDENCE FIT (solver convention, not a design change; Argon's algebra, thread
+   144_ARGON Part D, checked by the planner). Under Entry 45's setup S6 there is no V3 cut, so the evidence fit meets
+   points whose turnaround lies beyond the solving grid's ceiling a = 100. For those points the forward reach is
+   truncated at the ceiling,
+     P_trunc(a) = ∫_a^{100} a'⁻⁴ / E(a') da',
+   and convergence is checked over a ≤ 100/1.02. All Round 1 observables and the V4 quantities are evaluated on the
+   past light cone, a ≤ 1. The omitted tail is the same constant for every a ≤ 1 and is bounded by
+     ΔP_tail ≤ 6.3 × 10⁻⁷ (γ_u Ω_coh)^(−1/3) ≤ 1.4 × 10⁻⁵ anywhere in the prior box   [algebra]
+   so its relative effect on P(a ≤ 1) is at most about 5 × 10⁻⁵, and on Ω_de, E, f_dm,excur and f_dm,gross on the past
+   light cone below about 10⁻⁵, far below the data's errors. For points with a_turn > 100, t_zero (if ρ_de(100) > 0)
+   and t_turn are reported as lower bounds ("beyond a = 100", with the cosmic time at a = 100), and the U1 collapse is
+   not integrated for them; no verdict depends on these dates. In the shape check nothing changes: no turnaround by
+   a = 100 still fails V3 (Entry 29).
+
+5. CONVENTION · RADIATION AND NEUTRINOS (correction to Entry 45 §1(a)). Entry 45 §1(a) says the standard settings are
+   copied from v1 and fixes radiation "from T_CMB = 2.7255 K with N_eff = 3.046". v1's code and equations used
+   N_eff = 3.044, with Ω_γ h² = 2.4728 × 10⁻⁵, two massless neutrino species and one of 0.06 eV (planner error C26: the
+   3.046 came from Entry 29's shape-check setting). The evidence fits use v1's convention, as Entry 45 intended. The
+   shape check keeps Entry 29's frozen fixed background, including Ω_r,0 = 9.2 × 10⁻⁵ (N_eff = 3.046 at h = 0.674);
+   the difference shifts Ω_r,0 by about 5 × 10⁻⁴ of itself and r_s(z*) by under 10⁻⁴, and it is disclosed.
+
+6. CONVENTION · THE SOUND HORIZON INSIDE THE CMB AND BAO TERMS (fixes v1 Finding 1 before the lock, as Entry 33
+   requires). Both pipelines use the early-universe form of Chen, Huang & Wang 2019 (Eqs. 2.1–2.6), the form their
+   compressed vector was derived with and the one v1's primary code implements (sound_horizon_rs_chen):
+     r_s(z) = (c/100) ∫_0^{a(z)} da / [a² √(ω_r a⁻⁴ + ω_m a⁻³) √(3(1 + R_b(a)))],  ω_r = 1/24185,
+     R_b(a) = 3ω_b a / (4ω_γ),  ω_γ = 2.4728 × 10⁻⁵,
+   with z* from Hu & Sugiyama 1996 and z_d from Eisenstein & Hu 1998 as in v1's equations (a5), and r_d = F_drag
+   r_s(z_d), F_drag fixed so that r_d = 147.09 Mpc at the Planck 2018 fiducial point (ω_b = 0.02237, ω_c = 0.1200,
+   Σm_ν = 0.06 eV). ω_m is the recombination-era total matter density of the run: in Run 2, Ω_b,0 + Ω_dm(a*) a*³ +
+   Ω_ν,0; in Run 1-pinned, today's Ω_m,0; in Run 1-free, Ω_b,0 + Ω_dm,0 (1 + δ_dm) + Ω_ν,0; each times h². z_d and r_d
+   use the same ω_m as z* (v2's drift between z* and z_d is below 10⁻¹¹, since S(a) is negligible there). The Stage
+   3.3a reference numbers both pipelines must hit are computed in this convention.
+
+7. CONVENTION · THE COMPARISON MODEL CCBH (Entries 30, 31). The implementation follows Croker et al. 2024
+   (JCAP 10, 094; arXiv:2405.12282) and Farrah et al. 2023 (ApJL 944, L31):
+   black holes born from stars at a rate following the star-formation history, each gaining mass as (a/a_i)^k, with
+   k ∈ [0, 3] the single extra sampled parameter and the normalisation fixed by today's dark-energy density. The exact
+   published equations, including the star-formation form and the baryon-depletion term the authors used, are taken
+   from the e-print itself in Stage 3.2 and validated by the Entry 31 reproduction gate (Stage 3.3c) before the lock.
+   Until then the form in the spec is provisional.
+
+8. UNCHANGED: Entries 1–45, apart from the correction in §5 and this citation note: Entry 30's arXiv number for
+   Croker et al. 2024 (2407.03508), repeated in the v1 paper's references, belongs to a different paper (McKeen & Omar,
+   "Early Dark Energy During Big Bang Nucleosynthesis"); the correct one is 2405.12282 (planner error C27, repeated
+   by Argon in 144, A20; threads 182–183). v2's dial count is unchanged by this entry.
+
+------------------------------------------------------------------------------------------
+ENTRY 47 · 2026-11-04 · Gregory Mandarano (decisions); planner (Claude Opus 5.5) and Gemini 4 Argon (checks
+and algebra) · DECISIONS D8–D16 REGISTERED; FOUR CONVENTIONS LOCKED FOR THE SPEC · NOTHING RUN
+------------------------------------------------------------------------------------------
+PURPOSE: Two outside reviews of spec draft 3 (Gemini-D, a separate Gemini 4 browser session at thinking level High;
+Grok 4.7, blind) found independently that the spec never says, in one place, which Round 1 outcomes sink v2, and that
+three tests had gaps a reader could fill after seeing results: the a₀ cross-check had no criterion, T-e had an
+unassigned zone, and the Bullet Cluster and DF2 estimators were not fully defined. This entry closes them before the
+freeze. Transcribing the CCBH comparison model from its e-print (205) then found three more choices that model needs
+before the freeze, closed here as D14–D16. Worked out in the shared thread, files 197–207. Nothing in DE-F2
+(Entry 39), V1–V4, the cascade or the priors of Entry 45 changes. As of this entry no v2 model output exists, and
+no T-d or T-e quantity has been computed under any convention.
+APPROVAL: Gregory approved decisions D8–D13 on 2026-11-04 (thread 204) and D14–D16 the same day (thread 208), each on
+the joint recommendation of the planner and Argon. D14 was then revised by the planner (208) so it respects Entry 40's
+ratchet. Gregory approved this entry as written, revision 4, including D14 as revised, on 2026-11-05 (thread 227),
+after Argon cleared it line by line (206, 209, 223, 225), a blind Grok 4.7 audit found no blocking items (222, 223)
+and the planner concurred (226). Revisions: r1 checked by Argon (206); r2 added D14–D16 from the e-print
+transcription (205–207); r3 revised D14 (208, 209); r4 applied the Grok audit and four small fixes (222–225).
+
+1. D8 · THE ROUND 1 MASTER RULE (closes Gemini-D 3, Grok 2 and 3; makes D6, Entry 46 §2, mechanical). v2 sinks in
+   Round 1 if any deciding test returns FAIL:
+     (i)   the shape-check kill (spec §2.7);
+     (ii)  Run 2's sink line, ln B(v2 vs ΛCDM) ≤ −5.0 (spec §3.3, §6.1), applied as in D9;
+     (iii) T-d1, where the lensing sits (spec §5.3);
+     (iv)  T-e, NGC 1052-DF2 (spec §5.4);
+     (v)   T-g, the regional-term guard (spec §5.1);
+     (vi)  the SPARC galaxy test (its pass line calibrated and locked in the Stage 4 rulebook);
+     (vii) the a₀ cross-check (spec §4.4), as defined in D10.
+   Any outcome in a tension zone never sinks v2; it is reported in full. A test labelled exploratory or report-only
+   never sinks v2. v2 survives Round 1 only if none of (i)–(vii) returns FAIL.
+
+2. D9 · THE TWO SUPERNOVA COMPILATIONS (moves the rule out of spec §0.5's deferred list; closes Grok 3 on this point).
+   Run 2 is fitted separately with Pantheon+SH0ES and with DES-SN5YR Dovekie. v2 sinks if Run 2 crosses the sink line
+   on either. This is the rule Gregory set for v1 before its data (v1 PREREG §5.1, Review V3 M1), kept unchanged so
+   the bar is the same in both versions.
+
+3. D10 · THE a₀ CROSS-CHECK IS DECIDING (closes Gemini-D 3 and Grok 2 on §4.4; Entry 41 §6 set no criterion). The two
+   routes:
+     predicted:  ln a₀,pred = ln(cH₀/2π) + ½ ln Ω_coh, evaluated on each Run 2 posterior sample (that sample's H₀ and
+                 Ω_coh), giving a posterior for ln a₀,pred;
+     fitted:     ln a₀,fit, the posterior of one universal a₀ fitted freely to SPARC (Stage 5.4).
+   With Δ = mean(ln a₀,pred) − mean(ln a₀,fit) and σ_comb = √(var(ln a₀,pred) + var(ln a₀,fit)), the means and
+   variances taken over each posterior:
+     AGREE (pass) if |Δ| ≤ 2σ_comb;  FAIL if |Δ| > 3σ_comb;  TENSION between.
+   Means and variances, not 68% half-widths, because the variance of a difference of independent quantities is the
+   sum of their variances for any posterior shape, including one truncated by the V4 or κ ≥ 0 boundaries (Argon,
+   206). Each route's median and central 68% interval are reported beside it.
+   The comparison is made in ln a₀ because both priors are log-uniform and the link is multiplicative (Argon, 199).
+   It is applied on each supernova track's Run 2 posterior; a FAIL on either counts (D9's principle).
+   Why deciding: the relation is the one bridge between v2's dark-energy and galaxy pillars, and Entry 43 §2 already
+   estimated that survivors may sit at Ω_coh ≈ 1.3–3 while a₀ = 1.2 × 10⁻¹⁰ m s⁻² needs about 1.2–1.3. Leaving it
+   report-only after that estimate would read as protecting v2.
+
+4. D11 · T-e's MIDDLE ZONE IS TENSION (closes the gap in spec §5.4). PASS, FAIL and the thresholds are unchanged. The
+   zone between them, meaning any outcome that is neither PASS nor FAIL (for example M_pred(<2.7 kpc) between 2.9 and
+   3.7 × 10⁸ M☉), is TENSION. v2's word "tension" corresponds to v1's INCONCLUSIVE (v1 PREREG §5.6); the
+   spec uses "tension" throughout and states the mapping once.
+
+5. D12 · NEGATIVE DARK MATTER MEANS "MODEL UNDEFINED" (closes Gemini-D 6). In the post-kill diagnostic fit only (spec
+   §7.3; the one fit that runs without V4), any point with Ω_dm(a) < 0 at any a in [a*, 1] gets ln L = −∞, alongside
+   κ < 0 and non-convergence under S6's principle. Where V4 applies the case cannot arise (V4 keeps Ω_dm(a) a³ above
+   0.95 Ω_dm,0 on [a*, 1]).
+
+6. D13 · THE BULLET CLUSTER MASS MODEL FOR T-d1 AND T-d2 (closes Gemini-D 5a). Bucket 1 holds only the 100 kpc
+   aperture masses of Clowe et al. 2006 (ApJL 648, L109), Table 2; no Bucket 1 source gives a subcluster's whole
+   ordinary mass (Argon checked Clowe 2006 and Dawson 2013 in full, 199 and 202). Every convention is therefore an
+   approximation, chosen here on principle before anything is computed.
+   (a) Which masses (Option B, the full inventory). Each of Table 2's eight masses enters the solve at the aperture
+       where it was measured. In units of 10¹² M☉:
+         Main cluster BCG        M_X = 5.5   M_* = 0.54
+         Main cluster plasma     M_X = 6.6   M_* = 0.23
+         Subcluster BCG          M_X = 2.7   M_* = 0.58
+         Subcluster plasma       M_X = 5.8   M_* = 0.12
+       Each aperture belongs to the subcluster its label names. Option A (each subcluster's BCG stars plus its plasma
+       gas only) is reported beside the deciding result, never deciding. Disclosure: B places more mass at the BCGs
+       than A, so it is probably the kinder of the two to v2. Gregory considered and declined Option C (the verdict
+       taken as the worse of A and B).
+   (b) The cloud (spec §4.5's definition, no special case). M_cloud,i = 5.36 M_b,i is the total mass of subcluster
+       i's Plummer cloud, core radius R_core (from the SPARC fit), centred on its BCG; M_b,i is the total modelled
+       ordinary mass of subcluster i from (c). Disclosure: the apertures cover only the cluster cores, so M_b,i is
+       below each subcluster's real ordinary mass and the cloud is lighter than its true cosmic share. This works
+       against v2, and the two pulls ((a) kind, (b) hard) are disclosed together.
+   (c) Shapes (stated modelling choices; no Bucket 1 source exists, since Clowe gives the plasma model's details
+       "elsewhere"). Each stellar mass is a Plummer sphere of core radius 20 kpc and each gas mass one of 50 kpc,
+       centred on its aperture, normalised so that its projected mass inside 100 kpc equals the Table 2 value. The
+       totals are then (1 + a_p²/R_ap²) times the aperture values: 1.04 for stars, 1.25 for gas. Under (a):
+         M_b,main = 15.9258,  M_b,sub = 11.353;  M_cloud,main = 85.36,  M_cloud,sub = 60.85   (10¹² M☉; inputs)
+       (Cloud masses shown to four figures; in code, 5.36 M_b,i is evaluated at full precision.)
+         (Option A: M_b,main = 8.8116, M_b,sub = 7.8532.)
+       Halved radii (10, 25 kpc) and doubled radii (40, 100 kpc) are reported, never deciding.
+       If the halved or doubled radii would give a different T-d1 verdict, the result is reported as
+       convention-sensitive, with all three side by side; the deciding verdict is unchanged.
+       (Added in r4, answering the blind Grok audit's one SHOULD-FIX, 222–223. Grok asked for a published core
+       radius; none exists in Bucket 1, Clowe 2006 and Dawson 2013 give none (199, 202), and the X-ray and lensing
+       profile papers that would are Bucket 3. So the stated radii stay as fixed before anything was computed, and
+       this flag makes any dependence on them visible instead.)
+   (d) Geometry. All components lie in the plane of the sky (z = 0; Clowe 2006 §1: "the merger must be occurring
+       nearly in the plane of the sky"), at Table 2's J2000 positions converted to kpc with Clowe's plate scale
+       4.413 kpc per arcsec.
+   No pipeline computes T-d1, T-d2 or T-e under any convention before the spec is frozen.
+
+7. CONVENTION · THE DF2 ESTIMATOR (spec §5.4; closes Gemini-D 5b). v1's T5c supplies T-e's data and thresholds; the
+   estimator is v2's own, since v1's M_pred came from a spherical kernel and v2 needs an enclosed mass in a
+   non-spherical AQUAL field with an external field. "v1's T5c, exactly" is narrowed to "v1's T5c data and
+   thresholds". Let Φ_tot be the 3D AQUAL potential of DF2 (stars and cloud) plus NGC 1052 (stars and cloud) at
+   d_3D = 98.0 kpc, and Φ_host the full AQUAL solution for NGC 1052 alone (stars and cloud), solving
+   ∇·[μ(|∇Φ_host|/a₀) ∇Φ_host] = 4πG ρ_host. With Φ_int = Φ_tot − Φ_host:
+     M_pred(<r) = (1 / 4πG) ∮ ∇Φ_int · n̂ dA over the sphere of radius r about DF2's centre, r = 2.7 and 3.1 kpc.
+   The flux is of the plain gradient, not of μ∇Φ (which would return the source mass and drop the MOND boost).
+   Φ_host must be the full host solution, not a uniform external field: a uniform field has zero divergence and
+   would leave inside DF2's sphere the host's own boosted density and phantom density,
+     (1/4πG) ∇²Φ_host = ν ρ_host + M_host(<R) (dν/dR) / 4πR²   [algebra; planner 200, Argon 202, A22].
+   In spherical symmetry M_pred(<r) reduces to r² g(r) / G.
+
+8. CONVENTION · SOLVER DETAILS (closes Gemini-D 1–2; adds to spec §2.6 and Entry 46 §4).
+   (a) a_turn is the root of E²(a) = 0 found by linear interpolation in ln a between the first bracketing pair of grid
+       nodes with a > 1, so it moves continuously with E(a) and the fixed-point iteration cannot flip between two
+       nodes. No root by a = 100 still means a_turn = 100 (Entry 29; Entry 46 §4 for the evidence fit).
+   (b) The grid spacing in ln a and the quadrature rule are named in the Stage 4 rulebook and matched by the Stage 3.3
+       cross-pipeline gate; spec §0.5's list gains them.
+   (c) Entry 46 §4's tail bound, ΔP_tail ≤ 6.3 × 10⁻⁷ (γ_u Ω_coh)^(−1/3), holds as stated; its value 1.4 × 10⁻⁵ is
+       for the registered prior box. In the doubled boxes of spec §6.5 it reaches about 1.04 × 10⁻⁴ at the joint
+       corner (4.82 × 10⁻⁵ doubling γ_u alone, 2.92 × 10⁻⁵ doubling Ω_coh alone) [algebra; planner 197, Argon 199],
+       still far below the data's errors. Disclosed in the spec.
+
+9. CLARIFICATIONS (wording only; no rule changes).
+   (a) S4 in spec §6.4 is written as an equation: with V_pass the prior mass inside V1–V4,
+       ln Z_S4 = ln Z_S5 − ln V_pass  (≥ ln Z_S5).
+   (b) Ω_Tinit's prior transform is written explicitly: Ω_Tinit = u (Ω_coh + 3), u uniform on [0, 1].
+   (c) Binding sentence (Grok 3): every deciding threshold left to the Stage 4 rulebook is locked and stamped before
+       any v2 output exists (D7, Entry 46 §3); none exists as of this entry.
+   (d) The shape-check grid (41 × 31, and 31 values of Ω_Tinit for Option 2) is disclosed as a registered limit: a
+       viable region narrower than its spacing could be missed (Grok 4). Entry 45 §3 forbids changing it, and the
+       registered post-kill diagnostic, a continuous fit over the full priors, would find such a region if the grid
+       kills v2.
+   (e) Part Two bridge (spec §3.1): "Part Two's 'about 20.3 strands' is the count a rope-derived rule would have to
+       produce. No such rule is part of v2 (B2-3, Entry 42 §3), so v2 makes no claim on the static share." Part Two's
+       "tried twice" corresponds to Run 1-pinned and Run 2 (FU8_03; threads 094–095, 201–202).
+
+10. D14 · WHAT THE CCBH REPRODUCTION GATE REPRODUCES (corrects spec draft 3 §2.10). Draft 3 said the gate reproduces
+    the authors' result "on the same DESI DR2-era data". Croker et al. 2024 (arXiv:2405.12282v3; e-print SHA-256
+    6099b5250cb6c961a9a23e3e93aa3b61f32d9353a26291aa927f825ecef9d87c) fitted DESI's first-year (DR1) BAO with a
+    nucleosynthesis prior, background only. The DR2-era result is a separate paper, DESI Collaboration (Ahlen, Croker
+    et al.) 2025, PRL 135, 081003 (arXiv:2504.20338; e-print SHA-256
+    e6212900dbf9f63dd6bf9c5f1b32a8bca7d0d3cd71e4acc652d47f2cf59a9d3c), which fits DR2 BAO with the full Planck PR4
+    likelihoods and a free neutrino mass, outside v2's background plus compressed-CMB scope.
+    Re-fitting 2405.12282 would need the DESI DR1 BAO files, which are Bucket 3 ("DESI products not in v1's
+    manifest", Entry 40 §4). Moving them into Bucket 1, even for validation only, would shrink the off-limits set,
+    which Entry 40's ratchet forbids before the lock. Bucket 1 holds the published CCBH equations and the published
+    "DESI-era validation target" (Entry 40 §4), not the survey files behind it.
+    Decision: the Stage 3.3c gate is a forward reproduction that uses no survey data. At 2405.12282's published CCBH
+    Trinca ψ best fit (Table 1: Ξ = 1.403, ω_c = 0.1237, 100ω_b^proj = 2.238; k = 3; a_i = 1/21; N_eff = 3.044 with
+    one 0.06 eV neutrino), the implementation must reproduce, within tolerances fixed in the rulebook:
+      (i)   the ρ_DE(z) curve of their Figure 1 for 0 ≤ z ≤ 20 (a vector figure in the e-print, so its plotted path
+            can be read exactly);
+      (ii)  the baryon survival fraction s ≈ 0.70 their Discussion states for Ξ ≈ 1.4;
+      (iii) a derived H₀ consistent with their posterior, 69.94 ± 0.81 km s⁻¹ Mpc⁻¹.
+    This checks the equations, the neutrino treatment, a_i and the digitised star-formation curve (D15). It does not
+    check the authors' sampler or likelihood. Ours are validated separately, since the same code reproduces v1's
+    ΛCDM and CPL results. That limit is disclosed. 2504.20338 is cited and its results reported for comparison, with
+    no gate. Draft 3's sentence "DESI DR2 is used only for this validation" (a wording slip, since DR2 BAO is Round 1
+    data in §3.2) is replaced by this paragraph.
+    (The first version of D14 in r2 proposed re-fitting 2405.12282 on DESI DR1 BAO with the DR1 files added to
+    Bucket 1. Neither the planner nor Argon noticed then that this conflicts with the ratchet. Planner error C28.)
+
+11. D15 · CCBH's STAR-FORMATION CURVE. Both CCBH papers use "Trinca ψ" as their primary: Trinca et al. 2024 (MNRAS 529,
+    3563; arXiv:2305.04944), Fig. 3 "CAT - total", above z = 4, joined at z = 4 to the Madau & Dickinson 2014 shape
+    below it, scaled to match there; "Madau ψ" is their secondary. In v2's fits only the curve's shape matters, since
+    Ξ is solved from flatness and absorbs its normalisation. In the D14 gate, where Ξ is held at the published 1.403,
+    the normalisation matters too: the gate uses Trinca's Fig. 3 in its physical units (log₁₀ SFRD in M☉ yr⁻¹ Mpc⁻³,
+    the figure's axis), with the Madau & Dickinson shape below z = 4 scaled to meet it there (2405.12282: "enforcing
+    continuity by scaling the normalization to match at z = 4"), converted to the paper's convention ("comoving
+    density per unit proper time, consistent with Cω_b^proj") by a conversion fixed in the rulebook [Argon 209, 211].
+    Decision: Trinca ψ is CCBH's primary curve and Madau ψ is reported beside it. No numeric table of Trinca's curve
+    is public (the paper offers its data "on reasonable request"), so it is digitised from the arXiv source figure
+    (Figures/SFR_Pop2_Pop3_Mlim.png) by a procedure fixed in the Stage 4 rulebook (tool and redshift grid), shared by
+    both pipelines and hashed. Range: z in [4, 20] for the deciding fits and the gate; the non-deciding z_i = 24 check
+    (D16a) uses the plotted curve up to the figure's right edge at z ≈ 23.8, with ψ = 0 beyond it, disclosed. (r3
+    gave the grid as z in [4, 19], which the z_i = 24 check could not use; found while applying a_i = 1/21, planner
+    error C29.) Sources, hashed: the arXiv:2305.04944 source tarball (3,165,242 B), SHA-256
+    691fac6fe00530cd277a48de1bbd86344de86b47b9058373ff67eab0f47e819e; the figure file (401,049 B), SHA-256
+    7307ab9587c080a6107f03dae77c07ec1c772ab9742099ce81877f25ebf4e088 [Argon 211; re-downloaded and matched by the
+    planner, 2026-11-05; the journal reference MNRAS 529, 3563 checked against Crossref, DOI 10.1093/mnras/stae651].
+    The D14 gate validates the digitisation: if the forward reproduction matches 2405.12282's Figure 1 curve,
+    survival fraction and H₀, it stands. If it fails, the fix is a numbered, logged revision.
+
+12. D16 · CCBH DETAILS (from the e-prints).
+    (a) Star formation, and so black-hole dark energy, begins at a_i = 1/21 (z_i = 20): the origin of 2405.12282's
+        Figure 1, whose curves are computed on 100 points of np.linspace(1/21, 1, 100) (vector extraction of
+        pidgeon-crop.pdf, Argon 209, repeated by the planner, 210). 2504.20338's "star formation begins at a_i ~ 1/20"
+        is the same value rounded. ρ_DE(a ≤ a_i) = 0. z_i = 15 and z_i = 24 are reported as non-deciding checks.
+        (r3 had a_i = 1/20; changed in r4 so the gate compares like with like, agreed in 211.)
+    (b) The authors' baryon floor is part of the model: ln L = −∞ if the baryon survival fraction s ≤ 0.25, with
+        s = ρ_b(1) / [ρ_b(a_i) a_i³] (2405.12282 Eqs. 3.4–3.5).
+    (c) k stays uniform on [0, 3] as registered (Entry 30). The authors themselves float k in 2504.20338 (k = 2.74 ±
+        0.14 on their baseline, 2.70 ± 0.10 with Pantheon+). Their headline model fixes k = 3, so the k = 3 fit
+        (evidence and Δχ²) is reported beside it. Disclosure [algebra; Argon 206, planner 207]: closure leaves little
+        room at low k. Black holes born at a' contribute dark energy weighted by a'^(−k), against baryons consumed
+        with weight 1, so at k = 0 no net dark energy is produced at all and low k cannot reach today's dark energy
+        within the baryon budget, floor or no floor. A large share of the k prior is therefore excluded, an Occam cost
+        Argon estimates at about 1.4 nats (206), measured in the fits, relative to the authors' fixed k = 3. Reporting
+        the k = 3 fit beside it shows this openly.
+
+13. CONVENTION · CCBH's PARAMETERS (spec §1.3, §2.10, §3.2; closes Gemini-D 4). The four sampled CCBH parameters are
+    (Ω_m,0, ω_b, h, k), where for CCBH ω_b ≡ ω_b^proj, the early-universe baryon density, and Ω_m,0 ≡ Ω_m^proj =
+    (ω_c + ω_b^proj + ω_ν)/h², the early-universe ("projected") matter fraction. The compressed CMB term uses these
+    early values. Today's baryon density is s ω_b^proj, reported as derived. The strength Ξ (C_CCBH) is solved at
+    each evaluation from flatness today, in the form
+      Ω_de^CCBH(1) − ΔΩ_b(1) = (Ξ/ρ_crit,0) ∫_{a_i}^{1} [ψ(a') / (a' H(a'))] (a'^(−k) − 1) da' = 1 − Ω_m^proj − Ω_r,0,
+    which replaces draft 3's "Ω_de^CCBH(1) = 1 − Ω_m,0 − Ω_r,0" (the same condition once Ω_m,0 is read as today's
+    depleted matter; written this way so no pipeline mixes the two). The published equations transcribed into the
+    spec are 2405.12282 Eqs. 2.2 and 2.4–2.7, with the general-k form
+      dρ_DE/da + [(3 − k)/a] ρ_DE = Ξ ψ(a) / (H a⁴),
+    whose solution is draft 3's integral, reducing to the paper's Eq. 2.5 at k = 3 [algebra; planner 205, Argon 206].
+
+14. CCBH EQUATIONS MOVE INTO THE SPEC (amends Entry 46 §7; closes Grok 1, BLOCKING, and Gemini-D 4). Reading the
+    published e-print is not v2 output, so the equations of Croker et al. 2024 (JCAP 10, 094; arXiv:2405.12282) are
+    transcribed into spec draft 4 now, under §13's conventions. The reproduction gate (Stage 3.3c, as D14 defines it)
+    still runs before the lock; if it exposes a transcription error, the fix is a numbered, logged revision. The
+    spec's CCBH form is no longer provisional once transcribed.
+
+15. AUDIT. This entry sets deciding rules, so it is one of the agreed third-family audit points (thread 181, 183). A
+    blind Grok pass reviews this entry and spec draft 4's changes together before either is stamped, with D13 named
+    as the item to attack hardest and D14–D16 second.
+    Result (Grok 4.7, cold, 2026-11-05; 222): no BLOCKING items; one SHOULD-FIX (D13(c)'s core radii), answered by
+    the flag added to D13(c) rather than by a new radius, agreed by Argon (223); Grok's further remark that the cloud
+    is "forced onto the BCG" is not a convention but v2's prediction (spec §4.5), which T-d1 tests (222, 223); six
+    NOTES confirming as written T-d1's pass/fail rule, the CCBH transcription and gate, D8, D9, D10, the DF2
+    estimator, D12 and the solver details. Grok's statement that the CCBH equations match the e-print is not counted
+    as a citation check (it may not have opened the paper); the transcription rests on the planner's and Argon's
+    reading of the e-print (205, 206) and the D14 gate. The r3 file itself was not attached, so Grok reviewed the
+    decisions as applied in draft 4.
+
+16. UNCHANGED: Entries 1–46, apart from the corrections stated in D14 and §13. Entry 40's buckets and ratchet are
+    unchanged: nothing moves out of Bucket 3. v2's dial count is unchanged by this
+    entry (the 20 and 50 kpc radii in D13(c) are fixed modelling inputs, not sampled, and are disclosed as choices),
+    and CCBH keeps its four sampled parameters.
