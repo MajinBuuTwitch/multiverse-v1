@@ -171,3 +171,21 @@ Builder: Claude Code (claude-opus-5-5). Sources (read-only): D:\Argon_Code\Ropew
   - sha256sum -c MULTIVERSE_V2_SPEC_FREEZE_v2.sha256: both OK. The v1 freeze manifest passes the step 6 check.
   - The first 163,041 B of the remote log equal the log at 588dffd, and every e42-e48 manifest passes on its prefix. No rulebook draft is in the repo.
   - D:\Argon_Code\Ropewalk untouched. This log entry is pushed as one more commit.
+
+## V2 design records: upgraded proofs for e48 and SPEC_FREEZE_v2
+- 2026-11-24T23:58:00-05:00 Gregory's go ("yes do all the things"). Records only: no computation, no GitHub release, no Zenodo version; no manifest, log or spec byte changed.
+- 2026-11-24T23:58:00-05:00 Before: the five newest proofs in D:\Multiverse_V2\00_design (e46, e47, e48, SPEC_FREEZE_v1, SPEC_FREEZE_v2) were identical to the clone's. Backed up to D:\Multiverse_V2\_ots_backup_2026-11-24\before\ (hash-checked). The upgrade ran on copies in _ots_backup_2026-11-24\work\, so the .bak files ots writes stayed there and none were added to 00_design. Client: opentimestamps-client 0.8.0 (PyPI).
+- 2026-11-24T23:58:00-05:00 ots upgrade results. Each proof's digest equals the SHA-256 of its .sha256 manifest:
+
+  | Proof | Bitcoin block | Changed in this upgrade |
+  |:--|:--|:--|
+  | e48 | 974808 (catallaxy) | yes (was pending), 475 -> 1,546 B, 56686f51029fa7e9cd7a881b7a18628b7209b4c0c5fe2b7502d607ea53c84c05 |
+  | SPEC_FREEZE_v2 | 974808 (catallaxy) | yes (was pending), 440 -> 1,511 B, 90a5ef0a5c2b9d1a41c6f87697be1021835af2d6b635eaf400dec3ba0304164e |
+  | e46, e47, SPEC_FREEZE_v1 | 974730 (bob) | no |
+
+  - The client treats e46, e47 and SPEC_FREEZE_v1 as complete (they already carry a Bitcoin attestation) and does not ask catallaxy again, so their second attestation stays pending. Each is already anchored in Bitcoin; nothing more is needed.
+  - The bob calendar refused connections during this run (its TLS certificate has expired), so e48 and SPEC_FREEZE_v2 carry catallaxy's attestation only. A later upgrade can add bob's once its certificate is renewed.
+- 2026-11-24T23:58:00-05:00 The upgraded e48 and SPEC_FREEZE_v2 proofs were placed in 00_design and the clone (identical to the work copies). README unchanged: it does not mark either proof as pending.
+- 2026-11-24T23:58:00-05:00 Committed the two .ots only: ec8b25c "Upgraded proofs: v2 design log e48 and SPEC_FREEZE_v2 (Bitcoin block 974808)". Plain push: 91edfc4..ec8b25c.
+- 2026-11-24T23:58:00-05:00 Remote check (a fresh clone outside the clone), all PASS: HEAD ec8b25c; both pushed proofs identical to the work copies, digests match their manifests, Bitcoin block 974808; sha256sum -c passes MULTIVERSE_V2_SPEC_FREEZE_v2.sha256 (both lines) and MULTIVERSE_V2_DESIGN_LOG_e48.sha256; the diff from 91edfc4 is the two .ots only.
+- 2026-11-24T23:58:00-05:00 Drive (MULTIVERSE_REPORTS/V2_MODEL): the 440 B pending MULTIVERSE_V2_SPEC_FREEZE_v2.sha256.ots was renamed MULTIVERSE_V2_SPEC_FREEZE_v2_PENDING_SUPERSEDED.sha256.ots (identical to the backup), and the upgraded proof was written as a new file under the original name (1,511 B, 90a5ef0a...164e, hash checked). Nothing was overwritten. The e48 proof was never on Drive. Nothing was written into MULTIVERSE_V2_DISCUSSION. This log entry is pushed as one more commit.
